@@ -38,7 +38,7 @@ export default function Footer() {
               İstinye, Sarıyer / İstanbul.
             </p>
             <p className="text-xs mt-3" style={{ color: "rgba(197,168,128,0.6)" }}>
-              İstanbul Barosu - Sicil No: XXXXX
+              İstanbul Barosu - Sicil No: 72621
             </p>
           </div>
 

@@ -39,7 +39,7 @@ export default function Hero() {
           className="text-xs md:text-sm tracking-[0.3em] uppercase mb-8 font-medium"
           style={{ color: "#C5A880" }}
         >
-          İstanbul Barosu - Sicil No: XXXXX
+          İstanbul Barosu - Sicil No: 72621
         </p>
 
         {/* Decorative line above name */}

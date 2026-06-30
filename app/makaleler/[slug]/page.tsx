@@ -213,7 +213,7 @@ export default async function MakalePage({ params }: Props) {
                 Av. Furkan Arıkan
               </p>
               <p className="text-xs mb-2" style={{ color: "#C5A880" }}>
-                İstanbul Barosu - Sicil No: XXXXX | MEF Üniversitesi Hukuk Fakültesi (2019)
+                İstanbul Barosu - Sicil No: 72621 | MEF Üniversitesi Hukuk Fakültesi (2019)
               </p>
               <p className="text-sm" style={{ color: "#3D5A50" }}>
                 Bu makale Av. Furkan Arıkan tarafından hazırlanmıştır.

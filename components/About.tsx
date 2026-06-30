@@ -51,7 +51,7 @@ export default function About() {
                 Av. Furkan Arıkan
               </p>
               <p className="text-xs mt-1" style={{ color: "#3D5A50" }}>
-                İstanbul Barosu - Sicil No: XXXXX
+                İstanbul Barosu - Sicil No: 72621
               </p>
               <div className="h-px my-2.5" style={{ backgroundColor: "#EBE0D4" }} />
               <p className="text-xs" style={{ color: "#3D5A50" }}>
@@ -104,7 +104,7 @@ export default function About() {
               <InfoCard
                 icon={<BarIcon />}
                 label="Baro"
-                value="İstanbul Barosu - Sicil No: XXXXX"
+                value="İstanbul Barosu - Sicil No: 72621"
               />
             </div>
           </div>
