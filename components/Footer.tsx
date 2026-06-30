@@ -1,0 +1,100 @@
+import Link from "next/link";
+
+const navLinks = [
+  { href: "/#hakkimda", label: "Hakkımda" },
+  { href: "/#calisma-alanlari", label: "Çalışma Alanları" },
+  { href: "/#surec", label: "Süreç" },
+  { href: "/makaleler", label: "Makaleler" },
+  { href: "/#iletisim", label: "İletişim" },
+];
+
+export default function Footer() {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer style={{ backgroundColor: "#0d2420" }}>
+      <div className="h-px" style={{ backgroundColor: "rgba(197,168,128,0.2)" }} aria-hidden="true" />
+
+      <div className="max-w-6xl mx-auto px-5 md:px-8 py-12 md:py-16">
+        <div className="grid md:grid-cols-3 gap-10 md:gap-8">
+          {/* Brand */}
+          <div>
+            <Link href="/" className="inline-block mb-3">
+              <p
+                className="text-xl font-bold"
+                style={{
+                  color: "#F4EDE4",
+                  fontFamily: "var(--font-playfair), Georgia, serif",
+                }}
+              >
+                Av. Furkan Arıkan
+              </p>
+              <p className="text-xs tracking-widest uppercase mt-0.5" style={{ color: "#C5A880" }}>
+                Hukuk Bürosu
+              </p>
+            </Link>
+            <p className="text-sm leading-relaxed mt-3" style={{ color: "rgba(244,237,228,0.55)" }}>
+              Ceza, iş ve gayrimenkul hukukunda dava takibi ve hukuki danışmanlık.
+              İstinye, Sarıyer / İstanbul.
+            </p>
+            <p className="text-xs mt-3" style={{ color: "rgba(197,168,128,0.6)" }}>
+              İstanbul Barosu - Sicil No: XXXXX
+            </p>
+          </div>
+
+          {/* Navigation */}
+          <div>
+            <p
+              className="text-xs font-semibold tracking-widest uppercase mb-5"
+              style={{ color: "#C5A880" }}
+            >
+              Bağlantılar
+            </p>
+            <nav className="flex flex-col gap-2.5">
+              {navLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="footer-link">
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <p
+              className="text-xs font-semibold tracking-widest uppercase mb-5"
+              style={{ color: "#C5A880" }}
+            >
+              İletişim
+            </p>
+            <address className="not-italic space-y-2" style={{ color: "rgba(244,237,228,0.65)" }}>
+              <p className="text-sm">[Sokak / Mahalle Placeholder]</p>
+              <p className="text-sm">İstinye, Sarıyer</p>
+              <p className="text-sm">34460 İstanbul</p>
+              <div className="h-px my-3" style={{ backgroundColor: "rgba(197,168,128,0.15)" }} aria-hidden="true" />
+              <a href="tel:+905XXXXXXXXX" className="footer-address-link">
+                +90 5XX XXX XX XX
+              </a>
+              <a href="mailto:info@furkanarikan.av.tr" className="footer-address-link">
+                info@furkanarikan.av.tr
+              </a>
+            </address>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div
+          className="mt-12 pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3"
+          style={{ borderTop: "1px solid rgba(197,168,128,0.15)" }}
+        >
+          <p className="text-xs" style={{ color: "rgba(244,237,228,0.4)" }}>
+            &copy; {year} Av. Furkan Arıkan Hukuk Bürosu. Tüm hakları saklıdır.
+          </p>
+          <p className="text-xs" style={{ color: "rgba(244,237,228,0.3)" }}>
+            Bu sitedeki bilgiler hukuki danışmanlık niteliği taşımaz.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
