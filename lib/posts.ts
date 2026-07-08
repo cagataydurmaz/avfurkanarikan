@@ -20,6 +20,11 @@ export const posts: Post[] = [
       "Türk Ceza Kanunu'nda etkin pişmanlık müessesesi, belirli suçlarda şüpheli veya sanığın zararı gidermesi ya da suçun aydınlatılmasına katkı sağlaması karşılığında ceza indiriminden yararlanmasını mümkün kılar.",
     category: "Ceza Hukuku",
     readingTime: 7,
+    faq: [
+      { question: "Her suçta etkin pişmanlık mümkün mü?", answer: "Hayır. Etkin pişmanlık yalnızca TCK'da ve özel ceza kanunlarında açıkça düzenlenen suç tiplerinde uygulanır. Kasten öldürme, yaralama gibi suçlarda bu hüküm doğrudan geçerli değildir; bu tür suçlarda pişmanlık belirli koşullarla takdiri indirim sebebi sayılabilir." },
+      { question: "Etkin pişmanlık beyanı ne zaman yapılmalıdır?", answer: "Beyan ne kadar erken yapılırsa indirim oranı genellikle o kadar yüksek olur. Kovuşturma başlamadan önce yapılan başvurularda daha yüksek indirim öngörülmüştür." },
+      { question: "İfade verirken avukat olmadan etkin pişmanlık beyanında bulunabilir miyim?", answer: "Hukuken mümkün olmakla birlikte, içeriği hatalı şekillendirilen ya da koşulları sağlamayan bir beyan, sanık aleyhine sonuç doğurabilecek bilgi açıklamalarına zemin hazırlayabilir. Bu nedenle herhangi bir beyandan önce avukatınıza danışmanız önerilir." },
+    ],
     content: `
 <h2>Etkin Pişmanlık Nedir?</h2>
 <p>
@@ -137,6 +142,11 @@ export const posts: Post[] = [
       "Türk aile mahkemelerinde velayet kararları, çocuğun üstün yararı ilkesi çerçevesinde şekillenir. Mahkemenin gözettiği başlıca kriterler ve süreç hakkında bilgi.",
     category: "Aile Hukuku",
     readingTime: 8,
+    faq: [
+      { question: "Anlaşmalı boşanmada velayet nasıl belirlenir?", answer: "Anlaşmalı boşanmada eşler velayete ilişkin düzenlemeyi protokolde belirleyebilir. Hakim, protokolü çocuğun yararı açısından denetler ve uygun bulması halinde onaylar." },
+      { question: "Müşterek velayet mümkün mü?", answer: "Türk hukukunda boşanma kararıyla birlikte müşterek velayet yasal olarak mümkündür; ancak uygulamada nadir görülür. Mahkemeler, çocuğun istikrarını esas alarak genellikle velayeti tek ebeveyne verir." },
+      { question: "Çocuk başka şehirde yaşıyorsa ne olur?", answer: "Velayetin bulunduğu şehir dikkate alınarak yetkili aile mahkemesi belirlenir. Çocuğun farklı bir ilde bulunması, kişisel ilişki ve nafaka düzenlemelerini karmaşık hale getirebilir; her koşul somut olarak değerlendirilir." },
+    ],
     content: `
 <h2>Velayet Kararlarında Temel İlke: Çocuğun Üstün Yararı</h2>
 <p>
@@ -231,6 +241,11 @@ export const posts: Post[] = [
       "İş Kanunu kapsamında kıdem tazminatı, hangi hallerde doğar ve nasıl hesaplanır? 2026 yılı kıdem tazminatı tavanı ve pratik örneklerle kapsamlı açıklama.",
     category: "İş Hukuku",
     readingTime: 9,
+    faq: [
+      { question: "İstifa ederek kıdem tazminatı alınabilir mi?", answer: "Haklı sebeple (İK m.24) istifa edilmesi, emeklilik için ayrılma veya evlilik nedeniyle 1 yıl içinde ayrılma halleri dışında sıradan istifa durumunda kıdem tazminatı hakkı doğmaz." },
+      { question: "Kıdem tazminatı vergiye tabi mi?", answer: "Kıdem tazminatı yasal tavan içindeki kısım gelir vergisinden muaftır. Tavanı aşan kısım ise gelir vergisine tabidir." },
+      { question: "İşveren ödeme yapmıyorsa ne yapılır?", answer: "İşveren kıdem tazminatını ödemiyorsa arabuluculuk başvurusu zorunlu bir ön koşuldur. Arabuluculukta anlaşma sağlanamaması durumunda iş mahkemesinde dava açılabilir. Ödeme yapılmaması halinde gecikme faizi de talep edilebilir." },
+    ],
     content: `
 <h2>Kıdem Tazminatı Nedir?</h2>
 <p>
@@ -363,6 +378,11 @@ export const posts: Post[] = [
       "6098 sayılı Türk Borçlar Kanunu kapsamında kiraya verenin kiracıyı tahliye ettirebileceği haller, gerekli şartlar ve süreç.",
     category: "Gayrimenkul Hukuku",
     readingTime: 7,
+    faq: [
+      { question: "Belirli süreli kira sözleşmesi sona erince kiracı çıkarılabilir mi?", answer: "TBK m. 347 uyarınca belirsiz süreli kira sözleşmelerinin aksine, konut ve çatılı işyeri kiralarında belirli sürenin dolması kiraya verene tahliye hakkı vermez. Kiracı, sözleşme bitiminden 15 gün önce bildirimde bulunmazsa sözleşme yenilenmiş sayılır. Tahliye için özel sebeplerin varlığı gerekir." },
+      { question: "Tahliye davası ne kadar sürer?", answer: "Tahliye davalarının süresi mahkemenin iş yüküne, uyuşmazlığın niteliğine ve itirazlara göre farklılık gösterir. Sulh hukuk mahkemelerinde görülen bu davalar ortalama 6-18 ay sürebilir." },
+      { question: "İcra yoluyla tahliye hangi hallerde mümkündür?", answer: "Tahliye taahhütnamesinin varlığında veya kira bedelinin ödenmemesi durumunda icra yoluyla tahliye mümkündür. Diğer hallerde dava açılması gerekir." },
+    ],
     content: `
 <h2>Tahliye Sebepleri: TBK Kapsamında</h2>
 <p>
@@ -470,6 +490,11 @@ export const posts: Post[] = [
       "TMK kapsamında saklı pay mirasçıları kimlerdir, saklı paylar nasıl hesaplanır ve tenkis davası ne zaman açılır?",
     category: "Miras Hukuku",
     readingTime: 6,
+    faq: [
+      { question: "Miras bırakan tüm mal varlığını bir kişiye bırakabilir mi?", answer: "Saklı pay mirasçısı yoksa miras bırakan mal varlığını dilediği kişiye bırakabilir. Saklı pay mirasçısı varsa, saklı pay sınırı içindeki tasarruf hakkı güvenceli olmakla birlikte aşan kısım tenkise konu olabilir." },
+      { question: "Miras reddedilirse saklı pay hakkı kaybolur mu?", answer: "Evet. Mirası reddeden kişi mirasçılık sıfatını yitirir ve buna bağlı olarak saklı pay talep hakkı da ortadan kalkar." },
+      { question: "Sağlığında yapılan bağışlar tenkise konu olabilir mi?", answer: "TMK madde 565 kapsamında belirli bağışlar (ölüme bağlı tasarruf niteliğindekiler, son 1 yıl içinde yapılan bağışlar, salt saklı payı aşmak amacıyla yapıldığı kanıtlanan bağışlar) tenkise konu olabilir." },
+    ],
     content: `
 <h2>Saklı Pay Nedir?</h2>
 <p>
@@ -565,6 +590,13 @@ export const posts: Post[] = [
       "Türk Borçlar Kanunu kapsamında sözleşmeden dönme hakkı, hangi koşullarda ve nasıl kullanılır? Dönme sonuçları, tazminat hakları ve dikkat edilmesi gereken süreler.",
     category: "Borçlar Hukuku",
     readingTime: 7,
+    faq: [
+      { question: "Sözleşmeden dönme ile fesih arasındaki fark nedir?", answer: "Dönme, sözleşmeyi geriye etkili olarak sona erdirir; taraflar aldıklarını iade eder. Fesih ise sözleşmeyi ileriye etkili olarak bitirir; geçmişteki edimler iade edilmez. Anlık edim sözleşmelerinde (satım, kira) dönme, sürekli edim sözleşmelerinde (iş, vekalet) ise fesih söz konusu olur." },
+      { question: "Tazminat istenmeden yalnızca sözleşmeden dönülebilir mi?", answer: "Evet. Dönme hakkı tazminat talebinden bağımsız olarak kullanılabilir. Ancak dönme ile birlikte olumsuz zarar talep edilmesi de mümkündür." },
+      { question: "Dönme beyanının şekli var mıdır?", answer: "TBK genel olarak şekil şartı öngörmemiştir. Ancak ispat güçlüğü yaşanmaması için noter kanalıyla ya da iadeli taahhütlü posta ile yazılı beyan gönderilmesi önerilir." },
+      { question: "Ayıptan doğan dönme hakkı zamanaşımına uğrar mı?", answer: "Evet. TBK madde 231 uyarınca taşınır satımında ayıptan doğan talepler, ayıbın bildiriminden itibaren 2 yıllık zamanaşımına tabidir. Taşınmaz satımında bu süre 5 yıldır." },
+      { question: "Karşılıklı borç sözleşmelerinde ifa imkansızlaşırsa ne olur?", answer: "Sonraki imkansızlık halinde TBK madde 136 uygulanır; borçlu kusursuz imkansızlık halinde borçtan kurtulur. Alacaklı da karşı edimden kaçınabilir ve önceden verdiklerini sebepsiz zenginleşme hükümleri uyarınca geri isteyebilir." },
+    ],
     content: `
 <h2>Sözleşmeden Dönme Nedir?</h2>
 <p>
@@ -698,6 +730,13 @@ export const posts: Post[] = [
       "4857 sayılı İş Kanunu kapsamında işe iade davası, kimler tarafından ve ne zaman açılabilir? Başvuru süresi, arabuluculuk zorunluluğu ve karar sonrası haklar.",
     category: "İş Hukuku",
     readingTime: 8,
+    faq: [
+      { question: "30'dan az işçi çalışan bir iş yerinde işten çıkarıldım, işe iade davası açabilir miyim?", answer: "İş güvencesi hükümleri 30'dan az işçi çalıştıran iş yerlerine uygulanmaz. Bu durumda kıdem ve ihbar tazminatı ile diğer işçilik alacakları talep edilebilir; ancak işe iade yoluna gidilemez." },
+      { question: "Geçici iş ilişkisiyle çalışanlar işe iade davası açabilir mi?", answer: "Geçici iş ilişkisinde asıl işveren ile işçi arasında doğrudan bir iş sözleşmesi bulunmadığından işe iade davası genel olarak asıl işverene karşı açılamaz. Geçici iş ilişkisi kuran işverene karşı koşulların oluşup oluşmadığı somut duruma göre değerlendirilir." },
+      { question: "Deneme süresinde işten çıkarıldım, işe iade davası açabilir miyim?", answer: "Deneme süresi içinde yapılan fesihlerde iş güvencesi hükümleri uygulanmaz; dolayısıyla bu dönemde işe iade davası açılamaz." },
+      { question: "İşe iade kararı kesinleşmeden önce işçi başka bir iş yerinde çalışabilir mi?", answer: "Çalışılabilir. Ancak başka bir iş yerinde çalışıldığına dair kanıt olması halinde boşta geçen süre tazminatı bu süreyle sınırlandırılabilir. Mahkeme somut koşulları değerlendirir." },
+      { question: "Arabuluculukta anlaşırsak ne alırım?", answer: "Arabuluculuk aşamasında taraflar serbestçe müzakere eder. İşçi, işe iade yerine belirli bir tazminat miktarında uzlaşmayı tercih edebilir. Bu tutarın herhangi bir yasal üst sınırı yoktur; tarafların mutabakatına bağlıdır." },
+    ],
     content: `
 <h2>İşe İade Davası Nedir?</h2>
 <p>
