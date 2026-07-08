@@ -53,10 +53,7 @@ export default function Contact() {
                 src="https://maps.google.com/maps?q=Başakşehir+Mahallesi+Erciyes+Sokak+No+15+Istanbul&output=embed"
                 width="100%"
                 height="100%"
-                style={{
-                  border: 0,
-                  filter: "grayscale(1) invert(92%) contrast(88%) brightness(0.95)",
-                }}
+                style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
