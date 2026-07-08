@@ -220,6 +220,120 @@ body {
   color: #C5A880;
 }
 
+/* ── Article visual components ─────────────────────────── */
+
+/* Stat grid */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1rem;
+  margin: 1.75rem 0;
+}
+
+.stat-box {
+  background: #14342B;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-playfair), Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #C5A880;
+  line-height: 1.1;
+  margin-bottom: 0.45rem;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: rgba(244, 237, 228, 0.72);
+  line-height: 1.45;
+}
+
+/* Law reference badge */
+.law-ref {
+  display: inline-block;
+  background: rgba(20, 52, 43, 0.08);
+  border: 1px solid rgba(20, 52, 43, 0.18);
+  color: #14342B;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 0.25rem;
+  font-family: ui-monospace, monospace;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* Process steps */
+.process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin: 1.5rem 0;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid #EBE0D4;
+  border-radius: 0.5rem;
+  padding: 1rem 1.25rem;
+}
+
+.step-num {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  background: #14342B;
+  color: #C5A880;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.step-text {
+  color: #2D4A3E;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  padding-top: 0.2rem;
+}
+
+.step-text strong {
+  color: #14342B;
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.875rem;
+}
+
+/* Highlight box */
+.highlight-box {
+  background: linear-gradient(135deg, #0d2420 0%, #14342B 100%);
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1.75rem 0;
+  color: rgba(244, 237, 228, 0.82);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.highlight-box strong {
+  color: #C5A880;
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 /* Navbar links */
 .nav-link {
   color: rgba(197, 197, 197, 0.9);

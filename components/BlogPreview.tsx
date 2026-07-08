@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Post } from "@/lib/posts";
+import { categoryIcons, ScalesIcon } from "./PracticeIcons";
 
 export default function BlogPreview({ posts }: { posts: Post[] }) {
   return (
@@ -25,8 +26,8 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
           </h2>
           <Link
             href="/makaleler"
-            className="mt-4 md:mt-0 text-sm font-medium flex items-center gap-1.5 transition-colors"
-            style={{ color: "#C5A880" }}
+            className="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 hover:bg-[#14342B] hover:text-[#F4EDE4]"
+            style={{ color: "#14342B", borderColor: "#14342B" }}
           >
             Tüm Makaleler
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -37,14 +38,16 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-6">
-          {posts.map((post) => (
+          {posts.map((post) => {
+            const CategoryIcon = categoryIcons[post.category] ?? ScalesIcon;
+            return (
             <Link
               key={post.slug}
               href={`/makaleler/${post.slug}`}
               className="group flex flex-col rounded-lg overflow-hidden border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               style={{ borderColor: "#EBE0D4", backgroundColor: "#fff" }}
             >
-              {/* Image placeholder */}
+              {/* Category visual */}
               <div
                 className="h-44 flex items-center justify-center relative overflow-hidden"
                 style={{
@@ -52,15 +55,21 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
                 }}
               >
                 <div
-                  className="absolute inset-0 opacity-10"
+                  className="absolute inset-0 opacity-[0.06]"
                   style={{
                     backgroundImage: "repeating-linear-gradient(45deg, #C5A880 0px, #C5A880 1px, transparent 1px, transparent 8px)",
                   }}
                   aria-hidden="true"
                 />
+                <div
+                  className="absolute flex items-center justify-center opacity-[0.14] scale-[3.4] transition-transform duration-500 group-hover:scale-[3.7]"
+                  aria-hidden="true"
+                >
+                  <CategoryIcon />
+                </div>
                 <span
                   className="relative z-10 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded border"
-                  style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.4)" }}
+                  style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.4)", backgroundColor: "rgba(13,36,32,0.55)" }}
                 >
                   {post.category}
                 </span>
@@ -103,7 +112,8 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
                 </span>
               </div>
             </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

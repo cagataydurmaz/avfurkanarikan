@@ -1,0 +1,46 @@
+import type { MetadataRoute } from "next";
+import { posts } from "@/lib/posts";
+import { practiceAreas } from "@/lib/practiceAreas";
+
+const BASE_URL = "https://avfurkanarikan.vercel.app";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const now = new Date();
+
+  const staticPages: MetadataRoute.Sitemap = [
+    {
+      url: BASE_URL,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 1.0,
+    },
+    {
+      url: `${BASE_URL}/makaleler`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/gizlilik-politikasi`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+  ];
+
+  const practiceAreaPages: MetadataRoute.Sitemap = practiceAreas.map((area) => ({
+    url: `${BASE_URL}/calisma-alanlari/${area.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
+  const postPages: MetadataRoute.Sitemap = posts.map((post) => ({
+    url: `${BASE_URL}/makaleler/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...practiceAreaPages, ...postPages];
+}

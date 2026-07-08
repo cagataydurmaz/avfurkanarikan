@@ -10,7 +10,7 @@ export default function Hero() {
       }}
     >
       {/* Decorative background pattern */}
-      <div className="absolute inset-0 opacity-5" aria-hidden="true">
+      <div className="absolute inset-0 opacity-[0.07]" aria-hidden="true">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
@@ -20,6 +20,52 @@ export default function Hero() {
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
       </div>
+
+      {/* Ambient glow orbs - fill the wide-screen side margins with depth */}
+      <div
+        className="absolute -top-32 -right-32 w-[32rem] h-[32rem] rounded-full pointer-events-none"
+        style={{
+          background: "radial-gradient(circle, rgba(197,168,128,0.16) 0%, transparent 70%)",
+          filter: "blur(40px)",
+        }}
+        aria-hidden="true"
+      />
+      <div
+        className="absolute -bottom-40 -left-40 w-[36rem] h-[36rem] rounded-full pointer-events-none"
+        style={{
+          background: "radial-gradient(circle, rgba(197,168,128,0.10) 0%, transparent 70%)",
+          filter: "blur(50px)",
+        }}
+        aria-hidden="true"
+      />
+      <div
+        className="hidden lg:block absolute top-1/4 -left-24 w-72 h-72 rounded-full pointer-events-none"
+        style={{
+          background: "radial-gradient(circle, rgba(244,237,228,0.06) 0%, transparent 70%)",
+          filter: "blur(30px)",
+        }}
+        aria-hidden="true"
+      />
+
+      {/* Large faint scales-of-justice motif, echoes practice icon language */}
+      <svg
+        className="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-16 opacity-[0.05] pointer-events-none"
+        width="420"
+        height="420"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#F4EDE4"
+        strokeWidth="0.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+        <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
+        <path d="M7 21h10" />
+        <path d="M12 3v18" />
+        <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
+      </svg>
 
       {/* Gold decorative lines */}
       <div
@@ -69,14 +115,14 @@ export default function Hero() {
           style={{ color: "rgba(244,237,228,0.75)" }}
         >
           Ceza, iş ve gayrimenkul hukukunda dava takibi ve hukuki danışmanlık.{" "}
-          İstinye, Sarıyer / İstanbul.
+          İstanbul.
         </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
           <a
-            href="https://wa.me/905XXXXXXXXX?text=Merhaba%2C%20hukuki%20danışmanlık%20almak%20istiyorum."
-            className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded text-sm font-semibold transition-opacity hover:opacity-90"
+            href="https://wa.me/905354874099?text=Merhaba%2C%20hukuki%20danışmanlık%20almak%20istiyorum."
+            className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 ease-out hover:opacity-90 hover:scale-[1.02]"
             style={{ backgroundColor: "#25D366", color: "#fff" }}
             target="_blank"
             rel="noopener noreferrer"
@@ -86,8 +132,8 @@ export default function Hero() {
             WhatsApp ile Yazın
           </a>
           <a
-            href="tel:+905XXXXXXXXX"
-            className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded text-sm font-semibold border transition-all hover:bg-white/10"
+            href="tel:+905354874099"
+            className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm font-semibold border transition-all duration-300 ease-out hover:bg-white/10 hover:scale-[1.02]"
             style={{ color: "#C5A880", borderColor: "#C5A880" }}
             aria-label="Telefon ile iletişime geçin"
           >

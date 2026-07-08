@@ -3,23 +3,24 @@ export default function Contact() {
     <section id="iletisim" className="py-20 md:py-28" style={{ backgroundColor: "#14342B" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
-        <div className="flex items-center gap-3 mb-3">
-          <div className="h-px w-10" style={{ backgroundColor: "#C5A880" }} aria-hidden="true" />
-          <span className="text-xs tracking-widest uppercase font-semibold" style={{ color: "#C5A880" }}>
-            İletişim
-          </span>
-        </div>
-
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
-          <h2
-            className="text-3xl md:text-4xl font-bold max-w-sm"
-            style={{
-              color: "#F4EDE4",
-              fontFamily: "var(--font-playfair), Georgia, serif",
-            }}
-          >
-            Bize Ulaşın
-          </h2>
+          <div>
+            <span
+              className="inline-block text-xs tracking-widest uppercase font-semibold px-3 py-1 rounded-full mb-4"
+              style={{ color: "#14342B", backgroundColor: "#C5A880" }}
+            >
+              İletişim
+            </span>
+            <h2
+              className="text-3xl md:text-4xl font-bold max-w-sm"
+              style={{
+                color: "#F4EDE4",
+                fontFamily: "var(--font-playfair), Georgia, serif",
+              }}
+            >
+              Bize Ulaşın
+            </h2>
+          </div>
           <p className="mt-4 md:mt-0 text-sm max-w-xs" style={{ color: "rgba(244,237,228,0.65)" }}>
             Randevu için arayabilir veya WhatsApp üzerinden yazabilirsiniz.
           </p>
@@ -27,17 +28,23 @@ export default function Contact() {
 
         <div className="grid md:grid-cols-2 gap-10 items-start">
           {/* Map */}
-          <div className="rounded-lg overflow-hidden" style={{ height: "320px" }}>
+          <div
+            className="rounded-lg overflow-hidden border"
+            style={{ height: "320px", borderColor: "rgba(197,168,128,0.25)" }}
+          >
             <iframe
-              src="https://maps.google.com/maps?q=İstinye+Sarıyer+İstanbul&output=embed"
+              src="https://maps.google.com/maps?q=Başakşehir+Mahallesi+Erciyes+Sokak+No+15+Istanbul&output=embed"
               width="100%"
               height="100%"
-              style={{ border: 0 }}
+              style={{
+                border: 0,
+                filter: "grayscale(1) invert(92%) contrast(88%) brightness(0.95)",
+              }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title="Av. Furkan Arıkan Hukuk Bürosu Konum"
-              aria-label="Ofis konumu haritası - İstinye, Sarıyer, İstanbul"
+              aria-label="Ofis konumu haritası - Başakşehir Mh. Erciyes Sk. No:15/43 İstanbul"
             />
           </div>
 
@@ -48,9 +55,8 @@ export default function Contact() {
               icon={<LocationIcon />}
               title="Adres"
               lines={[
-                "[Sokak / Mahalle Placeholder]",
-                "İstinye, Sarıyer",
-                "34460 İstanbul",
+                "Başakşehir Mh. Erciyes Sk. No:15/43",
+                "İstanbul",
               ]}
             />
 
@@ -65,7 +71,7 @@ export default function Contact() {
             />
 
             {/* Phone */}
-            <a href="tel:+905XXXXXXXXX" className="contact-card-link">
+            <a href="tel:+905354874099" className="contact-card-link">
               <div
                 className="w-10 h-10 flex items-center justify-center rounded flex-shrink-0"
                 style={{ backgroundColor: "rgba(197,168,128,0.15)" }}
@@ -77,13 +83,13 @@ export default function Contact() {
                   Telefon
                 </p>
                 <p className="text-base font-medium" style={{ color: "#F4EDE4" }}>
-                  +90 5XX XXX XX XX
+                  +90 535 487 40 99
                 </p>
               </div>
             </a>
 
             {/* Email */}
-            <a href="mailto:info@furkanarikan.av.tr" className="contact-card-link">
+            <a href="mailto:av.furkanarikan1@gmail.com" className="contact-card-link">
               <div
                 className="w-10 h-10 flex items-center justify-center rounded flex-shrink-0"
                 style={{ backgroundColor: "rgba(197,168,128,0.15)" }}
@@ -95,7 +101,7 @@ export default function Contact() {
                   E-posta
                 </p>
                 <p className="text-base font-medium" style={{ color: "#F4EDE4" }}>
-                  info@furkanarikan.av.tr
+                  av.furkanarikan1@gmail.com
                 </p>
               </div>
             </a>
@@ -103,18 +109,18 @@ export default function Contact() {
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-3 mt-2">
               <a
-                href="https://wa.me/905XXXXXXXXX?text=Merhaba%2C%20randevu%20almak%20istiyorum."
+                href="https://wa.me/905354874099?text=Merhaba%2C%20randevu%20almak%20istiyorum."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 py-3 rounded text-sm font-semibold"
+                className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold transition-all duration-300 ease-out hover:opacity-90 hover:scale-[1.02]"
                 style={{ backgroundColor: "#25D366", color: "#fff" }}
               >
                 <WhatsAppIcon />
                 WhatsApp ile Yazın
               </a>
               <a
-                href="tel:+905XXXXXXXXX"
-                className="flex-1 flex items-center justify-center gap-2 py-3 rounded text-sm font-semibold border"
+                href="tel:+905354874099"
+                className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold border transition-all duration-300 ease-out hover:bg-white/10 hover:scale-[1.02]"
                 style={{ color: "#C5A880", borderColor: "#C5A880" }}
               >
                 <PhoneIcon />

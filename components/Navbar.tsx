@@ -138,16 +138,16 @@ export default function Navbar() {
         </nav>
         <div className="mt-8 flex gap-4">
           <a
-            href="https://wa.me/905XXXXXXXXX"
-            className="flex-1 text-center py-3 rounded text-sm font-semibold"
+            href="https://wa.me/905354874099"
+            className="flex-1 text-center py-3 rounded-xl text-sm font-semibold transition-all duration-300 ease-out hover:opacity-90"
             style={{ backgroundColor: "#25D366", color: "#fff" }}
             onClick={() => setMenuOpen(false)}
           >
             WhatsApp ile Yazın
           </a>
           <a
-            href="tel:+905XXXXXXXXX"
-            className="flex-1 text-center py-3 rounded text-sm font-semibold border"
+            href="tel:+905354874099"
+            className="flex-1 text-center py-3 rounded-xl text-sm font-semibold border transition-all duration-300 ease-out hover:bg-white/10"
             style={{ color: "#C5A880", borderColor: "#C5A880" }}
             onClick={() => setMenuOpen(false)}
           >

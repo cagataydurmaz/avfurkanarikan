@@ -35,7 +35,7 @@ export default function Footer() {
             </Link>
             <p className="text-sm leading-relaxed mt-3" style={{ color: "rgba(244,237,228,0.55)" }}>
               Ceza, iş ve gayrimenkul hukukunda dava takibi ve hukuki danışmanlık.
-              İstinye, Sarıyer / İstanbul.
+              İstanbul.
             </p>
             <p className="text-xs mt-3" style={{ color: "rgba(197,168,128,0.6)" }}>
               İstanbul Barosu - Sicil No: 72621
@@ -68,15 +68,14 @@ export default function Footer() {
               İletişim
             </p>
             <address className="not-italic space-y-2" style={{ color: "rgba(244,237,228,0.65)" }}>
-              <p className="text-sm">[Sokak / Mahalle Placeholder]</p>
-              <p className="text-sm">İstinye, Sarıyer</p>
-              <p className="text-sm">34460 İstanbul</p>
+              <p className="text-sm">Başakşehir Mh. Erciyes Sk. No:15/43</p>
+              <p className="text-sm">İstanbul</p>
               <div className="h-px my-3" style={{ backgroundColor: "rgba(197,168,128,0.15)" }} aria-hidden="true" />
-              <a href="tel:+905XXXXXXXXX" className="footer-address-link">
-                +90 5XX XXX XX XX
+              <a href="tel:+905354874099" className="footer-address-link">
+                +90 535 487 40 99
               </a>
-              <a href="mailto:info@furkanarikan.av.tr" className="footer-address-link">
-                info@furkanarikan.av.tr
+              <a href="mailto:av.furkanarikan1@gmail.com" className="footer-address-link">
+                av.furkanarikan1@gmail.com
               </a>
             </address>
           </div>
@@ -87,9 +86,18 @@ export default function Footer() {
           className="mt-12 pt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3"
           style={{ borderTop: "1px solid rgba(197,168,128,0.15)" }}
         >
-          <p className="text-xs" style={{ color: "rgba(244,237,228,0.4)" }}>
-            &copy; {year} Av. Furkan Arıkan Hukuk Bürosu. Tüm hakları saklıdır.
-          </p>
+          <div className="flex flex-col md:flex-row md:items-center gap-1.5 md:gap-4">
+            <p className="text-xs" style={{ color: "rgba(244,237,228,0.4)" }}>
+              &copy; {year} Av. Furkan Arıkan Hukuk Bürosu. Tüm hakları saklıdır.
+            </p>
+            <Link
+              href="/gizlilik-politikasi"
+              className="text-xs underline transition-colors"
+              style={{ color: "rgba(244,237,228,0.4)" }}
+            >
+              Gizlilik Politikası ve KVKK Aydınlatma Metni
+            </Link>
+          </div>
           <p className="text-xs" style={{ color: "rgba(244,237,228,0.3)" }}>
             Bu sitedeki bilgiler hukuki danışmanlık niteliği taşımaz.
           </p>

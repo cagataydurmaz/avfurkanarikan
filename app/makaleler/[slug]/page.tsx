@@ -40,7 +40,7 @@ export default async function MakalePage({ params }: Props) {
 
   if (!post) notFound();
 
-  const jsonLd = [
+  const jsonLd: object[] = [
     {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -84,6 +84,18 @@ export default async function MakalePage({ params }: Props) {
       ],
     },
   ];
+
+  if (post.faq && post.faq.length > 0) {
+    jsonLd.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: post.faq.map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: f.answer },
+      })),
+    });
+  }
 
   return (
     <>

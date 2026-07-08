@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="hakkimda" className="py-20 md:py-28" style={{ backgroundColor: "#F4EDE4" }}>
@@ -13,33 +15,18 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           {/* Photo column */}
           <div className="flex flex-col items-center md:items-start">
-            {/* Photo placeholder */}
+            {/* Photo */}
             <div
-              className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden mb-6"
+              className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden mb-6 flex-shrink-0"
               style={{ border: "4px solid #C5A880" }}
             >
-              <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                <rect width="300" height="300" fill="#1B3A2F" />
-                <circle cx="150" cy="115" r="60" fill="#C5A880" opacity="0.5" />
-                <ellipse cx="150" cy="310" rx="110" ry="100" fill="#C5A880" opacity="0.4" />
-                <text
-                  x="150"
-                  y="130"
-                  textAnchor="middle"
-                  dominantBaseline="middle"
-                  fill="#F4EDE4"
-                  fontSize="64"
-                  fontFamily="Georgia, serif"
-                  fontWeight="700"
-                >
-                  FA
-                </text>
-              </svg>
-              <div className="absolute inset-0 flex items-end justify-center pb-4">
-                <span className="text-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
-                  Fotoğraf eklenecek
-                </span>
-              </div>
+              <Image
+                src="/furkan-arikan.jpg"
+                alt="Av. Furkan Arıkan"
+                fill
+                className="object-cover object-center"
+                priority
+              />
             </div>
 
             {/* Author byline - E-E-A-T */}
@@ -88,7 +75,7 @@ export default function About() {
                 davalarda dava takibi bu hizmetlerin başlıcalarıdır.
               </p>
               <p>
-                İstinye, Sarıyer&apos;de faaliyet gösteren büro, İstanbul&apos;un farklı ilçelerinden
+                Başakşehir&apos;de faaliyet gösteren büro, İstanbul&apos;un farklı ilçelerinden
                 müvekkillere hizmet sunmaktadır. Randevu bazlı çalışma prensibiyle, her dosyaya
                 birebir ilgi ve yeterli zaman ayrılmaktadır.
               </p>

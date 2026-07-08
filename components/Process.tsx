@@ -29,17 +29,16 @@ export default function Process() {
   return (
     <section id="surec" className="py-20 md:py-28" style={{ backgroundColor: "#F4EDE4" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
-        {/* Header */}
-        <div className="flex items-center gap-3 mb-3">
-          <div className="h-px w-10" style={{ backgroundColor: "#C5A880" }} aria-hidden="true" />
-          <span className="text-xs tracking-widest uppercase font-semibold" style={{ color: "#C5A880" }}>
+        {/* Header - centered, breaks from the split layout used elsewhere */}
+        <div className="flex flex-col items-center text-center mb-14">
+          <span
+            className="text-xs tracking-widest uppercase font-semibold px-3 py-1 rounded-full border mb-5"
+            style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.4)" }}
+          >
             Nasıl Çalışıyoruz
           </span>
-        </div>
-
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14">
           <h2
-            className="text-3xl md:text-4xl font-bold max-w-sm"
+            className="text-3xl md:text-4xl font-bold max-w-lg"
             style={{
               color: "#14342B",
               fontFamily: "var(--font-playfair), Georgia, serif",
@@ -47,7 +46,7 @@ export default function Process() {
           >
             Süreci Birlikte Yönetelim
           </h2>
-          <p className="mt-4 md:mt-0 text-sm max-w-xs" style={{ color: "#3D5A50" }}>
+          <p className="mt-4 text-sm max-w-md" style={{ color: "#3D5A50" }}>
             Şeffaf ve öngörülebilir bir süreç için her adımı önceden paylaşıyoruz.
           </p>
         </div>

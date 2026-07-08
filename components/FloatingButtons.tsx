@@ -5,7 +5,7 @@ export default function FloatingButtons() {
     <>
       {/* WhatsApp - bottom right */}
       <a
-        href="https://wa.me/905XXXXXXXXX?text=Merhaba%2C%20hukuki%20danışmanlık%20almak%20istiyorum."
+        href="https://wa.me/905354874099?text=Merhaba%2C%20hukuki%20danışmanlık%20almak%20istiyorum."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-5 z-50 flex items-center gap-2.5 px-4 py-3 rounded-full shadow-lg transition-transform hover:scale-105 active:scale-95"
@@ -20,7 +20,7 @@ export default function FloatingButtons() {
 
       {/* Phone - bottom left */}
       <a
-        href="tel:+905XXXXXXXXX"
+        href="tel:+905354874099"
         className="fixed bottom-6 left-5 z-50 flex items-center gap-2.5 px-4 py-3 rounded-full shadow-lg transition-transform hover:scale-105 active:scale-95"
         style={{ backgroundColor: "#14342B", color: "#C5A880", border: "1px solid #C5A880" }}
         aria-label="Telefon ile arayın"
