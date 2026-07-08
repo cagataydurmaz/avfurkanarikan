@@ -18,6 +18,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://avfurkanarikan.vercel.app"),
   title: {
     default: "Av. Furkan Arıkan | Hukuk Bürosu - İstanbul",
     template: "%s | Av. Furkan Arıkan Hukuk Bürosu",
