@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <section
@@ -45,25 +47,25 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      {/* Large faint scales-of-justice motif, echoes practice icon language */}
-      <svg
-        className="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-16 opacity-[0.05] pointer-events-none"
-        width="420"
-        height="420"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="#F4EDE4"
-        strokeWidth="0.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
-      >
-        <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
-        <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z" />
-        <path d="M7 21h10" />
-        <path d="M12 3v18" />
-        <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2" />
-      </svg>
+      {/* Portrait photo - right edge, desktop only, blended into background */}
+      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[42%] pointer-events-none" aria-hidden="true">
+        <Image
+          src="/furkan-kutuphane.jpg"
+          alt=""
+          fill
+          sizes="(min-width: 1024px) 42vw, 0px"
+          priority
+          className="object-cover"
+          style={{ objectPosition: "30% center", filter: "grayscale(0.35) contrast(1.05)" }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, #0d2420 0%, rgba(13,36,32,0.8) 18%, rgba(13,36,32,0.35) 48%, rgba(13,36,32,0.18) 100%)",
+          }}
+        />
+      </div>
 
       {/* Gold decorative lines */}
       <div

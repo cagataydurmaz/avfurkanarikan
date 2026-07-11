@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -89,8 +90,28 @@ export default async function PracticeAreaPage({ params }: Props) {
       <Navbar />
 
       {/* Header */}
-      <div className="pt-28 pb-14" style={{ background: "linear-gradient(135deg, #0d2420 0%, #14342B 100%)" }}>
-        <div className="max-w-6xl mx-auto px-5 md:px-8">
+      <div className="relative overflow-hidden pt-28 pb-14" style={{ background: "linear-gradient(135deg, #0d2420 0%, #14342B 100%)" }}>
+        {/* Photo - right edge, desktop only, blended into background */}
+        <div className="hidden lg:block absolute inset-y-0 right-0 w-[38%] pointer-events-none" aria-hidden="true">
+          <Image
+            src="/furkan-kitaplik.jpg"
+            alt=""
+            fill
+            sizes="(min-width: 1024px) 38vw, 0px"
+            priority
+            className="object-cover"
+            style={{ objectPosition: "50% 25%", filter: "grayscale(0.35) contrast(1.05)" }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(to right, #0d2420 0%, rgba(13,36,32,0.85) 22%, rgba(13,36,32,0.4) 55%, rgba(13,36,32,0.2) 100%)",
+            }}
+          />
+        </div>
+
+        <div className="relative max-w-6xl mx-auto px-5 md:px-8">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-xs mb-6" style={{ color: "rgba(197,168,128,0.7)" }} aria-label="Breadcrumb">
             <Link href="/" style={{ color: "rgba(197,168,128,0.7)" }} className="hover:text-[#C5A880] transition-colors">Ana Sayfa</Link>
