@@ -24,8 +24,8 @@ export default function About() {
                 src="/furkan-arikan.jpg"
                 alt="Av. Furkan Arıkan"
                 fill
+                sizes="(min-width: 768px) 288px, 224px"
                 className="object-cover object-center"
-                priority
               />
             </div>
 

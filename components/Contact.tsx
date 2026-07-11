@@ -1,4 +1,5 @@
 import ContactForm from "./ContactForm";
+import MapEmbed from "./MapEmbed";
 
 export default function Contact() {
   return (
@@ -49,17 +50,7 @@ export default function Contact() {
               className="rounded-lg overflow-hidden border"
               style={{ height: "200px", borderColor: "rgba(197,168,128,0.25)" }}
             >
-              <iframe
-                src="https://maps.google.com/maps?q=Başakşehir+Mahallesi+Erciyes+Sokak+No+15+Istanbul&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Av. Furkan Arıkan Hukuk Bürosu Konum"
-                aria-label="Ofis konumu haritası - Başakşehir Mh. Erciyes Sk. No:15/43 İstanbul"
-              />
+              <MapEmbed />
             </div>
 
             {/* Address */}
