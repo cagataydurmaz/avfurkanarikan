@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Gizlilik Politikası ve KVKK Aydınlatma Metni",
   description:
     "Av. Furkan Arıkan Hukuk Bürosu web sitesi kapsamında kişisel verilerin işlenmesine ilişkin KVKK aydınlatma metni ve gizlilik politikası.",
+  alternates: {
+    canonical: "/gizlilik-politikasi",
+  },
   robots: { index: true, follow: true },
 };
 
@@ -43,9 +46,9 @@ export default function GizlilikPolitikasiPage() {
           <article className="prose-law">
             <h2>Veri Sorumlusu</h2>
             <p>
-              6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, bu internet
+              6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) uyarınca, bu internet
               sitesi üzerinden veya site aracılığıyla iletişime geçilmesi halinde işlenen
-              kişisel verilere ilişkin veri sorumlusu Av. Furkan Arıkan'dır (İstanbul Barosu,
+              kişisel verilere ilişkin veri sorumlusu Av. Furkan Arıkan&apos;dır (İstanbul Barosu,
               Sicil No: 72621).
             </p>
 
@@ -104,7 +107,7 @@ export default function GizlilikPolitikasiPage() {
               <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
               <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
               <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
-              <li>KVKK'da öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme</li>
+              <li>KVKK&apos;da öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme</li>
               <li>İşlemlerin, verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
               <li>Aleyhine bir sonucun ortaya çıkmasına itiraz etme</li>
               <li>Kanuna aykırı işleme sebebiyle zararın giderilmesini talep etme</li>

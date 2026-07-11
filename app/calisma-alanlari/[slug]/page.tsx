@@ -21,11 +21,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: area.metaTitle,
     description: area.metaDescription,
+    alternates: {
+      canonical: `/calisma-alanlari/${area.slug}`,
+    },
     openGraph: {
       title: area.metaTitle,
       description: area.metaDescription,
       type: "website",
       locale: "tr_TR",
+      url: `/calisma-alanlari/${area.slug}`,
     },
   };
 }

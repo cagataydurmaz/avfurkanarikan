@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Hukuk Makaleleri",
   description:
     "Ceza, iş, aile ve gayrimenkul hukuku başlıklarında bilgilendirici makaleler. Av. Furkan Arıkan Hukuk Bürosu.",
+  alternates: {
+    canonical: "/makaleler",
+  },
 };
 
 const jsonLd = {

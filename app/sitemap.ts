@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { posts } from "@/lib/posts";
 import { practiceAreas } from "@/lib/practiceAreas";
 
-const BASE_URL = "https://avfurkanarikan.vercel.app";
+const BASE_URL = "https://furkanarikan.av.tr";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();

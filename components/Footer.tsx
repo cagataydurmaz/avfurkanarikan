@@ -87,18 +87,18 @@ export default function Footer() {
           style={{ borderTop: "1px solid rgba(197,168,128,0.15)" }}
         >
           <div className="flex flex-col md:flex-row md:items-center gap-1.5 md:gap-4">
-            <p className="text-xs" style={{ color: "rgba(244,237,228,0.4)" }}>
+            <p className="text-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
               &copy; {year} Av. Furkan Arıkan Hukuk Bürosu. Tüm hakları saklıdır.
             </p>
             <Link
               href="/gizlilik-politikasi"
               className="text-xs underline transition-colors"
-              style={{ color: "rgba(244,237,228,0.4)" }}
+              style={{ color: "rgba(244,237,228,0.6)" }}
             >
               Gizlilik Politikası ve KVKK Aydınlatma Metni
             </Link>
           </div>
-          <p className="text-xs" style={{ color: "rgba(244,237,228,0.3)" }}>
+          <p className="text-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
             Bu sitedeki bilgiler hukuki danışmanlık niteliği taşımaz.
           </p>
         </div>

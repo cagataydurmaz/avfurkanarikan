@@ -23,6 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.title,
     description: post.excerpt,
     authors: [{ name: "Av. Furkan Arıkan" }],
+    alternates: {
+      canonical: `/makaleler/${post.slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -30,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       authors: ["Av. Furkan Arıkan"],
       locale: "tr_TR",
+      url: `/makaleler/${post.slug}`,
     },
   };
 }
@@ -230,13 +234,13 @@ export default async function MakalePage({ params }: Props) {
               <p className="text-sm" style={{ color: "#3D5A50" }}>
                 Bu makale Av. Furkan Arıkan tarafından hazırlanmıştır.
                 Hukuki danışmanlık için{" "}
-                <a
+                <Link
                   href="/#iletisim"
                   className="font-medium underline"
                   style={{ color: "#14342B" }}
                 >
                   iletişim sayfasını
-                </a>{" "}
+                </Link>{" "}
                 ziyaret edebilirsiniz.
               </p>
             </div>

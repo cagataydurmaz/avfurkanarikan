@@ -18,7 +18,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://avfurkanarikan.vercel.app"),
+  metadataBase: new URL("https://furkanarikan.av.tr"),
   title: {
     default: "Av. Furkan Arıkan | Hukuk Bürosu - İstanbul",
     template: "%s | Av. Furkan Arıkan Hukuk Bürosu",
@@ -36,6 +36,9 @@ export const metadata: Metadata = {
     "hukuk bürosu",
   ],
   authors: [{ name: "Av. Furkan Arıkan" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Av. Furkan Arıkan | Hukuk Bürosu",
     description:
@@ -43,6 +46,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: "Av. Furkan Arıkan Hukuk Bürosu",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
   },
   robots: {
     index: true,
