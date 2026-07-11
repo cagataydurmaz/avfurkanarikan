@@ -72,9 +72,10 @@ export default function ContactForm() {
         <input
           id="cf-telefon"
           type="tel"
+          inputMode="numeric"
           required
           value={telefon}
-          onChange={(e) => setTelefon(e.target.value)}
+          onChange={(e) => setTelefon(e.target.value.replace(/[^0-9]/g, ""))}
           placeholder="05XX XXX XX XX"
           className="contact-form-field"
         />
