@@ -34,8 +34,7 @@ export default function Footer() {
               </p>
             </Link>
             <p className="text-sm leading-relaxed mt-3" style={{ color: "rgba(244,237,228,0.55)" }}>
-              Ceza, iş ve gayrimenkul hukukunda dava takibi ve hukuki danışmanlık.
-              İstanbul.
+              Ceza, iş ve gayrimenkul hukukunda İstanbul&apos;da dava takibi ve hukuki danışmanlık.
             </p>
             <p className="text-xs mt-3" style={{ color: "rgba(197,168,128,0.6)" }}>
               İstanbul Barosu - Sicil No: 72621

@@ -33,6 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       publishedTime: post.date,
       authors: ["Av. Furkan Arıkan"],
       locale: "tr_TR",
+      siteName: "Av. Furkan Arıkan Hukuk Bürosu",
       url: `/makaleler/${post.slug}`,
     },
   };

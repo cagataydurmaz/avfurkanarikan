@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Av. Furkan Arıkan Hukuk Bürosu",
   },
   description:
-    "Ceza, iş ve gayrimenkul hukukunda dava takibi ve hukuki danışmanlık hizmeti. İstanbul.",
+    "Ceza, iş ve gayrimenkul hukukunda İstanbul'da dava takibi ve hukuki danışmanlık hizmeti.",
   keywords: [
     "avukat",
     "İstanbul avukat",

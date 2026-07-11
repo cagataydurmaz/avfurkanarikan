@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: area.metaDescription,
       type: "website",
       locale: "tr_TR",
+      siteName: "Av. Furkan Arıkan Hukuk Bürosu",
       url: `/calisma-alanlari/${area.slug}`,
     },
   };

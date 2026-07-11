@@ -114,8 +114,7 @@ export default function Hero() {
           className="mt-6 text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
           style={{ color: "rgba(244,237,228,0.75)" }}
         >
-          Ceza, iş ve gayrimenkul hukukunda dava takibi ve hukuki danışmanlık.{" "}
-          İstanbul.
+          Ceza, iş ve gayrimenkul hukukunda İstanbul&apos;da dava takibi ve hukuki danışmanlık.
         </p>
 
         {/* CTA Buttons */}

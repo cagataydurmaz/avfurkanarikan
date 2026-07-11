@@ -24,9 +24,9 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "ceza-hukuku",
     title: "Ceza Hukuku",
-    metaTitle: "Ceza Hukuku | Av. Furkan Arıkan Hukuk Bürosu",
+    metaTitle: "Ceza Hukuku",
     metaDescription:
-      "Soruşturma ve kovuşturma aşamalarında müdafilik, tutukluluk itirazı, ifade ve sorgu süreçlerinde hukuki destek. İstanbul.",
+      "Soruşturma ve kovuşturma aşamalarında müdafilik, tutukluluk itirazı, ifade ve sorgu süreçlerinde İstanbul'da hukuki destek.",
     intro:
       "Ceza hukuku; devletin suç olarak tanımladığı eylemler karşısında bireylerin haklarını, yükümlülüklerini ve yargılanma sürecini düzenleyen hukuk dalıdır. Türkiye'de ceza yargılaması 5271 sayılı Ceza Muhakemesi Kanunu (CMK) çerçevesinde yürütülür. Soruşturma aşamasından kesinleşmiş mahkumiyet kararına kadar her aşamada hukuki destek alınabilir.",
     sections: [
@@ -98,9 +98,9 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "is-hukuku",
     title: "İş Hukuku",
-    metaTitle: "İş Hukuku | Av. Furkan Arıkan Hukuk Bürosu",
+    metaTitle: "İş Hukuku",
     metaDescription:
-      "Haksız fesih, kıdem ve ihbar tazminatı, işe iade davası, fazla mesai ve işçi hakları konularında hukuki destek. İstanbul.",
+      "Haksız fesih, kıdem ve ihbar tazminatı, işe iade davası, fazla mesai ve işçi hakları konularında İstanbul'da hukuki destek.",
     intro:
       "İş hukuku; işçi ile işveren arasındaki ilişkileri, iş sözleşmesinin kurulmasından sona ermesine dek tüm süreçleri düzenleyen hukuk dalıdır. Türkiye'de temel kaynak 4857 sayılı İş Kanunu'dur. Bunun yanı sıra 6356 sayılı Sendikalar ve Toplu İş Sözleşmesi Kanunu, 5510 sayılı Sosyal Sigortalar Kanunu ve Borçlar Kanunu'nun genel hükümleri de uygulanır.",
     sections: [
@@ -166,9 +166,9 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "gayrimenkul-hukuku",
     title: "Gayrimenkul Hukuku",
-    metaTitle: "Gayrimenkul Hukuku | Av. Furkan Arıkan Hukuk Bürosu",
+    metaTitle: "Gayrimenkul Hukuku",
     metaDescription:
-      "Kira uyuşmazlıkları, kiracı tahliyesi, tapu iptal ve tescil davaları, kat mülkiyeti hukuki destek. İstanbul.",
+      "Kira uyuşmazlıkları, kiracı tahliyesi, tapu iptal ve tescil davaları, kat mülkiyeti uyuşmazlıklarında İstanbul'da hukuki destek.",
     intro:
       "Gayrimenkul hukuku; taşınmaz mülkiyeti, kira ilişkileri ve yapı hukuku gibi konuları kapsayan hukuk alanıdır. Türkiye'de temel kaynaklar; 4721 sayılı Türk Medeni Kanunu, 6098 sayılı Türk Borçlar Kanunu ve 634 sayılı Kat Mülkiyeti Kanunu'dur. Kira sözleşmelerinde ayrıca TBK'nın kira hükümlerine ilişkin 299 ila 378. maddeleri uygulanır.",
     sections: [
@@ -240,9 +240,9 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "miras-hukuku",
     title: "Miras Hukuku",
-    metaTitle: "Miras Hukuku | Av. Furkan Arıkan Hukuk Bürosu",
+    metaTitle: "Miras Hukuku",
     metaDescription:
-      "Miras paylaşımı, saklı pay ve tenkis davası, vasiyetname düzenlenmesi, mirasın reddi konularında hukuki destek. İstanbul.",
+      "Miras paylaşımı, saklı pay ve tenkis davası, vasiyetname düzenlenmesi, mirasın reddi konularında İstanbul'da hukuki destek.",
     intro:
       "Miras hukuku; bir kişinin ölümü üzerine mal varlığının, hak ve borçlarının mirasçılarına geçişini ve bu geçişin koşullarını düzenleyen hukuk dalıdır. Türkiye'de temel kaynak 4721 sayılı Türk Medeni Kanunu'nun miras hükümlerine ilişkin bölümüdür (TMK m. 495-682). Veraset ilamı, vasiyetname, tenkis ve miras taksimi bu alanın başlıca konuları arasındadır.",
     sections: [
@@ -308,9 +308,9 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "borclar-hukuku",
     title: "Borçlar Hukuku",
-    metaTitle: "Borçlar Hukuku | Av. Furkan Arıkan Hukuk Bürosu",
+    metaTitle: "Borçlar Hukuku",
     metaDescription:
-      "Sözleşme uyuşmazlıkları, alacak ve tazminat davaları, icra takibi süreçlerinde hukuki destek. İstanbul.",
+      "Sözleşme uyuşmazlıkları, alacak ve tazminat davaları, icra takibi süreçlerinde İstanbul'da hukuki destek.",
     intro:
       "Borçlar hukuku; kişiler arasındaki borç ilişkilerini, sözleşmelerin kurulması ve sona ermesini, tazminat sorumluluğunu ve alacak ilişkilerini düzenleyen özel hukuk dalıdır. Türkiye'de temel kaynak 6098 sayılı Türk Borçlar Kanunu'dur (TBK). Söz konusu kanun; genel hükümler, sözleşmeden doğan borçlar ve sözleşme dışı sorumluluk olmak üzere üç ana bölümden oluşur.",
     sections: [
@@ -376,9 +376,9 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "aile-hukuku",
     title: "Aile Hukuku",
-    metaTitle: "Aile Hukuku | Av. Furkan Arıkan Hukuk Bürosu",
+    metaTitle: "Aile Hukuku",
     metaDescription:
-      "Boşanma davası, velayet, nafaka, mal rejimi tasfiyesi ve aile hukuku konularında hukuki destek. İstanbul.",
+      "Boşanma davası, velayet, nafaka, mal rejimi tasfiyesi ve aile hukuku konularında İstanbul'da hukuki destek.",
     intro:
       "Aile hukuku; evlilik, boşanma, velayet, nafaka ve mal rejimi gibi aile ilişkilerini düzenleyen hukuk dalıdır. Türkiye'de temel kaynak 4721 sayılı Türk Medeni Kanunu'nun aile hukukuna ilişkin bölümüdür (TMK m. 118-494). Aile mahkemelerinde görülen davalar kişilerin özel yaşamlarını doğrudan etkilediğinden sürecin dikkatle yürütülmesi önem taşır.",
     sections: [
