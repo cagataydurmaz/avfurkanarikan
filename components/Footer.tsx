@@ -67,8 +67,8 @@ export default function Footer() {
               İletişim
             </p>
             <address className="not-italic space-y-2" style={{ color: "rgba(244,237,228,0.65)" }}>
-              <p className="text-sm">Başakşehir Mh. Erciyes Sk. No:15/43</p>
-              <p className="text-sm">İstanbul</p>
+              <p className="text-sm">Sinanpaşa Mh. Şht. Asım Cd. No:37/12</p>
+              <p className="text-sm">Beşiktaş/İstanbul</p>
               <div className="h-px my-3" style={{ backgroundColor: "rgba(197,168,128,0.15)" }} aria-hidden="true" />
               <a href="tel:+905354874099" className="footer-address-link">
                 +90 535 487 40 99

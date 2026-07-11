@@ -58,8 +58,8 @@ export default function Contact() {
               icon={<LocationIcon />}
               title="Adres"
               lines={[
-                "Başakşehir Mh. Erciyes Sk. No:15/43",
-                "İstanbul",
+                "Sinanpaşa Mh. Şht. Asım Cd. No:37/12",
+                "Beşiktaş/İstanbul",
               ]}
             />
 

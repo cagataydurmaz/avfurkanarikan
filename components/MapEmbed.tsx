@@ -8,7 +8,7 @@ export default function MapEmbed() {
   if (loaded) {
     return (
       <iframe
-        src="https://maps.google.com/maps?q=Başakşehir+Mahallesi+Erciyes+Sokak+No+15+Istanbul&output=embed"
+        src="https://maps.google.com/maps?q=Sinanpaşa+Mahallesi+Şehit+Asım+Caddesi+No+37+Beşiktaş+Istanbul&output=embed"
         width="100%"
         height="100%"
         style={{ border: 0 }}
@@ -16,7 +16,7 @@ export default function MapEmbed() {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         title="Av. Furkan Arıkan Hukuk Bürosu Konum"
-        aria-label="Ofis konumu haritası - Başakşehir Mh. Erciyes Sk. No:15/43 İstanbul"
+        aria-label="Ofis konumu haritası - Sinanpaşa Mh. Şht. Asım Cd. No:37/12 Beşiktaş/İstanbul"
       />
     );
   }

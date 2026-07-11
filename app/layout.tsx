@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "iş hukuku avukatı",
     "gayrimenkul avukatı",
     "Furkan Arıkan",
-    "Başakşehir avukat",
+    "Beşiktaş avukat",
     "hukuk bürosu",
   ],
   authors: [{ name: "Av. Furkan Arıkan" }],
@@ -72,9 +72,10 @@ const jsonLd = {
       email: "av.furkanarikan1@gmail.com",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Başakşehir Mh. Erciyes Sk. No:15/43",
-        addressLocality: "İstanbul",
+        streetAddress: "Sinanpaşa Mh. Şht. Asım Cd. No:37/12",
+        addressLocality: "Beşiktaş",
         addressRegion: "İstanbul",
+        postalCode: "34330",
         addressCountry: "TR",
       },
       areaServed: {

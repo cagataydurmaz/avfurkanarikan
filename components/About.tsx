@@ -75,7 +75,7 @@ export default function About() {
                 davalarda dava takibi bu hizmetlerin başlıcalarıdır.
               </p>
               <p>
-                Başakşehir&apos;de faaliyet gösteren büro, İstanbul&apos;un farklı ilçelerinden
+                Beşiktaş&apos;ta faaliyet gösteren büro, İstanbul&apos;un farklı ilçelerinden
                 müvekkillere hizmet sunmaktadır. Randevu bazlı çalışma prensibiyle, her dosyaya
                 birebir ilgi ve yeterli zaman ayrılmaktadır.
               </p>
