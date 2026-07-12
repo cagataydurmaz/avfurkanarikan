@@ -1426,6 +1426,792 @@ export const posts: Post[] = [
 </div>
     `,
   },
+  {
+    slug: "icra-takibi-ve-borca-itiraz",
+    title: "İcra Takibi ve Borca İtiraz: Alacaklı ve Borçlu Açısından Süreç",
+    date: "2026-07-12",
+    dateFormatted: "12 Temmuz 2026",
+    excerpt:
+      "İlamlı ve ilamsız icra takibi arasındaki farklar, ödeme emrine itiraz süresi ve usulü, itirazın iptali ile itirazın kaldırılması yolları hakkında kapsamlı bilgi.",
+    category: "Borçlar Hukuku",
+    readingTime: 8,
+    faq: [
+      { question: "Ödeme emrine itiraz süresi kaçırılırsa ne olur?", answer: "7 günlük süre içinde itiraz edilmezse takip kesinleşir ve alacaklı haciz talep edebilir; borca itiraz hakkı kural olarak kaybedilir." },
+      { question: "İtirazın iptali davası ile itirazın kaldırılması arasındaki fark nedir?", answer: "İtirazın iptali genel mahkemede açılan bir dava türüyken, itirazın kaldırılması icra mahkemesinde daha basit yargılama usulüyle görülen bir yoldur; başvuru için elde belirli nitelikte belge bulunması gerekir." },
+      { question: "İcra takibine itiraz etmek takibi tamamen durdurur mu?", answer: "Evet, süresi içinde yapılan itiraz takibi kendiliğinden durdurur; alacaklının itirazın iptali veya kaldırılması yoluna başvurması gerekir." },
+      { question: "Borçlu mal beyanında bulunmazsa ne olur?", answer: "Süresinde mal beyanında bulunmayan borçlu hakkında icra mahkemesine şikayet yoluyla disiplin hapsi talep edilebilir." },
+      { question: "Haksız icra takibine karşı tazminat istenebilir mi?", answer: "Takibin haksız ve kötüniyetli olduğu ispatlanırsa, borçlu icra inkar tazminatı veya kötüniyet tazminatı talep edebilir." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">7 Gün</div>
+    <div class="stat-label">Ödeme emrine itiraz süresi <span class="law-ref">İİK m.62</span></div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">7 Gün</div>
+    <div class="stat-label">İtiraz etmeyen borçlunun mal beyanı süresi</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">1 Yıl</div>
+    <div class="stat-label">İtirazın iptali davası açma süresi <span class="law-ref">İİK m.67</span></div>
+  </div>
+</div>
+
+<h2>İcra Takibi Nedir?</h2>
+<p>
+  İcra takibi, bir alacağın devlet gücü kullanılarak zorla tahsil edilmesi amacıyla başlatılan
+  hukuki bir süreçtir. Alacaklı, icra dairesine başvurarak borçlu hakkında takip başlatabilir;
+  bu süreç 2004 sayılı İcra ve İflas Kanunu (İİK) hükümlerine tabidir.
+</p>
+
+<h2>İlamlı ve İlamsız İcra Takibi Arasındaki Fark</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Özellik</th>
+      <th>İlamlı İcra</th>
+      <th>İlamsız İcra</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dayanak</td>
+      <td>Mahkeme ilamı veya ilam niteliğindeki belge</td>
+      <td>Herhangi bir belgeye gerek yoktur</td>
+    </tr>
+    <tr>
+      <td>İtiraz imkanı</td>
+      <td>Sınırlıdır (icranın geri bırakılması)</td>
+      <td>7 gün içinde serbestçe itiraz edilebilir</td>
+    </tr>
+    <tr>
+      <td>İtirazın etkisi</td>
+      <td>Takibi kendiliğinden durdurmaz</td>
+      <td>Takibi kendiliğinden durdurur</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Ödeme Emrine İtiraz Nasıl Yapılır?</h2>
+<p>
+  İlamsız icra takibinde borçluya gönderilen ödeme emrinin tebliğinden itibaren 7 gün içinde
+  icra dairesine yazılı veya sözlü beyanla itiraz edilebilir. İtiraz, borcun tamamına veya bir
+  kısmına, ayrıca imzaya (borçlu senedin altındaki imzayı kabul etmiyorsa) yönelik olabilir.
+</p>
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="step-text"><strong>Ödeme Emrinin Tebliği</strong>İcra dairesi tarafından düzenlenen ödeme emri borçluya tebliğ edilir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="step-text"><strong>İtiraz Dilekçesinin Hazırlanması</strong>Borca veya imzaya itiraz gerekçesi belirtilir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="step-text"><strong>İcra Dairesine Başvuru</strong>İtiraz, 7 günlük süre içinde icra dairesine bildirilir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="step-text"><strong>Takibin Durması</strong>Süresinde yapılan itiraz üzerine takip kendiliğinden durur.</div>
+  </div>
+</div>
+
+<div class="highlight-box">
+  <strong>Süre Uyarısı</strong>
+  7 günlük itiraz süresi hak düşürücü niteliktedir. Süre geçirildikten sonra yapılan itirazlar
+  dikkate alınmaz ve takip kesinleşerek haciz aşamasına geçilebilir.
+</div>
+
+<h2>İtirazın İptali ve İtirazın Kaldırılması</h2>
+<p>
+  Borçlunun itirazı üzerine duran takibe devam edebilmek için alacaklının iki yoldan birini
+  seçmesi gerekir:
+</p>
+<ul>
+  <li><strong>İtirazın iptali davası:</strong> Genel mahkemede açılan, itirazın haksızlığının tam yargılamayla tespit edildiği bir davadır. İtirazın tebliğinden itibaren 1 yıl içinde açılmalıdır.</li>
+  <li><strong>İtirazın kaldırılması:</strong> Alacaklının elinde imzası ikrar edilmiş bir belge veya kambiyo senedi (çek, senet, poliçe) varsa icra mahkemesinde daha hızlı işleyen bu yola başvurulabilir.</li>
+</ul>
+
+<h2>Borca İtiraz Sonrası Süreç Nasıl İşler?</h2>
+<p>
+  İtiraz kesin bir çözüm değil, sürecin bir aşamasıdır. Alacaklı itirazın iptali veya kaldırılması
+  yoluna başvurmazsa takip fiilen sona erer. Yargılama sonucunda itirazın haksız bulunması halinde
+  borçlu, alacağın belirli bir oranı kadar icra inkar tazminatına mahkum edilebilir.
+</p>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Ödeme emrine itiraz süresi kaçırılırsa ne olur?</p>
+  <p class="faq-answer">7 günlük süre içinde itiraz edilmezse takip kesinleşir ve alacaklı haciz talep edebilir; borca itiraz hakkı kural olarak kaybedilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">İtirazın iptali davası ile itirazın kaldırılması arasındaki fark nedir?</p>
+  <p class="faq-answer">İtirazın iptali genel mahkemede açılan bir dava türüyken, itirazın kaldırılması icra mahkemesinde daha basit yargılama usulüyle görülen bir yoldur; başvuru için elde belirli nitelikte belge bulunması gerekir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">İcra takibine itiraz etmek takibi tamamen durdurur mu?</p>
+  <p class="faq-answer">Evet, süresi içinde yapılan itiraz takibi kendiliğinden durdurur; alacaklının itirazın iptali veya kaldırılması yoluna başvurması gerekir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Borçlu mal beyanında bulunmazsa ne olur?</p>
+  <p class="faq-answer">Süresinde mal beyanında bulunmayan borçlu hakkında icra mahkemesine şikayet yoluyla disiplin hapsi talep edilebilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Haksız icra takibine karşı tazminat istenebilir mi?</p>
+  <p class="faq-answer">Takibin haksız ve kötüniyetli olduğu ispatlanırsa, borçlu icra inkar tazminatı veya kötüniyet tazminatı talep edebilir.</p>
+</div>
+    `,
+  },
+  {
+    slug: "ortakligin-giderilmesi-davasi",
+    title: "Ortaklığın Giderilmesi (İzale-i Şüyu) Davası Nasıl Açılır?",
+    date: "2026-07-11",
+    dateFormatted: "11 Temmuz 2026",
+    excerpt:
+      "Paylı veya elbirliği mülkiyetindeki bir taşınmazda ortaklığın giderilmesi davası nasıl açılır, aynen taksim ile satış yoluyla giderilme arasındaki fark ve satış sürecinde malın değerinin korunması.",
+    category: "Gayrimenkul Hukuku",
+    readingTime: 7,
+    faq: [
+      { question: "Ortaklığın giderilmesi davasını kimler açabilir?", answer: "Paylı veya elbirliği mülkiyetindeki taşınmazın paydaşlarından her biri, diğer paydaşlara karşı bu davayı açabilir." },
+      { question: "Aynen taksim her zaman mümkün müdür?", answer: "Hayır. Taşınmazın fiziksel olarak bölünmesi mümkün değilse veya bölünme değerinde önemli azalmaya yol açacaksa mahkeme satış yoluyla giderilmeye karar verir." },
+      { question: "Satış hangi yöntemle yapılır?", answer: "Kural olarak açık artırma yoluyla yapılır; paydaşlar kendi aralarında pazarlıkla satışı da kararlaştırabilir." },
+      { question: "Kıymet takdirine itiraz edilebilir mi?", answer: "Evet, bilirkişi tarafından belirlenen değere karşı, raporun tebliğinden itibaren yasal süre içinde itiraz edilebilir." },
+      { question: "Dava süresince taşınmazın satılması engellenebilir mi?", answer: "Davanın açılmasıyla birlikte taşınmaz üzerine tapuya şerh konulması talep edilerek üçüncü kişilere satışın önüne geçilebilir." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">Sulh Hukuk</div>
+    <div class="stat-label">Görevli mahkeme <span class="law-ref">TMK m.699</span></div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">2</div>
+    <div class="stat-label">Giderilme yöntemi: aynen taksim veya satış</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Bilirkişi</div>
+    <div class="stat-label">Değer tespiti mahkemece atanan bilirkişilerce yapılır</div>
+  </div>
+</div>
+
+<h2>Ortaklığın Giderilmesi Davası Nedir?</h2>
+<p>
+  Ortaklığın giderilmesi (izale-i şüyu) davası, paylı mülkiyet veya elbirliği mülkiyetine konu
+  bir taşınmaz ya da taşınırdaki ortaklığın sona erdirilmesi amacıyla açılan bir davadır.
+  Miras yoluyla birden fazla kişiye geçen taşınmazlarda veya birlikte satın alınan mülklerde
+  sıkça başvurulan bir yoldur. Görevli mahkeme sulh hukuk mahkemesidir.
+</p>
+
+<h2>Aynen Taksim ile Satış Yoluyla Giderilme Arasındaki Fark</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Yöntem</th>
+      <th>Uygulandığı Durum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aynen taksim</td>
+      <td>Taşınmaz, değerinde önemli bir azalma olmaksızın fiziksel olarak paylara bölünebiliyorsa uygulanır.</td>
+    </tr>
+    <tr>
+      <td>Satış yoluyla giderilme</td>
+      <td>Fiziksel bölünme mümkün değilse veya paydaşlar taksimde anlaşamıyorsa, taşınmaz satılarak bedeli paydaşlar arasında paylaştırılır.</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  Uygulamada, özellikle konut ve işyerlerinde fiziksel bölünme çoğunlukla mümkün olmadığından
+  satış yoluyla giderilme daha sık uygulanan yöntemdir.
+</p>
+
+<h2>Satış Sürecinde Malın Değerinin Korunması</h2>
+<p>
+  Satış kararı verildiğinde taşınmazın değeri, mahkemece atanan bilirkişiler tarafından tespit
+  edilir. Bu kıymet takdirine karşı ilgililer, raporun tebliğinden itibaren yasal süre içinde
+  itiraz edebilir. Satışın rayiç değerin altında gerçekleşmesi, paydaşların zarar görmesine yol
+  açabileceğinden kıymet takdiri aşamasının doğru şekilde takip edilmesi önem taşır.
+</p>
+<div class="highlight-box">
+  <strong>Düşük Bedelle Satış Riski</strong>
+  Kıymet takdirine süresinde itiraz edilmemesi veya satış ilanı ve ihale sürecindeki usul
+  hatalarının fark edilmemesi, taşınmazın gerçek değerinin altında satılmasına yol açabilir.
+  İhalenin feshi davası bu tür usulsüzlüklere karşı başvurulabilecek bir yoldur.
+</div>
+
+<h2>Dava Süreci Nasıl İşler?</h2>
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="step-text"><strong>Dava Açılması</strong>Taşınmazın bulunduğu yer sulh hukuk mahkemesinde dava açılır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="step-text"><strong>Taksim İmkanının Değerlendirilmesi</strong>Mahkeme, aynen taksimin mümkün olup olmadığını bilirkişi aracılığıyla inceler.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="step-text"><strong>Kıymet Takdiri</strong>Satışa karar verilirse taşınmazın güncel değeri tespit edilir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="step-text"><strong>Satış ve Paylaştırma</strong>İhale yoluyla satış gerçekleştirilir, bedel paydaşlar arasında pay oranına göre dağıtılır.</div>
+  </div>
+</div>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Ortaklığın giderilmesi davasını kimler açabilir?</p>
+  <p class="faq-answer">Paylı veya elbirliği mülkiyetindeki taşınmazın paydaşlarından her biri, diğer paydaşlara karşı bu davayı açabilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Aynen taksim her zaman mümkün müdür?</p>
+  <p class="faq-answer">Hayır. Taşınmazın fiziksel olarak bölünmesi mümkün değilse veya bölünme değerinde önemli azalmaya yol açacaksa mahkeme satış yoluyla giderilmeye karar verir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Satış hangi yöntemle yapılır?</p>
+  <p class="faq-answer">Kural olarak açık artırma yoluyla yapılır; paydaşlar kendi aralarında pazarlıkla satışı da kararlaştırabilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Kıymet takdirine itiraz edilebilir mi?</p>
+  <p class="faq-answer">Evet, bilirkişi tarafından belirlenen değere karşı, raporun tebliğinden itibaren yasal süre içinde itiraz edilebilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Dava süresince taşınmazın satılması engellenebilir mi?</p>
+  <p class="faq-answer">Davanın açılmasıyla birlikte taşınmaz üzerine tapuya şerh konulması talep edilerek üçüncü kişilere satışın önüne geçilebilir.</p>
+</div>
+    `,
+  },
+  {
+    slug: "bosanma-sureci-bilinmesi-gerekenler",
+    title: "Boşanma Süreci: Aşamalar, Gerekli Belgeler ve Süre",
+    date: "2026-07-09",
+    dateFormatted: "9 Temmuz 2026",
+    excerpt:
+      "Anlaşmalı ve çekişmeli boşanma süreçleri hangi aşamalardan oluşur, hangi belgeler gerekir, dava ne kadar sürer? Boşanma sürecinin bütününe dair pratik bilgiler.",
+    category: "Aile Hukuku",
+    readingTime: 8,
+    faq: [
+      { question: "Anlaşmalı boşanma ile çekişmeli boşanma arasındaki temel fark nedir?", answer: "Anlaşmalı boşanmada taraflar tüm sonuçlar üzerinde mutabıktır ve tek celsede sonuçlanabilir; çekişmeli boşanmada taraflar anlaşamaz ve deliller üzerinden yargılama yapılır." },
+      { question: "Boşanma davası açmak için evlilik süresi şartı var mı?", answer: "Anlaşmalı boşanma için evliliğin en az 1 yıl sürmüş olması gerekir; çekişmeli boşanmada böyle bir süre şartı aranmaz." },
+      { question: "Boşanma davası hangi mahkemede açılır?", answer: "Eşlerden birinin yerleşim yeri veya davadan önceki son 6 aydır birlikte oturulan yer aile mahkemesinde açılır." },
+      { question: "Boşanma kararı kesinleşince ne olur?", answer: "Evlilik birliği sona erer, kadının evlilik öncesi soyadını kullanma hakkı doğar ve mal rejimi tasfiyesi süreci başlayabilir." },
+      { question: "Dava sırasında eşler ayrı yaşamak zorunda mı?", answer: "Zorunlu değildir, ancak uygulamada dava süresince ayrı yaşama tercih edilmektedir; şiddetli geçimsizlik hallerinde tedbir kararları da talep edilebilir." },
+      { question: "Boşanma protokolü sonradan değiştirilebilir mi?", answer: "Kesinleşmiş protokol kural olarak bağlayıcıdır; ancak nafaka ve velayet gibi bazı hususlarda şartların değişmesi halinde ayrı davalarla güncelleme talep edilebilir." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">1 Yıl</div>
+    <div class="stat-label">Anlaşmalı boşanma için gereken minimum evlilik süresi</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">1-2 Celse</div>
+    <div class="stat-label">Anlaşmalı boşanmada ortalama duruşma sayısı</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Aile Mahkemesi</div>
+    <div class="stat-label">Görevli mahkeme <span class="law-ref">TMK m.166 vd.</span></div>
+  </div>
+</div>
+
+<h2>Boşanma Süreci Nasıl Başlar?</h2>
+<p>
+  Boşanma süreci, taraflardan birinin veya her ikisinin birlikte yetkili aile mahkemesine
+  dava dilekçesi ya da anlaşmalı boşanma protokolüyle başvurmasıyla başlar. Sürecin nasıl
+  ilerleyeceği büyük ölçüde tarafların anlaşmalı ya da çekişmeli bir yol izlemesine bağlıdır.
+</p>
+
+<h2>Anlaşmalı ve Çekişmeli Boşanma Karşılaştırması</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Özellik</th>
+      <th>Anlaşmalı Boşanma</th>
+      <th>Çekişmeli Boşanma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Süre şartı</td>
+      <td>Evliliğin en az 1 yıl sürmüş olması gerekir</td>
+      <td>Süre şartı aranmaz</td>
+    </tr>
+    <tr>
+      <td>Duruşma sayısı</td>
+      <td>Genellikle 1 celse</td>
+      <td>Delil ve tanık durumuna göre birden fazla celse</td>
+    </tr>
+    <tr>
+      <td>Temel belge</td>
+      <td>Taraflarca imzalanmış protokol</td>
+      <td>Dava dilekçesi ve deliller</td>
+    </tr>
+    <tr>
+      <td>Ortalama süre</td>
+      <td>Birkaç hafta - birkaç ay</td>
+      <td>Mahkemenin iş yüküne göre değişmekle birlikte daha uzun sürebilir</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Boşanma Davası İçin Gerekli Belgeler</h2>
+<ul>
+  <li>Kimlik belgesi ve nüfus kayıt örneği</li>
+  <li>Evlilik cüzdanı fotokopisi</li>
+  <li>Anlaşmalı boşanmada taraflarca imzalanmış protokol</li>
+  <li>Çekişmeli boşanmada kusur ve taleplere ilişkin deliller (yazışmalar, tanık listesi, banka kayıtları vb.)</li>
+  <li>Varsa mal rejimi tasfiyesine ilişkin belgeler (tapu, araç ruhsatı, hesap ekstresi)</li>
+</ul>
+
+<div class="highlight-box">
+  <strong>Protokolün Kapsamı</strong>
+  Anlaşmalı boşanma protokolünde velayet, nafaka, mal rejimi tasfiyesi ve tazminat gibi
+  hususların tamamının açıkça düzenlenmesi gerekir. Eksik veya belirsiz bırakılan hususlar,
+  hakimin protokolü onaylamamasına ve sürecin çekişmeli boşanmaya dönüşmesine yol açabilir.
+</div>
+
+<h2>Çekişmeli Boşanmada Süreç Nasıl İlerler?</h2>
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="step-text"><strong>Dava Dilekçesinin Hazırlanması</strong>Boşanma sebebi, kusur iddiaları ve talepler (velayet, nafaka, tazminat) dilekçede belirtilir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="step-text"><strong>Cevap Dilekçesi</strong>Davalı taraf, kendisine tebliğ edilen dilekçeye süresi içinde cevap verir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="step-text"><strong>Delillerin Toplanması</strong>Tanık dinlenir, varsa bilirkişi (örneğin sosyal inceleme) raporu alınır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="step-text"><strong>Karar</strong>Mahkeme, kusur, velayet, nafaka ve tazminat hususlarında kararını verir.</div>
+  </div>
+</div>
+
+<h2>Boşanma Sonrası Süreç</h2>
+<p>
+  Boşanma kararının kesinleşmesiyle evlilik birliği sona erer. Bu aşamadan sonra nafaka ve
+  velayet düzenlemeleri yürürlüğe girer, mal rejimi tasfiyesi ayrı bir dava konusu olabilir.
+  Boşanmaya bağlı velayet ve nafaka konularındaki ayrıntılar site içindeki ilgili makalelerde
+  ayrıca ele alınmaktadır.
+</p>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Anlaşmalı boşanma ile çekişmeli boşanma arasındaki temel fark nedir?</p>
+  <p class="faq-answer">Anlaşmalı boşanmada taraflar tüm sonuçlar üzerinde mutabıktır ve tek celsede sonuçlanabilir; çekişmeli boşanmada taraflar anlaşamaz ve deliller üzerinden yargılama yapılır.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Boşanma davası açmak için evlilik süresi şartı var mı?</p>
+  <p class="faq-answer">Anlaşmalı boşanma için evliliğin en az 1 yıl sürmüş olması gerekir; çekişmeli boşanmada böyle bir süre şartı aranmaz.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Boşanma davası hangi mahkemede açılır?</p>
+  <p class="faq-answer">Eşlerden birinin yerleşim yeri veya davadan önceki son 6 aydır birlikte oturulan yer aile mahkemesinde açılır.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Boşanma kararı kesinleşince ne olur?</p>
+  <p class="faq-answer">Evlilik birliği sona erer, kadının evlilik öncesi soyadını kullanma hakkı doğar ve mal rejimi tasfiyesi süreci başlayabilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Dava sırasında eşler ayrı yaşamak zorunda mı?</p>
+  <p class="faq-answer">Zorunlu değildir, ancak uygulamada dava süresince ayrı yaşama tercih edilmektedir; şiddetli geçimsizlik hallerinde tedbir kararları da talep edilebilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Boşanma protokolü sonradan değiştirilebilir mi?</p>
+  <p class="faq-answer">Kesinleşmiş protokol kural olarak bağlayıcıdır; ancak nafaka ve velayet gibi bazı hususlarda şartların değişmesi halinde ayrı davalarla güncelleme talep edilebilir.</p>
+</div>
+    `,
+  },
+  {
+    slug: "ziynet-esyasi-davasi",
+    title: "Düğünde Takılan Ziynet Eşyası (Altın) Kimindir? Ziynet Alacağı Davası",
+    date: "2026-07-08",
+    dateFormatted: "8 Temmuz 2026",
+    excerpt:
+      "Düğünde takılan altın ve ziynet eşyaları boşanmada kime kalır? Ziynet alacağı davasının şartları, ispat yükü ve yerleşik Yargıtay içtihatları çerçevesinde uygulanan temel ilkeler.",
+    category: "Aile Hukuku",
+    readingTime: 7,
+    faq: [
+      { question: "Düğünde takılan altınlar kime aittir?", answer: "Yerleşik Yargıtay içtihatlarına göre, aksi ispat edilmedikçe düğünde takılan ziynet eşyalarının kadına ait olduğu kabul edilir." },
+      { question: "Erkeğe takılan paralar (kolye, para) da bu kapsamda mıdır?", answer: "Doğrudan erkeğe takılan ziynetler kural olarak erkeğe ait sayılır; kime takıldığı taraflar ve tanık beyanlarıyla değerlendirilir." },
+      { question: "Ziynet eşyası davası boşanma davasından ayrı açılabilir mi?", answer: "Evet, ziynet alacağı davası boşanma davasıyla birlikte açılabileceği gibi ayrı bir dava olarak da açılabilir." },
+      { question: "Ziynetlerin evlilik sırasında bozdurulduğu iddia edilirse ne olur?", answer: "Ziynetlerin ailenin ortak ihtiyaçları için rızayla bozdurulduğunu ispat yükü, bunu iddia eden tarafa aittir." },
+      { question: "Ziynet alacağı davasında zamanaşımı var mıdır?", answer: "Ziynet eşyası iadesi istihkak niteliğinde bir talep olduğundan, genel zamanaşımı süreleri saklı kalmak kaydıyla evlilik birliği içinde zamanaşımı işlemeyeceği kabul edilmektedir; kesin süre için somut olayın değerlendirilmesi gerekir." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">Kadına Ait</div>
+    <div class="stat-label">Yerleşik içtihatta temel karine</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Ayrı Dava</div>
+    <div class="stat-label">Boşanmadan bağımsız açılabilir</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">İspat</div>
+    <div class="stat-label">Bozdurma/harcama iddiasını ileri süren ispatlamalıdır</div>
+  </div>
+</div>
+
+<h2>Ziynet Eşyası Nedir?</h2>
+<p>
+  Ziynet eşyası; düğün, nişan veya benzeri törenlerde takılan altın, bilezik, kolye, yüzük gibi
+  kıymetli eşyaları ifade eder. Türk hukukunda ziynet eşyaları, evlilik birliği içinde edinilen
+  diğer mallardan farklı bir kabul görür ve boşanma sürecinde ayrı bir alacak kalemi olarak
+  değerlendirilir.
+</p>
+
+<h2>Düğünde Takılan Altınlar Kime Aittir?</h2>
+<p>
+  Yerleşik Yargıtay içtihatlarında benimsenen temel ilke, aksi kanıtlanmadıkça düğünde takılan
+  ziynet eşyalarının kim tarafından takıldığına bakılmaksızın kadına bağışlanmış sayılacağı
+  yönündedir. Bu kabul, örf ve adet kurallarına dayanmaktadır; doğrudan erkeğe takılan ziynetler
+  ise kural olarak erkeğe ait kabul edilir.
+</p>
+
+<div class="highlight-box">
+  <strong>Aksi İspat Yükü</strong>
+  Ziynet eşyalarının evlilik birliğinin ortak ihtiyaçları için harcandığı veya bozdurulduğu
+  iddiası, bunu ileri süren tarafça (genellikle erkek eş) somut delillerle ispatlanmalıdır.
+  Salt beyan bu karineyi çürütmeye yeterli görülmemektedir.
+</div>
+
+<h2>Ziynet Alacağı Davasının Şartları</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Husus</th>
+      <th>Açıklama</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dava türü</td>
+      <td>Kişisel mala ilişkin istihkak (alacak) davasıdır, mal rejimi tasfiyesinden bağımsızdır</td>
+    </tr>
+    <tr>
+      <td>Açılabileceği zaman</td>
+      <td>Boşanma davasıyla birlikte veya ayrı bir dava olarak açılabilir</td>
+    </tr>
+    <tr>
+      <td>İspat aracı</td>
+      <td>Tanık beyanı, düğün fotoğraf ve videoları, örf ve adet</td>
+    </tr>
+    <tr>
+      <td>Talep</td>
+      <td>Ziynetin aynen iadesi veya bulunamıyorsa güncel bedelinin ödenmesi</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Ziynet Eşyası Davasında İspat Süreci Nasıl İşler?</h2>
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="step-text"><strong>Ziynetlerin Tespiti</strong>Düğünde takılan ziynetlerin türü ve miktarı tanık beyanı ve varsa görsellerle ortaya konur.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="step-text"><strong>Zilyetliğin Belirlenmesi</strong>Ziynetlerin dava tarihinde kimin elinde/zilyetliğinde olduğu değerlendirilir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="step-text"><strong>Karşı İddiaların Değerlendirilmesi</strong>Bozdurma veya harcama iddiası ileri sürülmüşse buna ilişkin deliller incelenir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="step-text"><strong>Karar</strong>Mahkeme, ziynetlerin aynen iadesine veya bedelinin ödenmesine karar verir.</div>
+  </div>
+</div>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Düğünde takılan altınlar kime aittir?</p>
+  <p class="faq-answer">Yerleşik Yargıtay içtihatlarına göre, aksi ispat edilmedikçe düğünde takılan ziynet eşyalarının kadına ait olduğu kabul edilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Erkeğe takılan paralar (kolye, para) da bu kapsamda mıdır?</p>
+  <p class="faq-answer">Doğrudan erkeğe takılan ziynetler kural olarak erkeğe ait sayılır; kime takıldığı taraflar ve tanık beyanlarıyla değerlendirilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Ziynet eşyası davası boşanma davasından ayrı açılabilir mi?</p>
+  <p class="faq-answer">Evet, ziynet alacağı davası boşanma davasıyla birlikte açılabileceği gibi ayrı bir dava olarak da açılabilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Ziynetlerin evlilik sırasında bozdurulduğu iddia edilirse ne olur?</p>
+  <p class="faq-answer">Ziynetlerin ailenin ortak ihtiyaçları için rızayla bozdurulduğunu ispat yükü, bunu iddia eden tarafa aittir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Ziynet alacağı davasında zamanaşımı var mıdır?</p>
+  <p class="faq-answer">Ziynet eşyası iadesi istihkak niteliğinde bir talep olduğundan, genel zamanaşımı süreleri saklı kalmak kaydıyla evlilik birliği içinde zamanaşımı işlemeyeceği kabul edilmektedir; kesin süre için somut olayın değerlendirilmesi gerekir.</p>
+</div>
+    `,
+  },
+  {
+    slug: "kira-bedeli-tespit-ve-uyarlama-davasi",
+    title: "Kira Bedeli Tespit ve Uyarlama Davaları Arasındaki Fark",
+    date: "2026-07-07",
+    dateFormatted: "7 Temmuz 2026",
+    excerpt:
+      "Kira bedeli tespit davası ile uyarlama davası birbirinden farklı hukuki müesseselerdir. Hangi durumda hangi davanın açılacağı, artış sınırları ve süreç hakkında bilgi.",
+    category: "Gayrimenkul Hukuku",
+    readingTime: 7,
+    faq: [
+      { question: "Kira bedeli tespit davası ne zaman açılır?", answer: "Taraflar yeni dönem kira bedelinde anlaşamazsa veya sözleşmede artış oranı belirlenmemişse, güncel kira bedelinin tespiti için açılır." },
+      { question: "5 yılını dolduran kira sözleşmelerinde farklı bir kural var mı?", answer: "Evet, 5 yılını dolduran kira ilişkilerinde hakim, TÜFE sınırına bağlı kalmaksızın taşınmazın rayiç bedelini de dikkate alarak kira bedelini belirleyebilir." },
+      { question: "Kira uyarlama davası hangi hallerde açılır?", answer: "Sözleşme kurulduktan sonra öngörülemeyen olağanüstü bir durum nedeniyle edimler arasındaki dengenin katlanılamaz şekilde bozulması halinde açılabilir." },
+      { question: "Tespit davası ile uyarlama davası birlikte açılabilir mi?", answer: "Farklı hukuki dayanaklara sahip olsalar da, somut olayın koşullarına göre taleplerin birlikte değerlendirilmesi mümkün olabilir." },
+      { question: "Kira artış oranının sözleşmede yazılı olması tespit davasını engeller mi?", answer: "Sözleşmede geçerli bir artış oranı belirlenmişse, bu oran TÜFE artış oranını aşmadığı sürece geçerlidir ve tespit davasına gerek kalmayabilir." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">TÜFE</div>
+    <div class="stat-label">Kira artışında üst sınır <span class="law-ref">TBK m.344</span></div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">5 Yıl</div>
+    <div class="stat-label">Rayiç bedel değerlendirmesi yapılabilecek süre</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Olağanüstü Hal</div>
+    <div class="stat-label">Uyarlama davasının temel şartı <span class="law-ref">TBK m.138</span></div>
+  </div>
+</div>
+
+<h2>Kira Bedeli Tespit Davası Nedir?</h2>
+<p>
+  Kira bedeli tespit davası, yeni kira döneminde uygulanacak kira bedelinin belirlenmesi
+  amacıyla açılan bir davadır. 6098 sayılı Türk Borçlar Kanunu'nun 344. maddesi uyarınca,
+  konut ve çatılı işyeri kiralarında bir önceki yılın kira bedeli, tüketici fiyat endeksindeki
+  (TÜFE) on iki aylık ortalamalara göre değişim oranını geçmeyecek şekilde artırılabilir.
+</p>
+
+<h2>Kira Bedeli Uyarlama Davası Nedir?</h2>
+<p>
+  Uyarlama davası ise TBK madde 138'de düzenlenen aşırı ifa güçlüğü hükmüne dayanır. Sözleşme
+  kurulduktan sonra öngörülemeyen olağanüstü bir durum (örneğin ciddi ekonomik dalgalanmalar)
+  nedeniyle edimler arasındaki denge, borçlunun aleyhine katlanılamayacak ölçüde bozulmuşsa
+  hakimden sözleşmenin yeni koşullara uyarlanması istenebilir.
+</p>
+
+<h2>Tespit ile Uyarlama Davası Karşılaştırması</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Özellik</th>
+      <th>Tespit Davası</th>
+      <th>Uyarlama Davası</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hukuki dayanak</td>
+      <td>TBK m.344</td>
+      <td>TBK m.138</td>
+    </tr>
+    <tr>
+      <td>Amaç</td>
+      <td>Yeni dönem kira bedelinin belirlenmesi</td>
+      <td>Olağanüstü koşullar nedeniyle sözleşmenin yeniden dengelenmesi</td>
+    </tr>
+    <tr>
+      <td>Sınır</td>
+      <td>Kural olarak TÜFE oranı (5 yıl sonrasında rayiç bedel de dikkate alınabilir)</td>
+      <td>Somut olayın koşullarına göre hakim takdir eder, sabit bir oran yoktur</td>
+    </tr>
+    <tr>
+      <td>Uygulama sıklığı</td>
+      <td>Her kira dönemi başında gündeme gelebilir</td>
+      <td>İstisnai, öngörülemeyen durumlarla sınırlıdır</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="highlight-box">
+  <strong>5 Yıllık Kira İlişkilerinde Özel Kural</strong>
+  Beş yıldan uzun süredir devam eden veya beş yıldan sonra yenilenen kira sözleşmelerinde,
+  hakim TÜFE artış oranıyla bağlı kalmaksızın taşınmazın durumunu, emsal kira bedellerini ve
+  hakkaniyeti gözeterek kira bedelini belirleyebilir.
+</div>
+
+<h2>Dava Süreci Nasıl İşler?</h2>
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="step-text"><strong>Talebin Belirlenmesi</strong>Yeni dönem kira bedelinin tespiti mi yoksa olağanüstü koşullar nedeniyle uyarlama mı isteneceği belirlenir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="step-text"><strong>Emsal Araştırması</strong>Bölgedeki emsal kira bedelleri ve TÜFE verileri toplanır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="step-text"><strong>Dava Açılması</strong>Taşınmazın bulunduğu yer sulh hukuk mahkemesinde dava açılır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="step-text"><strong>Bilirkişi İncelemesi ve Karar</strong>Mahkeme, bilirkişi raporu doğrultusunda yeni kira bedelini belirler.</div>
+  </div>
+</div>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Kira bedeli tespit davası ne zaman açılır?</p>
+  <p class="faq-answer">Taraflar yeni dönem kira bedelinde anlaşamazsa veya sözleşmede artış oranı belirlenmemişse, güncel kira bedelinin tespiti için açılır.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">5 yılını dolduran kira sözleşmelerinde farklı bir kural var mı?</p>
+  <p class="faq-answer">Evet, 5 yılını dolduran kira ilişkilerinde hakim, TÜFE sınırına bağlı kalmaksızın taşınmazın rayiç bedelini de dikkate alarak kira bedelini belirleyebilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Kira uyarlama davası hangi hallerde açılır?</p>
+  <p class="faq-answer">Sözleşme kurulduktan sonra öngörülemeyen olağanüstü bir durum nedeniyle edimler arasındaki dengenin katlanılamaz şekilde bozulması halinde açılabilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Tespit davası ile uyarlama davası birlikte açılabilir mi?</p>
+  <p class="faq-answer">Farklı hukuki dayanaklara sahip olsalar da, somut olayın koşullarına göre taleplerin birlikte değerlendirilmesi mümkün olabilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Kira artış oranının sözleşmede yazılı olması tespit davasını engeller mi?</p>
+  <p class="faq-answer">Sözleşmede geçerli bir artış oranı belirlenmişse, bu oran TÜFE artış oranını aşmadığı sürece geçerlidir ve tespit davasına gerek kalmayabilir.</p>
+</div>
+    `,
+  },
+  {
+    slug: "muris-muvazaasi-nedir",
+    title: "Muris Muvazaası Nedir? Mirasçıların Tapu İptal Davası Hakkı",
+    date: "2026-07-06",
+    dateFormatted: "6 Temmuz 2026",
+    excerpt:
+      "Mirasbırakanın, mirasçısını miras hakkından yoksun bırakmak amacıyla malını satış görünümü altında devretmesi muris muvazaası olarak adlandırılır. Bu durumda hangi dava açılabilir?",
+    category: "Miras Hukuku",
+    readingTime: 7,
+    faq: [
+      { question: "Muris muvazaası nedir?", answer: "Mirasbırakanın, mirasçısını miras hakkından yoksun bırakmak amacıyla asıl iradesi bağış olduğu halde tapuda satış gibi göstererek yaptığı devir işlemidir." },
+      { question: "Muris muvazaasına dayalı dava kim tarafından açılabilir?", answer: "Mirasbırakanın yasal mirasçılarından her biri, miras payı oranında bu davayı açabilir." },
+      { question: "Bu davada zamanaşımı var mıdır?", answer: "Muris muvazaasına dayalı tapu iptal davaları, kesin hükümsüzlük iddiasına dayandığından süreye tabi değildir; mirasbırakanın ölümünden uzun süre sonra da açılabilir." },
+      { question: "Muris muvazaası ile tenkis davası aynı şey midir?", answer: "Hayır. Muvazaa davası işlemin tamamen geçersizliğini, tenkis davası ise saklı payı ihlal eden kısmın kısmen iptalini amaçlar; farklı hukuki temellere dayanırlar." },
+      { question: "Devrin gerçek bir satış olduğu nasıl ispatlanır?", answer: "Devralan taraf, bedelin gerçekten ödendiğini banka kayıtları, tanık beyanları gibi delillerle ispatlayarak muvazaa iddiasını çürütebilir." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">Süresiz</div>
+    <div class="stat-label">Muvazaa davasında zamanaşımı uygulanmaz</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Yasal Mirasçı</div>
+    <div class="stat-label">Dava açma hakkına sahip kişi</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Tapu İptali</div>
+    <div class="stat-label">Davanın temel sonucu</div>
+  </div>
+</div>
+
+<h2>Muris Muvazaası Nedir?</h2>
+<p>
+  Muris muvazaası, mirasbırakanın sağlığında, mirasçısını miras hakkından yoksun bırakmak
+  amacıyla gerçek iradesi bağışlama olduğu halde bunu tapuda satış sözleşmesi gibi göstererek
+  taşınmazını bir başkasına (genellikle mirasçılardan birine) devretmesi durumunu ifade eder.
+  Bu, Türk hukukunda yerleşik içtihatlarla tanınan bir muvazaa (danışıklı işlem) türüdür.
+</p>
+
+<h2>Muris Muvazaasının Unsurları</h2>
+<ul>
+  <li>Mirasbırakan ile devralan arasında gerçek irade ile görünürdeki işlem arasında uyumsuzluk bulunmalıdır</li>
+  <li>Devrin asıl amacı, diğer mirasçıları miras hakkından yoksun bırakmak olmalıdır</li>
+  <li>Görünürdeki işlem (satış) ile gizli işlem (bağış) birbirinden farklı olmalıdır</li>
+</ul>
+
+<div class="highlight-box">
+  <strong>Muvazaa ile Tenkis Davası Arasındaki Fark</strong>
+  Muvazaa davası, işlemin baştan itibaren geçersiz (yok hükmünde) olduğunu ileri sürer ve
+  tapu kaydının tamamen iptalini amaçlar. Tenkis davası ise geçerli bir kazandırmanın saklı
+  payı aşan kısmının indirilmesini amaçlar. İki dava farklı hukuki temellere dayanır ve
+  sonuçları da farklıdır.
+</div>
+
+<h2>Muris Muvazaası ile Tenkis Davası Karşılaştırması</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Özellik</th>
+      <th>Muris Muvazaası Davası</th>
+      <th>Tenkis Davası</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dayanak</td>
+      <td>İşlemin muvazaalı (danışıklı) olması</td>
+      <td>Geçerli bir kazandırmanın saklı payı aşması</td>
+    </tr>
+    <tr>
+      <td>Sonuç</td>
+      <td>Tapu kaydının tamamen iptali</td>
+      <td>Saklı payı aşan kısmın tenkisi (indirilmesi)</td>
+    </tr>
+    <tr>
+      <td>Süre</td>
+      <td>Zamanaşımına tabi değildir</td>
+      <td>Belirli hak düşürücü sürelere tabidir</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Dava Süreci Nasıl İşler?</h2>
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="step-text"><strong>Devrin İncelenmesi</strong>Mirasbırakanın sağlığında yaptığı devir işlemi ve bedel durumu incelenir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="step-text"><strong>Muvazaa Delillerinin Toplanması</strong>Bedelin ödenmediğine, mirasbırakanın gerçek amacının bağış olduğuna ilişkin deliller (tanık, mali kayıtlar) toplanır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="step-text"><strong>Dava Açılması</strong>Taşınmazın bulunduğu yer asliye hukuk mahkemesinde tapu iptal ve tescil davası açılır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="step-text"><strong>Yargılama ve Karar</strong>Muvazaa ispatlanırsa tapu kaydı iptal edilir, taşınmaz miras payları oranında mirasçılara tescil edilir.</div>
+  </div>
+</div>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Muris muvazaası nedir?</p>
+  <p class="faq-answer">Mirasbırakanın, mirasçısını miras hakkından yoksun bırakmak amacıyla asıl iradesi bağış olduğu halde tapuda satış gibi göstererek yaptığı devir işlemidir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Muris muvazaasına dayalı dava kim tarafından açılabilir?</p>
+  <p class="faq-answer">Mirasbırakanın yasal mirasçılarından her biri, miras payı oranında bu davayı açabilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Bu davada zamanaşımı var mıdır?</p>
+  <p class="faq-answer">Muris muvazaasına dayalı tapu iptal davaları, kesin hükümsüzlük iddiasına dayandığından süreye tabi değildir; mirasbırakanın ölümünden uzun süre sonra da açılabilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Muris muvazaası ile tenkis davası aynı şey midir?</p>
+  <p class="faq-answer">Hayır. Muvazaa davası işlemin tamamen geçersizliğini, tenkis davası ise saklı payı ihlal eden kısmın kısmen iptalini amaçlar; farklı hukuki temellere dayanırlar.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Devrin gerçek bir satış olduğu nasıl ispatlanır?</p>
+  <p class="faq-answer">Devralan taraf, bedelin gerçekten ödendiğini banka kayıtları, tanık beyanları gibi delillerle ispatlayarak muvazaa iddiasını çürütebilir.</p>
+</div>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): Post | undefined {
