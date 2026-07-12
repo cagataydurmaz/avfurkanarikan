@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { PseoDistrict, PseoService } from "@/lib/pseo/types";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
@@ -80,13 +81,27 @@ export default function PseoPage({
 
         {/* 2. ABOUT */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
-          <div className="max-w-3xl mx-auto px-5 md:px-8">
-            <h2 className="text-2xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Av. Furkan Arıkan Hakkında
-            </h2>
-            <p className="text-base leading-relaxed" style={{ color: "#2D4A3E" }}>
-              {service.aboutParagraph}
-            </p>
+          <div className="max-w-3xl mx-auto px-5 md:px-8 flex flex-col sm:flex-row gap-6 items-start">
+            <div
+              className="relative w-20 h-20 rounded-full overflow-hidden flex-shrink-0"
+              style={{ border: "3px solid #C5A880" }}
+            >
+              <Image
+                src="/furkan-arikan.jpg"
+                alt="Av. Furkan Arıkan"
+                fill
+                sizes="80px"
+                className="object-cover object-center"
+              />
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                Av. Furkan Arıkan Hakkında
+              </h2>
+              <p className="text-base leading-relaxed" style={{ color: "#2D4A3E" }}>
+                {service.aboutParagraph}
+              </p>
+            </div>
           </div>
         </section>
 
