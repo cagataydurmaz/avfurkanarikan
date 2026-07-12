@@ -1,0 +1,33 @@
+import type { PseoDistrict } from "./types";
+
+export const sisli: PseoDistrict = {
+  slug: "sisli",
+  name: "Şişli",
+  locative: "Şişli'de",
+  ablative: "Şişli'den",
+  genitive: "Şişli'nin",
+  dative: "Şişli'ye",
+  courthouse: "İstanbul (Çağlayan) Adliyesi",
+  taxOffice: "Şişli Vergi Dairesi Müdürlüğü",
+  neighborhoods: [
+    "Şişli Merkez",
+    "Mecidiyeköy",
+    "Teşvikiye",
+    "Harbiye",
+    "Feriköy",
+    "Fulya",
+    "Esentepe",
+    "Gülbahar",
+    "Halaskargazi",
+    "Kuştepe",
+    "Maslak",
+    "Ayazağa",
+    "Cumhuriyet",
+    "Ergenekon",
+    "Halide Edib Adıvar",
+    "Meşrutiyet",
+  ],
+  transport: "Şişli-Mecidiyeköy M2 metro istasyonu (Yenikapı-Hacıosman hattı) üzerinden ulaşım sağlanır; Mecidiyeköy ve Gayrettepe'de metrobüs bağlantısı, ayrıca M7 hattına aktarma imkanı bulunur.",
+  officeNeighborhood: "",
+  isOfficeLocation: false,
+};

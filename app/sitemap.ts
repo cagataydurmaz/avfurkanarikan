@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { posts } from "@/lib/posts";
 import { practiceAreas } from "@/lib/practiceAreas";
 import { besiktasServices } from "@/lib/pseo/besiktasServices";
+import { sisliServices } from "@/lib/pseo/sisliServices";
 
 const BASE_URL = "https://furkanarikan.av.tr";
 
@@ -50,5 +51,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: service.slug === "avukat" ? 0.8 : 0.6,
   }));
 
-  return [...staticPages, ...practiceAreaPages, ...postPages, ...besiktasPseoPages];
+  const sisliPseoPages: MetadataRoute.Sitemap = sisliServices.map((service) => ({
+    url: `${BASE_URL}/${service.urlSlug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: service.slug === "avukat" ? 0.8 : 0.6,
+  }));
+
+  return [...staticPages, ...practiceAreaPages, ...postPages, ...besiktasPseoPages, ...sisliPseoPages];
 }
