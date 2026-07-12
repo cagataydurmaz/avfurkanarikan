@@ -37,4 +37,5 @@ export const besiktas: PseoDistrict = {
   transport: "Beşiktaş İskelesi üzerinden Üsküdar, Kadıköy, Kabataş ve Ortaköy hatlarına vapur bağlantısı bulunur; ilçe içi ulaşım büyük ölçüde otobüs hatlarıyla (22, 30D, 40T, 50L, DT1, U1, U2 ve benzeri) sağlanır.",
   officeNeighborhood: "Sinanpaşa",
   isOfficeLocation: true,
+  publishedDate: "2026-07-11",
 };

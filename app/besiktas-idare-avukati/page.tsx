@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     siteName: "Av. Furkan Arıkan Hukuk Bürosu",
     url: `/${service.urlSlug}`,
+    images: ["/opengraph-image"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: service.metaTitle,
+    description: service.metaDescription,
+    images: ["/opengraph-image"],
   },
 };
 

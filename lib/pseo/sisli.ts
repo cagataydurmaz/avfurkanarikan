@@ -30,4 +30,5 @@ export const sisli: PseoDistrict = {
   transport: "Şişli-Mecidiyeköy M2 metro istasyonu (Yenikapı-Hacıosman hattı) üzerinden ulaşım sağlanır; Mecidiyeköy ve Gayrettepe'de metrobüs bağlantısı, ayrıca M7 hattına aktarma imkanı bulunur.",
   officeNeighborhood: "",
   isOfficeLocation: false,
+  publishedDate: "2026-07-12",
 };

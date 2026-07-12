@@ -26,6 +26,7 @@ export type PseoDistrict = {
   transport: string;
   officeNeighborhood: string;
   isOfficeLocation: boolean;
+  publishedDate: string;
 };
 
 export type PseoService = {

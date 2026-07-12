@@ -107,8 +107,8 @@ export function buildPseoJsonLd(district: PseoDistrict, service: PseoService) {
       url: pageUrl,
       name: service.metaTitle,
       author: { "@id": `${BASE_URL}/#person` },
-      datePublished: "2026-07-11",
-      dateModified: "2026-07-11",
+      datePublished: district.publishedDate,
+      dateModified: district.publishedDate,
     },
   ];
 }
