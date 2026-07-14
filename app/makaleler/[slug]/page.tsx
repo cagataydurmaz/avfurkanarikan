@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import { posts, getPostBySlug } from "@/lib/posts";
+import { practiceAreas } from "@/lib/practiceAreas";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -44,6 +45,11 @@ export default async function MakalePage({ params }: Props) {
   const post = getPostBySlug(slug);
 
   if (!post) notFound();
+
+  const relatedPracticeArea = practiceAreas.find((area) => area.title === post.category);
+  const relatedPosts = posts
+    .filter((p) => p.category === post.category && p.slug !== post.slug)
+    .slice(0, 3);
 
   const jsonLd: object[] = [
     {
@@ -246,6 +252,48 @@ export default async function MakalePage({ params }: Props) {
               </p>
             </div>
           </div>
+
+          {/* Related practice area + articles */}
+          {(relatedPracticeArea || relatedPosts.length > 0) && (
+            <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
+              {relatedPracticeArea && (
+                <p className="text-sm mb-4" style={{ color: "#3D5A50" }}>
+                  Bu konu{" "}
+                  <Link
+                    href={`/calisma-alanlari/${relatedPracticeArea.slug}`}
+                    className="font-medium underline"
+                    style={{ color: "#14342B" }}
+                  >
+                    {relatedPracticeArea.title}
+                  </Link>{" "}
+                  çalışma alanı kapsamındadır.
+                </p>
+              )}
+              {relatedPosts.length > 0 && (
+                <>
+                  <p
+                    className="text-xs font-semibold uppercase tracking-wide mb-3"
+                    style={{ color: "#C5A880" }}
+                  >
+                    İlgili Makaleler
+                  </p>
+                  <ul className="space-y-2">
+                    {relatedPosts.map((p) => (
+                      <li key={p.slug}>
+                        <Link
+                          href={`/makaleler/${p.slug}`}
+                          className="text-sm font-medium underline"
+                          style={{ color: "#14342B" }}
+                        >
+                          {p.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+            </div>
+          )}
 
           {/* Back button */}
           <div className="mt-8">

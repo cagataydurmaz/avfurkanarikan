@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { PseoDistrict, PseoService } from "@/lib/pseo/types";
+import { getPostBySlug } from "@/lib/posts";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -15,6 +16,9 @@ export default function PseoPage({
   allServices: PseoService[];
 }) {
   const otherServices = allServices.filter((s) => s.slug !== service.slug);
+  const relatedPosts = service.relatedPostSlugs
+    .map((slug) => getPostBySlug(slug))
+    .filter((post): post is NonNullable<typeof post> => Boolean(post));
 
   return (
     <>
@@ -253,6 +257,30 @@ export default function PseoPage({
             </div>
           </div>
         </section>
+
+        {/* 9b. RELATED ARTICLES */}
+        {relatedPosts.length > 0 && (
+          <section className="py-14 md:py-20" style={{ backgroundColor: "#EBE0D4" }}>
+            <div className="max-w-3xl mx-auto px-5 md:px-8">
+              <h2 className="text-2xl font-bold mb-6" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                İlgili Makaleler
+              </h2>
+              <ul className="space-y-3">
+                {relatedPosts.map((post) => (
+                  <li key={post.slug}>
+                    <Link
+                      href={`/makaleler/${post.slug}`}
+                      className="text-sm font-medium underline"
+                      style={{ color: "#14342B" }}
+                    >
+                      {post.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        )}
 
         {/* 10. CONTACT */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#14342B" }}>

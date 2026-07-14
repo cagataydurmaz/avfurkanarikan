@@ -62,6 +62,7 @@ export const besiktasServices: PseoService[] = [
     howToTitle: "Beşiktaş'ta Avukatlık Hizmetinden Nasıl Yararlanılır?",
     howToSteps: genelSurec,
     crosslinkLabel: "Beşiktaş Avukat (Genel)",
+    relatedPostSlugs: ["bosanma-sureci-bilinmesi-gerekenler", "kidem-tazminati-hesaplama-2026", "icra-takibi-ve-borca-itiraz"],
   },
 
   // ─────────────────────────── BOŞANMA ───────────────────────────
@@ -116,6 +117,7 @@ export const besiktasServices: PseoService[] = [
       { name: "Duruşma ve Karar", text: "Duruşmada taraflar dinlenir, mahkeme kararını verir; karar kesinleştiğinde süreç tamamlanır." },
     ],
     crosslinkLabel: "Boşanma Avukatı",
+    relatedPostSlugs: ["bosanma-sureci-bilinmesi-gerekenler", "bosanma-davasinda-velayet", "bosanmada-nafaka-turleri"],
   },
 
   // ─────────────────────────── CEZA ───────────────────────────
@@ -170,6 +172,7 @@ export const besiktasServices: PseoService[] = [
       { name: "Karar ve Kanun Yolları", text: "Mahkeme kararının ardından gerekirse istinaf veya temyiz yoluna başvurulur." },
     ],
     crosslinkLabel: "Ceza Avukatı",
+    relatedPostSlugs: ["ceza-hukukunda-etkin-pismanlik", "tutukluluga-itiraz"],
   },
 
   // ─────────────────────────── GAYRİMENKUL ───────────────────────────
@@ -222,6 +225,7 @@ export const besiktasServices: PseoService[] = [
       { name: "Yargılama ve Karar", text: "Bilirkişi incelemesi ve duruşmaların ardından mahkeme kararını verir." },
     ],
     crosslinkLabel: "Gayrimenkul Avukatı",
+    relatedPostSlugs: ["tapu-iptali-ve-tescil-davasi", "ortakligin-giderilmesi-davasi"],
   },
 
   // ─────────────────────────── İCRA ───────────────────────────
@@ -274,6 +278,7 @@ export const besiktasServices: PseoService[] = [
       { name: "Haciz veya Tahsilat", text: "İtiraz edilmez veya itiraz sonuçlanırsa haciz ve tahsilat işlemlerine geçilir." },
     ],
     crosslinkLabel: "İcra Avukatı",
+    relatedPostSlugs: ["icra-takibi-ve-borca-itiraz"],
   },
 
   // ─────────────────────────── İDARE ───────────────────────────
@@ -325,6 +330,7 @@ export const besiktasServices: PseoService[] = [
       { name: "Dava Süreci", text: "İdare mahkemesi dosyayı inceler, gerekirse duruşma yapılır ve karar verilir." },
     ],
     crosslinkLabel: "İdare Avukatı",
+    relatedPostSlugs: [],
   },
 
   // ─────────────────────────── İŞ HUKUKU ───────────────────────────
@@ -377,6 +383,7 @@ export const besiktasServices: PseoService[] = [
       { name: "Yargılama ve Karar", text: "Mahkeme feshin geçerliliğini değerlendirir ve kararını verir." },
     ],
     crosslinkLabel: "İş Hukuku Avukatı",
+    relatedPostSlugs: ["kidem-tazminati-hesaplama-2026", "ise-iade-davasi"],
   },
 
   // ─────────────────────────── KİRA-TAHLİYE ───────────────────────────
@@ -427,6 +434,7 @@ export const besiktasServices: PseoService[] = [
       { name: "Tahliyenin Gerçekleştirilmesi", text: "Karar veya icra emri kesinleştiğinde tahliye işlemi yürütülür." },
     ],
     crosslinkLabel: "Kira ve Tahliye Avukatı",
+    relatedPostSlugs: ["kiracinin-tahliye-sureci", "kira-bedeli-tespit-ve-uyarlama-davasi"],
   },
 
   // ─────────────────────────── VERGİ ───────────────────────────
@@ -478,6 +486,7 @@ export const besiktasServices: PseoService[] = [
       { name: "Sonuçlandırma", text: "Mahkeme kararı veya uzlaşma tutanağı ile süreç sonuçlandırılır." },
     ],
     crosslinkLabel: "Vergi Avukatı",
+    relatedPostSlugs: [],
   },
 
   // ─────────────────────────── BORÇLAR ───────────────────────────
@@ -528,5 +537,6 @@ export const besiktasServices: PseoService[] = [
       { name: "Yargılama ve İcra", text: "Mahkeme kararının kesinleşmesinin ardından gerekirse icra takibi başlatılır." },
     ],
     crosslinkLabel: "Borçlar Hukuku Avukatı",
+    relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];

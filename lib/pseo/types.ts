@@ -46,4 +46,5 @@ export type PseoService = {
   howToTitle: string;
   howToSteps: PseoStep[];
   crosslinkLabel: string;
+  relatedPostSlugs: string[];
 };
