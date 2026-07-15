@@ -148,7 +148,7 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">{children}</body>
-      <GoogleAnalytics gaId="G-JQWD80KVTJ" />
+      <GoogleAnalytics gaId="G-4PDE3GQX22" />
     </html>
   );
 }
