@@ -5,6 +5,7 @@ import { getPostBySlug } from "@/lib/posts";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
 import FloatingButtons from "@/components/FloatingButtons";
+import TrackedLink from "@/components/TrackedLink";
 
 export default function PseoPage({
   district,
@@ -31,13 +32,15 @@ export default function PseoPage({
             </p>
             <p className="text-[10px] tracking-widest uppercase" style={{ color: "#C5A880" }}>Hukuk Bürosu</p>
           </Link>
-          <a
+          <TrackedLink
+            channel="phone"
+            label={`${district.slug}-${service.slug}-topbar`}
             href="tel:+905354874099"
             className="text-sm font-medium hidden sm:inline-flex items-center gap-2"
             style={{ color: "#C5A880" }}
           >
             +90 535 487 40 99
-          </a>
+          </TrackedLink>
         </div>
       </header>
 
@@ -58,7 +61,9 @@ export default function PseoPage({
               {service.heroSubtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
+              <TrackedLink
+                channel="whatsapp"
+                label={`${district.slug}-${service.slug}-hero`}
                 href="https://wa.me/905354874099?text=Merhaba%2C%20hukuki%20danışmanlık%20almak%20istiyorum."
                 target="_blank"
                 rel="noopener noreferrer"
@@ -66,14 +71,16 @@ export default function PseoPage({
                 style={{ backgroundColor: "#25D366", color: "#fff" }}
               >
                 WhatsApp ile Yazın
-              </a>
-              <a
+              </TrackedLink>
+              <TrackedLink
+                channel="phone"
+                label={`${district.slug}-${service.slug}-hero`}
                 href="tel:+905354874099"
                 className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm font-semibold border transition-all duration-300 ease-out hover:bg-white/10"
                 style={{ color: "#C5A880", borderColor: "#C5A880" }}
               >
                 Hemen Arayın
-              </a>
+              </TrackedLink>
             </div>
             <div className="mt-10 pt-6 inline-block" style={{ borderTop: "1px solid rgba(197,168,128,0.25)" }}>
               <p className="text-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
@@ -179,7 +186,9 @@ export default function PseoPage({
             <p className="text-sm font-semibold text-center sm:text-left" style={{ color: "#14342B" }}>
               {district.name} bölgesinde hukuki danışmanlık için iletişime geçebilirsiniz.
             </p>
-            <a
+            <TrackedLink
+              channel="whatsapp"
+              label={`${district.slug}-${service.slug}-midcta`}
               href="https://wa.me/905354874099?text=Merhaba%2C%20hukuki%20danışmanlık%20almak%20istiyorum."
               target="_blank"
               rel="noopener noreferrer"
@@ -187,7 +196,7 @@ export default function PseoPage({
               style={{ backgroundColor: "#14342B", color: "#F4EDE4" }}
             >
               WhatsApp ile Yazın
-            </a>
+            </TrackedLink>
           </div>
         </section>
 

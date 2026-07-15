@@ -5,6 +5,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
+import TrackedLink from "@/components/TrackedLink";
 import { practiceAreas, getPracticeAreaBySlug } from "@/lib/practiceAreas";
 
 interface Props {
@@ -245,7 +246,9 @@ export default async function PracticeAreaPage({ params }: Props) {
                   <p className="text-xs mb-5 leading-relaxed" style={{ color: "rgba(244,237,228,0.6)" }}>
                     Danışmanlık görüşmesi ücret karşılığı yapılmaktadır.
                   </p>
-                  <a
+                  <TrackedLink
+                    channel="whatsapp"
+                    label={`practice-area-${area.slug}`}
                     href="https://wa.me/905354874099?text=Merhaba%2C%20hukuki%20dan%C4%B1%C5%9Fmanl%C4%B1k%20almak%20istiyorum."
                     target="_blank"
                     rel="noopener noreferrer"
@@ -254,15 +257,17 @@ export default async function PracticeAreaPage({ params }: Props) {
                   >
                     <WhatsAppIcon />
                     WhatsApp ile Yazın
-                  </a>
-                  <a
+                  </TrackedLink>
+                  <TrackedLink
+                    channel="phone"
+                    label={`practice-area-${area.slug}`}
                     href="tel:+905354874099"
                     className="mt-3 flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-semibold border transition-all duration-300 hover:bg-white/10"
                     style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.4)" }}
                   >
                     <PhoneIcon />
                     +90 535 487 40 99
-                  </a>
+                  </TrackedLink>
                 </div>
 
                 {/* Related areas */}

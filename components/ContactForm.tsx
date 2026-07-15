@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 const konular = [
   "Ceza Hukuku",
@@ -30,6 +31,12 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    track("contact_click", {
+      channel: "whatsapp",
+      label: "contact-form",
+      page: window.location.pathname,
+      konu,
+    });
     const text = encodeURIComponent(buildMessage());
     window.open(`https://wa.me/905354874099?text=${text}`, "_blank", "noopener,noreferrer");
   };
@@ -38,6 +45,15 @@ export default function ContactForm() {
     const subject = encodeURIComponent(`Hukuki Danışmanlık Talebi - ${konu}`);
     const body = encodeURIComponent(buildMessage());
     return `mailto:av.furkanarikan1@gmail.com?subject=${subject}&body=${body}`;
+  };
+
+  const handleEmailClick = () => {
+    track("contact_click", {
+      channel: "email",
+      label: "contact-form",
+      page: window.location.pathname,
+      konu,
+    });
   };
 
   return (
@@ -132,6 +148,7 @@ export default function ContactForm() {
         </button>
         <a
           href={mailtoHref()}
+          onClick={handleEmailClick}
           className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold border transition-all duration-300 ease-out hover:bg-white/10"
           style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.4)" }}
         >

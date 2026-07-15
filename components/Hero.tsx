@@ -1,4 +1,5 @@
 import Image from "next/image";
+import TrackedLink from "./TrackedLink";
 
 export default function Hero() {
   return (
@@ -119,7 +120,9 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">
-          <a
+          <TrackedLink
+            channel="whatsapp"
+            label="hero"
             href="https://wa.me/905354874099?text=Merhaba%2C%20hukuki%20danışmanlık%20almak%20istiyorum."
             className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 ease-out hover:opacity-90 hover:scale-[1.02]"
             style={{ backgroundColor: "#25D366", color: "#fff" }}
@@ -129,8 +132,10 @@ export default function Hero() {
           >
             <WhatsAppIcon />
             WhatsApp ile Yazın
-          </a>
-          <a
+          </TrackedLink>
+          <TrackedLink
+            channel="phone"
+            label="hero"
             href="tel:+905354874099"
             className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-sm font-semibold border transition-all duration-300 ease-out hover:bg-white/10 hover:scale-[1.02]"
             style={{ color: "#C5A880", borderColor: "#C5A880" }}
@@ -138,7 +143,7 @@ export default function Hero() {
           >
             <PhoneIcon />
             Hemen Arayın
-          </a>
+          </TrackedLink>
         </div>
 
         {/* Scroll indicator */}

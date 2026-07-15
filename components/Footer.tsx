@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TrackedLink from "./TrackedLink";
 
 const navLinks = [
   { href: "/#hakkimda", label: "Hakkımda" },
@@ -70,12 +71,12 @@ export default function Footer() {
               <p className="text-sm">Sinanpaşa Mh. Şht. Asım Cd. No:37/12</p>
               <p className="text-sm">Beşiktaş/İstanbul</p>
               <div className="h-px my-3" style={{ backgroundColor: "rgba(197,168,128,0.15)" }} aria-hidden="true" />
-              <a href="tel:+905354874099" className="footer-address-link">
+              <TrackedLink channel="phone" label="footer" href="tel:+905354874099" className="footer-address-link">
                 +90 535 487 40 99
-              </a>
-              <a href="mailto:av.furkanarikan1@gmail.com" className="footer-address-link">
+              </TrackedLink>
+              <TrackedLink channel="email" label="footer" href="mailto:av.furkanarikan1@gmail.com" className="footer-address-link">
                 av.furkanarikan1@gmail.com
-              </a>
+              </TrackedLink>
             </address>
           </div>
         </div>

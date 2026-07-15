@@ -1,5 +1,6 @@
 import ContactForm from "./ContactForm";
 import MapEmbed from "./MapEmbed";
+import TrackedLink from "./TrackedLink";
 
 export default function Contact() {
   return (
@@ -74,7 +75,7 @@ export default function Contact() {
             />
 
             {/* Phone */}
-            <a href="tel:+905354874099" className="contact-card-link">
+            <TrackedLink channel="phone" label="contact-section" href="tel:+905354874099" className="contact-card-link">
               <div
                 className="w-10 h-10 flex items-center justify-center rounded flex-shrink-0"
                 style={{ backgroundColor: "rgba(197,168,128,0.15)" }}
@@ -89,10 +90,10 @@ export default function Contact() {
                   +90 535 487 40 99
                 </p>
               </div>
-            </a>
+            </TrackedLink>
 
             {/* Email */}
-            <a href="mailto:av.furkanarikan1@gmail.com" className="contact-card-link">
+            <TrackedLink channel="email" label="contact-section" href="mailto:av.furkanarikan1@gmail.com" className="contact-card-link">
               <div
                 className="w-10 h-10 flex items-center justify-center rounded flex-shrink-0"
                 style={{ backgroundColor: "rgba(197,168,128,0.15)" }}
@@ -107,7 +108,7 @@ export default function Contact() {
                   av.furkanarikan1@gmail.com
                 </p>
               </div>
-            </a>
+            </TrackedLink>
           </div>
         </div>
       </div>
