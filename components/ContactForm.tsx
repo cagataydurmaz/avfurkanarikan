@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { track } from "@vercel/analytics";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const konular = [
   "Ceza Hukuku",
@@ -31,7 +31,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    track("contact_click", {
+    sendGAEvent("event", "contact_click", {
       channel: "whatsapp",
       label: "contact-form",
       page: window.location.pathname,
@@ -48,7 +48,7 @@ export default function ContactForm() {
   };
 
   const handleEmailClick = () => {
-    track("contact_click", {
+    sendGAEvent("event", "contact_click", {
       channel: "email",
       label: "contact-form",
       page: window.location.pathname,

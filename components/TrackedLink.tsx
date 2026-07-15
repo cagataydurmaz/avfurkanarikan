@@ -1,6 +1,6 @@
 "use client";
 
-import { track } from "@vercel/analytics";
+import { sendGAEvent } from "@next/third-parties/google";
 import type { AnchorHTMLAttributes, MouseEvent, ReactNode } from "react";
 
 interface TrackedLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -11,7 +11,7 @@ interface TrackedLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
 
 export default function TrackedLink({ channel, label, onClick, children, ...rest }: TrackedLinkProps) {
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    track("contact_click", {
+    sendGAEvent("event", "contact_click", {
       channel,
       label,
       page: typeof window !== "undefined" ? window.location.pathname : "",
