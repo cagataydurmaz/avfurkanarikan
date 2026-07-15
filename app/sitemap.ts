@@ -5,8 +5,26 @@ import { besiktasServices } from "@/lib/pseo/besiktasServices";
 import { sisliServices } from "@/lib/pseo/sisliServices";
 import { beyogluServices } from "@/lib/pseo/beyogluServices";
 import { kagithaneServices } from "@/lib/pseo/kagithaneServices";
+import { fatihServices } from "@/lib/pseo/fatihServices";
+import { sariyerServices } from "@/lib/pseo/sariyerServices";
+import { eyupsultanServices } from "@/lib/pseo/eyupsultanServices";
+import { bayrampasaServices } from "@/lib/pseo/bayrampasaServices";
+import { arnavutkoyServices } from "@/lib/pseo/arnavutkoyServices";
+import type { PseoService } from "@/lib/pseo/types";
 
 const BASE_URL = "https://furkanarikan.av.tr";
+
+const allPseoServices: PseoService[] = [
+  ...besiktasServices,
+  ...sisliServices,
+  ...beyogluServices,
+  ...kagithaneServices,
+  ...fatihServices,
+  ...sariyerServices,
+  ...eyupsultanServices,
+  ...bayrampasaServices,
+  ...arnavutkoyServices,
+];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -46,33 +64,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  const besiktasPseoPages: MetadataRoute.Sitemap = besiktasServices.map((service) => ({
+  const pseoPages: MetadataRoute.Sitemap = allPseoServices.map((service) => ({
     url: `${BASE_URL}/${service.urlSlug}`,
     lastModified: now,
     changeFrequency: "monthly" as const,
     priority: service.slug === "avukat" ? 0.8 : 0.6,
   }));
 
-  const sisliPseoPages: MetadataRoute.Sitemap = sisliServices.map((service) => ({
-    url: `${BASE_URL}/${service.urlSlug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: service.slug === "avukat" ? 0.8 : 0.6,
-  }));
-
-  const beyogluPseoPages: MetadataRoute.Sitemap = beyogluServices.map((service) => ({
-    url: `${BASE_URL}/${service.urlSlug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: service.slug === "avukat" ? 0.8 : 0.6,
-  }));
-
-  const kagithanePseoPages: MetadataRoute.Sitemap = kagithaneServices.map((service) => ({
-    url: `${BASE_URL}/${service.urlSlug}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: service.slug === "avukat" ? 0.8 : 0.6,
-  }));
-
-  return [...staticPages, ...practiceAreaPages, ...postPages, ...besiktasPseoPages, ...sisliPseoPages, ...beyogluPseoPages, ...kagithanePseoPages];
+  return [...staticPages, ...practiceAreaPages, ...postPages, ...pseoPages];
 }
