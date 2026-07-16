@@ -250,11 +250,11 @@ export const besiktasServices: PseoService[] = [
     processSteps: genelSurec,
     servicesList: [
       "İlamlı ve ilamsız icra takibi başlatılması",
-      "Ödeme emrine itiraz ve itirazın iptali davaları",
+      "Borca veya imzaya itiraz dilekçelerinin hazırlanması",
       "Menkul ve gayrimenkul haczi işlemleri",
       "İhalenin feshi davaları",
       "İstihkak davaları",
-      "İflas ve konkordato süreçlerinde danışmanlık",
+      "Konkordato başvurusu ve iflasın ertelenmesi süreçlerinde danışmanlık",
     ],
     localParagraphs: [
       "Beşiktaş'ta yerleşik gerçek veya tüzel kişilere karşı başlatılacak icra takipleri, borçlunun yerleşim yerindeki veya sözleşmede belirlenen yetkili icra dairesinde yürütülür; bu takiplere ilişkin dava ve şikayetler İstanbul (Çağlayan) Adliyesi'ndeki icra mahkemelerinde görülür.",

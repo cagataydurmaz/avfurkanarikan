@@ -140,7 +140,7 @@ export const bayrampasaServices: PseoService[] = [
       "Soruşturma sürecinin takip edilmesi",
       "Tutukluluğa ve adli kontrole itiraz edilmesi",
       "Duruşmalarda savunmanın sunulması",
-      "İstinaf ve temyiz süreçlerinin yürütülmesi",
+      "Karara karşı üst mahkemelere başvuru dilekçelerinin hazırlanması",
       "Uzlaşma ve etkin pişmanlık konularında bilgilendirme",
     ],
     localParagraphs: [

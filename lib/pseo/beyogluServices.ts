@@ -341,7 +341,7 @@ export const beyogluServices: PseoService[] = [
       "İşe iade davası öncesi zorunlu arabuluculuk süreci",
       "Fazla mesai, hafta tatili ve yıllık izin alacaklarının tahsili",
       "Mobbing iddialarına dayalı hukuki süreçler",
-      "İş sözleşmesi ve ibraname metinlerinin düzenlenmesi",
+      "Çalışma koşullarına ilişkin sözleşme metinlerinin gözden geçirilmesi",
       "İş kazası kaynaklı tazminat taleplerinin takibi",
     ],
     localParagraphs: [

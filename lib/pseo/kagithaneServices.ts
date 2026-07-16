@@ -237,7 +237,7 @@ export const kagithaneServices: PseoService[] = [
     ],
     processSteps: genelSurec,
     servicesList: [
-      "İlamlı veya ilamsız icra takibinin başlatılması",
+      "Alacağa dayanak belge veya ilam üzerinden takip dosyası açılması",
       "Ödeme emrine itiraz ve itirazın iptali davası açılması",
       "Menkul ve gayrimenkul üzerinde haciz uygulanması",
       "İhalenin feshine ilişkin dava süreçleri",

@@ -20,7 +20,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş bulunan Furkan Arıkan, ceza, aile, gayrimenkul, iş, icra-iflas, idare, vergi ve borçlar hukuku dosyalarında Arnavutköy'deki müvekkillerine danışmanlık ve temsil hizmeti sunmaktadır. Randevu talepleri WhatsApp veya telefonla iletilebilir.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Ceza, aile, gayrimenkul, iş, icra-iflas, idare, vergi ve borçlar hukuku dosyalarında Arnavutköy'deki müvekkillerine danışmanlık ve temsil hizmeti sunar; randevu talepleri WhatsApp veya telefonla iletilebilir.",
     highlightCards: [
       { title: "Ceza Hukuku", description: "Soruşturma ve kovuşturma aşamalarında müdafilik." },
       { title: "Aile Hukuku", description: "Boşanma, velayet ve nafaka süreçlerinde temsil." },
@@ -76,7 +76,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve MEF Üniversitesi Hukuk Fakültesi'nden 2019'da mezun olmuş bulunan Furkan Arıkan, aile hukuku alanında Arnavutköy'deki müvekkillerine boşanma, velayet ve nafaka konularında temsil sağlamaktadır.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Aile hukuku alanında Arnavutköy'deki müvekkillerine boşanma, velayet ve nafaka konularında temsil sağlar.",
     highlightCards: [
       { title: "Anlaşmalı Süreç", description: "Protokolün eksiksiz hazırlanması ve tek duruşmalık takip." },
       { title: "Çekişmeli Süreç", description: "Kusur ve tazminat iddialarının delillendirilmesi." },
@@ -127,7 +127,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunu olan Furkan Arıkan, ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında Arnavutköy'deki müvekkillerine müdafilik yapmaktadır.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında Arnavutköy'deki müvekkillerine müdafilik yapar.",
     highlightCards: [
       { title: "Soruşturma Aşaması", description: "İfade ve gözaltı sürecinde hukuki destek." },
       { title: "Kovuşturma Takibi", description: "Duruşma katılımı ve delillerin değerlendirilmesi." },
@@ -178,7 +178,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de tapu iptali, imar değişikliği ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve MEF Üniversitesi Hukuk Fakültesi'nden 2019'da mezun olmuş bulunan Furkan Arıkan, tapu, imar ve kira uyuşmazlıklarında Arnavutköy'deki müvekkillerine danışmanlık vermektedir.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Tapu, imar ve kira uyuşmazlıklarında Arnavutköy'deki müvekkillerine danışmanlık verir.",
     highlightCards: [
       { title: "İmar Değişikliği", description: "Tarım arazisinden imara açılan taşınmazlara ilişkin süreçler." },
       { title: "Tapu Uyuşmazlıkları", description: "Usulsüz tescile karşı iptal ve düzeltme davaları." },
@@ -228,7 +228,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve MEF Üniversitesi Hukuk Fakültesi'nden 2019'da mezun olmuş bulunan Furkan Arıkan, icra ve iflas hukuku kapsamında Arnavutköy'deki alacaklı ve borçlu taraflara danışmanlık vermektedir.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Arnavutköy'deki alacaklı ve borçlu taraflara danışmanlık verir.",
     highlightCards: [
       { title: "Takip Süreci", description: "İlamlı veya ilamsız icra takibinin başlatılması." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -278,7 +278,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunu olan Furkan Arıkan, idari işlemlerin iptali ve tam yargı davalarında Arnavutköy'deki müvekkillerine danışmanlık vermektedir.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. İdari işlemlerin iptali ve tam yargı davalarında Arnavutköy'deki müvekkillerine danışmanlık verir.",
     highlightCards: [
       { title: "İptal Davaları", description: "Hukuka aykırı idari kararlara karşı dava süreci." },
       { title: "İmar Planı Değişiklikleri", description: "Tarım arazisinden imara açılan bölgelere ilişkin uyuşmazlıklar." },
@@ -328,7 +328,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve MEF Üniversitesi Hukuk Fakültesi'nden 2019'da mezun olmuş bulunan Furkan Arıkan, iş hukuku kapsamında Arnavutköy'deki işçi ve işverenlere danışmanlık vermektedir.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İş hukuku kapsamında Arnavutköy'deki işçi ve işverenlere danışmanlık verir.",
     highlightCards: [
       { title: "Tazminat Süreçleri", description: "Haksız fesihte kıdem ve ihbar tazminatı takibi." },
       { title: "İşe İade", description: "İş güvencesi kapsamında işe iade davası." },
@@ -378,7 +378,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve MEF Üniversitesi Hukuk Fakültesi'nden 2019'da mezun olmuş bulunan Furkan Arıkan, kira hukuku alanında Arnavutköy'deki kiraya verenlere ve kiracılara danışmanlık vermektedir.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Kira hukuku alanında Arnavutköy'deki kiraya verenlere ve kiracılara danışmanlık verir.",
     highlightCards: [
       { title: "Yeni Konut Kiraları", description: "Hızla büyüyen bölgede kira ilişkisi kurulması ve denetimi." },
       { title: "Konut Tahliyesi", description: "İhtiyaç, temerrüt ve taahhüde dayalı tahliye süreçleri." },
@@ -428,7 +428,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunu olan Furkan Arıkan, vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Arnavutköy'deki müvekkillerine danışmanlık vermektedir.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Arnavutköy'deki müvekkillerine danışmanlık verir.",
     highlightCards: [
       { title: "Tarhiyat İtirazı", description: "Re'sen veya ikmalen tarh edilen vergiye karşı dava." },
       { title: "Ceza Uyuşmazlıkları", description: "Usulsüzlük ve vergi ziyaı cezalarına itiraz." },
@@ -478,7 +478,7 @@ export const arnavutkoyServices: PseoService[] = [
     metaDescription:
       "Arnavutköy'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve MEF Üniversitesi Hukuk Fakültesi'nden 2019'da mezun olmuş bulunan Furkan Arıkan, borçlar hukuku kapsamında Arnavutköy'deki müvekkillerine sözleşme ve alacak uyuşmazlıklarında danışmanlık vermektedir.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Borçlar hukuku kapsamında Arnavutköy'deki müvekkillerine sözleşme ve alacak uyuşmazlıklarında danışmanlık verir.",
     highlightCards: [
       { title: "Sözleşme Uyuşmazlıkları", description: "İfa, ihlal ve fesih kaynaklı süreçlerin yürütülmesi." },
       { title: "Alacak Davaları", description: "Para alacaklarının dava veya takip yoluyla tahsili." },
