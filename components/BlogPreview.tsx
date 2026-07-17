@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Post } from "@/lib/posts";
-import { categoryIcons, ScalesIcon } from "./PracticeIcons";
 
 export default function BlogPreview({ posts }: { posts: Post[] }) {
   return (
@@ -38,82 +37,50 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-6">
-          {posts.map((post) => {
-            const CategoryIcon = categoryIcons[post.category] ?? ScalesIcon;
-            return (
+          {posts.map((post) => (
             <Link
               key={post.slug}
               href={`/makaleler/${post.slug}`}
-              className="group flex flex-col rounded-lg overflow-hidden border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="group flex flex-col rounded-xl p-6 border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               style={{ borderColor: "#EBE0D4", backgroundColor: "#fff" }}
             >
-              {/* Category visual */}
-              <div
-                className="h-44 flex items-center justify-center relative overflow-hidden"
-                style={{
-                  background: "linear-gradient(135deg, #14342B 0%, #1B3A2F 100%)",
-                }}
-              >
-                <div
-                  className="absolute inset-0 opacity-[0.06]"
-                  style={{
-                    backgroundImage: "repeating-linear-gradient(45deg, #C5A880 0px, #C5A880 1px, transparent 1px, transparent 8px)",
-                  }}
-                  aria-hidden="true"
-                />
-                <div
-                  className="absolute flex items-center justify-center opacity-[0.14] scale-[3.4] transition-transform duration-500 group-hover:scale-[3.7]"
-                  aria-hidden="true"
-                >
-                  <CategoryIcon />
-                </div>
+              <div className="flex items-center justify-between gap-3 mb-4">
                 <span
-                  className="relative z-10 text-xs font-semibold tracking-widest uppercase px-3 py-1.5 rounded border"
-                  style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.4)", backgroundColor: "rgba(13,36,32,0.55)" }}
+                  className="text-[11px] font-semibold tracking-wide uppercase px-3 py-1 rounded-full whitespace-nowrap"
+                  style={{ color: "#7f5c2c", backgroundColor: "rgba(197,168,128,0.16)" }}
                 >
                   {post.category}
                 </span>
-              </div>
-
-              {/* Content */}
-              <div className="p-5 flex flex-col flex-1">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xs" style={{ color: "#C5A880" }}>
-                    {post.dateFormatted}
-                  </span>
-                  <span style={{ color: "#EBE0D4" }}>·</span>
-                  <span className="text-xs" style={{ color: "#3D5A50" }}>
-                    {post.readingTime} dk okuma
-                  </span>
-                </div>
-
-                <h3
-                  className="text-base font-bold mb-2.5 flex-1 leading-snug group-hover:text-opacity-80 transition-colors"
-                  style={{
-                    color: "#14342B",
-                    fontFamily: "var(--font-playfair), Georgia, serif",
-                  }}
-                >
-                  {post.title}
-                </h3>
-
-                <p className="text-sm line-clamp-3 mb-4" style={{ color: "#3D5A50" }}>
-                  {post.excerpt}
-                </p>
-
-                <span
-                  className="text-xs font-semibold flex items-center gap-1.5 mt-auto"
-                  style={{ color: "#C5A880" }}
-                >
-                  Devamını Oku
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
+                <span className="text-xs whitespace-nowrap" style={{ color: "#8A9A93" }}>
+                  {post.dateFormatted}
                 </span>
               </div>
+
+              <h3
+                className="text-lg font-bold mb-3 leading-snug group-hover:text-opacity-80 transition-colors"
+                style={{
+                  color: "#14342B",
+                  fontFamily: "var(--font-playfair), Georgia, serif",
+                }}
+              >
+                {post.title}
+              </h3>
+
+              <p className="text-sm line-clamp-3 mb-5 flex-1" style={{ color: "#3D5A50" }}>
+                {post.excerpt}
+              </p>
+
+              <span
+                className="text-xs font-semibold flex items-center gap-1.5"
+                style={{ color: "#C5A880" }}
+              >
+                Devamını Oku
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </span>
             </Link>
-            );
-          })}
+          ))}
         </div>
       </div>
     </section>
