@@ -2212,6 +2212,715 @@ export const posts: Post[] = [
 </div>
     `,
   },
+  {
+    slug: "idari-islemin-iptali-davasi",
+    title: "İdari İşlemin İptali Davası: Süre, Şartlar ve Süreç",
+    date: "2026-07-13",
+    dateFormatted: "13 Temmuz 2026",
+    excerpt:
+      "İdari işlemlere karşı iptal davası açma süresi, yürütmenin durdurulması talebi ve görevli mahkeme hakkında İYUK'a göre bilinmesi gerekenler.",
+    category: "İdare Hukuku",
+    readingTime: 7,
+    faq: [
+      { question: "İdari işlemin iptali davası açma süresi ne kadardır?", answer: "Genel kural olarak idare mahkemeleri ve Danıştay'da 60 gün, vergi mahkemelerinde 30 gündür. Süre, işlemin tebliğini, ilanını veya öğrenilmesini izleyen günden itibaren işlemeye başlar." },
+      { question: "Dava açmadan önce idareye itiraz etmek zorunlu mu?", answer: "Kural olarak hayır, doğrudan dava açılabilir. İYUK m.11 kapsamında idareye yapılan başvuru ihtiyaridir ve dava açma süresini durdurur; bazı özel kanunlarda ise ön başvuru zorunlu bir dava şartı olabilir." },
+      { question: "Yürütmenin durdurulması ne zaman verilir?", answer: "Telafisi güç veya imkânsız bir zararın doğma ihtimali ile işlemin açıkça hukuka aykırı olması şartlarının birlikte gerçekleşmesi halinde, mahkeme gerekçeli kararla yürütmenin durdurulmasına hükmedebilir." },
+      { question: "Hangi mahkemede dava açmalıyım?", answer: "Genel kural idare mahkemesidir; vergi, resim ve harçlara ilişkin uyuşmazlıklarda vergi mahkemesi görevlidir. Yetkili mahkeme ise kural olarak işlemi tesis eden idari merciin bulunduğu yer mahkemesidir." },
+      { question: "Süreyi kaçırırsam dava açabilir miyim?", answer: "Dava açma süreleri hak düşürücüdür; süre geçirildikten sonra açılan dava, işin esasına girilmeden süre aşımı nedeniyle reddedilir. Bu nedenle tebliğ tarihinin doğru tespiti kritik önem taşır." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">60 Gün</div>
+    <div class="stat-label">İdare/Danıştay'da dava açma süresi <span class="law-ref">İYUK m.7</span></div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">30 Gün</div>
+    <div class="stat-label">Vergi mahkemesinde dava açma süresi</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">2 Şart</div>
+    <div class="stat-label">Yürütmenin durdurulması için birlikte aranır <span class="law-ref">İYUK m.27</span></div>
+  </div>
+</div>
+
+<h2>İdari İşlemin İptali Davası Nedir?</h2>
+<p>
+  İdari işlemin iptali davası, idarenin tesis ettiği tek taraflı, icrai nitelikteki işlemlerin
+  hukuka aykırılığı iddiasıyla yargı önünde iptalinin istenmesidir. Dava, 2577 sayılı İdari
+  Yargılama Usulü Kanunu (İYUK) çerçevesinde idare mahkemelerinde, vergi mahkemelerinde veya
+  bazı sınırlı hallerde ilk derece mahkemesi sıfatıyla Danıştay'da görülür.
+</p>
+<p>
+  İptal davasına konu olabilecek işlemler oldukça geniştir: bir kamu görevlisinin atama veya
+  disiplin işlemi, bir yapı ruhsatının reddi, ihale kararı, imar planı, ruhsat iptali gibi
+  idarenin tek yanlı iradesiyle hukuki sonuç doğuran her türlü işlem bu kapsama girebilir.
+</p>
+
+<h2>Dava Açma Süresi Ne Kadardır?</h2>
+<p>
+  İYUK m.7 uyarınca genel kural, idare mahkemeleri ve Danıştay'da dava açma süresinin
+  <strong>60 gün</strong>, vergi mahkemelerinde ise <strong>30 gün</strong> olmasıdır. Süre;
+  yazılı bildirimin (tebliğ) yapıldığı tarihi izleyen günden, düzenleyici işlemlerde ilan
+  tarihinden, yazılı bildirim hiç yapılmamışsa işlemin öğrenildiği tarihten itibaren işlemeye
+  başlar.
+</p>
+<p>
+  Bazı özel kanunlarda daha kısa süreler öngörülebilir. Örneğin 4734 sayılı Kamu İhale
+  Kanunu kapsamındaki ihale kararlarına karşı dava açma süresi 30 gündür ve dava açılmadan
+  önce Kamu İhale Kurumu'na zorunlu itirazen şikayet başvurusu yapılmış olması gerekir.
+  Bu tür özel süre ve usul şartlarının atlanması, davanın süre veya usul yönünden reddiyle
+  sonuçlanabilir.
+</p>
+
+<div class="highlight-box">
+  <strong>Süre Hak Düşürücüdür</strong>
+  İYUK'ta öngörülen dava açma süreleri hak düşürücü niteliktedir. Süre geçirildikten sonra
+  açılan davalar, işin esasına girilmeden süre yönünden reddedilir. Tebliğ tarihini gösteren
+  belgenin (tebligat zarfı, elektronik tebligat kaydı vb.) saklanması bu nedenle önemlidir.
+</div>
+
+<h2>Dava Açmadan Önce İdareye Başvurmak Zorunlu mu?</h2>
+<p>
+  Kural olarak hayır; ilgili doğrudan dava açabilir. İYUK m.11, ihtiyari bir yol sunar: işlemi
+  yapan idari makama veya üst makama başvurulursa dava açma süresi durur. İdarenin bu başvuruya
+  cevap vermesi gereken süre 30 gündür; bu süre içinde cevap verilmez veya istem reddedilirse
+  kalan dava açma süresi işlemeye devam eder.
+</p>
+<p>
+  Bazı özel kanunlarda ise idareye başvuru bir dava şartı olarak öngörülebilir; bu istisnai
+  hallerde ön başvuru tüketilmeden açılan dava, dava şartı yokluğundan reddedilir. Bir işleme
+  karşı dava açmadan önce, o işlemi düzenleyen özel kanunda ayrı bir başvuru usulü öngörülüp
+  öngörülmediğinin kontrol edilmesi gerekir.
+</p>
+
+<h2>Yürütmenin Durdurulması Talebi</h2>
+<p>
+  Dava süresince işlemin uygulanmaya devam etmesi, davacı açısından telafisi güç zararlara yol
+  açabilir. Bu ihtimale karşı İYUK m.27 uyarınca yürütmenin durdurulması (YD) talep edilebilir.
+  Mahkemenin YD kararı verebilmesi için iki şartın birlikte gerçekleşmesi aranır:
+</p>
+<ul>
+  <li>İşlemin uygulanması halinde telafisi güç veya imkânsız bir zararın doğması ihtimali</li>
+  <li>İşlemin açıkça hukuka aykırı olması</li>
+</ul>
+<p>
+  Mahkeme, YD talebini idarenin savunması alındıktan veya savunma süresi geçtikten sonra
+  gerekçeli olarak karara bağlar. YD kararı kural olarak teminat karşılığında verilir; bazı
+  istisnai hallerde teminat aranmayabilir.
+</p>
+
+<h2>Görevli ve Yetkili Mahkeme</h2>
+<p>
+  İdari uyuşmazlıklarda genel görevli mahkeme idare mahkemesidir. Vergi, resim, harç ve benzeri
+  mali yükümlülüklere ilişkin uyuşmazlıklara ise özel olarak vergi mahkemeleri bakar. Danıştay,
+  yalnızca Cumhurbaşkanlığı kararnameleri, ülke çapında uygulanacak düzenleyici işlemler gibi
+  kanunda sayılan sınırlı davalara ilk derece mahkemesi sıfatıyla bakar.
+</p>
+<p>
+  Yetki bakımından genel kural, işlemi tesis eden idari merciin bulunduğu yer mahkemesidir.
+  Kamu görevlileriyle ilgili uyuşmazlıklar, tam yargı davaları ve vergi uyuşmazlıkları için
+  kanunda ayrıca özel yetki kuralları öngörülmüştür.
+</p>
+
+<h2>Dava Dilekçesinde Bulunması Gerekenler</h2>
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="step-text"><strong>Taraf Bilgileri</strong>Davacı ve davalı idarenin kimlik/unvan ve adres bilgileri eksiksiz yazılır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="step-text"><strong>İşlemin Tespiti</strong>İptali istenen işlem, tebliğ tarihi belirtilerek somut biçimde tanımlanır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="step-text"><strong>Hukuka Aykırılık Sebepleri</strong>İşlemin hangi yönlerden hukuka aykırı olduğu ve dayanılan deliller açıklanır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="step-text"><strong>YD Talebi (varsa)</strong>Yürütmenin durdurulması isteniyorsa bu talep dilekçede açıkça belirtilmelidir.</div>
+  </div>
+</div>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">İdari işlemin iptali davası açma süresi ne kadardır?</p>
+  <p class="faq-answer">Genel kural olarak idare mahkemeleri ve Danıştay'da 60 gün, vergi mahkemelerinde 30 gündür. Süre, işlemin tebliğini, ilanını veya öğrenilmesini izleyen günden itibaren işlemeye başlar.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Dava açmadan önce idareye itiraz etmek zorunlu mu?</p>
+  <p class="faq-answer">Kural olarak hayır, doğrudan dava açılabilir. İYUK m.11 kapsamında idareye yapılan başvuru ihtiyaridir ve dava açma süresini durdurur; bazı özel kanunlarda ise ön başvuru zorunlu bir dava şartı olabilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Yürütmenin durdurulması ne zaman verilir?</p>
+  <p class="faq-answer">Telafisi güç veya imkânsız bir zararın doğma ihtimali ile işlemin açıkça hukuka aykırı olması şartlarının birlikte gerçekleşmesi halinde, mahkeme gerekçeli kararla yürütmenin durdurulmasına hükmedebilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Hangi mahkemede dava açmalıyım?</p>
+  <p class="faq-answer">Genel kural idare mahkemesidir; vergi, resim ve harçlara ilişkin uyuşmazlıklarda vergi mahkemesi görevlidir. Yetkili mahkeme ise kural olarak işlemi tesis eden idari merciin bulunduğu yer mahkemesidir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Süreyi kaçırırsam dava açabilir miyim?</p>
+  <p class="faq-answer">Dava açma süreleri hak düşürücüdür; süre geçirildikten sonra açılan dava, işin esasına girilmeden süre aşımı nedeniyle reddedilir. Bu nedenle tebliğ tarihinin doğru tespiti kritik önem taşır.</p>
+</div>
+    `,
+  },
+  {
+    slug: "vergi-ihbarnamesine-itiraz-ve-uzlasma",
+    title: "Vergi/Ceza İhbarnamesine İtiraz ve Uzlaşma Yolları",
+    date: "2026-07-14",
+    dateFormatted: "14 Temmuz 2026",
+    excerpt:
+      "Vergi ihbarnamesi tebliğ edildiğinde uzlaşma, dava açma ve VUK m.376 indirimi seçenekleri; 7524 sayılı Kanun'la değişen uzlaşma kapsamı.",
+    category: "Vergi Hukuku",
+    readingTime: 7,
+    faq: [
+      { question: "Vergi aslına karşı uzlaşma talep edebilir miyim?", answer: "Hayır. 7524 sayılı Kanun'un 2 Ağustos 2024'te yürürlüğe girmesinden itibaren vergi aslı uzlaşma kapsamı dışındadır. Vergi aslına karşı tek hukuki yol vergi mahkemesinde dava açmaktır; uzlaşma yalnızca belirli cezalar için mümkündür." },
+      { question: "Uzlaşma başvurusu için süre ne kadardır?", answer: "Tarhiyat sonrası uzlaşma, ihbarnamenin tebliğini izleyen günden itibaren 30 gün içinde talep edilmelidir. Tarhiyat öncesi uzlaşma ise incelemenin bitiminden ve ihbarname düzenlenmeden önce istenir." },
+      { question: "Uzlaşma ile VUK m.376 indirimi aynı anda kullanılabilir mi?", answer: "Hayır. Uzlaşma sağlanan bir ceza için ayrıca m.376 indirimi talep edilemez; mükellefin bu iki yoldan yalnızca birini seçmesi gerekir." },
+      { question: "Uzlaşma sağlanamazsa dava açma hakkım devam eder mi?", answer: "Evet. Uzlaşmanın vaki olmadığına dair tutanağın tebliğinden itibaren, kalan dava açma süresi işler; bu süre 15 günden azsa VUK Ek m.7 uyarınca 15 güne tamamlanır." },
+      { question: "Vergi mahkemesinde dava açma süresi ne kadardır?", answer: "Genel kural olarak ihbarnamenin tebliğinden itibaren 30 gündür. Bu süre, uzlaşma başvurusu yapılmışsa ve uzlaşma sağlanamamışsa, tutanağın tebliğinden itibaren yeniden (gerekirse 15 güne tamamlanarak) işlemeye başlar." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">30 Gün</div>
+    <div class="stat-label">Uzlaşma başvurusu ve dava açma süresi</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">%50</div>
+    <div class="stat-label">Vergi ziyaı cezasında ilk kez indirim oranı <span class="law-ref">VUK m.376</span></div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">2 Yol</div>
+    <div class="stat-label">Uzlaşma ile dava açma birbirini dışlar</div>
+  </div>
+</div>
+
+<h2>İhbarname Tebliğ Edildiğinde Hangi Yollar İzlenebilir?</h2>
+<p>
+  Vergi incelemesi veya idari tespit sonucunda düzenlenen vergi/ceza ihbarnamesi mükellefe
+  tebliğ edildiğinde, 213 sayılı Vergi Usul Kanunu (VUK) mükellefe üç ayrı yol tanır: uzlaşma
+  talep etmek, vergi mahkemesinde dava açmak veya VUK m.376 kapsamında cezada indirim talep
+  etmek. Bu üç yol birbirini dışlayan alternatiflerdir; aynı vergi/ceza için ikisi birden
+  kullanılamaz.
+</p>
+
+<div class="highlight-box">
+  <strong>2024 Değişikliği: Uzlaşmanın Kapsamı Daraldı</strong>
+  7524 sayılı Kanun ile 2 Ağustos 2024'ten itibaren <strong>vergi aslı uzlaşma kapsamından
+  tamamen çıkarılmıştır</strong>. Bugün uzlaşma yalnızca vergi ziyaı cezası ile belirli tutarı
+  aşan usulsüzlük/özel usulsüzlük cezaları için mümkündür; vergi aslına karşı tek yol dava
+  açmaktır. 2023 ve öncesine ait kaynaklarda yer alan "vergi aslında da uzlaşılabilir" bilgisi
+  artık güncel değildir.
+</div>
+
+<h2>Tarhiyat Öncesi ve Tarhiyat Sonrası Uzlaşma</h2>
+<p>
+  Uzlaşma, incelemenin hangi aşamasında talep edildiğine göre ikiye ayrılır. Tarhiyat öncesi
+  uzlaşma, yalnızca vergi incelemesine dayanan durumlarda, ihbarname düzenlenmeden önce
+  incelemeyi yapan birimden talep edilir. Tarhiyat sonrası uzlaşma ise ihbarnamenin tebliğinden
+  sonra, tebliği izleyen 30 gün içinde istenir. İkisi de seçimliktir; biri kullanıldığında
+  diğerine başvurulamaz.
+</p>
+
+<h2>Uzlaşma Sağlanamazsa Ne Olur?</h2>
+<p>
+  Uzlaşma görüşmesinde taraflar anlaşamazsa (uzlaşmanın vaki olmaması), mükellefin dava açma
+  hakkı devam eder. VUK Ek m.7 uyarınca, uzlaşmanın vaki olmadığına ilişkin tutanağın
+  tebliğinden itibaren kalan dava açma süresi işlemeye devam eder; kalan süre 15 günden azsa
+  bu süre 15 güne tamamlanır.
+</p>
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="step-text"><strong>İhbarnamenin Tebliği</strong>Vergi/ceza ihbarnamesi mükellefe usulüne uygun tebliğ edilir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="step-text"><strong>Yol Seçimi</strong>Mükellef 30 gün içinde uzlaşma, dava açma veya VUK m.376 indirimi arasında tercih yapar.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="step-text"><strong>Uzlaşma Görüşmesi (seçildiyse)</strong>Uzlaşma komisyonu ile görüşme yapılır; anlaşma sağlanırsa tutanakla sonuçlanır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="step-text"><strong>Uzlaşılamazsa Dava</strong>Kalan (veya 15 güne tamamlanan) süre içinde vergi mahkemesinde dava açılabilir.</div>
+  </div>
+</div>
+
+<h2>VUK m.376 Kapsamında Cezada İndirim</h2>
+<p>
+  Mükellef, uzlaşma veya dava yoluna gitmeksizin, ihbarnamenin tebliğinden itibaren 30 gün
+  içinde vergiyi ve cezayı kabul edip başvurursa VUK m.376 uyarınca ceza indiriminden
+  yararlanabilir. Vergi ziyaı cezasında indirim oranı ilk defa uygulamada yarısı (%50),
+  tekrarında ise üçte biri; usulsüzlük ve özel usulsüzlük cezalarında üçte biridir. İndirimden
+  yararlanmak için belirtilen süre içinde başvuru yapılması ve vergi ile indirilmiş cezanın
+  ödenmesi (veya teminat gösterilmesi) şarttır.
+</p>
+
+<h2>Hangi Yol Ne Zaman Tercih Edilmeli?</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Yol</th>
+      <th>Ne Zaman Uygun</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Uzlaşma</td>
+      <td>Cezanın miktarında haklı gerekçelerle indirim ihtimali görülüyorsa (yalnızca ceza için)</td>
+    </tr>
+    <tr>
+      <td>Dava Açma</td>
+      <td>Tarhiyatın veya cezanın hukuka aykırı olduğu, vergi aslına itiraz edildiği durumlarda</td>
+    </tr>
+    <tr>
+      <td>VUK m.376 İndirimi</td>
+      <td>Tarhiyatın haklılığı kabul edilip hızlı ve düşük maliyetli kapanış isteniyorsa</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Vergi aslına karşı uzlaşma talep edebilir miyim?</p>
+  <p class="faq-answer">Hayır. 7524 sayılı Kanun'un 2 Ağustos 2024'te yürürlüğe girmesinden itibaren vergi aslı uzlaşma kapsamı dışındadır. Vergi aslına karşı tek hukuki yol vergi mahkemesinde dava açmaktır; uzlaşma yalnızca belirli cezalar için mümkündür.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Uzlaşma başvurusu için süre ne kadardır?</p>
+  <p class="faq-answer">Tarhiyat sonrası uzlaşma, ihbarnamenin tebliğini izleyen günden itibaren 30 gün içinde talep edilmelidir. Tarhiyat öncesi uzlaşma ise incelemenin bitiminden ve ihbarname düzenlenmeden önce istenir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Uzlaşma ile VUK m.376 indirimi aynı anda kullanılabilir mi?</p>
+  <p class="faq-answer">Hayır. Uzlaşma sağlanan bir ceza için ayrıca m.376 indirimi talep edilemez; mükellefin bu iki yoldan yalnızca birini seçmesi gerekir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Uzlaşma sağlanamazsa dava açma hakkım devam eder mi?</p>
+  <p class="faq-answer">Evet. Uzlaşmanın vaki olmadığına dair tutanağın tebliğinden itibaren, kalan dava açma süresi işler; bu süre 15 günden azsa VUK Ek m.7 uyarınca 15 güne tamamlanır.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Vergi mahkemesinde dava açma süresi ne kadardır?</p>
+  <p class="faq-answer">Genel kural olarak ihbarnamenin tebliğinden itibaren 30 gündür. Bu süre, uzlaşma başvurusu yapılmışsa ve uzlaşma sağlanamamışsa, tutanağın tebliğinden itibaren yeniden (gerekirse 15 güne tamamlanarak) işlemeye başlar.</p>
+</div>
+    `,
+  },
+  {
+    slug: "nafakada-yuzde-kac-sorusu",
+    title: "Nafakada 'Yüzde Kaç' Sorusu: Neden Sabit Bir Oran Yoktur?",
+    date: "2026-07-15",
+    dateFormatted: "15 Temmuz 2026",
+    excerpt:
+      "İnternette dolaşan nafaka yüzdeleri neden birbiriyle çelişir? Hakimin nafaka miktarını belirlerken gerçekte hangi kriterlere baktığını inceliyoruz.",
+    category: "Aile Hukuku",
+    readingTime: 6,
+    faq: [
+      { question: "Nafaka gerçekten gelirin belirli bir yüzdesi olarak mı hesaplanır?", answer: "Hayır. Kanunda veya Yargıtay içtihadında sabit bir yüzde yer almaz. İnternette görülen \"yüzde 20-25\" gibi rakamlar resmi olmayan, pratikte gözlemlenen kaba eğilimlerdir; her dava somut koşullarına göre ayrı değerlendirilir." },
+      { question: "Neden farklı kaynaklar farklı yüzdeler veriyor?", answer: "Çünkü hiçbiri resmi bir kaynağa dayanmaz; her biri kendi gözlemlediği dava örneklerinden genelleme yapar. Bu tutarsızlığın kendisi, sabit bir oranın hukuken var olmadığının göstergesidir." },
+      { question: "Asgari ücretli biri yüksek nafakaya mahkum edilebilir mi?", answer: "Mahkeme, yükümlünün ödeme gücünü aşan bir nafakaya hükmetmez; miktar, yükümlünün de asgari yaşam düzeyini sürdürebileceği şekilde belirlenir. Bu da nafakanın neden tek bir formülle hesaplanamayacağının bir örneğidir." },
+      { question: "Online hesaplama araçlarının sonucu mahkemeyi bağlar mı?", answer: "Hayır. Hiçbir online araç mahkemeyi bağlamaz; bu tür araçlar yalnızca kaba bir referans sunar. Kesin sonuç, davanın tüm somut delilleri değerlendirilerek hakim tarafından belirlenir." },
+      { question: "Nafaka miktarını etkileyen en önemli tek faktör nedir?", answer: "Tek bir faktör yoktur; çocuğun/eşin ihtiyaçları ile yükümlünün ödeme gücü birlikte ve dengeli şekilde değerlendirilir. Bu ikisinden birinin diğerini tamamen domine etmesi beklenmez." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">0</div>
+    <div class="stat-label">Yargıtay kararında geçen resmi nafaka yüzdesi</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Somut Olay</div>
+    <div class="stat-label">Kanunun esas aldığı tek değerlendirme yöntemi <span class="law-ref">TMK m.4</span></div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">3+ Kriter</div>
+    <div class="stat-label">Hakimin birlikte değerlendirdiği unsur sayısı</div>
+  </div>
+</div>
+
+<h2>İnternette Dolaşan "Yüzde 20-25" Gibi Rakamlar Nereden Geliyor?</h2>
+<p>
+  "Nafaka gelirin yüzde kaçı olur?" sorusu, aile hukukunda en sık aranan sorulardan biridir.
+  Ancak bu soruya arama motorlarında verilen cevaplar birbiriyle çelişir: bazı kaynaklar
+  "yüzde 10-15", bazıları "yüzde 20-30", bazıları ise düz bir "yüzde 25" rakamı verir. Bu
+  tutarsızlığın kendisi, aslında böyle resmi bir oranın var olmadığının en açık göstergesidir.
+</p>
+<p>
+  Türk hukukunda nafaka miktarını belirleyen kanun maddelerinde (TMK m.175, m.176, m.330) hiçbir
+  yüzde veya sabit formül geçmez. Yargıtay'ın yerleşik içtihadı da aynı yöndedir: nafaka miktarı,
+  her davanın kendine özgü koşulları içinde, hakkaniyet ilkesi (TMK m.4) çerçevesinde belirlenir.
+</p>
+
+<div class="highlight-box">
+  <strong>Neden Sabit Bir Oran Kabul Edilmemiştir?</strong>
+  Kanun koyucu bilinçli olarak sabit bir oran öngörmemiştir; çünkü aynı gelir düzeyindeki iki
+  aile, farklı sayıda çocuk, farklı sağlık/eğitim giderleri ve farklı yaşam koşullarına sahip
+  olabilir. Sabit bir yüzde, bazı davalarda adaletsiz sonuçlara yol açardı.
+</div>
+
+<h2>Hakim Nafaka Miktarını Belirlerken Gerçekte Neye Bakar?</h2>
+<p>
+  İştirak nafakasında (çocuk için) <span class="law-ref">TMK m.330</span> uyarınca değerlendirilen
+  başlıca unsurlar şunlardır:
+</p>
+<ul>
+  <li>Çocuğun yaşına, eğitim durumuna ve sağlığına göre somut ihtiyaçları</li>
+  <li>Her iki ebeveynin geliri, mal varlığı ve ödeme gücü</li>
+  <li>Çocuğun varsa kendi geliri</li>
+  <li>Velayeti alan ebeveynin çocuğa fiilen sağladığı bakım ve emek</li>
+</ul>
+<p>
+  Yoksulluk nafakasında (eş için) ise <span class="law-ref">TMK m.175-176</span> uyarınca ayrıca
+  boşanmadaki kusur oranı, evlilik süresi, talep edenin çalışma kapasitesi ve yükümlünün mali
+  gücü birlikte değerlendirilir. Uygulamada asgari ücretle çalışan bir yükümlünün nafaka
+  yükümlülüğü, mahkemece yaşamını sürdürebileceği bir düzeyde sınırlandırılabilir; bu da neden
+  tek bir yüzdenin herkese uygulanamayacağını gösterir.
+</p>
+
+<h2>Tahmini Bir Fikir Edinmenin Sınırları</h2>
+<p>
+  Resmi bir oran bulunmasa da, hukuk pratiğinde iştirak nafakası için genellikle ödeyen tarafın
+  net gelirinin belirli bir aralığında (kabaca onda biri ile dörtte biri arası) bir tutara
+  hükmedildiği gözlemlenir. Bu, <strong>yasal bir kural değil</strong>, sıkça karşılaşılan bir
+  eğilimdir; büro olarak hazırladığımız
+  <a href="/nafaka-hesaplama">nafaka hesaplama aracı</a> bu aralığı net gelire göre gösterir —
+  ancak sonucu her zaman "tahmini" olarak değerlendirmeli, kendi durumunuza özgü bir hukuki
+  görüş için mutlaka bir avukata danışmalısınız.
+</p>
+
+<h2>Hükmedilen Nafaka Miktarı Sabit Kalır mı?</h2>
+<p>
+  Hayır. Mahkeme kararında yıllık otomatik artış öngörülmüşse bu genellikle Yargıtay'ın yerleşik
+  uygulamasında üretici fiyat endeksi (Yİ-ÜFE) esas alınarak hesaplanır — kira artışında kullanılan
+  TÜFE ölçütünden farklıdır. Böyle bir hüküm yoksa veya koşullar önemli ölçüde değiştiyse, TMK
+  m.176/4 uyarınca ayrı bir nafaka artırım/azaltım davası açılabilir.
+  <a href="/nafaka-artisi-hesaplama">Nafaka artış oranı hesaplama aracımızla</a> güncel endeks
+  oranına göre yeni tutarı hesaplayabilirsiniz.
+</p>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Nafaka gerçekten gelirin belirli bir yüzdesi olarak mı hesaplanır?</p>
+  <p class="faq-answer">Hayır. Kanunda veya Yargıtay içtihadında sabit bir yüzde yer almaz. İnternette görülen "yüzde 20-25" gibi rakamlar resmi olmayan, pratikte gözlemlenen kaba eğilimlerdir; her dava somut koşullarına göre ayrı değerlendirilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Neden farklı kaynaklar farklı yüzdeler veriyor?</p>
+  <p class="faq-answer">Çünkü hiçbiri resmi bir kaynağa dayanmaz; her biri kendi gözlemlediği dava örneklerinden genelleme yapar. Bu tutarsızlığın kendisi, sabit bir oranın hukuken var olmadığının göstergesidir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Asgari ücretli biri yüksek nafakaya mahkum edilebilir mi?</p>
+  <p class="faq-answer">Mahkeme, yükümlünün ödeme gücünü aşan bir nafakaya hükmetmez; miktar, yükümlünün de asgari yaşam düzeyini sürdürebileceği şekilde belirlenir. Bu da nafakanın neden tek bir formülle hesaplanamayacağının bir örneğidir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Online hesaplama araçlarının sonucu mahkemeyi bağlar mı?</p>
+  <p class="faq-answer">Hayır. Hiçbir online araç mahkemeyi bağlamaz; bu tür araçlar yalnızca kaba bir referans sunar. Kesin sonuç, davanın tüm somut delilleri değerlendirilerek hakim tarafından belirlenir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Nafaka miktarını etkileyen en önemli tek faktör nedir?</p>
+  <p class="faq-answer">Tek bir faktör yoktur; çocuğun/eşin ihtiyaçları ile yükümlünün ödeme gücü birlikte ve dengeli şekilde değerlendirilir. Bu ikisinden birinin diğerini tamamen domine etmesi beklenmez.</p>
+</div>
+    `,
+  },
+  {
+    slug: "giydirilmis-ucret-kavrami",
+    title: "Kıdem ve İhbar Tazminatında 'Giydirilmiş Ücret' Nedir? Yargıtay Kriterleri",
+    date: "2026-07-16",
+    dateFormatted: "16 Temmuz 2026",
+    excerpt:
+      "Kıdem ve ihbar tazminatı hesabında esas alınan giydirilmiş ücret kavramı, hangi yan ödemelerin dahil edildiği ve konuya ilişkin Yargıtay kararları.",
+    category: "İş Hukuku",
+    readingTime: 8,
+    faq: [
+      { question: "Giydirilmiş ücret nedir?", answer: "İşçinin çıplak (sözleşmede yazılı) ücretine; yol, yemek, ikramiye, prim gibi düzenli ve para ile ölçülebilir yan menfaatlerin eklenmesiyle bulunan, kıdem ve ihbar tazminatı hesabında esas alınan ücrettir." },
+      { question: "Servis (ulaşım) hizmeti giydirilmiş ücrete dahil midir?", answer: "Yargıtay 9. Hukuk Dairesi'nin 2020/5964 esas sayılı kararına göre, işverenin sağladığı toplu ulaşım/servis hizmeti giydirilmiş ücrete dahil edilmez; buna karşılık konaklama ve yemek gibi kalemler dahil edilir." },
+      { question: "Özel sağlık sigortası primi tazminata dahil edilir mi?", answer: "Evet. Yargıtay 9. Hukuk Dairesi'nin 2020/2597 esas, 2021/5846 karar sayılı kararına göre işveren tarafından düzenli ödenen özel sağlık/hayat sigortası primleri para ile ölçülebilen bir menfaat olduğundan giydirilmiş ücrete dahildir." },
+      { question: "Kıdem ve ihbar tazminatı aynı ücretten mi hesaplanır?", answer: "Genel kural olarak ikisi de giydirilmiş ücretten hesaplanır (İş K. m.17 son fıkra, m.32). Yargıtay Hukuk Genel Kurulu'nun 2015/22-127 esas sayılı kararı bu iki tazminatın hesap yönteminin karıştırılmaması gerektiğine dikkat çeker." },
+      { question: "Arızi (bir kereye mahsus) ödemeler tazminata dahil edilir mi?", answer: "Hayır. Bir ödemenin giydirilmiş ücrete dahil edilebilmesi için süreklilik arz etmesi gerekir; yılda bir kez verilen olağanüstü bir prim veya ödül gibi arızi ödemeler kapsam dışında kalır." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">m.32/m.17</div>
+    <div class="stat-label">Giydirilmiş ücretin yasal dayanağı <span class="law-ref">4857 s. Kanun</span></div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Kıdem: Giydirilmiş</div>
+    <div class="stat-label">İhbar: Çıplak Ücret <span class="law-ref">HGK E.2015/22-127</span></div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Süreklilik</div>
+    <div class="stat-label">Bir ödemenin dahil edilmesinin temel şartı</div>
+  </div>
+</div>
+
+<h2>Giydirilmiş Ücret Nedir?</h2>
+<p>
+  Kıdem tazminatı hesaplanırken esas alınan ücret, işçinin yalnızca sözleşmesinde yazılı çıplak
+  maaşı değildir. 4857 sayılı İş Kanunu m.32/1'de tanımlanan asıl ücrete; yol, yemek, ikramiye,
+  düzenli ödenen prim gibi <strong>para veya para ile ölçülebilir, süreklilik arz eden</strong>
+  yan menfaatler eklenerek bulunan tutara uygulamada "giydirilmiş ücret" denir. Aynı kural,
+  Kanun m.17 son fıkrası uyarınca ihbar tazminatı hesabında da geçerlidir.
+</p>
+<p>
+  Kanun metni açıkça şöyle der: "tazminatlar ile bildirim sürelerine ait peşin ödenecek ücretin
+  hesabında 32'nci maddenin birinci fıkrasında yazılan ücrete ek olarak işçiye sağlanmış para
+  veya para ile ölçülmesi mümkün sözleşme ve kanundan doğan menfaatler de göz önünde tutulur."
+</p>
+
+<h2>Hangi Ödemeler Giydirilmiş Ücrete Dahildir?</h2>
+<p>
+  Yargıtay 9. Hukuk Dairesi'nin <strong>E. 2020/5964, K. 2020/13100 sayılı, 22.10.2020 tarihli</strong>
+  kararında, işverenin işçiye sağladığı konaklama ve yemek gibi düzenli menfaatlerin giydirilmiş
+  ücrete dahil edilmesi gerektiği; buna karşılık işverenin şantiye ile kamp arasında sağladığı
+  servis (ulaşım) hizmetinin ücret eki sayılmayacağı açıkça belirtilmiştir.
+</p>
+<ul>
+  <li>Düzenli ödenen yol ve yemek yardımı</li>
+  <li>Düzenlilik arz eden ikramiye ve primler</li>
+  <li>Konaklama gibi süreklilik taşıyan ayni menfaatler</li>
+  <li>Bayram/izin harçlığı gibi düzenli ödemeler</li>
+</ul>
+<div class="highlight-box">
+  <strong>Süreklilik Şartı</strong>
+  Bir ödemenin giydirilmiş ücrete dahil edilebilmesi için iki şart aranır: (1) para veya para
+  ile ölçülebilir nitelikte olması, (2) arızi değil, düzenli/süreklilik arz eder biçimde
+  sağlanmış olması. Yılda bir kez verilen olağanüstü bir ödül gibi arızi ödemeler bu kapsama
+  girmez.
+</div>
+
+<h2>Özel Sağlık Sigortası Gibi Yan Haklar Dahil mi?</h2>
+<p>
+  Yargıtay 9. Hukuk Dairesi'nin <strong>E. 2020/2597, K. 2021/5846 sayılı, 09.03.2021 tarihli</strong>
+  kararında, işveren tarafından işçi lehine düzenli olarak ödenen özel sağlık ve hayat sigortası
+  primlerinin de para ile ölçülebilen bir menfaat olarak giydirilmiş ücrete dahil edilmesi
+  gerektiğine hükmedilmiştir. Bu karar, giydirilmiş ücret kavramının yalnızca klasik yol/yemek
+  kalemleriyle sınırlı olmadığını, işçiye sağlanan her türlü düzenli parasal menfaati kapsayacak
+  şekilde geniş yorumlandığını gösterir.
+</p>
+
+<h2>Kıdem Tazminatı Giydirilmiş, İhbar Tazminatı Çıplak Ücretten mi Hesaplanır?</h2>
+<p>
+  Bu noktada önemli bir ayrıma dikkat çekmek gerekir. Yargıtay Hukuk Genel Kurulu'nun
+  <strong>E. 2015/22-127, K. 2018/559 sayılı, 28.3.2018 tarihli</strong> kararında, kıdem
+  tazminatının giydirilmiş ücretten, ihbar tazminatının ise kural olarak çıplak (kanuni)
+  ücretten hesaplanacağı ilkesi vurgulanmıştır. Uygulamada bu iki tazminat çoğu zaman birlikte
+  talep edildiğinden, hangi tazminat için hangi ücretin esas alınacağının karıştırılması sık
+  görülen bir hesaplama hatasıdır.
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Tazminat Türü</th>
+      <th>Esas Alınan Ücret</th>
+      <th>Yasal Dayanak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kıdem Tazminatı</td>
+      <td>Giydirilmiş brüt ücret</td>
+      <td>İş K. m.32/1 + yerleşik içtihat</td>
+    </tr>
+    <tr>
+      <td>İhbar Tazminatı</td>
+      <td>Giydirilmiş brüt ücret</td>
+      <td>İş K. m.17 son fıkra</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  Not: Kanun metninin açık hükmü ihbar tazminatını da giydirilmiş ücrete bağlasa da, HGK
+  kararında bazı özel kanun kapsamındaki (örneğin gazetecilik) istisnai uygulamalara işaret
+  edilmiştir; genel işçi statüsünde giydirilmiş ücret kuralı tartışmasız uygulanır.
+</p>
+
+<h2>Giydirilmiş Ücret Nasıl İspatlanır?</h2>
+<div class="process-steps">
+  <div class="process-step">
+    <div class="step-num">1</div>
+    <div class="step-text"><strong>Bordro ve Ödeme Kayıtları</strong>Maaş bordroları, banka dekontları ve ek ödeme belgeleri toplanır.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">2</div>
+    <div class="step-text"><strong>Süreklilik Delili</strong>İlgili ödemenin arızi değil düzenli/periyodik yapıldığı (örn. her ay, her yıl aynı dönemde) gösterilir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">3</div>
+    <div class="step-text"><strong>Tanık Beyanı</strong>Yazılı belge bulunmayan menfaatler (örn. yemek/servis uygulaması) için tanık deliline başvurulabilir.</div>
+  </div>
+  <div class="process-step">
+    <div class="step-num">4</div>
+    <div class="step-text"><strong>Bilirkişi Hesabı</strong>Mahkeme, toplanan delillere göre giydirilmiş ücreti bilirkişi marifetiyle hesaplatır.</div>
+  </div>
+</div>
+<p>
+  Giydirilmiş ücretin doğru tespiti, kıdem tazminatı hesaplamasını doğrudan etkiler. Kendi
+  durumunuza göre yaklaşık bir tutar görmek için
+  <a href="/kidem-tazminati-hesaplama">kıdem tazminatı hesaplama</a> ve
+  <a href="/ihbar-tazminati-hesaplama">ihbar tazminatı hesaplama</a> araçlarımızı kullanabilirsiniz.
+</p>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Giydirilmiş ücret nedir?</p>
+  <p class="faq-answer">İşçinin çıplak (sözleşmede yazılı) ücretine; yol, yemek, ikramiye, prim gibi düzenli ve para ile ölçülebilir yan menfaatlerin eklenmesiyle bulunan, kıdem ve ihbar tazminatı hesabında esas alınan ücrettir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Servis (ulaşım) hizmeti giydirilmiş ücrete dahil midir?</p>
+  <p class="faq-answer">Yargıtay 9. Hukuk Dairesi'nin 2020/5964 esas sayılı kararına göre, işverenin sağladığı toplu ulaşım/servis hizmeti giydirilmiş ücrete dahil edilmez; buna karşılık konaklama ve yemek gibi kalemler dahil edilir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Özel sağlık sigortası primi tazminata dahil edilir mi?</p>
+  <p class="faq-answer">Evet. Yargıtay 9. Hukuk Dairesi'nin 2020/2597 esas, 2021/5846 karar sayılı kararına göre işveren tarafından düzenli ödenen özel sağlık/hayat sigortası primleri para ile ölçülebilen bir menfaat olduğundan giydirilmiş ücrete dahildir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Kıdem ve ihbar tazminatı aynı ücretten mi hesaplanır?</p>
+  <p class="faq-answer">Genel kural olarak ikisi de giydirilmiş ücretten hesaplanır (İş K. m.17 son fıkra, m.32). Yargıtay Hukuk Genel Kurulu'nun 2015/22-127 esas sayılı kararı bu iki tazminatın hesap yönteminin karıştırılmaması gerektiğine dikkat çeker.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Arızi (bir kereye mahsus) ödemeler tazminata dahil edilir mi?</p>
+  <p class="faq-answer">Hayır. Bir ödemenin giydirilmiş ücrete dahil edilebilmesi için süreklilik arz etmesi gerekir; yılda bir kez verilen olağanüstü bir prim veya ödül gibi arızi ödemeler kapsam dışında kalır.</p>
+</div>
+    `,
+  },
+  {
+    slug: "kosullu-saliverilme-oranlari",
+    title: "Koşullu Salıverilme Oranları: Hangi Suçta Ne Kadar İnfaz Gerekir?",
+    date: "2026-07-17",
+    dateFormatted: "17 Temmuz 2026",
+    excerpt:
+      "5275 sayılı Kanun'a göre koşullu salıverilme oranları, suç kategorilerine göre değişen infaz süreleri ve denetimli serbestlik şartları.",
+    category: "Ceza Hukuku",
+    readingTime: 7,
+    faq: [
+      { question: "Koşullu salıverilme oranı her suçta aynı mı?", answer: "Hayır. Genel kural cezanın yarısıdır (1/2), ancak kasten öldürme, nitelikli cinsel suçlar, uyuşturucu ticareti ve terör suçları gibi kanunda sayılan kategorilerde 2/3 veya 3/4 gibi daha yüksek oranlar uygulanır." },
+      { question: "İyi hal, infaz süresini kısaltır mı?", answer: "Hayır. İyi hal, süreyi kısaltan bir indirim değil, hesaplanan sürenin sonunda tahliyenin gerçekleşmesi için aranan bir ön şarttır. İyi hal olmadan koşullu salıverilme gerçekleşmez." },
+      { question: "Denetimli serbestlik süresi ne kadardır?", answer: "Genel kuralda koşullu salıverilme tarihine son 1 yıl kaladır. 30 Mart 2020 öncesi işlenmiş, istisna suçlar hariç kalan suçlarda bu süre Geçici Madde 6 uyarınca 3 yıla çıkar." },
+      { question: "Tekerrür (mükerrirlik) infaz oranını nasıl etkiler?", answer: "5275 sayılı Kanun m.108 uyarınca tekerrür hali, suç kategorisine göre belirlenen orandan bağımsız olarak infaz süresini ayrıca yükseltir." },
+      { question: "Bu oranlar müebbet hapis için de aynı mı?", answer: "Hayır, müebbet ve ağırlaştırılmış müebbet hapiste oran değil, sabit yıl esası uygulanır: müebbette 24 yıl, ağırlaştırılmış müebbette 30 yıl infaz gerekir; bazı ağır örgütlü suçlarda ise koşullu salıverilme hiç uygulanmaz." },
+    ],
+    content: `
+<div class="stat-grid">
+  <div class="stat-box">
+    <div class="stat-number">1/2</div>
+    <div class="stat-label">Genel koşullu salıverilme oranı <span class="law-ref">5275 s. K. m.107/2</span></div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">2/3 – 3/4</div>
+    <div class="stat-label">Belirli suç kategorilerinde uygulanan artırılmış oran</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Son 1 Yıl</div>
+    <div class="stat-label">Genel kuralda denetimli serbestlik süresi <span class="law-ref">m.105/A</span></div>
+  </div>
+</div>
+
+<h2>Koşullu Salıverilme Nedir?</h2>
+<p>
+  Koşullu salıverilme, hükümlünün cezasının belirli bir oranını infaz kurumunda geçirdikten
+  sonra, iyi halli olması şartıyla cezasının kalan kısmını dışarıda, denetim altında
+  tamamlamasına imkân tanıyan bir infaz kurumudur. Kurum, 5275 sayılı Ceza ve Güvenlik
+  Tedbirlerinin İnfazı Hakkında Kanun'un 107. maddesinde düzenlenmiştir.
+</p>
+
+<h2>Genel Kural: Cezanın Yarısı (2020 Değişikliği)</h2>
+<p>
+  14 Nisan 2020 tarihli 7242 sayılı Kanun'la yapılan değişiklikle, süreli hapis cezalarında
+  genel koşullu salıverilme oranı üçte ikiden (2/3) <strong>yarıya (1/2)</strong> indirilmiştir.
+  Müebbet hapiste bu süre 24 yıl, ağırlaştırılmış müebbet hapiste ise 30 yıldır. Bu, süreli
+  hapis cezaları için genel/varsayılan orandır; kanunda sayılan bazı suç grupları için farklı
+  (daha yüksek) oranlar ayrıca uygulanır.
+</p>
+
+<div class="highlight-box">
+  <strong>Bu Bir Genelleme, Kesin Hesap Değildir</strong>
+  Suç tarihi (30.03.2020 öncesi/sonrası), suç tipi, tekerrür durumu, failin yaşı ve örgüt/terör
+  bağlantısı gibi etkenlere göre onlarca farklı senaryo mevcuttur. Somut dosyanız için kesin
+  hesap ancak infaz hakimliği veya bir ceza avukatı tarafından yapılabilir.
+</div>
+
+<h2>Daha Yüksek Oran Uygulanan Suçlar</h2>
+<p>
+  m.107/2'nin devamı ve ilgili özel kanunlar, aşağıdaki suç kategorilerini genel 1/2 kuralından
+  ayırarak daha yüksek infaz oranına tabi tutar:
+</p>
+<table>
+  <thead>
+    <tr>
+      <th>Oran</th>
+      <th>Suç Kategorisi (Genel Hatlarıyla)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2/3</td>
+      <td>Kasten öldürme, işkence/eziyet, nitelikli olmayan cinsel suçlar, özel hayata karşı suçlar, devlet sırlarına karşı suçlar/casusluk, örgütlü suçlar</td>
+    </tr>
+    <tr>
+      <td>3/4</td>
+      <td>Nitelikli/çocuğa karşı cinsel suçlar, uyuşturucu madde imal ve ticareti, terör suçları (3713 sayılı Kanun m.17)</td>
+    </tr>
+    <tr>
+      <td>Uygulanmaz</td>
+      <td>Devletin güvenliğine/anayasal düzene karşı örgüt faaliyeti çerçevesinde işlenip ağırlaştırılmış müebbetle sonuçlanan bazı suçlar <span class="law-ref">m.107/16</span></td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  Ayrıca <span class="law-ref">m.108</span> uyarınca tekerrür (mükerrirlik) hali, yukarıdaki
+  oranlardan bağımsız olarak infaz süresini ayrıca artırır.
+</p>
+
+<h2>Denetimli Serbestlik Süresi</h2>
+<p>
+  Koşullu salıverilme tarihine belirli bir süre kala, iyi hal ve açık cezaevine ayrılma
+  şartıyla denetimli serbestlik tedbiri uygulanabilir (m.105/A). Genel kuralda bu süre
+  <strong>son 1 yıl</strong>dır. Ancak 30 Mart 2020 tarihinden önce işlenmiş, kanunda sayılan
+  istisna suçlar (terör suçları dahil) dışındaki suçlarda, Geçici m.6 uyarınca bu süre
+  <strong>3 yıla</strong> çıkar.
+</p>
+<p>
+  Özel gruplarda farklı süreler uygulanır: 0-6 yaş grubunda çocuğu bulunan kadın hükümlülerde
+  2 yıl (2020 öncesi suçlarda 4 yıl), ağır hasta, engelli veya belirli bir yaşın üzerindeki
+  hükümlülerde 3 yıl (2020 öncesi suçlarda, 65 yaş üstü için süre sınırı aranmaz). 2025 yılında
+  7550 sayılı Kanun'la, cezaevinde kalınması gereken sürenin en az onda birinin fiilen
+  tamamlanmış olması şartı da eklenmiştir.
+</p>
+
+<h2>İyi Hal Süreyi Kısaltır mı?</h2>
+<p>
+  Hayır — bu, sık karıştırılan bir noktadır. İyi hal, koşullu salıverilme süresini
+  <strong>kısaltan bir indirim değildir</strong>; süre dolduğunda tahliyenin gerçekleşmesi için
+  aranan bir <strong>ön şarttır</strong>. m.107/1 uyarınca infaz kurumundaki iyi hal
+  değerlendirmesi olumsuzsa, hesaplanan süre dolmuş olsa bile koşullu salıverilme
+  gerçekleşmez.
+</p>
+
+<h2>Sık Sorulan Sorular</h2>
+<div class="faq-item">
+  <p class="faq-question">Koşullu salıverilme oranı her suçta aynı mı?</p>
+  <p class="faq-answer">Hayır. Genel kural cezanın yarısıdır (1/2), ancak kasten öldürme, nitelikli cinsel suçlar, uyuşturucu ticareti ve terör suçları gibi kanunda sayılan kategorilerde 2/3 veya 3/4 gibi daha yüksek oranlar uygulanır.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">İyi hal, infaz süresini kısaltır mı?</p>
+  <p class="faq-answer">Hayır. İyi hal, süreyi kısaltan bir indirim değil, hesaplanan sürenin sonunda tahliyenin gerçekleşmesi için aranan bir ön şarttır. İyi hal olmadan koşullu salıverilme gerçekleşmez.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Denetimli serbestlik süresi ne kadardır?</p>
+  <p class="faq-answer">Genel kuralda koşullu salıverilme tarihine son 1 yıl kaladır. 30 Mart 2020 öncesi işlenmiş, istisna suçlar hariç kalan suçlarda bu süre Geçici Madde 6 uyarınca 3 yıla çıkar.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Tekerrür (mükerrirlik) infaz oranını nasıl etkiler?</p>
+  <p class="faq-answer">5275 sayılı Kanun m.108 uyarınca tekerrür hali, suç kategorisine göre belirlenen orandan bağımsız olarak infaz süresini ayrıca yükseltir.</p>
+</div>
+<div class="faq-item">
+  <p class="faq-question">Bu oranlar müebbet hapis için de aynı mı?</p>
+  <p class="faq-answer">Hayır, müebbet ve ağırlaştırılmış müebbet hapiste oran değil, sabit yıl esası uygulanır: müebbette 24 yıl, ağırlaştırılmış müebbette 30 yıl infaz gerekir; bazı ağır örgütlü suçlarda ise koşullu salıverilme hiç uygulanmaz.</p>
+</div>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): Post | undefined {
