@@ -37,7 +37,7 @@ export default function ToolsPreview() {
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-6">
-          {tools.map((tool) => (
+          {tools.slice(0, 3).map((tool) => (
             <Link
               key={tool.slug}
               href={`/${tool.slug}`}
