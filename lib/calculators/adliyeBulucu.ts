@@ -5,7 +5,8 @@ export type CourthouseInfo = {
 };
 
 // Kaynak: adalet.gov.tr resmi iletişim sayfaları (istanbul.adalet.gov.tr,
-// bakirkoy.adalet.gov.tr, kucukcekmece.adalet.gov.tr) — 2026-07-17 doğrulandı.
+// bakirkoy.adalet.gov.tr, kucukcekmece.adalet.gov.tr, istanbulanadolu.adalet.gov.tr)
+// — 2026-07-17 doğrulandı.
 export const COURTHOUSES: Record<string, CourthouseInfo> = {
   "İstanbul (Çağlayan) Adliyesi": {
     name: "İstanbul (Çağlayan) Adliyesi",
@@ -28,6 +29,11 @@ export const COURTHOUSES: Record<string, CourthouseInfo> = {
     address: "Kartaltepe Mah. Malazgirt Cad. No:2-4, 34295 Küçükçekmece/İstanbul",
     phone: "0212 411 51 00",
   },
+  "İstanbul Beykoz Adliyesi": {
+    name: "İstanbul Beykoz Adliyesi",
+    address: "Gümüşsuyu Mah. Şht. Bülent Kocabıyık Cad., Beykoz/İstanbul",
+    phone: "0216 322 00 65",
+  },
 };
 
 export type AdliyeDistrict = {
@@ -45,6 +51,7 @@ const RAW_DISTRICTS: AdliyeDistrict[] = [
   { slug: "basaksehir", name: "Başakşehir", courthouse: "İstanbul Küçükçekmece Adliyesi" },
   { slug: "bayrampasa", name: "Bayrampaşa", courthouse: "İstanbul (Çağlayan) Adliyesi" },
   { slug: "besiktas", name: "Beşiktaş", courthouse: "İstanbul (Çağlayan) Adliyesi" },
+  { slug: "beykoz", name: "Beykoz", courthouse: "İstanbul Beykoz Adliyesi" },
   { slug: "beylikduzu", name: "Beylikdüzü", courthouse: "İstanbul Büyükçekmece Adliyesi" },
   { slug: "beyoglu", name: "Beyoğlu", courthouse: "İstanbul (Çağlayan) Adliyesi" },
   { slug: "buyukcekmece", name: "Büyükçekmece", courthouse: "İstanbul Büyükçekmece Adliyesi" },

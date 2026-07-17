@@ -25,6 +25,7 @@ import { catalcaServices } from "@/lib/pseo/catalcaServices";
 import { kucukcekmeceServices } from "@/lib/pseo/kucukcekmeceServices";
 import { basaksehirServices } from "@/lib/pseo/basaksehirServices";
 import { avcilarServices } from "@/lib/pseo/avcilarServices";
+import { beykozServices } from "@/lib/pseo/beykozServices";
 import type { PseoService } from "@/lib/pseo/types";
 
 const BASE_URL = "https://furkanarikan.av.tr";
@@ -53,6 +54,7 @@ const allPseoServices: PseoService[] = [
   ...kucukcekmeceServices,
   ...basaksehirServices,
   ...avcilarServices,
+  ...beykozServices,
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
