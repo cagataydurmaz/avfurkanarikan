@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import PracticeAreas from "@/components/PracticeAreas";
 import Process from "@/components/Process";
+import ToolsPreview from "@/components/ToolsPreview";
 import BlogPreview from "@/components/BlogPreview";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
         <About />
         <PracticeAreas />
         <Process />
+        <ToolsPreview />
         <BlogPreview posts={recentPosts} />
         <Contact />
       </main>

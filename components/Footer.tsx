@@ -6,6 +6,7 @@ const navLinks = [
   { href: "/#calisma-alanlari", label: "Çalışma Alanları" },
   { href: "/#surec", label: "Süreç" },
   { href: "/makaleler", label: "Makaleler" },
+  { href: "/araclar", label: "Araçlar" },
   { href: "/#iletisim", label: "İletişim" },
 ];
 

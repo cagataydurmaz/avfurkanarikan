@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { posts } from "@/lib/posts";
 import { practiceAreas } from "@/lib/practiceAreas";
+import { tools } from "@/lib/calculators/tools";
 import { besiktasServices } from "@/lib/pseo/besiktasServices";
 import { sisliServices } from "@/lib/pseo/sisliServices";
 import { beyogluServices } from "@/lib/pseo/beyogluServices";
@@ -71,6 +72,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE_URL}/araclar`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/gizlilik-politikasi`,
       lastModified: now,
       changeFrequency: "yearly",
@@ -99,5 +106,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: service.slug === "avukat" ? 0.8 : 0.6,
   }));
 
-  return [...staticPages, ...practiceAreaPages, ...postPages, ...pseoPages];
+  const toolPages: MetadataRoute.Sitemap = tools.map((tool) => ({
+    url: `${BASE_URL}/${tool.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...practiceAreaPages, ...postPages, ...pseoPages, ...toolPages];
 }
