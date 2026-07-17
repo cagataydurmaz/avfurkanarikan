@@ -47,6 +47,7 @@ export function buildPseoJsonLd(district: PseoDistrict, service: PseoService) {
       ],
       sameAs: [
         "https://furkanarikan.av.tr",
+        "https://www.linkedin.com/in/avfurkanar%C4%B1kan/",
       ],
     },
     {
@@ -76,6 +77,9 @@ export function buildPseoJsonLd(district: PseoDistrict, service: PseoService) {
       name: "Furkan Arıkan",
       jobTitle: "Avukat",
       worksFor: { "@id": `${pageUrl}#business` },
+      sameAs: [
+        "https://www.linkedin.com/in/avfurkanar%C4%B1kan/",
+      ],
       alumniOf: [
         {
           "@type": "CollegeOrUniversity",

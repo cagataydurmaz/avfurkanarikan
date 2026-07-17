@@ -98,6 +98,7 @@ const jsonLd = {
         },
       ],
       knowsLanguage: ["tr", "en"],
+      sameAs: ["https://www.linkedin.com/in/avfurkanar%C4%B1kan/"],
     },
     {
       "@type": "Person",
@@ -107,6 +108,7 @@ const jsonLd = {
       worksFor: {
         "@id": "https://furkanarikan.av.tr/#legalservice",
       },
+      sameAs: ["https://www.linkedin.com/in/avfurkanar%C4%B1kan/"],
       alumniOf: [
         {
           "@type": "CollegeOrUniversity",
