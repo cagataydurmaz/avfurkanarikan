@@ -44,6 +44,48 @@ export default function PseoPage({
         </div>
       </header>
 
+      {/* Breadcrumb */}
+      <nav
+        aria-label="Breadcrumb"
+        className="py-2.5"
+        style={{ backgroundColor: "#14342B", borderTop: "1px solid rgba(197,168,128,0.15)" }}
+      >
+        <div className="max-w-5xl mx-auto px-5 md:px-8">
+          <ol className="flex items-center flex-wrap gap-x-2 text-xs">
+            <li>
+              <Link href="/" className="hover:underline" style={{ color: "rgba(244,237,228,0.5)" }}>
+                Ana Sayfa
+              </Link>
+            </li>
+            {service.slug === "avukat" ? (
+              <>
+                <li aria-hidden="true" style={{ color: "rgba(244,237,228,0.25)" }}>/</li>
+                <li style={{ color: "#C5A880" }} aria-current="page">
+                  {district.name} Avukat
+                </li>
+              </>
+            ) : (
+              <>
+                <li aria-hidden="true" style={{ color: "rgba(244,237,228,0.25)" }}>/</li>
+                <li>
+                  <Link
+                    href={`/${district.slug}-avukat`}
+                    className="hover:underline"
+                    style={{ color: "rgba(244,237,228,0.5)" }}
+                  >
+                    {district.name} Avukat
+                  </Link>
+                </li>
+                <li aria-hidden="true" style={{ color: "rgba(244,237,228,0.25)" }}>/</li>
+                <li style={{ color: "#C5A880" }} aria-current="page">
+                  {service.name}
+                </li>
+              </>
+            )}
+          </ol>
+        </div>
+      </nav>
+
       <main>
         {/* 1. HERO */}
         <section className="py-16 md:py-24" style={{ background: "linear-gradient(135deg, #0d2420 0%, #14342B 60%, #1B3A2F 100%)" }}>
