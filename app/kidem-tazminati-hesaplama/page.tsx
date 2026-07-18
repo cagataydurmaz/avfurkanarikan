@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import KidemTazminatiForm from "@/components/calculators/KidemTazminatiForm";
+import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 import { KIDEM_TAVANI, KIDEM_TAVANI_PERIOD } from "@/lib/calculators/kidemTazminati";
 
 export const metadata: Metadata = {
@@ -103,6 +105,8 @@ export default function KidemTazminatiHesaplamaPage() {
         </div>
       </div>
 
+      <ToolBreadcrumb current="Kıdem Tazminatı Hesaplama" />
+
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <KidemTazminatiForm />
@@ -124,7 +128,11 @@ export default function KidemTazminatiHesaplamaPage() {
             <p className="text-sm leading-relaxed" style={{ color: "#3D5A50" }}>
               Giydirilmiş brüt ücret hesaplamasında hangi ödemelerin dahil edileceği (düzenli
               yol/yemek yardımı, prim, ikramiye vb.) somut olaya göre değişebilir ve ihtilaf
-              konusu olabilir. Durumunuzu netleştirmek için bir avukata danışmanız önerilir.
+              konusu olabilir. Durumunuzu netleştirmek için bir avukata danışmanız önerilir; konuyu{" "}
+              <Link href="/makaleler/giydirilmis-ucret-kavrami" className="underline font-medium" style={{ color: "#14342B" }}>
+                giydirilmiş ücret kavramını anlattığımız makalede
+              </Link>{" "}
+              Yargıtay kararlarıyla birlikte inceledik.
             </p>
           </div>
 

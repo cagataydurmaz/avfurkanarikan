@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import IhbarTazminatiForm from "@/components/calculators/IhbarTazminatiForm";
+import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
   title: "İhbar Tazminatı Hesaplama",
@@ -92,6 +94,8 @@ export default function IhbarTazminatiHesaplamaPage() {
         </div>
       </div>
 
+      <ToolBreadcrumb current="İhbar Tazminatı Hesaplama" />
+
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <IhbarTazminatiForm />
@@ -109,7 +113,11 @@ export default function IhbarTazminatiHesaplamaPage() {
             <p className="text-sm leading-relaxed" style={{ color: "#3D5A50" }}>
               Hesaplamada &quot;giydirilmiş brüt ücret&quot; (yol, yemek, düzenli prim/ikramiye
               gibi süreklilik arz eden ödemeler dahil) esas alınmalıdır; bu ödemelerin dahil
-              edilip edilmeyeceği ihtilaf konusu olabilir.
+              edilip edilmeyeceği ihtilaf konusu olabilir. Konuyu{" "}
+              <Link href="/makaleler/giydirilmis-ucret-kavrami" className="underline font-medium" style={{ color: "#14342B" }}>
+                giydirilmiş ücret kavramını anlattığımız makalede
+              </Link>{" "}
+              Yargıtay kararlarıyla birlikte inceledik.
             </p>
           </div>
 

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import NafakaForm from "@/components/calculators/NafakaForm";
+import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
   title: "Nafaka Hesaplama (Tahmini Aralık)",
@@ -85,6 +87,8 @@ export default function NafakaHesaplamaPage() {
         </div>
       </div>
 
+      <ToolBreadcrumb current="Nafaka Hesaplama" />
+
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <NafakaForm />
@@ -102,7 +106,12 @@ export default function NafakaHesaplamaPage() {
             <p className="text-sm leading-relaxed" style={{ color: "#3D5A50" }}>
               Bu kriterlerin somut olayınıza nasıl uygulanacağı, benzer davalardaki emsal
               kararlara ve tarafların sunacağı delillere bağlıdır. Yukarıdaki aralık yalnızca
-              genel bir fikir vermek içindir.
+              genel bir fikir vermek içindir. İnternette dolaşan yüzde iddialarının neden resmi
+              olmadığını{" "}
+              <Link href="/makaleler/nafakada-yuzde-kac-sorusu" className="underline font-medium" style={{ color: "#14342B" }}>
+                ayrı bir makalede
+              </Link>{" "}
+              detaylandırdık.
             </p>
           </div>
 

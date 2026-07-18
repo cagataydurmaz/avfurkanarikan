@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import VekaletUcretiForm from "@/components/calculators/VekaletUcretiForm";
+import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
   title: "Vekalet Ücreti Hesaplama (AAÜT 2026)",
@@ -83,6 +84,8 @@ export default function VekaletUcretiHesaplamaPage() {
           </p>
         </div>
       </div>
+
+      <ToolBreadcrumb current="Vekalet Ücreti Hesaplama" />
 
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">

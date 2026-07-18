@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import IcraMasrafiForm from "@/components/calculators/IcraMasrafiForm";
+import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
   title: "İcra Masrafı Hesaplama",
@@ -82,6 +83,8 @@ export default function IcraMasrafiHesaplamaPage() {
           </p>
         </div>
       </div>
+
+      <ToolBreadcrumb current="İcra Masrafı Hesaplama" />
 
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">

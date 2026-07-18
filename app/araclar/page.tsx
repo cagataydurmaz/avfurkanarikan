@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import { tools } from "@/lib/calculators/tools";
+import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
   title: "Hukuki Hesaplama Araçları",
@@ -62,6 +63,8 @@ export default function AraclarPage() {
           </p>
         </div>
       </div>
+
+      <ToolBreadcrumb maxWidth="max-w-6xl" />
 
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-6xl mx-auto px-5 md:px-8">

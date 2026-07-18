@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import AdliyeBulucuForm from "@/components/calculators/AdliyeBulucuForm";
+import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
   title: "İstanbul Adliye Bulucu",
@@ -32,6 +33,35 @@ const jsonLd = {
         priceCurrency: "TRY",
       },
       author: { "@id": "https://furkanarikan.av.tr/#person" },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Adliye yargı çevresi nasıl belirlenir?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Her ilçe, Adalet Bakanlığı tarafından belirlenen bir yargı çevresi kapsamında belirli bir adliyeye bağlanır. Bu çevreler zaman zaman idari düzenlemelerle değişebilir; güncel durumu adalet.gov.tr üzerinden teyit etmek en sağlıklısıdır.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "İlçem bu listede yoksa ne yapmalıyım?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Aracın kapsamını kademeli olarak genişletiyoruz; şu an İstanbul'un merkez, batı ve yeni eklenen bazı Anadolu Yakası ilçelerini kapsıyor. Listede olmayan bir ilçe için doğrudan bize ulaşabilir veya adalet.gov.tr üzerinden ilçenizin bağlı olduğu adliyeyi öğrenebilirsiniz.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Bir ilçe birden fazla adliyeye bağlı olabilir mi?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Evet, bazı ilçelerde genel adli işler kendi mülhakat adliyesinde görülürken, ağır ceza gibi belirli dava türleri farklı bir adliyenin (örneğin bölge merkezi adliyesinin) yetkisinde olabilir. Bu araç ilçenin genel bağlı olduğu adliyeyi gösterir; dava türüne özgü yetki sorularında bir avukata danışmanız önerilir.",
+          },
+        },
+      ],
     },
     {
       "@type": "BreadcrumbList",
@@ -88,6 +118,8 @@ export default function AdliyeBulucuPage() {
           </p>
         </div>
       </div>
+
+      <ToolBreadcrumb current="İstanbul Adliye Bulucu" />
 
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">

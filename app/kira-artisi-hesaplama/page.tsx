@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import KiraArtisiForm from "@/components/calculators/KiraArtisiForm";
+import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 import { CURRENT_TUFE_PERIOD, CURRENT_TUFE_RATE } from "@/lib/calculators/kiraArtisi";
 
 export const metadata: Metadata = {
@@ -103,6 +105,8 @@ export default function KiraArtisiHesaplamaPage() {
         </div>
       </div>
 
+      <ToolBreadcrumb current="Kira Artışı Hesaplama" />
+
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <KiraArtisiForm />
@@ -125,7 +129,12 @@ export default function KiraArtisiHesaplamaPage() {
               Sözleşmesi beş yılı dolmuş veya beşinci yılın sonunda yenilenen kiralarda taraflar
               anlaşamazsa, yeni bedel yalnızca TÜFE ile değil; hâkim tarafından kiralananın
               durumu ve emsal kira bedelleri de gözetilerek belirlenir. Bu durumda hesap makinesi
-              sonucu bağlayıcı değildir, bir avukata danışmanız önerilir.
+              sonucu bağlayıcı değildir, bir avukata danışmanız önerilir. Tespit ve uyarlama
+              davaları arasındaki farkı{" "}
+              <Link href="/makaleler/kira-bedeli-tespit-ve-uyarlama-davasi" className="underline font-medium" style={{ color: "#14342B" }}>
+                ayrı bir makalede
+              </Link>{" "}
+              ele aldık.
             </p>
           </div>
 

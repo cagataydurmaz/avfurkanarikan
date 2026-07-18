@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import InfazYatarForm from "@/components/calculators/InfazYatarForm";
+import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
   title: "İnfaz Yatar Hesaplama (Koşullu Salıverilme)",
@@ -93,6 +95,8 @@ export default function InfazYatarHesaplamaPage() {
         </div>
       </div>
 
+      <ToolBreadcrumb current="İnfaz Yatar Hesaplama" />
+
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <InfazYatarForm />
@@ -111,7 +115,12 @@ export default function InfazYatarHesaplamaPage() {
             <p className="text-sm leading-relaxed" style={{ color: "#3D5A50" }}>
               2020, 2023 ve 2025 yıllarında infaz mevzuatında ek değişiklikler yapılmıştır. Bu
               kadar çok değişkenli bir alanda kesin hesap, dosyanızın infaz hakimliği veya bir
-              ceza avukatı tarafından incelenmesini gerektirir.
+              ceza avukatı tarafından incelenmesini gerektirir. Suç kategorilerine göre değişen
+              oranları{" "}
+              <Link href="/makaleler/kosullu-saliverilme-oranlari" className="underline font-medium" style={{ color: "#14342B" }}>
+                ayrı bir makalede
+              </Link>{" "}
+              tablo halinde derledik.
             </p>
           </div>
 

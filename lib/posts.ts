@@ -2043,6 +2043,11 @@ export const posts: Post[] = [
   hakkaniyeti gözeterek kira bedelini belirleyebilir.
 </div>
 
+<p>
+  TÜFE sınırına göre güncel yasal artış tutarınızı hesaplamak isterseniz
+  <a href="/kira-artisi-hesaplama">kira artışı hesaplama aracımızı</a> kullanabilirsiniz.
+</p>
+
 <h2>Dava Süreci Nasıl İşler?</h2>
 <div class="process-steps">
   <div class="process-step">
@@ -2871,6 +2876,11 @@ export const posts: Post[] = [
 <p>
   Ayrıca <span class="law-ref">m.108</span> uyarınca tekerrür (mükerrirlik) hali, yukarıdaki
   oranlardan bağımsız olarak infaz süresini ayrıca artırır.
+</p>
+
+<p>
+  Ceza sürenize göre tahmini koşullu salıverilme tarihini görmek için
+  <a href="/infaz-yatar-hesaplama">infaz yatar hesaplama aracımızı</a> kullanabilirsiniz.
 </p>
 
 <h2>Denetimli Serbestlik Süresi</h2>

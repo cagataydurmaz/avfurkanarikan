@@ -23,6 +23,28 @@ Bu site, Avukatlık Kanunu ve Türkiye Barolar Birliği reklam yasağı kurallar
 
 Güncel hukuki konularda bilgilendirici makaleler: https://furkanarikan.av.tr/makaleler
 
+## Hesaplama Araçları
+
+Güncel mevzuata göre hazırlanmış ücretsiz hesaplama araçları: https://furkanarikan.av.tr/araclar
+
+- [İstanbul Adliye Bulucu](https://furkanarikan.av.tr/istanbul-adliye-bulucu) — ilçeye göre bağlı olunan adliye
+- [Kira Artışı Hesaplama](https://furkanarikan.av.tr/kira-artisi-hesaplama) — TBK m.344, TÜFE 12 aylık ortalama
+- [Kıdem Tazminatı Hesaplama](https://furkanarikan.av.tr/kidem-tazminati-hesaplama)
+- [İhbar Tazminatı Hesaplama](https://furkanarikan.av.tr/ihbar-tazminati-hesaplama)
+- [Fazla Mesai Ücreti Hesaplama](https://furkanarikan.av.tr/fazla-mesai-hesaplama)
+- [Yıllık İzin Ücreti Hesaplama](https://furkanarikan.av.tr/yillik-izin-hesaplama)
+- [Nafaka Hesaplama](https://furkanarikan.av.tr/nafaka-hesaplama) — tahmini aralık, resmi bir formül değildir
+- [Nafaka Artış Oranı Hesaplama](https://furkanarikan.av.tr/nafaka-artisi-hesaplama)
+- [Dava Harcı Hesaplama](https://furkanarikan.av.tr/dava-harci-hesaplama)
+- [Islah Harcı Hesaplama](https://furkanarikan.av.tr/islah-harci-hesaplama)
+- [Vekalet Ücreti Hesaplama](https://furkanarikan.av.tr/vekalet-ucreti-hesaplama) — 2025-2026 AAÜT
+- [Tapu Harcı Hesaplama](https://furkanarikan.av.tr/tapu-harci-hesaplama)
+- [Kira Stopajı Hesaplama](https://furkanarikan.av.tr/kira-stopaji-hesaplama)
+- [İcra Masrafı Hesaplama](https://furkanarikan.av.tr/icra-masrafi-hesaplama)
+- [İnfaz Yatar Hesaplama](https://furkanarikan.av.tr/infaz-yatar-hesaplama) — koşullu salıverilme, genel/basitleştirilmiş hesap
+
+Tüm araçlar bilgilendirme amaçlıdır ve hukuki tavsiye niteliği taşımaz; kesin sonuç için bir avukata danışılması önerilir.
+
 ## Site Haritası
 
 Tam sayfa listesi için: https://furkanarikan.av.tr/sitemap.xml
