@@ -42,6 +42,8 @@ Güncel mevzuata göre hazırlanmış ücretsiz hesaplama araçları: https://fu
 - [Kira Stopajı Hesaplama](https://furkanarikan.av.tr/kira-stopaji-hesaplama)
 - [İcra Masrafı Hesaplama](https://furkanarikan.av.tr/icra-masrafi-hesaplama)
 - [İnfaz Yatar Hesaplama](https://furkanarikan.av.tr/infaz-yatar-hesaplama) — koşullu salıverilme, genel/basitleştirilmiş hesap
+- [Trafik Kazası Tazminatı Hesaplama](https://furkanarikan.av.tr/trafik-kazasi-tazminati-hesaplama) — zamanaşımı hesabı; tazminat tutarı hesaplanmaz
+- [Araç Değer Kaybı Hesaplama](https://furkanarikan.av.tr/arac-deger-kaybi-hesaplama) — zamanaşımı hesabı; değer kaybı tutarı hesaplanmaz
 
 Tüm araçlar bilgilendirme amaçlıdır ve hukuki tavsiye niteliği taşımaz; kesin sonuç için bir avukata danışılması önerilir.
 

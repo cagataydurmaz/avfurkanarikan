@@ -111,4 +111,18 @@ export const tools: Tool[] = [
     description:
       "Ceza süresi ve suç kategorisine göre tahmini koşullu salıverilme ve denetimli serbestlik tarihini hesaplayın.",
   },
+  {
+    slug: "trafik-kazasi-tazminati-hesaplama",
+    title: "Trafik Kazası Tazminatı Hesaplama",
+    category: "Tazminat Hukuku",
+    description:
+      "Dava açma hakkınızın zamanaşımını hesaplayın ve trafik kazası sonrası talep edilebilecek tazminat kalemlerini görün.",
+  },
+  {
+    slug: "arac-deger-kaybi-hesaplama",
+    title: "Araç Değer Kaybı Hesaplama",
+    category: "Tazminat Hukuku",
+    description:
+      "Araç değer kaybı talebinizin zamanaşımını ve hangi sigortaya (ZMSS/kasko) yöneltilebileceğini öğrenin.",
+  },
 ];
