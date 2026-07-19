@@ -7,7 +7,7 @@ export default function PracticeAreasTicker() {
   return (
     <div
       className="ticker-wrap"
-      style={{ backgroundColor: "#F4EDE4", borderTop: "1px solid #EBE0D4", borderBottom: "1px solid #EBE0D4" }}
+      style={{ background: "linear-gradient(90deg, #C5A880 0%, #A8875E 50%, #C5A880 100%)" }}
     >
       <div className="ticker-track">
         {items.map((area, i) => (
@@ -21,7 +21,7 @@ export default function PracticeAreasTicker() {
             >
               {area.title}
             </Link>
-            <span className="mx-8" aria-hidden="true" style={{ color: "#C5A880" }}>
+            <span className="mx-8" aria-hidden="true" style={{ color: "#14342B", opacity: 0.45 }}>
               •
             </span>
           </span>
