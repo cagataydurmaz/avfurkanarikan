@@ -82,6 +82,20 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
             </Link>
           ))}
         </div>
+
+        {/* Bottom CTA - mirrors the top link, centered for easy reach after scrolling the cards */}
+        <div className="mt-10 flex justify-center">
+          <Link
+            href="/makaleler"
+            className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 hover:bg-[#14342B] hover:text-[#F4EDE4]"
+            style={{ color: "#14342B", borderColor: "#14342B" }}
+          >
+            Tüm Makaleler
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </Link>
+        </div>
       </div>
     </section>
   );

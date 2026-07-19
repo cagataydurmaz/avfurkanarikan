@@ -81,6 +81,23 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        {/* Portrait photo - mobile/tablet only, desktop already shows the side portrait */}
+        <div className="flex lg:hidden justify-center mb-7">
+          <div
+            className="relative w-28 h-28 rounded-full overflow-hidden"
+            style={{ border: "3px solid #C5A880", boxShadow: "0 8px 24px rgba(0,0,0,0.35)" }}
+          >
+            <Image
+              src="/furkan-arikan.jpg"
+              alt="Av. Furkan Arıkan"
+              fill
+              sizes="112px"
+              priority
+              className="object-cover object-center"
+            />
+          </div>
+        </div>
+
         {/* Eyebrow */}
         <p
           className="text-xs md:text-sm tracking-[0.3em] uppercase mb-8 font-medium"
