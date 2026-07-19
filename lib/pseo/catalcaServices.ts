@@ -71,12 +71,12 @@ export const catalcaServices: PseoService[] = [
     name: "Çatalca Boşanma Avukatı",
     heroTitle: "Çatalca Boşanma Avukatı",
     heroSubtitle:
-      "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
+      "Çatalca'daki boşanma, velayet, nafaka ve mal paylaşımı davalarına İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemelerinde bakılır; anlaşmalı ve çekişmeli süreçlerde temsil sağlanır.",
     metaTitle: "Çatalca Boşanma Avukatı",
     metaDescription:
       "Çatalca'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Aile hukuku alanında Çatalca'daki müvekkillerine boşanma, velayet ve nafaka konularında temsil sağlar.",
+      "Aile hukuku kapsamında Çatalca'daki müvekkillere boşanma, velayet ve nafaka süreçlerinde temsil sağlayan Furkan Arıkan, 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır.",
     highlightCards: [
       { title: "Anlaşmalı Süreç", description: "Protokolün eksiksiz hazırlanması ve tek duruşmalık takip." },
       { title: "Çekişmeli Süreç", description: "Kusur ve tazminat iddialarının delillendirilmesi." },
@@ -93,8 +93,8 @@ export const catalcaServices: PseoService[] = [
       "Boşanmaya bağlı maddi/manevi tazminat talepleri",
     ],
     localParagraphs: [
-      "Manda yetiştiriciliği ve süt ürünleri üretiminin aile işletmeciliği şeklinde yürütüldüğü Çatalca'da, boşanma davalarında bu tür işletmelerin mal rejimi tasfiyesinde nasıl değerlendirileceği ayrıca incelenmesi gereken bir konu olabilmektedir.",
-      "Boşanma, velayet ve nafaka davalarına İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemelerinde bakılır. Anlaşmalı süreçte protokolün tam olması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirler.",
+      "Anlaşmalı süreçte üzerinde uzlaşılan protokolün eksiksizliği, çekişmeli süreçte ise ileri sürülen iddiaların delillerle desteklenmesi davanın seyrini belirler. Boşanmayla birlikte velayet ve nafaka talepleri de İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemelerinde görülür.",
+      "Manda yetiştiriciliği ve süt ürünleri üretiminin çoğunlukla aile işletmeciliği biçiminde sürdürüldüğü Çatalca'da, bu tür işletmelerin boşanma sürecindeki mal rejimi tasfiyesinde nasıl değerlendirileceği ayrı bir inceleme konusu olabilir.",
     ],
     faqs: [
       { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemesine başvurulur." },
@@ -222,12 +222,12 @@ export const catalcaServices: PseoService[] = [
     name: "Çatalca İcra Avukatı",
     heroTitle: "Çatalca İcra Avukatı",
     heroSubtitle:
-      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Büyükçekmece Adliyesi'ndedir.",
+      "İcra daireleri İstanbul Büyükçekmece Adliyesi bünyesindedir; alacak tahsili amacıyla başlatılan icra takibi, ödeme emrine itiraz ve haciz aşamalarında temsil sağlanır.",
     metaTitle: "Çatalca İcra Avukatı",
     metaDescription:
       "Çatalca'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Çatalca'daki üretici, esnaf ve bireysel müvekkillere danışmanlık verir.",
+      "Çatalca'daki üretici, esnaf ve bireysel müvekkillere icra ve iflas hukuku kapsamında danışmanlık veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukat olup 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Süt Ürünleri Alacakları", description: "Mandıra ve süt ürünleri satışından doğan alacakların takibi." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -244,8 +244,8 @@ export const catalcaServices: PseoService[] = [
       "Mali sıkıntı yaşayan borçlular için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "Manda ve inek sütünden peynir, yoğurt ve tereyağı üretiminin önemli bir geçim kaynağı olduğu Çatalca'da, üretici ile toptancı arasındaki ödeme uyuşmazlıkları icra takiplerinin sık başvurulan nedenleri arasındadır.",
-      "Bu takiplere ilişkin uyuşmazlıklar İstanbul Büyükçekmece Adliyesi'ndeki icra mahkemelerinde görülür; borçlunun Çatalca'da yerleşik olduğu takiplerde yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak tespit edilir.",
+      "İcra takibine ilişkin uyuşmazlıklar İstanbul Büyükçekmece Adliyesi'ndeki icra mahkemelerinde görülmekte olup, borçlunun Çatalca'da yerleşik bulunduğu dosyalarda yetkili icra dairesi kural olarak borçlunun ikametgahına göre belirlenmektedir.",
+      "Çatalca'da manda ve inek sütünden peynir, yoğurt ve tereyağı üretimi önemli bir geçim kaynağı olup, üretici ile toptancı arasında ortaya çıkan ödeme uyuşmazlıkları da bu icra takiplerinin sık karşılaşılan sebeplerindendir.",
     ],
     faqs: [
       { question: "İcra takibine hangi belgelerle başlanır?", answer: "Sözleşme, senet, fatura veya mahkeme ilamı gibi belgelerle başlanabilir." },
@@ -472,12 +472,12 @@ export const catalcaServices: PseoService[] = [
     name: "Çatalca Borçlar Hukuku Avukatı",
     heroTitle: "Çatalca Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "Süt ürünleri tedarik sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi'ndedir.",
+      "İstanbul Büyükçekmece Adliyesi bünyesindeki ticaret ve asliye hukuk mahkemelerinde görülen süt ürünleri tedarik sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanmaktadır.",
     metaTitle: "Çatalca Borçlar Hukuku Avukatı",
     metaDescription:
       "Çatalca'da sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Borçlar hukuku kapsamında Çatalca'daki müvekkillerine sözleşme ve alacak uyuşmazlıklarında danışmanlık verir.",
+      "Borçlar hukuku kapsamında sözleşme ve alacak uyuşmazlıklarına ilişkin olarak Çatalca'daki müvekkillere danışmanlık hizmeti, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olan avukat Furkan Arıkan tarafından sağlanmaktadır.",
     highlightCards: [
       { title: "Süt Tedarik Sözleşmeleri", description: "Üretici-toptancı arası süt/peynir tedarik sözleşmeleri." },
       { title: "Alacak Davaları", description: "Para alacaklarının dava veya takip yoluyla tahsili." },
@@ -494,8 +494,8 @@ export const catalcaServices: PseoService[] = [
       "Sebepsiz zenginleşmeye dayalı iade talepleri",
     ],
     localParagraphs: [
-      "Manda yetiştiriciliği ve süt ürünleri üretiminin önemli bir geçim kaynağı olduğu Çatalca'da, üretici ile toptancı arasındaki tedarik sözleşmeleri ile hayvan alım-satımından doğan uyuşmazlıklar sık karşılaşılan borçlar hukuku konularındandır.",
-      "Bu davalar İstanbul Büyükçekmece Adliyesi bünyesinde görülür; bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvuru zorunlu olabilir.",
+      "Bu uyuşmazlıklara ilişkin davalar İstanbul Büyükçekmece Adliyesi bünyesinde görülür; bazı ticari alacak taleplerinde dava açılmadan önce arabuluculuğa başvurulması zorunlu olabilir.",
+      "Geçimin önemli bir bölümünü oluşturan manda yetiştiriciliği ve süt ürünleri üretimi nedeniyle Çatalca'da, üretici-toptancı tedarik sözleşmeleri ile hayvan alım-satımından kaynaklanan uyuşmazlıklar borçlar hukukunda sık karşılaşılan konulardandır.",
     ],
     faqs: [
       { question: "Satın alınan manda hastalıklı çıkarsa ne yapılabilir?", answer: "Ayıba dayalı olarak sözleşmeden dönme veya bedel indirimi talep edilebilir." },

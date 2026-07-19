@@ -71,12 +71,12 @@ export const kucukcekmeceServices: PseoService[] = [
     name: "Küçükçekmece Boşanma Avukatı",
     heroTitle: "Küçükçekmece Boşanma Avukatı",
     heroSubtitle:
-      "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Küçükçekmece Adliyesi bünyesindedir.",
+      "İstanbul Küçükçekmece Adliyesi bünyesindeki aile mahkemelerinde görülen anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır.",
     metaTitle: "Küçükçekmece Boşanma Avukatı",
     metaDescription:
       "Küçükçekmece'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Aile hukuku alanında Küçükçekmece'deki müvekkillerine boşanma, velayet ve nafaka konularında temsil sağlar.",
+      "Boşanma, velayet ve nafaka gibi aile hukuku uyuşmazlıklarında Küçükçekmece'deki müvekkillerini temsil eden Furkan Arıkan, 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat olarak görev yapmaktadır.",
     highlightCards: [
       { title: "Anlaşmalı Süreç", description: "Protokolün eksiksiz hazırlanması ve tek duruşmalık takip." },
       { title: "Çekişmeli Süreç", description: "Kusur ve tazminat iddialarının delillendirilmesi." },
@@ -93,8 +93,8 @@ export const kucukcekmeceServices: PseoService[] = [
       "Boşanmaya bağlı maddi/manevi tazminat talepleri",
     ],
     localParagraphs: [
-      "Yoğun nüfuslu ve sanayi işletmelerinin yaygın olduğu Küçükçekmece'de, boşanma davalarında iş yoğunluğuna bağlı çalışma düzeninin velayet ve kişisel ilişki planlamasına etkisi zaman zaman değerlendirilmesi gereken bir konu olmaktadır.",
-      "Boşanma, velayet ve nafaka davalarına İstanbul Küçükçekmece Adliyesi'ndeki aile mahkemelerinde bakılır. Anlaşmalı süreçte protokolün tam olması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirler.",
+      "Küçükçekmece'de görülen boşanma, velayet ve nafaka davalarına İstanbul Küçükçekmece Adliyesi bünyesindeki aile mahkemeleri bakar; süreç anlaşmalı yürütülürse protokolün eksiksizliği, çekişmeli yürütülürse delillerin yeterliliği belirleyici olur.",
+      "İlçenin yoğun nüfusu ve sanayi işletmelerinin yaygınlığı düşünüldüğünde, velayet süreçlerinde çalışma düzenine bağlı kişisel ilişki planlamasının da zaman zaman ayrıca değerlendirilmesi gerekebilmektedir.",
     ],
     faqs: [
       { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "İstanbul Küçükçekmece Adliyesi'ndeki aile mahkemesine başvurulur." },
@@ -221,12 +221,12 @@ export const kucukcekmeceServices: PseoService[] = [
     name: "Küçükçekmece İcra Avukatı",
     heroTitle: "Küçükçekmece İcra Avukatı",
     heroSubtitle:
-      "Sanayi ve ticari alacakların tahsili amacıyla icra takibi, itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Küçükçekmece Adliyesi bünyesindedir.",
+      "İcra daireleri İstanbul Küçükçekmece Adliyesi bünyesinde yer alır; sanayi ve ticari alacakların tahsiline yönelik icra takibi, itiraz ve haciz süreçlerinde temsil verilir.",
     metaTitle: "Küçükçekmece İcra Avukatı",
     metaDescription:
       "Küçükçekmece'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Küçükçekmece'deki fabrika işletmecilerine, esnafa ve bireysel müvekkillere danışmanlık verir.",
+      "2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olan ve İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bulunan Furkan Arıkan, icra ve iflas hukuku alanında Küçükçekmece'deki fabrika işletmecilerine, esnafa ve bireysel müvekkillere danışmanlık vermektedir.",
     highlightCards: [
       { title: "Sanayi Alacakları", description: "Fabrika ve imalathaneler arası ticari alacakların takibi." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -243,8 +243,8 @@ export const kucukcekmeceServices: PseoService[] = [
       "Mali sıkıntı yaşayan işletmeler için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "200'ü aşkın büyük fabrika ile binlerce imalathanenin faaliyet gösterdiği Küçükçekmece'de, tedarikçi-alıcı ilişkilerinden doğan çek ve senet alacakları icra takiplerinin en sık başvurulan nedenleri arasındadır.",
-      "Bu takiplere ilişkin uyuşmazlıklar İstanbul Küçükçekmece Adliyesi'ndeki icra mahkemelerinde görülür; borçlunun Küçükçekmece'de yerleşik olduğu takiplerde yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak tespit edilir.",
+      "Küçükçekmece'de 200'ü aşkın büyük fabrika ve binlerce imalathane faaliyet göstermektedir; tedarikçi ile alıcı arasındaki ticari ilişkilerden doğan çek ve senet alacakları, bu ortamda açılan icra takiplerinin başlıca nedenidir.",
+      "İstanbul Küçükçekmece Adliyesi bünyesindeki icra mahkemeleri bu takiplere ilişkin uyuşmazlıklara bakmaktadır; borçlunun Küçükçekmece'de yerleşik olduğu dosyalarda yetkili icra dairesi, kural olarak borçlunun ikametgahı esas alınarak belirlenir.",
     ],
     faqs: [
       { question: "İcra takibine hangi belgelerle başlanır?", answer: "Sözleşme, senet, çek, fatura veya mahkeme ilamı gibi belgelerle başlanabilir." },
@@ -421,12 +421,12 @@ export const kucukcekmeceServices: PseoService[] = [
     name: "Küçükçekmece Vergi Avukatı",
     heroTitle: "Küçükçekmece Vergi Avukatı",
     heroSubtitle:
-      "Sanayi işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
+      "Yetkili mahkeme İstanbul vergi mahkemeleri olmak üzere; sanayi işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil hizmeti sunulur.",
     metaTitle: "Küçükçekmece Vergi Avukatı",
     metaDescription:
       "Küçükçekmece'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Küçükçekmece'deki müvekkillerine danışmanlık verir.",
+      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukat olup, 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur; vergi tarhiyatı ve buna bağlı cezalara ilişkin uyuşmazlıklarda Küçükçekmece'deki müvekkillerine danışmanlık sağlamaktadır.",
     highlightCards: [
       { title: "Tarhiyat İtirazı", description: "Re'sen veya ikmalen tarh edilen vergiye karşı dava." },
       { title: "Ceza Uyuşmazlıkları", description: "Usulsüzlük ve vergi ziyaı cezalarına itiraz." },
@@ -443,8 +443,8 @@ export const kucukcekmeceServices: PseoService[] = [
       "Kayıt dışı işlem iddialarına karşı savunma hazırlanması",
     ],
     localParagraphs: [
-      "200'ü aşkın büyük fabrikaya ev sahipliği yapan Küçükçekmece'de, üretim ve satış kayıtlarına ilişkin vergi incelemeleri ile bunlara bağlı ceza kesme işlemleri sık karşılaşılan konular arasındadır.",
-      "Bu işlemlere karşı açılan davalar İstanbul vergi mahkemelerinde görülmektedir; ihbarnameye karşı dava açma süresi tebliğden itibaren 30 gündür.",
+      "Vergi tarhiyatı veya cezasına karşı açılan davalara İstanbul vergi mahkemelerinde bakılmakta olup, ihbarnamenin tebliğinden itibaren dava açma süresi 30 gün ile sınırlıdır.",
+      "200'ü aşkın büyük fabrikanın bulunduğu Küçükçekmece'de, işletmelerin üretim ve satış kayıtlarının vergi incelemesine konu edilmesi ile buna bağlı olarak kesilen cezalar, sıklıkla karşılaşılan uyuşmazlık türleri arasında yer almaktadır.",
     ],
     faqs: [
       { question: "İhbarnameye itiraz süresi ne kadardır?", answer: "Tebliğden itibaren 30 gün içinde dava açılabilir." },

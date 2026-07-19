@@ -122,12 +122,12 @@ export const beylikduzuServices: PseoService[] = [
     name: "Beylikdüzü Ceza Avukatı",
     heroTitle: "Beylikdüzü Ceza Avukatı",
     heroSubtitle:
-      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Büyükçekmece Adliyesi'nde yürütülür.",
+      "Beylikdüzü'nde yürütülen ceza dosyalarında ifade alma, gözaltı ve kovuşturmanın her aşamasında müdafi olarak destek verilir; davalara bakan adliye İstanbul Büyükçekmece Adliyesi'dir.",
     metaTitle: "Beylikdüzü Ceza Avukatı",
     metaDescription:
       "Beylikdüzü'nde soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında Beylikdüzü'ndeki müvekkillerine müdafilik yapar.",
+      "Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarının tamamında Beylikdüzü'ndeki müvekkillere müdafilik hizmeti veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır ve 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Soruşturma Aşaması", description: "İfade ve gözaltı sürecinde hukuki destek." },
       { title: "Kovuşturma Takibi", description: "Duruşma katılımı ve delillerin değerlendirilmesi." },
@@ -144,8 +144,8 @@ export const beylikduzuServices: PseoService[] = [
       "Uzlaşma sürecinde tarafların bir araya getirilmesi",
     ],
     localParagraphs: [
-      "TÜYAP Fuar ve Kongre Merkezi çevresinde yoğunlaşan etkinlik ve organizasyon faaliyetleri, Beylikdüzü'nde zaman zaman ticari ilişkilerden kaynaklanan güven suçu iddialarının da gündeme gelmesine yol açabilmektedir.",
-      "Kovuşturma aşamasındaki davalar İstanbul Büyükçekmece Adliyesi'nde görülür. Gözaltı sürecinin başladığı andan itibaren müdafi ile görüşme hakkı doğar; bu hakkın zamanında kullanılması sonraki aşamaların seyri açısından belirleyicidir.",
+      "Beylikdüzü'nde zaman zaman gündeme gelen güven suçu iddialarının bir kısmı, TÜYAP Fuar ve Kongre Merkezi çevresinde yoğunlaşan etkinlik ve organizasyon faaliyetlerinden doğan ticari ilişkilerden kaynaklanabilmektedir.",
+      "Müdafi ile görüşme hakkı, gözaltı sürecinin başladığı andan itibaren doğar ve bu hakkın zamanında kullanılması sürecin sonraki aşamalarını doğrudan etkiler; Beylikdüzü'nde açılan kovuşturma dosyalarına İstanbul Büyükçekmece Adliyesi'nde bakılmaktadır.",
     ],
     faqs: [
       { question: "Beylikdüzü'nde bir ceza davası hangi adliyede görülür?", answer: "İstanbul Büyükçekmece Adliyesi'nde görülür." },
@@ -272,12 +272,12 @@ export const beylikduzuServices: PseoService[] = [
     name: "Beylikdüzü İdare Avukatı",
     heroTitle: "Beylikdüzü İdare Avukatı",
     heroSubtitle:
-      "Belediye, imar ve kıyı alanı işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
+      "Beylikdüzü'nde belediye, imar ve kıyı alanına ilişkin idari işlemlere karşı açılan iptal ve tam yargı davalarında İstanbul idare mahkemeleri nezdinde temsil sağlanır.",
     metaTitle: "Beylikdüzü İdare Avukatı",
     metaDescription:
       "Beylikdüzü'nde idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. İdari işlemlerin iptali ve tam yargı davalarında Beylikdüzü'ndeki müvekkillerine danışmanlık verir.",
+      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş olup idari işlemlerin iptali ve tam yargı davaları alanında Beylikdüzü'ndeki müvekkillerine danışmanlık vermektedir.",
     highlightCards: [
       { title: "İptal Davaları", description: "Hukuka aykırı idari kararlara karşı dava süreci." },
       { title: "Kıyı Alanı Uygulamaları", description: "Sahil şeridi ve marina bölgesindeki imar uyuşmazlıkları." },
@@ -294,8 +294,8 @@ export const beylikduzuServices: PseoService[] = [
       "Kamu görevlisi özlük haklarına ilişkin uyuşmazlıklar",
     ],
     localParagraphs: [
-      "12,4 km uzunluğundaki kıyı şeridine ve West İstanbul Marina gibi tesislere sahip Beylikdüzü'nde, sahil alanı ve imar planı değişikliklerine ilişkin idari işlemler zaman zaman dava konusu olabilmektedir.",
-      "Bu davalar İstanbul idare mahkemelerinde görülür; dava açma süresi genel kural olarak işlemin tebliğinden itibaren 60 gündür.",
+      "Sahil alanına ve imar planı değişikliklerine ilişkin idari işlemler, Beylikdüzü'nde zaman zaman dava konusu olabilmektedir; ilçe, 12,4 km uzunluğundaki kıyı şeridi ve West İstanbul Marina gibi tesisleriyle geniş bir sahil alanına sahiptir.",
+      "Genel kural olarak dava açma süresi, ilgili işlemin tebliğinden itibaren 60 gündür; bu süre içindeki davalara İstanbul idare mahkemelerinde bakılmaktadır.",
     ],
     faqs: [
       { question: "Kıyı şeridindeki bir yapılaşmaya itiraz nasıl yapılır?", answer: "İlan veya tebliğ tarihinden itibaren yasal süre içinde idare mahkemesinde dava açılabilir." },

@@ -121,12 +121,12 @@ export const basaksehirServices: PseoService[] = [
     name: "Başakşehir Ceza Avukatı",
     heroTitle: "Başakşehir Ceza Avukatı",
     heroSubtitle:
-      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Küçükçekmece Adliyesi'nde yürütülür.",
+      "Kovuşturma İstanbul Küçükçekmece Adliyesi'nde görülür; gözaltı ve ifade alma anından yargılamanın sonuna kadar sürecin her aşamasında müdafi olarak hukuki destek sağlanır.",
     metaTitle: "Başakşehir Ceza Avukatı",
     metaDescription:
       "Başakşehir'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında Başakşehir'deki müvekkillerine müdafilik yapar.",
+      "2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olan Furkan Arıkan, İstanbul Barosu'nun 72621 sicil numaralı avukatıdır. Başakşehir'deki müvekkillere, ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarının tamamında müdafi olarak hukuki destek verilir.",
     highlightCards: [
       { title: "Soruşturma Aşaması", description: "İfade ve gözaltı sürecinde hukuki destek." },
       { title: "Kovuşturma Takibi", description: "Duruşma katılımı ve delillerin değerlendirilmesi." },
@@ -143,8 +143,8 @@ export const basaksehirServices: PseoService[] = [
       "Uzlaşma sürecinde tarafların bir araya getirilmesi",
     ],
     localParagraphs: [
-      "Hızla büyüyen uydu kentleri ve yoğun nüfus hareketliliğiyle Başakşehir'de, kolluk müdahalesi gerektiren olaylar diğer bazı ilçelere kıyasla farklı bir profil gösterebilmektedir.",
-      "Kovuşturma aşamasındaki davalar İstanbul Küçükçekmece Adliyesi'nde görülür. Gözaltı sürecinin başladığı andan itibaren müdafi ile görüşme hakkı doğar; bu hakkın zamanında kullanılması sonraki aşamaların seyri açısından belirleyicidir.",
+      "Başakşehir'in hızla büyüyen uydu kentleri ve buna bağlı yoğun nüfus hareketliliği, ilçenin belirgin özelliklerindendir; bu yapı, kolluk müdahalesi gerektiren olayların bazı ilçelerden farklı bir seyir izlemesine yol açabilmektedir.",
+      "Gözaltına alınan kişinin müdafi ile görüşme hakkı, gözaltı sürecinin başladığı andan itibaren doğar; bu hakkın zamanında kullanılması sürecin sonraki aşamalarının seyri açısından belirleyici olabilmektedir. Kovuşturma aşamasına geçildiğinde davalar İstanbul Küçükçekmece Adliyesi'nde görülmektedir.",
     ],
     faqs: [
       { question: "Başakşehir'de bir ceza davası hangi adliyede görülür?", answer: "İstanbul Küçükçekmece Adliyesi'nde görülür." },
@@ -221,12 +221,12 @@ export const basaksehirServices: PseoService[] = [
     name: "Başakşehir İcra Avukatı",
     heroTitle: "Başakşehir İcra Avukatı",
     heroSubtitle:
-      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Küçükçekmece Adliyesi'ndedir.",
+      "İcra daireleri İstanbul Küçükçekmece Adliyesi bünyesindedir; alacağın tahsili amacıyla yürütülen icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır.",
     metaTitle: "Başakşehir İcra Avukatı",
     metaDescription:
       "Başakşehir'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Başakşehir'deki alacaklı ve borçlu taraflara danışmanlık verir.",
+      "İcra ve iflas hukuku alanında Başakşehir'deki alacaklı ve borçlu taraflara danışmanlık ve temsil hizmeti veren Furkan Arıkan, İstanbul Barosu'nun 72621 sicil numaralı avukatıdır ve 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Takip Süreci", description: "İlamlı veya ilamsız icra takibinin başlatılması." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -243,8 +243,8 @@ export const basaksehirServices: PseoService[] = [
       "Mali sıkıntı yaşayan borçlular için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "Sürekli yeni konut projelerinin teslim edildiği Başakşehir'de, müteahhit-alıcı ilişkilerinden ve site aidatlarından doğan alacaklar icra takiplerinin sık başvurulan nedenleri arasındadır.",
-      "Bu takiplere ilişkin uyuşmazlıklar İstanbul Küçükçekmece Adliyesi'ndeki icra mahkemelerinde görülür; borçlunun Başakşehir'de yerleşik olduğu takiplerde yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak tespit edilir.",
+      "Başakşehir'de icra takiplerinin sık karşılaşılan nedenleri arasında müteahhit-alıcı ilişkilerinden ve site aidatlarından kaynaklanan alacaklar yer almaktadır; bunda ilçede sürekli yeni konut projelerinin teslim edilmesinin de etkisi bulunmaktadır.",
+      "Borçlunun Başakşehir'de yerleşik olduğu icra takiplerinde yetkili icra dairesi, kural olarak borçlunun ikametgahı esas alınarak belirlenir. Bu uyuşmazlıklar İstanbul Küçükçekmece Adliyesi'ndeki icra mahkemelerinde görülmektedir.",
     ],
     faqs: [
       { question: "İcra takibine hangi belgelerle başlanır?", answer: "Sözleşme, senet, fatura veya mahkeme ilamı gibi belgelerle başlanabilir." },

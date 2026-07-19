@@ -373,12 +373,12 @@ export const esenlerServices: PseoService[] = [
     name: "Esenler Kira ve Tahliye Avukatı",
     heroTitle: "Esenler Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Konut ve depo/antrepo tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Bakırköy Adliyesi'ndedir.",
+      "Esenler'de konut ya da depo/antrepo niteliğindeki taşınmazların tahliyesi, kira bedelinin belirlenmesi ve kira sözleşmesinden doğan uyuşmazlıklarda destek verilir; bu davalar İstanbul Bakırköy Adliyesi'ndeki sulh hukuk mahkemelerinde görülür.",
     metaTitle: "Esenler Kira ve Tahliye Avukatı",
     metaDescription:
       "Esenler'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Kira hukuku alanında Esenler'deki kiraya verenlere ve kiracılara danışmanlık verir.",
+      "Kira hukuku alanında Esenler'deki kiraya verenlere ve kiracılara danışmanlık veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Konut Tahliyesi", description: "İhtiyaç, temerrüt ve taahhüde dayalı tahliye süreçleri." },
       { title: "Depo/Antrepo Tahliyesi", description: "Lojistik amaçlı kullanılan taşınmazlarda tahliye süreci." },
@@ -395,8 +395,8 @@ export const esenlerServices: PseoService[] = [
       "Kira sözleşmesinin feshinden doğan tazminat talepleri",
     ],
     localParagraphs: [
-      "Yoğun konut dokusunun yanı sıra lojistik firmalarının depolama ihtiyacına yönelik çok sayıda taşınmazın da kiracılık ilişkisiyle işletildiği Esenler'de, depo/antrepo tahliyeleri konut kiralarına kıyasla farklı usul kurallarına tabi olabilmektedir.",
-      "Bu davalara İstanbul Bakırköy Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; taşınmazın konut mu işyeri mi olduğu, uygulanacak usulü doğrudan etkiler.",
+      "Esenler'de yoğun konut dokusunun yanında, İstanbul Otogarı çevresindeki lojistik firmalarının depolama ihtiyacı nedeniyle kiracılık ilişkisiyle işletilen depo/antrepo niteliğinde taşınmazlar da bulunur; bu taşınmazların tahliyesi konut kiralarından farklı usul kurallarına tabi olabilir.",
+      "Bu taşınmazın konut mu yoksa işyeri mi sayılacağı, uygulanacak usulü doğrudan etkileyen bir husustur; ilgili davalar İstanbul Bakırköy Adliyesi çatısı altındaki sulh hukuk mahkemelerinde görülmektedir.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir." },
@@ -423,12 +423,12 @@ export const esenlerServices: PseoService[] = [
     name: "Esenler Vergi Avukatı",
     heroTitle: "Esenler Vergi Avukatı",
     heroSubtitle:
-      "Nakliye ve lojistik işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
+      "Esenler'deki nakliye ve lojistik işletmeleri için vergi tarhiyatına, kesilen cezalara ve uzlaşma sürecine ilişkin temsil sağlanır; bu uyuşmazlıklarda yetkili yargı mercii İstanbul vergi mahkemeleridir.",
     metaTitle: "Esenler Vergi Avukatı",
     metaDescription:
       "Esenler'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Esenler'deki müvekkillerine danışmanlık verir.",
+      "Vergi tarhiyatı ve buna bağlı cezalara ilişkin uyuşmazlıklarda Esenler'deki müvekkillerine danışmanlık veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukat olup 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Tarhiyat İtirazı", description: "Re'sen veya ikmalen tarh edilen vergiye karşı dava." },
       { title: "Ceza Uyuşmazlıkları", description: "Usulsüzlük ve vergi ziyaı cezalarına itiraz." },
@@ -445,8 +445,8 @@ export const esenlerServices: PseoService[] = [
       "Motorlu taşıtlar vergisi ve ÖTV kaynaklı uyuşmazlıklarda destek",
     ],
     localParagraphs: [
-      "İstanbul Otogarı çevresindeki yoğun nakliye ve taşımacılık faaliyeti nedeniyle Esenler'de motorlu taşıtlar vergisi, KDV ve navlun gelirlerine ilişkin vergi incelemeleri ile bunlara bağlı ceza kesme işlemleri sık karşılaşılan konular arasındadır.",
-      "Bu işlemlere karşı açılan davalar İstanbul vergi mahkemelerinde görülmektedir; ihbarnameye karşı dava açma süresi tebliğden itibaren 30 gündür.",
+      "Esenler'de motorlu taşıtlar vergisi, KDV ve navlun gelirleriyle ilgili vergi incelemeleri ile bunların sonucunda uygulanan ceza kesme işlemleri sıkça gündeme gelmektedir; bunun başlıca nedeni İstanbul Otogarı çevresinde yoğunlaşan nakliye ve taşımacılık faaliyetleridir.",
+      "İstanbul vergi mahkemeleri, bu tür işlemlere karşı açılan davalara bakmakla görevlidir; ihbarnamenin tebliğinden itibaren 30 günlük süre içinde dava açılması gerekir.",
     ],
     faqs: [
       { question: "İhbarnameye itiraz süresi ne kadardır?", answer: "Tebliğden itibaren 30 gün içinde dava açılabilir." },

@@ -71,12 +71,12 @@ export const bagcilarServices: PseoService[] = [
     name: "Bağcılar Boşanma Avukatı",
     heroTitle: "Bağcılar Boşanma Avukatı",
     heroSubtitle:
-      "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
+      "Bağcılar, aile mahkemelerinin de yer aldığı İstanbul Bakırköy Adliyesi'nin yargı çevresindedir; anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı talepleri bakımından temsil sağlanır.",
     metaTitle: "Bağcılar Boşanma Avukatı",
     metaDescription:
       "Bağcılar'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Aile hukuku alanında Bağcılar'daki müvekkillerine boşanma, velayet ve nafaka konularında temsil sağlar.",
+      "2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olan ve İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bulunan Furkan Arıkan, aile hukuku alanında Bağcılar'daki müvekkillerine boşanma, velayet ve nafaka konularında temsil sağlamaktadır.",
     highlightCards: [
       { title: "Anlaşmalı Süreç", description: "Protokolün eksiksiz hazırlanması ve tek duruşmalık takip." },
       { title: "Çekişmeli Süreç", description: "Kusur ve tazminat iddialarının delillendirilmesi." },
@@ -93,8 +93,8 @@ export const bagcilarServices: PseoService[] = [
       "Boşanmaya bağlı maddi/manevi tazminat talepleri",
     ],
     localParagraphs: [
-      "Bağcılar'ın yüksek nüfus yoğunluğu, ilçede açılan aile hukuku davalarının sayısını da doğrudan etkilemektedir; özellikle kalabalık hanelerde velayet ve ortak konutun kullanımı gibi konular ayrı bir önem kazanmaktadır.",
-      "Boşanma, velayet ve nafaka davalarına İstanbul Bakırköy Adliyesi'ndeki aile mahkemelerinde bakılır. Anlaşmalı süreçte protokolün tam olması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirler.",
+      "Velayet düzenlemesi ve ortak konutun kullanımı gibi konular, Bağcılar'da açılan aile hukuku dosyalarında öne çıkan başlıklar arasındadır; bunun bir nedeni de ilçenin yüksek nüfus yoğunluğu ve buna bağlı olarak kalabalık hanelerin yaygınlığıdır.",
+      "Anlaşmalı süreçte protokolün eksiksiz hazırlanması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirleyen temel unsurdur; her iki süreçte de yetkili aile mahkemeleri İstanbul Bakırköy Adliyesi bünyesinde faaliyet göstermektedir.",
     ],
     faqs: [
       { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "İstanbul Bakırköy Adliyesi'ndeki aile mahkemesine başvurulur." },
@@ -122,12 +122,12 @@ export const bagcilarServices: PseoService[] = [
     name: "Bağcılar Ceza Avukatı",
     heroTitle: "Bağcılar Ceza Avukatı",
     heroSubtitle:
-      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Bakırköy Adliyesi'nde yürütülür.",
+      "Kovuşturma aşamasındaki dosyalar İstanbul Bakırköy Adliyesi'nde yürütülmektedir; gözaltı, ifade alma ve bu süreci izleyen kovuşturmanın her evresinde müdafilik hizmeti sunulur.",
     metaTitle: "Bağcılar Ceza Avukatı",
     metaDescription:
       "Bağcılar'da soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında Bağcılar'daki müvekkillerine müdafilik yapar.",
+      "Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarının tümünde Bağcılar'daki müvekkillerine müdafilik yapan Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olup MEF Üniversitesi Hukuk Fakültesi'nin 2019 mezunudur.",
     highlightCards: [
       { title: "Soruşturma Aşaması", description: "İfade ve gözaltı sürecinde hukuki destek." },
       { title: "Kovuşturma Takibi", description: "Duruşma katılımı ve delillerin değerlendirilmesi." },
@@ -144,8 +144,8 @@ export const bagcilarServices: PseoService[] = [
       "Uzlaşma sürecinde tarafların bir araya getirilmesi",
     ],
     localParagraphs: [
-      "Yüksek nüfus yoğunluğu ve geniş bir sanayi/ticaret ağına sahip olması, Bağcılar'da kolluk müdahalesi gerektiren olayların çeşitliliğini de artırmaktadır; işyerlerine ilişkin güvenlik ve mülkiyet suçları bu bağlamda sık karşılaşılan dosya türleri arasındadır.",
-      "Kovuşturma aşamasındaki davalar İstanbul Bakırköy Adliyesi'nde görülür. Gözaltı sürecinin başladığı andan itibaren müdafi ile görüşme hakkı doğar; bu hakkın zamanında kullanılması sonraki aşamaların seyri açısından belirleyicidir.",
+      "İşyerlerine yönelik güvenlik ve mülkiyet suçları, Bağcılar'da sık karşılaşılan ceza dosyaları arasında yer almaktadır; ilçenin yüksek nüfus yoğunluğu ile geniş sanayi ve ticaret ağı, kolluk müdahalesi gerektiren olay çeşitliliğini artıran etkenler arasında sayılabilir.",
+      "Gözaltına alınan kişi bu aşamadan itibaren müdafi ile görüşme hakkına sahiptir; bu hakkın zamanında kullanılması sürecin sonraki aşamaları bakımından belirleyici olabilmektedir. Kovuşturma safhasına geçildiğinde dosyalar İstanbul Bakırköy Adliyesi'nde görülmeye devam etmektedir.",
     ],
     faqs: [
       { question: "Bağcılar'da bir ceza davası hangi adliyede görülür?", answer: "İstanbul Bakırköy Adliyesi'nde görülür." },
@@ -223,12 +223,12 @@ export const bagcilarServices: PseoService[] = [
     name: "Bağcılar İcra Avukatı",
     heroTitle: "Bağcılar İcra Avukatı",
     heroSubtitle:
-      "Ticari ve bireysel alacakların tahsili amacıyla icra takibi, itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Bakırköy Adliyesi bünyesindedir.",
+      "İstanbul Bakırköy Adliyesi bünyesindeki icra daireleri nezdinde yürütülen icra takibi, itiraz ve haciz süreçlerinde, ticari ve bireysel alacakların tahsiline yönelik temsil hizmeti sunulmaktadır.",
     metaTitle: "Bağcılar İcra Avukatı",
     metaDescription:
       "Bağcılar'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Bağcılar'daki esnaf, işletme sahibi ve bireysel müvekkillerine danışmanlık verir.",
+      "Avukat Furkan Arıkan İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olup 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur; icra ve iflas hukuku kapsamında Bağcılar'daki esnaf, işletme sahibi ve bireysel müvekkillere danışmanlık sunmaktadır.",
     highlightCards: [
       { title: "Ticari Alacaklar", description: "Atölye ve işletmeler arası fatura/senet alacaklarının takibi." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -245,8 +245,8 @@ export const bagcilarServices: PseoService[] = [
       "Mali sıkıntı yaşayan işletmeler için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "Binlerce küçük ve orta ölçekli atölye ile işletmenin faaliyet gösterdiği Bağcılar'da, tedarikçi-alıcı ilişkilerinden doğan çek ve senet alacakları icra takiplerinin en sık başvurulan nedenleri arasındadır.",
-      "Bu takiplere ilişkin uyuşmazlıklar İstanbul Bakırköy Adliyesi'ndeki icra mahkemelerinde görülür; borçlunun Bağcılar'da yerleşik olduğu takiplerde yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak tespit edilir.",
+      "Çek ve senede dayalı alacaklardan kaynaklanan icra takipleri, tedarikçi-alıcı ilişkilerinin yoğun olduğu Bağcılar'da sıklıkla başvurulan bir yol olarak öne çıkmaktadır; ilçede faaliyet gösteren binlerce küçük ve orta ölçekli atölye ve işletme bu tabloda belirleyici bir rol oynamaktadır.",
+      "Borçlunun Bağcılar'da yerleşik olduğu takiplerde, yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak belirlenir; bu kapsamdaki uyuşmazlıklar İstanbul Bakırköy Adliyesi'ndeki icra mahkemelerinde çözümlenmektedir.",
     ],
     faqs: [
       { question: "İcra takibine hangi belgelerle başlanır?", answer: "Sözleşme, senet, çek, fatura veya mahkeme ilamı gibi belgelerle başlanabilir." },
@@ -373,12 +373,12 @@ export const bagcilarServices: PseoService[] = [
     name: "Bağcılar Kira ve Tahliye Avukatı",
     heroTitle: "Bağcılar Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Konut ve işyeri tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Bakırköy Adliyesi'ndedir.",
+      "Sulh hukuk mahkemelerinin İstanbul Bakırköy Adliyesi bünyesinde yer aldığı Bağcılar'da, konut ve işyeri tahliyesinden kira bedeli tespitine ve sözleşme uyuşmazlıklarına uzanan konularda destek sağlanmaktadır.",
     metaTitle: "Bağcılar Kira ve Tahliye Avukatı",
     metaDescription:
       "Bağcılar'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Kira hukuku alanında Bağcılar'daki kiraya verenlere ve kiracılara danışmanlık verir.",
+      "2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olan avukat Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır; kira hukuku alanında Bağcılar'daki kiraya verenlere ve kiracılara danışmanlık vermektedir.",
     highlightCards: [
       { title: "Konut Tahliyesi", description: "İhtiyaç, temerrüt ve taahhüde dayalı tahliye süreçleri." },
       { title: "İşyeri Tahliyesi", description: "Atölye ve dükkan niteliğindeki taşınmazlarda tahliye süreci." },
@@ -395,8 +395,8 @@ export const bagcilarServices: PseoService[] = [
       "Kira sözleşmesinin feshinden doğan tazminat talepleri",
     ],
     localParagraphs: [
-      "Konut stokunun yanı sıra çok sayıda atölye ve dükkanın da kiracılık ilişkisiyle işletildiği Bağcılar'da, işyeri tahliyesi ve kira bedeli uyuşmazlıkları konut kiralarına kıyasla farklı usul kurallarına tabi olabilmektedir.",
-      "Bu davalara İstanbul Bakırköy Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; taşınmazın konut mu işyeri mi olduğu, uygulanacak usulü doğrudan etkiler.",
+      "İşyeri tahliyesi ile kira bedeli uyuşmazlıklarında uygulanacak usul, konut kiralarındakinden farklılık gösterebilmektedir; Bağcılar'da konut stokunun yanı sıra kiracılık ilişkisiyle işletilen çok sayıda atölye ve dükkanın bulunması, bu ayrımı pratikte önemli kılmaktadır.",
+      "Taşınmazın konut mu yoksa işyeri mi olarak nitelendirildiği, uygulanacak usulü belirleyen temel etkendir; bu tür uyuşmazlıklara İstanbul Bakırköy Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılmaktadır.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir." },
@@ -423,12 +423,12 @@ export const bagcilarServices: PseoService[] = [
     name: "Bağcılar Vergi Avukatı",
     heroTitle: "Bağcılar Vergi Avukatı",
     heroSubtitle:
-      "İşletmelere yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
+      "Vergi uyuşmazlıklarında yetkili yargı mercii İstanbul vergi mahkemeleridir; işletmelere yönelik tarhiyat, ceza kesme işlemleri ve uzlaşma süreçlerinin her aşamasında temsil hizmeti sunulmaktadır.",
     metaTitle: "Bağcılar Vergi Avukatı",
     metaDescription:
       "Bağcılar'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Bağcılar'daki müvekkillerine danışmanlık verir.",
+      "Furkan Arıkan 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş ve İstanbul Barosu'na 72621 sicil numarasıyla kayıt olmuştur; vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Bağcılar'daki müvekkillerine bu doğrultuda danışmanlık vermektedir.",
     highlightCards: [
       { title: "Tarhiyat İtirazı", description: "Re'sen veya ikmalen tarh edilen vergiye karşı dava." },
       { title: "Ceza Uyuşmazlıkları", description: "Usulsüzlük ve vergi ziyaı cezalarına itiraz." },
@@ -445,8 +445,8 @@ export const bagcilarServices: PseoService[] = [
       "Kayıt dışı işlem iddialarına karşı savunma hazırlanması",
     ],
     localParagraphs: [
-      "Binlerce küçük ve orta ölçekli atölye ile işletmenin faaliyet gösterdiği Bağcılar'da, kayıt düzeni ve fatura uyuşmazlıklarına dayalı vergi incelemeleri ile bunlara bağlı ceza kesme işlemleri sık karşılaşılan konular arasındadır.",
-      "Bu işlemlere karşı açılan davalar İstanbul vergi mahkemelerinde görülmektedir; ihbarnameye karşı dava açma süresi tebliğden itibaren 30 gündür.",
+      "Kayıt düzeni ve faturalara ilişkin uyuşmazlıklardan doğan vergi incelemeleri ile bunlara bağlı ceza kesme işlemleri, Bağcılar'da sık karşılaşılan konular arasında yer almaktadır; ilçede faaliyet gösteren binlerce küçük ve orta ölçekli atölye ve işletme, bu durumda etkili bir unsur olarak öne çıkmaktadır.",
+      "İhbarnameye karşı dava açma süresi tebliğ tarihinden itibaren 30 gün olarak uygulanmaktadır; bu süreçte açılan davalara İstanbul vergi mahkemeleri bakmaktadır.",
     ],
     faqs: [
       { question: "İhbarnameye itiraz süresi ne kadardır?", answer: "Tebliğden itibaren 30 gün içinde dava açılabilir." },

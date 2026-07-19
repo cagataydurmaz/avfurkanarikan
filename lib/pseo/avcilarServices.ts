@@ -71,12 +71,12 @@ export const avcilarServices: PseoService[] = [
     name: "Avcılar Boşanma Avukatı",
     heroTitle: "Avcılar Boşanma Avukatı",
     heroSubtitle:
-      "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Küçükçekmece Adliyesi bünyesindedir.",
+      "Aile mahkemeleri İstanbul Küçükçekmece Adliyesi bünyesinde yer alan Avcılar'da, anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımına ilişkin taleplerde temsil sağlanır.",
     metaTitle: "Avcılar Boşanma Avukatı",
     metaDescription:
       "Avcılar'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Aile hukuku alanında Avcılar'daki müvekkillerine boşanma, velayet ve nafaka konularında temsil sağlar.",
+      "Aile hukuku alanında Avcılar'daki müvekkillerine boşanma, velayet ve nafaka konularında temsil sağlayan Furkan Arıkan, 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş ve İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukat olarak faaliyetini sürdürmektedir.",
     highlightCards: [
       { title: "Anlaşmalı Süreç", description: "Protokolün eksiksiz hazırlanması ve tek duruşmalık takip." },
       { title: "Çekişmeli Süreç", description: "Kusur ve tazminat iddialarının delillendirilmesi." },
@@ -93,8 +93,8 @@ export const avcilarServices: PseoService[] = [
       "Boşanmaya bağlı maddi/manevi tazminat talepleri",
     ],
     localParagraphs: [
-      "Üniversite yerleşkesi çevresinde genç nüfusun da yoğun olduğu Avcılar'da, boşanma davalarında velayet ve nafaka taleplerinin doğru şekilde belirlenmesi önem taşımaktadır.",
-      "Boşanma, velayet ve nafaka davalarına İstanbul Küçükçekmece Adliyesi'ndeki aile mahkemelerinde bakılır. Anlaşmalı süreçte protokolün tam olması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirler.",
+      "Avcılar'da açılan boşanma, velayet ve nafaka davalarına İstanbul Küçükçekmece Adliyesi'ndeki aile mahkemelerinde bakılır; anlaşmalı süreçte protokolün eksiksizliği, çekişmeli süreçte ise delillerin gücü belirleyici olur.",
+      "Üniversite yerleşkesi çevresinde genç nüfusun yoğun olduğu Avcılar'da, boşanma sürecinde velayet ve nafaka taleplerinin doğru şekilde ortaya konması ayrı bir önem taşır.",
     ],
     faqs: [
       { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "İstanbul Küçükçekmece Adliyesi'ndeki aile mahkemesine başvurulur." },
@@ -221,12 +221,12 @@ export const avcilarServices: PseoService[] = [
     name: "Avcılar İcra Avukatı",
     heroTitle: "Avcılar İcra Avukatı",
     heroSubtitle:
-      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Küçükçekmece Adliyesi'ndedir.",
+      "İcra daireleri İstanbul Küçükçekmece Adliyesi bünyesinde bulunan Avcılar'da, alacaklı ve borçlu taraflara icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır.",
     metaTitle: "Avcılar İcra Avukatı",
     metaDescription:
       "Avcılar'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Avcılar'daki alacaklı ve borçlu taraflara danışmanlık verir.",
+      "İcra ve iflas hukuku alanında Avcılar'daki alacaklı ve borçlu taraflara danışmanlık veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır ve 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Takip Süreci", description: "İlamlı veya ilamsız icra takibinin başlatılması." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -243,8 +243,8 @@ export const avcilarServices: PseoService[] = [
       "Mali sıkıntı yaşayan borçlular için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "Üniversite çevresinde yoğunlaşan öğrenci konutu kiralama piyasası ve yerel esnaf ilişkilerinden doğan alacaklar, Avcılar'da icra takiplerinin sık başvurulan nedenleri arasındadır.",
-      "Bu takiplere ilişkin uyuşmazlıklar İstanbul Küçükçekmece Adliyesi'ndeki icra mahkemelerinde görülür; borçlunun Avcılar'da yerleşik olduğu takiplerde yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak tespit edilir.",
+      "Avcılar'da yürütülen icra takiplerine ilişkin uyuşmazlıklar İstanbul Küçükçekmece Adliyesi bünyesindeki icra mahkemelerinde görülür; borçlunun Avcılar'da ikamet ettiği dosyalarda yetkili icra dairesi, kural olarak borçlunun yerleşim yerine göre belirlenir.",
+      "Avcılar özelinde, üniversite çevresinde yoğunlaşan öğrenci kiralamalarından ve yerel esnafla olan ilişkilerden doğan alacaklar, icra takibine sıklıkla konu olan alacak türleri arasında yer alır.",
     ],
     faqs: [
       { question: "İcra takibine hangi belgelerle başlanır?", answer: "Sözleşme, senet, fatura veya mahkeme ilamı gibi belgelerle başlanabilir." },

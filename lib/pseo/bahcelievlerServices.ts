@@ -373,12 +373,12 @@ export const bahcelievlerServices: PseoService[] = [
     name: "Bahçelievler Kira ve Tahliye Avukatı",
     heroTitle: "Bahçelievler Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Konut ve ofis tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Bakırköy Adliyesi'ndedir.",
+      "İstanbul Bakırköy Adliyesi bünyesindeki sulh hukuk mahkemelerinin yetkili olduğu kira bedeli tespiti, kira sözleşmesi uyuşmazlıkları ile konut ve ofis tahliyesi süreçlerinde hukuki destek verilmektedir.",
     metaTitle: "Bahçelievler Kira ve Tahliye Avukatı",
     metaDescription:
       "Bahçelievler'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Kira hukuku alanında Bahçelievler'deki kiraya verenlere ve kiracılara danışmanlık verir.",
+      "Kira hukuku kapsamında Bahçelievler'deki kiraya verenler ve kiracılar için danışmanlık sağlayan Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olup 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Konut Tahliyesi", description: "İhtiyaç, temerrüt ve taahhüde dayalı tahliye süreçleri." },
       { title: "Ofis/İşyeri Tahliyesi", description: "Yenibosna çevresindeki ofis kiralarında tahliye süreci." },
@@ -395,8 +395,8 @@ export const bahcelievlerServices: PseoService[] = [
       "Ofis kira sözleşmesinin feshinden doğan tazminat talepleri",
     ],
     localParagraphs: [
-      "Yerleşik konut dokusunun yanı sıra Yenibosna çevresinde yoğun bir ofis kiralama piyasasının da bulunduğu Bahçelievler'de, konut ve işyeri kiraları farklı usul kurallarına tabi olabilmektedir.",
-      "Bu davalara İstanbul Bakırköy Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; taşınmazın konut mu işyeri mi olduğu, uygulanacak usulü doğrudan etkiler.",
+      "1930'larda hazırlanan imar planıyla gelişen Bahçelievler'in yerleşik konut dokusu, Yenibosna çevresindeki yoğun ofis kiralama piyasasıyla iç içedir; bu birliktelik konut ve işyeri kiralarını farklı usul kurallarına tabi kılabilmektedir.",
+      "Uygulanacak usul, taşınmazın konut ya da işyeri niteliğinde olmasına göre değişebilir; her iki halde de yetkili sulh hukuk mahkemeleri İstanbul Bakırköy Adliyesi bünyesinde yer almaktadır.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir." },
@@ -423,12 +423,12 @@ export const bahcelievlerServices: PseoService[] = [
     name: "Bahçelievler Vergi Avukatı",
     heroTitle: "Bahçelievler Vergi Avukatı",
     heroSubtitle:
-      "Hizmet sektörü işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
+      "Yetkili mahkeme İstanbul vergi mahkemeleri olmak üzere, hizmet sektörü işletmelerini ilgilendiren vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde hukuki temsil sunulmaktadır.",
     metaTitle: "Bahçelievler Vergi Avukatı",
     metaDescription:
       "Bahçelievler'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Bahçelievler'deki müvekkillerine danışmanlık verir.",
+      "Vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Bahçelievler'deki müvekkillerine danışmanlık sağlayan Furkan Arıkan, 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş ve İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bulunmaktadır.",
     highlightCards: [
       { title: "Tarhiyat İtirazı", description: "Re'sen veya ikmalen tarh edilen vergiye karşı dava." },
       { title: "Ceza Uyuşmazlıkları", description: "Usulsüzlük ve vergi ziyaı cezalarına itiraz." },
@@ -445,8 +445,8 @@ export const bahcelievlerServices: PseoService[] = [
       "Konaklama vergisi ve KDV uyuşmazlıklarında destek",
     ],
     localParagraphs: [
-      "Yenibosna çevresindeki otel ve ofis yoğunluğu nedeniyle Bahçelievler'de konaklama vergisi, KDV ve stopaj kaynaklı vergi incelemeleri ile bunlara bağlı ceza kesme işlemleri sık karşılaşılan konular arasındadır.",
-      "Bu işlemlere karşı açılan davalar İstanbul vergi mahkemelerinde görülmektedir; ihbarnameye karşı dava açma süresi tebliğden itibaren 30 gündür.",
+      "Bahçelievler'de sık karşılaşılan vergi uyuşmazlıkları arasında konaklama vergisi, KDV ve stopaj kaynaklı incelemeler ile bunlara bağlı ceza kesme işlemleri yer alır; bu durum Yenibosna çevresindeki yoğun otel ve ofis işletmeciliğinden kaynaklanır.",
+      "Bu işlemler idari aşamada Yenibosna Vergi Dairesi Müdürlüğü nezdinde yürütülür; itiraz davaları İstanbul vergi mahkemelerinde görülür ve dava açma süresi tebliğden itibaren 30 gündür.",
     ],
     faqs: [
       { question: "İhbarnameye itiraz süresi ne kadardır?", answer: "Tebliğden itibaren 30 gün içinde dava açılabilir." },

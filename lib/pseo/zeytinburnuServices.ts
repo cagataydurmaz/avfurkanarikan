@@ -373,12 +373,12 @@ export const zeytinburnuServices: PseoService[] = [
     name: "Zeytinburnu Kira ve Tahliye Avukatı",
     heroTitle: "Zeytinburnu Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Konut ve mağaza tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Bakırköy Adliyesi'ndedir.",
+      "Zeytinburnu'nda konut ve mağaza tahliyesi, kira bedeli tespiti ve kira sözleşmesinden doğan uyuşmazlıklarda hukuki destek sağlanır. Bu davalara bakan sulh hukuk mahkemeleri, İstanbul Bakırköy Adliyesi bünyesinde yer almaktadır.",
     metaTitle: "Zeytinburnu Kira ve Tahliye Avukatı",
     metaDescription:
       "Zeytinburnu'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Kira hukuku alanında Zeytinburnu'daki kiraya verenlere ve kiracılara danışmanlık verir.",
+      "Kira hukuku kapsamında Zeytinburnu'daki kiraya verenler ile kiracılara danışmanlık ve dava takibi hizmeti sunulmaktadır. Bu hizmeti yürüten Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olup 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Konut Tahliyesi", description: "İhtiyaç, temerrüt ve taahhüde dayalı tahliye süreçleri." },
       { title: "Mağaza Tahliyesi", description: "Kazlıçeşme hatboyu bölgesindeki işyerlerinde tahliye süreci." },
@@ -395,8 +395,8 @@ export const zeytinburnuServices: PseoService[] = [
       "Kira sözleşmesinin feshinden doğan tazminat talepleri",
     ],
     localParagraphs: [
-      "Konut stokunun yanı sıra Kazlıçeşme çevresinde çok sayıda mağaza ve showroom'un da kiracılık ilişkisiyle işletildiği Zeytinburnu'nda, işyeri tahliyesi konut kiralarına kıyasla farklı usul kurallarına tabi olabilmektedir.",
-      "Bu davalara İstanbul Bakırköy Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; taşınmazın konut mu işyeri mi olduğu, uygulanacak usulü doğrudan etkiler.",
+      "Taşınmazın konut ya da işyeri niteliğinde olması, tahliye sürecinde uygulanacak usul kuralını doğrudan etkilemektedir. Zeytinburnu'nda konut stokunun yanında Kazlıçeşme çevresinde kiracılık ilişkisiyle işletilen çok sayıda mağaza ve showroom bulunması, bu iki usul rejiminin ilçede birlikte uygulama alanı bulmasına yol açmaktadır.",
+      "Söz konusu tahliye ve kira uyuşmazlıklarına İstanbul Bakırköy Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılmaktadır.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir." },
@@ -473,12 +473,12 @@ export const zeytinburnuServices: PseoService[] = [
     name: "Zeytinburnu Borçlar Hukuku Avukatı",
     heroTitle: "Zeytinburnu Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "Toptan satış sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul Bakırköy Adliyesi'ndedir.",
+      "Zeytinburnu'ndaki ticaret ve asliye hukuk mahkemeleri İstanbul Bakırköy Adliyesi bünyesinde faaliyet göstermektedir. Bu mahkemeler nezdinde toptan satış sözleşmesinden doğan uyuşmazlıklar, alacak talepleri ve tazminat davalarında temsil sağlanmaktadır.",
     metaTitle: "Zeytinburnu Borçlar Hukuku Avukatı",
     metaDescription:
       "Zeytinburnu'da sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Borçlar hukuku kapsamında Zeytinburnu'daki müvekkillerine sözleşme ve alacak uyuşmazlıklarında danışmanlık verir.",
+      "Borçlar hukuku alanında Zeytinburnu'daki müvekkillere sözleşme ve alacak uyuşmazlıklarında danışmanlık ve dava takibi hizmeti sunulmaktadır. 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olan Furkan Arıkan, bu hizmeti İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat sıfatıyla yürütmektedir.",
     highlightCards: [
       { title: "Toptan Satış Sözleşmeleri", description: "Deri ve konfeksiyon toptan satışından doğan uyuşmazlıklar." },
       { title: "Alacak Davaları", description: "Para alacaklarının dava veya takip yoluyla tahsili." },
@@ -495,8 +495,8 @@ export const zeytinburnuServices: PseoService[] = [
       "Sebepsiz zenginleşmeye dayalı iade talepleri",
     ],
     localParagraphs: [
-      "Deri ve konfeksiyon ticaretinin merkezlerinden biri olan Zeytinburnu'nda, toptan satış ve konsinye teslim ilişkilerinden doğan ödeme gecikmesi ve ayıplı mal kaynaklı uyuşmazlıklar sık karşılaşılan dava türleri arasındadır.",
-      "Bu davalar İstanbul Bakırköy Adliyesi bünyesinde görülür; bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvuru zorunlu olabilir.",
+      "Ticari nitelikteki bazı alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvurulması zorunlu tutulabilmekte, açılan davalara ise İstanbul Bakırköy Adliyesi bünyesinde bakılmaktadır.",
+      "Kazlıçeşme'nin tarihi deri ve konfeksiyon ticaretiyle öne çıktığı Zeytinburnu'nda, toptan satış ve konsinye teslim ilişkilerine dayalı ödeme gecikmesi ile ayıplı mal iddiaları, bu kapsamda sık görülen uyuşmazlık türleri arasında yer almaktadır.",
     ],
     faqs: [
       { question: "Konsinye teslim edilen ürün satılmazsa ne olur?", answer: "Sözleşme şartlarına göre ürün iade edilebilir veya bedeli mahsuplaşma yoluyla çözülebilir." },

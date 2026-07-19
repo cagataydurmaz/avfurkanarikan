@@ -122,12 +122,12 @@ export const arnavutkoyServices: PseoService[] = [
     name: "Arnavutköy Ceza Avukatı",
     heroTitle: "Arnavutköy Ceza Avukatı",
     heroSubtitle:
-      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul (Çağlayan) Adliyesi'nde yürütülür.",
+      "Arnavutköy'de ceza yargılamasının kovuşturma aşamasına İstanbul (Çağlayan) Adliyesi'nde bakılır; gözaltı ve ifade alma anından itibaren müdafilik desteği sağlanır.",
     metaTitle: "Arnavutköy Ceza Avukatı",
     metaDescription:
       "Arnavutköy'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında Arnavutköy'deki müvekkillerine müdafilik yapar.",
+      "Soruşturmadan kovuşturmaya, oradan kanun yollarına kadar ceza yargılamasının her evresinde Arnavutköy'deki müvekkillere müdafilik hizmeti veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır ve 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Soruşturma Aşaması", description: "İfade ve gözaltı sürecinde hukuki destek." },
       { title: "Kovuşturma Takibi", description: "Duruşma katılımı ve delillerin değerlendirilmesi." },
@@ -144,8 +144,8 @@ export const arnavutkoyServices: PseoService[] = [
       "Uzlaşma sürecinde tarafların bir araya getirilmesi",
     ],
     localParagraphs: [
-      "İstanbul Havalimanı çevresindeki yoğun inşaat ve lojistik faaliyeti ile hızlı nüfus artışı, Arnavutköy'de kolluk müdahalesi gerektiren olayların da giderek daha sık gündeme gelmesine yol açabilmektedir. Kovuşturma aşamasındaki davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-      "Gözaltı sürecinin başladığı andan itibaren müdafi ile görüşme hakkı doğar; bu hakkın zamanında kullanılması sonraki aşamaların seyri açısından belirleyicidir.",
+      "Kolluk müdahalesi gerektiren olaylara ilişkin dosyaların kovuşturma aşaması İstanbul (Çağlayan) Adliyesi'nde görülmektedir. Arnavutköy'de bu tür başvuruların sayısı, İstanbul Havalimanı'nın yakın çevresindeki yoğun inşaat ve lojistik faaliyetle birlikte hızlanan nüfus artışına paralel olarak artış gösterebilmektedir.",
+      "Şüphelinin müdafi ile görüşme hakkı, gözaltına alınmasıyla birlikte doğar; bu hakkın zamanında kullanılması sürecin sonraki aşamalarını doğrudan etkiler.",
     ],
     faqs: [
       { question: "Arnavutköy'de bir ceza davası hangi adliyede görülür?", answer: "İstanbul (Çağlayan) Adliyesi'nde görülür." },
@@ -373,12 +373,12 @@ export const arnavutkoyServices: PseoService[] = [
     name: "Arnavutköy Kira ve Tahliye Avukatı",
     heroTitle: "Arnavutköy Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
+      "Arnavutköy'de tahliye taleplerinde, kira bedelinin belirlenmesinde ve kira sözleşmesinden doğan uyuşmazlıklarda hukuki destek sağlanır; bu davalara sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesinde bakar.",
     metaTitle: "Arnavutköy Kira ve Tahliye Avukatı",
     metaDescription:
       "Arnavutköy'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Kira hukuku alanında Arnavutköy'deki kiraya verenlere ve kiracılara danışmanlık verir.",
+      "Furkan Arıkan, 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş ve İstanbul Barosu'na 72621 sicil numarasıyla kaydolmuştur. Kira hukuku alanında Arnavutköy'deki kiraya verenlere ve kiracılara danışmanlık hizmeti sunmaktadır.",
     highlightCards: [
       { title: "Yeni Konut Kiraları", description: "Hızla büyüyen bölgede kira ilişkisi kurulması ve denetimi." },
       { title: "Konut Tahliyesi", description: "İhtiyaç, temerrüt ve taahhüde dayalı tahliye süreçleri." },
@@ -395,8 +395,8 @@ export const arnavutkoyServices: PseoService[] = [
       "Kira sözleşmesinin feshinden doğan tazminat talepleri",
     ],
     localParagraphs: [
-      "Arnavutköy'de hızla artan konut arzı ve yeni yerleşen nüfus, kira ilişkilerinin de sık kurulduğu bir piyasa oluşturmaktadır; bu uyuşmazlıklarda taşınmazın bulunduğu yer sulh hukuk mahkemesi görevlidir.",
-      "Bu davalara İstanbul (Çağlayan) Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; yeni teslim edilen projelerde kira sözleşmesi ile teslim tutanağı arasındaki uyum da ayrıca önem taşır.",
+      "Arnavutköy'de kira ilişkileri, hızla artan konut arzı ve yeni yerleşen nüfusla birlikte giderek daha yoğun biçimde kurulmaktadır; bu tür uyuşmazlıklarda görevli mahkeme, taşınmazın bulunduğu yerdeki sulh hukuk mahkemesidir.",
+      "Söz konusu sulh hukuk mahkemeleri, İstanbul (Çağlayan) Adliyesi bünyesinde faaliyet göstermektedir. Ayrıca yeni teslim edilen projelerde, kira sözleşmesiyle teslim tutanağı arasındaki uyumun kontrol edilmesi ayrı bir önem taşımaktadır.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir." },
@@ -473,12 +473,12 @@ export const arnavutkoyServices: PseoService[] = [
     name: "Arnavutköy Borçlar Hukuku Avukatı",
     heroTitle: "Arnavutköy Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "Sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
+      "Arnavutköy'de sözleşmeden doğan uyuşmazlıklar, alacak talepleri ve tazminat davaları bakımından hukuki temsil sağlanmaktadır; bu davalara bakan ticaret ve asliye hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesinde yer almaktadır.",
     metaTitle: "Arnavutköy Borçlar Hukuku Avukatı",
     metaDescription:
       "Arnavutköy'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Borçlar hukuku kapsamında Arnavutköy'deki müvekkillerine sözleşme ve alacak uyuşmazlıklarında danışmanlık verir.",
+      "Borçlar hukuku kapsamında Arnavutköy'deki müvekkillere sözleşmeden ve alacaktan kaynaklanan uyuşmazlıklarda danışmanlık hizmeti veren Furkan Arıkan, 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş ve İstanbul Barosu'na 72621 sicil numarasıyla kaydolmuştur.",
     highlightCards: [
       { title: "Sözleşme Uyuşmazlıkları", description: "İfa, ihlal ve fesih kaynaklı süreçlerin yürütülmesi." },
       { title: "Alacak Davaları", description: "Para alacaklarının dava veya takip yoluyla tahsili." },
@@ -495,8 +495,8 @@ export const arnavutkoyServices: PseoService[] = [
       "Sebepsiz zenginleşmeye dayalı iade talepleri",
     ],
     localParagraphs: [
-      "Arnavutköy'de hızla artan inşaat faaliyeti nedeniyle kat karşılığı inşaat sözleşmeleri ile arsa payı devrinden doğan uyuşmazlıklar, ilçede sık karşılaşılan bir dava türüdür; bu uyuşmazlıklara niteliğine göre asliye hukuk veya ticaret mahkemelerinde bakılır.",
-      "Bu davalar İstanbul (Çağlayan) Adliyesi bünyesinde görülür; bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvuru zorunlu olabilir.",
+      "Kat karşılığı inşaat sözleşmelerinden ve arsa payı devrinden kaynaklanan uyuşmazlıklar, Arnavutköy'de hızla artan inşaat faaliyetine bağlı olarak ilçede sıklıkla karşılaşılan bir dava türü haline gelmiştir. Niteliğine göre bu uyuşmazlıklara asliye hukuk veya ticaret mahkemesi bakmaktadır.",
+      "Söz konusu davalar İstanbul (Çağlayan) Adliyesi bünyesindeki mahkemelerde yürütülmektedir. Ticari nitelikteki bazı alacak uyuşmazlıklarında ise dava açılmadan önce arabulucuya başvurulması dava şartı olarak aranabilir.",
     ],
     faqs: [
       { question: "Kat karşılığı inşaat sözleşmesi nedir?", answer: "Arsa sahibinin arsayı, müteahhidin ise yapım hizmetini karşılıklı edim olarak sunduğu bir sözleşme türüdür." },

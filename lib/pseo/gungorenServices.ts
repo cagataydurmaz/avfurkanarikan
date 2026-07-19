@@ -473,12 +473,12 @@ export const gungorenServices: PseoService[] = [
     name: "Güngören Borçlar Hukuku Avukatı",
     heroTitle: "Güngören Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "Toptan tekstil sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul Bakırköy Adliyesi'ndedir.",
+      "Toptan tekstil ticaretinden doğan sözleşme, alacak ve tazminat uyuşmazlıkları, Güngören'in bağlı bulunduğu İstanbul Bakırköy Adliyesi'ndeki ticaret ve asliye hukuk mahkemelerinde takip edilir.",
     metaTitle: "Güngören Borçlar Hukuku Avukatı",
     metaDescription:
       "Güngören'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Borçlar hukuku kapsamında Güngören'deki müvekkillerine sözleşme ve alacak uyuşmazlıklarında danışmanlık verir.",
+      "Güngören'de borçlar hukuku kapsamındaki sözleşme ve alacak uyuşmazlıkları, danışmanlıktan dava takibine uzanan bir süreçte ele alınır. Bu hizmeti sunan Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Toptan Tekstil Sözleşmeleri", description: "Komisyonculuk ve toptan satıştan doğan uyuşmazlıklar." },
       { title: "Alacak Davaları", description: "Para alacaklarının dava veya takip yoluyla tahsili." },
@@ -495,8 +495,8 @@ export const gungorenServices: PseoService[] = [
       "Sebepsiz zenginleşmeye dayalı iade talepleri",
     ],
     localParagraphs: [
-      "Toptan tekstil ticaretinin merkezlerinden biri olan Güngören'de, komisyonculuk ve konsinye teslim ilişkilerinden doğan ödeme gecikmesi kaynaklı uyuşmazlıklar sık karşılaşılan dava türleri arasındadır.",
-      "Bu davalar İstanbul Bakırköy Adliyesi bünyesinde görülür; bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvuru zorunlu olabilir.",
+      "Bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvurulması kanunen zorunludur; Güngören'de bu davalara İstanbul Bakırköy Adliyesi'ndeki ticaret ve asliye hukuk mahkemelerinde bakılır.",
+      "Toptan tekstil çarşısıyla tanınan ilçede, komisyonculuk ve konsinye teslim ilişkilerinden kaynaklanan ödeme gecikmeleri, borçlar hukuku alanında sık görülen uyuşmazlıklar arasındadır.",
     ],
     faqs: [
       { question: "Komisyoncu ile toptancı arasındaki uyuşmazlıklar nasıl çözülür?", answer: "Öncelikle sözleşme şartları incelenir, gerekirse arabuluculuk veya dava yoluna gidilir." },

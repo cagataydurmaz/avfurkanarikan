@@ -71,12 +71,12 @@ export const silivriServices: PseoService[] = [
     name: "Silivri Boşanma Avukatı",
     heroTitle: "Silivri Boşanma Avukatı",
     heroSubtitle:
-      "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
+      "Aile mahkemelerinin İstanbul Büyükçekmece Adliyesi bünyesinde yer aldığı Silivri'de, velayet, nafaka ve mal paylaşımı talepleri anlaşmalı veya çekişmeli boşanma süreci kapsamında takip edilir.",
     metaTitle: "Silivri Boşanma Avukatı",
     metaDescription:
       "Silivri'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Aile hukuku alanında Silivri'deki müvekkillerine boşanma, velayet ve nafaka konularında temsil sağlar.",
+      "Boşanma, velayet ve nafaka uyuşmazlıklarında Silivri'deki müvekkillerine aile hukuku kapsamında temsil sağlayan Furkan Arıkan, 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş ve İstanbul Barosu'na 72621 sicil numarasıyla kaydolmuştur.",
     highlightCards: [
       { title: "Anlaşmalı Süreç", description: "Protokolün eksiksiz hazırlanması ve tek duruşmalık takip." },
       { title: "Çekişmeli Süreç", description: "Kusur ve tazminat iddialarının delillendirilmesi." },
@@ -93,8 +93,8 @@ export const silivriServices: PseoService[] = [
       "Boşanmaya bağlı maddi/manevi tazminat talepleri",
     ],
     localParagraphs: [
-      "Tarım ve hayvancılığın halen önemli bir geçim kaynağı olduğu Silivri'de, boşanma davalarında tarla, sera veya hayvancılık işletmesi gibi mal varlıklarının mal rejimi tasfiyesinde nasıl değerlendirileceği ayrı bir uzmanlık gerektirebilmektedir.",
-      "Boşanma, velayet ve nafaka davalarına İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemelerinde bakılır. Anlaşmalı süreçte protokolün tam olması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirler.",
+      "Silivri ekonomisinde tarım ve hayvancılığın günümüzde de belirli bir ağırlığı bulunması, boşanma davalarında tarla, sera veya hayvancılık işletmesi gibi varlıkların mal rejimi tasfiyesinde nasıl ele alınacağı sorusunu öne çıkarmaktadır.",
+      "Anlaşmalı boşanmada protokolün eksiksiz düzenlenmesi, çekişmeli süreçte ise ileri sürülen delillerin gücü davanın seyrini belirleyen temel unsurlardır; her iki türdeki davalara da İstanbul Büyükçekmece Adliyesi bünyesindeki aile mahkemelerinde bakılmaktadır.",
     ],
     faqs: [
       { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemesine başvurulur." },
@@ -222,12 +222,12 @@ export const silivriServices: PseoService[] = [
     name: "Silivri İcra Avukatı",
     heroTitle: "Silivri İcra Avukatı",
     heroSubtitle:
-      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Büyükçekmece Adliyesi'ndedir.",
+      "Silivri'de alacak tahsiline yönelik icra takibi, ödeme emrine itiraz ve haciz süreçlerinde hukuki temsil sağlanır; bu süreçlere ilişkin icra daireleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
     metaTitle: "Silivri İcra Avukatı",
     metaDescription:
       "Silivri'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Silivri'deki çiftçi, esnaf ve bireysel müvekkillere danışmanlık verir.",
+      "Silivri'deki çiftçi, esnaf ve bireysel müvekkillerine icra ve iflas hukuku kapsamında danışmanlık ve temsil hizmeti sunan Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır ve 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Tarımsal Ürün Alacakları", description: "Ürün satışından doğan alacakların takibi." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -244,8 +244,8 @@ export const silivriServices: PseoService[] = [
       "Mali sıkıntı yaşayan borçlular için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "Tarım ve hayvancılığın önemli bir geçim kaynağı olduğu Silivri'de, ürün ve hayvan satışından doğan alacakların tahsili amacıyla icra takibi sık başvurulan bir yoldur.",
-      "Bu takiplere ilişkin uyuşmazlıklar İstanbul Büyükçekmece Adliyesi'ndeki icra mahkemelerinde görülür; borçlunun Silivri'de yerleşik olduğu takiplerde yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak tespit edilir.",
+      "Ürün ve hayvan satışından kaynaklanan alacakların tahsilinde icra takibine sıkça başvurulmaktadır; bunun başlıca nedeni, Silivri ekonomisinde tarım ve hayvancılığın hâlâ belirleyici bir yer tutmasıdır.",
+      "Yetkili icra dairesinin tespitinde kural olarak borçlunun ikametgahı esas alınır; Silivri'de yerleşik borçlulara yönelik takiplerde de bu ilke geçerlidir. Takipten doğan uyuşmazlıkların yargılaması ise İstanbul Büyükçekmece Adliyesi'ndeki icra mahkemeleri tarafından yürütülür.",
     ],
     faqs: [
       { question: "İcra takibine hangi belgelerle başlanır?", answer: "Sözleşme, senet, fatura veya mahkeme ilamı gibi belgelerle başlanabilir." },
@@ -372,12 +372,12 @@ export const silivriServices: PseoService[] = [
     name: "Silivri Kira ve Tahliye Avukatı",
     heroTitle: "Silivri Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Konut ve yazlık tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi'ndedir.",
+      "Sulh hukuk mahkemelerinin İstanbul Büyükçekmece Adliyesi'nde bulunduğu Silivri'de, konut ve yazlık tahliyesinden kira bedeli tespitine kadar kira sözleşmesi kaynaklı uyuşmazlıklarda hukuki destek verilir.",
     metaTitle: "Silivri Kira ve Tahliye Avukatı",
     metaDescription:
       "Silivri'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Kira hukuku alanında Silivri'deki kiraya verenlere ve kiracılara danışmanlık verir.",
+      "Silivri'deki kiraya verenlere ve kiracılara kira hukuku kapsamında danışmanlık hizmeti veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olup 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Yazlık/Sayfiye Kiraları", description: "45 km'lik sahil şeridinde dönemsel kiralama sözleşmeleri." },
       { title: "Konut Tahliyesi", description: "İhtiyaç, temerrüt ve taahhüde dayalı tahliye süreçleri." },
@@ -394,8 +394,8 @@ export const silivriServices: PseoService[] = [
       "Kira sözleşmesinin feshinden doğan tazminat talepleri",
     ],
     localParagraphs: [
-      "45 km'lik sahil şeridi boyunca yaz sezonunda talebin belirgin biçimde arttığı Silivri'de, dönemsel yazlık kiralamalar ile yıllık konut kiraları farklı sözleşme dinamiklerine sahiptir.",
-      "Bu davalara İstanbul Büyükçekmece Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; kira sözleşmesinin yazılı ve eksiksiz olması, uyuşmazlık halinde ispat açısından önem taşır.",
+      "Yaz aylarında 45 km'lik sahil şeridi boyunca talebin belirgin biçimde yükseldiği Silivri'de, yıllık konut kiralarından farklı bir sözleşme mantığı işleyen dönemsel yazlık kiralamalar öne çıkmaktadır.",
+      "Kira sözleşmesinin yazılı ve eksiksiz düzenlenmiş olması, olası bir uyuşmazlıkta ispat bakımından belirleyici olur; bu tür davalara bakmakla görevli sulh hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesinde faaliyet göstermektedir.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir." },
@@ -472,12 +472,12 @@ export const silivriServices: PseoService[] = [
     name: "Silivri Borçlar Hukuku Avukatı",
     heroTitle: "Silivri Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "Tarımsal tedarik sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi'ndedir.",
+      "Tarımsal tedarik sözleşmelerinden doğan uyuşmazlıklar, alacak talepleri ve tazminat davaları Silivri'de takip edilir; bu davalara İstanbul Büyükçekmece Adliyesi bünyesindeki ticaret ve asliye hukuk mahkemelerinde bakılır.",
     metaTitle: "Silivri Borçlar Hukuku Avukatı",
     metaDescription:
       "Silivri'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Borçlar hukuku kapsamında Silivri'deki müvekkillerine sözleşme ve alacak uyuşmazlıklarında danışmanlık verir.",
+      "Sözleşme ve alacak kaynaklı uyuşmazlıklarda Silivri'deki müvekkillerine borçlar hukuku alanında danışmanlık hizmeti sunan Furkan Arıkan, 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur; İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır.",
     highlightCards: [
       { title: "Tarımsal Tedarik Sözleşmeleri", description: "Ürün alım-satım ve tedarik sözleşmelerinden doğan uyuşmazlıklar." },
       { title: "Alacak Davaları", description: "Para alacaklarının dava veya takip yoluyla tahsili." },
@@ -494,8 +494,8 @@ export const silivriServices: PseoService[] = [
       "Sebepsiz zenginleşmeye dayalı iade talepleri",
     ],
     localParagraphs: [
-      "Tarım ve hayvancılığın önemli bir geçim kaynağı olduğu Silivri'de, ürün tedarik sözleşmeleri ile hayvan alım-satımından doğan uyuşmazlıklar sık karşılaşılan borçlar hukuku konularındandır.",
-      "Bu davalar İstanbul Büyükçekmece Adliyesi bünyesinde görülür; bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvuru zorunlu olabilir.",
+      "Silivri'de borçlar hukuku alanında en sık karşılaşılan uyuşmazlık türleri arasında, tarım ve hayvancılığın hâlâ önemli bir geçim kaynağı olmasına paralel biçimde, ürün tedarik sözleşmeleri ile hayvan alım-satımından kaynaklananlar yer almaktadır.",
+      "Ticari nitelikteki bazı alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvurulması zorunlu tutulmaktadır; bu davalara da İstanbul Büyükçekmece Adliyesi bünyesinde bakılmaktadır.",
     ],
     faqs: [
       { question: "Satın alınan hayvan hastalıklı çıkarsa ne yapılabilir?", answer: "Ayıba dayalı olarak sözleşmeden dönme veya bedel indirimi talep edilebilir." },

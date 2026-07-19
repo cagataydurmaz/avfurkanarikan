@@ -122,12 +122,12 @@ export const esenyurtServices: PseoService[] = [
     name: "Esenyurt Ceza Avukatı",
     heroTitle: "Esenyurt Ceza Avukatı",
     heroSubtitle:
-      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Büyükçekmece Adliyesi'nde yürütülür.",
+      "Ceza yargılamasına ilişkin dosyalar İstanbul Büyükçekmece Adliyesi'nde görülmekte olup, gözaltı ve ifade alma aşamasından kovuşturmanın sonuna kadar müdafilik hizmeti sağlanmaktadır.",
     metaTitle: "Esenyurt Ceza Avukatı",
     metaDescription:
       "Esenyurt'ta soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında Esenyurt'taki müvekkillerine müdafilik yapar.",
+      "Esenyurt'taki müvekkillere ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında müdafilik hizmeti veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olup 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Soruşturma Aşaması", description: "İfade ve gözaltı sürecinde hukuki destek." },
       { title: "Kovuşturma Takibi", description: "Duruşma katılımı ve delillerin değerlendirilmesi." },
@@ -144,8 +144,8 @@ export const esenyurtServices: PseoService[] = [
       "Uzlaşma sürecinde tarafların bir araya getirilmesi",
     ],
     localParagraphs: [
-      "Türkiye'nin en kalabalık ilçesi olan Esenyurt'ta yüksek nüfus yoğunluğu, kolluk müdahalesi gerektiren olayların da orantılı biçimde artmasına yol açabilmektedir; kovuşturma aşamasındaki davalar İstanbul Büyükçekmece Adliyesi'nde görülür.",
-      "Gözaltı sürecinin başladığı andan itibaren müdafi ile görüşme hakkı doğar; bu hakkın zamanında kullanılması sonraki aşamaların seyri açısından belirleyicidir.",
+      "Kovuşturma aşamasındaki ceza davaları İstanbul Büyükçekmece Adliyesi'nde görülmektedir. Türkiye'nin en kalabalık ilçesi olması nedeniyle Esenyurt'taki nüfus yoğunluğu, kolluk müdahalesini gerektiren olay sayısının da buna paralel şekilde yüksek seyretmesine neden olabilmektedir.",
+      "Şüphelinin müdafi ile görüşme hakkı, gözaltının başladığı andan itibaren mevcuttur ve bu hakkın erken aşamada kullanılıp kullanılmaması, yargılamanın ilerleyen safhalarını doğrudan etkileyebilmektedir.",
     ],
     faqs: [
       { question: "Esenyurt'ta bir ceza davası hangi adliyede görülür?", answer: "İstanbul Büyükçekmece Adliyesi'nde görülür." },
@@ -223,12 +223,12 @@ export const esenyurtServices: PseoService[] = [
     name: "Esenyurt İcra Avukatı",
     heroTitle: "Esenyurt İcra Avukatı",
     heroSubtitle:
-      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Büyükçekmece Adliyesi'ndedir.",
+      "İcra daireleri İstanbul Büyükçekmece Adliyesi bünyesinde faaliyet göstermekte olup, alacak tahsiline yönelik icra takibi başvurusundan ödeme emrine itiraz ve haciz aşamasına kadar temsil hizmeti verilmektedir.",
     metaTitle: "Esenyurt İcra Avukatı",
     metaDescription:
       "Esenyurt'ta icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Esenyurt'taki alacaklı ve borçlu taraflara danışmanlık verir.",
+      "İcra ve iflas hukuku kapsamında Esenyurt'taki alacaklı ve borçlu taraflara danışmanlık veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukat olup 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Takip Süreci", description: "İlamlı veya ilamsız icra takibinin başlatılması." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -245,8 +245,8 @@ export const esenyurtServices: PseoService[] = [
       "Mali sıkıntı yaşayan borçlular için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "Hızla artan nüfusla birlikte küçük esnaf ve konut kiralamalarından doğan alacak uyuşmazlıkları da orantılı biçimde artan Esenyurt'ta, icra takibi en sık başvurulan tahsilat yollarından biridir.",
-      "Bu takiplere ilişkin uyuşmazlıklar İstanbul Büyükçekmece Adliyesi'ndeki icra mahkemelerinde görülür; borçlunun Esenyurt'ta yerleşik olduğu takiplerde yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak tespit edilir.",
+      "Esenyurt'ta alacak tahsilinde en sık başvurulan yollardan biri icra takibidir. Nüfustaki hızlı artışa paralel olarak küçük esnaf ve konut kiralamalarından kaynaklanan alacak uyuşmazlıklarının sayısı da benzer oranda yükselmektedir.",
+      "İcra takibinden doğan uyuşmazlıkların görüldüğü icra mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir. Borçlunun Esenyurt'ta ikamet ettiği dosyalarda yetkili icra dairesi, genel kural gereği borçlunun yerleşim yerine göre belirlenmektedir.",
     ],
     faqs: [
       { question: "İcra takibine hangi belgelerle başlanır?", answer: "Sözleşme, senet, fatura veya mahkeme ilamı gibi belgelerle başlanabilir." },
@@ -373,12 +373,12 @@ export const esenyurtServices: PseoService[] = [
     name: "Esenyurt Kira ve Tahliye Avukatı",
     heroTitle: "Esenyurt Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi'ndedir.",
+      "Kira ilişkisinden doğan uyuşmazlıklara İstanbul Büyükçekmece Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılmakta olup, kiracı tahliyesi, kira bedeli tespiti ve sözleşme uyuşmazlıklarında destek sunulmaktadır.",
     metaTitle: "Esenyurt Kira ve Tahliye Avukatı",
     metaDescription:
       "Esenyurt'ta kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Kira hukuku alanında Esenyurt'taki kiraya verenlere ve kiracılara danışmanlık verir.",
+      "Kira hukuku alanında Esenyurt'taki kiraya verenlere ve kiracılara danışmanlık sunan Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Yeni Konut Kiraları", description: "Hızla büyüyen bölgede kira ilişkisi kurulması ve denetimi." },
       { title: "Konut Tahliyesi", description: "İhtiyaç, temerrüt ve taahhüde dayalı tahliye süreçleri." },
@@ -395,8 +395,8 @@ export const esenyurtServices: PseoService[] = [
       "Kira sözleşmesinin feshinden doğan tazminat talepleri",
     ],
     localParagraphs: [
-      "Nüfusu otuz yılda on kattan fazla artan Esenyurt'ta konut kiralama piyasası da aynı hızla büyümekte, bu da kira bedeli uyuşmazlıklarının sık başvurulan bir konu haline gelmesine yol açmaktadır.",
-      "Bu davalara İstanbul Büyükçekmece Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; kira sözleşmesinin yazılı olması, uyuşmazlık halinde ispat açısından önem taşır.",
+      "Kira bedeli uyuşmazlıkları, Esenyurt'ta sıkça karşılaşılan hukuki konulardan biridir; bunun başlıca nedeni, nüfusu otuz yılda on kattan fazla artan ilçede konut kiralama piyasasının da benzer bir hızla büyümüş olmasıdır.",
+      "Kira sözleşmesinin yazılı şekilde düzenlenmiş olması, olası bir uyuşmazlıkta ispat bakımından önemlidir. Bu tür davalar İstanbul Büyükçekmece Adliyesi bünyesindeki sulh hukuk mahkemelerinde görülmektedir.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir." },
@@ -473,12 +473,12 @@ export const esenyurtServices: PseoService[] = [
     name: "Esenyurt Borçlar Hukuku Avukatı",
     heroTitle: "Esenyurt Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "Sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi'ndedir.",
+      "Ticaret ve asliye hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesinde yer almakta olup, sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil hizmeti verilmektedir.",
     metaTitle: "Esenyurt Borçlar Hukuku Avukatı",
     metaDescription:
       "Esenyurt'ta sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Borçlar hukuku kapsamında Esenyurt'taki müvekkillerine sözleşme ve alacak uyuşmazlıklarında danışmanlık verir.",
+      "Borçlar hukuku kapsamında Esenyurt'taki müvekkillere sözleşme ve alacak uyuşmazlıklarında danışmanlık veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi'nden 2019 yılında mezun olmuştur.",
     highlightCards: [
       { title: "Sözleşme Uyuşmazlıkları", description: "İfa, ihlal ve fesih kaynaklı süreçlerin yürütülmesi." },
       { title: "Alacak Davaları", description: "Para alacaklarının dava veya takip yoluyla tahsili." },
@@ -495,8 +495,8 @@ export const esenyurtServices: PseoService[] = [
       "Sebepsiz zenginleşmeye dayalı iade talepleri",
     ],
     localParagraphs: [
-      "Sürekli genişleyen inşaat faaliyeti nedeniyle Esenyurt'ta kat karşılığı inşaat sözleşmeleri ile malzeme/hizmet tedarikinden doğan uyuşmazlıklar sık karşılaşılan dava türleri arasındadır.",
-      "Bu davalar İstanbul Büyükçekmece Adliyesi bünyesinde görülür; bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvuru zorunlu olabilir.",
+      "Esenyurt'ta sık karşılaşılan dava türleri arasında kat karşılığı inşaat sözleşmelerinden ve malzeme/hizmet tedarikinden kaynaklanan uyuşmazlıklar yer almaktadır; bunun temel sebeplerinden biri ilçedeki inşaat faaliyetinin sürekli genişlemesidir.",
+      "Bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvurulması kanunen zorunlu tutulmuş olabilir. Bu kapsamdaki davalara İstanbul Büyükçekmece Adliyesi bünyesinde bakılmaktadır.",
     ],
     faqs: [
       { question: "Müteahhit taahhüdünü yerine getirmezse ne yapılabilir?", answer: "Sözleşmeden dönme, tazminat veya ifa davası gibi hukuki yollara başvurulabilir." },

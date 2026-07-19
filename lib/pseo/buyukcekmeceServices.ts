@@ -121,12 +121,12 @@ export const buyukcekmeceServices: PseoService[] = [
     name: "Büyükçekmece Ceza Avukatı",
     heroTitle: "Büyükçekmece Ceza Avukatı",
     heroSubtitle:
-      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma bizzat ilçede bulunan İstanbul Büyükçekmece Adliyesi'nde yürütülür.",
+      "Büyükçekmece'nin kendi sınırları içinde yer alan İstanbul Büyükçekmece Adliyesi'nde yürütülen kovuşturma sürecine ek olarak, gözaltı ve ifade alma aşamalarının her birinde de müdafilik desteği sağlanmaktadır.",
     metaTitle: "Büyükçekmece Ceza Avukatı",
     metaDescription:
       "Büyükçekmece'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında Büyükçekmece'deki müvekkillerine müdafilik yapar.",
+      "Ceza yargılamasının soruşturma, kovuşturma ve kanun yolu aşamalarında Büyükçekmece'deki müvekkillere müdafilik hizmeti veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olup 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "Soruşturma Aşaması", description: "İfade ve gözaltı sürecinde hukuki destek." },
       { title: "Kovuşturma Takibi", description: "Duruşma katılımı ve delillerin değerlendirilmesi." },
@@ -143,8 +143,8 @@ export const buyukcekmeceServices: PseoService[] = [
       "Uzlaşma sürecinde tarafların bir araya getirilmesi",
     ],
     localParagraphs: [
-      "İstanbul Büyükçekmece Adliyesi'nin bizzat ilçe sınırları içinde bulunması, Büyükçekmece'de gözaltı ve nöbetçi savcılık süreçlerinde müdafinin dosyaya erişimini pratik açıdan kolaylaştırmaktadır.",
-      "Kovuşturma aşamasındaki davalar bu adliyede görülür. Gözaltı sürecinin başladığı andan itibaren müdafi ile görüşme hakkı doğar; bu hakkın zamanında kullanılması sonraki aşamaların seyri açısından belirleyicidir.",
+      "Gözaltı ve nöbetçi savcılık aşamalarında dosyaya erişim, adliyenin bizzat Büyükçekmece'de konumlanmış olması nedeniyle pratik açıdan kolaylık sağlamaktadır.",
+      "Kovuşturmaya taşınan davalar da bu adliyede görülmekte; gözaltının başladığı andan itibaren doğan müdafi ile görüşme hakkının zamanında kullanılması, sürecin ilerleyen aşamalarını doğrudan etkilemektedir.",
     ],
     faqs: [
       { question: "Büyükçekmece'de bir ceza davası hangi adliyede görülür?", answer: "İlçe sınırları içinde bulunan İstanbul Büyükçekmece Adliyesi'nde görülür." },
@@ -221,12 +221,12 @@ export const buyukcekmeceServices: PseoService[] = [
     name: "Büyükçekmece İcra Avukatı",
     heroTitle: "Büyükçekmece İcra Avukatı",
     heroSubtitle:
-      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri bizzat ilçede bulunan İstanbul Büyükçekmece Adliyesi bünyesindedir.",
+      "İcra daireleri, İstanbul Büyükçekmece Adliyesi bünyesinde ve dolayısıyla doğrudan ilçe içinde faaliyet göstermektedir; alacak tahsili amacıyla icra takibi başlatılması, ödeme emrine itiraz ve haciz süreçlerinin her aşamasında temsil sağlanmaktadır.",
     metaTitle: "Büyükçekmece İcra Avukatı",
     metaDescription:
       "Büyükçekmece'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Büyükçekmece'deki alacaklı ve borçlu taraflara danışmanlık verir.",
+      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş olup Büyükçekmece'de icra ve iflas hukuku kapsamında hem alacaklı hem de borçlu taraflara danışmanlık sunmaktadır.",
     highlightCards: [
       { title: "Takip Süreci", description: "İlamlı veya ilamsız icra takibinin başlatılması." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -243,8 +243,8 @@ export const buyukcekmeceServices: PseoService[] = [
       "Mali sıkıntı yaşayan borçlular için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "Adliyenin bizzat ilçe içinde bulunması, Büyükçekmece'de icra dosyalarının fiziki takibini ve dosyaya erişimi kolaylaştıran pratik bir avantaj sunmaktadır.",
-      "Bu takiplere ilişkin uyuşmazlıklar İstanbul Büyükçekmece Adliyesi'ndeki icra mahkemelerinde görülür; borçlunun Büyükçekmece'de yerleşik olduğu takiplerde yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak tespit edilir.",
+      "İcra dosyalarının fiziki takibi ve dosyaya erişim, adliyenin Büyükçekmece sınırları içinde konumlanmış olması sayesinde pratik açıdan avantaj sağlamaktadır.",
+      "İcra takibiyle bağlantılı uyuşmazlıklara İstanbul Büyükçekmece Adliyesi bünyesindeki icra mahkemelerinde bakılmakta; Büyükçekmece'de yerleşik borçlulara yönelik takiplerde yetkili icra dairesinin tespitinde kural olarak borçlunun ikametgahı esas alınmaktadır.",
     ],
     faqs: [
       { question: "İcra takibine hangi belgelerle başlanır?", answer: "Sözleşme, senet, fatura veya mahkeme ilamı gibi belgelerle başlanabilir." },

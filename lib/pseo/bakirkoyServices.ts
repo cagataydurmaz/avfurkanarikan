@@ -223,12 +223,12 @@ export const bakirkoyServices: PseoService[] = [
     name: "Bakırköy İcra Avukatı",
     heroTitle: "Bakırköy İcra Avukatı",
     heroSubtitle:
-      "Alacakların tahsili amacıyla icra takibi, itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri bizzat ilçede bulunan İstanbul Bakırköy Adliyesi bünyesindedir.",
+      "İcra daireleri, ilçe sınırları içinde yer alan İstanbul Bakırköy Adliyesi bünyesindedir; alacakların tahsili amacıyla yürütülen icra takibi, itiraz ve haciz süreçlerinde temsil sağlanır.",
     metaTitle: "Bakırköy İcra Avukatı",
     metaDescription:
       "Bakırköy'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. İcra ve iflas hukuku kapsamında Bakırköy'deki alacaklı ve borçlu taraflara danışmanlık verir.",
+      "2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olan ve İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bulunan Furkan Arıkan, icra ve iflas hukuku alanında Bakırköy'deki alacaklı ve borçlu taraflara danışmanlık hizmeti sunmaktadır.",
     highlightCards: [
       { title: "Takip Süreci", description: "İlamlı veya ilamsız icra takibinin başlatılması." },
       { title: "İtiraz Süreçleri", description: "Borca ve imzaya itiraz, itirazın iptali davaları." },
@@ -245,8 +245,8 @@ export const bakirkoyServices: PseoService[] = [
       "Mali sıkıntı yaşayan borçlular için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "Adliyenin bizzat ilçe içinde bulunması, Bakırköy'de icra dosyalarının fiziki takibini ve dosyaya erişimi kolaylaştıran pratik bir avantaj sunmaktadır.",
-      "Bu takiplere ilişkin uyuşmazlıklar İstanbul Bakırköy Adliyesi'ndeki icra mahkemelerinde görülür; borçlunun Bakırköy'de yerleşik olduğu takiplerde yetkili icra dairesi kural olarak borçlunun ikametgahı esas alınarak tespit edilir.",
+      "Yetkili icra dairesi belirlenirken kural olarak borçlunun ikametgahı esas alınır; Bakırköy'de yerleşik borçlulara ilişkin takipler de bu kurala tabidir ve uyuşmazlıklar İstanbul Bakırköy Adliyesi'ndeki icra mahkemelerinde görülür.",
+      "Öte yandan İstanbul Bakırköy Adliyesi'nin ilçe sınırları içinde yer alması, icra dosyalarının fiziki takibi ve dosyaya erişimi açısından Bakırköy'deki taraflara pratik bir kolaylık sağlamaktadır.",
     ],
     faqs: [
       { question: "İcra dosyasının fiziki takibi neden önemlidir?", answer: "Dosyadaki gelişmelerin ve tebligatların zamanında öğrenilmesi, hak kaybını önler." },
@@ -273,12 +273,12 @@ export const bakirkoyServices: PseoService[] = [
     name: "Bakırköy İdare Avukatı",
     heroTitle: "Bakırköy İdare Avukatı",
     heroSubtitle:
-      "Belediye, imar ve sahil alanı işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
+      "İstanbul idare mahkemelerinin görev alanına giren belediye, imar ve sahil alanı işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır.",
     metaTitle: "Bakırköy İdare Avukatı",
     metaDescription:
       "Bakırköy'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve MEF Üniversitesi Hukuk Fakültesi 2019 mezunudur. İdari işlemlerin iptali ve tam yargı davalarında Bakırköy'deki müvekkillerine danışmanlık verir.",
+      "İdari işlemlerin iptali ve tam yargı davalarında Bakırköy'deki müvekkillerine danışmanlık hizmeti sunan Furkan Arıkan, 72621 sicil numarasıyla İstanbul Barosu'na kayıtlı bir avukat olup 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur.",
     highlightCards: [
       { title: "İptal Davaları", description: "Hukuka aykırı idari kararlara karşı dava süreci." },
       { title: "Sahil ve Millet Bahçesi", description: "Kıyı alanı ve kamusal alan düzenlemelerine ilişkin uyuşmazlıklar." },
@@ -295,8 +295,8 @@ export const bakirkoyServices: PseoService[] = [
       "Kamu görevlisi özlük haklarına ilişkin uyuşmazlıklar",
     ],
     localParagraphs: [
-      "Uzun bir sahil şeridine ve eski havalimanı arazisinin millet bahçesine dönüştürüldüğü geniş bir kamusal alana sahip Bakırköy'de, kıyı ve kamusal alan düzenlemelerine ilişkin idari işlemler zaman zaman dava konusu olabilmektedir.",
-      "Bu davalar İstanbul idare mahkemelerinde görülür; dava açma süresi genel kural olarak işlemin tebliğinden itibaren 60 gündür.",
+      "İdari işlemlerin iptaline veya tam yargıya ilişkin davalara İstanbul idare mahkemelerinde bakılır; dava açma süresi, genel kural olarak, işlemin tebliğinden itibaren 60 gündür.",
+      "Bakırköy'ün uzun sahil şeridi ile eski havalimanı arazisinden dönüştürülen geniş millet bahçesi, kıyı ve kamusal alan düzenlemelerine ilişkin idari işlemlerin zaman zaman dava konusu olmasına zemin hazırlamaktadır.",
     ],
     faqs: [
       { question: "Sahil şeridindeki bir yapılaşmaya itiraz nasıl yapılır?", answer: "İlan veya tebliğ tarihinden itibaren yasal süre içinde idare mahkemesinde dava açılabilir." },
