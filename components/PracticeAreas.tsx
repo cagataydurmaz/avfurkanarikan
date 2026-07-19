@@ -19,85 +19,133 @@ const areas = [
     slug: "ceza-hukuku",
     icon: <GavelIcon />,
     title: "Ceza Hukuku",
-    description:
-      "Soruşturma ve kovuşturma aşamalarında müdafilik, ifade ve sorgu süreçlerinde hukuki destek, tutukluluk itirazları ve dava takibi.",
+    bullets: [
+      "Soruşturma ve kovuşturmada müdafilik",
+      "Tutukluluk itirazı ve adli kontrol",
+      "Gözaltı ve ifade sürecinde hukuki destek",
+      "Haksız tutuklama nedeniyle tazminat davası",
+    ],
   },
   {
     slug: "is-hukuku",
     icon: <BriefcaseIcon />,
     title: "İş Hukuku",
-    description:
-      "İşçi-işveren uyuşmazlıklarında dava takibi; kıdem, ihbar ve işe iade taleplerinde temsil; iş sözleşmesi düzenlenmesi.",
+    bullets: [
+      "Kıdem ve ihbar tazminatı davası",
+      "İşe iade davası",
+      "Fazla mesai ve işçilik alacakları",
+      "Haksız/geçersiz fesih itirazı",
+    ],
   },
   {
     slug: "gayrimenkul-hukuku",
     icon: <HomeIcon />,
     title: "Gayrimenkul Hukuku",
-    description:
-      "Tapu iptal ve tescil davaları, kira uyuşmazlıkları, tahliye süreçleri ve gayrimenkul alım-satım sözleşmeleri.",
+    bullets: [
+      "Tapu iptal ve tescil davası",
+      "Kira tespit ve tahliye davası",
+      "Kat mülkiyeti ve ortak alan uyuşmazlığı",
+      "Muris muvazaası nedeniyle tapu iptali",
+    ],
   },
   {
     slug: "miras-hukuku",
     icon: <ScrollIcon />,
     title: "Miras Hukuku",
-    description:
-      "Miras paylaşımı, vasiyetname düzenlenmesi ve itirazı, tenkis davaları ve mirasçılık belgesi işlemleri.",
+    bullets: [
+      "Tenkis davası (saklı pay ihlali)",
+      "Vasiyetname iptali davası",
+      "Mirasın reddi başvurusu",
+      "Miras taksimi ve ortaklığın giderilmesi",
+    ],
   },
   {
     slug: "borclar-hukuku",
     icon: <ScalesIcon />,
     title: "Borçlar Hukuku",
-    description:
-      "Sözleşme uyuşmazlıkları, alacak ve tazminat davaları, icra takip süreçlerinde hukuki temsil.",
+    bullets: [
+      "Alacak davası ve icra takibi",
+      "Sözleşmeye aykırılık nedeniyle tazminat",
+      "Sebepsiz zenginleşme davası",
+      "İtirazın iptali davası",
+    ],
   },
   {
     slug: "aile-hukuku",
     icon: <FamilyIcon />,
     title: "Aile Hukuku",
-    description:
-      "Boşanma davaları, velayetin düzenlenmesi, nafaka, mal rejimi tasfiyesi ve aile hukuku danışmanlığı.",
+    bullets: [
+      "Anlaşmalı ve çekişmeli boşanma",
+      "Velayet ve kişisel ilişki düzenlemesi",
+      "Nafaka davası",
+      "Mal rejimi tasfiyesi davası",
+    ],
   },
   {
     slug: "vergi-hukuku",
     icon: <PercentIcon />,
     title: "Vergi Hukuku",
-    description:
-      "Vergi incelemesi, tarhiyat öncesi/sonrası uzlaşma ve vergi/ceza ihbarnamesine karşı dava süreçlerinde destek.",
+    bullets: [
+      "Vergi/ceza ihbarnamesine karşı dava",
+      "Tarhiyat öncesi/sonrası uzlaşma",
+      "Vergi incelemesi sürecinde danışmanlık",
+      "Vergi mahkemesinde iptal davası",
+    ],
   },
   {
     slug: "icra-iflas-hukuku",
     icon: <BanknoteIcon />,
     title: "İcra ve İflas Hukuku",
-    description:
-      "İlamlı/ilamsız icra takibi, ödeme emrine itiraz, haciz süreci ve konkordato başvurularında temsil.",
+    bullets: [
+      "İlamsız icra takibi başlatma",
+      "Ödeme emrine itiraz",
+      "İtirazın iptali/kaldırılması davası",
+      "Konkordato başvurusu",
+    ],
   },
   {
     slug: "idare-hukuku",
     icon: <LandmarkIcon />,
     title: "İdare Hukuku",
-    description:
-      "İdari işlemin iptali, tam yargı davası ve yürütmenin durdurulması taleplerinde idare mahkemelerinde temsil.",
+    bullets: [
+      "İdari işlemin iptali davası",
+      "Tam yargı (tazminat) davası",
+      "Yürütmenin durdurulması talebi",
+      "Disiplin cezasına itiraz",
+    ],
   },
   {
     slug: "tazminat-hukuku",
     icon: <ShieldCheckIcon />,
     title: "Tazminat Hukuku",
-    description:
-      "Trafik kazası, iş kazası ve haksız fiilden doğan maddi-manevi tazminat davalarında hukuki destek.",
+    bullets: [
+      "Trafik kazası tazminatı davası",
+      "Manevi tazminat davası",
+      "Destekten yoksun kalma tazminatı",
+      "Araç değer kaybı talebi",
+    ],
   },
   {
     slug: "tahkim-arabuluculuk",
     icon: <AgreementIcon />,
     title: "Tahkim ve Arabuluculuk",
-    description:
-      "Zorunlu ve ihtiyari arabuluculuk süreçleri ile iç ve milletlerarası tahkimde danışmanlık ve temsil.",
+    bullets: [
+      "Zorunlu arabuluculuk süreci",
+      "Ticari uyuşmazlıklarda tahkim",
+      "Milletlerarası tahkim (yabancılık unsurlu)",
+      "Hakem kararına karşı iptal davası",
+    ],
   },
   {
     slug: "yabancilar-hukuku",
     icon: <GlobeIcon />,
     title: "Yabancılar ve Vatandaşlık Hukuku",
-    description:
-      "Oturma/çalışma izni, yatırım yoluyla Türk vatandaşlığı ve gayrimenkul edinimi süreçlerinde destek.",
+    bullets: [
+      "İkamet izni başvurusu ve uzatma",
+      "Çalışma izni süreci",
+      "Yatırım yoluyla Türk vatandaşlığı",
+      "Sınır dışı etme kararına itiraz",
+    ],
   },
 ];
 
@@ -160,10 +208,28 @@ export default function PracticeAreas() {
                 {area.title}
               </h3>
 
-              {/* Description */}
-              <p className="text-sm leading-relaxed flex-1" style={{ color: "rgba(244,237,228,0.65)" }}>
-                {area.description}
-              </p>
+              {/* Bullets */}
+              <ul className="flex-1 space-y-2 mb-1">
+                {area.bullets.map((bullet) => (
+                  <li key={bullet} className="flex items-start gap-2 text-sm leading-snug" style={{ color: "rgba(244,237,228,0.7)" }}>
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#C5A880"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="mt-0.5 flex-shrink-0"
+                      aria-hidden="true"
+                    >
+                      <path d="m9 18 6-6-6-6" />
+                    </svg>
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
 
               {/* Read more */}
               <span
