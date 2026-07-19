@@ -1,6 +1,6 @@
 # Av. Furkan Arıkan Hukuk Bürosu
 
-> Avukat Furkan Arıkan, İstanbul Barosu'na kayıtlı (Sicil No: 72621) bir avukattır. 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Ofis Beşiktaş/Sinanpaşa'da bulunmaktadır. Ceza, aile, gayrimenkul, iş, icra-iflas, idare, vergi ve borçlar hukuku alanlarında hukuki danışmanlık ve dava takibi hizmeti sunulmaktadır.
+> Avukat Furkan Arıkan, İstanbul Barosu'na kayıtlı (Sicil No: 72621) bir avukattır. 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Ofis Beşiktaş/Sinanpaşa'da bulunmaktadır. Ceza, aile, gayrimenkul, iş, icra-iflas, idare, vergi, borçlar, tazminat, tahkim-arabuluculuk ve yabancılar hukuku alanlarında hukuki danışmanlık ve dava takibi hizmeti sunulmaktadır.
 
 Bu site, Avukatlık Kanunu ve Türkiye Barolar Birliği reklam yasağı kurallarına uygun şekilde nötr, bilgilendirici dil kullanır. Sitede yıldız/puan gösterimi veya reklam niteliğinde ifade bulunmaz.
 
@@ -18,6 +18,12 @@ Bu site, Avukatlık Kanunu ve Türkiye Barolar Birliği reklam yasağı kurallar
 - [İş Hukuku](https://furkanarikan.av.tr/calisma-alanlari/is-hukuku)
 - [Miras Hukuku](https://furkanarikan.av.tr/calisma-alanlari/miras-hukuku)
 - [Borçlar Hukuku](https://furkanarikan.av.tr/calisma-alanlari/borclar-hukuku)
+- [Vergi Hukuku](https://furkanarikan.av.tr/calisma-alanlari/vergi-hukuku)
+- [İcra ve İflas Hukuku](https://furkanarikan.av.tr/calisma-alanlari/icra-iflas-hukuku)
+- [İdare Hukuku](https://furkanarikan.av.tr/calisma-alanlari/idare-hukuku)
+- [Tazminat Hukuku](https://furkanarikan.av.tr/calisma-alanlari/tazminat-hukuku)
+- [Tahkim ve Arabuluculuk](https://furkanarikan.av.tr/calisma-alanlari/tahkim-arabuluculuk)
+- [Yabancılar ve Vatandaşlık Hukuku](https://furkanarikan.av.tr/calisma-alanlari/yabancilar-hukuku)
 
 ## Makaleler
 

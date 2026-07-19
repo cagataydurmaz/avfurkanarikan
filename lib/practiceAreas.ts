@@ -9,6 +9,11 @@ export type PracticeAreaFAQ = {
   answer: string;
 };
 
+export type PracticeAreaLink = {
+  label: string;
+  href: string;
+};
+
 export type PracticeArea = {
   slug: string;
   title: string;
@@ -18,6 +23,7 @@ export type PracticeArea = {
   sections: PracticeAreaSection[];
   faq: PracticeAreaFAQ[];
   relatedSlugs: string[];
+  relatedLinks?: PracticeAreaLink[];
 };
 
 export const practiceAreas: PracticeArea[] = [
@@ -92,7 +98,7 @@ export const practiceAreas: PracticeArea[] = [
           "Evet. CMK'nın 141. maddesi uyarınca haksız gözaltı veya tutukluluk nedeniyle uğranılan zararlar için devletten tazminat talep edilebilir. Dava, karar tarihinden itibaren 3 ay ve her halükarda 1 yıl içinde açılmalıdır.",
       },
     ],
-    relatedSlugs: ["aile-hukuku", "borclar-hukuku"],
+    relatedSlugs: ["aile-hukuku", "borclar-hukuku", "tazminat-hukuku"],
   },
 
   {
@@ -160,7 +166,7 @@ export const practiceAreas: PracticeArea[] = [
           "Fazla mesai alacağı; bordro kayıtları, mesai çizelgeleri, işyeri giriş-çıkış kayıtları ve tanık ifadesiyle ispat edilebilir. İşverenin kayıt tutmaması veya sunmaması halinde mahkeme, işçinin beyanını esas alarak hesaplama yapabilir. Ancak güçlü belgeler davanın seyri üzerinde belirleyici rol oynar.",
       },
     ],
-    relatedSlugs: ["borclar-hukuku", "gayrimenkul-hukuku"],
+    relatedSlugs: ["borclar-hukuku", "gayrimenkul-hukuku", "tahkim-arabuluculuk"],
   },
 
   {
@@ -234,7 +240,7 @@ export const practiceAreas: PracticeArea[] = [
           "Muris muvazaası; miras bırakanın mirasçıları devre dışı bırakmak amacıyla taşınmazını üçüncü kişilere gerçek bedelin çok altında ya da bağış gibi göstererek devretmesidir. Bu durumda mirasçılar tapu iptal ve tescil davası açarak mirasçıları zarara uğratan işlemin iptalini talep edebilir.",
       },
     ],
-    relatedSlugs: ["miras-hukuku", "borclar-hukuku"],
+    relatedSlugs: ["miras-hukuku", "borclar-hukuku", "yabancilar-hukuku"],
   },
 
   {
@@ -370,7 +376,7 @@ export const practiceAreas: PracticeArea[] = [
           "Genel zamanaşımı süresi 10 yıldır. Ancak kira bedeli, faiz, nafaka gibi dönemsel edimler için 5 yıl, haksız fiilden doğan alacaklarda ise zararın ve failin öğrenilmesinden itibaren 2 yıl ve her halükarda haksız fiilin işlendiği tarihten itibaren 10 yıllık süre uygulanır.",
       },
     ],
-    relatedSlugs: ["is-hukuku", "gayrimenkul-hukuku"],
+    relatedSlugs: ["is-hukuku", "gayrimenkul-hukuku", "icra-iflas-hukuku"],
   },
 
   {
@@ -439,6 +445,430 @@ export const practiceAreas: PracticeArea[] = [
       },
     ],
     relatedSlugs: ["miras-hukuku", "ceza-hukuku"],
+  },
+
+  {
+    slug: "vergi-hukuku",
+    title: "Vergi Hukuku",
+    metaTitle: "Vergi Hukuku",
+    metaDescription:
+      "Vergi incelemesi, tarhiyat öncesi/sonrası uzlaşma, vergi ve ceza ihbarnamesine karşı dava süreçlerinde İstanbul'da hukuki destek.",
+    intro:
+      "Vergi hukuku; devletin vergilendirme yetkisini kullanırken izlediği usulü ve mükelleflerin bu süreçteki haklarını düzenleyen hukuk dalıdır. Türkiye'de temel kaynak 213 sayılı Vergi Usul Kanunu'dur (VUK); somut vergi türleri (gelir, kurumlar, KDV, ÖTV vb.) kendi özel kanunlarıyla düzenlenirken VUK, tarh-tebliğ-tahakkuk-tahsil sürecinin ve vergi cezalarının ortak usul zeminini oluşturur.",
+    sections: [
+      {
+        heading: "Vergi İncelemesi Süreci ve Mükellefin Hakları",
+        paragraphs: [
+          "Vergi incelemesi, görevlendirme yazısının mükellefe tebliği ve incelemeye başlama tutanağının düzenlenmesiyle başlar. VUK'un 140. maddesi inceleme türüne göre azami süreler öngörür: tam incelemede 1 yıl (gerekirse 6 ay uzatılabilir), sınırlı incelemede 6 ay (6 ay uzatılabilir), KDV iadesine yönelik incelemede ise 3 ay (2 ay uzatılabilir).",
+          "Aynı madde uyarınca mükellef; inceleme sırasında avukat veya mali müşavir bulundurma, incelemenin kapsamı ve konusu hakkında bilgilendirilme, defter ve belgelerin yazılı olarak istenmesini talep etme ve haklı bir nedenle makul ek süre isteme hakkına sahiptir. İnceleme sonunda düzenlenen rapor, mükellefe tebliğ edilecek ihbarnameye VUK m.35/12 uyarınca eklenmek zorundadır.",
+        ],
+      },
+      {
+        heading: "Vergi ve Ceza İhbarnamesine Karşı Dava Açma Süresi",
+        paragraphs: [
+          "Türk vergi sisteminde idari 'itiraz' kurumu bulunmaz; ihbarnameye karşı doğrudan yargı yolu işletilir. VUK m.377-378 ve İdari Yargılama Usulü Kanunu m.7 uyarınca, ihbarnamenin tebliğinden itibaren 30 gün içinde vergi mahkemesinde iptal davası açılmalıdır; bu süre hak düşürücüdür.",
+          "Aynı 30 günlük süre içinde dava açmak yerine VUK m.376 kapsamında ceza indirimi talebi veya uzlaşma başvurusu da yapılabilir; ancak bu yollardan yalnızca biri tercih edilebilir. Süre kaçırıldığında ihbarname kesinleşir ve tahsilat aşamasına geçilir.",
+        ],
+      },
+      {
+        heading: "Tarhiyat Öncesi ve Tarhiyat Sonrası Uzlaşma",
+        paragraphs: [
+          "Tarhiyat öncesi uzlaşma, inceleme henüz tamamlanmadan, son tutanak imzalanmadan önce talep edilir; bu yola başvurulup sonuçsuz kalması veya mükellefin katılmaması halinde tarhiyat sonrası uzlaşma hakkı kullanılamaz. Tarhiyat sonrası uzlaşma ise ihbarnamenin tebliğinden itibaren 30 gün içinde talep edilir.",
+          "7524 sayılı Kanun'la (Resmi Gazete: 2 Ağustos 2024) yapılan değişiklikle vergi aslı uzlaşma kapsamından çıkarılmış, bu tarihten sonraki başvurularda uzlaşma yalnızca vergi ziyaı, usulsüzlük ve özel usulsüzlük cezalarını kapsar hale gelmiştir. Uzlaşma sağlanırsa tutanak kesindir ve dava açılamaz; sağlanamazsa dava açma süresi kaldığı yerden devam eder, kalan süre 15 günden azsa 15 güne tamamlanır.",
+        ],
+      },
+      {
+        heading: "Vergi Cezalarının Türleri",
+        paragraphs: [
+          "Vergi ziyaı cezası (VUK m.341, 344), verginin zamanında veya eksiksiz tahakkuk ettirilmemesi halinde kesilir ve kural olarak kayba uğratılan verginin bir katı tutarındadır; VUK m.359'da sayılan kaçakçılık fiilleriyle (sahte belge düzenleme/kullanma gibi) vergi kaybına sebebiyet verilmişse bu oran üç kata çıkar.",
+          "Usulsüzlük ve özel usulsüzlük cezaları (VUK m.351-353) ise vergi kaybı aranmaksızın, defter-belge düzeni, fatura kesme veya bildirim yükümlülüğü gibi şekli ödevlerin ihlalinde uygulanır ve genellikle her yıl yeniden değerleme oranıyla güncellenen maktu tutarlar üzerinden kesilir.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Vergi incelemesi ne kadar sürer?",
+        answer:
+          "VUK m.140 uyarınca tam incelemede azami 1 yıl (gerekirse 6 ay uzatılabilir), sınırlı incelemede azami 6 ay, KDV iadesine yönelik incelemede ise azami 3 ay sürebilir. Bu süreler kanuni üst sınırdır; incelemeler genellikle daha kısa sürede tamamlanır.",
+      },
+      {
+        question: "Uzlaşmaya giderek dava hakkımı kaybeder miyim?",
+        answer:
+          "Uzlaşma sağlanırsa evet; tutanakla belirlenen tutar kesinleşir ve o kalem için dava açılamaz. Uzlaşma sağlanamazsa dava açma hakkınız korunur; kalan süre 15 günden azsa 15 güne tamamlanır.",
+      },
+      {
+        question: "Vergi/ceza ihbarnamesine itiraz süresi kaç gündür?",
+        answer:
+          "Teknik olarak 'itiraz' değil dava söz konusudur: ihbarnamenin tebliğinden itibaren 30 gün içinde vergi mahkemesinde iptal davası açılmalıdır. Bu süre hak düşürücüdür, kaçırılması halinde ihbarname kesinleşir.",
+      },
+      {
+        question: "Tarhiyat öncesi mi, tarhiyat sonrası mı uzlaşmaya gitmeliyim?",
+        answer:
+          "Tarhiyat öncesi uzlaşma inceleme bitmeden talep edilir ve sonuçsuz kalırsa tarhiyat sonrası uzlaşma hakkı kaybedilir; tarhiyat sonrası uzlaşma ise ihbarname tebliğinden sonraki 30 gün içinde talep edilir. Hangisinin dosyanız için uygun olduğu incelemenin aşamasına göre değerlendirilmelidir.",
+      },
+      {
+        question: "Vergi ziyaı cezası ile usulsüzlük cezası arasındaki fark nedir?",
+        answer:
+          "Vergi ziyaı cezası, kayba uğratılan vergiyle orantılı olarak kesilir (kural olarak 1 kat, kaçakçılık fiillerinde 3 kat). Usulsüzlük ve özel usulsüzlük cezaları ise vergi kaybı aranmaksızın, defter-belge ve bildirim gibi şekli yükümlülüklerin ihlalinde, genellikle sabit tutarlar üzerinden uygulanır.",
+      },
+    ],
+    relatedSlugs: ["idare-hukuku", "borclar-hukuku"],
+    relatedLinks: [
+      { label: "Vergi/Ceza İhbarnamesine İtiraz ve Uzlaşma", href: "/makaleler/vergi-ihbarnamesine-itiraz-ve-uzlasma" },
+    ],
+  },
+
+  {
+    slug: "icra-iflas-hukuku",
+    title: "İcra ve İflas Hukuku",
+    metaTitle: "İcra ve İflas Hukuku",
+    metaDescription:
+      "İlamlı/ilamsız icra takibi, ödeme emrine itiraz, haciz süreci ve konkordato konularında İstanbul'da hukuki destek.",
+    intro:
+      "İcra ve iflas hukuku; alacaklının devlet gücü aracılığıyla alacağını cebren tahsil etmesini ve tacir borçlunun tasfiyesini düzenleyen hukuk dalıdır. Türkiye'de temel kaynak 2004 sayılı İcra ve İflas Kanunu'dur (İİK). Alacağın niteliğine göre ilamlı veya ilamsız takip yolları, borçlunun itiraz hakkı ve haciz süreci bu kanun çerçevesinde işler.",
+    sections: [
+      {
+        heading: "İlamlı ve İlamsız İcra Takibi Arasındaki Fark",
+        paragraphs: [
+          "İlamsız icra takibi, para veya teminat alacakları için herhangi bir mahkeme kararı aranmaksızın doğrudan icra dairesine başvurularak başlatılır; borçluya ödeme emri gönderilir. İlamlı icra ise mahkeme ilamına veya ilam niteliğindeki bir belgeye dayanır ve borçluya icra emri gönderilir.",
+          "İki yol arasındaki en kritik fark, itirazın sonucudur: ilamsız takipte borçlunun süresinde yaptığı itiraz takibi kendiliğinden durdurur; ilamlı takipte ise itiraz takibi durdurmaz, borçlunun icranın geri bırakılmasını ayrıca talep etmesi gerekir.",
+        ],
+      },
+      {
+        heading: "Ödeme Emrine İtiraz ve Sonrası",
+        paragraphs: [
+          "Borçlu, ödeme emrinin tebliğinden itibaren 7 gün içinde icra dairesine itiraz edebilir (İİK m.62); bu süre hak düşürücüdür ve itiraz takibi kendiliğinden durdurur. Alacaklının takibe devam edebilmesi için itirazı ortadan kaldırması gerekir.",
+          "Bunun için iki farklı yol vardır: itirazın iptali davası genel mahkemede (asliye hukuk/ticaret) açılır, süresi itirazın alacaklıya tebliğinden itibaren 1 yıldır (İİK m.67) ve tam yargılama içerir. İtirazın kaldırılması ise icra mahkemesinde, elde bulunan belgeye dayanılarak istenir, süresi 6 aydır (İİK m.68-68/a) ve genellikle daha hızlı sonuçlanır.",
+        ],
+      },
+      {
+        heading: "Haciz Süreci ve Haczedilemeyen Mallar",
+        paragraphs: [
+          "Takip kesinleştikten sonra alacaklı haciz talep edebilir; icra memuru borçlunun taşınır ve taşınmaz mallarına, üçüncü kişilerdeki hak ve alacaklarına el koyar. Maaş ve ücret haczinde İİK m.83 uygulanır: önce borçlu ve ailesinin asgari geçimi için gerekli miktar ayrılır, kalan kısmın en fazla dörtte biri haczedilebilir.",
+          "Nafaka alacakları bu sınırlamanın dışındadır ve önceliklidir. İİK m.82 uyarınca bazı mal ve haklar borcun türünden bağımsız olarak haciz dışıdır:",
+        ],
+        items: [
+          "Borçlunun mesleği veya sanatı için gerekli alet ve edevat",
+          "Kıymetli eşya hariç, ev ihtiyacı için gerekli eşya",
+          "Borçlunun ve ailesinin ihtiyacına uygun tek barınma evi",
+          "Maaş/ücretin en fazla dörtte biri; nafaka alacakları bu sınırın dışındadır",
+        ],
+      },
+      {
+        heading: "İflas Yoluyla Takip ve Konkordato",
+        paragraphs: [
+          "İflas yoluyla takip yalnızca Türk Ticaret Kanunu anlamında tacir sayılan borçlulara veya özel kanunla iflasa tabi tutulanlara uygulanabilir; sadece para ve teminat alacakları için başvurulabilir.",
+          "Konkordato (İİK m.285 vd.), borcunu ödeyemeyen veya ödeyememe tehlikesi altındaki borçlunun mahkeme denetiminde alacaklılarıyla anlaşmasını sağlayan bir yeniden yapılandırma müessesesidir; borca batıklık şartı aranmaz. Mahkeme önce geçici mühlet (en fazla 5 ay), ardından şartları oluşursa kesin mühlet (en fazla 18 ay) verebilir; bu süre boyunca borçlu aleyhine yeni takip yapılamaz.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "İcra takibine itiraz etmezsem ne olur?",
+        answer:
+          "Ödeme emrinin tebliğinden itibaren 7 gün içinde itiraz etmez ve ödeme de yapmazsanız takip kesinleşir; alacaklı doğrudan haciz talep edebilir ve mal beyanında bulunmanız istenir.",
+      },
+      {
+        question: "Maaşımın ne kadarı haczedilebilir?",
+        answer:
+          "İİK m.83 uyarınca önce sizin ve ailenizin asgari geçimi için gerekli miktar ayrılır; kalan kısmın en fazla dörtte biri haczedilebilir. Nafaka alacakları bu sınırlamanın dışında olup önceliklidir.",
+      },
+      {
+        question: "Kambiyo senedine (çek/senet) dayalı takip normal takipten nasıl farklı?",
+        answer:
+          "Kambiyo senetlerine özgü takipte itiraz süresi 7 değil 5 gündür ve itiraz icra dairesine değil icra mahkemesine yapılır; itiraz sebepleri de sınırlı sayıdadır. Borçluya tanınan ödeme süresi 10 gündür.",
+      },
+      {
+        question: "İtirazın iptali mi, itirazın kaldırılması mı daha hızlı sonuçlanır?",
+        answer:
+          "İtirazın kaldırılması, icra mahkemesinde elde bulunan belgeye dayanılarak istendiğinden genellikle itirazın iptalinden (genel mahkemede açılan, tam yargılama içeren) daha kısa sürede sonuçlanır.",
+      },
+      {
+        question: "Evime haciz gelebilir mi?",
+        answer:
+          "İİK m.82 uyarınca borçlunun ve ailesinin ihtiyacına uygun tek barınma evi, borcun bizzat o evden doğmadığı sürece haczedilemez. Ancak evdeki kıymetli eşyalar (para, altın vb.) bu korumanın dışındadır.",
+      },
+    ],
+    relatedSlugs: ["borclar-hukuku", "tazminat-hukuku"],
+  },
+
+  {
+    slug: "idare-hukuku",
+    title: "İdare Hukuku",
+    metaTitle: "İdare Hukuku",
+    metaDescription:
+      "İdari işlemin iptali, tam yargı davası, yürütmenin durdurulması ve disiplin cezalarına itiraz konularında İstanbul'da hukuki destek.",
+    intro:
+      "İdare hukuku; kamu idarelerinin işlem ve eylemlerinin hukuka uygunluğunun denetlenmesini ve bu işlemlerden zarar görenlerin haklarını düzenleyen hukuk dalıdır. Türkiye'de idari yargı; kuruluşu bakımından 2575 sayılı Danıştay Kanunu ile 2576 sayılı Bölge İdare Mahkemeleri, İdare Mahkemeleri ve Vergi Mahkemelerinin Kuruluşu Hakkında Kanun'a, yargılama usulü bakımından ise 2577 sayılı İdari Yargılama Usulü Kanunu'na (İYUK) dayanır.",
+    sections: [
+      {
+        heading: "İdari İşlemin Unsurları ve İptal Davası",
+        paragraphs: [
+          "Bir idari işlemin hukuka uygun sayılabilmesi için beş unsuru taşıması gerekir: yetki, şekil, sebep, konu ve maksat. Bu unsurlardan herhangi birindeki sakatlık, işlemin iptalini gerektiren bir hukuka aykırılık sebebi oluşturur.",
+          "İptal davası, idarenin kesin ve yürütülmesi zorunlu (icrai) işlemlerine karşı açılabilir; hazırlık işlemleri ve görüş niteliğindeki işlemler dava konusu edilemez. Dava açma süresi İYUK m.7 uyarınca, özel kanunlarda ayrı bir süre öngörülmediği sürece, Danıştay ve idare mahkemelerinde 60 gün, vergi mahkemelerinde 30 gündür.",
+        ],
+      },
+      {
+        heading: "Tam Yargı Davası: İptalden Farkı",
+        paragraphs: [
+          "İptal davasında işlemin menfaatinizi ihlal etmesi dava açmak için yeterliyken, tam yargı davasında somut bir hak ihlalinin ve zararın varlığının ortaya konması gerekir. Tam yargı davası; idarenin hizmet kusuru (hizmeti hiç, geç veya kötü işletmesi) ya da kusursuz sorumluluk esaslarına dayanılarak açılabilir.",
+          "İYUK m.12 uyarınca, bir idari işlemden dolayı zarara uğrayanlar; doğrudan tam yargı davası açabilir, iptal davasıyla birlikte tam yargı davası da açabilir veya önce iptal davası açıp kararın kesinleşmesinden sonra ayrıca tam yargı davası açabilir.",
+        ],
+      },
+      {
+        heading: "Yürütmenin Durdurulması",
+        paragraphs: [
+          "İYUK m.27 uyarınca yürütmenin durdurulması kararı verilebilmesi için iki şartın birlikte gerçekleşmesi aranır: işlemin açıkça hukuka aykırı olması ve uygulanması halinde telafisi güç veya imkansız bir zararın doğması. Bu tedbir, dava sonuçlanana kadar işlemin sonuç doğurmasını geçici olarak engeller.",
+          "Mahkeme, idarenin savunmasını aldıktan veya savunma süresi geçtikten sonra gerekçeli kararını verir. Yürütmenin durdurulması talebinin reddi kararına karşı tebliğden itibaren 7 gün içinde bölge idare mahkemesine itiraz edilebilir.",
+        ],
+      },
+      {
+        heading: "Kamu Görevlilerinin Disiplin Cezalarına Karşı Yollar",
+        paragraphs: [
+          "657 sayılı Devlet Memurları Kanunu m.125; uyarma, kınama, aylıktan kesme, kademe ilerlemesinin durdurulması ve devlet memurluğundan çıkarma olmak üzere beş disiplin cezası öngörür. Uyarma ve kınama dışındaki cezalar disiplin kurullarının görüşü alınarak verilir.",
+          "Devlet memurluğundan çıkarma cezası hariç diğer disiplin cezalarına karşı idari itiraz yoluna gidilebilir; itiraz sonucundan tatmin olmayanlar için İYUK m.7'deki genel 60 günlük dava süresi içinde idare mahkemesinde dava açma yolu her halükarda açıktır.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "İdari işleme karşı dava açma süresini kaçırdım, ne yapabilirim?",
+        answer:
+          "İdari yargıda kural olarak süre geçtikten sonra eski hale getirme imkanı yoktur; süre geçince dava hakkı düşer. Tebligatın usulüne uygun yapılmadığı gibi istisnai durumlarda değerlendirme yapılabilir, ancak bu garanti bir yol değildir — sürenin kaçırılmaması esastır.",
+      },
+      {
+        question: "Yürütmenin durdurulması kararı ne işe yarar?",
+        answer:
+          "Dava devam ederken idari işlemin uygulanmasını geçici olarak durdurarak, dava sonuçlanana kadar telafisi imkansız bir zarar doğmasını önler. İşlemin açıkça hukuka aykırı olması ve ciddi bir zarar riski bulunması şartlarının birlikte gerçekleşmesi gerekir.",
+      },
+      {
+        question: "İptal davası mı, tam yargı davası mı açmalıyım?",
+        answer:
+          "İşlemin ortadan kaldırılmasını istiyorsanız iptal davası, işlem veya eylem nedeniyle uğradığınız zararın tazminini istiyorsanız tam yargı davası açmanız gerekir. İkisi birlikte de açılabilir.",
+      },
+      {
+        question: "Disiplin cezasına karşı önce idareye mi başvurmalıyım?",
+        answer:
+          "Devlet memurluğundan çıkarma cezası hariç diğer disiplin cezalarında idari itiraz yolu kullanılabilir; ancak bu şart aranmaksızın doğrudan idare mahkemesinde dava açmak da mümkündür. Hangi yolun dosyanız için daha uygun olduğu somut duruma göre değerlendirilmelidir.",
+      },
+      {
+        question: "Doğrudan Danıştay'a dava açabilir miyim?",
+        answer:
+          "Hayır, kural olarak ilk derece mahkemesi idare veya vergi mahkemesidir. Danıştay, yalnızca kanunda sayılan sınırlı sayıdaki işlem türü için ilk derece mahkemesi sıfatıyla görev yapar; diğer davalarda istinaf ve temyiz merciidir.",
+      },
+    ],
+    relatedSlugs: ["vergi-hukuku", "tazminat-hukuku"],
+    relatedLinks: [
+      { label: "İdari İşlemin İptali Davası: Süre, Şartlar ve Süreç", href: "/makaleler/idari-islemin-iptali-davasi" },
+    ],
+  },
+
+  {
+    slug: "tazminat-hukuku",
+    title: "Tazminat Hukuku",
+    metaTitle: "Tazminat Hukuku",
+    metaDescription:
+      "Haksız fiilden doğan maddi ve manevi tazminat davaları, trafik kazası ve iş kazası tazminatı konularında İstanbul'da hukuki destek.",
+    intro:
+      "Tazminat hukuku; bir kişinin kusurlu ve hukuka aykırı bir fiille başkasına verdiği zararın giderilmesini düzenleyen hukuk alanıdır. Türkiye'de temel kaynak, 6098 sayılı Türk Borçlar Kanunu'nun (TBK) haksız fiillerden doğan borç ilişkilerine ayrılmış 49 ila 76. maddeleridir. Trafik kazası, iş kazası, hatalı tıbbi müdahale ve kişilik hakkı ihlalleri gibi pek çok uyuşmazlık bu genel çerçeve üzerinden çözülür.",
+    sections: [
+      {
+        heading: "Haksız Fiil Sorumluluğunun Şartları",
+        paragraphs: [
+          "TBK m.49 uyarınca sorumluluğun doğması için dört şartın birlikte gerçekleşmesi gerekir: hukuka aykırı bir fiil, kusur (kast veya ihmal), bir zararın varlığı ve fiil ile zarar arasında uygun illiyet (nedensellik) bağı. Aynı maddenin ikinci fıkrasına göre, açıkça yasaklayan bir kural bulunmasa bile ahlaka aykırı bir fiille kasten zarar verilmesi de sorumluluk doğurur.",
+          "Maddi tazminat, ölçülebilir ve belgelenebilir ekonomik kaybı karşılamayı amaçlarken; manevi tazminat, zarar görenin çektiği elem ve ızdırabı bir nebze hafifletmeyi amaçlayan, zenginleşme aracı olmayan bir tatmin niteliği taşır.",
+        ],
+      },
+      {
+        heading: "Maddi Tazminat Kalemleri",
+        paragraphs: [
+          "Ölüm halinde TBK m.53 uygulanır: cenaze giderleri, ölüm hemen gerçekleşmediyse tedavi giderleri ve çalışma gücü kaybı, ayrıca ölenin desteğinden yoksun kalan yakınların kaybı (destekten yoksun kalma tazminatı) talep edilebilir.",
+          "Bedensel zarar (yaralanma) halinde ise TBK m.54 uygulanır: tedavi giderleri, kazanç kaybı, çalışma gücünün azalmasından veya yitirilmesinden doğan kayıp ve ekonomik geleceğin sarsılmasından doğan kayıp talep edilebilir. Destekten yoksun kalma ve çalışma gücü kaybı gibi kalemlerde tutar, Yargıtay uygulamasında genellikle bilirkişi/aktüer tarafından ulusal yaşam tablosu esas alınarak hesaplanır; bu nedenle kesin tutar ancak dosyaya özgü bir bilirkişi incelemesiyle belirlenebilir.",
+        ],
+      },
+      {
+        heading: "Manevi Tazminat Nasıl Belirlenir?",
+        paragraphs: [
+          "TBK m.56, özellikle bedensel bütünlüğün zedelenmesi ve ölüm hallerine özgü manevi tazminatı düzenler; ağır bedensel zarar veya ölüm halinde yakınlara da manevi tazminat verilebilir. Kanun, manevi tazminat için sabit bir miktar öngörmez.",
+          "Hakim, manevi tazminat miktarını belirlerken olayın ağırlığını, tarafların kusur derecesini ve sosyal-ekonomik durumlarını dikkate alarak hakkaniyete uygun bir tutara karar verir. Amaç, zarar göreni zenginleştirmek değil, yaşadığı manevi acıyı bir ölçüde dengelemektir.",
+        ],
+      },
+      {
+        heading: "Zamanaşımı Süresi",
+        paragraphs: [
+          "TBK m.72 uyarınca haksız fiilden doğan tazminat talepleri, zarar görenin zararı ve sorumlu kişiyi öğrendiği tarihten itibaren 2 yıl, her halükarda haksız fiilin gerçekleştiği tarihten itibaren 10 yıl içinde zamanaşımına uğrar; bu iki süreden hangisi önce dolarsa talep hakkı o tarihte sona erer.",
+          "Fiil aynı zamanda bir suç oluşturuyor ve ceza kanunundaki dava zamanaşımı süresi daha uzunsa, TBK m.72/2 uyarınca bu daha uzun süre tazminat talebine de uygulanır. Trafik kazası tazminatında bu genel çerçeveye ek olarak 2918 sayılı Karayolları Trafik Kanunu'nun özel hükümleri de dikkate alınır.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Manevi tazminat miktarı nasıl belirlenir?",
+        answer:
+          "Kanunda sabit bir tutar yoktur; TBK m.56 uyarınca hakim, olayın ağırlığı, kusur derecesi ve tarafların sosyal-ekonomik durumunu değerlendirerek hakkaniyete uygun bir miktara karar verir.",
+      },
+      {
+        question: "Tazminat davasında zamanaşımı ne zaman dolar?",
+        answer:
+          "TBK m.72 uyarınca zararı ve sorumluyu öğrenmeden itibaren 2 yıl, her halükarda olay tarihinden itibaren 10 yıl içinde dava açılmalıdır. Olay aynı zamanda suç oluşturuyorsa ve ceza zamanaşımı daha uzunsa, bu uzun süre uygulanır.",
+      },
+      {
+        question: "Maddi tazminat kalemleri nelerdir?",
+        answer:
+          "Yaralanma halinde tedavi gideri, kazanç kaybı, çalışma gücü kaybı ve ekonomik geleceğin sarsılmasından doğan kayıp (TBK m.54); ölüm halinde cenaze gideri, tedavi gideri ve destekten yoksun kalma tazminatı (TBK m.53) talep edilebilir.",
+      },
+      {
+        question: "Tazminat tutarını hesaplamak için bilirkişi raporu şart mı?",
+        answer:
+          "Destekten yoksun kalma ve çalışma gücü kaybı gibi kalemlerde evet; bu kalemler aktüeryal hesap ve ulusal yaşam tablosu esas alınarak bilirkişi tarafından hesaplanır. Belgeyle doğrudan ispatlanabilen kalemlerde bilirkişiye ihtiyaç olmayabilir.",
+      },
+      {
+        question: "Haksız fiilden sorumlu tutulmak için ne ispatlanmalı?",
+        answer:
+          "TBK m.49 uyarınca hukuka aykırı bir fiil, failin kusuru, bir zararın varlığı ve fiil ile zarar arasında nedensellik bağı ispatlanmalıdır. Bu dört unsurdan biri eksikse tazminat sorumluluğu doğmaz.",
+      },
+    ],
+    relatedSlugs: ["borclar-hukuku", "icra-iflas-hukuku"],
+    relatedLinks: [
+      { label: "Trafik Kazası Tazminatı Hesaplama", href: "/trafik-kazasi-tazminati-hesaplama" },
+      { label: "Araç Değer Kaybı Hesaplama", href: "/arac-deger-kaybi-hesaplama" },
+    ],
+  },
+
+  {
+    slug: "tahkim-arabuluculuk",
+    title: "Tahkim ve Arabuluculuk",
+    metaTitle: "Tahkim ve Arabuluculuk",
+    metaDescription:
+      "Zorunlu ve ihtiyari arabuluculuk, iç tahkim ve milletlerarası tahkim süreçlerinde İstanbul'da hukuki destek ve temsil.",
+    intro:
+      "Tahkim ve arabuluculuk; taraflar arasındaki uyuşmazlıkların mahkeme dışında, daha hızlı ve esnek bir şekilde çözülmesini sağlayan alternatif uyuşmazlık çözüm yollarıdır. Arabuluculuk 6325 sayılı Hukuk Uyuşmazlıklarında Arabuluculuk Kanunu ile, iç tahkim Hukuk Muhakemeleri Kanunu'nun ilgili hükümleriyle, yabancılık unsuru taşıyan uyuşmazlıklarda tahkim ise 4686 sayılı Milletlerarası Tahkim Kanunu (MTK) ile düzenlenir.",
+    sections: [
+      {
+        heading: "Hangi Uyuşmazlıklarda Arabuluculuk Zorunludur?",
+        paragraphs: [
+          "Taraflarca serbestçe tasarruf edilebilecek özel hukuk uyuşmazlıklarında arabuluculuğa başvurmak kural olarak isteğe bağlıdır (ihtiyari arabuluculuk). Ancak kanun koyucu bazı uyuşmazlık türlerinde dava açmadan önce arabulucuya başvurulmasını dava şartı haline getirmiştir; bu şart yerine getirilmeden açılan dava usulden reddedilir.",
+          "Zorunlu arabuluculuk kapsamındaki başlıca uyuşmazlıklar: işçi-işveren alacak ve tazminat talepleri ile işe iade davaları (1 Ocak 2018'den itibaren, iş kazası ve meslek hastalığından kaynaklanan tazminat davaları hariç), konusu para alacağı veya tazminat olan ticari davalar (1 Ocak 2019'dan itibaren), tüketici mahkemelerinin görevine giren uyuşmazlıklar (28 Temmuz 2020'den itibaren) ve kira ilişkisinden doğan uyuşmazlıklar (1 Eylül 2023'ten itibaren, ilamsız icra yoluyla tahliye talepleri hariç).",
+        ],
+      },
+      {
+        heading: "Arabuluculuk Süreci ve Anlaşma Belgesinin Bağlayıcılığı",
+        paragraphs: [
+          "Arabuluculuk süreci, tarafsız ve eğitimli bir arabulucu eşliğinde yürütülür; sürenin kanunda belirlenen azami sınırları vardır (örneğin iş uyuşmazlıklarında 3 hafta, zorunlu hallerde 1 hafta daha uzatılabilir). Taraflar anlaşamazsa arabulucu bir son tutanak düzenler ve dava şartı yerine getirilmiş sayılır; dava açma hakkı saklıdır.",
+          "Taraflar anlaşırsa düzenlenen anlaşma belgesi; taraflar, avukatları ve arabulucu tarafından imzalanmış olması ve icraya elverişli bir konu içermesi halinde 6325 sayılı Kanun m.18 uyarınca doğrudan ilam niteliğinde sayılır ve ayrıca dava açılmasına gerek kalmadan icraya konulabilir.",
+        ],
+      },
+      {
+        heading: "İç Tahkim: HMK'nın Tahkim Hükümleri",
+        paragraphs: [
+          "Hukuk Muhakemeleri Kanunu'nun tahkime ayrılmış hükümleri, tahkim yeri Türkiye olan ve yabancılık unsuru taşımayan uyuşmazlıklara uygulanır. Taşınmazlar üzerindeki ayni haklara ilişkin uyuşmazlıklar ile boşanma, miras ve iflas gibi tarafların iradesine tabi olmayan konular tahkime elverişli değildir.",
+          "Taraflar sözleşmelerine geçerli bir tahkim şartı koyduklarında, karşı taraf bu şarta dayanarak süresinde itiraz ederse dava usulden reddedilir ve uyuşmazlık hakem önünde çözülür. Hakem kararına karşı klasik istinaf/temyiz yolu yoktur; yalnızca kanunda sayılan sınırlı sebeplere dayalı iptal davası açılabilir.",
+        ],
+      },
+      {
+        heading: "Milletlerarası Tahkim",
+        paragraphs: [
+          "4686 sayılı Milletlerarası Tahkim Kanunu, yabancılık unsuru taşıyan (örneğin tarafların yerleşim yerlerinin farklı ülkelerde olduğu veya sözleşmenin ifa yerinin yurt dışında bulunduğu) ve tahkim yeri Türkiye olan uyuşmazlıklara uygulanır. Türkiye, 1958 tarihli New York Konvansiyonu'na 3731 sayılı Kanun'la taraf olmuştur; bu sayede Türkiye'de verilen hakem kararları yurt dışında, yabancı ülkelerde verilen kararlar da Türkiye'de belirli usullerle tanınıp icra edilebilir.",
+          "MTK m.15 uyarınca hakem kararına karşı, kararın bildiriminden itibaren 30 gün içinde asliye hukuk mahkemesinde iptal davası açılabilir. İptal sebepleri sınırlı sayıdadır: tarafın ehliyetsizliği, tahkim anlaşmasının geçersizliği, hakem seçiminde usulsüzlük, kararın tahkim anlaşması kapsamı dışında verilmesi, taraflara eşit davranılmaması, tahkime elverişsizlik ve kamu düzenine aykırılık bunlar arasındadır.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Arabuluculuğa gitmeden doğrudan dava açabilir miyim?",
+        answer:
+          "İş, ticari, tüketici ve kira uyuşmazlıklarının kanunda sayılan türlerinde hayır; arabulucuya başvuru dava şartıdır ve bu şart yerine getirilmeden açılan dava usulden reddedilir. Bu kapsam dışındaki uyuşmazlıklarda arabuluculuk isteğe bağlıdır.",
+      },
+      {
+        question: "Arabuluculukta anlaşamazsak ne olur?",
+        answer:
+          "Arabulucu bir son tutanak düzenler; bu tutanakla dava şartı yerine getirilmiş sayılır ve taraflar dava açma haklarını kullanabilir. Arabuluculuk süreci dava açma hakkını ortadan kaldırmaz, yalnızca ön adım niteliği taşır.",
+      },
+      {
+        question: "Arabuluculukta varılan anlaşma mahkeme kararı gibi bağlayıcı mı?",
+        answer:
+          "Evet, kanunda aranan şartları taşıyan anlaşma belgesi (taraflar, avukatlar ve arabulucu tarafından imzalanmış, icraya elverişli bir konu içeren) ilam niteliğinde sayılır ve doğrudan icraya konulabilir.",
+      },
+      {
+        question: "Sözleşmemizde tahkim şartı varsa mahkemeye gidebilir miyim?",
+        answer:
+          "Karşı taraf bu şarta dayanarak süresinde itiraz ederse hayır; dava usulden reddedilir ve uyuşmazlığın hakem önünde çözülmesi gerekir. Tahkim şartının geçerliliği ve kapsamı sözleşmenin ifadesine göre değerlendirilir.",
+      },
+      {
+        question: "Hakem kararına itiraz edilebilir mi?",
+        answer:
+          "Esastan bir istinaf veya temyiz yolu yoktur; ancak kanunda sayılan sınırlı sebeplere (hakem seçiminde usulsüzlük, kamu düzenine aykırılık gibi) dayanılarak iptal davası açılabilir. Mahkeme bu davada uyuşmazlığın esasını yeniden incelemez.",
+      },
+    ],
+    relatedSlugs: ["is-hukuku", "borclar-hukuku"],
+  },
+
+  {
+    slug: "yabancilar-hukuku",
+    title: "Yabancılar ve Vatandaşlık Hukuku",
+    metaTitle: "Yabancılar ve Vatandaşlık Hukuku",
+    metaDescription:
+      "Oturma ve çalışma izni, yatırım yoluyla Türk vatandaşlığı, gayrimenkul edinimi ve sınır dışı kararına itiraz konularında hukuki destek.",
+    intro:
+      "Yabancılar ve vatandaşlık hukuku; yabancıların Türkiye'ye giriş, ikamet, çalışma ve mülk edinme süreçlerini, ayrıca yatırım yoluyla Türk vatandaşlığı kazanma yollarını düzenler. Temel kaynak 6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu'dur (YUKK); çalışma izinlerinde 6735 sayılı Uluslararası İşgücü Kanunu, vatandaşlık başvurularında ise Türk Vatandaşlığı Kanunu Uygulama Yönetmeliği esas alınır.",
+    sections: [
+      {
+        heading: "İkamet İzni Türleri",
+        paragraphs: [
+          "YUKK m.30 kapsamında altı ikamet izni türü bulunur: kısa dönem, aile, öğrenci, uzun dönem, insani ve insan ticareti mağduru ikamet izni. Kısa dönem ikamet izni her seferinde en fazla 2 yıl için verilir; gayrimenkul yatırımı yoluyla başvuranlara istisnai olarak azami 5 yıla kadar verilebilir. Aile ikamet izni her seferinde en fazla 3 yıl süreyle verilir.",
+          "Uzun dönem ikamet izni ise süresizdir ve Türkiye'de kesintisiz en az 8 yıl yasal ikamet, son 3 yılda sosyal yardım almamış olma, düzenli/yeterli gelir ve kamu düzeni açısından tehdit oluşturmama şartlarını gerektirir (YUKK m.43). Öğrenci ve geçici koruma sürecinde geçirilen süreler bu 8 yıllık hesaba dahil edilmez.",
+        ],
+      },
+      {
+        heading: "Çalışma İzni Süreci",
+        paragraphs: [
+          "6735 sayılı Uluslararası İşgücü Kanunu uyarınca çalışma izni başvurusu, yabancının kendisi tarafından değil, onu istihdam edecek işveren tarafından yapılır. Yurt dışından başvuruda yabancı önce bulunduğu ülkedeki Türk büyükelçiliği veya başkonsolosluğuna başvurarak bir referans numarası alır; işveren bu numarayla Çalışma ve Sosyal Güvenlik Bakanlığı'na elektronik ortamda başvurur.",
+          "Türkiye'de en az 6 ay geçerli ikamet izni bulunan yabancılar için yurt içinden başvuru da mümkündür; bu durumda da başvuruyu işveren yapar. Çalışma iznine bağlı olarak Türkiye'ye giren yabancının, izninin başlangıcından itibaren en geç 6 ay içinde işe başlaması gerekir.",
+        ],
+      },
+      {
+        heading: "Yatırım Yoluyla Türk Vatandaşlığı",
+        paragraphs: [
+          "Türk Vatandaşlığı Kanunu Uygulama Yönetmeliği m.20 kapsamında, belirli tutarların üzerinde yatırım yapan yabancılar istisnai olarak Türk vatandaşlığı kazanabilir. Yatırımcının eşi ve 18 yaşından küçük çocukları da bu haktan yararlanabilir.",
+          "2026 itibarıyla geçerli eşik tutarlar: en az 400.000 ABD doları değerinde gayrimenkul edinip tapuya 3 yıl süreyle satılmayacağına dair şerh koydurmak; veya en az 500.000 ABD doları tutarında sabit sermaye yatırımı, banka mevduatı, devlet borçlanma aracı ya da gayrimenkul/girişim sermayesi yatırım fonu payı edinip bunu 3 yıl süreyle elde tutmak; ya da en az 50 kişilik istihdam yaratmak. Bu tutarlar 6 Ocak 2022 tarihli Cumhurbaşkanı Kararı ile belirlenmiştir ve zaman içinde değişebileceğinden başvuru öncesinde güncel tutarın büromuzla teyit edilmesi önerilir.",
+        ],
+      },
+      {
+        heading: "Gayrimenkul Edinimi ve Sınır Dışı Kararına İtiraz",
+        paragraphs: [
+          "Tapu Kanunu m.35 uyarınca yabancı gerçek kişiler Türkiye'de kişi başına ülke genelinde en fazla 30 hektara kadar taşınmaz edinebilir; ayrıca ilçe bazında özel mülkiyete konu alanın en fazla yüzde 10'u kadar sınırlama uygulanır. Askeri yasak bölgeler ve özel güvenlik bölgelerinde yabancılara taşınmaz edinim hakkı tanınmaz; bazı ülke vatandaşlarına yönelik ek kısıtlamalar da güncel Cumhurbaşkanı kararlarıyla belirlenebildiğinden işlem öncesi teyit edilmelidir.",
+          "Sınır dışı etme kararına karşı YUKK m.53-60 uyarınca, kararın tebliğinden itibaren 7 gün içinde yetkili idare mahkemesine dava açılabilir; dava açılması sınır dışı işlemini kendiliğinden durdurur. Karara bağlı olarak uygulanabilecek giriş yasağı kural olarak en fazla 5 yıl sürer; ciddi kamu düzeni veya güvenliği tehdidi hallerinde bu süre istisnai olarak uzatılabilir.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Ev alarak Türk vatandaşlığı alabilir miyim, ne kadar yatırım gerekir?",
+        answer:
+          "Evet; 2026 itibarıyla en az 400.000 ABD doları değerinde gayrimenkul edinip tapuya 3 yıl satılmayacağına dair şerh koydurarak yatırım yoluyla vatandaşlık başvurusunda bulunulabilir. Bu tutar zamanla değişebileceğinden başvuru öncesi güncel rakamın teyit edilmesi önemlidir.",
+      },
+      {
+        question: "Sınır dışı etme kararına nasıl itiraz ederim?",
+        answer:
+          "Kararın tebliğinden itibaren 7 gün içinde yetkili idare mahkemesinde dava açılmalıdır. Dava açılması, sınır dışı işlemini ayrıca bir yürütmeyi durdurma talebine gerek kalmaksızın kendiliğinden durdurur.",
+      },
+      {
+        question: "Oturma izni süresi dolarsa ne olur?",
+        answer:
+          "Süre bitiminden 60 gün öncesinden itibaren uzatma başvurusu yapılabilir. Süre dolmasına rağmen başvuru yapılmaz veya izinsiz kalınırsa yasal kalış hakkı ihlal edilmiş olur ve giriş yasağı riski doğabilir.",
+      },
+      {
+        question: "Çalışma izni başvurusunu kim yapar, yabancı kendisi başvurabilir mi?",
+        answer:
+          "Hayır, başvuruyu yabancıyı istihdam edecek işveren yapar. Yurt dışından başvuru sürecinde yabancı yalnızca ilk aşamada konsolosluktan bir referans numarası alır, asıl başvuruyu işveren tamamlar.",
+      },
+      {
+        question: "Yabancılar Türkiye'de her yerden gayrimenkul alabilir mi?",
+        answer:
+          "Hayır; askeri yasak bölgeler ve özel güvenlik bölgelerinde edinim mümkün değildir, ayrıca kişi ve ilçe bazında azami alan sınırları ile bazı ülke vatandaşlarına yönelik ek kısıtlamalar uygulanabilir. Güncel durumun işlem öncesinde teyit edilmesi önerilir.",
+      },
+    ],
+    relatedSlugs: ["gayrimenkul-hukuku", "tahkim-arabuluculuk"],
   },
 ];
 

@@ -222,6 +222,24 @@ export default async function PracticeAreaPage({ params }: Props) {
                 </div>
               </section>
 
+              {/* Related content links */}
+              {area.relatedLinks && area.relatedLinks.length > 0 && (
+                <div className="mt-10 pt-8" style={{ borderTop: "1px solid #E5D9CC" }}>
+                  <p className="text-xs tracking-widest uppercase font-semibold mb-4" style={{ color: "#C5A880" }}>
+                    İlgili İçerikler
+                  </p>
+                  <ul className="space-y-2">
+                    {area.relatedLinks.map((link) => (
+                      <li key={link.href}>
+                        <Link href={link.href} className="text-sm font-medium underline" style={{ color: "#14342B" }}>
+                          {link.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {/* Disclaimer */}
               <p className="mt-10 text-xs leading-relaxed" style={{ color: "#7A9089" }}>
                 Bu sayfa genel bilgilendirme amaçlıdır; hukuki danışmanlık niteliği taşımaz. Kendi durumunuza özgü değerlendirme için bir avukata başvurmanız önerilir.

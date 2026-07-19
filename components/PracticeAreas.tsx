@@ -1,5 +1,18 @@
 import Link from "next/link";
-import { GavelIcon, BriefcaseIcon, HomeIcon, ScrollIcon, ScalesIcon, FamilyIcon } from "./PracticeIcons";
+import {
+  GavelIcon,
+  BriefcaseIcon,
+  HomeIcon,
+  ScrollIcon,
+  ScalesIcon,
+  FamilyIcon,
+  PercentIcon,
+  BanknoteIcon,
+  LandmarkIcon,
+  ShieldCheckIcon,
+  AgreementIcon,
+  GlobeIcon,
+} from "./PracticeIcons";
 
 const areas = [
   {
@@ -43,6 +56,48 @@ const areas = [
     title: "Aile Hukuku",
     description:
       "Boşanma davaları, velayetin düzenlenmesi, nafaka, mal rejimi tasfiyesi ve aile hukuku danışmanlığı.",
+  },
+  {
+    slug: "vergi-hukuku",
+    icon: <PercentIcon />,
+    title: "Vergi Hukuku",
+    description:
+      "Vergi incelemesi, tarhiyat öncesi/sonrası uzlaşma ve vergi/ceza ihbarnamesine karşı dava süreçlerinde destek.",
+  },
+  {
+    slug: "icra-iflas-hukuku",
+    icon: <BanknoteIcon />,
+    title: "İcra ve İflas Hukuku",
+    description:
+      "İlamlı/ilamsız icra takibi, ödeme emrine itiraz, haciz süreci ve konkordato başvurularında temsil.",
+  },
+  {
+    slug: "idare-hukuku",
+    icon: <LandmarkIcon />,
+    title: "İdare Hukuku",
+    description:
+      "İdari işlemin iptali, tam yargı davası ve yürütmenin durdurulması taleplerinde idare mahkemelerinde temsil.",
+  },
+  {
+    slug: "tazminat-hukuku",
+    icon: <ShieldCheckIcon />,
+    title: "Tazminat Hukuku",
+    description:
+      "Trafik kazası, iş kazası ve haksız fiilden doğan maddi-manevi tazminat davalarında hukuki destek.",
+  },
+  {
+    slug: "tahkim-arabuluculuk",
+    icon: <AgreementIcon />,
+    title: "Tahkim ve Arabuluculuk",
+    description:
+      "Zorunlu ve ihtiyari arabuluculuk süreçleri ile iç ve milletlerarası tahkimde danışmanlık ve temsil.",
+  },
+  {
+    slug: "yabancilar-hukuku",
+    icon: <GlobeIcon />,
+    title: "Yabancılar ve Vatandaşlık Hukuku",
+    description:
+      "Oturma/çalışma izni, yatırım yoluyla Türk vatandaşlığı ve gayrimenkul edinimi süreçlerinde destek.",
   },
 ];
 
