@@ -17,7 +17,7 @@ export default function Footer() {
     <footer style={{ backgroundColor: "#0d2420" }}>
       <div className="h-px" style={{ backgroundColor: "rgba(197,168,128,0.2)" }} aria-hidden="true" />
 
-      <div className="max-w-6xl mx-auto px-5 md:px-8 py-12 md:py-16">
+      <div className="max-w-6xl mx-auto px-5 md:px-8 pt-12 pb-28 md:pt-16 md:pb-16">
         <div className="grid md:grid-cols-3 gap-10 md:gap-8">
           {/* Brand */}
           <div>

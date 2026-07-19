@@ -371,7 +371,7 @@ export default function PseoPage({
       </main>
 
       {/* 11. FOOTER */}
-      <footer className="py-8" style={{ backgroundColor: "#0d2420" }}>
+      <footer className="pt-8 pb-24 md:pb-8" style={{ backgroundColor: "#0d2420" }}>
         <div className="max-w-5xl mx-auto px-5 md:px-8 text-center">
           <p className="text-xs" style={{ color: "rgba(244,237,228,0.5)" }}>
             Av. Furkan Arıkan Hukuk Bürosu · İstanbul Barosu, Sicil No: 72621
