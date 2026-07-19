@@ -62,7 +62,7 @@ export default function Process() {
 
           <div className="grid md:grid-cols-4 gap-8 md:gap-6">
             {steps.map((step, index) => (
-              <div key={step.number} className="flex flex-col items-start md:items-center text-left md:text-center">
+              <div key={step.number} className="flex flex-col items-center text-center">
                 {/* Step circle */}
                 <div
                   className="relative flex items-center justify-center w-16 h-16 rounded-full border-2 mb-5 flex-shrink-0"
