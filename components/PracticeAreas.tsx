@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import {
   GavelIcon,
@@ -149,7 +152,12 @@ const areas = [
   },
 ];
 
+const INITIAL_COUNT = 6;
+
 export default function PracticeAreas() {
+  const [showAll, setShowAll] = useState(false);
+  const visibleAreas = showAll ? areas : areas.slice(0, INITIAL_COUNT);
+
   return (
     <section
       id="calisma-alanlari"
@@ -182,7 +190,7 @@ export default function PracticeAreas() {
 
         {/* Cards grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {areas.map((area) => (
+          {visibleAreas.map((area) => (
             <Link
               key={area.title}
               href={`/calisma-alanlari/${area.slug}`}
@@ -244,6 +252,23 @@ export default function PracticeAreas() {
             </Link>
           ))}
         </div>
+
+        {/* Show all toggle */}
+        {!showAll && (
+          <div className="mt-8 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll(true)}
+              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 hover:bg-[#C5A880] hover:text-[#14342B]"
+              style={{ color: "#C5A880", borderColor: "#C5A880" }}
+            >
+              Tüm Çalışma Alanlarını Gör
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+          </div>
+        )}
 
         {/* Bottom note */}
         <p className="mt-10 text-sm text-center" style={{ color: "rgba(197,168,128,0.7)" }}>
