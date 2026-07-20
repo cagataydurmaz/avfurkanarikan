@@ -7,7 +7,7 @@ export const eyupsultan: PseoDistrict = {
   ablative: "Eyüpsultan'dan",
   genitive: "Eyüpsultan'ın",
   dative: "Eyüpsultan'a",
-  courthouse: "İstanbul (Çağlayan) Adliyesi",
+  courthouse: "İstanbul Gaziosmanpaşa Adliyesi",
   taxOffice: "Eyüp Mal Müdürlüğü",
   neighborhoods: [
     "Eyüpsultan Merkez", "Nişanca", "Defterdar", "Düğmeciler", "İslambey",

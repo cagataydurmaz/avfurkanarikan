@@ -7,7 +7,7 @@ export const arnavutkoy: PseoDistrict = {
   ablative: "Arnavutköy'den",
   genitive: "Arnavutköy'ün",
   dative: "Arnavutköy'e",
-  courthouse: "İstanbul (Çağlayan) Adliyesi",
+  courthouse: "İstanbul Gaziosmanpaşa Adliyesi",
   taxOffice: "Arnavutköy Mal Müdürlüğü",
   neighborhoods: [
     "Arnavutköy Merkez", "Bolluca", "Boğazköy", "Haraççı", "Taşoluk",

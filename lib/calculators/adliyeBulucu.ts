@@ -34,6 +34,16 @@ export const COURTHOUSES: Record<string, CourthouseInfo> = {
     address: "Gümüşsuyu Mah. Şht. Bülent Kocabıyık Cad., Beykoz/İstanbul",
     phone: "0216 322 00 65",
   },
+  "İstanbul Gaziosmanpaşa Adliyesi": {
+    name: "İstanbul Gaziosmanpaşa Adliyesi",
+    address: "Merkez Mah. Eski Edirne Asfaltı No:32, Gaziosmanpaşa/İstanbul",
+    phone: "0212 615 52 33",
+  },
+  "İstanbul Anadolu Adliyesi": {
+    name: "İstanbul Anadolu Adliyesi",
+    address: "Esentepe Mah. E-5 Güney Yan Yol Cad. No:39, Kartal/İstanbul",
+    phone: "0216 303 33 33",
+  },
 };
 
 export type AdliyeDistrict = {
@@ -43,7 +53,8 @@ export type AdliyeDistrict = {
 };
 
 const RAW_DISTRICTS: AdliyeDistrict[] = [
-  { slug: "arnavutkoy", name: "Arnavutköy", courthouse: "İstanbul (Çağlayan) Adliyesi" },
+  { slug: "arnavutkoy", name: "Arnavutköy", courthouse: "İstanbul Gaziosmanpaşa Adliyesi" },
+  { slug: "atasehir", name: "Ataşehir", courthouse: "İstanbul Anadolu Adliyesi" },
   { slug: "avcilar", name: "Avcılar", courthouse: "İstanbul Küçükçekmece Adliyesi" },
   { slug: "bagcilar", name: "Bağcılar", courthouse: "İstanbul Bakırköy Adliyesi" },
   { slug: "bahcelievler", name: "Bahçelievler", courthouse: "İstanbul Bakırköy Adliyesi" },
@@ -58,14 +69,18 @@ const RAW_DISTRICTS: AdliyeDistrict[] = [
   { slug: "catalca", name: "Çatalca", courthouse: "İstanbul Büyükçekmece Adliyesi" },
   { slug: "esenler", name: "Esenler", courthouse: "İstanbul Bakırköy Adliyesi" },
   { slug: "esenyurt", name: "Esenyurt", courthouse: "İstanbul Büyükçekmece Adliyesi" },
-  { slug: "eyupsultan", name: "Eyüpsultan", courthouse: "İstanbul (Çağlayan) Adliyesi" },
+  { slug: "eyupsultan", name: "Eyüpsultan", courthouse: "İstanbul Gaziosmanpaşa Adliyesi" },
   { slug: "fatih", name: "Fatih", courthouse: "İstanbul (Çağlayan) Adliyesi" },
+  { slug: "gaziosmanpasa", name: "Gaziosmanpaşa", courthouse: "İstanbul Gaziosmanpaşa Adliyesi" },
   { slug: "gungoren", name: "Güngören", courthouse: "İstanbul Bakırköy Adliyesi" },
+  { slug: "kadikoy", name: "Kadıköy", courthouse: "İstanbul Anadolu Adliyesi" },
   { slug: "kagithane", name: "Kağıthane", courthouse: "İstanbul (Çağlayan) Adliyesi" },
   { slug: "kucukcekmece", name: "Küçükçekmece", courthouse: "İstanbul Küçükçekmece Adliyesi" },
   { slug: "sariyer", name: "Sarıyer", courthouse: "İstanbul (Çağlayan) Adliyesi" },
   { slug: "silivri", name: "Silivri", courthouse: "İstanbul Büyükçekmece Adliyesi" },
   { slug: "sisli", name: "Şişli", courthouse: "İstanbul (Çağlayan) Adliyesi" },
+  { slug: "sultangazi", name: "Sultangazi", courthouse: "İstanbul Gaziosmanpaşa Adliyesi" },
+  { slug: "uskudar", name: "Üsküdar", courthouse: "İstanbul Anadolu Adliyesi" },
   { slug: "zeytinburnu", name: "Zeytinburnu", courthouse: "İstanbul Bakırköy Adliyesi" },
 ];
 
