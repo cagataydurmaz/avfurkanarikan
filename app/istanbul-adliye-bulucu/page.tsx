@@ -114,7 +114,7 @@ export default function AdliyeBulucuPage() {
           </h1>
           <p className="text-sm max-w-xl leading-relaxed" style={{ color: "rgba(244,237,228,0.65)" }}>
             İlçenizi seçin; bağlı olduğunuz adliyenin adresini, telefonunu ve konumunu anında görün.
-            Şu an İstanbul&apos;un merkez ve batı ilçeleriyle kapsamı sürekli genişletiyoruz.
+            Şu an 31 İstanbul ilçesini kapsıyoruz; kapsamı sürekli genişletiyoruz.
           </p>
         </div>
       </div>
