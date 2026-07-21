@@ -379,6 +379,18 @@ export default function PseoPage({
           <p className="mt-2 text-xs max-w-lg mx-auto" style={{ color: "rgba(244,237,228,0.35)" }}>
             Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır ve hukuki tavsiye niteliği taşımaz.
           </p>
+          <p className="mt-4 text-[11px] tracking-wide" style={{ color: "rgba(244,237,228,0.3)" }}>
+            Tasarım ve Yazılım:{" "}
+            <a
+              href="https://ramsesdigital.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline transition-opacity hover:opacity-70"
+              style={{ color: "rgba(244,237,228,0.4)" }}
+            >
+              Ramses Digital
+            </a>
+          </p>
         </div>
       </footer>
 

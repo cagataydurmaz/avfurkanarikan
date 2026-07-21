@@ -103,6 +103,22 @@ export default function Footer() {
             Bu sitedeki bilgiler hukuki danışmanlık niteliği taşımaz.
           </p>
         </div>
+
+        {/* Dev credit - subtle, centered */}
+        <div className="mt-4 text-center">
+          <p className="text-[11px] tracking-wide" style={{ color: "rgba(244,237,228,0.3)" }}>
+            Tasarım ve Yazılım:{" "}
+            <a
+              href="https://ramsesdigital.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline transition-opacity hover:opacity-70"
+              style={{ color: "rgba(244,237,228,0.4)" }}
+            >
+              Ramses Digital
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
