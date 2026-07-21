@@ -25,6 +25,44 @@ Bu site, Avukatlık Kanunu ve Türkiye Barolar Birliği reklam yasağı kurallar
 - [Tahkim ve Arabuluculuk](https://furkanarikan.av.tr/calisma-alanlari/tahkim-arabuluculuk)
 - [Yabancılar ve Vatandaşlık Hukuku](https://furkanarikan.av.tr/calisma-alanlari/yabancilar-hukuku)
 
+## İlçe Bazlı Hukuki Danışmanlık (pSEO)
+
+31 İstanbul ilçesinde ceza, aile (boşanma), gayrimenkul, iş, icra, idare, vergi, borçlar ve kira-tahliye hukuku alanlarında ilçeye özel danışmanlık sayfaları bulunmaktadır. Aşağıdaki her ilçe linki genel/hub sayfasıdır; her ilçenin ayrıca 9 alt hizmet sayfası vardır (ör. `/{ilçe}-ceza-avukati`, `/{ilçe}-bosanma-avukati`, `/{ilçe}-icra-avukati` vb.).
+
+- [Arnavutköy Avukat](https://furkanarikan.av.tr/arnavutkoy-avukat)
+- [Ataşehir Avukat](https://furkanarikan.av.tr/atasehir-avukat)
+- [Avcılar Avukat](https://furkanarikan.av.tr/avcilar-avukat)
+- [Bahçelievler Avukat](https://furkanarikan.av.tr/bahcelievler-avukat)
+- [Bakırköy Avukat](https://furkanarikan.av.tr/bakirkoy-avukat)
+- [Bayrampaşa Avukat](https://furkanarikan.av.tr/bayrampasa-avukat)
+- [Bağcılar Avukat](https://furkanarikan.av.tr/bagcilar-avukat)
+- [Başakşehir Avukat](https://furkanarikan.av.tr/basaksehir-avukat)
+- [Beykoz Avukat](https://furkanarikan.av.tr/beykoz-avukat)
+- [Beylikdüzü Avukat](https://furkanarikan.av.tr/beylikduzu-avukat)
+- [Beyoğlu Avukat](https://furkanarikan.av.tr/beyoglu-avukat)
+- [Beşiktaş Avukat](https://furkanarikan.av.tr/besiktas-avukat) (ofisin bulunduğu ilçe)
+- [Büyükçekmece Avukat](https://furkanarikan.av.tr/buyukcekmece-avukat)
+- [Esenler Avukat](https://furkanarikan.av.tr/esenler-avukat)
+- [Esenyurt Avukat](https://furkanarikan.av.tr/esenyurt-avukat)
+- [Eyüpsultan Avukat](https://furkanarikan.av.tr/eyupsultan-avukat)
+- [Fatih Avukat](https://furkanarikan.av.tr/fatih-avukat)
+- [Gaziosmanpaşa Avukat](https://furkanarikan.av.tr/gaziosmanpasa-avukat)
+- [Güngören Avukat](https://furkanarikan.av.tr/gungoren-avukat)
+- [Kadıköy Avukat](https://furkanarikan.av.tr/kadikoy-avukat)
+- [Kağıthane Avukat](https://furkanarikan.av.tr/kagithane-avukat)
+- [Küçükçekmece Avukat](https://furkanarikan.av.tr/kucukcekmece-avukat)
+- [Maltepe Avukat](https://furkanarikan.av.tr/maltepe-avukat)
+- [Sarıyer Avukat](https://furkanarikan.av.tr/sariyer-avukat)
+- [Silivri Avukat](https://furkanarikan.av.tr/silivri-avukat)
+- [Sultangazi Avukat](https://furkanarikan.av.tr/sultangazi-avukat)
+- [Zeytinburnu Avukat](https://furkanarikan.av.tr/zeytinburnu-avukat)
+- [Çatalca Avukat](https://furkanarikan.av.tr/catalca-avukat)
+- [Ümraniye Avukat](https://furkanarikan.av.tr/umraniye-avukat)
+- [Üsküdar Avukat](https://furkanarikan.av.tr/uskudar-avukat)
+- [Şişli Avukat](https://furkanarikan.av.tr/sisli-avukat)
+
+Ofis Beşiktaş/Sinanpaşa'da bulunmakla birlikte, yukarıdaki tüm ilçelerdeki müvekkillere aynı kapsamda hizmet verilmektedir.
+
 ## Makaleler
 
 Güncel hukuki konularda bilgilendirici makaleler: https://furkanarikan.av.tr/makaleler

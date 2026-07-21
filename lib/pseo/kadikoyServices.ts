@@ -261,7 +261,7 @@ export const kadikoyServices: PseoService[] = [
       { name: "Haciz/Tahsilat", text: "Süreç sonunda haciz ve tahsilat işlemleri yürütülür." },
     ],
     crosslinkLabel: "İcra Avukatı",
-    relatedPostSlugs: ["icra-takibi-ve-borca-itiraz", "icra-masrafi-hesaplama"],
+    relatedPostSlugs: ["icra-takibi-ve-borca-itiraz"],
   },
 
   // ─────────────────────────── İDARE ───────────────────────────
@@ -411,7 +411,7 @@ export const kadikoyServices: PseoService[] = [
       { name: "Tahliye", text: "Kesinleşen karar veya emirle taşınmaz teslim alınır." },
     ],
     crosslinkLabel: "Kira ve Tahliye Avukatı",
-    relatedPostSlugs: ["kiracinin-tahliye-sureci", "kira-artisi-hesaplama"],
+    relatedPostSlugs: ["kiracinin-tahliye-sureci", "kira-bedeli-tespit-ve-uyarlama-davasi"],
   },
 
   // ─────────────────────────── VERGİ ───────────────────────────

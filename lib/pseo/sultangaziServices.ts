@@ -61,7 +61,7 @@ export const sultangaziServices: PseoService[] = [
     howToTitle: "Sultangazi'de Hukuki Sürece Nasıl Başlanır?",
     howToSteps: genelSurec,
     crosslinkLabel: "Sultangazi Avukat (Genel)",
-    relatedPostSlugs: ["tapu-iptali-ve-tescil-davasi", "idari-islemin-iptali-davasi", "istanbul-adliye-bulucu"],
+    relatedPostSlugs: ["tapu-iptali-ve-tescil-davasi", "idari-islemin-iptali-davasi"],
   },
 
   // ─────────────────────────── BOŞANMA ───────────────────────────
@@ -261,7 +261,7 @@ export const sultangaziServices: PseoService[] = [
       { name: "Haciz/Tahsilat", text: "Süreç sonunda haciz ve tahsilat işlemleri yürütülür." },
     ],
     crosslinkLabel: "İcra Avukatı",
-    relatedPostSlugs: ["icra-takibi-ve-borca-itiraz", "icra-masrafi-hesaplama"],
+    relatedPostSlugs: ["icra-takibi-ve-borca-itiraz"],
   },
 
   // ─────────────────────────── İDARE ───────────────────────────
@@ -411,7 +411,7 @@ export const sultangaziServices: PseoService[] = [
       { name: "Tahliye", text: "Kesinleşen karar veya emirle taşınmaz teslim alınır." },
     ],
     crosslinkLabel: "Kira ve Tahliye Avukatı",
-    relatedPostSlugs: ["kiracinin-tahliye-sureci", "kira-artisi-hesaplama"],
+    relatedPostSlugs: ["kiracinin-tahliye-sureci", "kira-bedeli-tespit-ve-uyarlama-davasi"],
   },
 
   // ─────────────────────────── VERGİ ───────────────────────────

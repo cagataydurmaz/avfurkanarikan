@@ -261,7 +261,7 @@ export const gaziosmanpasaServices: PseoService[] = [
       { name: "Haciz/Tahsilat", text: "Süreç sonunda haciz ve tahsilat işlemleri yürütülür." },
     ],
     crosslinkLabel: "İcra Avukatı",
-    relatedPostSlugs: ["icra-takibi-ve-borca-itiraz", "icra-masrafi-hesaplama"],
+    relatedPostSlugs: ["icra-takibi-ve-borca-itiraz"],
   },
 
   // ─────────────────────────── İDARE ───────────────────────────

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://furkanarikan.av.tr"),
   title: {
     default: "Av. Furkan Arıkan | Hukuk Bürosu - İstanbul",
-    template: "%s | Av. Furkan Arıkan Hukuk Bürosu",
+    template: "%s | Av. Furkan Arıkan",
   },
   description:
     "Ceza, iş ve gayrimenkul hukukunda İstanbul'da dava takibi ve hukuki danışmanlık hizmeti.",
