@@ -76,10 +76,12 @@ const RAW_DISTRICTS: AdliyeDistrict[] = [
   { slug: "kadikoy", name: "Kadıköy", courthouse: "İstanbul Anadolu Adliyesi" },
   { slug: "kagithane", name: "Kağıthane", courthouse: "İstanbul (Çağlayan) Adliyesi" },
   { slug: "kucukcekmece", name: "Küçükçekmece", courthouse: "İstanbul Küçükçekmece Adliyesi" },
+  { slug: "maltepe", name: "Maltepe", courthouse: "İstanbul Anadolu Adliyesi" },
   { slug: "sariyer", name: "Sarıyer", courthouse: "İstanbul (Çağlayan) Adliyesi" },
   { slug: "silivri", name: "Silivri", courthouse: "İstanbul Büyükçekmece Adliyesi" },
   { slug: "sisli", name: "Şişli", courthouse: "İstanbul (Çağlayan) Adliyesi" },
   { slug: "sultangazi", name: "Sultangazi", courthouse: "İstanbul Gaziosmanpaşa Adliyesi" },
+  { slug: "umraniye", name: "Ümraniye", courthouse: "İstanbul Anadolu Adliyesi" },
   { slug: "uskudar", name: "Üsküdar", courthouse: "İstanbul Anadolu Adliyesi" },
   { slug: "zeytinburnu", name: "Zeytinburnu", courthouse: "İstanbul Bakırköy Adliyesi" },
 ];
