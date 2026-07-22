@@ -450,7 +450,7 @@ export const posts: Post[] = [
 <ul>
   <li>Tüm ihtarların noter kanalıyla ya da yazılı olarak yapılması tavsiye edilir.</li>
   <li>Kira artış oranının TÜFE sınırını aşması kiracıya tahliye nedeni sağlamaz.</li>
-  <li>İcra yoluyla tahliyede 2-3 aylık kira bedeli karşılığı teminat yatırılması gerekebilir.</li>
+  <li>İcra yoluyla tahliyede, icra müdürlüğünce takdir edilecek bir teminat yatırılması istenebilir.</li>
   <li>Hukuka aykırı tahliye girişimleri (kilit değiştirme, kapı önüne eşya çıkarma) cezai ve tazminat sorumluluğu doğurur.</li>
 </ul>
 
@@ -872,7 +872,7 @@ export const posts: Post[] = [
 <div class="stat-grid">
   <div class="stat-box">
     <div class="stat-number">1+1 Yıl</div>
-    <div class="stat-label">Ağır olmayan suçlarda azami tutukluluk süresi</div>
+    <div class="stat-label">Ağır olmayan suçlarda azami tutukluluk süresi <span class="law-ref">CMK m.102/1</span></div>
   </div>
   <div class="stat-box">
     <div class="stat-number">7 Gün</div>
@@ -880,7 +880,7 @@ export const posts: Post[] = [
   </div>
   <div class="stat-box">
     <div class="stat-number">2+3 Yıl</div>
-    <div class="stat-label">Ağır ceza suçlarında azami tutukluluk süresi</div>
+    <div class="stat-label">Ağır ceza suçlarında azami tutukluluk süresi <span class="law-ref">CMK m.102/2</span></div>
   </div>
 </div>
 
@@ -909,6 +909,9 @@ export const posts: Post[] = [
 </div>
 
 <h2>Tutukluluk Süreleri Ne Kadardır?</h2>
+<p>
+  Azami tutukluluk süreleri <span class="law-ref">CMK m.102</span> uyarınca suç kategorisine göre farklılık gösterir:
+</p>
 <table>
   <thead>
     <tr>
@@ -920,19 +923,19 @@ export const posts: Post[] = [
   </thead>
   <tbody>
     <tr>
-      <td>Ağır olmayan suçlar</td>
+      <td>Ağır olmayan suçlar <span class="law-ref">CMK m.102/1</span></td>
       <td>1 yıl</td>
       <td>1 yıl</td>
       <td>2 yıl</td>
     </tr>
     <tr>
-      <td>Ağır ceza suçları</td>
+      <td>Ağır ceza suçları <span class="law-ref">CMK m.102/2</span></td>
       <td>2 yıl</td>
       <td>3 yıl</td>
       <td>5 yıl</td>
     </tr>
     <tr>
-      <td>Terör suçları</td>
+      <td>Terör suçları <span class="law-ref">CMK m.102/2, 3713 s.K. m.10</span></td>
       <td>2 yıl</td>
       <td>5 yıl</td>
       <td>7 yıl</td>
@@ -1450,7 +1453,7 @@ export const posts: Post[] = [
   </div>
   <div class="stat-box">
     <div class="stat-number">7 Gün</div>
-    <div class="stat-label">İtiraz etmeyen borçlunun mal beyanı süresi</div>
+    <div class="stat-label">İtiraz etmeyen borçlunun mal beyanı süresi <span class="law-ref">İİK m.74, 76</span></div>
   </div>
   <div class="stat-box">
     <div class="stat-number">1 Yıl</div>
@@ -1706,11 +1709,11 @@ export const posts: Post[] = [
 <div class="stat-grid">
   <div class="stat-box">
     <div class="stat-number">1 Yıl</div>
-    <div class="stat-label">Anlaşmalı boşanma için gereken minimum evlilik süresi</div>
+    <div class="stat-label">Anlaşmalı boşanma için gereken minimum evlilik süresi <span class="law-ref">TMK m.166/3</span></div>
   </div>
   <div class="stat-box">
-    <div class="stat-number">1-2 Celse</div>
-    <div class="stat-label">Anlaşmalı boşanmada ortalama duruşma sayısı</div>
+    <div class="stat-number">Şart Yok</div>
+    <div class="stat-label">Çekişmeli boşanmada aranan minimum evlilik süresi</div>
   </div>
   <div class="stat-box">
     <div class="stat-number">Aile Mahkemesi</div>
@@ -2391,7 +2394,7 @@ export const posts: Post[] = [
 <div class="stat-grid">
   <div class="stat-box">
     <div class="stat-number">30 Gün</div>
-    <div class="stat-label">Uzlaşma başvurusu ve dava açma süresi</div>
+    <div class="stat-label">Uzlaşma başvurusu ve dava açma süresi <span class="law-ref">VUK Ek m.1</span></div>
   </div>
   <div class="stat-box">
     <div class="stat-number">%50</div>
