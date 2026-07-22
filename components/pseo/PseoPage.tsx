@@ -383,8 +383,9 @@ export default function PseoPage({
         {/* Dev credit - subtle, aligned with floating action buttons (fixed bottom-6) */}
         <div className="absolute bottom-6 inset-x-0 text-center">
           <p className="text-[11px] tracking-wide" style={{ color: "rgba(197,168,128,0.5)" }}>
-            Web Tasarım{" "}
-            <span aria-hidden="true">◆</span>{" "}
+            <span className="hidden min-[375px]:inline">
+              Web Tasarım <span aria-hidden="true">◆</span>{" "}
+            </span>
             <a
               href="https://ramsesdigital.com/"
               target="_blank"
