@@ -13,7 +13,7 @@ export default function ToolsPreview() {
           </span>
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+        <div className="mb-12">
           <h2
             className="text-3xl md:text-4xl font-bold max-w-sm"
             style={{
@@ -23,16 +23,6 @@ export default function ToolsPreview() {
           >
             Hukuki Hesaplama Araçları
           </h2>
-          <Link
-            href="/araclar"
-            className="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 hover:bg-[#14342B] hover:text-[#F4EDE4]"
-            style={{ color: "#14342B", borderColor: "#14342B" }}
-          >
-            Tüm Araçlar
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </Link>
         </div>
 
         {/* Cards */}
