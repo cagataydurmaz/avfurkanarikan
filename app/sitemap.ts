@@ -33,6 +33,9 @@ import { kadikoyServices } from "@/lib/pseo/kadikoyServices";
 import { atasehirServices } from "@/lib/pseo/atasehirServices";
 import { umraniyeServices } from "@/lib/pseo/umraniyeServices";
 import { maltepeServices } from "@/lib/pseo/maltepeServices";
+import { kartalServices } from "@/lib/pseo/kartalServices";
+import { pendikServices } from "@/lib/pseo/pendikServices";
+import { sancaktepeServices } from "@/lib/pseo/sancaktepeServices";
 import type { PseoService } from "@/lib/pseo/types";
 
 const BASE_URL = "https://furkanarikan.av.tr";
@@ -69,6 +72,9 @@ const allPseoServices: PseoService[] = [
   ...atasehirServices,
   ...umraniyeServices,
   ...maltepeServices,
+  ...kartalServices,
+  ...pendikServices,
+  ...sancaktepeServices,
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
