@@ -1,31 +1,15 @@
-const steps = [
-  {
-    number: "01",
-    title: "İlk İletişim",
-    description:
-      "WhatsApp veya telefon aracılığıyla ulaşın. Konunuzu kısaca paylaşın; randevu için uygun tarih ve saati birlikte belirleyelim.",
-  },
-  {
-    number: "02",
-    title: "Danışmanlık Randevusu",
-    description:
-      "Yüz yüze veya çevrim içi gerçekleştirilen danışmanlık görüşmesi ücret karşılığı yapılmaktadır. Görüşmede hukuki durumunuz değerlendirilir.",
-  },
-  {
-    number: "03",
-    title: "Vekalet ve Dosya Hazırlığı",
-    description:
-      "Temsil kararı alınması halinde noterde vekalet düzenlenir, ilgili belgeler derlenir ve dosya hazırlığı tamamlanır.",
-  },
-  {
-    number: "04",
-    title: "Temsil ve Süreç Takibi",
-    description:
-      "Mahkeme, savcılık ve diğer idari merciler nezdinde temsil ve süreç yönetimi sağlanır; gelişmeler müvekkille paylaşılır.",
-  },
-];
+"use client";
+
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Process() {
+  const { t } = useLanguage();
+  const steps = [
+    { number: "01", title: t("process.step1.title"), description: t("process.step1.desc") },
+    { number: "02", title: t("process.step2.title"), description: t("process.step2.desc") },
+    { number: "03", title: t("process.step3.title"), description: t("process.step3.desc") },
+    { number: "04", title: t("process.step4.title"), description: t("process.step4.desc") },
+  ];
   return (
     <section id="surec" className="py-20 md:py-28" style={{ backgroundColor: "#F4EDE4" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
@@ -35,7 +19,7 @@ export default function Process() {
             className="text-xs tracking-widest uppercase font-semibold px-3 py-1 rounded-full border mb-5"
             style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.4)" }}
           >
-            Nasıl Çalışıyoruz
+            {t("process.label")}
           </span>
           <h2
             className="text-3xl md:text-4xl font-bold max-w-lg"
@@ -44,10 +28,10 @@ export default function Process() {
               fontFamily: "var(--font-playfair), Georgia, serif",
             }}
           >
-            Süreci Birlikte Yönetelim
+            {t("process.heading")}
           </h2>
           <p className="mt-4 text-sm max-w-md" style={{ color: "#3D5A50" }}>
-            Şeffaf ve öngörülebilir bir süreç için her adımı önceden paylaşıyoruz.
+            {t("process.subheading")}
           </p>
         </div>
 
@@ -124,9 +108,8 @@ export default function Process() {
             </svg>
           </div>
           <p className="text-sm" style={{ color: "#3D5A50" }}>
-            <span className="font-semibold" style={{ color: "#14342B" }}>Bilgi notu:</span>{" "}
-            İlk danışmanlık görüşmesi ücretlidir. Görüşme sonrasında vekalet verip vermemek tamamen
-            müvekkile bırakılmakta olup herhangi bir yükümlülük doğurmaz.
+            <span className="font-semibold" style={{ color: "#14342B" }}>{t("process.noteLabel")}</span>{" "}
+            {t("process.noteText")}
           </p>
         </div>
       </div>

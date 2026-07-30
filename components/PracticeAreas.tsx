@@ -16,6 +16,8 @@ import {
   AgreementIcon,
   GlobeIcon,
 } from "./PracticeIcons";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { homepageBulletsEn } from "@/lib/i18n/practiceAreasEn";
 
 const areas = [
   {
@@ -156,7 +158,16 @@ const INITIAL_COUNT = 6;
 
 export default function PracticeAreas() {
   const [showAll, setShowAll] = useState(false);
-  const visibleAreas = showAll ? areas : areas.slice(0, INITIAL_COUNT);
+  const { lang, t } = useLanguage();
+  const localizedAreas =
+    lang === "en"
+      ? areas.map((area) => ({
+          ...area,
+          title: homepageBulletsEn[area.slug]?.title ?? area.title,
+          bullets: homepageBulletsEn[area.slug]?.bullets ?? area.bullets,
+        }))
+      : areas;
+  const visibleAreas = showAll ? localizedAreas : localizedAreas.slice(0, INITIAL_COUNT);
 
   return (
     <section
@@ -169,7 +180,7 @@ export default function PracticeAreas() {
         <div className="flex items-center gap-3 mb-3">
           <div className="h-px w-10" style={{ backgroundColor: "#C5A880" }} aria-hidden="true" />
           <span className="text-xs tracking-widest uppercase font-semibold" style={{ color: "#C5A880" }}>
-            Çalışma Alanları
+            {t("practiceAreas.label")}
           </span>
         </div>
 
@@ -181,10 +192,10 @@ export default function PracticeAreas() {
               fontFamily: "var(--font-playfair), Georgia, serif",
             }}
           >
-            Hukuki Destek Sunduğumuz Alanlar
+            {t("practiceAreas.heading")}
           </h2>
           <p className="mt-4 md:mt-0 text-sm max-w-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
-            Her hukuki süreç farklı bir yaklaşım gerektirir. Dosyanızın ihtiyacına göre destek sağlıyoruz.
+            {t("practiceAreas.subheading")}
           </p>
         </div>
 
@@ -192,7 +203,7 @@ export default function PracticeAreas() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {visibleAreas.map((area) => (
             <Link
-              key={area.title}
+              key={area.slug}
               href={`/calisma-alanlari/${area.slug}`}
               className="practice-card p-6 rounded-lg border flex flex-col group"
               style={{ backgroundColor: "#1B3A2F" }}
@@ -244,7 +255,7 @@ export default function PracticeAreas() {
                 className="mt-4 text-xs font-semibold flex items-center gap-1.5 transition-all duration-300 group-hover:gap-2.5"
                 style={{ color: "#C5A880" }}
               >
-                Detaylı Bilgi
+                {t("practiceAreas.readMore")}
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
@@ -262,7 +273,7 @@ export default function PracticeAreas() {
               className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 hover:bg-[#C5A880] hover:text-[#14342B]"
               style={{ color: "#C5A880", borderColor: "#C5A880" }}
             >
-              Tüm Çalışma Alanlarını Gör
+              {t("practiceAreas.showAll")}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M6 9l6 6 6-6" />
               </svg>
@@ -272,7 +283,7 @@ export default function PracticeAreas() {
 
         {/* Bottom note */}
         <p className="mt-10 text-sm text-center" style={{ color: "rgba(197,168,128,0.7)" }}>
-          Yukarıda yer almayan konularda da danışmanlık talep edebilirsiniz.
+          {t("practiceAreas.note")}
         </p>
       </div>
     </section>

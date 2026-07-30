@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -149,7 +150,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <LanguageProvider>{children}</LanguageProvider>
+      </body>
       <GoogleAnalytics gaId="G-4PDE3GQX22" />
     </html>
   );

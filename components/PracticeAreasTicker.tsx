@@ -1,8 +1,20 @@
+"use client";
+
 import Link from "next/link";
 import { practiceAreas } from "@/lib/practiceAreas";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { homepageBulletsEn } from "@/lib/i18n/practiceAreasEn";
 
 export default function PracticeAreasTicker() {
-  const items = [...practiceAreas, ...practiceAreas];
+  const { lang } = useLanguage();
+  const localized =
+    lang === "en"
+      ? practiceAreas.map((area) => ({
+          ...area,
+          title: homepageBulletsEn[area.slug]?.title ?? area.title,
+        }))
+      : practiceAreas;
+  const items = [...localized, ...localized];
 
   return (
     <div

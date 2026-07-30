@@ -3,19 +3,21 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import TrackedLink from "./TrackedLink";
-
-const navLinks = [
-  { href: "/#hakkimda", label: "Hakkımda" },
-  { href: "/#calisma-alanlari", label: "Çalışma Alanları" },
-  { href: "/#surec", label: "Süreç" },
-  { href: "/makaleler", label: "Makaleler" },
-  { href: "/araclar", label: "Araçlar" },
-  { href: "/#iletisim", label: "İletişim" },
-];
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { lang, setLang, t } = useLanguage();
+
+  const navLinks = [
+    { href: "/#hakkimda", label: t("nav.about") },
+    { href: "/#calisma-alanlari", label: t("nav.practiceAreas") },
+    { href: "/#surec", label: t("nav.process") },
+    { href: "/makaleler", label: t("nav.articles") },
+    { href: "/araclar", label: t("nav.tools") },
+    { href: "/#iletisim", label: t("nav.contact") },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -71,21 +73,18 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <span
-              className="ml-2 text-xs font-semibold tracking-widest px-2 py-1 rounded border"
-              style={{ color: "#C5A880", borderColor: "#C5A880", opacity: 0.7 }}
-            >
-              TR
-            </span>
+            <LangToggle lang={lang} setLang={setLang} className="ml-2" />
           </div>
 
-          {/* Mobile hamburger */}
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden flex flex-col gap-1.5 p-2"
-            aria-label={menuOpen ? "Menüyü kapat" : "Menüyü aç"}
-            aria-expanded={menuOpen}
-          >
+          {/* Mobile: lang toggle + hamburger */}
+          <div className="md:hidden flex items-center gap-1">
+            <LangToggle lang={lang} setLang={setLang} />
+            <button
+              onClick={() => setMenuOpen(!menuOpen)}
+              className="flex flex-col gap-1.5 p-2"
+              aria-label={menuOpen ? t("nav.menuClose") : t("nav.menuOpen")}
+              aria-expanded={menuOpen}
+            >
             <span
               className="block w-6 h-0.5 transition-all duration-300 origin-center"
               style={{
@@ -107,7 +106,8 @@ export default function Navbar() {
                 transform: menuOpen ? "translateY(-8px) rotate(-45deg)" : "none",
               }}
             />
-          </button>
+            </button>
+          </div>
         </div>
       </nav>
 
@@ -147,7 +147,7 @@ export default function Navbar() {
             style={{ backgroundColor: "#25D366", color: "#fff" }}
             onClick={() => setMenuOpen(false)}
           >
-            WhatsApp ile Yazın
+            {t("nav.whatsapp")}
           </TrackedLink>
           <TrackedLink
             channel="phone"
@@ -157,10 +157,45 @@ export default function Navbar() {
             style={{ color: "#C5A880", borderColor: "#C5A880" }}
             onClick={() => setMenuOpen(false)}
           >
-            Hemen Arayın
+            {t("nav.call")}
           </TrackedLink>
         </div>
       </div>
     </>
+  );
+}
+
+function LangToggle({
+  lang,
+  setLang,
+  className = "",
+}: {
+  lang: "tr" | "en";
+  setLang: (lang: "tr" | "en") => void;
+  className?: string;
+}) {
+  return (
+    <div
+      className={`flex items-center rounded border overflow-hidden ${className}`}
+      style={{ borderColor: "rgba(197,168,128,0.5)" }}
+      role="group"
+      aria-label="Dil / Language"
+    >
+      {(["tr", "en"] as const).map((code) => (
+        <button
+          key={code}
+          type="button"
+          onClick={() => setLang(code)}
+          className="text-xs font-semibold tracking-widest px-2 py-1 transition-colors duration-200"
+          style={{
+            color: lang === code ? "#14342B" : "#C5A880",
+            backgroundColor: lang === code ? "#C5A880" : "transparent",
+          }}
+          aria-pressed={lang === code}
+        >
+          {code.toUpperCase()}
+        </button>
+      ))}
+    </div>
   );
 }

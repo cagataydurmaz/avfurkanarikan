@@ -1,7 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import { tools } from "@/lib/calculators/tools";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function ToolsPreview() {
+  const { t } = useLanguage();
   return (
     <section className="py-20 md:py-28" style={{ backgroundColor: "#fff" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
@@ -9,7 +13,7 @@ export default function ToolsPreview() {
         <div className="flex items-center gap-3 mb-3">
           <div className="h-px w-10" style={{ backgroundColor: "#C5A880" }} aria-hidden="true" />
           <span className="text-xs tracking-widest uppercase font-semibold" style={{ color: "#C5A880" }}>
-            Ücretsiz Araçlar
+            {t("tools.label")}
           </span>
         </div>
 
@@ -21,7 +25,7 @@ export default function ToolsPreview() {
               fontFamily: "var(--font-playfair), Georgia, serif",
             }}
           >
-            Hukuki Hesaplama Araçları
+            {t("tools.heading")}
           </h2>
         </div>
 
@@ -59,7 +63,7 @@ export default function ToolsPreview() {
                 className="text-xs font-semibold flex items-center gap-1.5"
                 style={{ color: "#C5A880" }}
               >
-                Hemen Hesapla
+                {t("tools.calculate")}
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>
@@ -75,7 +79,7 @@ export default function ToolsPreview() {
             className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 hover:bg-[#14342B] hover:text-[#F4EDE4]"
             style={{ color: "#14342B", borderColor: "#14342B" }}
           >
-            Tüm Araçlar
+            {t("tools.viewAll")}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>

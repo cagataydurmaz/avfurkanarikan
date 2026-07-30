@@ -1,6 +1,10 @@
+"use client";
+
 import Image from "next/image";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function About() {
+  const { t } = useLanguage();
   return (
     <section id="hakkimda" className="py-20 md:py-28" style={{ backgroundColor: "#F4EDE4" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
@@ -8,7 +12,7 @@ export default function About() {
         <div className="flex items-center gap-3 mb-3">
           <div className="h-px w-10" style={{ backgroundColor: "#C5A880" }} aria-hidden="true" />
           <span className="text-xs tracking-widest uppercase font-semibold" style={{ color: "#C5A880" }}>
-            Hakkımda
+            {t("about.label")}
           </span>
         </div>
 
@@ -38,11 +42,11 @@ export default function About() {
                 Av. Furkan Arıkan
               </p>
               <p className="text-xs mt-1" style={{ color: "#3D5A50" }}>
-                İstanbul Barosu - Sicil No: 72621
+                {t("about.barValue")}
               </p>
               <div className="h-px my-2.5" style={{ backgroundColor: "#EBE0D4" }} />
               <p className="text-xs" style={{ color: "#3D5A50" }}>
-                MEF Üniversitesi Hukuk Fakültesi mezunu (2019)
+                {t("about.educationValue")}
               </p>
             </div>
           </div>
@@ -59,39 +63,26 @@ export default function About() {
               Furkan Arıkan
             </h2>
             <p className="text-sm font-medium mb-6" style={{ color: "#C5A880" }}>
-              Avukat - İstanbul Barosu
+              {t("about.role")}
             </p>
 
             <div className="space-y-4 text-base leading-relaxed" style={{ color: "#2D4A3E" }}>
-              <p>
-                2019 yılında MEF Üniversitesi Hukuk Fakültesi&apos;nden mezun olan Furkan Arıkan,
-                avukatlık mesleğine İstanbul&apos;da başlamış ve o tarihten bu yana aktif olarak
-                hukuki danışmanlık ile dava takibi hizmetleri sürdürmektedir.
-              </p>
-              <p>
-                Büro, ağırlıklı olarak ceza hukuku, iş hukuku ve gayrimenkul uyuşmazlıklarında
-                müvekkillere hukuki destek sağlamaktadır. Soruşturma ve kovuşturma süreçlerinde
-                müdafilik, işçi-işveren uyuşmazlıklarında temsil ve kira hukuku kapsamındaki
-                davalarda dava takibi bu hizmetlerin başlıcalarıdır.
-              </p>
-              <p>
-                Beşiktaş&apos;ta faaliyet gösteren büro, İstanbul&apos;un farklı ilçelerinden
-                müvekkillere hizmet sunmaktadır. Randevu bazlı çalışma prensibiyle, her dosyaya
-                birebir ilgi ve yeterli zaman ayrılmaktadır.
-              </p>
+              <p>{t("about.bio1")}</p>
+              <p>{t("about.bio2")}</p>
+              <p>{t("about.bio3")}</p>
             </div>
 
             {/* Education / Bar info */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <InfoCard
                 icon={<GradCapIcon />}
-                label="Eğitim"
-                value="MEF Üniversitesi Hukuk Fakültesi (2019)"
+                label={t("about.education")}
+                value={t("about.educationValue")}
               />
               <InfoCard
                 icon={<BarIcon />}
-                label="Baro"
-                value="İstanbul Barosu - Sicil No: 72621"
+                label={t("about.bar")}
+                value={t("about.barValue")}
               />
             </div>
           </div>

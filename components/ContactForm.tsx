@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 const konular = [
   "Ceza Hukuku",
@@ -14,6 +15,7 @@ const konular = [
 ];
 
 export default function ContactForm() {
+  const { t } = useLanguage();
   const [ad, setAd] = useState("");
   const [telefon, setTelefon] = useState("");
   const [konu, setKonu] = useState(konular[0]);
@@ -64,7 +66,7 @@ export default function ContactForm() {
           className="block text-xs font-semibold uppercase tracking-wide mb-1.5"
           style={{ color: "#C5A880" }}
         >
-          Ad Soyad
+          {t("form.name")}
         </label>
         <input
           id="cf-ad"
@@ -72,7 +74,7 @@ export default function ContactForm() {
           required
           value={ad}
           onChange={(e) => setAd(e.target.value)}
-          placeholder="Adınız Soyadınız"
+          placeholder={t("form.namePlaceholder")}
           className="contact-form-field"
         />
       </div>
@@ -83,7 +85,7 @@ export default function ContactForm() {
           className="block text-xs font-semibold uppercase tracking-wide mb-1.5"
           style={{ color: "#C5A880" }}
         >
-          Telefon
+          {t("form.phone")}
         </label>
         <input
           id="cf-telefon"
@@ -92,7 +94,7 @@ export default function ContactForm() {
           required
           value={telefon}
           onChange={(e) => setTelefon(e.target.value.replace(/[^0-9]/g, ""))}
-          placeholder="05XX XXX XX XX"
+          placeholder={t("form.phonePlaceholder")}
           className="contact-form-field"
         />
       </div>
@@ -103,7 +105,7 @@ export default function ContactForm() {
           className="block text-xs font-semibold uppercase tracking-wide mb-1.5"
           style={{ color: "#C5A880" }}
         >
-          Konu
+          {t("form.topic")}
         </label>
         <select
           id="cf-konu"
@@ -125,14 +127,14 @@ export default function ContactForm() {
           className="block text-xs font-semibold uppercase tracking-wide mb-1.5"
           style={{ color: "#C5A880" }}
         >
-          Mesajınız
+          {t("form.message")}
         </label>
         <textarea
           id="cf-mesaj"
           rows={4}
           value={mesaj}
           onChange={(e) => setMesaj(e.target.value)}
-          placeholder="Durumunuzu kısaca özetleyin"
+          placeholder={t("form.messagePlaceholder")}
           className="contact-form-field resize-none"
         />
       </div>
@@ -144,7 +146,7 @@ export default function ContactForm() {
           style={{ backgroundColor: "#25D366", color: "#fff" }}
         >
           <WhatsAppIcon />
-          WhatsApp ile Gönder
+          {t("form.sendWhatsapp")}
         </button>
         <a
           href={mailtoHref()}
@@ -153,12 +155,12 @@ export default function ContactForm() {
           style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.4)" }}
         >
           <EmailIcon />
-          E-posta ile Gönder
+          {t("form.sendEmail")}
         </a>
       </div>
 
       <p className="text-xs pt-1" style={{ color: "rgba(244,237,228,0.4)" }}>
-        Gönder&apos;e bastığınızda WhatsApp veya e-posta uygulamanız, mesajınız hazır halde açılır.
+        {t("form.note")}
       </p>
     </form>
   );

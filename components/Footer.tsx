@@ -1,17 +1,21 @@
+"use client";
+
 import Link from "next/link";
 import TrackedLink from "./TrackedLink";
-
-const navLinks = [
-  { href: "/#hakkimda", label: "Hakkımda" },
-  { href: "/#calisma-alanlari", label: "Çalışma Alanları" },
-  { href: "/#surec", label: "Süreç" },
-  { href: "/makaleler", label: "Makaleler" },
-  { href: "/araclar", label: "Araçlar" },
-  { href: "/#iletisim", label: "İletişim" },
-];
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Footer() {
   const year = new Date().getFullYear();
+  const { t } = useLanguage();
+
+  const navLinks = [
+    { href: "/#hakkimda", label: t("nav.about") },
+    { href: "/#calisma-alanlari", label: t("nav.practiceAreas") },
+    { href: "/#surec", label: t("nav.process") },
+    { href: "/makaleler", label: t("nav.articles") },
+    { href: "/araclar", label: t("nav.tools") },
+    { href: "/#iletisim", label: t("nav.contact") },
+  ];
 
   return (
     <footer style={{ backgroundColor: "#0d2420" }}>
@@ -36,10 +40,10 @@ export default function Footer() {
               </p>
             </Link>
             <p className="text-sm leading-relaxed mt-3" style={{ color: "rgba(244,237,228,0.55)" }}>
-              Ceza, iş ve gayrimenkul hukukunda İstanbul&apos;da dava takibi ve hukuki danışmanlık.
+              {t("footer.tagline")}
             </p>
             <p className="text-xs mt-3" style={{ color: "rgba(197,168,128,0.6)" }}>
-              İstanbul Barosu - Sicil No: 72621
+              {t("footer.bar")}
             </p>
           </div>
 
@@ -49,7 +53,7 @@ export default function Footer() {
               className="text-xs font-semibold tracking-widest uppercase mb-5"
               style={{ color: "#C5A880" }}
             >
-              Bağlantılar
+              {t("footer.links")}
             </p>
             <nav className="flex flex-col gap-2.5">
               {navLinks.map((link) => (
@@ -66,7 +70,7 @@ export default function Footer() {
               className="text-xs font-semibold tracking-widest uppercase mb-5"
               style={{ color: "#C5A880" }}
             >
-              İletişim
+              {t("footer.contact")}
             </p>
             <address className="not-italic space-y-2" style={{ color: "rgba(244,237,228,0.65)" }}>
               <p className="text-sm">Sinanpaşa Mh. Şht. Asım Cd. No:37/12</p>
@@ -89,18 +93,18 @@ export default function Footer() {
         >
           <div className="flex flex-col md:flex-row md:items-center gap-1.5 md:gap-4">
             <p className="text-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
-              &copy; {year} Av. Furkan Arıkan Hukuk Bürosu. Tüm hakları saklıdır.
+              &copy; {year} Av. Furkan Arıkan Hukuk Bürosu. {t("footer.rights")}
             </p>
             <Link
               href="/gizlilik-politikasi"
               className="text-xs underline transition-colors"
               style={{ color: "rgba(244,237,228,0.6)" }}
             >
-              Gizlilik Politikası ve KVKK Aydınlatma Metni
+              {t("footer.privacy")}
             </Link>
           </div>
           <p className="text-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
-            Bu sitedeki bilgiler hukuki danışmanlık niteliği taşımaz.
+            {t("footer.disclaimer")}
           </p>
         </div>
 

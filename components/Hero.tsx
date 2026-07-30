@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import TrackedLink from "./TrackedLink";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Hero() {
+  const { t } = useLanguage();
   return (
     <section
       id="hero"
@@ -103,7 +107,7 @@ export default function Hero() {
           className="text-xs md:text-sm tracking-[0.3em] uppercase mb-8 font-medium"
           style={{ color: "#C5A880" }}
         >
-          İstanbul Barosu - Sicil No: 72621
+          {t("hero.eyebrow")}
         </p>
 
         {/* Decorative line above name */}
@@ -132,7 +136,7 @@ export default function Hero() {
           className="mt-6 text-base md:text-lg leading-relaxed max-w-2xl mx-auto"
           style={{ color: "rgba(244,237,228,0.75)" }}
         >
-          Ceza, iş ve gayrimenkul hukukunda İstanbul&apos;da dava takibi ve hukuki danışmanlık.
+          {t("hero.tagline")}
         </p>
 
         {/* CTA Buttons */}
@@ -148,7 +152,7 @@ export default function Hero() {
             aria-label="WhatsApp ile iletişime geçin"
           >
             <WhatsAppIcon />
-            WhatsApp ile Yazın
+            {t("hero.whatsapp")}
           </TrackedLink>
           <TrackedLink
             channel="phone"
@@ -159,14 +163,14 @@ export default function Hero() {
             aria-label="Telefon ile iletişime geçin"
           >
             <PhoneIcon />
-            Hemen Arayın
+            {t("hero.call")}
           </TrackedLink>
         </div>
 
         {/* Scroll indicator */}
         <div className="mt-20 flex flex-col items-center gap-2 opacity-50">
           <span className="text-xs tracking-widest uppercase" style={{ color: "#C5A880" }}>
-            Aşağı kaydır
+            {t("hero.scroll")}
           </span>
           <div
             className="w-px h-12 animate-pulse"

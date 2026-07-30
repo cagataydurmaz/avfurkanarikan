@@ -1,8 +1,12 @@
+"use client";
+
 import ContactForm from "./ContactForm";
 import MapEmbed from "./MapEmbed";
 import TrackedLink from "./TrackedLink";
+import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function Contact() {
+  const { t } = useLanguage();
   return (
     <section id="iletisim" className="py-20 md:py-28" style={{ backgroundColor: "#14342B" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
@@ -13,7 +17,7 @@ export default function Contact() {
               className="inline-block text-xs tracking-widest uppercase font-semibold px-3 py-1 rounded-full mb-4"
               style={{ color: "#14342B", backgroundColor: "#C5A880" }}
             >
-              İletişim
+              {t("contact.label")}
             </span>
             <h2
               className="text-3xl md:text-4xl font-bold max-w-sm"
@@ -22,11 +26,11 @@ export default function Contact() {
                 fontFamily: "var(--font-playfair), Georgia, serif",
               }}
             >
-              Bize Ulaşın
+              {t("contact.heading")}
             </h2>
           </div>
           <p className="mt-4 md:mt-0 text-sm max-w-xs" style={{ color: "rgba(244,237,228,0.65)" }}>
-            Randevu için arayabilir veya WhatsApp üzerinden yazabilirsiniz.
+            {t("contact.subheading")}
           </p>
         </div>
 
@@ -40,7 +44,7 @@ export default function Contact() {
               className="text-base font-semibold mb-5"
               style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
-              Bir Mesaj Bırakın
+              {t("contact.formTitle")}
             </p>
             <ContactForm />
           </div>
@@ -57,7 +61,7 @@ export default function Contact() {
             {/* Address */}
             <StaticCard
               icon={<LocationIcon />}
-              title="Adres"
+              title={t("contact.address")}
               lines={[
                 "Sinanpaşa Mh. Şht. Asım Cd. No:37/12",
                 "Beşiktaş/İstanbul",
@@ -67,11 +71,8 @@ export default function Contact() {
             {/* Working hours */}
             <StaticCard
               icon={<ClockIcon />}
-              title="Çalışma Saatleri"
-              lines={[
-                "Pazartesi - Cuma: 09:00 - 18:00",
-                "Cumartesi - Pazar: Kapalı",
-              ]}
+              title={t("contact.hours")}
+              lines={[t("contact.hoursLine1"), t("contact.hoursLine2")]}
             />
 
             {/* Phone */}
@@ -84,7 +85,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "#C5A880" }}>
-                  Telefon
+                  {t("contact.phone")}
                 </p>
                 <p className="text-base font-medium" style={{ color: "#F4EDE4" }}>
                   +90 535 487 40 99
@@ -102,7 +103,7 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "#C5A880" }}>
-                  E-posta
+                  {t("contact.email")}
                 </p>
                 <p className="text-base font-medium" style={{ color: "#F4EDE4" }}>
                   av.furkanarikan1@gmail.com
