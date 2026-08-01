@@ -420,7 +420,7 @@ body {
   display: flex;
   width: max-content;
   gap: 1.25rem;
-  animation: reviews-ticker-scroll 70s linear infinite;
+  animation: reviews-ticker-scroll 32s linear infinite;
 }
 .reviews-ticker-wrap:hover .reviews-ticker-track {
   animation-play-state: paused;
