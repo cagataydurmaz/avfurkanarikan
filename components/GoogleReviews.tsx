@@ -40,23 +40,33 @@ export default function GoogleReviews() {
           </div>
         </div>
 
-        {/* Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {googleReviews.map((review) => (
-            <div
-              key={review.name}
-              className="flex flex-col rounded-xl p-6 border"
-              style={{ borderColor: "#EBE0D4", backgroundColor: "#F4EDE4" }}
-            >
-              <GoogleIcon />
-              <p className="mt-4 text-sm leading-relaxed flex-1" style={{ color: "#2D4A3E" }}>
-                &ldquo;{lang === "en" ? review.en : review.tr}&rdquo;
-              </p>
-              <p className="mt-4 text-xs font-semibold" style={{ color: "#14342B" }}>
-                — {review.name}
-              </p>
-            </div>
-          ))}
+        {/* Cards - single-row auto-scrolling ticker */}
+        <div
+          className="reviews-ticker-wrap"
+          style={{
+            marginInline: "calc(50% - 50vw)",
+            maskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+            WebkitMaskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+          }}
+        >
+          <div className="reviews-ticker-track">
+            {[...googleReviews, ...googleReviews].map((review, i) => (
+              <div
+                key={`${review.name}-${i}`}
+                className="flex flex-col rounded-xl p-6 border flex-shrink-0"
+                style={{ borderColor: "#EBE0D4", backgroundColor: "#F4EDE4", width: "320px" }}
+                aria-hidden={i >= googleReviews.length ? true : undefined}
+              >
+                <GoogleIcon />
+                <p className="mt-4 text-sm leading-relaxed" style={{ color: "#2D4A3E" }}>
+                  &ldquo;{lang === "en" ? review.en : review.tr}&rdquo;
+                </p>
+                <p className="mt-4 text-xs font-semibold" style={{ color: "#14342B" }}>
+                  — {review.name}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* CTA */}

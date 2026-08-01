@@ -410,3 +410,31 @@ body {
     animation: none;
   }
 }
+
+/* Google reviews ticker */
+.reviews-ticker-wrap {
+  overflow: hidden;
+  padding: 0.5rem 0;
+}
+.reviews-ticker-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  animation: reviews-ticker-scroll 70s linear infinite;
+}
+.reviews-ticker-wrap:hover .reviews-ticker-track {
+  animation-play-state: paused;
+}
+@keyframes reviews-ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 0.625rem));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reviews-ticker-track {
+    animation: none;
+  }
+}
