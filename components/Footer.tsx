@@ -112,16 +112,16 @@ export default function Footer() {
         <div className="absolute bottom-6 inset-x-0 text-center">
           <p className="text-[11px] tracking-wide" style={{ color: "rgba(197,168,128,0.5)" }}>
             <span className="hidden min-[375px]:inline">
-              Web Tasarım <span aria-hidden="true">◆</span>{" "}
+              Site tasarımı ve geliştirmesi:{" "}
             </span>
             <a
               href="https://ramsesdigital.com/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow sponsored"
               className="underline transition-opacity hover:opacity-70"
               style={{ color: "rgba(197,168,128,0.65)" }}
             >
-              Ramses Digital
+              Ramses Dijital
             </a>
           </p>
         </div>

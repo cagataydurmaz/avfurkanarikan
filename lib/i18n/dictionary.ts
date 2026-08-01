@@ -70,6 +70,12 @@ export const dictionary = {
     "blog.readMore": "Devamını Oku",
     "blog.viewAll": "Tüm Makaleler",
 
+    // Google reviews
+    "reviews.label": "Google Yorumları",
+    "reviews.heading": "Müvekkillerimiz Ne Diyor?",
+    "reviews.count": "30 Google yorumu",
+    "reviews.cta": "Google'da Tüm Yorumları Gör",
+
     // Contact
     "contact.label": "İletişim",
     "contact.heading": "Bize Ulaşın",
@@ -187,6 +193,12 @@ export const dictionary = {
     "blog.heading": "Legal Articles",
     "blog.readMore": "Read More",
     "blog.viewAll": "All Articles",
+
+    // Google reviews
+    "reviews.label": "Google Reviews",
+    "reviews.heading": "What Our Clients Say",
+    "reviews.count": "30 Google reviews",
+    "reviews.cta": "See All Reviews on Google",
 
     // Contact
     "contact.label": "Contact",

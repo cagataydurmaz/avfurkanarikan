@@ -6,6 +6,7 @@ import PracticeAreas from "@/components/PracticeAreas";
 import Process from "@/components/Process";
 import ToolsPreview from "@/components/ToolsPreview";
 import BlogPreview from "@/components/BlogPreview";
+import GoogleReviews from "@/components/GoogleReviews";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -25,6 +26,7 @@ export default function Home() {
         <Process />
         <ToolsPreview />
         <BlogPreview posts={recentPosts} />
+        <GoogleReviews />
         <Contact />
       </main>
       <Footer />
