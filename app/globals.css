@@ -393,6 +393,7 @@ body {
   width: max-content;
   white-space: nowrap;
   animation: ticker-scroll 45s linear infinite;
+  will-change: transform;
 }
 .ticker-wrap:hover .ticker-track {
   animation-play-state: paused;
@@ -407,7 +408,7 @@ body {
 }
 @media (prefers-reduced-motion: reduce) {
   .ticker-track {
-    animation: none;
+    animation-duration: 90s;
   }
 }
 
@@ -421,6 +422,7 @@ body {
   width: max-content;
   gap: 1.25rem;
   animation: reviews-ticker-scroll 32s linear infinite;
+  will-change: transform;
 }
 .reviews-ticker-wrap:hover .reviews-ticker-track {
   animation-play-state: paused;
@@ -435,6 +437,6 @@ body {
 }
 @media (prefers-reduced-motion: reduce) {
   .reviews-ticker-track {
-    animation: none;
+    animation-duration: 70s;
   }
 }

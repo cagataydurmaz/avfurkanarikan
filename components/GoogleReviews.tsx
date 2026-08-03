@@ -45,8 +45,8 @@ export default function GoogleReviews() {
           className="reviews-ticker-wrap"
           style={{
             marginInline: "calc(50% - 50vw)",
-            maskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
-            WebkitMaskImage: "linear-gradient(to right, transparent, black 5%, black 95%, transparent)",
+            maskImage: "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)",
           }}
         >
           <div className="reviews-ticker-track">
