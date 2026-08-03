@@ -52,9 +52,9 @@ export default function PracticeAreaContent({
         <div className="relative max-w-6xl mx-auto px-5 md:px-8">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-xs mb-6" style={{ color: "rgba(197,168,128,0.7)" }} aria-label="Breadcrumb">
-            <Link href="/" style={{ color: "rgba(197,168,128,0.7)" }} className="hover:text-[#C5A880] transition-colors">{t("praDetail.breadcrumbHome")}</Link>
+            <Link href="/" className="text-[rgba(197,168,128,0.7)] hover:text-[#C5A880] transition-colors">{t("praDetail.breadcrumbHome")}</Link>
             <span>/</span>
-            <Link href="/#calisma-alanlari" style={{ color: "rgba(197,168,128,0.7)" }} className="hover:text-[#C5A880] transition-colors">{t("nav.practiceAreas")}</Link>
+            <Link href="/#calisma-alanlari" className="text-[rgba(197,168,128,0.7)] hover:text-[#C5A880] transition-colors">{t("nav.practiceAreas")}</Link>
             <span>/</span>
             <span style={{ color: "#C5A880" }}>{view.title}</span>
           </nav>

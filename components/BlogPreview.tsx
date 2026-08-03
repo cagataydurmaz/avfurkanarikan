@@ -81,8 +81,7 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
         <div className="mt-10 flex justify-center">
           <Link
             href="/makaleler"
-            className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 hover:bg-[#14342B] hover:text-[#F4EDE4]"
-            style={{ color: "#14342B", borderColor: "#14342B" }}
+            className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 text-[#14342B] border-[#14342B] hover:bg-[#14342B] hover:text-[#F4EDE4]"
           >
             {t("blog.viewAll")}
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

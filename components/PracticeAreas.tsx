@@ -270,8 +270,7 @@ export default function PracticeAreas() {
             <button
               type="button"
               onClick={() => setShowAll(true)}
-              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 hover:bg-[#C5A880] hover:text-[#14342B]"
-              style={{ color: "#C5A880", borderColor: "#C5A880" }}
+              className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 text-[#C5A880] border-[#C5A880] hover:bg-[#C5A880] hover:text-[#14342B]"
             >
               {t("practiceAreas.showAll")}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
