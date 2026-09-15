@@ -421,7 +421,7 @@ body {
   display: flex;
   width: max-content;
   gap: 1.25rem;
-  animation: reviews-ticker-scroll 32s linear infinite;
+  animation: reviews-ticker-scroll 55s linear infinite;
   will-change: transform;
 }
 .reviews-ticker-wrap:hover .reviews-ticker-track {
@@ -437,6 +437,6 @@ body {
 }
 @media (prefers-reduced-motion: reduce) {
   .reviews-ticker-track {
-    animation-duration: 70s;
+    animation-duration: 110s;
   }
 }
