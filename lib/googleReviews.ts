@@ -52,4 +52,54 @@ export const googleReviews: GoogleReview[] = [
     tr: "Furkan Bey'den danışmanlık hizmeti aldım, tüm sorularımı giderdi ve her konuda yardımcı oldu; yetkin bir avukat.",
     en: "I received consulting services from Mr. Furkan; he cleared up all my questions and helped me in every way. He is a skilled lawyer.",
   },
+  {
+    name: "Mehmet Dursun",
+    tr: "Furkan Bey hukuki süreçlere hakim, hukuki bilgisi ile olumlu sonuçlar alınması konusunda çok iyi yardımcı olan bir avukat. Tavsiye ederim.",
+    en: "Mr. Furkan has a firm command of legal processes and, with his legal knowledge, is very helpful in achieving positive outcomes. I recommend him.",
+  },
+  {
+    name: "Damla Bitmez",
+    tr: "Süreç boyunca her aşamada profesyonel, ilgili ve güven veren bir yaklaşım sergilendi. Tüm sorularıma sabırla cevap verdiler ve süreci şeffaf bir şekilde yönettikleri için kendimi güvende hissettim.",
+    en: "A professional, attentive, and reassuring approach was shown at every stage of the process. They patiently answered all my questions and managed the process transparently, which made me feel secure.",
+  },
+  {
+    name: "Ayşegül Avcı",
+    tr: "İlgisi, bilgisi ve profesyonelliğiyle gerçekten çok memnun kaldığımız bir avukat. Süreç boyunca her konuda detaylı bilgilendirme yaptı, ulaşılabilir ve çözüm odaklıydı.",
+    en: "A lawyer whose attentiveness, knowledge, and professionalism truly left us very satisfied. He kept us thoroughly informed at every stage, was reachable, and solution-oriented.",
+  },
+  {
+    name: "Gülşen Kandemir",
+    tr: "Dava süresince göstermiş olduğunuz ilgi, titizlik ve profesyonel yaklaşımınız için çok teşekkür ederim.",
+    en: "Thank you very much for the attentiveness, meticulousness, and professional approach you showed throughout the case.",
+  },
+  {
+    name: "Bahar Sadi",
+    tr: "Furkan Bey ailemizin bütün davalarını titizlikle ve sonuç odaklı bir şekilde sonuçlandırdı. Ailemiz adına kendisine teşekkür ederim.",
+    en: "Mr. Furkan concluded all of our family's cases meticulously and with a results-oriented approach. On behalf of our family, I thank him.",
+  },
+  {
+    name: "Sabahat Daşkaya",
+    tr: "Kendisinden gayrimenkul hukuku ve miras davamızla ilgili danışmanlık aldık; alanında uzman bir avukat, aklımızdaki tüm soruların cevabını sabırla ve açık, anlaşılır şekilde yanıtladı.",
+    en: "We received consulting from him on our real estate and inheritance case; he is an expert in his field and patiently answered all our questions clearly and understandably.",
+  },
+  {
+    name: "gala",
+    tr: "Furkan Bey ile kira ve iş hukuku davalarımız için çalışma fırsatımız oldu. Hukuki aşamalar ile ilgili çok iyi bilgilendirildik ve davalarımız başarı ile sonuçlandı.",
+    en: "We had the opportunity to work with Mr. Furkan on our tenancy and labour law cases. We were kept well informed at every legal stage, and our cases concluded successfully.",
+  },
+  {
+    name: "FMY",
+    tr: "Furkan Bey işine hakim, gerçekten tecrübeli bir avukat. Sürecin ilk anından itibaren hissettiriyor. Kendinizi güvenle ona emanet edebilirsiniz.",
+    en: "Mr. Furkan is in full command of his work — a genuinely experienced lawyer. You can feel that from the very first moment of the process. You can confidently entrust yourself to him.",
+  },
+  {
+    name: "Volkan Aydoğan",
+    tr: "Kira ve tahliye davalarında işinde çok başarılı; çok kısa sürede davamızı kazandı.",
+    en: "Very successful in tenancy and eviction cases; he won our case in a very short time.",
+  },
+  {
+    name: "Güllü Şahin",
+    tr: "Zor bir süreçte hem hukuki bilgisi hem de yaklaşımıyla bana büyük destek oldu. Şeffaf iletişimi, disiplinli çalışması ve özverisi için teşekkür ederim.",
+    en: "During a difficult process, he provided me with great support through both his legal knowledge and his approach. Thank you for his transparent communication, disciplined work, and dedication.",
+  },
 ];
