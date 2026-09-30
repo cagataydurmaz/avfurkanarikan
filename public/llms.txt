@@ -2,7 +2,9 @@
 
 > Avukat Furkan Arıkan, İstanbul Barosu'na kayıtlı (Sicil No: 72621) bir avukattır. 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Ofis Beşiktaş/Sinanpaşa'da bulunmaktadır. Ceza, aile, gayrimenkul, iş, icra-iflas, idare, vergi, borçlar, tazminat, tahkim-arabuluculuk ve yabancılar hukuku alanlarında hukuki danışmanlık ve dava takibi hizmeti sunulmaktadır.
 
-Bu site, Avukatlık Kanunu ve Türkiye Barolar Birliği reklam yasağı kurallarına uygun şekilde nötr, bilgilendirici dil kullanır. Sitede yıldız/puan gösterimi veya reklam niteliğinde ifade bulunmaz.
+Bu site, Avukatlık Kanunu ve Türkiye Barolar Birliği reklam yasağı kurallarına uygun, nötr ve bilgilendirici bir dil kullanmayı hedefler. Anasayfadaki "Google Yorumları" bölümü, büronun Google işletme profilindeki müvekkil yorumlarından alıntılar içerir; bunlar üçüncü kişilerin kendi ifadeleridir.
+
+Site Türkçe yayınlanır; anasayfa ve çalışma alanı sayfalarında tarayıcı içi TR/EN dil geçişi bulunur (İngilizce içerik ayrı bir URL'de yayınlanmaz).
 
 ## Temel Bilgiler
 
@@ -27,7 +29,7 @@ Bu site, Avukatlık Kanunu ve Türkiye Barolar Birliği reklam yasağı kurallar
 
 ## İlçe Bazlı Hukuki Danışmanlık (pSEO)
 
-31 İstanbul ilçesinde ceza, aile (boşanma), gayrimenkul, iş, icra, idare, vergi, borçlar ve kira-tahliye hukuku alanlarında ilçeye özel danışmanlık sayfaları bulunmaktadır. Aşağıdaki her ilçe linki genel/hub sayfasıdır; her ilçenin ayrıca 9 alt hizmet sayfası vardır (ör. `/{ilçe}-ceza-avukati`, `/{ilçe}-bosanma-avukati`, `/{ilçe}-icra-avukati` vb.).
+34 İstanbul ilçesinde ceza, aile (boşanma), gayrimenkul, iş, icra, idare, vergi, borçlar ve kira-tahliye hukuku alanlarında ilçeye özel danışmanlık sayfaları bulunmaktadır. Aşağıdaki her ilçe linki genel/hub sayfasıdır; her ilçenin ayrıca 9 alt hizmet sayfası vardır (ör. `/{ilçe}-ceza-avukati`, `/{ilçe}-bosanma-avukati`, `/{ilçe}-icra-avukati` vb.).
 
 - [Arnavutköy Avukat](https://furkanarikan.av.tr/arnavutkoy-avukat)
 - [Ataşehir Avukat](https://furkanarikan.av.tr/atasehir-avukat)
@@ -50,8 +52,11 @@ Bu site, Avukatlık Kanunu ve Türkiye Barolar Birliği reklam yasağı kurallar
 - [Güngören Avukat](https://furkanarikan.av.tr/gungoren-avukat)
 - [Kadıköy Avukat](https://furkanarikan.av.tr/kadikoy-avukat)
 - [Kağıthane Avukat](https://furkanarikan.av.tr/kagithane-avukat)
+- [Kartal Avukat](https://furkanarikan.av.tr/kartal-avukat)
 - [Küçükçekmece Avukat](https://furkanarikan.av.tr/kucukcekmece-avukat)
 - [Maltepe Avukat](https://furkanarikan.av.tr/maltepe-avukat)
+- [Pendik Avukat](https://furkanarikan.av.tr/pendik-avukat)
+- [Sancaktepe Avukat](https://furkanarikan.av.tr/sancaktepe-avukat)
 - [Sarıyer Avukat](https://furkanarikan.av.tr/sariyer-avukat)
 - [Silivri Avukat](https://furkanarikan.av.tr/silivri-avukat)
 - [Sultangazi Avukat](https://furkanarikan.av.tr/sultangazi-avukat)

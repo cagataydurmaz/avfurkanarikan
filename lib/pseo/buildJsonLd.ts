@@ -1,13 +1,8 @@
 import type { PseoDistrict, PseoService } from "./types";
 
 const BASE_URL = "https://furkanarikan.av.tr";
-const OFFICE_ADDRESS = {
-  streetAddress: "Sinanpaşa Mh. Şht. Asım Cd. No:37/12",
-  addressLocality: "Beşiktaş",
-  addressRegion: "İstanbul",
-  postalCode: "34330",
-  addressCountry: "TR",
-};
+const LEGAL_SERVICE_ID = `${BASE_URL}/#legalservice`;
+const PERSON_ID = `${BASE_URL}/#person`;
 
 export function buildPseoJsonLd(district: PseoDistrict, service: PseoService) {
   const pageUrl = `${BASE_URL}/${service.urlSlug}`;
@@ -15,40 +10,17 @@ export function buildPseoJsonLd(district: PseoDistrict, service: PseoService) {
   return [
     {
       "@context": "https://schema.org",
-      "@type": ["LegalService", "LocalBusiness"],
-      "@id": `${pageUrl}#business`,
-      name: "Av. Furkan Arıkan Hukuk Bürosu",
+      "@type": "Service",
+      "@id": `${pageUrl}#service`,
+      name: service.name,
       url: pageUrl,
       description: service.metaDescription,
-      telephone: "+905354874099",
-      email: "av.furkanarikan1@gmail.com",
-      address: {
-        "@type": "PostalAddress",
-        ...OFFICE_ADDRESS,
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: 41.0428,
-        longitude: 29.0044,
-      },
-      areaServed: {
-        "@type": "City",
-        name: district.name,
-      },
       serviceType: service.name,
-      priceRange: "$$",
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "09:00",
-          closes: "18:00",
-        },
-      ],
-      sameAs: [
-        "https://furkanarikan.av.tr",
-        "https://www.linkedin.com/in/avfurkanar%C4%B1kan/",
-      ],
+      provider: { "@id": LEGAL_SERVICE_ID },
+      areaServed: {
+        "@type": "AdministrativeArea",
+        name: `${district.name}, İstanbul`,
+      },
     },
     {
       "@context": "https://schema.org",
@@ -72,28 +44,6 @@ export function buildPseoJsonLd(district: PseoDistrict, service: PseoService) {
     },
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "@id": `${BASE_URL}/#person`,
-      name: "Furkan Arıkan",
-      jobTitle: "Avukat",
-      worksFor: { "@id": `${pageUrl}#business` },
-      sameAs: [
-        "https://www.linkedin.com/in/avfurkanar%C4%B1kan/",
-      ],
-      alumniOf: [
-        {
-          "@type": "CollegeOrUniversity",
-          name: "MEF Üniversitesi",
-          department: "Hukuk Fakültesi",
-        },
-      ],
-      memberOf: {
-        "@type": "Organization",
-        name: "İstanbul Barosu",
-      },
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "HowTo",
       "@id": `${pageUrl}#howto`,
       name: service.howToTitle,
@@ -110,7 +60,9 @@ export function buildPseoJsonLd(district: PseoDistrict, service: PseoService) {
       "@id": pageUrl,
       url: pageUrl,
       name: service.metaTitle,
-      author: { "@id": `${BASE_URL}/#person` },
+      author: { "@id": PERSON_ID },
+      about: { "@id": `${pageUrl}#service` },
+      publisher: { "@id": LEGAL_SERVICE_ID },
       datePublished: district.publishedDate,
       dateModified: district.publishedDate,
     },

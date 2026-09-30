@@ -28,6 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: "tr_TR",
       siteName: "Av. Furkan Arıkan Hukuk Bürosu",
       url: `/calisma-alanlari/${area.slug}`,
+      images: ["/opengraph-image"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: area.metaTitle,
+      description: area.metaDescription,
+      images: ["/opengraph-image"],
     },
   };
 }
@@ -62,16 +69,13 @@ export default async function PracticeAreaPage({ params }: Props) {
     },
     {
       "@context": "https://schema.org",
-      "@type": "LegalService",
-      name: `Av. Furkan Arıkan - ${area.title}`,
+      "@type": "Service",
+      "@id": `https://furkanarikan.av.tr/calisma-alanlari/${area.slug}#service`,
+      name: area.title,
       url: `https://furkanarikan.av.tr/calisma-alanlari/${area.slug}`,
-      provider: {
-        "@type": "Person",
-        name: "Furkan Arıkan",
-        jobTitle: "Avukat",
-      },
-      areaServed: { "@type": "City", name: "İstanbul" },
       serviceType: area.title,
+      provider: { "@id": "https://furkanarikan.av.tr/#legalservice" },
+      areaServed: { "@type": "City", name: "İstanbul" },
     },
   ];
 

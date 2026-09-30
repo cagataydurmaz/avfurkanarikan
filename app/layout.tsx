@@ -22,11 +22,11 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://furkanarikan.av.tr"),
   title: {
-    default: "Av. Furkan Arıkan | Hukuk Bürosu - İstanbul",
+    default: "Av. Furkan Arıkan | Beşiktaş İstanbul Avukat - Hukuk Bürosu",
     template: "%s | Av. Furkan Arıkan",
   },
   description:
-    "Ceza, iş ve gayrimenkul hukukunda İstanbul'da dava takibi ve hukuki danışmanlık hizmeti.",
+    "Beşiktaş'ta İstanbul Barosu'na kayıtlı avukat Furkan Arıkan; ceza, iş, gayrimenkul, aile ve icra hukukunda İstanbul genelinde dava takibi ve hukuki danışmanlık.",
   keywords: [
     "avukat",
     "İstanbul avukat",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Av. Furkan Arıkan | Hukuk Bürosu",
+    title: "Av. Furkan Arıkan | Beşiktaş İstanbul Avukat",
     description:
       "Ceza, iş ve gayrimenkul hukukunda dava takibi ve hukuki danışmanlık.",
     type: "website",
@@ -80,6 +80,13 @@ const jsonLd = {
         postalCode: "34330",
         addressCountry: "TR",
       },
+      image: "https://furkanarikan.av.tr/furkan-arikan.jpg",
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: 41.0444231,
+        longitude: 29.0044619,
+      },
+      hasMap: "https://maps.app.goo.gl/WZaamb3xkA74MTkW6",
       areaServed: {
         "@type": "City",
         name: "İstanbul",
@@ -99,7 +106,10 @@ const jsonLd = {
         },
       ],
       knowsLanguage: ["tr", "en"],
-      sameAs: ["https://www.linkedin.com/in/avfurkanar%C4%B1kan/"],
+      sameAs: [
+        "https://www.linkedin.com/in/avfurkanar%C4%B1kan/",
+        "https://maps.app.goo.gl/WZaamb3xkA74MTkW6",
+      ],
     },
     {
       "@type": "Person",
@@ -121,18 +131,6 @@ const jsonLd = {
         "@type": "Organization",
         name: "İstanbul Barosu",
       },
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://furkanarikan.av.tr/#breadcrumb",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Ana Sayfa",
-          item: "https://furkanarikan.av.tr",
-        },
-      ],
     },
   ],
 };

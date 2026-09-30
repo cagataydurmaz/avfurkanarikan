@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import { posts, getPostBySlug } from "@/lib/posts";
 import { practiceAreas } from "@/lib/practiceAreas";
+import { postMetaTitles } from "@/lib/postMetaTitles";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -20,8 +21,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getPostBySlug(slug);
   if (!post) return {};
 
+  const metaTitle = postMetaTitles[post.slug];
+
   return {
-    title: post.title,
+    title: metaTitle ? { absolute: metaTitle } : post.title,
     description: post.excerpt,
     authors: [{ name: "Av. Furkan Arıkan" }],
     alternates: {
