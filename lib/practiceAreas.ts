@@ -830,7 +830,7 @@ export const practiceAreas: PracticeArea[] = [
         heading: "Yatırım Yoluyla Türk Vatandaşlığı",
         paragraphs: [
           "Türk Vatandaşlığı Kanunu Uygulama Yönetmeliği m.20 kapsamında, belirli tutarların üzerinde yatırım yapan yabancılar istisnai olarak Türk vatandaşlığı kazanabilir. Yatırımcının eşi ve 18 yaşından küçük çocukları da bu haktan yararlanabilir.",
-          "2026 itibarıyla geçerli eşik tutarlar: en az 400.000 ABD doları değerinde gayrimenkul edinip tapuya 3 yıl süreyle satılmayacağına dair şerh koydurmak; veya en az 500.000 ABD doları tutarında sabit sermaye yatırımı, banka mevduatı, devlet borçlanma aracı ya da gayrimenkul/girişim sermayesi yatırım fonu payı edinip bunu 3 yıl süreyle elde tutmak; ya da en az 50 kişilik istihdam yaratmak. Bu tutarlar 6 Ocak 2022 tarihli Cumhurbaşkanı Kararı ile belirlenmiştir ve zaman içinde değişebileceğinden başvuru öncesinde güncel tutarın büromuzla teyit edilmesi önerilir.",
+          "2026 itibarıyla geçerli eşik tutarlar: en az 400.000 ABD doları değerinde gayrimenkul edinip tapuya 3 yıl süreyle satılmayacağına dair şerh koydurmak; veya en az 500.000 ABD doları tutarında sabit sermaye yatırımı, banka mevduatı, devlet borçlanma aracı ya da gayrimenkul/girişim sermayesi yatırım fonu payı edinip bunu 3 yıl süreyle elde tutmak; ya da en az 50 kişilik istihdam yaratmak. Gayrimenkul eşiği, 13 Mayıs 2022 tarihli ve 5554 sayılı Cumhurbaşkanı Kararı'yla (Resmî Gazete: 31834) 250.000 ABD dolarından 400.000 ABD dolarına yükseltilmiştir; bu tutarlar Yönetmelik m.20'de düzenlendiğinden ve zaman içinde değişebileceğinden başvuru öncesinde güncel tutarın büromuzla teyit edilmesi önerilir.",
         ],
       },
       {

@@ -29,7 +29,7 @@ Site Türkçe yayınlanır; anasayfa ve çalışma alanı sayfalarında tarayıc
 
 ## İlçe Bazlı Hukuki Danışmanlık (pSEO)
 
-34 İstanbul ilçesinde ceza, aile (boşanma), gayrimenkul, iş, icra, idare, vergi, borçlar ve kira-tahliye hukuku alanlarında ilçeye özel danışmanlık sayfaları bulunmaktadır. Aşağıdaki her ilçe linki genel/hub sayfasıdır; her ilçenin ayrıca 9 alt hizmet sayfası vardır (ör. `/{ilçe}-ceza-avukati`, `/{ilçe}-bosanma-avukati`, `/{ilçe}-icra-avukati` vb.).
+34 İstanbul ilçesinde ceza, aile (boşanma), gayrimenkul, iş, icra, idare, vergi, borçlar ve kira-tahliye hukuku alanlarında ilçeye özel danışmanlık sayfaları bulunmaktadır. Tüm ilçelerin listesi: https://furkanarikan.av.tr/ilceler — aşağıdaki her ilçe linki genel/hub sayfasıdır; her ilçenin ayrıca 9 alt hizmet sayfası vardır (ör. `/{ilçe}-ceza-avukati`, `/{ilçe}-bosanma-avukati`, `/{ilçe}-icra-avukati` vb.).
 
 - [Arnavutköy Avukat](https://furkanarikan.av.tr/arnavutkoy-avukat)
 - [Ataşehir Avukat](https://furkanarikan.av.tr/atasehir-avukat)

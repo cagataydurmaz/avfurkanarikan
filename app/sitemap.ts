@@ -151,6 +151,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${BASE_URL}/ilceler`,
+      lastModified: HOME_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/gizlilik-politikasi`,
       lastModified: PRIVACY_UPDATED,
       changeFrequency: "yearly",

@@ -325,14 +325,14 @@ export const posts: Post[] = [
 <h2>2026 Kıdem Tazminatı Tavanı</h2>
 <p>
   Kıdem tazminatı tavanı 6 ayda bir (Ocak ve Temmuz aylarında) güncellenmektedir.
-  2026 yılı için geçerli güncel tavan tutarı Çalışma ve Sosyal Güvenlik Bakanlığı'nın
-  resmi kanallarından teyit edilmelidir. Her tam yıl için ödenecek tutar bu tavanı geçemez.
+  2026 yılı için geçerli güncel tavan tutarı Hazine ve Maliye Bakanlığı'nın
+  yayımladığı genelgeden teyit edilmelidir. Her tam yıl için ödenecek tutar bu tavanı geçemez.
 </p>
 
 <div class="note-box">
   <strong>Hatırlatma:</strong> Tavan tutarları periyodik olarak değiştiğinden,
-  hesaplama yaparken güncel tutarı Çalışma ve Sosyal Güvenlik Bakanlığı'nın
-  resmi sitesinden teyit edin.
+  hesaplama yaparken güncel tutarı Hazine ve Maliye Bakanlığı'nın
+  yayımladığı genelgeden teyit edin.
 </div>
 
 <h2>Kıdem Tazminatında Zamanaşımı</h2>

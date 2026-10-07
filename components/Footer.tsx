@@ -14,6 +14,7 @@ export default function Footer() {
     { href: "/#surec", label: t("nav.process") },
     { href: "/makaleler", label: t("nav.articles") },
     { href: "/araclar", label: t("nav.tools") },
+    { href: "/ilceler", label: t("nav.districts") },
     { href: "/#iletisim", label: t("nav.contact") },
   ];
 
