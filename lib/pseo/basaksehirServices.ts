@@ -72,7 +72,7 @@ export const basaksehirServices: PseoService[] = [
     heroTitle: "Başakşehir Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Küçükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Başakşehir Boşanma Avukatı",
+    metaTitle: "Başakşehir Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Başakşehir'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:

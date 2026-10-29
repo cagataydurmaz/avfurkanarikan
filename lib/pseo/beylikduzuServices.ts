@@ -123,7 +123,7 @@ export const beylikduzuServices: PseoService[] = [
     heroTitle: "Beylikdüzü Ceza Avukatı",
     heroSubtitle:
       "Beylikdüzü'nde yürütülen ceza dosyalarında ifade alma, gözaltı ve kovuşturmanın her aşamasında müdafi olarak destek verilir; davalara bakan adliye İstanbul Büyükçekmece Adliyesi'dir.",
-    metaTitle: "Beylikdüzü Ceza Avukatı",
+    metaTitle: "Beylikdüzü Ceza Avukatı | Müdafilik",
     metaDescription:
       "Beylikdüzü'nde soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:

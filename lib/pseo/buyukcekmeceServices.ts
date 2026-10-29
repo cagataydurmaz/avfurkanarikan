@@ -122,7 +122,7 @@ export const buyukcekmeceServices: PseoService[] = [
     heroTitle: "Büyükçekmece Ceza Avukatı",
     heroSubtitle:
       "Büyükçekmece'nin kendi sınırları içinde yer alan İstanbul Büyükçekmece Adliyesi'nde yürütülen kovuşturma sürecine ek olarak, gözaltı ve ifade alma aşamalarının her birinde de müdafilik desteği sağlanmaktadır.",
-    metaTitle: "Büyükçekmece Ceza Avukatı",
+    metaTitle: "Büyükçekmece Ceza Avukatı | Müdafilik",
     metaDescription:
       "Büyükçekmece'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:

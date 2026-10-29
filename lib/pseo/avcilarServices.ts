@@ -72,7 +72,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar Boşanma Avukatı",
     heroSubtitle:
       "Aile mahkemeleri İstanbul Küçükçekmece Adliyesi bünyesinde yer alan Avcılar'da, anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımına ilişkin taleplerde temsil sağlanır.",
-    metaTitle: "Avcılar Boşanma Avukatı",
+    metaTitle: "Avcılar Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Avcılar'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:

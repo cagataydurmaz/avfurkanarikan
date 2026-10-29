@@ -122,7 +122,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; ilçenin kendi adliyesi 2013'te kapatıldığından ceza davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Pendik Ceza Avukatı",
+    metaTitle: "Pendik Ceza Avukatı | Müdafilik",
     metaDescription:
       "Pendik'te soruşturma, kovuşturma, tutukluluğa itiraz ve ceza yargılamasının tüm aşamalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +172,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik Gayrimenkul Avukatı",
     heroSubtitle:
       "Sahil şeridindeki site projeleri, Kurtköy çevresindeki yeni konut ve sanayi sitesi taşınmazlarına ilişkin kat mülkiyeti, tapu ve kira uyuşmazlıklarında hukuki destek sağlanır; davalar Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Pendik Gayrimenkul Avukatı",
+    metaTitle: "Pendik Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Pendik'te kat mülkiyeti, tapu iptali, kira uyuşmazlıkları ve sanayi sitesi taşınmazlarına ilişkin gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +222,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri, ilçenin kendi adliyesi 2013'te kapatıldığından Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Pendik İcra Avukatı",
+    metaTitle: "Pendik İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Pendik'te icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:

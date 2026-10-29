@@ -72,7 +72,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemesi davaları, Kartal'ın kendi sınırları içindeki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Kartal Boşanma Avukatı",
+    metaTitle: "Kartal Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Kartal'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +122,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; ceza davaları Kartal'ın kendi sınırları içindeki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Kartal Ceza Avukatı",
+    metaTitle: "Kartal Ceza Avukatı | Müdafilik",
     metaDescription:
       "Kartal'da soruşturma, kovuşturma, tutukluluğa itiraz ve ceza yargılamasının tüm aşamalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -272,7 +272,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri, Kartal'ın kendi sınırları içindeki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Kartal İcra Avukatı",
+    metaTitle: "Kartal İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Kartal'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
