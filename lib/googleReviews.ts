@@ -102,4 +102,39 @@ export const googleReviews: GoogleReview[] = [
     tr: "Zor bir süreçte hem hukuki bilgisi hem de yaklaşımıyla bana büyük destek oldu. Şeffaf iletişimi, disiplinli çalışması ve özverisi için teşekkür ederim.",
     en: "During a difficult process, he provided me with great support through both his legal knowledge and his approach. Thank you for his transparent communication, disciplined work, and dedication.",
   },
+  {
+    name: "Furkan Ak",
+    tr: "Furkan Bey alanında bilgili, genç ve dinamik bir avukattır. Sürekli iletişim halinde kalıp bilgilendirme yaparak süreci anlık aktarıyor.",
+    en: "Mr. Furkan is a knowledgeable, young and dynamic lawyer. He stays in constant contact and keeps you informed about the process in real time.",
+  },
+  {
+    name: "Mahmut",
+    tr: "Sonuna kadar dürüst, bilgili ve son derece profesyonel bir avukat. Hukuki süreçte her adımda yanımda olduğunu hissettirdi, kendisine çok teşekkür ederim.",
+    en: "An honest, knowledgeable and highly professional lawyer. He made me feel his support at every step of the legal process; I thank him very much.",
+  },
+  {
+    name: "Suat Dus",
+    tr: "Adaletin savaşçısı Furkan Arıkan birçok davamızda bize yardımcı oldu, bizim için resmen adalet terazisi oldu.",
+    en: "Furkan Arıkan, a fighter for justice, helped us in many of our cases and truly acted as a scale of justice for us.",
+  },
+  {
+    name: "yunusemre özdemir",
+    tr: "Çok deneyimli, inandığı her şeyi sonuna kadar savunan, işinin son derece ehli.",
+    en: "Highly experienced, committed to defending everything he believes in to the very end, and extremely competent in his work.",
+  },
+  {
+    name: "Seray Arıkan",
+    tr: "Ekibin çalışma disiplinini çok beğendim. Başarılarınız daim olsun.",
+    en: "I really liked the team's work discipline. May your successes continue.",
+  },
+  {
+    name: "Sümeyye Koç",
+    tr: "Alanında başarılı ve güvenilir. Her şey için teşekkürler.",
+    en: "Successful and reliable in his field. Thank you for everything.",
+  },
+  {
+    name: "Liderman Saldivar",
+    tr: "Son derece profesyonel, bilgili ve İngilizceyi akıcı konuşan çok iyi bir avukat. Kendisiyle çalışmak her zaman çok iyi bir deneyim.",
+    en: "An excellent lawyer who is highly professional, knowledgeable, and communicates fluently in English. Working with him is always a great experience.",
+  },
 ];

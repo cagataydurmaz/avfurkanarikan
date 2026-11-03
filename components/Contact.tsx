@@ -68,6 +68,19 @@ export default function Contact() {
               ]}
             />
 
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=41.0444231,29.0044619"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 text-sm font-medium px-5 py-2.5 rounded-lg border transition-colors duration-300 hover:bg-[#C5A880] hover:text-[#14342B]"
+              style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.5)" }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <polygon points="3 11 22 2 13 21 11 13 3 11" />
+              </svg>
+              {t("contact.directions")}
+            </a>
+
             {/* Working hours */}
             <StaticCard
               icon={<ClockIcon />}
