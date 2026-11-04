@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { beyogluMiras } from "./miras/beyogluMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const beyogluServices: PseoService[] = [
+const beyogluBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu Avukat",
     heroSubtitle:
       "Beyoğlu ve çevresinde ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında dava takibi ve hukuki danışmanlık sağlanır. İlçe, İstanbul (Çağlayan) Adliyesi'nin yargı çevresinde yer alır.",
-    metaTitle: "Beyoğlu Avukat",
+    metaTitle: "Beyoğlu Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında Beyoğlu'nda hukuki danışmanlık ve dava takibi hizmeti verilir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu Boşanma Avukatı",
     heroSubtitle:
       "Boşanma sürecinde velayet, nafaka ve mal rejimi tasfiyesi dahil olmak üzere anlaşmalı ve çekişmeli davalarda hukuki temsil sağlanır. Yargı çevresi İstanbul (Çağlayan) Adliyesi'dir.",
-    metaTitle: "Beyoğlu Boşanma Avukatı",
+    metaTitle: "Beyoğlu Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Anlaşmalı veya çekişmeli boşanma, velayet, nafaka ve mal paylaşımı süreçlerinde Beyoğlu'nda hukuki temsil ve danışmanlık sağlanır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade, tutukluluk ve kovuşturma aşamalarının tamamında müdafilik hizmeti sunulur. Kovuşturma İstanbul (Çağlayan) Adliyesi'nde yürütülür.",
-    metaTitle: "Beyoğlu Ceza Avukatı",
+    metaTitle: "Beyoğlu Ceza Avukatı | Müdafilik",
     metaDescription:
       "Gözaltı, soruşturma ve kovuşturma aşamalarında Beyoğlu'nda müdafilik ile tutukluluğa itiraz ve kanun yolu süreçlerinde destek sağlanır.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu Gayrimenkul Avukatı",
     heroSubtitle:
       "Tapu uyuşmazlıkları, kat mülkiyeti sorunları ve kentsel dönüşüm süreçlerinde hukuki destek sunulur. Dava mercii İstanbul (Çağlayan) Adliyesi'dir.",
-    metaTitle: "Beyoğlu Gayrimenkul Avukatı",
+    metaTitle: "Beyoğlu Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Tapu iptali, kat mülkiyeti uyuşmazlıkları ve kentsel dönüşüm süreçlerinde Beyoğlu'nda hukuki danışmanlık ve dava takibi sağlanır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu İcra Avukatı",
     heroSubtitle:
       "Alacağın tahsiline yönelik icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır. İcra mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Beyoğlu İcra Avukatı",
+    metaTitle: "Beyoğlu İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "İcra takibi, ödeme emrine itiraz, haciz ve alacak tahsili konularında Beyoğlu'nda hukuki danışmanlık ve temsil sağlanır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu İdare Avukatı",
     heroSubtitle:
       "Belediye ve diğer kamu kurumu işlemlerinin iptali ile tam yargı davalarında temsil sağlanır. Yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Beyoğlu İdare Avukatı",
+    metaTitle: "Beyoğlu İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "İdari işlemlerin iptali, tazminat talepli tam yargı davaları ve idareye itiraz başvurularında Beyoğlu'nda hukuki destek sunulur.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu İş Hukuku Avukatı",
     heroSubtitle:
       "İşe iade, kıdem-ihbar tazminatı ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır. İş mahkemeleri İstanbul (Çağlayan) Adliyesi'nde faaliyet gösterir.",
-    metaTitle: "Beyoğlu İş Hukuku Avukatı",
+    metaTitle: "Beyoğlu İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "İşe iade davası, kıdem-ihbar tazminatı ve işçilik alacaklarına ilişkin uyuşmazlıklarda Beyoğlu'nda hukuki danışmanlık verilir.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Konut ve işyeri kiralarında tahliye, rayiç bedel tespiti ve sözleşme uyuşmazlıklarında destek sunulur. Sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Beyoğlu Kira ve Tahliye Avukatı",
+    metaTitle: "Beyoğlu Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Konut ve işyeri kiralarında tahliye, rayiç bedel tespiti ve sözleşme uyuşmazlıklarında Beyoğlu'nda hukuki danışmanlık sunulur.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır. Vergi mahkemeleri İstanbul vergi yargısı bünyesindedir.",
-    metaTitle: "Beyoğlu Vergi Avukatı",
+    metaTitle: "Beyoğlu Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Vergi tarhiyatına itiraz, ceza kesme işlemleri ve uzlaşma süreçlerinde Beyoğlu'nda hukuki danışmanlık ve dava takibi sağlanır.",
     aboutParagraph:
@@ -474,7 +475,7 @@ export const beyogluServices: PseoService[] = [
     heroTitle: "Beyoğlu Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Sözleşme ihlalleri, alacak talepleri ve tazminat davalarında temsil sağlanır. Ticaret ve asliye hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Beyoğlu Borçlar Hukuku Avukatı",
+    metaTitle: "Beyoğlu Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında Beyoğlu'nda hukuki danışmanlık ve dava takibi sunulur.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const beyogluServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const beyogluServices: PseoService[] = [...beyogluBaseServices, beyogluMiras];

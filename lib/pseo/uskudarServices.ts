@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { uskudarMiras } from "./miras/uskudarMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const uskudarServices: PseoService[] = [
+const uskudarBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar Avukat",
     heroSubtitle:
       "Boğaziçi'nin Anadolu yakasında, Mimar Sinan imzalı tarihi camileri, Kız Kulesi ve sahil hattındaki yalılarıyla tanınan Üsküdar'da avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti vermektedir; ilçedeki dava ve icra dosyaları İstanbul Anadolu Adliyesi bünyesinde yürütülmektedir.",
-    metaTitle: "Üsküdar Avukat",
+    metaTitle: "Üsküdar Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Üsküdar'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar Boşanma Avukatı",
     heroSubtitle:
       "Aile hukuku alanındaki danışmanlık ve dava süreçleri, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olan avukat Furkan Arıkan tarafından yürütülmektedir; anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı taleplerine ilişkin davalara İstanbul Anadolu Adliyesi'ndeki aile mahkemelerinde bakılmaktadır.",
-    metaTitle: "Üsküdar Boşanma Avukatı",
+    metaTitle: "Üsküdar Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Üsküdar'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar Ceza Avukatı",
     heroSubtitle:
       "MEF Üniversitesi Hukuk Fakültesi 2019 mezunu ve İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında Üsküdar'daki şüpheli ve sanıklara müdafilik hizmeti sunar; dosyalar İstanbul Anadolu Adliyesi'nde görülmektedir.",
-    metaTitle: "Üsküdar Ceza Avukatı",
+    metaTitle: "Üsküdar Ceza Avukatı | Müdafilik",
     metaDescription:
       "Üsküdar'da soruşturma, kovuşturma, tutukluluğa itiraz ve ceza yargılamasının her aşamasında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar Gayrimenkul Avukatı",
     heroSubtitle:
       "Gayrimenkul hukuku alanında Üsküdar'daki müvekkillerine danışmanlık veren Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır ve MEF Üniversitesi Hukuk Fakültesi'nin 2019 mezunudur; sahil semtlerindeki tarihi yapı, tapu ve imar uyuşmazlıklarında dava süreci İstanbul Anadolu Adliyesi bünyesinde yürütülür.",
-    metaTitle: "Üsküdar Gayrimenkul Avukatı",
+    metaTitle: "Üsküdar Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Üsküdar'da tarihi yalı ve konutlara ilişkin tapu, imar ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar İcra Avukatı",
     heroSubtitle:
       "İstanbul Barosu sicil no 72621 ile kayıtlı avukat Furkan Arıkan (MEF Üniversitesi Hukuk Fakültesi, 2019), icra ve iflas hukuku kapsamında Üsküdar'daki alacaklı ve borçlu taraflara temsil sağlamaktadır; icra takipleri İstanbul Anadolu Adliyesi'ndeki icra daireleri üzerinden yürütülür.",
-    metaTitle: "Üsküdar İcra Avukatı",
+    metaTitle: "Üsküdar İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Üsküdar'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar İdare Avukatı",
     heroSubtitle:
       "2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olan Furkan Arıkan, İstanbul Barosu'nun 72621 sicil numaralı avukatı olarak idari işlemlerin iptali ve tam yargı davalarında Üsküdar'daki müvekkillerine danışmanlık vermektedir; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Üsküdar İdare Avukatı",
+    metaTitle: "Üsküdar İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Üsküdar'da idari işlemlerin iptali, koruma kurulu kararlarına itiraz ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar İş Hukuku Avukatı",
     heroSubtitle:
       "Üsküdar'daki işçi ve işverenlere iş hukuku kapsamında danışmanlık veren avukat Furkan Arıkan'ın İstanbul Barosu sicil numarası 72621'dir; hukuk eğitimini 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nde tamamlamıştır. Arabuluculukta anlaşma sağlanamayan uyuşmazlıklarda dava süreci İstanbul Anadolu Adliyesi'ndeki iş mahkemesinde yürütülür.",
-    metaTitle: "Üsküdar İş Hukuku Avukatı",
+    metaTitle: "Üsküdar İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Üsküdar'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Kira hukuku uyuşmazlıklarında Üsküdar'daki kiracı ve kiraya verenlere destek olan Furkan Arıkan, 2019 MEF Üniversitesi Hukuk Fakültesi mezunu olup İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır; tahliye ve bedel tespiti davaları İstanbul Anadolu Adliyesi'ndeki sulh hukuk mahkemesinde görülür.",
-    metaTitle: "Üsküdar Kira ve Tahliye Avukatı",
+    metaTitle: "Üsküdar Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Üsküdar'da kiracı tahliyesi, kira sözleşmesi uyuşmazlıkları ve kira bedeli tespitinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar Vergi Avukatı",
     heroSubtitle:
       "İstanbul Barosu'na kayıtlı (sicil no: 72621) ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olan Furkan Arıkan, vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Üsküdar'daki müvekkillerine danışmanlık sağlamaktadır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Üsküdar Vergi Avukatı",
+    metaTitle: "Üsküdar Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Üsküdar'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -472,7 +473,7 @@ export const uskudarServices: PseoService[] = [
     heroTitle: "Üsküdar Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Borçlar hukuku kapsamındaki sözleşme ve alacak uyuşmazlıklarında Üsküdar'daki müvekkillerini temsil eden Furkan Arıkan, 72621 sicil numarasıyla İstanbul Barosu'na kayıtlıdır ve MEF Üniversitesi Hukuk Fakültesi'nin 2019 mezunudur; davalar İstanbul Anadolu Adliyesi bünyesinde görülmektedir.",
-    metaTitle: "Üsküdar Borçlar Hukuku Avukatı",
+    metaTitle: "Üsküdar Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Üsküdar'da sözleşme, restorasyon ve alacak uyuşmazlıkları ile tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const uskudarServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const uskudarServices: PseoService[] = [...uskudarBaseServices, uskudarMiras];

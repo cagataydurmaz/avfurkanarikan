@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -95,6 +96,8 @@ export default function VekaletUcretiHesaplamaPage() {
             Bu araç bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz. Tarife her yıl
             yeniden yayımlanır; güncel oranları teyit ediniz.
           </p>
+
+          <ToolRelated links={[{ href: "/dava-harci-hesaplama", label: "Dava Harcı Hesaplama" }, { href: "/icra-masrafi-hesaplama", label: "İcra Masrafı Hesaplama" }]} />
         </div>
       </main>
 

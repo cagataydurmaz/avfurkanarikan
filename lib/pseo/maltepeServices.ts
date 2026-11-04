@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { maltepeMiras } from "./miras/maltepeMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const maltepeServices: PseoService[] = [
+const maltepeBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe Avukat",
     heroSubtitle:
       "1992'de Kartal'dan ayrılarak müstakil ilçe haline gelen ve Marmara Denizi'ne yaklaşık 7 kilometre kıyısı bulunan Maltepe'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında avukat Furkan Arıkan danışmanlık ve dava takibi hizmeti sunmaktadır; İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan Arıkan'ın dosyaları, ilçenin kendi adliyesi bulunmadığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Maltepe Avukat",
+    metaTitle: "Maltepe Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Maltepe'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe Boşanma Avukatı",
     heroSubtitle:
       "Maltepe'de anlaşmalı veya çekişmeli olarak açılan boşanma davalarında velayet, nafaka ve mal rejimi tasfiyesi taleplerine ilişkin temsil sağlanır; sahil şeridindeki site ve rezidans nitelikli konutların da dahil olduğu mal paylaşımı süreçlerinde aile mahkemesi davaları, ilçenin kendi adliyesi bulunmadığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Maltepe Boşanma Avukatı",
+    metaTitle: "Maltepe Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Maltepe'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe Ceza Avukatı",
     heroSubtitle:
       "Soruşturma aşamasındaki gözaltı ve ifade süreçlerinden kovuşturma aşamasındaki duruşmalara kadar müdafilik hizmeti sunulur; Maltepe'nin kendi adliyesi bulunmadığından ceza davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Maltepe Ceza Avukatı",
+    metaTitle: "Maltepe Ceza Avukatı | Müdafilik",
     metaDescription:
       "Maltepe'de soruşturma, kovuşturma, tutukluluğa itiraz ve ceza yargılamasının tüm aşamalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe Gayrimenkul Avukatı",
     heroSubtitle:
       "Gülsuyu-Gülensu ve Başıbüyük'teki kentsel dönüşüm sürecine ilişkin kat karşılığı inşaat sözleşmeleri ve hak sahipliği uyuşmazlıkları ile sahil şeridindeki taşınmaz alım-satım işlemlerinde hukuki destek sağlanır; davalar Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Maltepe Gayrimenkul Avukatı",
+    metaTitle: "Maltepe Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Maltepe'de Gülsuyu-Gülensu kentsel dönüşümü, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe İcra Avukatı",
     heroSubtitle:
       "Bağdat Caddesi'nin Küçükyalı'da sona eren bölümündeki işletmeler ile bireysel alacaklılara yönelik icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; Maltepe'nin kendi adliyesi bulunmadığından icra daireleri Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Maltepe İcra Avukatı",
+    metaTitle: "Maltepe İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Maltepe'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe İdare Avukatı",
     heroSubtitle:
       "Gülsuyu-Gülensu ve Başıbüyük'teki kentsel dönüşüm sürecindeki riskli alan/yapı tespiti ve uygulama işlemleri ile belediye imar kararlarına karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Maltepe İdare Avukatı",
+    metaTitle: "Maltepe İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Maltepe'de idari işlemlerin iptali, kentsel dönüşüm sürecine ilişkin idari uyuşmazlıklar ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe İş Hukuku Avukatı",
     heroSubtitle:
       "1997'de kurulan Maltepe Üniversitesi'nin personeli ile Bağdat Caddesi üzerindeki işletmelerde çalışanlar dahil olmak üzere kıdem-ihbar tazminatı, işe iade ve işçilik alacağı taleplerinde temsil sağlanır; ilçenin kendi adliyesi bulunmadığından iş mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Maltepe İş Hukuku Avukatı",
+    metaTitle: "Maltepe İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Maltepe'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Bağdat Caddesi'nin Küçükyalı'daki işyeri kiralamaları, sahil şeridindeki konut kiraları ve tahliye uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Maltepe Kira ve Tahliye Avukatı",
+    metaTitle: "Maltepe Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Maltepe'de kiracı tahliyesi, konut ve işyeri kira sözleşmesi uyuşmazlıkları ve kira bedeli tespitinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe Vergi Avukatı",
     heroSubtitle:
       "Küçükyalı Vergi Dairesi Müdürlüğü'ne bağlı Maltepe mükelleflerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Maltepe Vergi Avukatı",
+    metaTitle: "Maltepe Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Maltepe'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -472,7 +473,7 @@ export const maltepeServices: PseoService[] = [
     heroTitle: "Maltepe Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Kentsel dönüşüm sürecindeki kat karşılığı inşaat sözleşmesi uyuşmazlıkları, ticari alacak talepleri ve tazminat davalarında temsil sağlanır; asliye hukuk mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Maltepe Borçlar Hukuku Avukatı",
+    metaTitle: "Maltepe Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Maltepe'de kat karşılığı inşaat sözleşmeleri, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const maltepeServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const maltepeServices: PseoService[] = [...maltepeBaseServices, maltepeMiras];

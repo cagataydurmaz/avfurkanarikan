@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { kucukcekmeceMiras } from "./miras/kucukcekmeceMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const kucukcekmeceServices: PseoService[] = [
+const kucukcekmeceBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const kucukcekmeceServices: PseoService[] = [
     heroTitle: "Küçükçekmece Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, dünyada nadir bulunan tipik lagün göllerinden birine ve 200'ü aşkın büyük fabrikaya ev sahipliği yapan Küçükçekmece'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Küçükçekmece Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Küçükçekmece Avukat",
+    metaTitle: "Küçükçekmece Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Küçükçekmece'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const kucukcekmeceServices: PseoService[] = [
     heroTitle: "Küçükçekmece Boşanma Avukatı",
     heroSubtitle:
       "İstanbul Küçükçekmece Adliyesi bünyesindeki aile mahkemelerinde görülen anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır.",
-    metaTitle: "Küçükçekmece Boşanma Avukatı",
+    metaTitle: "Küçükçekmece Boşanma Avukatı | Velayet",
     metaDescription:
       "Küçükçekmece'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const kucukcekmeceServices: PseoService[] = [
     heroTitle: "Küçükçekmece Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Küçükçekmece Adliyesi'nde yürütülür.",
-    metaTitle: "Küçükçekmece Ceza Avukatı",
+    metaTitle: "Küçükçekmece Ceza Avukatı | Müdafilik",
     metaDescription:
       "Küçükçekmece'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const kucukcekmeceServices: PseoService[] = [
     heroTitle: "Küçükçekmece Gayrimenkul Avukatı",
     heroSubtitle:
       "Fabrika ve sanayi tesisi taşınmazları, tapu uyuşmazlıkları ve konut ilişkilerinde hukuki destek sağlanır; davalar İstanbul Küçükçekmece Adliyesi'nde görülür.",
-    metaTitle: "Küçükçekmece Gayrimenkul Avukatı",
+    metaTitle: "Küçükçekmece Gayrimenkul Avukatı | Tapu",
     metaDescription:
       "Küçükçekmece'de fabrika/sanayi tesisi kiraları, tapu iptali ve konut uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const kucukcekmeceServices: PseoService[] = [
     heroTitle: "Küçükçekmece İcra Avukatı",
     heroSubtitle:
       "İcra daireleri İstanbul Küçükçekmece Adliyesi bünyesinde yer alır; sanayi ve ticari alacakların tahsiline yönelik icra takibi, itiraz ve haciz süreçlerinde temsil verilir.",
-    metaTitle: "Küçükçekmece İcra Avukatı",
+    metaTitle: "Küçükçekmece İcra Avukatı | Takip ve Haciz",
     metaDescription:
       "Küçükçekmece'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const kucukcekmeceServices: PseoService[] = [
     heroTitle: "Küçükçekmece İdare Avukatı",
     heroSubtitle:
       "Sanayi tesisi ruhsatları, çevre izinleri ve belediye işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Küçükçekmece İdare Avukatı",
+    metaTitle: "Küçükçekmece İdare Avukatı | İptal Davası",
     metaDescription:
       "Küçükçekmece'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const kucukcekmeceServices: PseoService[] = [
     heroTitle: "Küçükçekmece İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Küçükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Küçükçekmece İş Hukuku Avukatı",
+    metaTitle: "Küçükçekmece İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Küçükçekmece'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const kucukcekmeceServices: PseoService[] = [
     heroTitle: "Küçükçekmece Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Konut ve fabrika/imalathane tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Küçükçekmece Adliyesi'ndedir.",
-    metaTitle: "Küçükçekmece Kira ve Tahliye Avukatı",
+    metaTitle: "Küçükçekmece Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Küçükçekmece'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const kucukcekmeceServices: PseoService[] = [
     heroTitle: "Küçükçekmece Vergi Avukatı",
     heroSubtitle:
       "Yetkili mahkeme İstanbul vergi mahkemeleri olmak üzere; sanayi işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil hizmeti sunulur.",
-    metaTitle: "Küçükçekmece Vergi Avukatı",
+    metaTitle: "Küçükçekmece Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Küçükçekmece'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const kucukcekmeceServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const kucukcekmeceServices: PseoService[] = [...kucukcekmeceBaseServices, kucukcekmeceMiras];

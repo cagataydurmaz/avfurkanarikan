@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import ContactForm from "./ContactForm";
 import MapEmbed from "./MapEmbed";
 import TrackedLink from "./TrackedLink";
@@ -68,6 +69,9 @@ export default function Contact() {
               ]}
             />
 
+            <Link href="/besiktas-avukat" className="text-xs underline" style={{ color: "rgba(244,237,228,0.6)" }}>
+              {t("contact.besiktasPage")}
+            </Link>
             <a
               href="https://www.google.com/maps/dir/?api=1&destination=41.0444231,29.0044619"
               target="_blank"

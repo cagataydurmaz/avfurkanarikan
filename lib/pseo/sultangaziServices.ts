@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { sultangaziMiras } from "./miras/sultangaziMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const sultangaziServices: PseoService[] = [
+const sultangaziBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const sultangaziServices: PseoService[] = [
     heroTitle: "Sultangazi Avukat",
     heroSubtitle:
       "2008 yılında Gaziosmanpaşa'dan ayrılarak kurulan, 37 kilometrekarelik alanında 530 bini aşkın nüfusuyla İstanbul'un en yoğun yerleşim ilçelerinden biri olan Sultangazi'de İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan; ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçedeki dava ve işlemlere Gaziosmanpaşa Adliyesi bakmaktadır.",
-    metaTitle: "Sultangazi Avukat",
+    metaTitle: "Sultangazi Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Sultangazi'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const sultangaziServices: PseoService[] = [
     heroTitle: "Sultangazi Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemesi, Sultangazi'nin de yargı çevresinde bulunduğu Gaziosmanpaşa Adliyesi bünyesindedir.",
-    metaTitle: "Sultangazi Boşanma Avukatı",
+    metaTitle: "Sultangazi Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Sultangazi'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const sultangaziServices: PseoService[] = [
     heroTitle: "Sultangazi Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; 2024 yılında kurulan Gaziosmanpaşa Ağır Ceza Mahkemesi sayesinde Sultangazi'deki genel ve ağır ceza davalarının tamamı aynı adliyede görülmektedir.",
-    metaTitle: "Sultangazi Ceza Avukatı",
+    metaTitle: "Sultangazi Ceza Avukatı | Müdafilik",
     metaDescription:
       "Sultangazi'de soruşturma, kovuşturma, tutukluluğa itiraz ve ağır ceza davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const sultangaziServices: PseoService[] = [
     heroTitle: "Sultangazi Gayrimenkul Avukatı",
     heroSubtitle:
       "6306 sayılı Kanun kapsamındaki riskli yapı tespitleri, kat karşılığı inşaat sözleşmeleri ve tapu uyuşmazlıklarında hukuki destek sağlanır; davalar Gaziosmanpaşa Adliyesi'nde görülür.",
-    metaTitle: "Sultangazi Gayrimenkul Avukatı",
+    metaTitle: "Sultangazi Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Sultangazi'de kentsel dönüşüm, riskli yapı tespiti, kat karşılığı inşaat ve tapu iptali uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const sultangaziServices: PseoService[] = [
     heroTitle: "Sultangazi İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri, ilçenin yargı çevresinde bulunduğu Gaziosmanpaşa Adliyesi bünyesindedir.",
-    metaTitle: "Sultangazi İcra Avukatı",
+    metaTitle: "Sultangazi İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Sultangazi'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const sultangaziServices: PseoService[] = [
     heroTitle: "Sultangazi İdare Avukatı",
     heroSubtitle:
       "Riskli yapı tespitine ilişkin idari kararlar, belediye imar uygulamaları ve idari para cezalarına karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Sultangazi İdare Avukatı",
+    metaTitle: "Sultangazi İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Sultangazi'de idari işlemlerin iptali, riskli yapı kararlarına itiraz ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const sultangaziServices: PseoService[] = [
     heroTitle: "Sultangazi İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemesi, Sultangazi'nin yargı çevresinde bulunduğu Gaziosmanpaşa Adliyesi bünyesindedir.",
-    metaTitle: "Sultangazi İş Hukuku Avukatı",
+    metaTitle: "Sultangazi İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Sultangazi'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const sultangaziServices: PseoService[] = [
     heroTitle: "Sultangazi Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Yüksek kiracı oranına sahip apartman bölgelerinde konut tahliyesi, kira bedeli tespiti ve kentsel dönüşüm nedeniyle bina boşaltılması süreçlerinde destek sağlanır; sulh hukuk mahkemesi Gaziosmanpaşa Adliyesi'ndedir.",
-    metaTitle: "Sultangazi Kira ve Tahliye Avukatı",
+    metaTitle: "Sultangazi Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Sultangazi'de kiracı tahliyesi, kira sözleşmesi uyuşmazlıkları, kira bedeli tespiti ve kentsel dönüşüm kapsamında bina tahliyesinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const sultangaziServices: PseoService[] = [
     heroTitle: "Sultangazi Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; ilçedeki mükelleflerin işlemleri tam teşekküllü bir vergi dairesi yerine Sultangazi Mal Müdürlüğü üzerinden yürütülür.",
-    metaTitle: "Sultangazi Vergi Avukatı",
+    metaTitle: "Sultangazi Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Sultangazi'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const sultangaziServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat", "ortakligin-giderilmesi-davasi"],
   },
 ];
+
+export const sultangaziServices: PseoService[] = [...sultangaziBaseServices, sultangaziMiras];

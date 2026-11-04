@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { bagcilarMiras } from "./miras/bagcilarMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const bagcilarServices: PseoService[] = [
+const bagcilarBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const bagcilarServices: PseoService[] = [
     heroTitle: "Bağcılar Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, İstanbul'un en yoğun nüfuslu ilçelerinden Bağcılar'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Bakırköy Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Bağcılar Avukat",
+    metaTitle: "Bağcılar Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Bağcılar'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const bagcilarServices: PseoService[] = [
     heroTitle: "Bağcılar Boşanma Avukatı",
     heroSubtitle:
       "Bağcılar, aile mahkemelerinin de yer aldığı İstanbul Bakırköy Adliyesi'nin yargı çevresindedir; anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı talepleri bakımından temsil sağlanır.",
-    metaTitle: "Bağcılar Boşanma Avukatı",
+    metaTitle: "Bağcılar Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Bağcılar'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const bagcilarServices: PseoService[] = [
     heroTitle: "Bağcılar Ceza Avukatı",
     heroSubtitle:
       "Kovuşturma aşamasındaki dosyalar İstanbul Bakırköy Adliyesi'nde yürütülmektedir; gözaltı, ifade alma ve bu süreci izleyen kovuşturmanın her evresinde müdafilik hizmeti sunulur.",
-    metaTitle: "Bağcılar Ceza Avukatı",
+    metaTitle: "Bağcılar Ceza Avukatı | Müdafilik",
     metaDescription:
       "Bağcılar'da soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const bagcilarServices: PseoService[] = [
     heroTitle: "Bağcılar Gayrimenkul Avukatı",
     heroSubtitle:
       "Kentsel dönüşüm, riskli yapı tespiti, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul Bakırköy Adliyesi'nde görülür.",
-    metaTitle: "Bağcılar Gayrimenkul Avukatı",
+    metaTitle: "Bağcılar Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Bağcılar'da kentsel dönüşüm, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const bagcilarServices: PseoService[] = [
     heroTitle: "Bağcılar İcra Avukatı",
     heroSubtitle:
       "İstanbul Bakırköy Adliyesi bünyesindeki icra daireleri nezdinde yürütülen icra takibi, itiraz ve haciz süreçlerinde, ticari ve bireysel alacakların tahsiline yönelik temsil hizmeti sunulmaktadır.",
-    metaTitle: "Bağcılar İcra Avukatı",
+    metaTitle: "Bağcılar İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Bağcılar'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const bagcilarServices: PseoService[] = [
     heroTitle: "Bağcılar İdare Avukatı",
     heroSubtitle:
       "Belediye, imar ve riskli yapı kararlarına karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Bağcılar İdare Avukatı",
+    metaTitle: "Bağcılar İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Bağcılar'da idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const bagcilarServices: PseoService[] = [
     heroTitle: "Bağcılar İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Bağcılar İş Hukuku Avukatı",
+    metaTitle: "Bağcılar İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Bağcılar'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const bagcilarServices: PseoService[] = [
     heroTitle: "Bağcılar Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Sulh hukuk mahkemelerinin İstanbul Bakırköy Adliyesi bünyesinde yer aldığı Bağcılar'da, konut ve işyeri tahliyesinden kira bedeli tespitine ve sözleşme uyuşmazlıklarına uzanan konularda destek sağlanmaktadır.",
-    metaTitle: "Bağcılar Kira ve Tahliye Avukatı",
+    metaTitle: "Bağcılar Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Bağcılar'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const bagcilarServices: PseoService[] = [
     heroTitle: "Bağcılar Vergi Avukatı",
     heroSubtitle:
       "Vergi uyuşmazlıklarında yetkili yargı mercii İstanbul vergi mahkemeleridir; işletmelere yönelik tarhiyat, ceza kesme işlemleri ve uzlaşma süreçlerinin her aşamasında temsil hizmeti sunulmaktadır.",
-    metaTitle: "Bağcılar Vergi Avukatı",
+    metaTitle: "Bağcılar Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Bağcılar'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const bagcilarServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const bagcilarServices: PseoService[] = [...bagcilarBaseServices, bagcilarMiras];

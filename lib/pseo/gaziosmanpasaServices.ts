@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { gaziosmanpasaMiras } from "./miras/gaziosmanpasaMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const gaziosmanpasaServices: PseoService[] = [
+const gaziosmanpasaBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const gaziosmanpasaServices: PseoService[] = [
     heroTitle: "Gaziosmanpaşa Avukat",
     heroSubtitle:
       "Gaziosmanpaşa'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunulmaktadır. Sanayi geçmişi Rami ve Eyüp'ten taşınan küçük atölyelere, günümüzde ise yoğun nüfuslu bir yerleşim dokusuna dayanan ilçede hukuki süreçler kendi adliyesi olan Gaziosmanpaşa Adliyesi bünyesinde yürütülmektedir; hizmeti veren avukat Furkan Arıkan İstanbul Barosu'na 72621 sicil numarasıyla kayıtlıdır.",
-    metaTitle: "Gaziosmanpaşa Avukat",
+    metaTitle: "Gaziosmanpaşa Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Gaziosmanpaşa'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const gaziosmanpasaServices: PseoService[] = [
     heroTitle: "Gaziosmanpaşa Boşanma Avukatı",
     heroSubtitle:
       "Aile mahkemesi Gaziosmanpaşa Adliyesi bünyesinde yer aldığından, anlaşmalı ve çekişmeli boşanma davaları, velayet ve nafaka talepleri ilçe sınırları içinde yürütülebilmektedir; süreçte mal rejimi tasfiyesinden çocuğun üstün yararına uygun düzenlemelere kadar temsil sağlanır.",
-    metaTitle: "Gaziosmanpaşa Boşanma Avukatı",
+    metaTitle: "Gaziosmanpaşa Boşanma Avukatı | Velayet",
     metaDescription:
       "Gaziosmanpaşa'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const gaziosmanpasaServices: PseoService[] = [
     heroTitle: "Gaziosmanpaşa Ceza Avukatı",
     heroSubtitle:
       "Soruşturma aşamasındaki ifade ve gözaltı süreçlerinden kovuşturma aşamasındaki duruşmalara kadar müdafilik hizmeti sağlanır. Yeni Adalet Sarayı'nda ağır ceza mahkemeleri de bulunduğundan, ilçedeki ceza yargılamalarının büyük bölümü Gaziosmanpaşa Adliyesi bünyesinde yürütülebilmektedir.",
-    metaTitle: "Gaziosmanpaşa Ceza Avukatı",
+    metaTitle: "Gaziosmanpaşa Ceza Avukatı | Müdafilik",
     metaDescription:
       "Gaziosmanpaşa'da soruşturma, kovuşturma, tutukluluğa itiraz ve ticari ilişkilerden doğan ceza uyuşmazlıklarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const gaziosmanpasaServices: PseoService[] = [
     heroTitle: "Gaziosmanpaşa Gayrimenkul Avukatı",
     heroSubtitle:
       "Eski gecekondu dokusunun kentsel dönüşümle planlı yapılaşmaya dönüştüğü Gaziosmanpaşa'da, riskli yapı tespiti, kat karşılığı inşaat sözleşmeleri ve tapu uyuşmazlıklarında hukuki destek sağlanır; davalar Gaziosmanpaşa Adliyesi'nde görülür.",
-    metaTitle: "Gaziosmanpaşa Gayrimenkul Avukatı",
+    metaTitle: "Gaziosmanpaşa Gayrimenkul Avukatı | Tapu",
     metaDescription:
       "Gaziosmanpaşa'da kentsel dönüşüm, kat karşılığı inşaat sözleşmesi, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const gaziosmanpasaServices: PseoService[] = [
     heroTitle: "Gaziosmanpaşa İcra Avukatı",
     heroSubtitle:
       "Küçük esnaf ve fason üretim ilişkilerinin yoğun olduğu Gaziosmanpaşa'da, çek-senet kaynaklı alacakların tahsili amacıyla icra takibi başlatılması, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır.",
-    metaTitle: "Gaziosmanpaşa İcra Avukatı",
+    metaTitle: "Gaziosmanpaşa İcra Avukatı | Takip ve Haciz",
     metaDescription:
       "Gaziosmanpaşa'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const gaziosmanpasaServices: PseoService[] = [
     heroTitle: "Gaziosmanpaşa İdare Avukatı",
     heroSubtitle:
       "Belediye ruhsat işlemleri, riskli yapı/kentsel dönüşüm kararları ve idari para cezalarına karşı iptal ve tam yargı davalarında temsil sağlanır; bu davalara İstanbul idare mahkemelerinde bakılır.",
-    metaTitle: "Gaziosmanpaşa İdare Avukatı",
+    metaTitle: "Gaziosmanpaşa İdare Avukatı | İptal Davası",
     metaDescription:
       "Gaziosmanpaşa'da idari işlemlerin iptali, kentsel dönüşüm kararlarına itiraz ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const gaziosmanpasaServices: PseoService[] = [
     heroTitle: "Gaziosmanpaşa İş Hukuku Avukatı",
     heroSubtitle:
       "Küçük ölçekli atölye ve imalathanelerin yoğun olduğu Gaziosmanpaşa'da, kıdem-ihbar tazminatı, işe iade ve fazla mesai gibi işçilik alacaklarına ilişkin süreçlerde temsil sağlanır.",
-    metaTitle: "Gaziosmanpaşa İş Hukuku Avukatı",
+    metaTitle: "Gaziosmanpaşa İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Gaziosmanpaşa'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const gaziosmanpasaServices: PseoService[] = [
     heroTitle: "Gaziosmanpaşa Vergi Avukatı",
     heroSubtitle:
       "Küçük esnaf ve KOBİ ağırlıklı ekonomik yapısıyla öne çıkan Gaziosmanpaşa'da, vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Gaziosmanpaşa Vergi Avukatı",
+    metaTitle: "Gaziosmanpaşa Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Gaziosmanpaşa'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const gaziosmanpasaServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const gaziosmanpasaServices: PseoService[] = [...gaziosmanpasaBaseServices, gaziosmanpasaMiras];

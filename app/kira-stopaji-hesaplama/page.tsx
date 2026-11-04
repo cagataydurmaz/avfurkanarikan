@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -6,7 +7,7 @@ import KiraStopajiForm from "@/components/calculators/KiraStopajiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Kira Stopajı Hesaplama",
+  title: "Kira Stopajı Hesaplama (%20 Stopaj)",
   description:
     "Kiracınızın mükellef olup olmamasına göre işyeri kira stopajını (%20) ve mal sahibine ödenecek net tutarı hesaplayın.",
   alternates: {
@@ -94,6 +95,8 @@ export default function KiraStopajiHesaplamaPage() {
           <p className="text-xs leading-relaxed mt-8" style={{ color: "#8A9A93" }}>
             Bu araç bilgilendirme amaçlıdır, hukuki/mali tavsiye niteliği taşımaz.
           </p>
+
+          <ToolRelated links={[{ href: "/kira-artisi-hesaplama", label: "Kira Artışı Hesaplama" }, { href: "/makaleler/kira-bedeli-tespit-ve-uyarlama-davasi", label: "Kira Bedeli Tespit ve Uyarlama Davası" }, { href: "/calisma-alanlari/gayrimenkul-hukuku", label: "Gayrimenkul Hukuku" }]} />
         </div>
       </main>
 

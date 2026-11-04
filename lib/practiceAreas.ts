@@ -30,7 +30,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "ceza-hukuku",
     title: "Ceza Hukuku",
-    metaTitle: "Ceza Hukuku",
+    metaTitle: "Ceza Hukuku Avukatı | Müdafilik ve Tutukluluk",
     metaDescription:
       "Soruşturma ve kovuşturma aşamalarında müdafilik, tutukluluk itirazı, ifade ve sorgu süreçlerinde İstanbul'da hukuki destek.",
     intro:
@@ -104,7 +104,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "is-hukuku",
     title: "İş Hukuku",
-    metaTitle: "İş Hukuku",
+    metaTitle: "İş Hukuku Avukatı | İşe İade ve Tazminat",
     metaDescription:
       "Haksız fesih, kıdem ve ihbar tazminatı, işe iade davası, fazla mesai ve işçi hakları konularında İstanbul'da hukuki destek.",
     intro:
@@ -172,7 +172,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "gayrimenkul-hukuku",
     title: "Gayrimenkul Hukuku",
-    metaTitle: "Gayrimenkul Hukuku",
+    metaTitle: "Gayrimenkul Hukuku Avukatı | Kira ve Tapu",
     metaDescription:
       "Kira uyuşmazlıkları, kiracı tahliyesi, tapu iptal ve tescil davaları, kat mülkiyeti uyuşmazlıklarında İstanbul'da hukuki destek.",
     intro:
@@ -246,7 +246,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "miras-hukuku",
     title: "Miras Hukuku",
-    metaTitle: "Miras Hukuku",
+    metaTitle: "Miras Hukuku Avukatı | Veraset ve Tenkis",
     metaDescription:
       "Miras paylaşımı, saklı pay ve tenkis davası, vasiyetname düzenlenmesi, mirasın reddi konularında İstanbul'da hukuki destek.",
     intro:
@@ -276,8 +276,8 @@ export const practiceAreas: PracticeArea[] = [
       {
         heading: "Mirasın Reddi",
         paragraphs: [
-          "Mirasçı; borca batık olan mirası kabul etmek zorunda değildir. Mirası reddetme hakkı (ret hakkı) TMK'nın 605. maddesinde düzenlenmiştir. Mirasın reddi, miras bırakanın ölümünden itibaren 3 ay içinde sulh hukuk mahkemesine yazılı beyanla ya da nüfus müdürlüğü üzerinden yapılabilir.",
-          "Mirasçı bu süreyi geçirirse mirası kabul etmiş sayılır. Aktif ret hakkını kullanan mirasçı; miras bırakanın borçlarından kişisel olarak sorumlu olmaz. Borcun varlığından haberdar olmaksızın mirası kabul eden mirasçı ise 3 aylık süreyi kaçırmış olsa bile hakimden ek süre talep edebilir.",
+          "Mirasçı; borca batık olan mirası kabul etmek zorunda değildir. Mirası reddetme hakkı (ret hakkı) TMK'nın 605 ve devamı maddelerinde düzenlenmiştir. Ret süresi TMK m.606 uyarınca 3 aydır; yasal mirasçılar için bu süre, miras bırakanın ölümünü öğrendikleri andan başlar. Ret beyanı, sulh hukuk mahkemesine sözlü veya yazılı olarak yapılır ve kayıtsız şartsız olmalıdır (TMK m.609).",
+          "Süre içinde ret beyanında bulunmayan mirasçı bakımından ret hakkı düşer. Ret hakkını kullanan mirasçı; miras bırakanın borçlarından kişisel olarak sorumlu olmaz. Önemli bir sebep bulunması halinde sulh hâkimi süreyi uzatabilir veya yeni bir süre tanıyabilir (TMK m.615).",
         ],
       },
     ],
@@ -285,7 +285,7 @@ export const practiceAreas: PracticeArea[] = [
       {
         question: "Mirası reddetmek istiyorum, nasıl yapabilirim?",
         answer:
-          "Miras bırakanın ölümünden itibaren 3 ay içinde sulh hukuk mahkemesine başvurarak ret beyanında bulunulmalıdır. Ret beyanı sözlü olarak da yapılabilir; mahkeme bu beyanı tutanağa geçirir. 3 aylık süre haklı nedenlerle uzatılabilir; ancak sürenin geçirilmemesi için başvuruyu geciktirmemek önerilir.",
+          "Ret süresi 3 aydır ve miras bırakanın ölümünü öğrendiğiniz andan başlar (TMK m.606). Ret beyanı sulh hukuk mahkemesine sözlü veya yazılı olarak yapılır; mahkeme beyanı tutanağa geçirir. Önemli bir sebep varsa sulh hâkimi süreyi uzatabilir (TMK m.615); yine de sürenin geçirilmemesi için başvuruyu geciktirmemek önerilir.",
       },
       {
         question: "Saklı payım ihlal edildi, ne yapabilirim?",
@@ -314,7 +314,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "borclar-hukuku",
     title: "Borçlar Hukuku",
-    metaTitle: "Borçlar Hukuku",
+    metaTitle: "Borçlar Hukuku Avukatı | Alacak ve Tazminat",
     metaDescription:
       "Sözleşme uyuşmazlıkları, alacak ve tazminat davaları, icra takibi süreçlerinde İstanbul'da hukuki destek.",
     intro:
@@ -382,7 +382,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "aile-hukuku",
     title: "Aile Hukuku",
-    metaTitle: "Aile Hukuku",
+    metaTitle: "Aile Hukuku Avukatı | Boşanma ve Velayet",
     metaDescription:
       "Boşanma davası, velayet, nafaka, mal rejimi tasfiyesi ve aile hukuku konularında İstanbul'da hukuki destek.",
     intro:
@@ -450,7 +450,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "vergi-hukuku",
     title: "Vergi Hukuku",
-    metaTitle: "Vergi Hukuku",
+    metaTitle: "Vergi Hukuku Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Vergi incelemesi, tarhiyat öncesi/sonrası uzlaşma, vergi ve ceza ihbarnamesine karşı dava süreçlerinde İstanbul'da hukuki destek.",
     intro:
@@ -521,7 +521,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "icra-iflas-hukuku",
     title: "İcra ve İflas Hukuku",
-    metaTitle: "İcra ve İflas Hukuku",
+    metaTitle: "İcra ve İflas Hukuku | Takip ve Haciz",
     metaDescription:
       "İlamlı/ilamsız icra takibi, ödeme emrine itiraz, haciz süreci ve konkordato konularında İstanbul'da hukuki destek.",
     intro:
@@ -595,7 +595,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "idare-hukuku",
     title: "İdare Hukuku",
-    metaTitle: "İdare Hukuku",
+    metaTitle: "İdare Hukuku Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "İdari işlemin iptali, tam yargı davası, yürütmenin durdurulması ve disiplin cezalarına itiraz konularında İstanbul'da hukuki destek.",
     intro:
@@ -666,7 +666,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "tazminat-hukuku",
     title: "Tazminat Hukuku",
-    metaTitle: "Tazminat Hukuku",
+    metaTitle: "Tazminat Hukuku Avukatı | Maddi ve Manevi",
     metaDescription:
       "Haksız fiilden doğan maddi ve manevi tazminat davaları, trafik kazası ve iş kazası tazminatı konularında İstanbul'da hukuki destek.",
     intro:
@@ -738,7 +738,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "tahkim-arabuluculuk",
     title: "Tahkim ve Arabuluculuk",
-    metaTitle: "Tahkim ve Arabuluculuk",
+    metaTitle: "Tahkim ve Arabuluculuk | Süreç ve Temsil",
     metaDescription:
       "Zorunlu ve ihtiyari arabuluculuk, iç tahkim ve milletlerarası tahkim süreçlerinde İstanbul'da hukuki destek ve temsil.",
     intro:
@@ -806,7 +806,7 @@ export const practiceAreas: PracticeArea[] = [
   {
     slug: "yabancilar-hukuku",
     title: "Yabancılar ve Vatandaşlık Hukuku",
-    metaTitle: "Yabancılar ve Vatandaşlık Hukuku",
+    metaTitle: "Yabancılar Hukuku | İzin ve Vatandaşlık",
     metaDescription:
       "Oturma ve çalışma izni, yatırım yoluyla Türk vatandaşlığı, gayrimenkul edinimi ve sınır dışı kararına itiraz konularında hukuki destek.",
     intro:

@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { beykozMiras } from "./miras/beykozMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const beykozServices: PseoService[] = [
+const beykozBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, Boğaziçi kıyısındaki tarihi yalıları, Anadolu Hisarı'nı ve geniş orman alanlarıyla İstanbul'un en yeşil ilçelerinden biri olan Beykoz'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçenin kendi adliyesi bulunmaktadır.",
-    metaTitle: "Beykoz Avukat",
+    metaTitle: "Beykoz Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Beykoz'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemesi Beykoz Adliyesi bünyesindedir.",
-    metaTitle: "Beykoz Boşanma Avukatı",
+    metaTitle: "Beykoz Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Beykoz'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; genel ceza davaları Beykoz Adliyesi'nde, ağır ceza davaları İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Beykoz Ceza Avukatı",
+    metaTitle: "Beykoz Ceza Avukatı | Müdafilik",
     metaDescription:
       "Beykoz'da soruşturma, kovuşturma, tutukluluğa itiraz ve orman/kıyı alanlarına ilişkin ceza uyuşmazlıklarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz Gayrimenkul Avukatı",
     heroSubtitle:
       "Boğaziçi Kanunu kapsamındaki yapılaşma kısıtlamaları, yalı ve villa alım-satımı, tapu uyuşmazlıklarında hukuki destek sağlanır; davalar Beykoz Adliyesi'nde görülür.",
-    metaTitle: "Beykoz Gayrimenkul Avukatı",
+    metaTitle: "Beykoz Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Beykoz'da yalı, villa ve Boğaziçi imar kısıtlamaları, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri Beykoz Adliyesi bünyesindedir.",
-    metaTitle: "Beykoz İcra Avukatı",
+    metaTitle: "Beykoz İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Beykoz'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz İdare Avukatı",
     heroSubtitle:
       "Orman/2B arazi statü tespitleri, Boğaziçi imar kısıtlamaları ve belediye işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Beykoz İdare Avukatı",
+    metaTitle: "Beykoz İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Beykoz'da idari işlemlerin iptali, orman/kıyı alanı statü tespitlerine itiraz ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemesi Beykoz Adliyesi bünyesindedir.",
-    metaTitle: "Beykoz İş Hukuku Avukatı",
+    metaTitle: "Beykoz İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Beykoz'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Yazlık/hafta sonu evi kiralamaları, konut tahliyesi ve kira bedeli tespiti uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemesi Beykoz Adliyesi'ndedir.",
-    metaTitle: "Beykoz Kira ve Tahliye Avukatı",
+    metaTitle: "Beykoz Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Beykoz'da kiracı tahliyesi, yazlık/villa kiralama sözleşmesi uyuşmazlıkları ve kira bedeli tespitinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Beykoz Vergi Avukatı",
+    metaTitle: "Beykoz Vergi Avukatı | Vergi Cezası ve Uzlaşma",
     metaDescription:
       "Beykoz'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -472,7 +473,7 @@ export const beykozServices: PseoService[] = [
     heroTitle: "Beykoz Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Restorasyon ve inşaat sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; asliye hukuk mahkemesi Beykoz Adliyesi'ndedir.",
-    metaTitle: "Beykoz Borçlar Hukuku Avukatı",
+    metaTitle: "Beykoz Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Beykoz'da yalı/villa restorasyon sözleşmeleri, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const beykozServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const beykozServices: PseoService[] = [...beykozBaseServices, beykozMiras];

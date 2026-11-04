@@ -70,6 +70,16 @@ import { pendik } from "@/lib/pseo/pendik";
 import { pendikServices } from "@/lib/pseo/pendikServices";
 import { sancaktepe } from "@/lib/pseo/sancaktepe";
 import { sancaktepeServices } from "@/lib/pseo/sancaktepeServices";
+import { sultanbeyli } from "@/lib/pseo/sultanbeyli";
+import { sultanbeyliServices } from "@/lib/pseo/sultanbeyliServices";
+import { cekmekoy } from "@/lib/pseo/cekmekoy";
+import { cekmekoyServices } from "@/lib/pseo/cekmekoyServices";
+import { sile } from "@/lib/pseo/sile";
+import { sileServices } from "@/lib/pseo/sileServices";
+import { tuzla } from "@/lib/pseo/tuzla";
+import { tuzlaServices } from "@/lib/pseo/tuzlaServices";
+import { adalar } from "@/lib/pseo/adalar";
+import { adalarServices } from "@/lib/pseo/adalarServices";
 import type { PseoDistrict, PseoService } from "@/lib/pseo/types";
 
 const BASE_URL = "https://furkanarikan.av.tr";
@@ -109,6 +119,11 @@ const pseoGroups: { district: PseoDistrict; services: PseoService[] }[] = [
   { district: kartal, services: kartalServices },
   { district: pendik, services: pendikServices },
   { district: sancaktepe, services: sancaktepeServices },
+  { district: sultanbeyli, services: sultanbeyliServices },
+  { district: cekmekoy, services: cekmekoyServices },
+  { district: sile, services: sileServices },
+  { district: tuzla, services: tuzlaServices },
+  { district: adalar, services: adalarServices },
 ];
 
 const allPseoServices = pseoGroups.flatMap((g) =>

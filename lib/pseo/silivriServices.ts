@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { silivriMiras } from "./miras/silivriMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const silivriServices: PseoService[] = [
+const silivriBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, 45 km'lik sahil şeridine ve Avrupa'nın en büyük ceza infaz kurumu kompleksine ev sahipliği yapan Silivri'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Büyükçekmece Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Silivri Avukat",
+    metaTitle: "Silivri Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Silivri'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri Boşanma Avukatı",
     heroSubtitle:
       "Aile mahkemelerinin İstanbul Büyükçekmece Adliyesi bünyesinde yer aldığı Silivri'de, velayet, nafaka ve mal paylaşımı talepleri anlaşmalı veya çekişmeli boşanma süreci kapsamında takip edilir.",
-    metaTitle: "Silivri Boşanma Avukatı",
+    metaTitle: "Silivri Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Silivri'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri Ceza Avukatı",
     heroSubtitle:
       "Soruşturma ve kovuşturma aşamalarında müdafilik hizmetinin yanı sıra, Türkiye'nin en büyük ceza infaz kurumu kompleksinde bulunan hükümlüler için infaz hukuku danışmanlığı sağlanır.",
-    metaTitle: "Silivri Ceza Avukatı",
+    metaTitle: "Silivri Ceza Avukatı | Müdafilik",
     metaDescription:
       "Silivri'de soruşturma, kovuşturma, tutukluluğa itiraz ve infaz hukuku süreçlerinde ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -173,7 +174,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri Gayrimenkul Avukatı",
     heroSubtitle:
       "Tarım arazisi, sahil bölgesi taşınmazları ve tapu uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Büyükçekmece Adliyesi'nde görülür.",
-    metaTitle: "Silivri Gayrimenkul Avukatı",
+    metaTitle: "Silivri Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Silivri'de tarım arazisi, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -223,7 +224,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri İcra Avukatı",
     heroSubtitle:
       "Silivri'de alacak tahsiline yönelik icra takibi, ödeme emrine itiraz ve haciz süreçlerinde hukuki temsil sağlanır; bu süreçlere ilişkin icra daireleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Silivri İcra Avukatı",
+    metaTitle: "Silivri İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Silivri'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -273,7 +274,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri İdare Avukatı",
     heroSubtitle:
       "Belediye, imar ve tarım arazisi işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Silivri İdare Avukatı",
+    metaTitle: "Silivri İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Silivri'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -323,7 +324,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Silivri İş Hukuku Avukatı",
+    metaTitle: "Silivri İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Silivri'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -373,7 +374,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Sulh hukuk mahkemelerinin İstanbul Büyükçekmece Adliyesi'nde bulunduğu Silivri'de, konut ve yazlık tahliyesinden kira bedeli tespitine kadar kira sözleşmesi kaynaklı uyuşmazlıklarda hukuki destek verilir.",
-    metaTitle: "Silivri Kira ve Tahliye Avukatı",
+    metaTitle: "Silivri Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Silivri'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -423,7 +424,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri Vergi Avukatı",
     heroSubtitle:
       "Tarım işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Silivri Vergi Avukatı",
+    metaTitle: "Silivri Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Silivri'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -473,7 +474,7 @@ export const silivriServices: PseoService[] = [
     heroTitle: "Silivri Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Tarımsal tedarik sözleşmelerinden doğan uyuşmazlıklar, alacak talepleri ve tazminat davaları Silivri'de takip edilir; bu davalara İstanbul Büyükçekmece Adliyesi bünyesindeki ticaret ve asliye hukuk mahkemelerinde bakılır.",
-    metaTitle: "Silivri Borçlar Hukuku Avukatı",
+    metaTitle: "Silivri Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Silivri'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -515,3 +516,5 @@ export const silivriServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const silivriServices: PseoService[] = [...silivriBaseServices, silivriMiras];

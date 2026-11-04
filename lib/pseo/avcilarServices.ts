@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { avcilarMiras } from "./miras/avcilarMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const avcilarServices: PseoService[] = [
+const avcilarBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, İstanbul Üniversitesi-Cerrahpaşa'nın büyük yerleşkesine ev sahipliği yapan ve deprem riski açısından öne çıkan Avcılar'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Küçükçekmece Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Avcılar Avukat",
+    metaTitle: "Avcılar Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Avcılar'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Küçükçekmece Adliyesi'nde yürütülür.",
-    metaTitle: "Avcılar Ceza Avukatı",
+    metaTitle: "Avcılar Ceza Avukatı | Müdafilik",
     metaDescription:
       "Avcılar'da soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar Gayrimenkul Avukatı",
     heroSubtitle:
       "Deprem riski tespiti, kentsel dönüşüm ve tapu uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Küçükçekmece Adliyesi'nde görülür.",
-    metaTitle: "Avcılar Gayrimenkul Avukatı",
+    metaTitle: "Avcılar Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Avcılar'da deprem riski/kentsel dönüşüm, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar İcra Avukatı",
     heroSubtitle:
       "İcra daireleri İstanbul Küçükçekmece Adliyesi bünyesinde bulunan Avcılar'da, alacaklı ve borçlu taraflara icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır.",
-    metaTitle: "Avcılar İcra Avukatı",
+    metaTitle: "Avcılar İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Avcılar'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar İdare Avukatı",
     heroSubtitle:
       "Deprem risk tespiti, imar ve belediye işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Avcılar İdare Avukatı",
+    metaTitle: "Avcılar İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Avcılar'da idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Küçükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Avcılar İş Hukuku Avukatı",
+    metaTitle: "Avcılar İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Avcılar'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Öğrenci ve aile konutu tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Küçükçekmece Adliyesi'ndedir.",
-    metaTitle: "Avcılar Kira ve Tahliye Avukatı",
+    metaTitle: "Avcılar Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Avcılar'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Avcılar Vergi Avukatı",
+    metaTitle: "Avcılar Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Avcılar'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -472,7 +473,7 @@ export const avcilarServices: PseoService[] = [
     heroTitle: "Avcılar Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Güçlendirme/inşaat sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul Küçükçekmece Adliyesi'ndedir.",
-    metaTitle: "Avcılar Borçlar Hukuku Avukatı",
+    metaTitle: "Avcılar Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Avcılar'da sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const avcilarServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const avcilarServices: PseoService[] = [...avcilarBaseServices, avcilarMiras];

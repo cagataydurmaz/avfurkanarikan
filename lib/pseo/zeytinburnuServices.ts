@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { zeytinburnuMiras } from "./miras/zeytinburnuMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const zeytinburnuServices: PseoService[] = [
+const zeytinburnuBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const zeytinburnuServices: PseoService[] = [
     heroTitle: "Zeytinburnu Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, yüzyıllardır süregelen deri ve konfeksiyon ticaretiyle bilinen Kazlıçeşme'nin de içinde bulunduğu Zeytinburnu'nda ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Bakırköy Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Zeytinburnu Avukat",
+    metaTitle: "Zeytinburnu Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Zeytinburnu'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const zeytinburnuServices: PseoService[] = [
     heroTitle: "Zeytinburnu Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Zeytinburnu Boşanma Avukatı",
+    metaTitle: "Zeytinburnu Boşanma Avukatı | Velayet",
     metaDescription:
       "Zeytinburnu'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const zeytinburnuServices: PseoService[] = [
     heroTitle: "Zeytinburnu Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Bakırköy Adliyesi'nde yürütülür.",
-    metaTitle: "Zeytinburnu Ceza Avukatı",
+    metaTitle: "Zeytinburnu Ceza Avukatı | Müdafilik",
     metaDescription:
       "Zeytinburnu'da soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const zeytinburnuServices: PseoService[] = [
     heroTitle: "Zeytinburnu Gayrimenkul Avukatı",
     heroSubtitle:
       "Mağaza, showroom, tapu uyuşmazlıkları ve konut ilişkilerinde hukuki destek sağlanır; davalar İstanbul Bakırköy Adliyesi'nde görülür.",
-    metaTitle: "Zeytinburnu Gayrimenkul Avukatı",
+    metaTitle: "Zeytinburnu Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Zeytinburnu'da mağaza/showroom kiraları, tapu iptali ve konut uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const zeytinburnuServices: PseoService[] = [
     heroTitle: "Zeytinburnu İcra Avukatı",
     heroSubtitle:
       "Toptan satış ve bireysel alacakların tahsili amacıyla icra takibi, itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Zeytinburnu İcra Avukatı",
+    metaTitle: "Zeytinburnu İcra Avukatı | Takip ve Haciz",
     metaDescription:
       "Zeytinburnu'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const zeytinburnuServices: PseoService[] = [
     heroTitle: "Zeytinburnu İdare Avukatı",
     heroSubtitle:
       "Belediye, imar ve işyeri ruhsat işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Zeytinburnu İdare Avukatı",
+    metaTitle: "Zeytinburnu İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Zeytinburnu'da idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const zeytinburnuServices: PseoService[] = [
     heroTitle: "Zeytinburnu İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Zeytinburnu İş Hukuku Avukatı",
+    metaTitle: "Zeytinburnu İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Zeytinburnu'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const zeytinburnuServices: PseoService[] = [
     heroTitle: "Zeytinburnu Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Zeytinburnu'nda konut ve mağaza tahliyesi, kira bedeli tespiti ve kira sözleşmesinden doğan uyuşmazlıklarda hukuki destek sağlanır. Bu davalara bakan sulh hukuk mahkemeleri, İstanbul Bakırköy Adliyesi bünyesinde yer almaktadır.",
-    metaTitle: "Zeytinburnu Kira ve Tahliye Avukatı",
+    metaTitle: "Zeytinburnu Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Zeytinburnu'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const zeytinburnuServices: PseoService[] = [
     heroTitle: "Zeytinburnu Vergi Avukatı",
     heroSubtitle:
       "Deri ve konfeksiyon işletmelerine yönelik vergi tarhiyatı, ihracat KDV iadesi ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Zeytinburnu Vergi Avukatı",
+    metaTitle: "Zeytinburnu Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Zeytinburnu'da vergi tarhiyatına itiraz, KDV iadesi, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const zeytinburnuServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const zeytinburnuServices: PseoService[] = [...zeytinburnuBaseServices, zeytinburnuMiras];

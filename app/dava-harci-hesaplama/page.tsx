@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -6,7 +7,7 @@ import DavaHarciForm from "@/components/calculators/DavaHarciForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Dava Harcı Hesaplama",
+  title: "Dava Harcı Hesaplama 2026 (Peşin ve Başvurma Harcı)",
   description:
     "Mahkeme türü ve dava değerine göre dava açılışında ödenecek başvurma harcı ve peşin harcı hesaplayın.",
   alternates: {
@@ -94,6 +95,8 @@ export default function DavaHarciHesaplamaPage() {
             Bu araç bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz. Harç tutarları her
             yıl Ocak ayında yeniden değerleme oranıyla güncellenir.
           </p>
+
+          <ToolRelated links={[{ href: "/islah-harci-hesaplama", label: "Islah Harcı Hesaplama" }, { href: "/vekalet-ucreti-hesaplama", label: "Vekalet Ücreti Hesaplama" }, { href: "/calisma-alanlari/borclar-hukuku", label: "Borçlar Hukuku: alacak davaları ve zamanaşımı" }]} />
         </div>
       </main>
 

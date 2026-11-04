@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -6,7 +7,7 @@ import AracDegerKaybiForm from "@/components/calculators/AracDegerKaybiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Araç Değer Kaybı Hesaplama",
+  title: "Araç Değer Kaybı Tazminatı: Dava Süresi Hesaplama",
   description:
     "Trafik kazası sonrası araç değer kaybı talebinizin zamanaşımını ve hangi sigortaya (ZMSS/kasko) yöneltilebileceğini öğrenin.",
   alternates: {
@@ -117,6 +118,8 @@ export default function AracDegerKaybiHesaplamaPage() {
             tutarını hesaplamaz. Kesin tutar için bir sigorta eksperi/bilirkişi raporu ve bir
             avukata danışmanız önerilir.
           </p>
+
+          <ToolRelated links={[{ href: "/calisma-alanlari/tazminat-hukuku", label: "Tazminat Hukuku: koşullar, kalemler ve zamanaşımı" }, { href: "/trafik-kazasi-tazminati-hesaplama", label: "Trafik Kazası Tazminatı Zamanaşımı Hesaplama" }]} />
         </div>
       </main>
 

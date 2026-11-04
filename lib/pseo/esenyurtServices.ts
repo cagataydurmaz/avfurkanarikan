@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { esenyurtMiras } from "./miras/esenyurtMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const esenyurtServices: PseoService[] = [
+const esenyurtBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const esenyurtServices: PseoService[] = [
     heroTitle: "Esenyurt Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, 1 milyonu aşan nüfusuyla Türkiye'nin en kalabalık ilçesi olan Esenyurt'ta ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Büyükçekmece Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Esenyurt Avukat",
+    metaTitle: "Esenyurt Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Esenyurt'ta ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const esenyurtServices: PseoService[] = [
     heroTitle: "Esenyurt Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Esenyurt Boşanma Avukatı",
+    metaTitle: "Esenyurt Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Esenyurt'ta anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const esenyurtServices: PseoService[] = [
     heroTitle: "Esenyurt Ceza Avukatı",
     heroSubtitle:
       "Ceza yargılamasına ilişkin dosyalar İstanbul Büyükçekmece Adliyesi'nde görülmekte olup, gözaltı ve ifade alma aşamasından kovuşturmanın sonuna kadar müdafilik hizmeti sağlanmaktadır.",
-    metaTitle: "Esenyurt Ceza Avukatı",
+    metaTitle: "Esenyurt Ceza Avukatı | Müdafilik",
     metaDescription:
       "Esenyurt'ta soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const esenyurtServices: PseoService[] = [
     heroTitle: "Esenyurt Gayrimenkul Avukatı",
     heroSubtitle:
       "Yeni konut projeleri, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul Büyükçekmece Adliyesi'nde görülür.",
-    metaTitle: "Esenyurt Gayrimenkul Avukatı",
+    metaTitle: "Esenyurt Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Esenyurt'ta yeni konut projeleri, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const esenyurtServices: PseoService[] = [
     heroTitle: "Esenyurt İcra Avukatı",
     heroSubtitle:
       "İcra daireleri İstanbul Büyükçekmece Adliyesi bünyesinde faaliyet göstermekte olup, alacak tahsiline yönelik icra takibi başvurusundan ödeme emrine itiraz ve haciz aşamasına kadar temsil hizmeti verilmektedir.",
-    metaTitle: "Esenyurt İcra Avukatı",
+    metaTitle: "Esenyurt İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Esenyurt'ta icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const esenyurtServices: PseoService[] = [
     heroTitle: "Esenyurt İdare Avukatı",
     heroSubtitle:
       "Belediye, imar ve ruhsat işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Esenyurt İdare Avukatı",
+    metaTitle: "Esenyurt İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Esenyurt'ta idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const esenyurtServices: PseoService[] = [
     heroTitle: "Esenyurt İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Esenyurt İş Hukuku Avukatı",
+    metaTitle: "Esenyurt İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Esenyurt'ta kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const esenyurtServices: PseoService[] = [
     heroTitle: "Esenyurt Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Kira ilişkisinden doğan uyuşmazlıklara İstanbul Büyükçekmece Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılmakta olup, kiracı tahliyesi, kira bedeli tespiti ve sözleşme uyuşmazlıklarında destek sunulmaktadır.",
-    metaTitle: "Esenyurt Kira ve Tahliye Avukatı",
+    metaTitle: "Esenyurt Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Esenyurt'ta kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const esenyurtServices: PseoService[] = [
     heroTitle: "Esenyurt Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Esenyurt Vergi Avukatı",
+    metaTitle: "Esenyurt Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Esenyurt'ta vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const esenyurtServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const esenyurtServices: PseoService[] = [...esenyurtBaseServices, esenyurtMiras];

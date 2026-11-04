@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { kartalMiras } from "./miras/kartalMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const kartalServices: PseoService[] = [
+const kartalBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal Avukat",
     heroSubtitle:
       "Anadolu Yakası'nın adliye merkezi konumundaki Kartal'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında avukat Furkan Arıkan danışmanlık ve dava takibi hizmeti sunmaktadır; İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan Arıkan'ın dosyaları, İstanbul Anadolu Adliyesi'nin fiziken Kartal sınırları içinde yer alması sayesinde komşu ilçelerin aksine ek bir ilçe geçişi gerektirmeden aynı ilçede görülür.",
-    metaTitle: "Kartal Avukat",
+    metaTitle: "Kartal Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Kartal'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal Gayrimenkul Avukatı",
     heroSubtitle:
       "Sahil şeridindeki ve eski sanayi arazileri üzerine kurulan kentsel dönüşüm projelerindeki tapu, kat mülkiyeti ve kira uyuşmazlıklarında hukuki destek sağlanır; davalar Kartal sınırları içindeki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Kartal Gayrimenkul Avukatı",
+    metaTitle: "Kartal Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Kartal'da kat mülkiyeti, tapu iptali, kentsel dönüşüm ve kira uyuşmazlıklarına ilişkin gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemesi davaları Kartal sınırları içindeki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Kartal İş Hukuku Avukatı",
+    metaTitle: "Kartal İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Kartal'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal İdare Avukatı",
     heroSubtitle:
       "Sahil şeridindeki kıyı kenar çizgisi ve iskele/liman izinlerinden eski sanayi arazilerindeki ruhsat işlemlerine kadar geniş bir alanda idari dava desteği sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Kartal İdare Avukatı",
+    metaTitle: "Kartal İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Kartal'da idari işlemlerin iptali, imar uygulamalarına itiraz ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Sahil şeridindeki ve iç kesimlerdeki konutların kiralanması, tahliye ve kira bedeli tespiti uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemesi davaları Kartal sınırları içindeki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Kartal Kira ve Tahliye Avukatı",
+    metaTitle: "Kartal Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Kartal'da kiracı tahliyesi, konut kiralama sözleşmesi uyuşmazlıkları ve kira bedeli tespitinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Kartal Vergi Avukatı",
+    metaTitle: "Kartal Vergi Avukatı | Vergi Cezası ve Uzlaşma",
     metaDescription:
       "Kartal'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -472,7 +473,7 @@ export const kartalServices: PseoService[] = [
     heroTitle: "Kartal Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Ticari sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; asliye hukuk mahkemesi davaları Kartal sınırları içindeki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Kartal Borçlar Hukuku Avukatı",
+    metaTitle: "Kartal Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Kartal'da ticari sözleşmeler, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const kartalServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const kartalServices: PseoService[] = [...kartalBaseServices, kartalMiras];

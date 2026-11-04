@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { arnavutkoyMiras } from "./miras/arnavutkoyMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const arnavutkoyServices: PseoService[] = [
+const arnavutkoyBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const arnavutkoyServices: PseoService[] = [
     heroTitle: "Arnavutköy Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş bir avukat olan Furkan Arıkan, Arnavutköy'deki müvekkillerine ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında hizmet vermektedir; ilçe İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Arnavutköy Avukat",
+    metaTitle: "Arnavutköy Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Arnavutköy'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const arnavutkoyServices: PseoService[] = [
     heroTitle: "Arnavutköy Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Arnavutköy Boşanma Avukatı",
+    metaTitle: "Arnavutköy Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Arnavutköy'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const arnavutkoyServices: PseoService[] = [
     heroTitle: "Arnavutköy Ceza Avukatı",
     heroSubtitle:
       "Arnavutköy'de ceza yargılamasının kovuşturma aşamasına İstanbul (Çağlayan) Adliyesi'nde bakılır; gözaltı ve ifade alma anından itibaren müdafilik desteği sağlanır.",
-    metaTitle: "Arnavutköy Ceza Avukatı",
+    metaTitle: "Arnavutköy Ceza Avukatı | Müdafilik",
     metaDescription:
       "Arnavutköy'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const arnavutkoyServices: PseoService[] = [
     heroTitle: "Arnavutköy Gayrimenkul Avukatı",
     heroSubtitle:
       "Tarım arazisinden imara açılan taşınmazlar, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Arnavutköy Gayrimenkul Avukatı",
+    metaTitle: "Arnavutköy Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Arnavutköy'de tapu iptali, imar değişikliği ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const arnavutkoyServices: PseoService[] = [
     heroTitle: "Arnavutköy İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Arnavutköy İcra Avukatı",
+    metaTitle: "Arnavutköy İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Arnavutköy'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const arnavutkoyServices: PseoService[] = [
     heroTitle: "Arnavutköy İdare Avukatı",
     heroSubtitle:
       "Belediye, imar ve kamulaştırma işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Arnavutköy İdare Avukatı",
+    metaTitle: "Arnavutköy İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Arnavutköy'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const arnavutkoyServices: PseoService[] = [
     heroTitle: "Arnavutköy İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesindedir.",
-    metaTitle: "Arnavutköy İş Hukuku Avukatı",
+    metaTitle: "Arnavutköy İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Arnavutköy'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const arnavutkoyServices: PseoService[] = [
     heroTitle: "Arnavutköy Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Arnavutköy'de tahliye taleplerinde, kira bedelinin belirlenmesinde ve kira sözleşmesinden doğan uyuşmazlıklarda hukuki destek sağlanır; bu davalara sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesinde bakar.",
-    metaTitle: "Arnavutköy Kira ve Tahliye Avukatı",
+    metaTitle: "Arnavutköy Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Arnavutköy'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const arnavutkoyServices: PseoService[] = [
     heroTitle: "Arnavutköy Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Arnavutköy Vergi Avukatı",
+    metaTitle: "Arnavutköy Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Arnavutköy'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const arnavutkoyServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const arnavutkoyServices: PseoService[] = [...arnavutkoyBaseServices, arnavutkoyMiras];

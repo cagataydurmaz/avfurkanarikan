@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { sisliMiras } from "./miras/sisliMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const sisliServices: PseoService[] = [
+const sisliBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli Avukat",
     heroSubtitle:
       "Ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında Şişli ve çevresindeki müvekkillere hukuki danışmanlık ve dava takibi hizmeti verilmektedir. Şişli, İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Şişli Avukat",
+    metaTitle: "Şişli Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Şişli'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında hukuki danışmanlık ve dava takibi hizmeti.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal rejimi tasfiyesi süreçlerinde hukuki danışmanlık. Şişli, İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Şişli Boşanma Avukatı",
+    metaTitle: "Şişli Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Şişli'de anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı konularında hukuki danışmanlık ve dava takibi.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli Ceza Avukatı",
     heroSubtitle:
       "Soruşturma ve kovuşturma süreçlerinde müdafilik, ifade ve sorgu süreçlerinde hukuki destek, tutukluluğa itiraz. Şişli, İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Şişli Ceza Avukatı",
+    metaTitle: "Şişli Ceza Avukatı | Müdafilik",
     metaDescription:
       "Şişli'de soruşturma ve kovuşturma süreçlerinde müdafilik, tutukluluk itirazı ve ceza davası takibi hizmeti.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli Gayrimenkul Avukatı",
     heroSubtitle:
       "Tapu iptali, kira uyuşmazlıkları, tahliye süreçleri ve gayrimenkul sözleşmelerinde hukuki destek. Şişli, İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Şişli Gayrimenkul Avukatı",
+    metaTitle: "Şişli Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Şişli'de tapu iptali, kira uyuşmazlıkları, tahliye ve gayrimenkul sözleşmelerinde hukuki danışmanlık ve dava takibi.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli İcra Avukatı",
     heroSubtitle:
       "İcra takibi başlatılması, ödeme emrine itiraz, haciz ve ihale süreçlerinde hukuki destek. Şişli, İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Şişli İcra Avukatı",
+    metaTitle: "Şişli İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Şişli'de icra takibi, itiraz, haciz ve alacak tahsili süreçlerinde hukuki danışmanlık ve dava takibi.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli İdare Avukatı",
     heroSubtitle:
       "İdari işlemlerin iptali, tam yargı davaları ve idari başvuru süreçlerinde hukuki destek. Yetkili yargı mercii İstanbul idare mahkemeleridir.",
-    metaTitle: "Şişli İdare Avukatı",
+    metaTitle: "Şişli İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Şişli'de idari işlemlerin iptali, tam yargı davaları ve idareye karşı başvuru süreçlerinde hukuki danışmanlık.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem ve ihbar tazminatı, işe iade davası ve iş sözleşmesi uyuşmazlıklarında hukuki destek. Şişli, İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Şişli İş Hukuku Avukatı",
+    metaTitle: "Şişli İş Hukuku Avukatı | İşe İade ve Tazminat",
     metaDescription:
       "Şişli'de kıdem-ihbar tazminatı, işe iade davası ve iş sözleşmesi uyuşmazlıklarında hukuki danışmanlık.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında hukuki destek. Şişli, İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Şişli Kira ve Tahliye Avukatı",
+    metaTitle: "Şişli Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Şişli'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında hukuki danışmanlık.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatına itiraz, vergi cezalarına karşı dava ve uzlaşma süreçlerinde hukuki destek. Yetkili yargı mercii İstanbul vergi mahkemeleridir.",
-    metaTitle: "Şişli Vergi Avukatı",
+    metaTitle: "Şişli Vergi Avukatı | Vergi Cezası ve Uzlaşma",
     metaDescription:
       "Şişli'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde hukuki danışmanlık.",
     aboutParagraph:
@@ -474,7 +475,7 @@ export const sisliServices: PseoService[] = [
     heroTitle: "Şişli Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Sözleşme uyuşmazlıkları, alacak ve tazminat davaları, sözleşmeden dönme ve ayıplı ifa süreçlerinde hukuki destek. Şişli, İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Şişli Borçlar Hukuku Avukatı",
+    metaTitle: "Şişli Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Şişli'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında hukuki danışmanlık ve dava takibi.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const sisliServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const sisliServices: PseoService[] = [...sisliBaseServices, sisliMiras];

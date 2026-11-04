@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { kagithaneMiras } from "./miras/kagithaneMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const kagithaneServices: PseoService[] = [
+const kagithaneBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const kagithaneServices: PseoService[] = [
     heroTitle: "Kağıthane Avukat",
     heroSubtitle:
       "Kağıthane'de yaşayan veya işyeri bulunan müvekkillere ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık verilir; ilçe İstanbul (Çağlayan) Adliyesi'ne bağlıdır.",
-    metaTitle: "Kağıthane Avukat",
+    metaTitle: "Kağıthane Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Kağıthane'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const kagithaneServices: PseoService[] = [
     heroTitle: "Kağıthane Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı konularında temsil sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Kağıthane Boşanma Avukatı",
+    metaTitle: "Kağıthane Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Kağıthane'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const kagithaneServices: PseoService[] = [
     heroTitle: "Kağıthane Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul (Çağlayan) Adliyesi'nde yürütülür.",
-    metaTitle: "Kağıthane Ceza Avukatı",
+    metaTitle: "Kağıthane Ceza Avukatı | Müdafilik",
     metaDescription:
       "Kağıthane'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const kagithaneServices: PseoService[] = [
     heroTitle: "Kağıthane Gayrimenkul Avukatı",
     heroSubtitle:
       "Kentsel dönüşüm, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Kağıthane Gayrimenkul Avukatı",
+    metaTitle: "Kağıthane Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Kağıthane'de tapu iptali, kentsel dönüşüm ve kira uyuşmazlıklarında gayrimenkul avukatlığı ve danışmanlık hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const kagithaneServices: PseoService[] = [
     heroTitle: "Kağıthane İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Kağıthane İcra Avukatı",
+    metaTitle: "Kağıthane İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Kağıthane'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const kagithaneServices: PseoService[] = [
     heroTitle: "Kağıthane İdare Avukatı",
     heroSubtitle:
       "Belediye ve diğer kamu kurumu işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Kağıthane İdare Avukatı",
+    metaTitle: "Kağıthane İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Kağıthane'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const kagithaneServices: PseoService[] = [
     heroTitle: "Kağıthane İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesindedir.",
-    metaTitle: "Kağıthane İş Hukuku Avukatı",
+    metaTitle: "Kağıthane İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Kağıthane'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const kagithaneServices: PseoService[] = [
     heroTitle: "Kağıthane Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Kağıthane Kira ve Tahliye Avukatı",
+    metaTitle: "Kağıthane Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Kağıthane'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const kagithaneServices: PseoService[] = [
     heroTitle: "Kağıthane Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Kağıthane Vergi Avukatı",
+    metaTitle: "Kağıthane Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Kağıthane'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const kagithaneServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const kagithaneServices: PseoService[] = [...kagithaneBaseServices, kagithaneMiras];

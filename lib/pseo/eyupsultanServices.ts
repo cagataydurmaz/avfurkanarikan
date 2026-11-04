@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { eyupsultanMiras } from "./miras/eyupsultanMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const eyupsultanServices: PseoService[] = [
+const eyupsultanBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const eyupsultanServices: PseoService[] = [
     heroTitle: "Eyüpsultan Avukat",
     heroSubtitle:
       "Eyüpsultan'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında temsil sağlanır; ilçe İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Eyüpsultan Avukat",
+    metaTitle: "Eyüpsultan Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Eyüpsultan'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const eyupsultanServices: PseoService[] = [
     heroTitle: "Eyüpsultan Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Eyüpsultan Boşanma Avukatı",
+    metaTitle: "Eyüpsultan Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Eyüpsultan'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const eyupsultanServices: PseoService[] = [
     heroTitle: "Eyüpsultan Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul (Çağlayan) Adliyesi'nde yürütülür.",
-    metaTitle: "Eyüpsultan Ceza Avukatı",
+    metaTitle: "Eyüpsultan Ceza Avukatı | Müdafilik",
     metaDescription:
       "Eyüpsultan'da soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const eyupsultanServices: PseoService[] = [
     heroTitle: "Eyüpsultan Gayrimenkul Avukatı",
     heroSubtitle:
       "Kentsel dönüşüm, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Eyüpsultan Gayrimenkul Avukatı",
+    metaTitle: "Eyüpsultan Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Eyüpsultan'da tapu iptali, kentsel dönüşüm ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const eyupsultanServices: PseoService[] = [
     heroTitle: "Eyüpsultan İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Eyüpsultan İcra Avukatı",
+    metaTitle: "Eyüpsultan İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Eyüpsultan'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const eyupsultanServices: PseoService[] = [
     heroTitle: "Eyüpsultan İdare Avukatı",
     heroSubtitle:
       "Belediye ve diğer kamu kurumu işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Eyüpsultan İdare Avukatı",
+    metaTitle: "Eyüpsultan İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Eyüpsultan'da idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const eyupsultanServices: PseoService[] = [
     heroTitle: "Eyüpsultan İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesindedir.",
-    metaTitle: "Eyüpsultan İş Hukuku Avukatı",
+    metaTitle: "Eyüpsultan İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Eyüpsultan'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const eyupsultanServices: PseoService[] = [
     heroTitle: "Eyüpsultan Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Eyüpsultan Kira ve Tahliye Avukatı",
+    metaTitle: "Eyüpsultan Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Eyüpsultan'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const eyupsultanServices: PseoService[] = [
     heroTitle: "Eyüpsultan Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Eyüpsultan Vergi Avukatı",
+    metaTitle: "Eyüpsultan Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Eyüpsultan'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const eyupsultanServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const eyupsultanServices: PseoService[] = [...eyupsultanBaseServices, eyupsultanMiras];

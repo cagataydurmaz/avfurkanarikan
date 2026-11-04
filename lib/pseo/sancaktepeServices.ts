@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { sancaktepeMiras } from "./miras/sancaktepeMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const sancaktepeServices: PseoService[] = [
+const sancaktepeBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const sancaktepeServices: PseoService[] = [
     heroTitle: "Sancaktepe Avukat",
     heroSubtitle:
       "22 Mart 2008 tarihli 5747 sayılı Kanun'la Ümraniye'ye bağlı Sarıgazi ve Yenidoğan beldeleri ile Kartal'a bağlı Samandıra Beldesi'nin birleştirilmesiyle kurulan ve TÜİK'in 2025 verilerine göre 507 bini aşkın nüfusuyla İstanbul'un görece genç ilçelerinden biri olan Sancaktepe'de avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti vermektedir; ilçenin ayrı bir adliyesi bulunmadığından dava ve icra dosyaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülmektedir.",
-    metaTitle: "Sancaktepe Avukat",
+    metaTitle: "Sancaktepe Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Sancaktepe'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -71,7 +72,7 @@ export const sancaktepeServices: PseoService[] = [
     heroTitle: "Sancaktepe Boşanma Avukatı",
     heroSubtitle:
       "2008'de Sarıgazi, Yenidoğan ve Samandıra'nın birleşmesiyle kurulan ve hızlı nüfus artışına sahne olan Sancaktepe'de anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı süreçlerinde avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) temsil sağlamaktadır; aile mahkemesi davaları, ilçenin kendi adliyesi bulunmadığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Sancaktepe Boşanma Avukatı",
+    metaTitle: "Sancaktepe Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Sancaktepe'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -121,7 +122,7 @@ export const sancaktepeServices: PseoService[] = [
     heroTitle: "Sancaktepe Ceza Avukatı",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olan avukat Furkan Arıkan, gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında Sancaktepe'deki şüpheli ve sanıklara müdafilik hizmeti sunar; ilçenin kendi adliyesi bulunmadığından dava dosyaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülmektedir.",
-    metaTitle: "Sancaktepe Ceza Avukatı",
+    metaTitle: "Sancaktepe Ceza Avukatı | Müdafilik",
     metaDescription:
       "Sancaktepe'de soruşturma, kovuşturma, tutukluluğa itiraz ve ceza yargılamasının tüm aşamalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -171,7 +172,7 @@ export const sancaktepeServices: PseoService[] = [
     heroTitle: "Sancaktepe Gayrimenkul Avukatı",
     heroSubtitle:
       "Sarıgazi, Yenidoğan ve Samandıra gibi eski belde yerleşimlerinin tüzel kişiliklerinin kaldırılıp birleştirilmesiyle 2008'de kurulan Sancaktepe'de, bu geçmişten kaynaklanan tapu, imar ve kat mülkiyeti uyuşmazlıklarında avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) danışmanlık sağlar; davalar Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Sancaktepe Gayrimenkul Avukatı",
+    metaTitle: "Sancaktepe Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Sancaktepe'de tapu iptali, kat mülkiyeti, imar uyuşmazlıkları ve kira davalarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -221,7 +222,7 @@ export const sancaktepeServices: PseoService[] = [
     heroTitle: "Sancaktepe İş Hukuku Avukatı",
     heroSubtitle:
       "Abdurrahmangazi Mahallesi'ndeki Sancaktepe Şehit Prof. Dr. İlhan Varank Eğitim ve Araştırma Hastanesi başta olmak üzere ilçedeki kamu ve özel sektör işletmelerinde çalışanların kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerinde İstanbul Barosu sicil no 72621 ile kayıtlı avukat Furkan Arıkan temsil sağlar; iş mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Sancaktepe İş Hukuku Avukatı",
+    metaTitle: "Sancaktepe İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Sancaktepe'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -271,7 +272,7 @@ export const sancaktepeServices: PseoService[] = [
     heroTitle: "Sancaktepe İcra Avukatı",
     heroSubtitle:
       "Sarıgazi ve Samandıra çevresindeki esnaf ve işletmeler arasındaki ticari alacaklardan bireysel alacaklara uzanan icra takiplerinde İstanbul Barosu sicil no 72621 ile kayıtlı avukat Furkan Arıkan (MEF Üniversitesi Hukuk Fakültesi, 2019) Sancaktepe'deki taraflara temsil sağlar; takipler Kartal'daki İstanbul Anadolu Adliyesi bünyesindeki icra daireleri üzerinden yürütülür.",
-    metaTitle: "Sancaktepe İcra Avukatı",
+    metaTitle: "Sancaktepe İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Sancaktepe'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -321,7 +322,7 @@ export const sancaktepeServices: PseoService[] = [
     heroTitle: "Sancaktepe İdare Avukatı",
     heroSubtitle:
       "2008'de üç ayrı belde merkezinin birleştirilmesiyle kurulan Sancaktepe'de, bu geçmişten kalan ıslah imar planı işlemlerinden belediye ruhsat uyuşmazlıklarına kadar geniş bir alanda avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) Sancaktepe'deki müvekkillerine idari dava desteği sunar; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Sancaktepe İdare Avukatı",
+    metaTitle: "Sancaktepe İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Sancaktepe'de idari işlemlerin iptali, imar uygulamalarına itiraz ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -371,7 +372,7 @@ export const sancaktepeServices: PseoService[] = [
     heroTitle: "Sancaktepe Kira ve Tahliye Avukatı",
     heroSubtitle:
       "M5 metro hattının Sarıgazi, Meclis ve Sancaktepe istasyonlarına yakın mahallelerdeki konut ve işyeri kiralamalarında, tahliye ve kira bedeli tespiti uyuşmazlıklarında avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) Sancaktepe'deki taraflara destek sağlar; sulh hukuk mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Sancaktepe Kira ve Tahliye Avukatı",
+    metaTitle: "Sancaktepe Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Sancaktepe'de kiracı tahliyesi, kira sözleşmesi uyuşmazlıkları ve kira bedeli tespitinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -421,7 +422,7 @@ export const sancaktepeServices: PseoService[] = [
     heroTitle: "Sancaktepe Vergi Avukatı",
     heroSubtitle:
       "Meclis Mahallesi'ndeki Sancaktepe İlçe Mal Müdürlüğü nezdinde işlem gören mükelleflerin vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde İstanbul Barosu sicil no 72621 ile kayıtlı avukat Furkan Arıkan temsil sağlar; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Sancaktepe Vergi Avukatı",
+    metaTitle: "Sancaktepe Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Sancaktepe'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -513,3 +514,5 @@ export const sancaktepeServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const sancaktepeServices: PseoService[] = [...sancaktepeBaseServices, sancaktepeMiras];

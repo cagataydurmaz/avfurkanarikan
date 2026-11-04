@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { esenlerMiras } from "./miras/esenlerMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const esenlerServices: PseoService[] = [
+const esenlerBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, Türkiye'nin en büyük şehirlerarası otobüs terminaline ev sahipliği yapan Esenler'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Bakırköy Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Esenler Avukat",
+    metaTitle: "Esenler Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Esenler'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Esenler Boşanma Avukatı",
+    metaTitle: "Esenler Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Esenler'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Bakırköy Adliyesi'nde yürütülür.",
-    metaTitle: "Esenler Ceza Avukatı",
+    metaTitle: "Esenler Ceza Avukatı | Müdafilik",
     metaDescription:
       "Esenler'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler Gayrimenkul Avukatı",
     heroSubtitle:
       "Depolama alanları, antrepo kiraları, tapu uyuşmazlıkları ve konut ilişkilerinde hukuki destek sağlanır; davalar İstanbul Bakırköy Adliyesi'nde görülür.",
-    metaTitle: "Esenler Gayrimenkul Avukatı",
+    metaTitle: "Esenler Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Esenler'de depolama/antrepo kiraları, tapu iptali ve konut uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler İcra Avukatı",
     heroSubtitle:
       "Taşıma ve navlun alacaklarının tahsili amacıyla icra takibi, itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Esenler İcra Avukatı",
+    metaTitle: "Esenler İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Esenler'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler İdare Avukatı",
     heroSubtitle:
       "Taşımacılık yetki belgesi, belediye ve imar işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Esenler İdare Avukatı",
+    metaTitle: "Esenler İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Esenler'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Esenler İş Hukuku Avukatı",
+    metaTitle: "Esenler İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Esenler'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Esenler'de konut ya da depo/antrepo niteliğindeki taşınmazların tahliyesi, kira bedelinin belirlenmesi ve kira sözleşmesinden doğan uyuşmazlıklarda destek verilir; bu davalar İstanbul Bakırköy Adliyesi'ndeki sulh hukuk mahkemelerinde görülür.",
-    metaTitle: "Esenler Kira ve Tahliye Avukatı",
+    metaTitle: "Esenler Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Esenler'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler Vergi Avukatı",
     heroSubtitle:
       "Esenler'deki nakliye ve lojistik işletmeleri için vergi tarhiyatına, kesilen cezalara ve uzlaşma sürecine ilişkin temsil sağlanır; bu uyuşmazlıklarda yetkili yargı mercii İstanbul vergi mahkemeleridir.",
-    metaTitle: "Esenler Vergi Avukatı",
+    metaTitle: "Esenler Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Esenler'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -474,7 +475,7 @@ export const esenlerServices: PseoService[] = [
     heroTitle: "Esenler Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Taşıma sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul Bakırköy Adliyesi'ndedir.",
-    metaTitle: "Esenler Borçlar Hukuku Avukatı",
+    metaTitle: "Esenler Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Esenler'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const esenlerServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const esenlerServices: PseoService[] = [...esenlerBaseServices, esenlerMiras];

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -6,7 +7,7 @@ import YillikIzinForm from "@/components/calculators/YillikIzinForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Yıllık İzin Ücreti Hesaplama",
+  title: "Yıllık İzin Ücreti Hesaplama (Kullanılmayan İzin)",
   description:
     "Kıdeminize göre yıllık izin hakkınızı görün, kullanılmayan izin gününüzün brüt ücret karşılığını hesaplayın.",
   alternates: {
@@ -107,6 +108,8 @@ export default function YillikIzinHesaplamaPage() {
           <p className="text-xs leading-relaxed mt-8" style={{ color: "#8A9A93" }}>
             Bu araç bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz.
           </p>
+
+          <ToolRelated links={[{ href: "/calisma-alanlari/is-hukuku", label: "İş Hukuku: fesih, kıdem tazminatı ve işçi alacakları" }, { href: "/fazla-mesai-hesaplama", label: "Fazla Mesai Ücreti Hesaplama" }, { href: "/makaleler/kidem-tazminati-hesaplama-2026", label: "Kıdem Tazminatı Hakkı ve Hesaplanması" }]} />
         </div>
       </main>
 

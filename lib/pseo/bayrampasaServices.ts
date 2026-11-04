@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { bayrampasaMiras } from "./miras/bayrampasaMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const bayrampasaServices: PseoService[] = [
+const bayrampasaBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const bayrampasaServices: PseoService[] = [
     heroTitle: "Bayrampaşa Avukat",
     heroSubtitle:
       "Ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku uyuşmazlıklarında temsil sağlayan Furkan Arıkan, Bayrampaşa'daki müvekkillerine hizmet vermektedir; ilçe İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Bayrampaşa Avukat",
+    metaTitle: "Bayrampaşa Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Bayrampaşa'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const bayrampasaServices: PseoService[] = [
     heroTitle: "Bayrampaşa Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlayan Furkan Arıkan, davalar İstanbul (Çağlayan) Adliyesi'nde görülmek üzere Bayrampaşa'daki müvekkillerine hizmet vermektedir.",
-    metaTitle: "Bayrampaşa Boşanma Avukatı",
+    metaTitle: "Bayrampaşa Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Bayrampaşa'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const bayrampasaServices: PseoService[] = [
     heroTitle: "Bayrampaşa Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma aşamalarının her birinde müdafilik hizmeti sunan Furkan Arıkan, kovuşturması İstanbul (Çağlayan) Adliyesi'nde yürütülen dosyalarda Bayrampaşa'daki müvekkillerine hizmet vermektedir.",
-    metaTitle: "Bayrampaşa Ceza Avukatı",
+    metaTitle: "Bayrampaşa Ceza Avukatı | Müdafilik",
     metaDescription:
       "Bayrampaşa'da soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const bayrampasaServices: PseoService[] = [
     heroTitle: "Bayrampaşa Gayrimenkul Avukatı",
     heroSubtitle:
       "Tapu uyuşmazlıkları, kat mülkiyeti sorunları ve kira ilişkilerinde temsil sağlayan Furkan Arıkan, davalar İstanbul (Çağlayan) Adliyesi'nde görülmek üzere Bayrampaşa'daki müvekkillerine hizmet vermektedir.",
-    metaTitle: "Bayrampaşa Gayrimenkul Avukatı",
+    metaTitle: "Bayrampaşa Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Bayrampaşa'da tapu iptali, kat mülkiyeti uyuşmazlıkları ve kira ilişkilerinde gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const bayrampasaServices: PseoService[] = [
     heroTitle: "Bayrampaşa İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlayan Furkan Arıkan, icra mahkemeleri İstanbul (Çağlayan) Adliyesi'nde olan dosyalarda Bayrampaşa'daki müvekkillerine hizmet vermektedir.",
-    metaTitle: "Bayrampaşa İcra Avukatı",
+    metaTitle: "Bayrampaşa İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Bayrampaşa'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const bayrampasaServices: PseoService[] = [
     heroTitle: "Bayrampaşa İdare Avukatı",
     heroSubtitle:
       "Belediye ve diğer kamu kurumu işlemlerine karşı iptal ve tam yargı davalarında temsil sağlayan Furkan Arıkan, yetkili mahkemenin İstanbul idare mahkemeleri olduğu dosyalarda Bayrampaşa'daki müvekkillerine hizmet vermektedir.",
-    metaTitle: "Bayrampaşa İdare Avukatı",
+    metaTitle: "Bayrampaşa İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Bayrampaşa'da idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const bayrampasaServices: PseoService[] = [
     heroTitle: "Bayrampaşa İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlayan Furkan Arıkan, iş mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesinde olan dosyalarda Bayrampaşa'daki müvekkillerine hizmet vermektedir.",
-    metaTitle: "Bayrampaşa İş Hukuku Avukatı",
+    metaTitle: "Bayrampaşa İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Bayrampaşa'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const bayrampasaServices: PseoService[] = [
     heroTitle: "Bayrampaşa Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında temsil sağlayan Furkan Arıkan, sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'nde olan dosyalarda Bayrampaşa'daki müvekkillerine hizmet vermektedir.",
-    metaTitle: "Bayrampaşa Kira ve Tahliye Avukatı",
+    metaTitle: "Bayrampaşa Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Bayrampaşa'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const bayrampasaServices: PseoService[] = [
     heroTitle: "Bayrampaşa Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlayan Furkan Arıkan, yetkili mahkemenin İstanbul vergi mahkemeleri olduğu dosyalarda Bayrampaşa'daki müvekkillerine hizmet vermektedir.",
-    metaTitle: "Bayrampaşa Vergi Avukatı",
+    metaTitle: "Bayrampaşa Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Bayrampaşa'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const bayrampasaServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const bayrampasaServices: PseoService[] = [...bayrampasaBaseServices, bayrampasaMiras];

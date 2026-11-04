@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -6,7 +7,7 @@ import TapuHarciForm from "@/components/calculators/TapuHarciForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Tapu Harcı Hesaplama",
+  title: "Tapu Harcı Hesaplama 2026 (Alıcı ve Satıcı)",
   description:
     "Gayrimenkul satışında satış bedeline göre toplam tapu harcını ve alıcı/satıcı payını hesaplayın.",
   alternates: {
@@ -95,6 +96,8 @@ export default function TapuHarciHesaplamaPage() {
             beyanı hem cezai hem vergisel risk taşır; gerçek satış bedelinin beyan edilmesi
             önemlidir.
           </p>
+
+          <ToolRelated links={[{ href: "/makaleler/tapu-iptali-ve-tescil-davasi", label: "Tapu İptali ve Tescil Davası" }, { href: "/calisma-alanlari/gayrimenkul-hukuku", label: "Gayrimenkul Hukuku" }]} />
         </div>
       </main>
 

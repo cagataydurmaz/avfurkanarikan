@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { umraniyeMiras } from "./miras/umraniyeMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const umraniyeServices: PseoService[] = [
+const umraniyeBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const umraniyeServices: PseoService[] = [
     heroTitle: "Ümraniye Avukat",
     heroSubtitle:
       "1987 yılında Üsküdar'dan ayrılarak ilçe statüsü kazanan ve TÜİK'in 2025 verilerine göre 728.913 nüfusuyla İstanbul'un dördüncü kalabalık ilçesi olan Ümraniye'de avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti vermektedir; ilçenin 2013'te kapatılan kendi adliyesinin ardından dava ve icra dosyaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülmektedir.",
-    metaTitle: "Ümraniye Avukat",
+    metaTitle: "Ümraniye Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Ümraniye'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -71,7 +72,7 @@ export const umraniyeServices: PseoService[] = [
     heroTitle: "Ümraniye Boşanma Avukatı",
     heroSubtitle:
       "TÜİK verilerine göre İstanbul'un dördüncü kalabalık ilçesi olan ve İstiklal, Atatürk gibi yoğun apartman yerleşimine sahip mahalleleri barındıran Ümraniye'de anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal paylaşımı süreçlerinde avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) temsil sağlamaktadır; aile mahkemesi davaları, ilçenin kendi adliyesi bulunmadığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ümraniye Boşanma Avukatı",
+    metaTitle: "Ümraniye Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Ümraniye'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -121,7 +122,7 @@ export const umraniyeServices: PseoService[] = [
     heroTitle: "Ümraniye Ceza Avukatı",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olan avukat Furkan Arıkan, gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında Ümraniye'deki şüpheli ve sanıklara müdafilik hizmeti sunar; ilçe sınırlarında E ve T tipi kapalı ceza infaz kurumları bulunmakla birlikte dava dosyaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülmektedir.",
-    metaTitle: "Ümraniye Ceza Avukatı",
+    metaTitle: "Ümraniye Ceza Avukatı | Müdafilik",
     metaDescription:
       "Ümraniye'de soruşturma, kovuşturma, tutukluluğa itiraz ve ceza yargılamasının tüm aşamalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -171,7 +172,7 @@ export const umraniyeServices: PseoService[] = [
     heroTitle: "Ümraniye Gayrimenkul Avukatı",
     heroSubtitle:
       "Yukarı Dudullu Mahallesi'ndeki İMES Sanayi Sitesi ve Dudullu Organize Sanayi Bölgesi'nin yanı sıra yoğun konut yerleşimine sahip Ümraniye'de tapu, kat mülkiyeti ve kira uyuşmazlıklarında avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) danışmanlık sağlar; davalar Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ümraniye Gayrimenkul Avukatı",
+    metaTitle: "Ümraniye Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Ümraniye'de tapu iptali, kat mülkiyeti, sanayi sitesi taşınmazları ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -221,7 +222,7 @@ export const umraniyeServices: PseoService[] = [
     heroTitle: "Ümraniye İcra Avukatı",
     heroSubtitle:
       "İMES Sanayi Sitesi ve Dudullu Organize Sanayi Bölgesi'ndeki işletmeler arasındaki ticari alacaklardan bireysel alacaklara uzanan icra takiplerinde İstanbul Barosu sicil no 72621 ile kayıtlı avukat Furkan Arıkan (MEF Üniversitesi Hukuk Fakültesi, 2019) Ümraniye'deki taraflara temsil sağlar; takipler Kartal'daki İstanbul Anadolu Adliyesi bünyesindeki icra daireleri üzerinden yürütülür.",
-    metaTitle: "Ümraniye İcra Avukatı",
+    metaTitle: "Ümraniye İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Ümraniye'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -271,7 +272,7 @@ export const umraniyeServices: PseoService[] = [
     heroTitle: "Ümraniye İdare Avukatı",
     heroSubtitle:
       "İMES Sanayi Sitesi ve Dudullu Organize Sanayi Bölgesi'ndeki işyeri açma/çalışma ruhsatı uyuşmazlıklarından, 1960'lardan bu yana çarpık biçimde yapılaşan bölgelerdeki ıslah imar planı işlemlerine kadar geniş bir alanda avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) Ümraniye'deki müvekkillerine idari dava desteği sunar; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Ümraniye İdare Avukatı",
+    metaTitle: "Ümraniye İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Ümraniye'de idari işlemlerin iptali, imar uygulamalarına itiraz ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -321,7 +322,7 @@ export const umraniyeServices: PseoService[] = [
     heroTitle: "Ümraniye İş Hukuku Avukatı",
     heroSubtitle:
       "Elmalıkent Mahallesi'ndeki Ümraniye Eğitim ve Araştırma Hastanesi ile İMES Sanayi Sitesi ve Dudullu Organize Sanayi Bölgesi'ndeki imalat işletmelerinde çalışanların kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerinde İstanbul Barosu sicil no 72621 ile kayıtlı avukat Furkan Arıkan temsil sağlar; iş mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ümraniye İş Hukuku Avukatı",
+    metaTitle: "Ümraniye İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Ümraniye'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -371,7 +372,7 @@ export const umraniyeServices: PseoService[] = [
     heroTitle: "Ümraniye Kira ve Tahliye Avukatı",
     heroSubtitle:
       "TÜİK'in 2025 verilerine göre 728.913 nüfusuyla İstanbul'un dördüncü kalabalık ilçesi olan Ümraniye'de, M5 ve M8 metro hatlarının istasyonlarına yakın mahallelerdeki konut ve işyeri kiralamalarında, tahliye ve kira bedeli tespiti uyuşmazlıklarında avukat Furkan Arıkan (İstanbul Barosu, sicil no 72621) destek sağlar; sulh hukuk mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ümraniye Kira ve Tahliye Avukatı",
+    metaTitle: "Ümraniye Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Ümraniye'de kiracı tahliyesi, kira sözleşmesi uyuşmazlıkları ve kira bedeli tespitinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -421,7 +422,7 @@ export const umraniyeServices: PseoService[] = [
     heroTitle: "Ümraniye Vergi Avukatı",
     heroSubtitle:
       "Yamanevler Mahallesi'ndeki Ümraniye Vergi Dairesi Müdürlüğü'ne bağlı mükelleflerin vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde İstanbul Barosu sicil no 72621 ile kayıtlı avukat Furkan Arıkan temsil sağlar; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Ümraniye Vergi Avukatı",
+    metaTitle: "Ümraniye Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Ümraniye'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -513,3 +514,5 @@ export const umraniyeServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const umraniyeServices: PseoService[] = [...umraniyeBaseServices, umraniyeMiras];

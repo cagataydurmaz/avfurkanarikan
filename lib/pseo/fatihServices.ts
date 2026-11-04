@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { fatihMiras } from "./miras/fatihMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const fatihServices: PseoService[] = [
+const fatihBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih Avukat",
     heroSubtitle:
       "Fatih'te ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında temsil sağlayan bir hukuk bürosudur; ilçe İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Fatih Avukat",
+    metaTitle: "Fatih Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Fatih'te ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında avukatlık ve danışmanlık hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Fatih Boşanma Avukatı",
+    metaTitle: "Fatih Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Fatih'te anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma aşamalarının her birinde müdafilik hizmeti sunulur; kovuşturma İstanbul (Çağlayan) Adliyesi'nde yürütülür.",
-    metaTitle: "Fatih Ceza Avukatı",
+    metaTitle: "Fatih Ceza Avukatı | Müdafilik",
     metaDescription:
       "Fatih'te soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih Gayrimenkul Avukatı",
     heroSubtitle:
       "Tarihi doku koruma, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Fatih Gayrimenkul Avukatı",
+    metaTitle: "Fatih Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Fatih'te tapu iptali, korunması gerekli yapılar ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Fatih İcra Avukatı",
+    metaTitle: "Fatih İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Fatih'te icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih İdare Avukatı",
     heroSubtitle:
       "Belediye ve koruma kurulu işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Fatih İdare Avukatı",
+    metaTitle: "Fatih İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Fatih'te idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesindedir.",
-    metaTitle: "Fatih İş Hukuku Avukatı",
+    metaTitle: "Fatih İş Hukuku Avukatı | İşe İade ve Tazminat",
     metaDescription:
       "Fatih'te kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Fatih Kira ve Tahliye Avukatı",
+    metaTitle: "Fatih Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Fatih'te kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Fatih Vergi Avukatı",
+    metaTitle: "Fatih Vergi Avukatı | Vergi Cezası ve Uzlaşma",
     metaDescription:
       "Fatih'te vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -474,7 +475,7 @@ export const fatihServices: PseoService[] = [
     heroTitle: "Fatih Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Fatih Borçlar Hukuku Avukatı",
+    metaTitle: "Fatih Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Fatih'te sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const fatihServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const fatihServices: PseoService[] = [...fatihBaseServices, fatihMiras];

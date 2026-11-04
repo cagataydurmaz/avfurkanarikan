@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { atasehirMiras } from "./miras/atasehirMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const atasehirServices: PseoService[] = [
+const atasehirBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const atasehirServices: PseoService[] = [
     heroTitle: "Ataşehir Avukat",
     heroSubtitle:
       "2008 yılında Kadıköy, Üsküdar ve Ümraniye'den ayrılan mahallelerin birleşimiyle kurulan, planlı yerleşimi ve banka/şirket genel müdürlükleriyle bilinen Ataşehir'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında avukat Furkan Arıkan danışmanlık ve dava takibi hizmeti sunmaktadır; İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan Arıkan'ın dosyaları, ilçenin kendi adliyesi bulunmadığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ataşehir Avukat",
+    metaTitle: "Ataşehir Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Ataşehir'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const atasehirServices: PseoService[] = [
     heroTitle: "Ataşehir Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemesi davaları, ilçenin kendi adliyesi bulunmadığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ataşehir Boşanma Avukatı",
+    metaTitle: "Ataşehir Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Ataşehir'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const atasehirServices: PseoService[] = [
     heroTitle: "Ataşehir Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; ilçenin kendi adliyesi bulunmadığından ceza davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ataşehir Ceza Avukatı",
+    metaTitle: "Ataşehir Ceza Avukatı | Müdafilik",
     metaDescription:
       "Ataşehir'de soruşturma, kovuşturma, tutukluluğa itiraz ve ceza yargılamasının tüm aşamalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const atasehirServices: PseoService[] = [
     heroTitle: "Ataşehir Gayrimenkul Avukatı",
     heroSubtitle:
       "Site ve rezidans projelerindeki kat mülkiyeti uyuşmazlıkları, plaza/ofis kiralamaları ve tapu işlemlerinde hukuki destek sağlanır; davalar Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ataşehir Gayrimenkul Avukatı",
+    metaTitle: "Ataşehir Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Ataşehir'de kat mülkiyeti, tapu iptali, kira uyuşmazlıkları ve plaza/ofis taşınmazlarına ilişkin gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const atasehirServices: PseoService[] = [
     heroTitle: "Ataşehir İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri, ilçenin kendi adliyesi bulunmadığından Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Ataşehir İcra Avukatı",
+    metaTitle: "Ataşehir İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Ataşehir'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const atasehirServices: PseoService[] = [
     heroTitle: "Ataşehir İdare Avukatı",
     heroSubtitle:
       "İmar uygulamaları, kentsel dönüşüm işlemleri ve belediye kararlarına karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Ataşehir İdare Avukatı",
+    metaTitle: "Ataşehir İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Ataşehir'de idari işlemlerin iptali, imar uygulamalarına itiraz ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const atasehirServices: PseoService[] = [
     heroTitle: "Ataşehir İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemesi davaları, ilçenin kendi adliyesi bulunmadığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ataşehir İş Hukuku Avukatı",
+    metaTitle: "Ataşehir İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Ataşehir'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const atasehirServices: PseoService[] = [
     heroTitle: "Ataşehir Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Site ve rezidans konutlarının kiralanması, konut tahliyesi ve kira bedeli tespiti uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Ataşehir Kira ve Tahliye Avukatı",
+    metaTitle: "Ataşehir Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Ataşehir'de kiracı tahliyesi, site/rezidans kiralama sözleşmesi uyuşmazlıkları ve kira bedeli tespitinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const atasehirServices: PseoService[] = [
     heroTitle: "Ataşehir Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Ataşehir Vergi Avukatı",
+    metaTitle: "Ataşehir Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Ataşehir'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const atasehirServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const atasehirServices: PseoService[] = [...atasehirBaseServices, atasehirMiras];

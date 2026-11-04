@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { kadikoyMiras } from "./miras/kadikoyMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const kadikoyServices: PseoService[] = [
+const kadikoyBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy Avukat",
     heroSubtitle:
       "Kadıköy'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan tarafından yürütülmektedir; kültür-sanat yaşamı ve yüksek eğitim düzeyiyle bilinen ilçenin kendine ait bir adliyesi bulunmadığından davalar Kartal'daki İstanbul Anadolu Adliyesi'nde görülmektedir.",
-    metaTitle: "Kadıköy Avukat",
+    metaTitle: "Kadıköy Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Kadıköy'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy Boşanma Avukatı",
     heroSubtitle:
       "Kadıköy'de anlaşmalı veya çekişmeli şekilde açılan boşanma davalarında velayet, nafaka ve mal rejimi tasfiyesi taleplerine ilişkin temsil sağlanmaktadır; aile mahkemesi, ilçenin bağlı olduğu Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Kadıköy Boşanma Avukatı",
+    metaTitle: "Kadıköy Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Kadıköy'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma, tutuklama ve kovuşturma aşamalarının tamamında müdafilik hizmeti verilir; ilçenin ayrı bir adliyesi bulunmadığından ağır ceza davaları dahil tüm ceza davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Kadıköy Ceza Avukatı",
+    metaTitle: "Kadıköy Ceza Avukatı | Müdafilik",
     metaDescription:
       "Kadıköy'de soruşturma, kovuşturma, tutukluluğa itiraz ve asayiş olaylarına ilişkin ceza uyuşmazlıklarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy Gayrimenkul Avukatı",
     heroSubtitle:
       "Fikirtepe kentsel dönüşüm alanındaki kat karşılığı inşaat sözleşmeleri, hak sahipliği uyuşmazlıkları ve sahil şeridindeki taşınmaz alım-satımlarında hukuki destek sağlanır; davalar Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Kadıköy Gayrimenkul Avukatı",
+    metaTitle: "Kadıköy Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Kadıköy'de Fikirtepe kentsel dönüşümü, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy İcra Avukatı",
     heroSubtitle:
       "Ticari alacakların ve bireysel borçların tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Kadıköy İcra Avukatı",
+    metaTitle: "Kadıköy İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Kadıköy'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy İdare Avukatı",
     heroSubtitle:
       "Fikirtepe kentsel dönüşüm sürecindeki idari işlemler, belediye imar uygulamaları ve idari para cezalarına karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Kadıköy İdare Avukatı",
+    metaTitle: "Kadıköy İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Kadıköy'de idari işlemlerin iptali, kentsel dönüşüm sürecine ilişkin idari uyuşmazlıklar ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy İş Hukuku Avukatı",
     heroSubtitle:
       "Kozyatağı'ndaki plaza ve ofis merkezlerinde çalışanlar dahil kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemesi Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Kadıköy İş Hukuku Avukatı",
+    metaTitle: "Kadıköy İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Kadıköy'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Moda ve Caferağa gibi yoğun kiracı nüfusuna sahip mahallelerdeki konut kiraları, Bağdat Caddesi üzerindeki işyeri kiralamaları ve tahliye uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemesi Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Kadıköy Kira ve Tahliye Avukatı",
+    metaTitle: "Kadıköy Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Kadıköy'de kiracı tahliyesi, konut ve işyeri kira sözleşmesi uyuşmazlıkları ve kira bedeli tespitinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy Vergi Avukatı",
     heroSubtitle:
       "Kozyatağı'ndaki şirketler ve Bağdat Caddesi üzerindeki işletmelere yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Kadıköy Vergi Avukatı",
+    metaTitle: "Kadıköy Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Kadıköy'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -472,7 +473,7 @@ export const kadikoyServices: PseoService[] = [
     heroTitle: "Kadıköy Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Fikirtepe kentsel dönüşümündeki kat karşılığı inşaat sözleşmesi uyuşmazlıkları, ticari alacak talepleri ve tazminat davalarında temsil sağlanır; asliye hukuk mahkemesi Kartal'daki İstanbul Anadolu Adliyesi bünyesindedir.",
-    metaTitle: "Kadıköy Borçlar Hukuku Avukatı",
+    metaTitle: "Kadıköy Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Kadıköy'de kat karşılığı inşaat sözleşmeleri, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const kadikoyServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const kadikoyServices: PseoService[] = [...kadikoyBaseServices, kadikoyMiras];

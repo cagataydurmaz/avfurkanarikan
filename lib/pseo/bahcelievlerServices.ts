@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { bahcelievlerMiras } from "./miras/bahcelievlerMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const bahcelievlerServices: PseoService[] = [
+const bahcelievlerBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const bahcelievlerServices: PseoService[] = [
     heroTitle: "Bahçelievler Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, İstanbul'un ilk planlı yerleşimlerinden biri olan Bahçelievler'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Bakırköy Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Bahçelievler Avukat",
+    metaTitle: "Bahçelievler Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Bahçelievler'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const bahcelievlerServices: PseoService[] = [
     heroTitle: "Bahçelievler Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Bahçelievler Boşanma Avukatı",
+    metaTitle: "Bahçelievler Boşanma Avukatı | Velayet",
     metaDescription:
       "Bahçelievler'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const bahcelievlerServices: PseoService[] = [
     heroTitle: "Bahçelievler Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Bakırköy Adliyesi'nde yürütülür.",
-    metaTitle: "Bahçelievler Ceza Avukatı",
+    metaTitle: "Bahçelievler Ceza Avukatı | Müdafilik",
     metaDescription:
       "Bahçelievler'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const bahcelievlerServices: PseoService[] = [
     heroTitle: "Bahçelievler Gayrimenkul Avukatı",
     heroSubtitle:
       "Kat mülkiyeti, apartman yönetimi, miras intikali ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul Bakırköy Adliyesi'nde görülür.",
-    metaTitle: "Bahçelievler Gayrimenkul Avukatı",
+    metaTitle: "Bahçelievler Gayrimenkul Avukatı | Tapu",
     metaDescription:
       "Bahçelievler'de kat mülkiyeti, tapu iptali, miras intikali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const bahcelievlerServices: PseoService[] = [
     heroTitle: "Bahçelievler İcra Avukatı",
     heroSubtitle:
       "Hizmet sektörü ve bireysel alacakların tahsili amacıyla icra takibi, itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Bahçelievler İcra Avukatı",
+    metaTitle: "Bahçelievler İcra Avukatı | Takip ve Haciz",
     metaDescription:
       "Bahçelievler'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const bahcelievlerServices: PseoService[] = [
     heroTitle: "Bahçelievler İdare Avukatı",
     heroSubtitle:
       "Belediye, imar ve ruhsat işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Bahçelievler İdare Avukatı",
+    metaTitle: "Bahçelievler İdare Avukatı | İptal Davası",
     metaDescription:
       "Bahçelievler'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const bahcelievlerServices: PseoService[] = [
     heroTitle: "Bahçelievler İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Bahçelievler İş Hukuku Avukatı",
+    metaTitle: "Bahçelievler İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Bahçelievler'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const bahcelievlerServices: PseoService[] = [
     heroTitle: "Bahçelievler Kira ve Tahliye Avukatı",
     heroSubtitle:
       "İstanbul Bakırköy Adliyesi bünyesindeki sulh hukuk mahkemelerinin yetkili olduğu kira bedeli tespiti, kira sözleşmesi uyuşmazlıkları ile konut ve ofis tahliyesi süreçlerinde hukuki destek verilmektedir.",
-    metaTitle: "Bahçelievler Kira ve Tahliye Avukatı",
+    metaTitle: "Bahçelievler Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Bahçelievler'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const bahcelievlerServices: PseoService[] = [
     heroTitle: "Bahçelievler Vergi Avukatı",
     heroSubtitle:
       "Yetkili mahkeme İstanbul vergi mahkemeleri olmak üzere, hizmet sektörü işletmelerini ilgilendiren vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde hukuki temsil sunulmaktadır.",
-    metaTitle: "Bahçelievler Vergi Avukatı",
+    metaTitle: "Bahçelievler Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Bahçelievler'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const bahcelievlerServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const bahcelievlerServices: PseoService[] = [...bahcelievlerBaseServices, bahcelievlerMiras];

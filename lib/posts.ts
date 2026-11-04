@@ -1,3 +1,8 @@
+import { post as p_fazla_mesai_alacagi_ve_ispati } from "./posts-new/fazla-mesai-alacagi-ve-ispati";
+import { post as p_ihtiyac_nedeniyle_tahliye_davasi } from "./posts-new/ihtiyac-nedeniyle-tahliye-davasi";
+import { post as p_kira_artis_orani_nasil_hesaplanir } from "./posts-new/kira-artis-orani-nasil-hesaplanir";
+import { post as p_mirasin_reddi_nasil_yapilir } from "./posts-new/mirasin-reddi-nasil-yapilir";
+import { post as p_trafik_kazasi_tazminati_ve_arac_deger_kaybi } from "./posts-new/trafik-kazasi-tazminati-ve-arac-deger-kaybi";
 export interface Post {
   slug: string;
   title: string;
@@ -10,7 +15,7 @@ export interface Post {
   faq?: Array<{ question: string; answer: string }>;
 }
 
-export const posts: Post[] = [
+const basePosts: Post[] = [
   {
     slug: "ceza-hukukunda-etkin-pismanlik",
     title: "Ceza Hukukunda Etkin Pişmanlık Nedir ve Nasıl Uygulanır?",
@@ -440,8 +445,8 @@ export const posts: Post[] = [
     </tr>
     <tr>
       <td>Yeni malikin gereksinimi (TBK m. 351)</td>
-      <td>Taşınmazın ediniminden sonra 6 ay bildirim, 1 ay sonra dava</td>
-      <td>6 aylık bildirimin ardından</td>
+      <td>Edinme tarihinden başlayarak 1 ay içinde yazılı bildirim; sözleşme, 6 ay sonra açılacak davayla sona erdirilir</td>
+      <td>Alternatif yol: sözleşme süresinin bitiminden başlayarak 1 ay içinde dava</td>
     </tr>
   </tbody>
 </table>
@@ -2935,6 +2940,10 @@ export const posts: Post[] = [
     `,
   },
 ];
+
+export const posts: Post[] = [p_fazla_mesai_alacagi_ve_ispati, p_ihtiyac_nedeniyle_tahliye_davasi, p_kira_artis_orani_nasil_hesaplanir, p_mirasin_reddi_nasil_yapilir, p_trafik_kazasi_tazminati_ve_arac_deger_kaybi, ...basePosts].sort(
+  (a, b) => b.date.localeCompare(a.date)
+);
 
 export function getPostBySlug(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);

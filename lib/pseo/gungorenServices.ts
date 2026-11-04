@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { gungorenMiras } from "./miras/gungorenMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const gungorenServices: PseoService[] = [
+const gungorenBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const gungorenServices: PseoService[] = [
     heroTitle: "Güngören Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, dünyanın önemli toptan tekstil çarşılarından birine ev sahipliği yapan, yüzölçümü bakımından Türkiye'nin en küçük ilçesi olan Güngören'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Bakırköy Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Güngören Avukat",
+    metaTitle: "Güngören Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Güngören'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const gungorenServices: PseoService[] = [
     heroTitle: "Güngören Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Güngören Boşanma Avukatı",
+    metaTitle: "Güngören Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Güngören'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const gungorenServices: PseoService[] = [
     heroTitle: "Güngören Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Bakırköy Adliyesi'nde yürütülür.",
-    metaTitle: "Güngören Ceza Avukatı",
+    metaTitle: "Güngören Ceza Avukatı | Müdafilik",
     metaDescription:
       "Güngören'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const gungorenServices: PseoService[] = [
     heroTitle: "Güngören Gayrimenkul Avukatı",
     heroSubtitle:
       "Çarşı dükkanı, tapu uyuşmazlıkları ve konut ilişkilerinde hukuki destek sağlanır; davalar İstanbul Bakırköy Adliyesi'nde görülür.",
-    metaTitle: "Güngören Gayrimenkul Avukatı",
+    metaTitle: "Güngören Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Güngören'de çarşı dükkanı kiraları, tapu iptali ve konut uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const gungorenServices: PseoService[] = [
     heroTitle: "Güngören İcra Avukatı",
     heroSubtitle:
       "Toptan tekstil ticaretinden doğan alacakların tahsili amacıyla icra takibi, itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Güngören İcra Avukatı",
+    metaTitle: "Güngören İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Güngören'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const gungorenServices: PseoService[] = [
     heroTitle: "Güngören İdare Avukatı",
     heroSubtitle:
       "Belediye, imar ve işyeri ruhsat işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Güngören İdare Avukatı",
+    metaTitle: "Güngören İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Güngören'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const gungorenServices: PseoService[] = [
     heroTitle: "Güngören İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Güngören İş Hukuku Avukatı",
+    metaTitle: "Güngören İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Güngören'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const gungorenServices: PseoService[] = [
     heroTitle: "Güngören Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Çarşı dükkanı ve konut tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Bakırköy Adliyesi'ndedir.",
-    metaTitle: "Güngören Kira ve Tahliye Avukatı",
+    metaTitle: "Güngören Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Güngören'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const gungorenServices: PseoService[] = [
     heroTitle: "Güngören Vergi Avukatı",
     heroSubtitle:
       "Tekstil çarşısı işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Güngören Vergi Avukatı",
+    metaTitle: "Güngören Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Güngören'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const gungorenServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const gungorenServices: PseoService[] = [...gungorenBaseServices, gungorenMiras];

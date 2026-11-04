@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -6,7 +7,7 @@ import IslahHarciForm from "@/components/calculators/IslahHarciForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Islah Harcı Hesaplama",
+  title: "Islah Harcı Hesaplama 2026",
   description:
     "Dava değerinin ıslah yoluyla artırılması durumunda, artan kısım üzerinden ödenecek ıslah harcını hesaplayın.",
   alternates: {
@@ -96,6 +97,8 @@ export default function IslahHarciHesaplamaPage() {
           <p className="text-xs leading-relaxed mt-8" style={{ color: "#8A9A89" }}>
             Bu araç bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz.
           </p>
+
+          <ToolRelated links={[{ href: "/dava-harci-hesaplama", label: "Dava Harcı Hesaplama" }, { href: "/calisma-alanlari/borclar-hukuku", label: "Borçlar Hukuku: alacak davaları ve zamanaşımı" }]} />
         </div>
       </main>
 

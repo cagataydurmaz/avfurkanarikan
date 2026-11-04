@@ -8,7 +8,7 @@ import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 import { KIDEM_TAVANI, KIDEM_TAVANI_PERIOD } from "@/lib/calculators/kidemTazminati";
 
 export const metadata: Metadata = {
-  title: "Kıdem Tazminatı Hesaplama",
+  title: "Kıdem Tazminatı Hesaplama 2026 (Tavan Dahil)",
   description: `İşe giriş/çıkış tarihleri ve brüt ücrete göre net kıdem tazminatınızı hesaplayın. ${KIDEM_TAVANI_PERIOD} tavanı (${KIDEM_TAVANI.toLocaleString("tr-TR")} TL) dahil.`,
   alternates: {
     canonical: "/kidem-tazminati-hesaplama",

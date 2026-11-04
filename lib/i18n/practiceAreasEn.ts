@@ -364,8 +364,8 @@ export const practiceAreasEn: Record<string, PracticeAreaTranslation> = {
       {
         heading: "Renunciation of Inheritance",
         paragraphs: [
-          "An heir is not obliged to accept an estate that is overburdened with debt. The right to renounce inheritance is regulated in Article 605 of the TMK. Renunciation may be made within 3 months of the testator's death, either by written declaration to the civil court of peace or through the civil registry office.",
-          "An heir who lets this period lapse is deemed to have accepted the inheritance. An heir who exercises the right of active renunciation is not personally liable for the testator's debts. An heir who accepted the inheritance without being aware of a debt's existence may request an extension from the judge even if the 3-month period has passed.",
+          "An heir is not obliged to accept an estate that is overburdened with debt. The right to renounce inheritance is regulated in Article 605 et seq. of the TMK. Under Article 606, the renunciation period is 3 months; for statutory heirs it starts from the moment they learn of the testator's death. The declaration of renunciation is made verbally or in writing to the civil court of peace and must be unconditional (Article 609).",
+          "For an heir who does not declare renunciation within the period, the right of renunciation lapses. An heir who exercises the right of renunciation is not personally liable for the testator's debts. Where there is an important reason, the judge may extend the period or grant a new one (Article 615).",
         ],
       },
     ],
@@ -373,7 +373,7 @@ export const practiceAreasEn: Record<string, PracticeAreaTranslation> = {
       {
         question: "I want to renounce an inheritance — how can I do this?",
         answer:
-          "An application must be made to the civil court of peace within 3 months of the testator's death, declaring renunciation. The declaration may also be made verbally; the court records it in the minutes. The 3-month period may be extended for justified reasons, but it is advisable not to delay the application in order to avoid missing the deadline.",
+          "The renunciation period is 3 months and starts from the moment you learn of the testator's death (TMK Art. 606). The declaration is made verbally or in writing to the civil court of peace, and the court records it in the minutes. Where there is an important reason, the judge may extend the period (Art. 615); it is still advisable not to delay the application.",
       },
       {
         question: "My reserved share has been violated — what can I do?",

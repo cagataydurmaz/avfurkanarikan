@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -6,7 +7,7 @@ import TrafikKazasiForm from "@/components/calculators/TrafikKazasiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Trafik Kazası Tazminatı Hesaplama",
+  title: "Trafik Kazası Tazminatı: Zamanaşımı Süresi Hesaplama",
   description:
     "Trafik kazası sonrası talep edilebilecek tazminat kalemlerini ve dava açma hakkınızın ne zaman sona ereceğini (zamanaşımını) öğrenin.",
   alternates: {
@@ -124,6 +125,8 @@ export default function TrafikKazasiHesaplamaPage() {
             tutarını hesaplamaz. Tazminat miktarı somut olayın delillerine ve bilirkişi
             raporlarına göre belirlenir; bir avukata danışmanız önerilir.
           </p>
+
+          <ToolRelated links={[{ href: "/calisma-alanlari/tazminat-hukuku", label: "Tazminat Hukuku: koşullar, kalemler ve zamanaşımı" }, { href: "/arac-deger-kaybi-hesaplama", label: "Araç Değer Kaybı Dava Süresi Hesaplama" }]} />
         </div>
       </main>
 

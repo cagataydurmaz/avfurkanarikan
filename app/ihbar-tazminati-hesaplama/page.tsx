@@ -7,7 +7,7 @@ import IhbarTazminatiForm from "@/components/calculators/IhbarTazminatiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "İhbar Tazminatı Hesaplama",
+  title: "İhbar Tazminatı Hesaplama (Süre ve Tutar)",
   description:
     "İşe giriş/çıkış tarihleri ve brüt ücrete göre kıdeme dayalı ihbar süresini ve brüt ihbar tazminatınızı hesaplayın.",
   alternates: {

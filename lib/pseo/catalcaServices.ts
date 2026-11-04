@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { catalcaMiras } from "./miras/catalcaMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const catalcaServices: PseoService[] = [
+const catalcaBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, yüzölçümü bakımından İstanbul'un en büyük ilçesi olan, orman ve mandıracılık kültürüyle tanınan Çatalca'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Büyükçekmece Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Çatalca Avukat",
+    metaTitle: "Çatalca Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Çatalca'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca Boşanma Avukatı",
     heroSubtitle:
       "Çatalca'daki boşanma, velayet, nafaka ve mal paylaşımı davalarına İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemelerinde bakılır; anlaşmalı ve çekişmeli süreçlerde temsil sağlanır.",
-    metaTitle: "Çatalca Boşanma Avukatı",
+    metaTitle: "Çatalca Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Çatalca'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Büyükçekmece Adliyesi'nde yürütülür.",
-    metaTitle: "Çatalca Ceza Avukatı",
+    metaTitle: "Çatalca Ceza Avukatı | Müdafilik",
     metaDescription:
       "Çatalca'da soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -173,7 +174,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca Gayrimenkul Avukatı",
     heroSubtitle:
       "Tarım ve orman arazisi, mera tahsisi ve tapu uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Büyükçekmece Adliyesi'nde görülür.",
-    metaTitle: "Çatalca Gayrimenkul Avukatı",
+    metaTitle: "Çatalca Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Çatalca'da tarım ve orman arazisi, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -223,7 +224,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca İcra Avukatı",
     heroSubtitle:
       "İcra daireleri İstanbul Büyükçekmece Adliyesi bünyesindedir; alacak tahsili amacıyla başlatılan icra takibi, ödeme emrine itiraz ve haciz aşamalarında temsil sağlanır.",
-    metaTitle: "Çatalca İcra Avukatı",
+    metaTitle: "Çatalca İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Çatalca'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -273,7 +274,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca İdare Avukatı",
     heroSubtitle:
       "Orman alanı, mera tahsisi ve belediye işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Çatalca İdare Avukatı",
+    metaTitle: "Çatalca İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Çatalca'da idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -323,7 +324,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Çatalca İş Hukuku Avukatı",
+    metaTitle: "Çatalca İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Çatalca'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -373,7 +374,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Konut ve tarımsal işletme tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi'ndedir.",
-    metaTitle: "Çatalca Kira ve Tahliye Avukatı",
+    metaTitle: "Çatalca Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Çatalca'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -423,7 +424,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca Vergi Avukatı",
     heroSubtitle:
       "Tarım ve hayvancılık işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Çatalca Vergi Avukatı",
+    metaTitle: "Çatalca Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Çatalca'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -473,7 +474,7 @@ export const catalcaServices: PseoService[] = [
     heroTitle: "Çatalca Borçlar Hukuku Avukatı",
     heroSubtitle:
       "İstanbul Büyükçekmece Adliyesi bünyesindeki ticaret ve asliye hukuk mahkemelerinde görülen süt ürünleri tedarik sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanmaktadır.",
-    metaTitle: "Çatalca Borçlar Hukuku Avukatı",
+    metaTitle: "Çatalca Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Çatalca'da sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -515,3 +516,5 @@ export const catalcaServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const catalcaServices: PseoService[] = [...catalcaBaseServices, catalcaMiras];

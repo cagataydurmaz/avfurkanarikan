@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { pendikMiras } from "./miras/pendikMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const pendikServices: PseoService[] = [
+const pendikBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik Avukat",
     heroSubtitle:
       "Sabiha Gökçen Havalimanı'nın konumlandığı Kurtköy'den sahil şeridindeki Güzelyalı'ya, Marmaray ve YHT hattının kesiştiği Pendik istasyon çevresinden sanayi sitelerinin yoğunlaştığı Kurtköy'e uzanan Pendik'te ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında avukat Furkan Arıkan danışmanlık ve dava takibi hizmeti sunmaktadır; İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı olan Arıkan'ın dosyaları, ilçenin kendi adliyesi 2013'te kapatıldığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Pendik Avukat",
+    metaTitle: "Pendik Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Pendik'te ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemesi davaları, ilçenin kendi adliyesi 2013'te kapatıldığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Pendik Boşanma Avukatı",
+    metaTitle: "Pendik Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Pendik'te anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik İdare Avukatı",
     heroSubtitle:
       "Sabiha Gökçen Havalimanı çevresindeki irtifak/yükseklik kısıtlaması kararlarından Kurtköy'deki hızlı yapılaşmaya bağlı ruhsat uyuşmazlıklarına kadar geniş bir alanda idari dava desteği sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Pendik İdare Avukatı",
+    metaTitle: "Pendik İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Pendik'te idari işlemlerin iptali, imar uygulamalarına itiraz ve tazminat davalarında avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemesi davaları, ilçenin kendi adliyesi 2013'te kapatıldığından Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Pendik İş Hukuku Avukatı",
+    metaTitle: "Pendik İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Pendik'te kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Sahil şeridi ve Kurtköy çevresindeki konutların kiralanması, konut tahliyesi ve kira bedeli tespiti uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Pendik Kira ve Tahliye Avukatı",
+    metaTitle: "Pendik Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Pendik'te kiracı tahliyesi, kiralama sözleşmesi uyuşmazlıkları ve kira bedeli tespitinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Pendik Vergi Avukatı",
+    metaTitle: "Pendik Vergi Avukatı | Vergi Cezası ve Uzlaşma",
     metaDescription:
       "Pendik'te vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -472,7 +473,7 @@ export const pendikServices: PseoService[] = [
     heroTitle: "Pendik Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Ticari sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; asliye hukuk mahkemesi davaları Kartal'daki İstanbul Anadolu Adliyesi'nde görülür.",
-    metaTitle: "Pendik Borçlar Hukuku Avukatı",
+    metaTitle: "Pendik Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Pendik'te ticari sözleşmeler, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const pendikServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const pendikServices: PseoService[] = [...pendikBaseServices, pendikMiras];

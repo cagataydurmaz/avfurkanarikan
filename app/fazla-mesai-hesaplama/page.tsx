@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -6,7 +7,7 @@ import FazlaMesaiForm from "@/components/calculators/FazlaMesaiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Fazla Mesai Ücreti Hesaplama",
+  title: "Fazla Mesai Ücreti Hesaplama (%50 Zamlı)",
   description:
     "İş Kanunu m.41 uyarınca %50 zamlı fazla mesai ücretinizi aylık brüt ücretinize göre hesaplayın.",
   alternates: {
@@ -106,6 +107,8 @@ export default function FazlaMesaiHesaplamaPage() {
           <p className="text-xs leading-relaxed mt-8" style={{ color: "#8A9A93" }}>
             Bu araç bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz.
           </p>
+
+          <ToolRelated links={[{ href: "/calisma-alanlari/is-hukuku", label: "İş Hukuku: fesih, kıdem tazminatı ve işçi alacakları" }, { href: "/kidem-tazminati-hesaplama", label: "Kıdem Tazminatı Hesaplama" }, { href: "/makaleler/ise-iade-davasi", label: "İşe İade Davası: koşullar, süre ve süreç" }]} />
         </div>
       </main>
 

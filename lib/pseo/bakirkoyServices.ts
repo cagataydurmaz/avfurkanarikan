@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { bakirkoyMiras } from "./miras/bakirkoyMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const bakirkoyServices: PseoService[] = [
+const bakirkoyBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const bakirkoyServices: PseoService[] = [
     heroTitle: "Bakırköy Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, İstanbul Bakırköy Adliyesi'nin bizzat bulunduğu, köklü ve sahil şeridine sahip Bakırköy'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır.",
-    metaTitle: "Bakırköy Avukat",
+    metaTitle: "Bakırköy Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Bakırköy'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const bakirkoyServices: PseoService[] = [
     heroTitle: "Bakırköy Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri bizzat Bakırköy'de bulunan İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Bakırköy Boşanma Avukatı",
+    metaTitle: "Bakırköy Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Bakırköy'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const bakirkoyServices: PseoService[] = [
     heroTitle: "Bakırköy Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; nöbetçi savcılık ve kovuşturma bizzat Bakırköy'deki adliyede yürütülür.",
-    metaTitle: "Bakırköy Ceza Avukatı",
+    metaTitle: "Bakırköy Ceza Avukatı | Müdafilik",
     metaDescription:
       "Bakırköy'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const bakirkoyServices: PseoService[] = [
     heroTitle: "Bakırköy Gayrimenkul Avukatı",
     heroSubtitle:
       "Toplu yapı ve site yönetimi, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar bizzat ilçede bulunan İstanbul Bakırköy Adliyesi'nde görülür.",
-    metaTitle: "Bakırköy Gayrimenkul Avukatı",
+    metaTitle: "Bakırköy Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Bakırköy'de toplu yapı/site yönetimi, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const bakirkoyServices: PseoService[] = [
     heroTitle: "Bakırköy İcra Avukatı",
     heroSubtitle:
       "İcra daireleri, ilçe sınırları içinde yer alan İstanbul Bakırköy Adliyesi bünyesindedir; alacakların tahsili amacıyla yürütülen icra takibi, itiraz ve haciz süreçlerinde temsil sağlanır.",
-    metaTitle: "Bakırköy İcra Avukatı",
+    metaTitle: "Bakırköy İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Bakırköy'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const bakirkoyServices: PseoService[] = [
     heroTitle: "Bakırköy İdare Avukatı",
     heroSubtitle:
       "İstanbul idare mahkemelerinin görev alanına giren belediye, imar ve sahil alanı işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır.",
-    metaTitle: "Bakırköy İdare Avukatı",
+    metaTitle: "Bakırköy İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Bakırköy'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const bakirkoyServices: PseoService[] = [
     heroTitle: "Bakırköy İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri bizzat ilçede bulunan İstanbul Bakırköy Adliyesi bünyesindedir.",
-    metaTitle: "Bakırköy İş Hukuku Avukatı",
+    metaTitle: "Bakırköy İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Bakırköy'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const bakirkoyServices: PseoService[] = [
     heroTitle: "Bakırköy Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Site içi konut ve işyeri tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri bizzat ilçede bulunan İstanbul Bakırköy Adliyesi'ndedir.",
-    metaTitle: "Bakırköy Kira ve Tahliye Avukatı",
+    metaTitle: "Bakırköy Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Bakırköy'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const bakirkoyServices: PseoService[] = [
     heroTitle: "Bakırköy Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Bakırköy Vergi Avukatı",
+    metaTitle: "Bakırköy Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Bakırköy'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const bakirkoyServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const bakirkoyServices: PseoService[] = [...bakirkoyBaseServices, bakirkoyMiras];

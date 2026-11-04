@@ -29,7 +29,7 @@ Site Türkçe yayınlanır; anasayfa ve çalışma alanı sayfalarında tarayıc
 
 ## İlçe Bazlı Hukuki Danışmanlık (pSEO)
 
-34 İstanbul ilçesinde ceza, aile (boşanma), gayrimenkul, iş, icra, idare, vergi, borçlar ve kira-tahliye hukuku alanlarında ilçeye özel danışmanlık sayfaları bulunmaktadır. Tüm ilçelerin listesi: https://furkanarikan.av.tr/ilceler — aşağıdaki her ilçe linki genel/hub sayfasıdır; her ilçenin ayrıca 9 alt hizmet sayfası vardır (ör. `/{ilçe}-ceza-avukati`, `/{ilçe}-bosanma-avukati`, `/{ilçe}-icra-avukati` vb.).
+39 İstanbul ilçesinde ceza, aile (boşanma), gayrimenkul, iş, icra, idare, vergi, borçlar, miras ve kira-tahliye hukuku alanlarında ilçeye özel danışmanlık sayfaları bulunmaktadır. Tüm ilçelerin listesi: https://furkanarikan.av.tr/ilceler — aşağıdaki her ilçe linki genel/hub sayfasıdır; her ilçenin ayrıca 10 alt hizmet sayfası vardır (ör. `/{ilçe}-miras-avukati`) (ör. `/{ilçe}-ceza-avukati`, `/{ilçe}-bosanma-avukati`, `/{ilçe}-icra-avukati` vb.).
 
 - [Arnavutköy Avukat](https://furkanarikan.av.tr/arnavutkoy-avukat)
 - [Ataşehir Avukat](https://furkanarikan.av.tr/atasehir-avukat)
@@ -57,6 +57,11 @@ Site Türkçe yayınlanır; anasayfa ve çalışma alanı sayfalarında tarayıc
 - [Maltepe Avukat](https://furkanarikan.av.tr/maltepe-avukat)
 - [Pendik Avukat](https://furkanarikan.av.tr/pendik-avukat)
 - [Sancaktepe Avukat](https://furkanarikan.av.tr/sancaktepe-avukat)
+- [Adalar Avukat](https://furkanarikan.av.tr/adalar-avukat)
+- [Çekmeköy Avukat](https://furkanarikan.av.tr/cekmekoy-avukat)
+- [Şile Avukat](https://furkanarikan.av.tr/sile-avukat)
+- [Sultanbeyli Avukat](https://furkanarikan.av.tr/sultanbeyli-avukat)
+- [Tuzla Avukat](https://furkanarikan.av.tr/tuzla-avukat)
 - [Sarıyer Avukat](https://furkanarikan.av.tr/sariyer-avukat)
 - [Silivri Avukat](https://furkanarikan.av.tr/silivri-avukat)
 - [Sultangazi Avukat](https://furkanarikan.av.tr/sultangazi-avukat)

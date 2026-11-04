@@ -6,7 +6,7 @@ import AdliyeBulucuForm from "@/components/calculators/AdliyeBulucuForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "İstanbul Adliye Bulucu",
+  title: "İstanbul Adliye Bulucu: İlçeye Göre Bağlı Adliye",
   description:
     "İlçenizi seçin, bağlı olduğunuz İstanbul adliyesinin adresini, telefonunu ve konumunu anında öğrenin.",
   alternates: {

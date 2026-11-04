@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -6,7 +7,7 @@ import IcraMasrafiForm from "@/components/calculators/IcraMasrafiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "İcra Masrafı Hesaplama",
+  title: "İcra Masrafı ve Harç Hesaplama 2026",
   description:
     "Takip türü, alacak tutarı ve tahsilat aşamasına göre icra takibi başlangıç masraflarını ve tahsil harcını hesaplayın.",
   alternates: {
@@ -94,6 +95,8 @@ export default function IcraMasrafiHesaplamaPage() {
             Bu araç bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz. Vekalet ücreti bu
             hesaplamaya dahil değildir, ayrı bir tarifeye tabidir.
           </p>
+
+          <ToolRelated links={[{ href: "/makaleler/icra-takibi-ve-borca-itiraz", label: "İcra Takibi ve Borca İtiraz: süreç ve süreler" }, { href: "/calisma-alanlari/icra-iflas-hukuku", label: "İcra ve İflas Hukuku" }]} />
         </div>
       </main>
 

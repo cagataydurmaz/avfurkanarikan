@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { sariyerMiras } from "./miras/sariyerMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const sariyerServices: PseoService[] = [
+const sariyerBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer Avukat",
     heroSubtitle:
       "Sarıyer'de yaşayan veya işyeri bulunan kişilere ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık verilir; ilçe İstanbul (Çağlayan) Adliyesi'ne bağlıdır.",
-    metaTitle: "Sarıyer Avukat",
+    metaTitle: "Sarıyer Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Sarıyer'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı konularında temsil sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Sarıyer Boşanma Avukatı",
+    metaTitle: "Sarıyer Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Sarıyer'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -123,7 +124,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul (Çağlayan) Adliyesi'nde yürütülür.",
-    metaTitle: "Sarıyer Ceza Avukatı",
+    metaTitle: "Sarıyer Ceza Avukatı | Müdafilik",
     metaDescription:
       "Sarıyer'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -174,7 +175,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer Gayrimenkul Avukatı",
     heroSubtitle:
       "Yalı, villa ve orman/sahil alanı statüsündeki taşınmazlara ilişkin uyuşmazlıklarda hukuki destek sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
-    metaTitle: "Sarıyer Gayrimenkul Avukatı",
+    metaTitle: "Sarıyer Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Sarıyer'de tapu iptali, yalı/villa uyuşmazlıkları ve kira ilişkilerinde gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -224,7 +225,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Sarıyer İcra Avukatı",
+    metaTitle: "Sarıyer İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Sarıyer'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -274,7 +275,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer İdare Avukatı",
     heroSubtitle:
       "Belediye, orman ve kıyı mevzuatına ilişkin idari işlemlere karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Sarıyer İdare Avukatı",
+    metaTitle: "Sarıyer İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Sarıyer'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -324,7 +325,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesindedir.",
-    metaTitle: "Sarıyer İş Hukuku Avukatı",
+    metaTitle: "Sarıyer İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Sarıyer'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -374,7 +375,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Kiracı tahliyesi, kira bedeli tespiti ve yalı/villa kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Sarıyer Kira ve Tahliye Avukatı",
+    metaTitle: "Sarıyer Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Sarıyer'de kiracı tahliyesi, kira bedeli tespiti ve villa/yalı kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -424,7 +425,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Sarıyer Vergi Avukatı",
+    metaTitle: "Sarıyer Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Sarıyer'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -474,7 +475,7 @@ export const sariyerServices: PseoService[] = [
     heroTitle: "Sarıyer Borçlar Hukuku Avukatı",
     heroSubtitle:
       "Sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
-    metaTitle: "Sarıyer Borçlar Hukuku Avukatı",
+    metaTitle: "Sarıyer Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Sarıyer'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -516,3 +517,5 @@ export const sariyerServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const sariyerServices: PseoService[] = [...sariyerBaseServices, sariyerMiras];

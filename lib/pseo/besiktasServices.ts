@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { besiktasMiras } from "./miras/besiktasMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const besiktasServices: PseoService[] = [
+const besiktasBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,9 +17,9 @@ export const besiktasServices: PseoService[] = [
     heroTitle: "Beşiktaş Avukat",
     heroSubtitle:
       "Ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında Beşiktaş ve çevresindeki müvekkillere hukuki danışmanlık ve dava takibi hizmeti sunulmaktadır. Yetkili adliye İstanbul (Çağlayan) Adliyesi'dir.",
-    metaTitle: "Beşiktaş Avukat",
+    metaTitle: "Beşiktaş Avukat | Hukuki Danışmanlık",
     metaDescription:
-      "Beşiktaş ve çevresinde ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında hukuki danışmanlık ve dava takibi.",
+      "Sinanpaşa'daki ofiste İstanbul Barosu'na kayıtlı avukat Furkan Arıkan; Beşiktaş'ta ceza, aile, gayrimenkul, iş, icra ve vergi hukukunda danışmanlık ve dava takibi.",
     aboutParagraph:
       "Furkan Arıkan, 2019 yılında MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuş ve İstanbul Barosu'na (Sicil No: 72621) kayıtlı olarak avukatlık mesleğini sürdürmektedir. Ceza, iş, gayrimenkul, aile, icra-iflas, idare, vergi ve borçlar hukuku alanlarında müvekkillere hukuki danışmanlık ve dava takibi hizmeti sunulmaktadır. Randevu bazlı çalışma prensibiyle her dosyaya ayrı zaman ayrılmaktadır.",
     highlightCards: [
@@ -73,7 +74,7 @@ export const besiktasServices: PseoService[] = [
     heroTitle: "Beşiktaş Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma davaları, velayet, nafaka ve mal rejimi tasfiyesi konularında hukuki danışmanlık ve dava takibi. Yetkili adliye İstanbul (Çağlayan) Adliyesi'dir.",
-    metaTitle: "Beşiktaş Boşanma Avukatı",
+    metaTitle: "Beşiktaş Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Beşiktaş'ta anlaşmalı ve çekişmeli boşanma, velayet, nafaka ve mal rejimi tasfiyesi konularında hukuki destek.",
     aboutParagraph:
@@ -128,7 +129,7 @@ export const besiktasServices: PseoService[] = [
     heroTitle: "Beşiktaş Ceza Avukatı",
     heroSubtitle:
       "Soruşturma ve kovuşturma aşamalarında müdafilik, ifade ve sorgu süreçlerinde hukuki destek, tutukluluk itirazları. Yetkili adliye İstanbul (Çağlayan) Adliyesi'dir.",
-    metaTitle: "Beşiktaş Ceza Avukatı",
+    metaTitle: "Beşiktaş Ceza Avukatı | Müdafilik",
     metaDescription:
       "Beşiktaş'ta soruşturma ve kovuşturma süreçlerinde müdafilik, tutukluluk itirazı ve ceza davası takibi.",
     aboutParagraph:
@@ -183,7 +184,7 @@ export const besiktasServices: PseoService[] = [
     heroTitle: "Beşiktaş Gayrimenkul Avukatı",
     heroSubtitle:
       "Tapu iptal ve tescil davaları, kira uyuşmazlıkları, tahliye süreçleri ve gayrimenkul alım-satım sözleşmelerinde hukuki destek. Yetkili adliye İstanbul (Çağlayan) Adliyesi'dir.",
-    metaTitle: "Beşiktaş Gayrimenkul Avukatı",
+    metaTitle: "Beşiktaş Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Beşiktaş'ta tapu iptali, kira uyuşmazlıkları, tahliye ve gayrimenkul sözleşmelerinde hukuki danışmanlık ve dava takibi.",
     aboutParagraph:
@@ -236,7 +237,7 @@ export const besiktasServices: PseoService[] = [
     heroTitle: "Beşiktaş İcra Avukatı",
     heroSubtitle:
       "İcra takibi başlatılması, itiraz, haciz ve ihale süreçlerinde hukuki destek. Yetkili adliye İstanbul (Çağlayan) Adliyesi'dir.",
-    metaTitle: "Beşiktaş İcra Avukatı",
+    metaTitle: "Beşiktaş İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Beşiktaş'ta icra takibi, itiraz, haciz ve alacak tahsili süreçlerinde hukuki danışmanlık ve dava takibi.",
     aboutParagraph:
@@ -289,7 +290,7 @@ export const besiktasServices: PseoService[] = [
     heroTitle: "Beşiktaş İdare Avukatı",
     heroSubtitle:
       "İdari işlemlerin iptali, tam yargı davaları ve idari başvuru süreçlerinde hukuki destek. Yetkili yargı mercii İstanbul idare mahkemeleridir.",
-    metaTitle: "Beşiktaş İdare Avukatı",
+    metaTitle: "Beşiktaş İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Beşiktaş'ta idari işlemlerin iptali, tam yargı davaları ve idareye karşı başvuru süreçlerinde hukuki danışmanlık.",
     aboutParagraph:
@@ -341,7 +342,7 @@ export const besiktasServices: PseoService[] = [
     heroTitle: "Beşiktaş İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem ve ihbar tazminatı, işe iade davası, fazla mesai ve iş sözleşmesi uyuşmazlıklarında hukuki destek. Yetkili adliye İstanbul (Çağlayan) Adliyesi'dir.",
-    metaTitle: "Beşiktaş İş Hukuku Avukatı",
+    metaTitle: "Beşiktaş İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Beşiktaş'ta kıdem-ihbar tazminatı, işe iade davası ve iş sözleşmesi uyuşmazlıklarında hukuki danışmanlık.",
     aboutParagraph:
@@ -394,7 +395,7 @@ export const besiktasServices: PseoService[] = [
     heroTitle: "Beşiktaş Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında hukuki destek. Yetkili adliye İstanbul (Çağlayan) Adliyesi'dir.",
-    metaTitle: "Beşiktaş Kira ve Tahliye Avukatı",
+    metaTitle: "Beşiktaş Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Beşiktaş'ta kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında hukuki danışmanlık.",
     aboutParagraph:
@@ -445,7 +446,7 @@ export const besiktasServices: PseoService[] = [
     heroTitle: "Beşiktaş Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatlarına itiraz, vergi cezalarına karşı dava ve uzlaşma süreçlerinde hukuki destek. Yetkili yargı mercii İstanbul vergi mahkemeleridir.",
-    metaTitle: "Beşiktaş Vergi Avukatı",
+    metaTitle: "Beşiktaş Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Beşiktaş'ta vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde hukuki danışmanlık.",
     aboutParagraph:
@@ -540,3 +541,5 @@ export const besiktasServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const besiktasServices: PseoService[] = [...besiktasBaseServices, besiktasMiras];

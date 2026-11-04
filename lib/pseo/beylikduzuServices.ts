@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { beylikduzuMiras } from "./miras/beylikduzuMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const beylikduzuServices: PseoService[] = [
+const beylikduzuBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const beylikduzuServices: PseoService[] = [
     heroTitle: "Beylikdüzü Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, konut kooperatifleriyle planlı biçimde gelişmiş, TÜYAP Fuar Merkezi'ne ve uzun bir sahil şeridine sahip Beylikdüzü'nde ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Büyükçekmece Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Beylikdüzü Avukat",
+    metaTitle: "Beylikdüzü Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Beylikdüzü'nde ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const beylikduzuServices: PseoService[] = [
     heroTitle: "Beylikdüzü Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Beylikdüzü Boşanma Avukatı",
+    metaTitle: "Beylikdüzü Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Beylikdüzü'nde anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -173,7 +174,7 @@ export const beylikduzuServices: PseoService[] = [
     heroTitle: "Beylikdüzü Gayrimenkul Avukatı",
     heroSubtitle:
       "Yapı kooperatifi ortaklığı, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul Büyükçekmece Adliyesi'nde görülür.",
-    metaTitle: "Beylikdüzü Gayrimenkul Avukatı",
+    metaTitle: "Beylikdüzü Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Beylikdüzü'nde yapı kooperatifi ortaklığı, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -223,7 +224,7 @@ export const beylikduzuServices: PseoService[] = [
     heroTitle: "Beylikdüzü İcra Avukatı",
     heroSubtitle:
       "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra daireleri İstanbul Büyükçekmece Adliyesi'ndedir.",
-    metaTitle: "Beylikdüzü İcra Avukatı",
+    metaTitle: "Beylikdüzü İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Beylikdüzü'nde icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -273,7 +274,7 @@ export const beylikduzuServices: PseoService[] = [
     heroTitle: "Beylikdüzü İdare Avukatı",
     heroSubtitle:
       "Beylikdüzü'nde belediye, imar ve kıyı alanına ilişkin idari işlemlere karşı açılan iptal ve tam yargı davalarında İstanbul idare mahkemeleri nezdinde temsil sağlanır.",
-    metaTitle: "Beylikdüzü İdare Avukatı",
+    metaTitle: "Beylikdüzü İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Beylikdüzü'nde idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -323,7 +324,7 @@ export const beylikduzuServices: PseoService[] = [
     heroTitle: "Beylikdüzü İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Beylikdüzü İş Hukuku Avukatı",
+    metaTitle: "Beylikdüzü İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Beylikdüzü'nde kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -373,7 +374,7 @@ export const beylikduzuServices: PseoService[] = [
     heroTitle: "Beylikdüzü Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Konut ve stant/işyeri tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi'ndedir.",
-    metaTitle: "Beylikdüzü Kira ve Tahliye Avukatı",
+    metaTitle: "Beylikdüzü Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Beylikdüzü'nde kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -423,7 +424,7 @@ export const beylikduzuServices: PseoService[] = [
     heroTitle: "Beylikdüzü Vergi Avukatı",
     heroSubtitle:
       "Vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Beylikdüzü Vergi Avukatı",
+    metaTitle: "Beylikdüzü Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Beylikdüzü'nde vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -515,3 +516,5 @@ export const beylikduzuServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const beylikduzuServices: PseoService[] = [...beylikduzuBaseServices, beylikduzuMiras];

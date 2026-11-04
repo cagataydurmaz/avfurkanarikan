@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { basaksehirMiras } from "./miras/basaksehirMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const basaksehirServices: PseoService[] = [
+const basaksehirBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const basaksehirServices: PseoService[] = [
     heroTitle: "Başakşehir Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, Avrupa'nın en büyük hastane komplekslerinden birine ve Bahçeşehir/Kayaşehir gibi planlı uydu kentlere ev sahipliği yapan Başakşehir'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Küçükçekmece Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Başakşehir Avukat",
+    metaTitle: "Başakşehir Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Başakşehir'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -122,7 +123,7 @@ export const basaksehirServices: PseoService[] = [
     heroTitle: "Başakşehir Ceza Avukatı",
     heroSubtitle:
       "Kovuşturma İstanbul Küçükçekmece Adliyesi'nde görülür; gözaltı ve ifade alma anından yargılamanın sonuna kadar sürecin her aşamasında müdafi olarak hukuki destek sağlanır.",
-    metaTitle: "Başakşehir Ceza Avukatı",
+    metaTitle: "Başakşehir Ceza Avukatı | Müdafilik",
     metaDescription:
       "Başakşehir'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const basaksehirServices: PseoService[] = [
     heroTitle: "Başakşehir Gayrimenkul Avukatı",
     heroSubtitle:
       "Uydu kent site teslimi, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul Küçükçekmece Adliyesi'nde görülür.",
-    metaTitle: "Başakşehir Gayrimenkul Avukatı",
+    metaTitle: "Başakşehir Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Başakşehir'de site teslimi, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const basaksehirServices: PseoService[] = [
     heroTitle: "Başakşehir İcra Avukatı",
     heroSubtitle:
       "İcra daireleri İstanbul Küçükçekmece Adliyesi bünyesindedir; alacağın tahsili amacıyla yürütülen icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır.",
-    metaTitle: "Başakşehir İcra Avukatı",
+    metaTitle: "Başakşehir İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Başakşehir'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const basaksehirServices: PseoService[] = [
     heroTitle: "Başakşehir İdare Avukatı",
     heroSubtitle:
       "Belediye, imar ve sağlık personeli işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Başakşehir İdare Avukatı",
+    metaTitle: "Başakşehir İdare Avukatı | İptal ve Tam Yargı",
     metaDescription:
       "Başakşehir'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const basaksehirServices: PseoService[] = [
     heroTitle: "Başakşehir İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Küçükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Başakşehir İş Hukuku Avukatı",
+    metaTitle: "Başakşehir İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Başakşehir'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const basaksehirServices: PseoService[] = [
     heroTitle: "Başakşehir Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Konut tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Küçükçekmece Adliyesi'ndedir.",
-    metaTitle: "Başakşehir Kira ve Tahliye Avukatı",
+    metaTitle: "Başakşehir Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Başakşehir'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const basaksehirServices: PseoService[] = [
     heroTitle: "Başakşehir Vergi Avukatı",
     heroSubtitle:
       "Yeni kurulan işletmelere yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Başakşehir Vergi Avukatı",
+    metaTitle: "Başakşehir Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Başakşehir'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const basaksehirServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const basaksehirServices: PseoService[] = [...basaksehirBaseServices, basaksehirMiras];

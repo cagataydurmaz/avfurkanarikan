@@ -1,4 +1,5 @@
 import type { PseoService } from "./types";
+import { buyukcekmeceMiras } from "./miras/buyukcekmeceMiras";
 
 const genelSurec = [
   { name: "İlk İletişim", text: "WhatsApp veya telefon aracılığıyla ulaşın, konunuzu kısaca paylaşın." },
@@ -7,7 +8,7 @@ const genelSurec = [
   { name: "Temsil ve Süreç Takibi", text: "Mahkeme ve idari merciler nezdinde temsil sağlanır, gelişmeler paylaşılır." },
 ];
 
-export const buyukcekmeceServices: PseoService[] = [
+const buyukcekmeceBaseServices: PseoService[] = [
   // ─────────────────────────── HUB ───────────────────────────
   {
     slug: "avukat",
@@ -16,7 +17,7 @@ export const buyukcekmeceServices: PseoService[] = [
     heroTitle: "Büyükçekmece Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, adını taşıdığı tarihi göle ve uzun bir Marmara sahiline sahip Büyükçekmece'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Büyükçekmece Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Büyükçekmece Avukat",
+    metaTitle: "Büyükçekmece Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Büyükçekmece'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -72,7 +73,7 @@ export const buyukcekmeceServices: PseoService[] = [
     heroTitle: "Büyükçekmece Boşanma Avukatı",
     heroSubtitle:
       "Anlaşmalı ve çekişmeli boşanma süreçlerinde velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; aile mahkemeleri bizzat ilçede bulunan İstanbul Büyükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Büyükçekmece Boşanma Avukatı",
+    metaTitle: "Büyükçekmece Boşanma Avukatı | Velayet",
     metaDescription:
       "Büyükçekmece'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -172,7 +173,7 @@ export const buyukcekmeceServices: PseoService[] = [
     heroTitle: "Büyükçekmece Gayrimenkul Avukatı",
     heroSubtitle:
       "Sahil ve göl çevresi taşınmazları, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar bizzat ilçede bulunan İstanbul Büyükçekmece Adliyesi'nde görülür.",
-    metaTitle: "Büyükçekmece Gayrimenkul Avukatı",
+    metaTitle: "Büyükçekmece Gayrimenkul Avukatı | Tapu",
     metaDescription:
       "Büyükçekmece'de sahil ve göl çevresi taşınmazlar, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
     aboutParagraph:
@@ -222,7 +223,7 @@ export const buyukcekmeceServices: PseoService[] = [
     heroTitle: "Büyükçekmece İcra Avukatı",
     heroSubtitle:
       "İcra daireleri, İstanbul Büyükçekmece Adliyesi bünyesinde ve dolayısıyla doğrudan ilçe içinde faaliyet göstermektedir; alacak tahsili amacıyla icra takibi başlatılması, ödeme emrine itiraz ve haciz süreçlerinin her aşamasında temsil sağlanmaktadır.",
-    metaTitle: "Büyükçekmece İcra Avukatı",
+    metaTitle: "Büyükçekmece İcra Avukatı | Takip ve Haciz",
     metaDescription:
       "Büyükçekmece'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -272,7 +273,7 @@ export const buyukcekmeceServices: PseoService[] = [
     heroTitle: "Büyükçekmece İdare Avukatı",
     heroSubtitle:
       "Göl koruma alanı, imar ve belediye işlemlerine karşı iptal ve tam yargı davalarında temsil sağlanır; yetkili mahkeme İstanbul idare mahkemeleridir.",
-    metaTitle: "Büyükçekmece İdare Avukatı",
+    metaTitle: "Büyükçekmece İdare Avukatı | İptal Davası",
     metaDescription:
       "Büyükçekmece'de idari işlemlerin iptali, tazminat davaları ve idareye itiraz süreçlerinde avukatlık hizmeti verilmektedir.",
     aboutParagraph:
@@ -322,7 +323,7 @@ export const buyukcekmeceServices: PseoService[] = [
     heroTitle: "Büyükçekmece İş Hukuku Avukatı",
     heroSubtitle:
       "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri bizzat ilçede bulunan İstanbul Büyükçekmece Adliyesi bünyesindedir.",
-    metaTitle: "Büyükçekmece İş Hukuku Avukatı",
+    metaTitle: "Büyükçekmece İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Büyükçekmece'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -372,7 +373,7 @@ export const buyukcekmeceServices: PseoService[] = [
     heroTitle: "Büyükçekmece Kira ve Tahliye Avukatı",
     heroSubtitle:
       "Konut ve yazlık tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri bizzat ilçede bulunan İstanbul Büyükçekmece Adliyesi'ndedir.",
-    metaTitle: "Büyükçekmece Kira ve Tahliye Avukatı",
+    metaTitle: "Büyükçekmece Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Büyükçekmece'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -422,7 +423,7 @@ export const buyukcekmeceServices: PseoService[] = [
     heroTitle: "Büyükçekmece Vergi Avukatı",
     heroSubtitle:
       "Restoran ve sahil işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
-    metaTitle: "Büyükçekmece Vergi Avukatı",
+    metaTitle: "Büyükçekmece Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Büyükçekmece'de vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
@@ -514,3 +515,5 @@ export const buyukcekmeceServices: PseoService[] = [
     relatedPostSlugs: ["sozlesmeden-donme-ve-tazminat"],
   },
 ];
+
+export const buyukcekmeceServices: PseoService[] = [...buyukcekmeceBaseServices, buyukcekmeceMiras];
