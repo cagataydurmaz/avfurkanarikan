@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { findMevzuat } from "@/lib/mevzuat";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
@@ -61,13 +62,14 @@ export default async function MakalePage({ params }: Props) {
       headline: post.title,
       description: post.excerpt,
       datePublished: post.date,
-      author: {
-        "@type": "Person",
-        name: "Av. Furkan Arıkan",
-        url: "https://furkanarikan.av.tr/#person",
-      },
+      dateModified: post.date,
+      image: "https://furkanarikan.av.tr/opengraph-image",
+      inLanguage: "tr-TR",
+      mainEntityOfPage: `https://furkanarikan.av.tr/makaleler/${post.slug}`,
+      author: { "@id": "https://furkanarikan.av.tr/#person" },
       publisher: {
         "@type": "Organization",
+        "@id": "https://furkanarikan.av.tr/#legalservice",
         name: "Av. Furkan Arıkan Hukuk Bürosu",
         url: "https://furkanarikan.av.tr",
       },
@@ -212,6 +214,38 @@ export default async function MakalePage({ params }: Props) {
             className="prose-law"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* Dayanak mevzuat (mevzuat.gov.tr) */}
+          {(() => {
+            const laws = findMevzuat(post.content);
+            if (laws.length === 0) return null;
+            return (
+              <aside
+                className="mt-10 p-5 rounded border text-sm"
+                style={{ borderColor: "#EBE0D4", backgroundColor: "#fff", color: "#3D5A50" }}
+              >
+                <p className="font-semibold mb-2" style={{ color: "#14342B" }}>
+                  Dayanak mevzuat
+                </p>
+                <ul className="space-y-1">
+                  {laws.map((l) => (
+                    <li key={l.key}>
+                      <a
+                        href={l.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline"
+                        style={{ color: "#14342B" }}
+                      >
+                        {l.name} (Kanun No. {l.number})
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-2 text-xs">Kaynak: mevzuat.gov.tr. Kanun metinleri değişebilir; işlem yapmadan önce güncel hâlini kontrol ediniz.</p>
+              </aside>
+            );
+          })()}
 
           {/* Author card */}
           <div

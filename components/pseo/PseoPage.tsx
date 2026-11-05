@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { PseoDistrict, PseoService } from "@/lib/pseo/types";
 import { getPostBySlug } from "@/lib/posts";
+import { COURTHOUSES } from "@/lib/calculators/adliyeBulucu";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
 import FloatingButtons from "@/components/FloatingButtons";
@@ -290,6 +291,9 @@ export default function PseoPage({
           </div>
         </section>
 
+        {/* 8b. LOCAL INSTITUTIONS */}
+        <LocalInfo district={district} />
+
         {/* 9. FAQ */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
           <div className="max-w-3xl mx-auto px-5 md:px-8">
@@ -401,5 +405,40 @@ export default function PseoPage({
 
       <FloatingButtons />
     </>
+  );
+}
+
+const UNVERIFIED_TAX_OFFICE = new Set(["sile", "tuzla", "sultanbeyli", "adalar", "cekmekoy"]);
+
+function LocalInfo({ district }: { district: PseoDistrict }) {
+  const court = COURTHOUSES[district.courthouse];
+  const showTax = !UNVERIFIED_TAX_OFFICE.has(district.slug);
+  const rows: { label: string; value: string }[] = [
+    {
+      label: "Bağlı adliye",
+      value: court ? `${court.name} — ${court.address}; tel: ${court.phone}` : district.courthouse,
+    },
+  ];
+  if (showTax) rows.push({ label: "Vergi dairesi", value: district.taxOffice });
+  rows.push({ label: `${district.name} mahalleleri`, value: district.neighborhoods.join(", ") });
+  return (
+    <section className="py-12" style={{ backgroundColor: "#fff" }}>
+      <div className="max-w-3xl mx-auto px-5 md:px-8">
+        <h2 className="text-xl font-bold mb-5" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+          {district.name} İçin Başvuru Yerleri ve Kurum Bilgileri
+        </h2>
+        <dl className="divide-y" style={{ borderColor: "#EBE0D4" }}>
+          {rows.map((r) => (
+            <div key={r.label} className="py-3 grid sm:grid-cols-3 gap-1 sm:gap-4" style={{ borderColor: "#EBE0D4" }}>
+              <dt className="text-xs font-semibold uppercase tracking-wide" style={{ color: "#C5A880" }}>{r.label}</dt>
+              <dd className="sm:col-span-2 text-sm leading-relaxed" style={{ color: "#2D4A3E" }}>{r.value}</dd>
+            </div>
+          ))}
+        </dl>
+        <p className="text-xs mt-4 leading-relaxed" style={{ color: "#8A9A93" }}>
+          Kurum bilgileri resmi kaynaklardan derlenmiştir; başvuru öncesinde güncel adres ve telefonu ilgili kurumdan teyit ediniz.
+        </p>
+      </div>
+    </section>
   );
 }
