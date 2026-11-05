@@ -80,7 +80,7 @@ export const practiceAreas: PracticeArea[] = [
       {
         question: "Müdafi tutmak zorunlu mu?",
         answer:
-          "Alt sınırı 5 yıl veya daha fazla hapis cezasını gerektiren suçlar ile çocuklar ve engelli kişiler söz konusu olduğunda müdafi zorunludur. Diğer durumlarda müdafi atanması isteğe bağlıdır; ekonomik yetersizlik halinde baro tarafından ücretsiz müdafi atanması talep edilebilir.",
+          "Alt sınırı beş yıldan fazla hapis cezasını gerektiren suçlar ile çocuklar ve engelli kişiler söz konusu olduğunda müdafi zorunludur. Diğer durumlarda müdafi atanması isteğe bağlıdır; ekonomik yetersizlik halinde baro tarafından ücretsiz müdafi atanması talep edilebilir.",
       },
       {
         question: "Şüpheli olarak ifade vermek zorunda mıyım?",

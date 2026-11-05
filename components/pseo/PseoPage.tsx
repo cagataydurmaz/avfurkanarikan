@@ -5,6 +5,7 @@ import { getPostBySlug } from "@/lib/posts";
 import { COURTHOUSES } from "@/lib/calculators/adliyeBulucu";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
+import MevzuatKaynak from "@/components/MevzuatKaynak";
 import FloatingButtons from "@/components/FloatingButtons";
 import TrackedLink from "@/components/TrackedLink";
 
@@ -293,6 +294,10 @@ export default function PseoPage({
 
         {/* 8b. LOCAL INSTITUTIONS */}
         <LocalInfo district={district} />
+
+        <div className="max-w-3xl mx-auto px-5 md:px-8 pb-2" style={{ backgroundColor: "#F4EDE4" }}>
+          <MevzuatKaynak text={JSON.stringify(service)} />
+        </div>
 
         {/* 9. FAQ */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>

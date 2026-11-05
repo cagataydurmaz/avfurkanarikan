@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import MevzuatKaynak from "@/components/MevzuatKaynak";
 import FloatingButtons from "@/components/FloatingButtons";
 import TrackedLink from "@/components/TrackedLink";
 import type { PracticeArea } from "@/lib/practiceAreas";
@@ -122,6 +123,8 @@ export default function PracticeAreaContent({
                   </article>
                 ))}
               </div>
+
+              <MevzuatKaynak text={JSON.stringify(area)} />
 
               {/* FAQ */}
               <section className="mt-16">
