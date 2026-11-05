@@ -375,7 +375,7 @@ export default function PseoPage({
       </main>
 
       {/* 11. FOOTER */}
-      <footer className="relative pt-8 pb-24 md:pb-8" style={{ backgroundColor: "#0d2420" }}>
+      <footer className="pt-8 pb-24 md:pb-8" style={{ backgroundColor: "#0d2420" }}>
         <div className="max-w-5xl mx-auto px-5 md:px-8 text-center">
           <p className="text-xs" style={{ color: "rgba(244,237,228,0.5)" }}>
             Av. Furkan Arıkan Hukuk Bürosu · İstanbul Barosu, Sicil No: 72621
@@ -383,13 +383,8 @@ export default function PseoPage({
           <p className="mt-2 text-xs max-w-lg mx-auto" style={{ color: "rgba(244,237,228,0.35)" }}>
             Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır ve hukuki tavsiye niteliği taşımaz.
           </p>
-        </div>
-        {/* Dev credit - subtle, aligned with floating action buttons (fixed bottom-6) */}
-        <div className="absolute bottom-6 inset-x-0 text-center">
-          <p className="text-[11px] tracking-wide" style={{ color: "rgba(197,168,128,0.5)" }}>
-            <span className="hidden min-[375px]:inline">
-              Site tasarımı ve geliştirmesi:{" "}
-            </span>
+          <p className="mt-4 text-[11px] tracking-wide" style={{ color: "rgba(197,168,128,0.5)" }}>
+            Site tasarımı ve geliştirmesi:{" "}
             <a
               href="https://ramsesdigital.com/"
               target="_blank"
