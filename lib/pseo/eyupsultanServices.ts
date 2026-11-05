@@ -16,7 +16,7 @@ const eyupsultanBaseServices: PseoService[] = [
     name: "Eyüpsultan Avukat",
     heroTitle: "Eyüpsultan Avukat",
     heroSubtitle:
-      "Eyüpsultan'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında temsil sağlanır; ilçe İstanbul (Çağlayan) Adliyesi'nin yargı çevresindedir.",
+      "Eyüpsultan'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında temsil sağlanır; ilçe İstanbul Gaziosmanpaşa Adliyesi'nin yargı çevresindedir.",
     metaTitle: "Eyüpsultan Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Eyüpsultan'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
@@ -45,17 +45,17 @@ const eyupsultanBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Eyüp Sultan Camii ve Türbesi çevresindeki dini ve tarihi dokusuyla bilinen Eyüpsultan, aynı zamanda Alibeyköy başta olmak üzere sanayi sonrası dönüşen ve yoğun konut alanına evrilen mahalleleriyle karma bir yapıya sahiptir.",
-      "İlçede yaşayan veya faaliyet gösterenlerin hukuki uyuşmazlıkları İstanbul (Çağlayan) Adliyesi'nde, vergisel işlemleri ise Eyüp Mal Müdürlüğü nezdinde yürütülür.",
+      "İlçede yaşayan veya faaliyet gösterenlerin hukuki uyuşmazlıkları İstanbul Gaziosmanpaşa Adliyesi'nde, vergisel işlemleri ise Eyüp Mal Müdürlüğü nezdinde yürütülür.",
     ],
     faqs: [
-      { question: "Eyüpsultan'daki davalara hangi adliye bakıyor?", answer: "Eyüpsultan, İstanbul (Çağlayan) Adliyesi'nin yargı çevresinde yer almaktadır." },
+      { question: "Eyüpsultan'daki davalara hangi adliye bakıyor?", answer: "Eyüpsultan, İstanbul Gaziosmanpaşa Adliyesi'nin yargı çevresinde yer almaktadır." },
       { question: "Randevu nasıl alınır?", answer: "WhatsApp veya telefonla iletişime geçilerek uygun bir görüşme günü belirlenir." },
       { question: "Hangi hukuk dallarında hizmet veriliyor?", answer: "Ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku kapsamında temsil sağlanmaktadır." },
       { question: "Büro Eyüpsultan'da mı bulunuyor?", answer: "Hayır, büro Beşiktaş/Sinanpaşa'dadır; Eyüpsultan'daki müvekkillere de aynı kapsamda hizmet verilir." },
       { question: "Danışmanlık ücreti nasıl belirlenir?", answer: "Dosyanın niteliğine göre değişir, randevu sırasında bilgi verilir." },
       { question: "Alibeyköy'deki sanayi dönüşümüyle ilgili hukuki destek var mı?", answer: "Evet, kentsel dönüşüm ve tapu işlemlerinde gayrimenkul hukuku kapsamında danışmanlık sağlanır." },
       { question: "Görüşmeler yüz yüze mi yapılıyor?", answer: "Tercihe göre yüz yüze veya çevrim içi olarak planlanabilir." },
-      { question: "Çağlayan Adliyesi'ne Eyüpsultan'dan ulaşım nasıl?", answer: "M7 hattının Alibeyköy istasyonu ve M1 hattının Bayrampaşa-Maltepe istasyonu üzerinden ulaşım sağlanabilir." },
+      { question: "Eyüpsultan davalarına bakan adliyenin adresi nedir?", answer: "İstanbul Gaziosmanpaşa Adliyesi, Merkez Mahallesi Eski Edirne Asfaltı No:32 Gaziosmanpaşa/İstanbul adresindedir. Duruşma salonu, kalem ve dosya bilgileri için başvurudan önce adliyenin güncel bilgilerini teyit etmeniz önerilir." },
       { question: "Acil bir gözaltı durumunda ne yapılmalı?", answer: "Vakit kaybetmeden telefon veya WhatsApp üzerinden iletişime geçilmesi yeterlidir." },
       { question: "Dosyanın seyri hakkında bilgi alınabilir mi?", answer: "Evet, süreç boyunca gelişmeler müvekkille paylaşılır." },
     ],
@@ -72,7 +72,7 @@ const eyupsultanBaseServices: PseoService[] = [
     name: "Eyüpsultan Boşanma Avukatı",
     heroTitle: "Eyüpsultan Boşanma Avukatı",
     heroSubtitle:
-      "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
+      "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; davalar İstanbul Gaziosmanpaşa Adliyesi'nde görülür.",
     metaTitle: "Eyüpsultan Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Eyüpsultan'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
@@ -95,10 +95,10 @@ const eyupsultanBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Eyüpsultan Merkez'in köklü aile yapısından Alibeyköy'ün yoğun ve genç nüfuslu konut dokusuna uzanan sosyo-demografik çeşitlilik, boşanma dosyalarında velayet ve nafaka taleplerinin niteliğini de etkileyebilmektedir.",
-      "İlçede açılan boşanma, velayet ve nafaka davalarına İstanbul (Çağlayan) Adliyesi'ndeki aile mahkemelerinde bakılır. Anlaşmalı süreçte protokolün tam olması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirler.",
+      "İlçede açılan boşanma, velayet ve nafaka davalarına İstanbul Gaziosmanpaşa Adliyesi'ndeki aile mahkemelerinde bakılır. Anlaşmalı süreçte protokolün tam olması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirler.",
     ],
     faqs: [
-      { question: "Aile mahkemesi başvurusu nasıl yapılır?", answer: "Dilekçeyle İstanbul (Çağlayan) Adliyesi'ndeki aile mahkemesine başvurulur." },
+      { question: "Aile mahkemesi başvurusu nasıl yapılır?", answer: "Dilekçeyle İstanbul Gaziosmanpaşa Adliyesi'ndeki aile mahkemesine başvurulur." },
       { question: "Anlaşmalı boşanmada taraflar duruşmaya katılmalı mı?", answer: "Evet, hakim her iki tarafı da dinleyerek iradeyi teyit eder." },
       { question: "Manevi tazminat hangi hallerde istenir?", answer: "Kişilik haklarına saldırı niteliğindeki kusurlu davranışlarda talep edilebilir." },
       { question: "Ortak velayet mümkün müdür?", answer: "Tarafların anlaşması ve çocuğun yararına uygun olması halinde uygulanabilir." },
@@ -123,7 +123,7 @@ const eyupsultanBaseServices: PseoService[] = [
     name: "Eyüpsultan Ceza Avukatı",
     heroTitle: "Eyüpsultan Ceza Avukatı",
     heroSubtitle:
-      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul (Çağlayan) Adliyesi'nde yürütülür.",
+      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Gaziosmanpaşa Adliyesi'nde yürütülür.",
     metaTitle: "Eyüpsultan Ceza Avukatı | Müdafilik",
     metaDescription:
       "Eyüpsultan'da soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
@@ -145,11 +145,11 @@ const eyupsultanBaseServices: PseoService[] = [
       "Uzlaşma görüşmelerinde müvekkilin temsil edilmesi",
     ],
     localParagraphs: [
-      "Eyüp Sultan Camii çevresindeki yoğun ziyaretçi trafiği ile Alibeyköy ve Rami çevresindeki kalabalık yerleşim, Eyüpsultan'da kolluk müdahalesi gerektiren olayların görece sık yaşanmasına zemin hazırlayabilmektedir. Kovuşturma aşamasındaki davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
+      "Eyüp Sultan Camii çevresindeki yoğun ziyaretçi trafiği ile Alibeyköy ve Rami çevresindeki kalabalık yerleşim, Eyüpsultan'da kolluk müdahalesi gerektiren olayların görece sık yaşanmasına zemin hazırlayabilmektedir. Kovuşturma aşamasındaki davalar İstanbul Gaziosmanpaşa Adliyesi'nde görülür.",
       "Gözaltı sürecinin başladığı andan itibaren müdafi ile görüşme hakkı doğar; bu hakkın zamanında kullanılması sonraki aşamaların seyri açısından belirleyicidir.",
     ],
     faqs: [
-      { question: "Eyüpsultan'da işlenen suçlarla ilgili dava nerede görülür?", answer: "İstanbul (Çağlayan) Adliyesi'nde görülür." },
+      { question: "Eyüpsultan'da işlenen suçlarla ilgili dava nerede görülür?", answer: "İstanbul Gaziosmanpaşa Adliyesi'nde görülür." },
       { question: "Gözaltı süresi ne kadardır?", answer: "Suçun niteliğine göre kanunda öngörülen sürelerle sınırlıdır." },
       { question: "Adli kontrol tedbiri nedir?", answer: "Tutuklama yerine uygulanabilecek, belirli yükümlülükler içeren bir tedbirdir." },
       { question: "Duruşmaya katılmak zorunlu mu?", answer: "Sanığın katılımı kural olarak esastır, bazı hallerde istisnalar uygulanabilir." },
@@ -174,7 +174,7 @@ const eyupsultanBaseServices: PseoService[] = [
     name: "Eyüpsultan Gayrimenkul Avukatı",
     heroTitle: "Eyüpsultan Gayrimenkul Avukatı",
     heroSubtitle:
-      "Kentsel dönüşüm, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
+      "Kentsel dönüşüm, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul Gaziosmanpaşa Adliyesi'nde görülür.",
     metaTitle: "Eyüpsultan Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Eyüpsultan'da tapu iptali, kentsel dönüşüm ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
@@ -196,12 +196,12 @@ const eyupsultanBaseServices: PseoService[] = [
       "Ortaklığın giderilmesi (izale-i şüyu) davaları",
     ],
     localParagraphs: [
-      "Alibeyköy'de eski sanayi tesislerinin konut ve ticaret alanına dönüştüğü bölgelerde kentsel dönüşüm projeleri yoğun biçimde sürmekte, bu da tapu ve kat mülkiyeti işlemlerini Eyüpsultan'da sık gündeme gelen bir konu haline getirmektedir; bu uyuşmazlıklar İstanbul (Çağlayan) Adliyesi'ndeki sulh hukuk ve asliye hukuk mahkemelerinde görülür.",
+      "Alibeyköy'de eski sanayi tesislerinin konut ve ticaret alanına dönüştüğü bölgelerde kentsel dönüşüm projeleri yoğun biçimde sürmekte, bu da tapu ve kat mülkiyeti işlemlerini Eyüpsultan'da sık gündeme gelen bir konu haline getirmektedir; bu uyuşmazlıklar İstanbul Gaziosmanpaşa Adliyesi'ndeki sulh hukuk ve asliye hukuk mahkemelerinde görülür.",
       "Haliç kıyısındaki mahallelerde de kıyı ve dolgu alanı statüsüne bağlı tapu ve kullanım uyuşmazlıkları zaman zaman gündeme gelmektedir.",
     ],
     faqs: [
       { question: "Kentsel dönüşüm süreci nasıl başlar?", answer: "Riskli yapı tespiti sonrasında kat maliklerinin çoğunluk kararı ve idari başvuru aşamalarıyla ilerler." },
-      { question: "Eyüpsultan'da gayrimenkul davası hangi mahkemede görülür?", answer: "Niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul (Çağlayan) Adliyesi bünyesinde görülür." },
+      { question: "Eyüpsultan'da gayrimenkul davası hangi mahkemede görülür?", answer: "Niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Gaziosmanpaşa Adliyesi bünyesinde görülür." },
       { question: "Riskli yapı kararına itiraz edilebilir mi?", answer: "Evet, teknik rapora karşı bilirkişi incelemesi talep edilerek itiraz edilebilir." },
       { question: "Ortak gider anlaşmazlıkları nasıl giderilir?", answer: "Öncelikle yönetim planı ve Kat Mülkiyeti Kanunu esas alınır, çözülemezse dava yoluna gidilir." },
       { question: "Haliç kıyısındaki taşınmazlarda ek bir kısıtlama var mı?", answer: "Kıyı ve dolgu alanı statüsü kullanım ve tadilat açısından ek kısıtlamalar getirebilir." },
@@ -224,7 +224,7 @@ const eyupsultanBaseServices: PseoService[] = [
     name: "Eyüpsultan İcra Avukatı",
     heroTitle: "Eyüpsultan İcra Avukatı",
     heroSubtitle:
-      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
+      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra mahkemeleri İstanbul Gaziosmanpaşa Adliyesi'ndedir.",
     metaTitle: "Eyüpsultan İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Eyüpsultan'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
@@ -246,14 +246,14 @@ const eyupsultanBaseServices: PseoService[] = [
       "İflasın ertelenmesi ve konkordato taleplerinde danışmanlık",
     ],
     localParagraphs: [
-      "Alibeyköy ve Rami çevresindeki küçük ve orta ölçekli işletmelerin ticari alacakları, Eyüpsultan'da icra takiplerinin sık başvurulan bir yol olmasına yol açmaktadır; bu takiplere ilişkin uyuşmazlıklar İstanbul (Çağlayan) Adliyesi'ndeki icra mahkemelerinde görülür.",
+      "Alibeyköy ve Rami çevresindeki küçük ve orta ölçekli işletmelerin ticari alacakları, Eyüpsultan'da icra takiplerinin sık başvurulan bir yol olmasına yol açmaktadır; bu takiplere ilişkin uyuşmazlıklar İstanbul Gaziosmanpaşa Adliyesi'ndeki icra mahkemelerinde görülür.",
       "Borçlunun Eyüpsultan'da yerleşik olduğu takiplerde yetkili icra dairesi, kural olarak borçlunun ikametgahı veya sözleşmede belirlenen yer esas alınarak tespit edilir.",
     ],
     faqs: [
       { question: "Takibe hangi hallerde itiraz edilir?", answer: "Borcun bulunmadığı, ödendiği veya imzanın borçluya ait olmadığı iddialarıyla itiraz edilebilir." },
       { question: "İtiraz süresi kaçırılırsa ne olur?", answer: "Takip kesinleşir, borçlu hakkında haciz işlemlerine geçilebilir." },
       { question: "Haciz kararına itiraz edilebilir mi?", answer: "Usule aykırılık halinde icra mahkemesine şikayet yoluyla itiraz edilebilir." },
-      { question: "İcra dosyası hangi mahkemenin denetimindedir?", answer: "İstanbul (Çağlayan) Adliyesi bünyesindeki icra mahkemelerinin denetimindedir." },
+      { question: "İcra dosyası hangi mahkemenin denetimindedir?", answer: "İstanbul Gaziosmanpaşa Adliyesi bünyesindeki icra mahkemelerinin denetimindedir." },
       { question: "Borçlunun mal kaçırması halinde ne yapılabilir?", answer: "Tasarrufun iptali davası açılarak işlemlerin geçersizliği talep edilebilir." },
     ],
     howToTitle: "Eyüpsultan'da İcra Takibi Hangi Aşamalardan Oluşur?",
@@ -324,7 +324,7 @@ const eyupsultanBaseServices: PseoService[] = [
     name: "Eyüpsultan İş Hukuku Avukatı",
     heroTitle: "Eyüpsultan İş Hukuku Avukatı",
     heroSubtitle:
-      "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesindedir.",
+      "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Gaziosmanpaşa Adliyesi bünyesindedir.",
     metaTitle: "Eyüpsultan İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Eyüpsultan'da kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
@@ -347,12 +347,12 @@ const eyupsultanBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Eyüpsultan'da Alibeyköy ve Rami çevresinde faaliyet gösteren küçük ve orta ölçekli işletmeler önemli bir istihdam alanı oluşturmaktadır. Bu işletmelerdeki iş sözleşmesi uyuşmazlıkları da diğer iş davaları gibi önce zorunlu arabuluculuk sürecinden geçer.",
-      "Anlaşma sağlanamazsa işe iade ve işçilik alacağı davaları İstanbul (Çağlayan) Adliyesi'ndeki iş mahkemelerinde görülür.",
+      "Anlaşma sağlanamazsa işe iade ve işçilik alacağı davaları İstanbul Gaziosmanpaşa Adliyesi'ndeki iş mahkemelerinde görülür.",
     ],
     faqs: [
       { question: "Küçük işletmelerde işe iade süreci nasıl işler?", answer: "İşletme büyüklüğü iş güvencesi kapsamını etkileyebilir; 30'dan az çalışanı olan yerlerde koşullar farklılaşabilir." },
       { question: "Kıdem tazminatı hesaplamasında hangi ücret esas alınır?", answer: "Son brüt ücret ve düzenli ödenen ek menfaatler esas alınır." },
-      { question: "Eyüpsultan'da iş mahkemesi başvurusu nereye yapılır?", answer: "İstanbul (Çağlayan) Adliyesi'ndeki iş mahkemelerine yapılır." },
+      { question: "Eyüpsultan'da iş mahkemesi başvurusu nereye yapılır?", answer: "İstanbul Gaziosmanpaşa Adliyesi'ndeki iş mahkemelerine yapılır." },
       { question: "Bordro imzalatılmadan çalıştırma yasal mı?", answer: "Hayır, işçilik alacaklarının ispatı için düzenli bordro tutulması gerekir." },
       { question: "İşçilik alacaklarında zamanaşımı ne zaman başlar?", answer: "Alacağın muaccel olduğu, genellikle iş sözleşmesinin sona erdiği tarihten itibaren işler." },
     ],
@@ -374,7 +374,7 @@ const eyupsultanBaseServices: PseoService[] = [
     name: "Eyüpsultan Kira ve Tahliye Avukatı",
     heroTitle: "Eyüpsultan Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
+      "Kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Gaziosmanpaşa Adliyesi'ndedir.",
     metaTitle: "Eyüpsultan Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Eyüpsultan'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
@@ -397,7 +397,7 @@ const eyupsultanBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Eyüpsultan'da konut kiralarının yanı sıra Alibeyköy ve Rami çevresinde işyeri ve depo niteliğindeki taşınmazlara ilişkin kira uyuşmazlıkları da önemli bir yer tutar. Bu uyuşmazlıklarda taşınmazın bulunduğu yer sulh hukuk mahkemesi görevlidir.",
-      "Bu davalara İstanbul (Çağlayan) Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; kentsel dönüşüm kapsamındaki binalarda kira ilişkisinin sona erme koşulları ayrıca değerlendirilebilir.",
+      "Bu davalara İstanbul Gaziosmanpaşa Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; kentsel dönüşüm kapsamındaki binalarda kira ilişkisinin sona erme koşulları ayrıca değerlendirilebilir.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir." },
@@ -474,7 +474,7 @@ const eyupsultanBaseServices: PseoService[] = [
     name: "Eyüpsultan Borçlar Hukuku Avukatı",
     heroTitle: "Eyüpsultan Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "Sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
+      "Sözleşme uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanır; ticaret ve asliye hukuk mahkemeleri İstanbul Gaziosmanpaşa Adliyesi'ndedir.",
     metaTitle: "Eyüpsultan Borçlar Hukuku Avukatı",
     metaDescription:
       "Eyüpsultan'da sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
@@ -497,14 +497,14 @@ const eyupsultanBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Alibeyköy ve Rami çevresindeki küçük ve orta ölçekli işletmeler arasında kurulan tedarik ve hizmet sözleşmelerinden doğan uyuşmazlıklar, Eyüpsultan'da sık karşılaşılan bir dava türüdür; bu uyuşmazlıklara niteliğine göre asliye hukuk veya ticaret mahkemelerinde bakılır.",
-      "Bu davalar İstanbul (Çağlayan) Adliyesi bünyesinde görülür; bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvuru zorunlu olabilir.",
+      "Bu davalar İstanbul Gaziosmanpaşa Adliyesi bünyesinde görülür; bazı ticari alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvuru zorunlu olabilir.",
     ],
     faqs: [
       { question: "Tedarikçi malı geç teslim ederse ne talep edilebilir?", answer: "Gecikme nedeniyle tazminat veya sözleşmeden dönme talep edilebilir." },
       { question: "Sipariş iptal edilirse ödenen avans geri alınabilir mi?", answer: "Sözleşme hükümlerine göre değişir, genel kural iadeyi gerektirir." },
       { question: "Ticari defter kayıtları delil olarak kullanılabilir mi?", answer: "Usulüne uygun tutulmuş ticari defterler mahkemede delil teşkil edebilir." },
       { question: "Alacak davası açmadan önce ihtar şart mı?", answer: "Her zaman şart olmasa da temerrüdün ispatı açısından faydalıdır." },
-      { question: "Ticari uyuşmazlıkta hangi mahkeme yetkilidir?", answer: "Niteliğine göre asliye ticaret mahkemesi, İstanbul (Çağlayan) Adliyesi bünyesinde yetkilidir." },
+      { question: "Ticari uyuşmazlıkta hangi mahkeme yetkilidir?", answer: "Niteliğine göre asliye ticaret mahkemesi, İstanbul Gaziosmanpaşa Adliyesi bünyesinde yetkilidir." },
     ],
     howToTitle: "Eyüpsultan'da Alacak Davası Süreci Nasıl İşler?",
     howToSteps: [

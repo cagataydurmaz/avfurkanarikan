@@ -72,7 +72,7 @@ const arnavutkoyBaseServices: PseoService[] = [
     name: "Arnavutköy Boşanma Avukatı",
     heroTitle: "Arnavutköy Boşanma Avukatı",
     heroSubtitle:
-      "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
+      "Anlaşmalı ve çekişmeli boşanma davalarında velayet, nafaka ve mal paylaşımı taleplerinde temsil sağlanır; davalar İstanbul Gaziosmanpaşa Adliyesi'nde görülür.",
     metaTitle: "Arnavutköy Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Arnavutköy'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
@@ -95,10 +95,10 @@ const arnavutkoyBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Arnavutköy'ün hızlı nüfus artışı ve yeni yerleşen ailelerin yoğunluğu, boşanma davalarında velayet ve nafaka taleplerinin de artan bir öneme sahip olmasına yol açmaktadır.",
-      "İlçede açılan boşanma, velayet ve nafaka davalarına İstanbul (Çağlayan) Adliyesi'ndeki aile mahkemelerinde bakılır. Anlaşmalı süreçte protokolün tam olması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirler.",
+      "İlçede açılan boşanma, velayet ve nafaka davalarına İstanbul Gaziosmanpaşa Adliyesi'ndeki aile mahkemelerinde bakılır. Anlaşmalı süreçte protokolün tam olması, çekişmeli süreçte ise delillerin sağlam olması sonucu belirler.",
     ],
     faqs: [
-      { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "İstanbul (Çağlayan) Adliyesi'ndeki aile mahkemesine başvurulur." },
+      { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "İstanbul Gaziosmanpaşa Adliyesi'ndeki aile mahkemesine başvurulur." },
       { question: "Yeni taşınan çiftler nerede dava açabilir?", answer: "Son altı aydır birlikte oturdukları veya taraflardan birinin yerleşim yeri esas alınır." },
       { question: "Mal rejimi tasfiyesinde yeni edinilen konut nasıl değerlendirilir?", answer: "Edinilmiş mal sayılırsa katılma alacağı hesabına dahil edilir." },
       { question: "Velayet düzenlemesinde çocuğun görüşü alınır mı?", answer: "Belirli bir olgunluğa ulaşmışsa görüşü dikkate alınabilir." },
@@ -123,7 +123,7 @@ const arnavutkoyBaseServices: PseoService[] = [
     name: "Arnavutköy Ceza Avukatı",
     heroTitle: "Arnavutköy Ceza Avukatı",
     heroSubtitle:
-      "Arnavutköy'de ceza yargılamasının kovuşturma aşamasına İstanbul (Çağlayan) Adliyesi'nde bakılır; gözaltı ve ifade alma anından itibaren müdafilik desteği sağlanır.",
+      "Arnavutköy'de ceza yargılamasının kovuşturma aşamasına İstanbul Gaziosmanpaşa Adliyesi'nde bakılır; gözaltı ve ifade alma anından itibaren müdafilik desteği sağlanır.",
     metaTitle: "Arnavutköy Ceza Avukatı | Müdafilik",
     metaDescription:
       "Arnavutköy'de soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
@@ -145,11 +145,11 @@ const arnavutkoyBaseServices: PseoService[] = [
       "Uzlaşma sürecinde tarafların bir araya getirilmesi",
     ],
     localParagraphs: [
-      "Kolluk müdahalesi gerektiren olaylara ilişkin dosyaların kovuşturma aşaması İstanbul (Çağlayan) Adliyesi'nde görülmektedir. Arnavutköy'de bu tür başvuruların sayısı, İstanbul Havalimanı'nın yakın çevresindeki yoğun inşaat ve lojistik faaliyetle birlikte hızlanan nüfus artışına paralel olarak artış gösterebilmektedir.",
+      "Kolluk müdahalesi gerektiren olaylara ilişkin dosyaların kovuşturma aşaması İstanbul Gaziosmanpaşa Adliyesi'nde görülmektedir. Arnavutköy'de bu tür başvuruların sayısı, İstanbul Havalimanı'nın yakın çevresindeki yoğun inşaat ve lojistik faaliyetle birlikte hızlanan nüfus artışına paralel olarak artış gösterebilmektedir.",
       "Şüphelinin müdafi ile görüşme hakkı, gözaltına alınmasıyla birlikte doğar; bu hakkın zamanında kullanılması sürecin sonraki aşamalarını doğrudan etkiler.",
     ],
     faqs: [
-      { question: "Arnavutköy'de bir ceza davası hangi adliyede görülür?", answer: "İstanbul (Çağlayan) Adliyesi'nde görülür." },
+      { question: "Arnavutköy'de bir ceza davası hangi adliyede görülür?", answer: "İstanbul Gaziosmanpaşa Adliyesi'nde görülür." },
       { question: "Müdafi bulunmadan ifade alınabilir mi?", answer: "Alınabilir ancak müdafi bulundurmak önerilir." },
       { question: "Tutukluluk süresi uzatılabilir mi?", answer: "Kanunda öngörülen azami süreler dahilinde uzatılabilir." },
       { question: "Kovuşturmaya yer olmadığı kararına itiraz edilebilir mi?", answer: "Evet, sulh ceza hakimliğine itiraz edilebilir." },
@@ -174,7 +174,7 @@ const arnavutkoyBaseServices: PseoService[] = [
     name: "Arnavutköy Gayrimenkul Avukatı",
     heroTitle: "Arnavutköy Gayrimenkul Avukatı",
     heroSubtitle:
-      "Tarım arazisinden imara açılan taşınmazlar, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul (Çağlayan) Adliyesi'nde görülür.",
+      "Tarım arazisinden imara açılan taşınmazlar, tapu uyuşmazlıkları ve kira ilişkilerinde hukuki destek sağlanır; davalar İstanbul Gaziosmanpaşa Adliyesi'nde görülür.",
     metaTitle: "Arnavutköy Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Arnavutköy'de tapu iptali, imar değişikliği ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
@@ -196,12 +196,12 @@ const arnavutkoyBaseServices: PseoService[] = [
       "Ortaklığın giderilmesi (izale-i şüyu) davaları",
     ],
     localParagraphs: [
-      "Tarım arazilerinin hızla imara açıldığı Arnavutköy'de tapu kaydı ile fiili arazi kullanımı arasındaki uyumsuzluklar ve yeni konut projelerinde teslim gecikmesi kaynaklı uyuşmazlıklar sık gündeme gelmektedir; bu uyuşmazlıklar İstanbul (Çağlayan) Adliyesi'ndeki sulh hukuk ve asliye hukuk mahkemelerinde görülür.",
+      "Tarım arazilerinin hızla imara açıldığı Arnavutköy'de tapu kaydı ile fiili arazi kullanımı arasındaki uyumsuzluklar ve yeni konut projelerinde teslim gecikmesi kaynaklı uyuşmazlıklar sık gündeme gelmektedir; bu uyuşmazlıklar İstanbul Gaziosmanpaşa Adliyesi'ndeki sulh hukuk ve asliye hukuk mahkemelerinde görülür.",
       "İstanbul Havalimanı çevresindeki bölgelerde arsa niteliğindeki taşınmazlara ilişkin tapu ve kamulaştırma kaynaklı uyuşmazlıklar da zaman zaman gündeme gelmektedir.",
     ],
     faqs: [
       { question: "Tarım arazisi imara açıldığında tapuda ne değişir?", answer: "İmar planı değişikliği sonrası tapu kaydındaki nitelik güncellenir; bu süreç idari başvuru gerektirebilir." },
-      { question: "Arnavutköy'de gayrimenkul davası hangi mahkemede görülür?", answer: "Niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul (Çağlayan) Adliyesi bünyesinde görülür." },
+      { question: "Arnavutköy'de gayrimenkul davası hangi mahkemede görülür?", answer: "Niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Gaziosmanpaşa Adliyesi bünyesinde görülür." },
       { question: "Yeni konut projesinde teslim gecikirse ne yapılabilir?", answer: "Sözleşmede öngörülen gecikme cezası talep edilebilir, gerekirse sözleşmeden dönme hakkı kullanılabilir." },
       { question: "Tapu iptal davası hangi hallerde açılır?", answer: "Hukuka aykırı bir tescil işlemi bulunduğunda hak sahibi bu davayı açabilir." },
       { question: "Arsa niteliğindeki taşınmaz alımında nelere dikkat edilmeli?", answer: "İmar durumu, kadastro kaydı ve varsa kamulaştırma şerhinin incelenmesi önerilir." },
@@ -224,7 +224,7 @@ const arnavutkoyBaseServices: PseoService[] = [
     name: "Arnavutköy İcra Avukatı",
     heroTitle: "Arnavutköy İcra Avukatı",
     heroSubtitle:
-      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra mahkemeleri İstanbul (Çağlayan) Adliyesi'ndedir.",
+      "Alacak tahsili amacıyla icra takibi, ödeme emrine itiraz ve haciz süreçlerinde temsil sağlanır; icra mahkemeleri İstanbul Gaziosmanpaşa Adliyesi'ndedir.",
     metaTitle: "Arnavutköy İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Arnavutköy'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
@@ -246,7 +246,7 @@ const arnavutkoyBaseServices: PseoService[] = [
       "Mali sıkıntı yaşayan borçlular için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "İstanbul Havalimanı çevresindeki inşaat ve lojistik sektörü işletmeleri arasındaki ticari alacaklar, Arnavutköy'de icra takiplerinin sık başvurulan bir yol olmasına yol açmaktadır; bu takiplere ilişkin uyuşmazlıklar İstanbul (Çağlayan) Adliyesi'ndeki icra mahkemelerinde görülür.",
+      "İstanbul Havalimanı çevresindeki inşaat ve lojistik sektörü işletmeleri arasındaki ticari alacaklar, Arnavutköy'de icra takiplerinin sık başvurulan bir yol olmasına yol açmaktadır; bu takiplere ilişkin uyuşmazlıklar İstanbul Gaziosmanpaşa Adliyesi'ndeki icra mahkemelerinde görülür.",
       "Borçlunun Arnavutköy'de yerleşik olduğu takiplerde yetkili icra dairesi, kural olarak borçlunun ikametgahı veya sözleşmede belirlenen yer esas alınarak tespit edilir.",
     ],
     faqs: [
@@ -324,7 +324,7 @@ const arnavutkoyBaseServices: PseoService[] = [
     name: "Arnavutköy İş Hukuku Avukatı",
     heroTitle: "Arnavutköy İş Hukuku Avukatı",
     heroSubtitle:
-      "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesindedir.",
+      "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Gaziosmanpaşa Adliyesi bünyesindedir.",
     metaTitle: "Arnavutköy İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Arnavutköy'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
@@ -347,12 +347,12 @@ const arnavutkoyBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "İstanbul Havalimanı ve çevresindeki inşaat, lojistik ve hizmet sektörü işletmeleri, Arnavutköy'de önemli bir istihdam alanı oluşturmaktadır. Bu sektörlerdeki iş sözleşmesi uyuşmazlıkları da diğer iş davaları gibi önce zorunlu arabuluculuk sürecinden geçer.",
-      "Anlaşma sağlanamazsa işe iade ve işçilik alacağı davaları İstanbul (Çağlayan) Adliyesi'ndeki iş mahkemelerinde görülür.",
+      "Anlaşma sağlanamazsa işe iade ve işçilik alacağı davaları İstanbul Gaziosmanpaşa Adliyesi'ndeki iş mahkemelerinde görülür.",
     ],
     faqs: [
       { question: "İnşaat sektöründe işçi hakları farklı mı?", answer: "Temel haklar aynıdır ancak proje süresine bağlı belirli süreli sözleşmeler daha sık görülür." },
       { question: "Şantiye çalışanı iş kazası geçirirse ne yapılmalı?", answer: "Olay derhal SGK'ya bildirilmeli, tedavi ve tazminat süreci başlatılmalıdır." },
-      { question: "Arnavutköy'de iş mahkemesi nerededir?", answer: "İstanbul (Çağlayan) Adliyesi bünyesindedir." },
+      { question: "Arnavutköy'de iş mahkemesi nerededir?", answer: "İstanbul Gaziosmanpaşa Adliyesi bünyesindedir." },
       { question: "İşe iade talebi hangi sürede sonuçlanır?", answer: "Arabuluculuk ve dava sürecinin toplam süresi dosyaya göre değişebilir." },
       { question: "Mevsimlik işçilerin kıdem tazminatı hakkı var mı?", answer: "Çalışma süresi ve niteliğine göre değerlendirilir, şartları taşıması halinde hak doğabilir." },
     ],
@@ -374,7 +374,7 @@ const arnavutkoyBaseServices: PseoService[] = [
     name: "Arnavutköy Kira ve Tahliye Avukatı",
     heroTitle: "Arnavutköy Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Arnavutköy'de tahliye taleplerinde, kira bedelinin belirlenmesinde ve kira sözleşmesinden doğan uyuşmazlıklarda hukuki destek sağlanır; bu davalara sulh hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesinde bakar.",
+      "Arnavutköy'de tahliye taleplerinde, kira bedelinin belirlenmesinde ve kira sözleşmesinden doğan uyuşmazlıklarda hukuki destek sağlanır; bu davalara sulh hukuk mahkemeleri İstanbul Gaziosmanpaşa Adliyesi bünyesinde bakar.",
     metaTitle: "Arnavutköy Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Arnavutköy'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
@@ -397,7 +397,7 @@ const arnavutkoyBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Arnavutköy'de kira ilişkileri, hızla artan konut arzı ve yeni yerleşen nüfusla birlikte giderek daha yoğun biçimde kurulmaktadır; bu tür uyuşmazlıklarda görevli mahkeme, taşınmazın bulunduğu yerdeki sulh hukuk mahkemesidir.",
-      "Söz konusu sulh hukuk mahkemeleri, İstanbul (Çağlayan) Adliyesi bünyesinde faaliyet göstermektedir. Ayrıca yeni teslim edilen projelerde, kira sözleşmesiyle teslim tutanağı arasındaki uyumun kontrol edilmesi ayrı bir önem taşımaktadır.",
+      "Söz konusu sulh hukuk mahkemeleri, İstanbul Gaziosmanpaşa Adliyesi bünyesinde faaliyet göstermektedir. Ayrıca yeni teslim edilen projelerde, kira sözleşmesiyle teslim tutanağı arasındaki uyumun kontrol edilmesi ayrı bir önem taşımaktadır.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir." },
@@ -474,7 +474,7 @@ const arnavutkoyBaseServices: PseoService[] = [
     name: "Arnavutköy Borçlar Hukuku Avukatı",
     heroTitle: "Arnavutköy Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "Arnavutköy'de sözleşmeden doğan uyuşmazlıklar, alacak talepleri ve tazminat davaları bakımından hukuki temsil sağlanmaktadır; bu davalara bakan ticaret ve asliye hukuk mahkemeleri İstanbul (Çağlayan) Adliyesi bünyesinde yer almaktadır.",
+      "Arnavutköy'de sözleşmeden doğan uyuşmazlıklar, alacak talepleri ve tazminat davaları bakımından hukuki temsil sağlanmaktadır; bu davalara bakan ticaret ve asliye hukuk mahkemeleri İstanbul Gaziosmanpaşa Adliyesi bünyesinde yer almaktadır.",
     metaTitle: "Arnavutköy Borçlar Hukuku Avukatı",
     metaDescription:
       "Arnavutköy'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
@@ -497,12 +497,12 @@ const arnavutkoyBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Kat karşılığı inşaat sözleşmelerinden ve arsa payı devrinden kaynaklanan uyuşmazlıklar, Arnavutköy'de hızla artan inşaat faaliyetine bağlı olarak ilçede sıklıkla karşılaşılan bir dava türü haline gelmiştir. Niteliğine göre bu uyuşmazlıklara asliye hukuk veya ticaret mahkemesi bakmaktadır.",
-      "Söz konusu davalar İstanbul (Çağlayan) Adliyesi bünyesindeki mahkemelerde yürütülmektedir. Ticari nitelikteki bazı alacak uyuşmazlıklarında ise dava açılmadan önce arabulucuya başvurulması dava şartı olarak aranabilir.",
+      "Söz konusu davalar İstanbul Gaziosmanpaşa Adliyesi bünyesindeki mahkemelerde yürütülmektedir. Ticari nitelikteki bazı alacak uyuşmazlıklarında ise dava açılmadan önce arabulucuya başvurulması dava şartı olarak aranabilir.",
     ],
     faqs: [
       { question: "Kat karşılığı inşaat sözleşmesi nedir?", answer: "Arsa sahibinin arsayı, müteahhidin ise yapım hizmetini karşılıklı edim olarak sunduğu bir sözleşme türüdür." },
       { question: "Müteahhit taahhüdünü yerine getirmezse ne yapılabilir?", answer: "Sözleşmeden dönme, tazminat veya ifa davası gibi hukuki yollara başvurulabilir." },
-      { question: "Ticari alacak davası hangi mahkemede görülür?", answer: "Niteliğine göre asliye ticaret mahkemesinde, İstanbul (Çağlayan) Adliyesi bünyesinde görülür." },
+      { question: "Ticari alacak davası hangi mahkemede görülür?", answer: "Niteliğine göre asliye ticaret mahkemesinde, İstanbul Gaziosmanpaşa Adliyesi bünyesinde görülür." },
       { question: "Dava öncesi arabuluculuk her zaman şart mı?", answer: "Hayır, yalnızca ticari nitelikteki bazı alacak uyuşmazlıklarında dava şartı olarak aranır." },
       { question: "Zamanaşımına uğramış alacak talep edilebilir mi?", answer: "Borçlu zamanaşımı def'ini ileri sürerse talep edilemez; ileri sürmezse talep edilebilir." },
     ],
