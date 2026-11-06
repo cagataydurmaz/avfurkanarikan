@@ -74,7 +74,7 @@ export const dictionary = {
     // Google reviews
     "reviews.label": "Google Yorumları",
     "reviews.heading": "Müvekkillerimiz Ne Diyor?",
-    "reviews.count": "37 Google yorumu",
+    "reviews.count": "38 Google yorumu",
     "reviews.cta": "Google'da Tüm Yorumları Gör",
 
     // Contact
@@ -201,7 +201,7 @@ export const dictionary = {
     // Google reviews
     "reviews.label": "Google Reviews",
     "reviews.heading": "What Our Clients Say",
-    "reviews.count": "37 Google reviews",
+    "reviews.count": "38 Google reviews",
     "reviews.cta": "See All Reviews on Google",
 
     // Contact
