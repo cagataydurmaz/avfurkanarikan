@@ -3,11 +3,12 @@ import { gungoren } from "@/lib/pseo/gungoren";
 import { gungorenServices } from "@/lib/pseo/gungorenServices";
 import { buildPseoJsonLd } from "@/lib/pseo/buildJsonLd";
 import PseoPage from "@/components/pseo/PseoPage";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 
 const service = gungorenServices.find((s) => s.slug === "borclar-hukuku")!;
 
 export const metadata: Metadata = {
-  title: service.metaTitle,
+  title: pseoTitle(service.metaTitle),
   description: service.metaDescription,
   alternates: { canonical: `/${service.urlSlug}` },
   robots: { index: true, follow: true },

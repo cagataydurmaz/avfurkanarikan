@@ -3,11 +3,12 @@ import { fatih } from "@/lib/pseo/fatih";
 import { fatihServices } from "@/lib/pseo/fatihServices";
 import { buildPseoJsonLd } from "@/lib/pseo/buildJsonLd";
 import PseoPage from "@/components/pseo/PseoPage";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 
 const service = fatihServices.find((s) => s.slug === "ceza")!;
 
 export const metadata: Metadata = {
-  title: service.metaTitle,
+  title: pseoTitle(service.metaTitle),
   description: service.metaDescription,
   alternates: { canonical: `/${service.urlSlug}` },
   robots: { index: true, follow: true },

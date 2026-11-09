@@ -3,11 +3,12 @@ import { beylikduzu } from "@/lib/pseo/beylikduzu";
 import { beylikduzuServices } from "@/lib/pseo/beylikduzuServices";
 import { buildPseoJsonLd } from "@/lib/pseo/buildJsonLd";
 import PseoPage from "@/components/pseo/PseoPage";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 
 const service = beylikduzuServices.find((s) => s.slug === "idare")!;
 
 export const metadata: Metadata = {
-  title: service.metaTitle,
+  title: pseoTitle(service.metaTitle),
   description: service.metaDescription,
   alternates: { canonical: `/${service.urlSlug}` },
   robots: { index: true, follow: true },

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,7 +8,7 @@ import AracDegerKaybiForm from "@/components/calculators/AracDegerKaybiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Araç Değer Kaybı Tazminatı: Dava Süresi Hesaplama",
+  title: pseoTitle("Araç Değer Kaybı Tazminatı: Dava Süresi Hesaplama"),
   description:
     "Trafik kazası sonrası araç değer kaybı talebinizin zamanaşımını ve hangi sigortaya (ZMSS/kasko) yöneltilebileceğini öğrenin.",
   alternates: {

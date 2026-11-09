@@ -44,18 +44,6 @@ export function buildPseoJsonLd(district: PseoDistrict, service: PseoService) {
     },
     {
       "@context": "https://schema.org",
-      "@type": "HowTo",
-      "@id": `${pageUrl}#howto`,
-      name: service.howToTitle,
-      step: service.howToSteps.map((s, i) => ({
-        "@type": "HowToStep",
-        position: i + 1,
-        name: s.name,
-        text: s.text,
-      })),
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "WebPage",
       "@id": pageUrl,
       url: pageUrl,

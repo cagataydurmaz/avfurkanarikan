@@ -418,8 +418,7 @@ const basePosts: Post[] = [
 
 <div class="note-box">
   <strong>Dikkat:</strong> Tahliye taahhütnamesinin geçerli olabilmesi için
-  taahhüdün kiracı tarafından kira sözleşmesinin yapılmasından sonra (imzalanmasından
-  sonra) verilmesi şarttır. Sözleşmeyle eş zamanlı verilen taahhütnameler geçersiz
+  taahhüdün kiracı tarafından kiralananın teslim edilmesinden sonra (TBK m.352/1) verilmesi şarttır. Sözleşmeyle eş zamanlı verilen taahhütnameler geçersiz
   sayılmaktadır.
 </div>
 
@@ -528,19 +527,22 @@ const basePosts: Post[] = [
       <td>Yasal payın 1/4'ü</td>
     </tr>
     <tr>
-      <td>Kardeşler (01.01.2002 öncesi sözleşmelerde)</td>
+      <td>Kardeşler (2007 öncesi açılan mirasçılıklarda)</td>
       <td>Yasal payın 1/8'i</td>
     </tr>
     <tr>
-      <td>Sağ kalan eş (tek başına mirasçıysa)</td>
+      <td>Sağ kalan eş (altsoy veya ana-baba ile birlikte mirasçıysa)</td>
       <td>Yasal payın tamamı</td>
+    </tr>
+    <tr>
+      <td>Sağ kalan eş (diğer hâllerde)</td>
+      <td>Yasal payın 3/4'ü</td>
     </tr>
   </tbody>
 </table>
 
 <p>
-  01.01.2002'de yürürlüğe giren TMK ile kardeşlere tanınan saklı pay hakkı
-  kaldırılmıştır. Yeni hukukta saklı pay mirasçıları yalnızca alt soy, ana-baba
+  Kardeşlerin saklı payı, 2007 yılında 5650 sayılı Kanun ile kaldırılmıştır. Yeni hukukta saklı pay mirasçıları yalnızca alt soy, ana-baba
   ve sağ kalan eştir.
 </p>
 
@@ -596,10 +598,10 @@ const basePosts: Post[] = [
     category: "Borçlar Hukuku",
     readingTime: 7,
     faq: [
-      { question: "Sözleşmeden dönme ile fesih arasındaki fark nedir?", answer: "Dönme, sözleşmeyi geriye etkili olarak sona erdirir; taraflar aldıklarını iade eder. Fesih ise sözleşmeyi ileriye etkili olarak bitirir; geçmişteki edimler iade edilmez. Anlık edim sözleşmelerinde (satım, kira) dönme, sürekli edim sözleşmelerinde (iş, vekalet) ise fesih söz konusu olur." },
+      { question: "Sözleşmeden dönme ile fesih arasındaki fark nedir?", answer: "Dönme, sözleşmeyi geriye etkili olarak sona erdirir; taraflar aldıklarını iade eder. Fesih ise sözleşmeyi ileriye etkili olarak bitirir; geçmişteki edimler iade edilmez. Ani edimli sözleşmelerde (ör. satım) dönme, sürekli edimli sözleşmelerde (ör. kira, iş, vekalet) ise fesih söz konusu olur." },
       { question: "Tazminat istenmeden yalnızca sözleşmeden dönülebilir mi?", answer: "Evet. Dönme hakkı tazminat talebinden bağımsız olarak kullanılabilir. Ancak dönme ile birlikte olumsuz zarar talep edilmesi de mümkündür." },
       { question: "Dönme beyanının şekli var mıdır?", answer: "TBK genel olarak şekil şartı öngörmemiştir. Ancak ispat güçlüğü yaşanmaması için noter kanalıyla ya da iadeli taahhütlü posta ile yazılı beyan gönderilmesi önerilir." },
-      { question: "Ayıptan doğan dönme hakkı zamanaşımına uğrar mı?", answer: "Evet. TBK madde 231 uyarınca taşınır satımında ayıptan doğan talepler, ayıbın bildiriminden itibaren 2 yıllık zamanaşımına tabidir. Taşınmaz satımında bu süre 5 yıldır." },
+      { question: "Ayıptan doğan dönme hakkı zamanaşımına uğrar mı?", answer: "Evet. TBK madde 231 uyarınca taşınır satımında ayıptan doğan talepler, satılanın alıcıya tesliminden itibaren 2 yıllık zamanaşımına tabidir. Taşınmaz satımında bu süre 5 yıldır." },
       { question: "Karşılıklı borç sözleşmelerinde ifa imkansızlaşırsa ne olur?", answer: "Sonraki imkansızlık halinde TBK madde 136 uygulanır; borçlu kusursuz imkansızlık halinde borçtan kurtulur. Alacaklı da karşı edimden kaçınabilir ve önceden verdiklerini sebepsiz zenginleşme hükümleri uyarınca geri isteyebilir." },
     ],
     content: `
@@ -691,7 +693,7 @@ const basePosts: Post[] = [
   <p class="faq-answer">
     Dönme, sözleşmeyi geriye etkili olarak sona erdirir; taraflar aldıklarını iade eder.
     Fesih ise sözleşmeyi ileriye etkili olarak bitirir; geçmişteki edimler iade edilmez.
-    Anlık edim sözleşmelerinde (satım, kira) dönme, sürekli edim sözleşmelerinde (iş, vekalet)
+    Ani edimli sözleşmelerde (ör. satım) dönme, sürekli edimli sözleşmelerde (ör. kira, iş, vekalet)
     ise fesih söz konusu olur.
   </p>
 </div>
@@ -712,8 +714,7 @@ const basePosts: Post[] = [
 <div class="faq-item">
   <p class="faq-question">Ayıptan doğan dönme hakkı zamanaşımına uğrar mı?</p>
   <p class="faq-answer">
-    Evet. TBK madde 231 uyarınca taşınır satımında ayıptan doğan talepler, ayıbın
-    bildiriminden itibaren 2 yıllık zamanaşımına tabidir. Taşınmaz satımında bu süre 5 yıldır.
+    Evet. TBK madde 231 uyarınca taşınır satımında ayıptan doğan talepler, satılanın alıcıya tesliminden itibaren 2 yıllık zamanaşımına tabidir. Taşınmaz satımında bu süre 5 yıldır.
   </p>
 </div>
 <div class="faq-item">
@@ -786,7 +787,7 @@ const basePosts: Post[] = [
 <h2>Başvuru Süresi Ne Kadardır?</h2>
 <p>
   Fesih bildiriminin tebliğinden itibaren <strong>1 ay</strong> içinde arabulucuya başvurulması
-  zorunludur (İş Mahkemeleri Kanunu m. 11). Arabuluculuk görüşmelerinin anlaşmazlıkla
+  zorunludur (7036 sayılı İş Mahkemeleri Kanunu m. 3; İK m. 20). Arabuluculuk görüşmelerinin anlaşmazlıkla
   sonuçlanması halinde son tutanağın düzenlendiği tarihten itibaren <strong>2 hafta</strong>
   içinde iş mahkemesinde dava açılmalıdır. Bu süreler hak düşürücü nitelikte olup,
   geçirilmesi halinde dava hakkı ortadan kalkar.
@@ -800,8 +801,7 @@ const basePosts: Post[] = [
 <h2>Mahkeme İşe İadeye Karar Verirse Ne Olur?</h2>
 <p>
   Feshin geçersiz bulunması halinde mahkeme, işçinin işe iadesine ve boşta geçen süre için
-  en fazla 4 aya kadar ücret ile diğer haklarının ödenmesine hükmeder (İK m. 21). Kararın
-  kesinleşmesinden itibaren 10 gün içinde işçinin işe iade başvurusunda bulunması gerekir.
+  en fazla 4 aya kadar ücret ile diğer haklarının ödenmesine hükmeder (İK m. 21). İşçinin, kesinleşen kararın tebliğinden itibaren 10 iş günü içinde işe başlamak için işverene başvurması gerekir (İK m. 21/5).
 </p>
 <p>
   İşveren işçiyi işe başlatmazsa, tazminat miktarı iş mahkemesince belirlenir. Bu tazminat
@@ -870,18 +870,18 @@ const basePosts: Post[] = [
       { question: "Tutukluluğun devamına karar verilirse ne yapılabilir?", answer: "Her duruşmada ya da koşullar değiştiğinde yeniden tahliye talebinde bulunulabilir. Ayrıca CMK madde 267 kapsamında tutukluluk devamı kararlarına da itiraz yolu açıktır." },
       { question: "Avukat olmadan tutukluluğa itiraz edilebilir mi?", answer: "Hukuken mümkündür; tutuklu bizzat dilekçe vererek itiraz edebilir. Ancak itiraz dilekçesinin hukuki gerekçelerle desteklenmesi değerlendirme sürecini doğrudan etkiler." },
       { question: "Adli kontrol ile tutukluluk arasındaki fark nedir?", answer: "Adli kontrol (CMK m.109) kişiyi fiziksel olarak gözaltına almaksızın yurt dışı çıkış yasağı, imza zorunluluğu gibi yükümlülükler getiren hafif bir tedbirdir. Tutukluluk ise fiziksel özgürlüğün tamamen kısıtlanmasıdır." },
-      { question: "Tutukluluk süresi ceza süresinden düşülür mü?", answer: "Evet. CMK madde 63 ve TCK madde 63 uyarınca çekilen tutukluluk süresi, mahkumiyet halinde verilecek cezadan mahsup edilir." },
+      { question: "Tutukluluk süresi ceza süresinden düşülür mü?", answer: "Evet. TCK madde 63 uyarınca çekilen tutukluluk süresi, mahkumiyet halinde verilecek cezadan mahsup edilir." },
       { question: "Haksız tutukluluk sonrası tazminat istenebilir mi?", answer: "Evet. CMK madde 141 uyarınca haksız tutuklanan ve beraat eden kişi, Devlet aleyhine tazminat davası açabilir." },
     ],
     content: `
 <div class="stat-grid">
   <div class="stat-box">
-    <div class="stat-number">1+1 Yıl</div>
+    <div class="stat-number">1 Yıl + 6 Ay</div>
     <div class="stat-label">Ağır olmayan suçlarda azami tutukluluk süresi <span class="law-ref">CMK m.102/1</span></div>
   </div>
   <div class="stat-box">
     <div class="stat-number">7 Gün</div>
-    <div class="stat-label">Tutuklama kararına itiraz süresi <span class="law-ref">CMK m.104</span></div>
+    <div class="stat-label">Tutuklama kararına itiraz süresi <span class="law-ref">CMK m.268</span></div>
   </div>
   <div class="stat-box">
     <div class="stat-number">2+3 Yıl</div>
@@ -930,8 +930,8 @@ const basePosts: Post[] = [
     <tr>
       <td>Ağır olmayan suçlar <span class="law-ref">CMK m.102/1</span></td>
       <td>1 yıl</td>
-      <td>1 yıl</td>
-      <td>2 yıl</td>
+      <td>6 ay</td>
+      <td>1,5 yıl</td>
     </tr>
     <tr>
       <td>Ağır ceza suçları <span class="law-ref">CMK m.102/2</span></td>
@@ -961,7 +961,7 @@ const basePosts: Post[] = [
     <div class="step-num">2</div>
     <div class="step-text">
       <strong>İtiraz Yolu</strong>
-      <span class="law-ref">CMK m.267-268</span> — Tutuklama kararına 7 gün içinde itiraz edilebilir. İtiraz, kararı veren mahkemenin üstündeki mahkemece incelenir.
+      <span class="law-ref">CMK m.267-268</span> — Tutuklama kararına 7 gün içinde itiraz edilebilir. İtirazı CMK m.268'de belirlenen merci inceler; sulh ceza hakimliği kararlarına yapılan itirazı numara olarak izleyen sulh ceza hakimliği inceler.
     </div>
   </div>
   <div class="process-step">
@@ -995,7 +995,7 @@ const basePosts: Post[] = [
 </div>
 <div class="faq-item">
   <p class="faq-question">Tutukluluk süresi ceza süresinden düşülür mü?</p>
-  <p class="faq-answer">Evet. CMK madde 63 ve TCK madde 63 uyarınca çekilen tutukluluk süresi, mahkumiyet halinde verilecek cezadan mahsup edilir.</p>
+  <p class="faq-answer">Evet. TCK madde 63 uyarınca çekilen tutukluluk süresi, mahkumiyet halinde verilecek cezadan mahsup edilir.</p>
 </div>
 <div class="faq-item">
   <p class="faq-question">Haksız tutukluluk sonrası tazminat istenebilir mi?</p>

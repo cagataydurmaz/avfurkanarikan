@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,7 +8,7 @@ import YillikIzinForm from "@/components/calculators/YillikIzinForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Yıllık İzin Ücreti Hesaplama (Kullanılmayan İzin)",
+  title: pseoTitle("Yıllık İzin Ücreti Hesaplama (Kullanılmayan İzin)"),
   description:
     "Kıdeminize göre yıllık izin hakkınızı görün, kullanılmayan izin gününüzün brüt ücret karşılığını hesaplayın.",
   alternates: {

@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { posts } from "@/lib/posts";
+import { postEnrichment } from "@/lib/postEnrichment";
 import { practiceAreas } from "@/lib/practiceAreas";
 import { tools } from "@/lib/calculators/tools";
 import { besiktas } from "@/lib/pseo/besiktas";
@@ -188,7 +189,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const postPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${BASE_URL}/makaleler/${post.slug}`,
-    lastModified: new Date(post.date),
+    lastModified: new Date(postEnrichment[post.slug]?.updated ?? post.date),
     changeFrequency: "monthly" as const,
     priority: 0.7,
   }));

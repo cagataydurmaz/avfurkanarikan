@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 import { practiceAreas, getPracticeAreaBySlug } from "@/lib/practiceAreas";
 import PracticeAreaContent from "@/components/pra/PracticeAreaContent";
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const area = getPracticeAreaBySlug(slug);
   if (!area) return {};
   return {
-    title: area.metaTitle,
+    title: pseoTitle(area.metaTitle),
     description: area.metaDescription,
     alternates: {
       canonical: `/calisma-alanlari/${area.slug}`,

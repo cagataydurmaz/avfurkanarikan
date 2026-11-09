@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
 export const metadata: Metadata = {
-  title: "Gizlilik Politikası ve KVKK Aydınlatma Metni",
+  title: pseoTitle("Gizlilik Politikası ve KVKK Aydınlatma Metni"),
   description:
     "Av. Furkan Arıkan Hukuk Bürosu web sitesi kapsamında kişisel verilerin işlenmesine ilişkin KVKK aydınlatma metni ve gizlilik politikası.",
   alternates: {

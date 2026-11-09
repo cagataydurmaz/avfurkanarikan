@@ -3,11 +3,12 @@ import { esenyurt } from "@/lib/pseo/esenyurt";
 import { esenyurtServices } from "@/lib/pseo/esenyurtServices";
 import { buildPseoJsonLd } from "@/lib/pseo/buildJsonLd";
 import PseoPage from "@/components/pseo/PseoPage";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 
 const service = esenyurtServices.find((s) => s.slug === "idare")!;
 
 export const metadata: Metadata = {
-  title: service.metaTitle,
+  title: pseoTitle(service.metaTitle),
   description: service.metaDescription,
   alternates: { canonical: `/${service.urlSlug}` },
   robots: { index: true, follow: true },

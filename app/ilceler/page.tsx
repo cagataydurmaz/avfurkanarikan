@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -6,7 +7,7 @@ import FloatingButtons from "@/components/FloatingButtons";
 import { ADLIYE_DISTRICTS } from "@/lib/calculators/adliyeBulucu";
 
 export const metadata: Metadata = {
-  title: "İstanbul İlçelerine Göre Avukatlık Hizmetleri",
+  title: pseoTitle("İstanbul İlçelerine Göre Avukatlık Hizmetleri"),
   description:
     "İstanbul'un 34 ilçesinde ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında ilçeye özel hukuki danışmanlık sayfaları.",
   alternates: { canonical: "/ilceler" },

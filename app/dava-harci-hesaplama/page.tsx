@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,7 +8,7 @@ import DavaHarciForm from "@/components/calculators/DavaHarciForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Dava Harcı Hesaplama 2026 (Peşin ve Başvurma Harcı)",
+  title: pseoTitle("Dava Harcı Hesaplama 2026 (Peşin ve Başvurma Harcı)"),
   description:
     "Mahkeme türü ve dava değerine göre dava açılışında ödenecek başvurma harcı ve peşin harcı hesaplayın.",
   alternates: {

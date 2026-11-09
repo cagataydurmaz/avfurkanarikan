@@ -3,11 +3,12 @@ import { esenler } from "@/lib/pseo/esenler";
 import { esenlerServices } from "@/lib/pseo/esenlerServices";
 import { buildPseoJsonLd } from "@/lib/pseo/buildJsonLd";
 import PseoPage from "@/components/pseo/PseoPage";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 
 const service = esenlerServices.find((s) => s.slug === "is-hukuku")!;
 
 export const metadata: Metadata = {
-  title: service.metaTitle,
+  title: pseoTitle(service.metaTitle),
   description: service.metaDescription,
   alternates: { canonical: `/${service.urlSlug}` },
   robots: { index: true, follow: true },

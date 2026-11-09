@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { findMevzuat } from "@/lib/mevzuat";
+import { postEnrichment, TOOL_LABELS, formatTrDate } from "@/lib/postEnrichment";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
@@ -36,6 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.excerpt,
       type: "article",
       publishedTime: post.date,
+      modifiedTime: postEnrichment[post.slug]?.updated ?? post.date,
       authors: ["Av. Furkan Arıkan"],
       locale: "tr_TR",
       siteName: "Av. Furkan Arıkan Hukuk Bürosu",
@@ -62,7 +64,7 @@ export default async function MakalePage({ params }: Props) {
       headline: post.title,
       description: post.excerpt,
       datePublished: post.date,
-      dateModified: post.date,
+      dateModified: postEnrichment[post.slug]?.updated ?? post.date,
       image: "https://furkanarikan.av.tr/opengraph-image",
       inLanguage: "tr-TR",
       mainEntityOfPage: `https://furkanarikan.av.tr/makaleler/${post.slug}`,
@@ -181,6 +183,9 @@ export default async function MakalePage({ params }: Props) {
                 <line x1="3" x2="21" y1="10" y2="10" />
               </svg>
               {post.dateFormatted}
+              {postEnrichment[post.slug]?.updated && (
+                <> · Son güncelleme: {formatTrDate(postEnrichment[post.slug]!.updated!)}</>
+              )}
             </span>
             <span className="flex items-center gap-1.5">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -209,11 +214,43 @@ export default async function MakalePage({ params }: Props) {
             Kendi durumunuza özgü hukuki destek için lütfen bir avukata başvurun.
           </div>
 
+          {/* Kısa cevap (AEO) */}
+          {postEnrichment[post.slug]?.summary && (
+            <section
+              className="mb-8 p-5 rounded-lg border-l-4"
+              style={{ borderColor: "#14342B", backgroundColor: "#fff" }}
+              aria-label="Kısa cevap"
+            >
+              <p className="text-xs font-semibold uppercase tracking-wide mb-2" style={{ color: "#C5A880" }}>
+                Kısa cevap
+              </p>
+              <p className="text-base leading-relaxed" style={{ color: "#14342B" }}>
+                {postEnrichment[post.slug]!.summary}
+              </p>
+            </section>
+          )}
+
           {/* Content */}
           <article
             className="prose-law"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
+
+          {/* İlgili hesaplama araçları */}
+          {(postEnrichment[post.slug]?.tools?.length ?? 0) > 0 && (
+            <aside className="mt-10 p-5 rounded border text-sm" style={{ borderColor: "#EBE0D4", backgroundColor: "#fff", color: "#3D5A50" }}>
+              <p className="font-semibold mb-2" style={{ color: "#14342B" }}>İlgili hesaplama araçları</p>
+              <ul className="space-y-1">
+                {postEnrichment[post.slug]!.tools!.filter((t) => TOOL_LABELS[t]).map((t) => (
+                  <li key={t}>
+                    <Link href={`/${t}`} className="underline" style={{ color: "#14342B" }}>
+                      {TOOL_LABELS[t]}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          )}
 
           {/* Dayanak mevzuat (mevzuat.gov.tr) */}
           {(() => {

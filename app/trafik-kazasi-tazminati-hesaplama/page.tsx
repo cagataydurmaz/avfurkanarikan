@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,7 +8,7 @@ import TrafikKazasiForm from "@/components/calculators/TrafikKazasiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Trafik Kazası Tazminatı: Zamanaşımı Süresi Hesaplama",
+  title: pseoTitle("Trafik Kazası Tazminatı: Zamanaşımı Süresi Hesaplama"),
   description:
     "Trafik kazası sonrası talep edilebilecek tazminat kalemlerini ve dava açma hakkınızın ne zaman sona ereceğini (zamanaşımını) öğrenin.",
   alternates: {

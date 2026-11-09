@@ -3,11 +3,12 @@ import { bagcilar } from "@/lib/pseo/bagcilar";
 import { bagcilarServices } from "@/lib/pseo/bagcilarServices";
 import { buildPseoJsonLd } from "@/lib/pseo/buildJsonLd";
 import PseoPage from "@/components/pseo/PseoPage";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 
 const service = bagcilarServices.find((s) => s.slug === "miras")!;
 
 export const metadata: Metadata = {
-  title: service.metaTitle,
+  title: pseoTitle(service.metaTitle),
   description: service.metaDescription,
   alternates: { canonical: `/${service.urlSlug}` },
   robots: { index: true, follow: true },

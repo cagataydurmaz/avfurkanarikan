@@ -3,11 +3,12 @@ import { eyupsultan } from "@/lib/pseo/eyupsultan";
 import { eyupsultanServices } from "@/lib/pseo/eyupsultanServices";
 import { buildPseoJsonLd } from "@/lib/pseo/buildJsonLd";
 import PseoPage from "@/components/pseo/PseoPage";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 
 const service = eyupsultanServices.find((s) => s.slug === "kira-tahliye")!;
 
 export const metadata: Metadata = {
-  title: service.metaTitle,
+  title: pseoTitle(service.metaTitle),
   description: service.metaDescription,
   alternates: { canonical: `/${service.urlSlug}` },
   robots: { index: true, follow: true },

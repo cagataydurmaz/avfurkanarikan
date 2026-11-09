@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,7 +8,7 @@ import InfazYatarForm from "@/components/calculators/InfazYatarForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "İnfaz Yatar Hesaplama (Koşullu Salıverilme)",
+  title: pseoTitle("İnfaz Yatar Hesaplama (Koşullu Salıverilme)"),
   description:
     "Ceza süresi ve suç kategorisine göre tahmini koşullu salıverilme ve denetimli serbestlik tarihini hesaplayın.",
   alternates: {

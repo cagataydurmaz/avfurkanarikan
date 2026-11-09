@@ -1,5 +1,10 @@
 // SERP'te kesilmemesi için ~60 karakteri aşmayan meta başlıklar; sayfadaki H1 (post.title) değişmez.
 export const postMetaTitles: Record<string, string> = {
+  "mirasin-reddi-nasil-yapilir": "Mirasın Reddi Nasıl Yapılır? Süre ve Sonuçları",
+  "trafik-kazasi-tazminati-ve-arac-deger-kaybi": "Trafik Kazası Tazminatı ve Araç Değer Kaybı",
+  "fazla-mesai-alacagi-ve-ispati": "Fazla Mesai Alacağı Nasıl İspatlanır?",
+  "ihtiyac-nedeniyle-tahliye-davasi": "İhtiyaç Nedeniyle Tahliye Davası: Şartlar ve Süre",
+  "kira-artis-orani-nasil-hesaplanir": "Kira Artış Oranı Nasıl Hesaplanır? (TBK m.344)",
   "ceza-hukukunda-etkin-pismanlik": "Etkin Pişmanlık Nedir? Ceza İndirimi Şartları",
   "bosanma-davasinda-velayet": "Boşanmada Velayet: Mahkeme Hangi Kriterlere Bakar?",
   "kidem-tazminati-hesaplama-2026": "Kıdem Tazminatı Hakkı ve Hesaplama (2026 Rehberi)",

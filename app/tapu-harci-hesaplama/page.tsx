@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pseoTitle } from "@/lib/pseo/pseoTitle";
 import ToolRelated from "@/components/calculators/ToolRelated";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,7 +8,7 @@ import TapuHarciForm from "@/components/calculators/TapuHarciForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
 
 export const metadata: Metadata = {
-  title: "Tapu Harcı Hesaplama 2026 (Alıcı ve Satıcı)",
+  title: pseoTitle("Tapu Harcı Hesaplama 2026 (Alıcı ve Satıcı)"),
   description:
     "Gayrimenkul satışında satış bedeline göre toplam tapu harcını ve alıcı/satıcı payını hesaplayın.",
   alternates: {
