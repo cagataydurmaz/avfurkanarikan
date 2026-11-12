@@ -5,7 +5,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import { ADLIYE_DISTRICTS } from "@/lib/calculators/adliyeBulucu";
-import ServiceRegions from "@/components/ServiceRegions";
+import { TARGET_DISTRICTS } from "@/lib/pseo/deep";
+
+const ORDERED = [
+  ...TARGET_DISTRICTS.map((s) => ADLIYE_DISTRICTS.find((d) => d.slug === s)!).filter(Boolean),
+  ...ADLIYE_DISTRICTS.filter((d) => !TARGET_DISTRICTS.includes(d.slug)),
+];
 
 export const metadata: Metadata = {
   title: pseoTitle("İstanbul İlçelerine Göre Avukatlık Hizmetleri"),
@@ -45,7 +50,7 @@ const jsonLd = {
         itemListElement: ADLIYE_DISTRICTS.map((d, i) => ({
           "@type": "ListItem",
           position: i + 1,
-          name: `${d.name} Avukat`,
+          name: d.name,
           url: `https://furkanarikan.av.tr/${d.slug}-avukat`,
         })),
       },
@@ -93,22 +98,15 @@ export default function IlcelerPage() {
 
       <main className="py-16 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-6xl mx-auto px-5 md:px-8">
-          <h2 className="text-2xl font-bold mb-6" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
-            Başlıca Hizmet Bölgeleri
-          </h2>
-          <ServiceRegions showServices />
-          <h2 className="text-2xl font-bold mt-14 mb-6" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
-            Tüm İlçeler
-          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {ADLIYE_DISTRICTS.map((d) => (
+            {ORDERED.map((d) => (
               <Link
                 key={d.slug}
                 href={`/${d.slug}-avukat`}
                 className="flex items-center justify-between p-4 rounded-lg border transition-colors duration-200 hover:bg-white"
                 style={{ borderColor: "#EBE0D4", color: "#14342B" }}
               >
-                <span className="text-sm font-medium">{d.name} Avukat</span>
+                <span className="text-sm font-medium">{d.name}</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C5A880" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 12h14M12 5l7 7-7 7" />
                 </svg>

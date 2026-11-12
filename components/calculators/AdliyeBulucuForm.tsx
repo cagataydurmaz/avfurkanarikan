@@ -74,7 +74,7 @@ export default function AdliyeBulucuForm() {
               className="text-xs font-semibold px-4 py-2.5 rounded-full border transition-colors"
               style={{ color: "#14342B", borderColor: "#14342B" }}
             >
-              {district.name} Avukat →
+              {district.name} →
             </Link>
             <TrackedLink
               channel="phone"
