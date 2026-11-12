@@ -1,12 +1,74 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import TrackedLink from "./TrackedLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+
+const HINT_KEY = "fa_wa_hint_seen";
+const HINT_DELAY_MS = 500;
+const HINT_VISIBLE_MS = 5000;
+
+/** İlk ziyarette WhatsApp butonunun üstünde kısa süre görünen bilgi baloncuğu. */
+function WhatsAppHint() {
+  const { lang } = useLanguage();
+  // idle: DOM'da yok · in: görünür · out: soluyor · done: kaldırıldı
+  const [phase, setPhase] = useState<"idle" | "in" | "out" | "done">("idle");
+
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem(HINT_KEY)) return;
+    } catch {
+      // depolama kapalıysa baloncuk yine gösterilir
+    }
+    const timers: ReturnType<typeof setTimeout>[] = [];
+    const hide = () => {
+      setPhase((p) => (p === "in" ? "out" : p));
+      timers.push(setTimeout(() => setPhase("done"), 500));
+    };
+    timers.push(
+      setTimeout(() => {
+        setPhase("in");
+        try {
+          window.localStorage.setItem(HINT_KEY, "1");
+        } catch {}
+        timers.push(setTimeout(hide, HINT_VISIBLE_MS));
+        window.addEventListener("scroll", hide, { once: true, passive: true });
+        window.addEventListener("pointerdown", hide, { once: true });
+      }, HINT_DELAY_MS),
+    );
+    return () => {
+      timers.forEach(clearTimeout);
+      window.removeEventListener("scroll", hide);
+      window.removeEventListener("pointerdown", hide);
+    };
+  }, []);
+
+  if (phase === "idle" || phase === "done") return null;
+
+  return (
+    <div
+      role="status"
+      aria-live="polite"
+      className={`fixed right-5 bottom-[5.25rem] z-50 max-w-[220px] px-4 py-2.5 rounded-xl border text-sm leading-snug shadow-md pointer-events-none motion-safe:animate-[hintIn_400ms_ease-out] transition-opacity duration-500 motion-reduce:transition-none ${
+        phase === "out" ? "opacity-0" : "opacity-100"
+      }`}
+      style={{ backgroundColor: "#fff", color: "#14342B", borderColor: "#D9CBB8" }}
+    >
+      {lang === "en" ? "You can send your question on WhatsApp" : "Sorunuzu WhatsApp\u2019tan yazabilirsiniz"}
+      <span
+        aria-hidden="true"
+        className="absolute -bottom-[7px] right-8 w-3 h-3 rotate-45 border-r border-b"
+        style={{ backgroundColor: "#fff", borderColor: "#D9CBB8" }}
+      />
+    </div>
+  );
+}
 
 export default function FloatingButtons() {
   const { t } = useLanguage();
   return (
     <>
+      <WhatsAppHint />
       {/* WhatsApp - bottom right */}
       <TrackedLink
         channel="whatsapp"
