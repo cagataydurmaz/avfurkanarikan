@@ -6,6 +6,7 @@ import { COURTHOUSES } from "@/lib/calculators/adliyeBulucu";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
 import MevzuatKaynak from "@/components/MevzuatKaynak";
+import { getDeep } from "@/lib/pseo/deep";
 import FloatingButtons from "@/components/FloatingButtons";
 import TrackedLink from "@/components/TrackedLink";
 
@@ -142,7 +143,7 @@ export default function PseoPage({
               style={{ border: "3px solid #C5A880" }}
             >
               <Image
-                src="/furkan-arikan.jpg"
+                src="/furkan-arikan-cuppe.jpg"
                 alt="Av. Furkan Arıkan"
                 fill
                 sizes="80px"
@@ -257,6 +258,26 @@ export default function PseoPage({
           </div>
         </section>
 
+        {/* 7b. DEEP (hedef ilçeler için elle yazılmış bölümler) */}
+        {getDeep(district.slug, service.slug).length > 0 && (
+          <section className="py-14 md:py-20" style={{ backgroundColor: "#fff" }}>
+            <div className="max-w-3xl mx-auto px-5 md:px-8 space-y-10">
+              {getDeep(district.slug, service.slug).map((sec) => (
+                <div key={sec.heading}>
+                  <h2 className="text-2xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                    {sec.heading}
+                  </h2>
+                  <div className="space-y-4">
+                    {sec.paragraphs.map((para, i) => (
+                      <p key={i} className="text-base leading-relaxed" style={{ color: "#2D4A3E" }}>{para}</p>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* 8. CROSSLINKS */}
         <section className="py-12" style={{ backgroundColor: "#EBE0D4" }}>
           <div className="max-w-5xl mx-auto px-5 md:px-8">
@@ -296,7 +317,7 @@ export default function PseoPage({
         <LocalInfo district={district} />
 
         <div className="max-w-3xl mx-auto px-5 md:px-8 pb-2" style={{ backgroundColor: "#F4EDE4" }}>
-          <MevzuatKaynak text={JSON.stringify(service)} />
+          <MevzuatKaynak text={JSON.stringify(service) + JSON.stringify(getDeep(district.slug, service.slug))} />
         </div>
 
         {/* 9. FAQ */}

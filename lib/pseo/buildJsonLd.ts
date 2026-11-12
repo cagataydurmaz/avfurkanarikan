@@ -1,4 +1,5 @@
 import type { PseoDistrict, PseoService } from "./types";
+import { getDeep, DEEP_UPDATED } from "./deep";
 
 const BASE_URL = "https://furkanarikan.av.tr";
 const LEGAL_SERVICE_ID = `${BASE_URL}/#legalservice`;
@@ -52,7 +53,7 @@ export function buildPseoJsonLd(district: PseoDistrict, service: PseoService) {
       about: { "@id": `${pageUrl}#service` },
       publisher: { "@id": LEGAL_SERVICE_ID },
       datePublished: district.publishedDate,
-      dateModified: district.publishedDate,
+      dateModified: getDeep(district.slug, service.slug).length > 0 ? DEEP_UPDATED : district.publishedDate,
     },
   ];
 }

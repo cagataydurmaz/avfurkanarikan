@@ -52,7 +52,7 @@ export const buyukcekmeceMiras: PseoService = {
     {
       question: "Saklı pay nedir, kimleri korur?",
       answer:
-        "Saklı pay, miras bırakanın serbestçe tasarruf edemeyeceği kanuni payı ifade eder. Altsoy, ana-baba ve sağ kalan eş saklı pay sahibi olabilir; oranlar TMK m.505'te düzenlenmiştir.",
+        "Saklı pay, miras bırakanın serbestçe tasarruf edemeyeceği kanuni payı ifade eder. Altsoy, ana-baba ve sağ kalan eş saklı pay sahibi olabilir; oranlar TMK m.506'da düzenlenmiştir.",
     },
     {
       question: "Mirası reddetmek için ne kadar süre var?",

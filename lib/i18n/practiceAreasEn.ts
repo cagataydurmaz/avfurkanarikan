@@ -350,7 +350,7 @@ export const practiceAreasEn: Record<string, PracticeAreaTranslation> = {
       {
         heading: "What Is a Reserved Share, and How Is an Abatement Case Filed?",
         paragraphs: [
-          "A reserved share is the portion of the inheritance guaranteed by law to certain heirs, limiting the testator's freedom of disposition. Under Article 505 of the TMK, the reserved share of descendants is half of their statutory share, that of parents is one quarter, and that of the surviving spouse is, depending on the circumstances, the entirety of their statutory share.",
+          "A reserved share is the portion of the inheritance guaranteed by law to certain heirs, limiting the testator's freedom of disposition. Under Article 506 of the TMK, the reserved share of descendants is half of their statutory share, that of parents is one quarter, and that of the surviving spouse is, depending on the circumstances, the entirety of their statutory share.",
           "Where the testator has made dispositions exceeding the reserved share, the reserved-share heirs may file an abatement case. An abatement case — where the reserved share has been violated through a will or inter vivos gifts — must be filed within 1 year of the testator's death. If the violation is not discovered when the estate opens, this period begins to run from the date it is discovered.",
         ],
       },

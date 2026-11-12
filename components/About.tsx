@@ -25,7 +25,7 @@ export default function About() {
               style={{ border: "4px solid #C5A880" }}
             >
               <Image
-                src="/furkan-arikan.jpg"
+                src="/furkan-arikan-cuppe.jpg"
                 alt="Av. Furkan Arıkan"
                 fill
                 sizes="(min-width: 768px) 288px, 224px"

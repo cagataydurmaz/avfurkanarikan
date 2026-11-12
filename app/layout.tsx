@@ -80,7 +80,7 @@ const jsonLd = {
         postalCode: "34330",
         addressCountry: "TR",
       },
-      image: "https://furkanarikan.av.tr/furkan-arikan.jpg",
+      image: "https://furkanarikan.av.tr/furkan-arikan-cuppe.jpg",
       geo: {
         "@type": "GeoCoordinates",
         latitude: 41.0444231,
@@ -116,6 +116,8 @@ const jsonLd = {
       "@id": "https://furkanarikan.av.tr/#person",
       name: "Furkan Arıkan",
       jobTitle: "Avukat",
+      image: "https://furkanarikan.av.tr/furkan-arikan-cuppe.jpg",
+      url: "https://furkanarikan.av.tr",
       worksFor: {
         "@id": "https://furkanarikan.av.tr/#legalservice",
       },

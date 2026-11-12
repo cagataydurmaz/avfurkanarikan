@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { posts } from "@/lib/posts";
+import { getDeep, DEEP_UPDATED } from "@/lib/pseo/deep";
 import { postEnrichment } from "@/lib/postEnrichment";
 import { practiceAreas } from "@/lib/practiceAreas";
 import { tools } from "@/lib/calculators/tools";
@@ -128,7 +129,7 @@ const pseoGroups: { district: PseoDistrict; services: PseoService[] }[] = [
 ];
 
 const allPseoServices = pseoGroups.flatMap((g) =>
-  g.services.map((service) => ({ service, lastModified: new Date(g.district.publishedDate) }))
+  g.services.map((service) => ({ service, lastModified: new Date(getDeep(g.district.slug, service.slug).length > 0 ? DEEP_UPDATED : g.district.publishedDate) }))
 );
 
 // lastmod gerçek içerik değişikliğini yansıtmalı; build zamanı kullanılmaz.

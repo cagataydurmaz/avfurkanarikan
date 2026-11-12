@@ -262,7 +262,7 @@ export const practiceAreas: PracticeArea[] = [
       {
         heading: "Saklı Pay Nedir ve Tenkis Davası Nasıl Açılır?",
         paragraphs: [
-          "Saklı pay; miras bırakanın tasarruf özgürlüğü sınırlandırılmış olan ve belirli mirasçılara kanun tarafından güvence altına alınan miras payıdır. TMK'nın 505. maddesi uyarınca altsoyun saklı payı yasal miras payının yarısı, ana ve babanın saklı payı dörtte biri, sağ kalan eşin saklı payı ise duruma göre yasal miras payının tamamıdır.",
+          "Saklı pay; miras bırakanın tasarruf özgürlüğü sınırlandırılmış olan ve belirli mirasçılara kanun tarafından güvence altına alınan miras payıdır. TMK'nın 506. maddesi uyarınca altsoyun saklı payı yasal miras payının yarısı, ana ve babanın saklı payı dörtte biri, sağ kalan eşin saklı payı ise duruma göre yasal miras payının tamamıdır.",
           "Miras bırakan, saklı payı aşan tasarruflarda bulunmuşsa saklı pay mirasçıları tenkis davası açabilir. Tenkis davası; vasiyetname veya sağlararası bağışlamalarla saklı payın ihlal edildiği durumlarda miras bırakanın ölümünden itibaren 1 yıl içinde açılmalıdır. Mirasın açılması sırasında saklı pay ihlalinin öğrenilmemesi halinde ise bu süre öğrenme tarihinden işlemeye başlar.",
         ],
       },

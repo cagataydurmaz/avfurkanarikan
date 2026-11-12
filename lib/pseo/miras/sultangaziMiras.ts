@@ -62,7 +62,7 @@ export const sultangaziMiras: PseoService = {
     {
       question: "Saklı pay kimlere tanınmıştır?",
       answer:
-        "TMK m.505 uyarınca altsoy, ana ve baba ile sağ kalan eşin saklı payı bulunur. Altsoyun saklı payı yasal payının yarısıdır. Saklı payı ihlal eden tasarruflara karşı tenkis davası açılabilir; süre ve başlangıç tarihi somut olaya göre değerlendirilir.",
+        "TMK m.506 uyarınca altsoy, ana ve baba ile sağ kalan eşin saklı payı bulunur. Altsoyun saklı payı yasal payının yarısıdır. Saklı payı ihlal eden tasarruflara karşı tenkis davası açılabilir; süre ve başlangıç tarihi somut olaya göre değerlendirilir.",
     },
   ],
   howToTitle: "Sultangazi'de Hisseli Tapunun Mirasçılar Arasında Paylaşımı Nasıl Yapılır?",

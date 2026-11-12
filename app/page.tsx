@@ -8,6 +8,7 @@ import ToolsPreview from "@/components/ToolsPreview";
 import BlogPreview from "@/components/BlogPreview";
 import GoogleReviews from "@/components/GoogleReviews";
 import Contact from "@/components/Contact";
+import ServiceRegionsSection from "@/components/ServiceRegionsSection";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import { posts } from "@/lib/posts";
@@ -27,6 +28,7 @@ export default function Home() {
         <ToolsPreview />
         <BlogPreview posts={recentPosts} />
         <GoogleReviews />
+        <ServiceRegionsSection />
         <Contact />
       </main>
       <Footer />

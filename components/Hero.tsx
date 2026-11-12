@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-10 lg:pt-0 lg:pb-0"
       style={{
         background: "linear-gradient(135deg, #0d2420 0%, #14342B 50%, #1B3A2F 100%)",
       }}
@@ -92,7 +92,7 @@ export default function Hero() {
             style={{ border: "3px solid #C5A880", boxShadow: "0 8px 24px rgba(0,0,0,0.35)" }}
           >
             <Image
-              src="/furkan-arikan.jpg"
+              src="/furkan-arikan-cuppe.jpg"
               alt="Av. Furkan Arıkan"
               fill
               sizes="112px"

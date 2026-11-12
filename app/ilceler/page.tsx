@@ -5,16 +5,17 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import { ADLIYE_DISTRICTS } from "@/lib/calculators/adliyeBulucu";
+import ServiceRegions from "@/components/ServiceRegions";
 
 export const metadata: Metadata = {
   title: pseoTitle("İstanbul İlçelerine Göre Avukatlık Hizmetleri"),
   description:
-    "İstanbul'un 34 ilçesinde ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında ilçeye özel hukuki danışmanlık sayfaları.",
+    "İstanbul'un 39 ilçesinde ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında ilçeye özel hukuki danışmanlık sayfaları.",
   alternates: { canonical: "/ilceler" },
   openGraph: {
     title: "İstanbul İlçelerine Göre Avukatlık Hizmetleri",
     description:
-      "İstanbul'un 34 ilçesinde ilçeye özel hukuki danışmanlık ve dava takibi sayfaları.",
+      "İstanbul'un 39 ilçesinde ilçeye özel hukuki danışmanlık ve dava takibi sayfaları.",
     type: "website",
     locale: "tr_TR",
     siteName: "Av. Furkan Arıkan Hukuk Bürosu",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "İstanbul İlçelerine Göre Avukatlık Hizmetleri",
     description:
-      "İstanbul'un 34 ilçesinde ilçeye özel hukuki danışmanlık ve dava takibi sayfaları.",
+      "İstanbul'un 39 ilçesinde ilçeye özel hukuki danışmanlık ve dava takibi sayfaları.",
     images: ["/opengraph-image"],
   },
 };
@@ -92,6 +93,13 @@ export default function IlcelerPage() {
 
       <main className="py-16 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-6xl mx-auto px-5 md:px-8">
+          <h2 className="text-2xl font-bold mb-6" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            Başlıca Hizmet Bölgeleri
+          </h2>
+          <ServiceRegions showServices />
+          <h2 className="text-2xl font-bold mt-14 mb-6" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            Tüm İlçeler
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {ADLIYE_DISTRICTS.map((d) => (
               <Link
