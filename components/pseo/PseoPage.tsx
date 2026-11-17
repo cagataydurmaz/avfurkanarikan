@@ -385,6 +385,10 @@ export default function PseoPage({
                   <p className="text-sm" style={{ color: "rgba(244,237,228,0.8)" }}>Sinanpaşa Mh. Şht. Asım Cd. No:37/12</p>
                   <p className="text-sm" style={{ color: "rgba(244,237,228,0.8)" }}>Beşiktaş/İstanbul</p>
                 </div>
+                <p className="text-xs leading-relaxed" style={{ color: "rgba(244,237,228,0.6)" }}>
+                  Büro adına farklı numaralardan arayıp ödeme isteyen kişilere itibar etmeyiniz. Resmi numara: +90 535 487 40 99{" "}
+                  <Link href="/dolandiricilik-uyarisi" className="underline">Dolandırıcılık uyarısı</Link>
+                </p>
                 <a
                   href="https://www.google.com/search?q=Av.+Furkan+Arıkan+Beşiktaş"
                   target="_blank"
@@ -408,6 +412,11 @@ export default function PseoPage({
           </p>
           <p className="mt-2 text-xs max-w-lg mx-auto" style={{ color: "rgba(244,237,228,0.35)" }}>
             Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır ve hukuki tavsiye niteliği taşımaz.
+          </p>
+          <p className="mt-2 text-xs">
+            <Link href="/dolandiricilik-uyarisi" className="underline" style={{ color: "rgba(244,237,228,0.45)" }}>
+              Dolandırıcılık uyarısı
+            </Link>
           </p>
           <p className="mt-4 text-[11px] tracking-wide" style={{ color: "rgba(197,168,128,0.5)" }}>
             Site tasarımı ve geliştirmesi:{" "}

@@ -103,6 +103,13 @@ export default function Footer() {
             >
               {t("footer.privacy")}
             </Link>
+            <Link
+              href="/dolandiricilik-uyarisi"
+              className="text-xs underline transition-colors"
+              style={{ color: "rgba(244,237,228,0.6)" }}
+            >
+              {t("footer.fraud")}
+            </Link>
           </div>
           <p className="text-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
             {t("footer.disclaimer")}

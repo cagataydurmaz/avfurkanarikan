@@ -179,6 +179,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    {
+      url: `${BASE_URL}/dolandiricilik-uyarisi`,
+      lastModified: new Date("2026-11-17"),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
   ];
 
   const practiceAreaPages: MetadataRoute.Sitemap = practiceAreas.map((area) => ({

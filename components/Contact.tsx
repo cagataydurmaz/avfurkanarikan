@@ -69,6 +69,13 @@ export default function Contact() {
               ]}
             />
 
+            <p className="text-xs leading-relaxed" style={{ color: "rgba(244,237,228,0.6)" }}>
+              {t("contact.fraudNote")}{" "}
+              <Link href="/dolandiricilik-uyarisi" className="underline">
+                {t("footer.fraud")}
+              </Link>
+            </p>
+
             <Link href="/besiktas-avukat" className="text-xs underline" style={{ color: "rgba(244,237,228,0.6)" }}>
               {t("contact.besiktasPage")}
             </Link>
