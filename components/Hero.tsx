@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import TrackedLink from "./TrackedLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
@@ -167,8 +168,16 @@ export default function Hero() {
           </TrackedLink>
         </div>
 
+        {/* Dolandırıcılık notu (geçici, sade) */}
+        <p className="mt-6 text-xs leading-relaxed max-w-md mx-auto" style={{ color: "rgba(244,237,228,0.55)" }}>
+          {t("hero.fraud")}{" "}
+          <Link href="/dolandiricilik-uyarisi" className="underline whitespace-nowrap" style={{ color: "rgba(197,168,128,0.85)" }}>
+            {t("footer.fraud")}
+          </Link>
+        </p>
+
         {/* Scroll indicator */}
-        <div className="mt-20 flex flex-col items-center gap-2 opacity-50">
+        <div className="mt-14 flex flex-col items-center gap-2 opacity-50">
           <span className="text-xs tracking-widest uppercase" style={{ color: "#C5A880" }}>
             {t("hero.scroll")}
           </span>

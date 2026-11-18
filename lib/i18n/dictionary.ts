@@ -111,6 +111,7 @@ export const dictionary = {
     "footer.rights": "Tüm hakları saklıdır.",
     "footer.privacy": "Gizlilik Politikası ve KVKK Aydınlatma Metni",
     "footer.fraud": "Dolandırıcılık uyarısı",
+    "hero.fraud": "Büro adına farklı numaralardan arayıp ödeme isteyenlere itibar etmeyiniz.",
     "contact.fraudNote": "Büro adına farklı numaralardan arayıp ödeme isteyen kişilere itibar etmeyiniz. Resmi numara: +90 535 487 40 99",
     "footer.disclaimer": "Bu sitedeki bilgiler hukuki danışmanlık niteliği taşımaz.",
 
@@ -240,6 +241,7 @@ export const dictionary = {
     "footer.rights": "All rights reserved.",
     "footer.privacy": "Privacy Policy and Data Protection Notice",
     "footer.fraud": "Fraud warning",
+    "hero.fraud": "Do not trust anyone calling from other numbers on behalf of the office and asking for payment.",
     "contact.fraudNote": "Do not trust anyone calling from other numbers on behalf of the office and asking for payment. Official number: +90 535 487 40 99",
     "footer.disclaimer": "The information on this site does not constitute legal advice.",
 

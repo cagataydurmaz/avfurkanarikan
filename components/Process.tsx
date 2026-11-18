@@ -11,7 +11,7 @@ export default function Process() {
     { number: "04", title: t("process.step4.title"), description: t("process.step4.desc") },
   ];
   return (
-    <section id="surec" className="py-20 md:py-28" style={{ backgroundColor: "#F4EDE4" }}>
+    <section id="surec" className="py-14 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header - centered, breaks from the split layout used elsewhere */}
         <div className="flex flex-col items-center text-center mb-14">

@@ -9,7 +9,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 export default function Contact() {
   const { t } = useLanguage();
   return (
-    <section id="iletisim" className="py-20 md:py-28" style={{ backgroundColor: "#14342B" }}>
+    <section id="iletisim" className="py-14 md:py-20" style={{ backgroundColor: "#14342B" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">

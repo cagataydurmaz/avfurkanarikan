@@ -7,7 +7,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 export default function ToolsPreview() {
   const { t } = useLanguage();
   return (
-    <section className="py-20 md:py-28" style={{ backgroundColor: "#fff" }}>
+    <section className="py-14 md:py-20" style={{ backgroundColor: "#fff" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="flex items-center gap-3 mb-3">

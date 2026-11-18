@@ -7,7 +7,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 export default function BlogPreview({ posts }: { posts: Post[] }) {
   const { t } = useLanguage();
   return (
-    <section id="makaleler" className="py-20 md:py-28" style={{ backgroundColor: "#F4EDE4" }}>
+    <section id="makaleler" className="py-14 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="flex items-center gap-3 mb-3">
