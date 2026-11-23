@@ -2,11 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import type { PseoDistrict, PseoService } from "@/lib/pseo/types";
 import { getPostBySlug } from "@/lib/posts";
-import { COURTHOUSES } from "@/lib/calculators/adliyeBulucu";
+import { COURTHOUSES, ADLIYE_DISTRICTS } from "@/lib/calculators/adliyeBulucu";
 import ContactForm from "@/components/ContactForm";
 import MapEmbed from "@/components/MapEmbed";
 import MevzuatKaynak from "@/components/MevzuatKaynak";
-import { getDeep } from "@/lib/pseo/deep";
+import { getDeep, pageModified } from "@/lib/pseo/deep";
+import { formatTrDate } from "@/lib/postEnrichment";
 import FloatingButtons from "@/components/FloatingButtons";
 import TrackedLink from "@/components/TrackedLink";
 
@@ -154,8 +155,12 @@ export default function PseoPage({
               <h2 className="text-2xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
                 Av. Furkan Arıkan Hakkında
               </h2>
-              <p className="text-base leading-relaxed" style={{ color: "#2D4A3E" }}>
+              <p data-speakable className="text-base leading-relaxed" style={{ color: "#2D4A3E" }}>
                 {service.aboutParagraph}
+              </p>
+              <p className="mt-4 text-xs" style={{ color: "#5B6F66" }}>
+                Hazırlayan ve inceleyen: Av. Furkan Arıkan, İstanbul Barosu (Sicil No: 72621) · Son güncelleme:{" "}
+                {formatTrDate(pageModified(district.slug, service.slug, district.publishedDate))}
               </p>
             </div>
           </div>
@@ -277,6 +282,9 @@ export default function PseoPage({
             </div>
           </section>
         )}
+
+        {/* 8a. AYNI ADLİYEDEKİ İLÇELER */}
+        <SameCourthouseLinks districtSlug={district.slug} urlSlug={service.urlSlug} />
 
         {/* 8. CROSSLINKS */}
         <section className="py-12" style={{ backgroundColor: "#EBE0D4" }}>
@@ -468,6 +476,39 @@ function LocalInfo({ district }: { district: PseoDistrict }) {
         <p className="text-xs mt-4 leading-relaxed" style={{ color: "#8A9A93" }}>
           Kurum bilgileri resmi kaynaklardan derlenmiştir; başvuru öncesinde güncel adres ve telefonu ilgili kurumdan teyit ediniz.
         </p>
+      </div>
+    </section>
+  );
+}
+
+/** Aynı adliyeye bağlı diğer ilçelerde aynı hizmet sayfasına bağlantılar. */
+function SameCourthouseLinks({ districtSlug, urlSlug }: { districtSlug: string; urlSlug: string }) {
+  const me = ADLIYE_DISTRICTS.find((d) => d.slug === districtSlug);
+  if (!me) return null;
+  const suffix = urlSlug.slice(districtSlug.length + 1); // ör. "bosanma-avukati" veya "avukat"
+  const peers = ADLIYE_DISTRICTS.filter((d) => d.courthouse === me.courthouse && d.slug !== districtSlug);
+  if (peers.length === 0) return null;
+  return (
+    <section className="py-10" style={{ backgroundColor: "#F4EDE4" }}>
+      <div className="max-w-5xl mx-auto px-5 md:px-8">
+        <p className="text-xs tracking-widest uppercase font-semibold mb-2" style={{ color: "#14342B" }}>
+          Aynı Adliyedeki Diğer İlçeler
+        </p>
+        <p className="text-xs mb-4" style={{ color: "#3D5A50" }}>
+          {me.courthouse} yargı çevresindeki ilçeler
+        </p>
+        <div className="flex flex-wrap gap-2.5">
+          {peers.map((d) => (
+            <Link
+              key={d.slug}
+              href={`/${d.slug}-${suffix}`}
+              className="text-xs font-medium px-4 py-2 rounded-full border transition-colors"
+              style={{ color: "#14342B", borderColor: "#C5A880" }}
+            >
+              {d.name}
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );

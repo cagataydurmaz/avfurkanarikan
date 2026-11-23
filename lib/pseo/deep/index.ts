@@ -12,6 +12,14 @@ import { buyukcekmeceDeep } from "./buyukcekmece";
 
 /** Hedef ilçeler için elle yazılmış derin içerik. */
 export const DEEP_UPDATED = "2026-11-12";
+/** Tüm pSEO sayfalarında SSS cevaplarının genişletildiği tarih (görünür içerik değişikliği). */
+export const CONTENT_UPDATED = "2026-11-05";
+
+/** Sayfanın görünür içeriğinin en son değiştiği tarih (şema, site haritası ve sayfadaki künye için). */
+export function pageModified(districtSlug: string, serviceSlug: string, publishedDate: string): string {
+  if (getDeep(districtSlug, serviceSlug).length > 0) return DEEP_UPDATED;
+  return publishedDate > CONTENT_UPDATED ? publishedDate : CONTENT_UPDATED;
+}
 
 const DEEP: Record<string, DeepContent> = {
   besiktas: besiktasDeep,
