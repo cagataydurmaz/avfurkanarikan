@@ -54,12 +54,22 @@ export default function Hero() {
       />
 
       {/* Portrait photo - right edge, desktop only, blended into background */}
-      <div className="hidden lg:block absolute top-0 right-0 bottom-0 w-[42%] pointer-events-none" aria-hidden="true">
+      <div
+        className="hidden lg:block absolute top-0 right-0 bottom-0 w-[50%] pointer-events-none"
+        aria-hidden="true"
+        style={{
+          // Fotoğrafı soldan sağa saydamlaştırarak arka planla kaynaştır (keskin kenar oluşmasın)
+          maskImage:
+            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 18%, rgba(0,0,0,0.4) 36%, rgba(0,0,0,0.8) 54%, #000 70%)",
+          WebkitMaskImage:
+            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.1) 18%, rgba(0,0,0,0.4) 36%, rgba(0,0,0,0.8) 54%, #000 70%)",
+        }}
+      >
         <Image
           src="/furkan-kutuphane.jpg"
           alt=""
           fill
-          sizes="(min-width: 1024px) 42vw, 0px"
+          sizes="(min-width: 1024px) 50vw, 0px"
           priority
           className="object-cover"
           style={{ objectPosition: "30% center", filter: "grayscale(0.35) contrast(1.05)" }}
@@ -68,7 +78,7 @@ export default function Hero() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, #0d2420 0%, rgba(13,36,32,0.92) 8%, rgba(13,36,32,0.75) 20%, rgba(13,36,32,0.5) 38%, rgba(13,36,32,0.3) 58%, rgba(13,36,32,0.15) 80%, rgba(13,36,32,0.08) 100%)",
+              "linear-gradient(to right, rgba(20,52,43,0.55) 0%, rgba(20,52,43,0.3) 45%, rgba(20,52,43,0.12) 75%, rgba(20,52,43,0.06) 100%)",
           }}
         />
       </div>
