@@ -268,7 +268,7 @@ export default function PseoPage({
           <section className="py-14 md:py-20" style={{ backgroundColor: "#fff" }}>
             <div className="max-w-3xl mx-auto px-5 md:px-8 space-y-10">
               {getDeep(district.slug, service.slug).map((sec) => (
-                <div key={sec.heading}>
+                <div key={sec.heading} id={sec.id} className="scroll-mt-24">
                   <h2 className="text-2xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
                     {sec.heading}
                   </h2>

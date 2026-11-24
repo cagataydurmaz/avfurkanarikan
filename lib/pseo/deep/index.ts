@@ -9,15 +9,18 @@ import { basaksehirDeep } from "./basaksehir";
 import { kucukcekmeceDeep } from "./kucukcekmece";
 import { avcilarDeep } from "./avcilar";
 import { buyukcekmeceDeep } from "./buyukcekmece";
+import { sariyerDeep } from "./sariyer";
 
 /** Hedef ilçeler için elle yazılmış derin içerik. */
 export const DEEP_UPDATED = "2026-11-12";
+/** Derin içeriği farklı tarihte eklenen ilçeler */
+const DEEP_UPDATED_BY_DISTRICT: Record<string, string> = { sariyer: "2026-11-24" };
 /** Tüm pSEO sayfalarında SSS cevaplarının genişletildiği tarih (görünür içerik değişikliği). */
 export const CONTENT_UPDATED = "2026-11-05";
 
 /** Sayfanın görünür içeriğinin en son değiştiği tarih (şema, site haritası ve sayfadaki künye için). */
 export function pageModified(districtSlug: string, serviceSlug: string, publishedDate: string): string {
-  if (getDeep(districtSlug, serviceSlug).length > 0) return DEEP_UPDATED;
+  if (getDeep(districtSlug, serviceSlug).length > 0) return DEEP_UPDATED_BY_DISTRICT[districtSlug] ?? DEEP_UPDATED;
   return publishedDate > CONTENT_UPDATED ? publishedDate : CONTENT_UPDATED;
 }
 
@@ -32,10 +35,11 @@ const DEEP: Record<string, DeepContent> = {
   kucukcekmece: kucukcekmeceDeep,
   avcilar: avcilarDeep,
   buyukcekmece: buyukcekmeceDeep,
+  sariyer: sariyerDeep,
 };
 
 export function getDeep(districtSlug: string, serviceSlug: string): DeepSection[] {
   return DEEP[districtSlug]?.[serviceSlug] ?? [];
 }
 
-export const TARGET_DISTRICTS = ["besiktas", "sisli", "kadikoy", "uskudar", "atasehir", "bakirkoy", "basaksehir", "kucukcekmece", "avcilar", "buyukcekmece"];
+export const TARGET_DISTRICTS = ["besiktas", "sisli", "kadikoy", "uskudar", "atasehir", "bakirkoy", "basaksehir", "kucukcekmece", "avcilar", "buyukcekmece", "sariyer"];
