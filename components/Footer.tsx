@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import TrackedLink from "./TrackedLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
@@ -26,19 +27,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-10 md:gap-8">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-block mb-3">
-              <p
-                className="text-xl font-bold"
-                style={{
-                  color: "#F4EDE4",
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                }}
-              >
-                Av. Furkan Arıkan
-              </p>
-              <p className="text-xs tracking-widest uppercase mt-0.5" style={{ color: "#C5A880" }}>
-                Hukuk Bürosu
-              </p>
+            <Link href="/" className="inline-block mb-3" aria-label="Av. Furkan Arıkan Hukuk Bürosu – Ana sayfa">
+              <Logo size="footer" />
             </Link>
             <p className="text-sm leading-relaxed mt-3" style={{ color: "rgba(244,237,228,0.55)" }}>
               {t("footer.tagline")}

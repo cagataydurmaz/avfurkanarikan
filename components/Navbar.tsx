@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import TrackedLink from "./TrackedLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { LANGS, type Lang } from "@/lib/i18n/dictionary";
@@ -48,16 +49,8 @@ export default function Navbar() {
       >
         <div className="max-w-6xl mx-auto px-5 md:px-8 flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-tight group">
-            <span
-              className="text-lg md:text-xl font-bold tracking-wide"
-              style={{ fontFamily: "var(--font-playfair), Georgia, serif", color: "#F4EDE4" }}
-            >
-              Av. Furkan Arıkan
-            </span>
-            <span className="text-xs tracking-widest uppercase" style={{ color: "#C5A880" }}>
-              Hukuk Bürosu
-            </span>
+          <Link href="/" className="group" aria-label="Av. Furkan Arıkan Hukuk Bürosu – Ana sayfa">
+            <Logo size="nav" />
           </Link>
 
           {/* Desktop nav */}
