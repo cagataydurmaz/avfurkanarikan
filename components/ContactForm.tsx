@@ -59,7 +59,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-3">
       <div>
         <label
           htmlFor="cf-ad"
@@ -131,7 +131,7 @@ export default function ContactForm() {
         </label>
         <textarea
           id="cf-mesaj"
-          rows={4}
+          rows={3}
           value={mesaj}
           onChange={(e) => setMesaj(e.target.value)}
           placeholder={t("form.messagePlaceholder")}

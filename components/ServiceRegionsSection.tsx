@@ -3,7 +3,7 @@ import ServiceRegions from "./ServiceRegions";
 
 export default function ServiceRegionsSection() {
   return (
-    <section className="py-16 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
+    <section className="py-10 md:py-16" style={{ backgroundColor: "#F4EDE4" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         <div className="flex items-center gap-3 mb-3">
           <div className="h-px w-10" style={{ backgroundColor: "#C5A880" }} aria-hidden="true" />

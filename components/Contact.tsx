@@ -9,10 +9,10 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 export default function Contact() {
   const { t } = useLanguage();
   return (
-    <section id="iletisim" className="py-14 md:py-20" style={{ backgroundColor: "#14342B" }}>
+    <section id="iletisim" className="py-10 md:py-16" style={{ backgroundColor: "#14342B" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 md:mb-10">
           <div>
             <span
               className="inline-block text-xs tracking-widest uppercase font-semibold px-3 py-1 rounded-full mb-4"
@@ -30,19 +30,19 @@ export default function Contact() {
               {t("contact.heading")}
             </h2>
           </div>
-          <p className="mt-4 md:mt-0 text-sm max-w-xs" style={{ color: "rgba(244,237,228,0.65)" }}>
+          <p className="mt-3 md:mt-0 text-sm max-w-xs" style={{ color: "rgba(244,237,228,0.65)" }}>
             {t("contact.subheading")}
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-10 items-start">
+        <div className="grid lg:grid-cols-5 gap-6 lg:gap-10 items-start">
           {/* Contact form - primary */}
           <div
-            className="lg:col-span-3 p-6 md:p-8 rounded-2xl border"
+            className="lg:col-span-3 p-5 md:p-7 rounded-2xl border"
             style={{ borderColor: "rgba(197,168,128,0.25)", backgroundColor: "rgba(255,255,255,0.03)" }}
           >
             <p
-              className="text-base font-semibold mb-5"
+              className="text-base font-semibold mb-4"
               style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
               {t("contact.formTitle")}
@@ -53,37 +53,41 @@ export default function Contact() {
           {/* Map + info - secondary */}
           <div className="lg:col-span-2 flex flex-col gap-4">
             <div
-              className="rounded-lg overflow-hidden border"
-              style={{ height: "200px", borderColor: "rgba(197,168,128,0.25)" }}
+              className="rounded-lg overflow-hidden border h-[170px] md:h-[200px]"
+              style={{ borderColor: "rgba(197,168,128,0.25)" }}
             >
               <MapEmbed />
             </div>
 
-            {/* Address */}
-            <StaticCard
-              icon={<LocationIcon />}
-              title={t("contact.address")}
-              lines={[
-                "Sinanpaşa Mh. Şht. Asım Cd. No:37/12",
-                "Beşiktaş/İstanbul",
-              ]}
-            />
+            {/* Adres, saat, telefon, e-posta: tek kompakt liste */}
+            <ul
+              className="rounded-lg border divide-y divide-[rgba(197,168,128,0.18)]"
+              style={{ borderColor: "rgba(197,168,128,0.25)", backgroundColor: "rgba(255,255,255,0.04)" }}
+            >
+              <InfoRow icon={<LocationIcon />} label={t("contact.address")}>
+                Sinanpaşa Mh. Şht. Asım Cd. No:37/12, Beşiktaş/İstanbul
+              </InfoRow>
+              <InfoRow icon={<ClockIcon />} label={t("contact.hours")}>
+                {t("contact.hoursLine1")}
+                <br />
+                {t("contact.hoursLine2")}
+              </InfoRow>
+              <li>
+                <TrackedLink channel="phone" label="contact-section" href="tel:+905354874099" className="contact-row-link">
+                  <PhoneIcon />
+                  <span className="sr-only">{t("contact.phone")}: </span>
+                  <span className="text-base font-medium" style={{ color: "#F4EDE4" }}>+90 535 487 40 99</span>
+                </TrackedLink>
+              </li>
+              <li>
+                <TrackedLink channel="email" label="contact-section" href="mailto:av.furkanarikan1@gmail.com" className="contact-row-link">
+                  <EmailIcon />
+                  <span className="sr-only">{t("contact.email")}: </span>
+                  <span className="text-sm font-medium break-all" style={{ color: "#F4EDE4" }}>av.furkanarikan1@gmail.com</span>
+                </TrackedLink>
+              </li>
+            </ul>
 
-            {t("contact.langNote") && (
-              <p className="text-xs leading-relaxed font-semibold" style={{ color: "#C5A880" }}>
-                {t("contact.langNote")}
-              </p>
-            )}
-            <p className="text-xs leading-relaxed" style={{ color: "rgba(244,237,228,0.6)" }}>
-              {t("contact.fraudNote")}{" "}
-              <Link href="/dolandiricilik-uyarisi" className="underline">
-                {t("footer.fraud")}
-              </Link>
-            </p>
-
-            <Link href="/besiktas-avukat" className="text-xs underline" style={{ color: "rgba(244,237,228,0.6)" }}>
-              {t("contact.besiktasPage")}
-            </Link>
             <a
               href="https://www.google.com/maps/dir/?api=1&destination=41.0444231,29.0044619"
               target="_blank"
@@ -97,48 +101,21 @@ export default function Contact() {
               {t("contact.directions")}
             </a>
 
-            {/* Working hours */}
-            <StaticCard
-              icon={<ClockIcon />}
-              title={t("contact.hours")}
-              lines={[t("contact.hoursLine1"), t("contact.hoursLine2")]}
-            />
-
-            {/* Phone */}
-            <TrackedLink channel="phone" label="contact-section" href="tel:+905354874099" className="contact-card-link">
-              <div
-                className="w-10 h-10 flex items-center justify-center rounded flex-shrink-0"
-                style={{ backgroundColor: "rgba(197,168,128,0.15)" }}
-              >
-                <PhoneIcon />
-              </div>
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "#C5A880" }}>
-                  {t("contact.phone")}
-                </p>
-                <p className="text-base font-medium" style={{ color: "#F4EDE4" }}>
-                  +90 535 487 40 99
-                </p>
-              </div>
-            </TrackedLink>
-
-            {/* Email */}
-            <TrackedLink channel="email" label="contact-section" href="mailto:av.furkanarikan1@gmail.com" className="contact-card-link">
-              <div
-                className="w-10 h-10 flex items-center justify-center rounded flex-shrink-0"
-                style={{ backgroundColor: "rgba(197,168,128,0.15)" }}
-              >
-                <EmailIcon />
-              </div>
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "#C5A880" }}>
-                  {t("contact.email")}
-                </p>
-                <p className="text-base font-medium" style={{ color: "#F4EDE4" }}>
-                  av.furkanarikan1@gmail.com
-                </p>
-              </div>
-            </TrackedLink>
+            {t("contact.langNote") && (
+              <p className="text-xs leading-relaxed font-semibold" style={{ color: "#C5A880" }}>
+                {t("contact.langNote")}
+              </p>
+            )}
+            <p className="text-xs leading-relaxed" style={{ color: "rgba(244,237,228,0.6)" }}>
+              {t("contact.fraudNote")}{" "}
+              <Link href="/dolandiricilik-uyarisi" className="underline">
+                {t("footer.fraud")}
+              </Link>
+              {" · "}
+              <Link href="/besiktas-avukat" className="underline">
+                {t("contact.besiktasPage")}
+              </Link>
+            </p>
           </div>
         </div>
       </div>
@@ -146,29 +123,19 @@ export default function Contact() {
   );
 }
 
-function StaticCard({ icon, title, lines }: { icon: React.ReactNode; title: string; lines: string[] }) {
+function InfoRow({ icon, label, children }: { icon: React.ReactNode; label: string; children: React.ReactNode }) {
   return (
-    <div
-      className="flex items-start gap-4 p-4 rounded-lg border"
-      style={{ borderColor: "rgba(197,168,128,0.25)", backgroundColor: "rgba(255,255,255,0.05)" }}
-    >
-      <div
-        className="w-10 h-10 flex items-center justify-center rounded flex-shrink-0"
-        style={{ backgroundColor: "rgba(197,168,128,0.15)" }}
-      >
-        {icon}
-      </div>
+    <li className="flex items-start gap-3 px-4 py-3">
+      <span className="mt-0.5 flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-xs font-semibold uppercase tracking-wide mb-1" style={{ color: "#C5A880" }}>
-          {title}
+        <p className="text-[11px] font-semibold uppercase tracking-wide" style={{ color: "#C5A880" }}>
+          {label}
         </p>
-        {lines.map((line, i) => (
-          <p key={i} className="text-sm" style={{ color: "rgba(244,237,228,0.8)" }}>
-            {line}
-          </p>
-        ))}
+        <p className="text-sm mt-0.5" style={{ color: "rgba(244,237,228,0.8)" }}>
+          {children}
+        </p>
       </div>
-    </div>
+    </li>
   );
 }
 

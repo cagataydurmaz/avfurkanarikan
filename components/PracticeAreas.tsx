@@ -172,7 +172,7 @@ export default function PracticeAreas() {
   return (
     <section
       id="calisma-alanlari"
-      className="py-14 md:py-20"
+      className="py-10 md:py-16"
       style={{ backgroundColor: "#14342B" }}
     >
       <div className="max-w-6xl mx-auto px-5 md:px-8">
@@ -184,7 +184,7 @@ export default function PracticeAreas() {
           </span>
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 md:mb-10">
           <h2
             className="text-3xl md:text-4xl font-bold max-w-md"
             style={{
@@ -194,42 +194,92 @@ export default function PracticeAreas() {
           >
             {t("practiceAreas.heading")}
           </h2>
-          <p className="mt-4 md:mt-0 text-sm max-w-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
+          <p className="mt-3 md:mt-0 text-sm max-w-xs" style={{ color: "rgba(244,237,228,0.6)" }}>
             {t("practiceAreas.subheading")}
           </p>
         </div>
 
-        {/* Cards grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Mobil: açılır satırlar (tüm alanlar; maddeler sayfada kalır, dokununca açılır) */}
+        <div className="md:hidden border-t" style={{ borderColor: "rgba(197,168,128,0.2)" }}>
+          {localizedAreas.map((area) => (
+            <details key={area.slug} className="practice-row group border-b" style={{ borderColor: "rgba(197,168,128,0.2)" }}>
+              <summary className="flex items-center gap-3 py-3.5 cursor-pointer list-none">
+                <span
+                  className="w-8 h-8 flex items-center justify-center rounded flex-shrink-0 practice-row-icon"
+                  style={{ backgroundColor: "rgba(197,168,128,0.12)" }}
+                >
+                  {area.icon}
+                </span>
+                <span
+                  className="flex-1 text-base font-semibold"
+                  style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                >
+                  {area.title}
+                </span>
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#C5A880"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="flex-shrink-0 transition-transform duration-200 group-open:rotate-180"
+                  aria-hidden="true"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </summary>
+              <div className="pl-11 pb-4 -mt-0.5">
+                <ul className="space-y-1.5">
+                  {area.bullets.map((bullet) => (
+                    <li key={bullet} className="text-sm leading-snug" style={{ color: "rgba(244,237,228,0.7)" }}>
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href={`/calisma-alanlari/${area.slug}`}
+                  className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold"
+                  style={{ color: "#C5A880" }}
+                >
+                  {t("practiceAreas.readMore")}
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </Link>
+              </div>
+            </details>
+          ))}
+        </div>
+
+        {/* Masaüstü: sade kartlar */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {visibleAreas.map((area) => (
             <Link
               key={area.slug}
               href={`/calisma-alanlari/${area.slug}`}
-              className="practice-card p-6 rounded-lg border flex flex-col group"
+              className="practice-card p-5 rounded-lg border flex flex-col group"
               style={{ backgroundColor: "#1B3A2F" }}
             >
-              {/* Icon */}
-              <div
-                className="w-11 h-11 flex items-center justify-center rounded mb-4"
-                style={{ backgroundColor: "rgba(197,168,128,0.12)" }}
-              >
-                {area.icon}
+              <div className="flex items-center gap-3 mb-3">
+                <div
+                  className="w-9 h-9 flex items-center justify-center rounded flex-shrink-0 practice-row-icon"
+                  style={{ backgroundColor: "rgba(197,168,128,0.12)" }}
+                >
+                  {area.icon}
+                </div>
+                <h3
+                  className="text-lg font-semibold"
+                  style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                >
+                  {area.title}
+                </h3>
               </div>
 
-              {/* Title */}
-              <h3
-                className="text-lg font-semibold mb-2.5"
-                style={{
-                  color: "#F4EDE4",
-                  fontFamily: "var(--font-playfair), Georgia, serif",
-                }}
-              >
-                {area.title}
-              </h3>
-
-              {/* Bullets */}
-              <ul className="flex-1 space-y-2 mb-1">
-                {area.bullets.map((bullet) => (
+              <ul className="flex-1 space-y-1.5">
+                {area.bullets.slice(0, 2).map((bullet) => (
                   <li key={bullet} className="flex items-start gap-2 text-sm leading-snug" style={{ color: "rgba(244,237,228,0.7)" }}>
                     <svg
                       width="13"
@@ -250,9 +300,8 @@ export default function PracticeAreas() {
                 ))}
               </ul>
 
-              {/* Read more */}
               <span
-                className="mt-4 text-xs font-semibold flex items-center gap-1.5 transition-all duration-300 group-hover:gap-2.5"
+                className="mt-3 text-xs font-semibold flex items-center gap-1.5 transition-all duration-300 group-hover:gap-2.5"
                 style={{ color: "#C5A880" }}
               >
                 {t("practiceAreas.readMore")}
@@ -264,9 +313,9 @@ export default function PracticeAreas() {
           ))}
         </div>
 
-        {/* Show all toggle */}
+        {/* Show all toggle (masaüstü) */}
         {!showAll && (
-          <div className="mt-8 flex justify-center">
+          <div className="hidden md:flex mt-7 justify-center">
             <button
               type="button"
               onClick={() => setShowAll(true)}
@@ -281,7 +330,7 @@ export default function PracticeAreas() {
         )}
 
         {/* Bottom note */}
-        <p className="mt-10 text-sm text-center" style={{ color: "rgba(197,168,128,0.7)" }}>
+        <p className="mt-7 md:mt-8 text-sm text-center" style={{ color: "rgba(197,168,128,0.7)" }}>
           {t("practiceAreas.note")}
         </p>
       </div>

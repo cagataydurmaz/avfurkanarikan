@@ -7,7 +7,7 @@ import { useLanguage } from "@/lib/i18n/LanguageContext";
 export default function ToolsPreview() {
   const { t } = useLanguage();
   return (
-    <section className="py-14 md:py-20" style={{ backgroundColor: "#fff" }}>
+    <section className="py-10 md:py-16" style={{ backgroundColor: "#fff" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="flex items-center gap-3 mb-3">
@@ -17,7 +17,7 @@ export default function ToolsPreview() {
           </span>
         </div>
 
-        <div className="mb-12">
+        <div className="mb-7 md:mb-10">
           <h2
             className="text-3xl md:text-4xl font-bold max-w-sm"
             style={{
@@ -30,23 +30,23 @@ export default function ToolsPreview() {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-3 md:gap-5">
           {tools.slice(0, 3).map((tool) => (
             <Link
               key={tool.slug}
               href={`/${tool.slug}`}
-              className="group flex flex-col rounded-xl p-6 border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              className="group flex flex-col rounded-xl p-4 md:p-5 border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
               style={{ borderColor: "#EBE0D4", backgroundColor: "#F4EDE4" }}
             >
               <span
-                className="text-[11px] font-semibold tracking-wide uppercase px-3 py-1 rounded-full whitespace-nowrap self-start mb-4"
+                className="text-[11px] font-semibold tracking-wide uppercase px-3 py-1 rounded-full whitespace-nowrap self-start mb-2.5 md:mb-3"
                 style={{ color: "#7f5c2c", backgroundColor: "rgba(197,168,128,0.16)" }}
               >
                 {tool.category}
               </span>
 
               <h3
-                className="text-lg font-bold mb-3 leading-snug group-hover:text-opacity-80 transition-colors"
+                className="text-base md:text-lg font-bold mb-2 leading-snug group-hover:text-opacity-80 transition-colors"
                 style={{
                   color: "#14342B",
                   fontFamily: "var(--font-playfair), Georgia, serif",
@@ -55,7 +55,7 @@ export default function ToolsPreview() {
                 {tool.title}
               </h3>
 
-              <p className="text-sm line-clamp-3 mb-5 flex-1" style={{ color: "#3D5A50" }}>
+              <p className="hidden md:block text-sm line-clamp-2 mb-4 flex-1" style={{ color: "#3D5A50" }}>
                 {tool.description}
               </p>
 
@@ -73,7 +73,7 @@ export default function ToolsPreview() {
         </div>
 
         {/* Bottom CTA - mirrors the top link, centered for easy reach after scrolling the cards */}
-        <div className="mt-10 flex justify-center">
+        <div className="mt-7 md:mt-10 flex justify-center">
           <Link
             href="/araclar"
             className="inline-flex items-center gap-2 text-sm font-medium px-5 py-2.5 rounded-full border transition-all duration-300 text-[#14342B] border-[#14342B] hover:bg-[#14342B] hover:text-[#F4EDE4]"

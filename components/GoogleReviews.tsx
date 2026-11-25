@@ -7,7 +7,7 @@ export default function GoogleReviews() {
   const { lang, t } = useLanguage();
 
   return (
-    <section className="py-14 md:py-20" style={{ backgroundColor: "#fff" }}>
+    <section className="py-10 md:py-16" style={{ backgroundColor: "#fff" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
         <div className="flex items-center gap-3 mb-3">
@@ -17,7 +17,7 @@ export default function GoogleReviews() {
           </span>
         </div>
 
-        <div className="mb-12">
+        <div className="mb-7 md:mb-10">
           <h2
             className="text-3xl md:text-4xl font-bold max-w-sm"
             style={{
@@ -53,8 +53,8 @@ export default function GoogleReviews() {
             {[...googleReviews, ...googleReviews].map((review, i) => (
               <div
                 key={`${review.name}-${i}`}
-                className="flex flex-col rounded-xl p-6 border flex-shrink-0"
-                style={{ borderColor: "#EBE0D4", backgroundColor: "#F4EDE4", width: "320px" }}
+                className="flex flex-col rounded-xl p-5 border flex-shrink-0"
+                style={{ borderColor: "#EBE0D4", backgroundColor: "#F4EDE4", width: "290px" }}
                 aria-hidden={i >= googleReviews.length ? true : undefined}
               >
                 <GoogleIcon />
@@ -70,7 +70,7 @@ export default function GoogleReviews() {
         </div>
 
         {/* CTA */}
-        <div className="mt-10 flex justify-center">
+        <div className="mt-7 md:mt-10 flex justify-center">
           <a
             href={GOOGLE_REVIEWS_URL}
             target="_blank"
