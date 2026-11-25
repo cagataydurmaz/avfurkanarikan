@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
-import { dictionary, type Lang } from "./dictionary";
+import { dictionary, LANGS, type Lang } from "./dictionary";
 
 const STORAGE_KEY = "site_lang";
 
@@ -18,10 +18,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const stored = window.localStorage.getItem(STORAGE_KEY);
-    if (stored === "tr" || stored === "en") {
-      setLangState(stored);
+    if (stored && (LANGS as string[]).includes(stored)) {
+      setLangState(stored as Lang);
     }
   }, []);
+
+  // Belge dilini ve yazı yönünü seçili dile göre ayarla (Arapça sağdan sola)
+  useEffect(() => {
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+  }, [lang]);
 
   const setLang = useCallback((next: Lang) => {
     setLangState(next);

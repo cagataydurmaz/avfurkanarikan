@@ -338,7 +338,7 @@ export const practiceAreas: PracticeArea[] = [
         heading: "Alacak Davası ve İcra Takibi",
         paragraphs: [
           "Alacağın tahsili için iki yol izlenebilir: dava yolu veya icra takibi yolu. İcra takibinde alacaklı, icra müdürlüğüne başvurarak borçluya ödeme emri gönderilmesini sağlayabilir. Borçlu ödeme emrine 7 gün içinde itiraz etmezse takip kesinleşir.",
-          "Borçlunun itiraz etmesi durumunda alacaklının icra mahkemesinde itirazın iptali davası açması ya da asliye hukuk mahkemesinde alacak davası yoluna gitmesi gerekir. Alacak davalarında genel zamanaşımı süresi 10 yıldır; ancak ticari satım ve kira bedeli gibi dönemsel alacaklarda 5 yıllık özel zamanaşımı uygulanır.",
+          "Borçlunun itiraz etmesi durumunda alacaklı, elindeki belgenin niteliğine göre icra mahkemesinden itirazın kaldırılmasını isteyebilir ya da genel mahkemede (asliye hukuk/ticaret) itirazın iptali davası veya alacak davası açabilir. Alacak davalarında genel zamanaşımı süresi 10 yıldır; ancak ticari satım ve kira bedeli gibi dönemsel alacaklarda 5 yıllık özel zamanaşımı uygulanır.",
         ],
       },
       {

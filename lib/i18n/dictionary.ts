@@ -1,4 +1,5 @@
-export type Lang = "tr" | "en";
+export type Lang = "tr" | "en" | "ru" | "ar";
+export const LANGS: Lang[] = ["tr", "en", "ru", "ar"];
 
 export const dictionary = {
   tr: {
@@ -130,6 +131,10 @@ export const dictionary = {
     "praDetail.whatsapp": "WhatsApp ile Yazın",
     "praDetail.relatedAreas": "İlgili Alanlar",
     "praDetail.allAreas": "Tüm Çalışma Alanları",
+    "praDetail.faqTitle": "{title} Hakkında Merak Edilenler",
+    "praDetail.ctaQuestion": "{title} konusunda danışmanlık almak ister misiniz?",
+    "floating.hint": "Sorunuzu WhatsApp\u2019tan yazabilirsiniz",
+    "contact.langNote": "",
   },
   en: {
     // Navbar
@@ -260,5 +265,277 @@ export const dictionary = {
     "praDetail.whatsapp": "Message on WhatsApp",
     "praDetail.relatedAreas": "Related Areas",
     "praDetail.allAreas": "All Practice Areas",
+    "praDetail.faqTitle": "Frequently Asked About {title}",
+    "praDetail.ctaQuestion": "Would you like advice on {title}?",
+    "floating.hint": "You can send your question on WhatsApp",
+    "contact.langNote": "",
+  },
+  ru: {
+    // Navbar
+    "nav.about": "Обо мне",
+    "nav.practiceAreas": "Направления практики",
+    "nav.process": "Порядок работы",
+    "nav.articles": "Статьи",
+    "nav.tools": "Калькуляторы",
+    "nav.districts": "Районы",
+    "nav.contact": "Контакты",
+    "nav.whatsapp": "Написать в WhatsApp",
+    "nav.call": "Позвонить",
+    "nav.menuOpen": "Открыть меню",
+    "nav.menuClose": "Закрыть меню",
+
+    // Hero
+    "hero.eyebrow": "Стамбульская коллегия адвокатов - Рег. №: 72621",
+    "hero.tagline": "Ведение дел и юридические консультации по уголовному, трудовому праву и праву недвижимости в Стамбуле.",
+    "hero.whatsapp": "Написать в WhatsApp",
+    "hero.call": "Позвонить",
+    "hero.scroll": "Прокрутить вниз",
+
+    // About
+    "about.label": "Обо мне",
+    "about.role": "Адвокат - Стамбульская коллегия адвокатов",
+    "about.bio1":
+      "Адвокат Фуркан Арыкан окончил юридический факультет Университета MEF в 2019 году, начал адвокатскую практику в Стамбуле и с тех пор занимается юридическим консультированием и ведением судебных дел.",
+    "about.bio2":
+      "Бюро оказывает правовую помощь доверителям преимущественно в сфере уголовного права, трудового права и споров, связанных с недвижимостью. К основным услугам относятся защита на стадиях следствия и судебного разбирательства, представительство в трудовых спорах между работником и работодателем, а также ведение дел, связанных с арендой.",
+    "about.bio3":
+      "Бюро расположено в районе Бешикташ и работает с доверителями из разных районов Стамбула. Приём ведётся по предварительной записи, что позволяет уделять каждому делу индивидуальное внимание и достаточное время.",
+    "about.education": "Образование",
+    "about.educationValue": "Юридический факультет Университета MEF (2019)",
+    "about.bar": "Коллегия адвокатов",
+    "about.barValue": "Стамбульская коллегия адвокатов - Рег. №: 72621",
+
+    // Practice Areas (homepage)
+    "practiceAreas.label": "Направления практики",
+    "practiceAreas.heading": "Направления, в которых мы оказываем правовую помощь",
+    "practiceAreas.subheading": "Каждый правовой вопрос требует особого подхода. Мы оказываем помощь с учётом обстоятельств вашего дела.",
+    "practiceAreas.readMore": "Подробнее",
+    "practiceAreas.showAll": "Все направления практики",
+    "practiceAreas.note": "Вы также можете обратиться за консультацией по вопросам, не указанным выше.",
+
+    // Process
+    "process.label": "Как мы работаем",
+    "process.heading": "Выстроим процесс вместе",
+    "process.subheading": "Для прозрачного и предсказуемого процесса мы заранее сообщаем о каждом этапе.",
+    "process.step1.title": "Первичное обращение",
+    "process.step1.desc": "Свяжитесь с нами через WhatsApp или по телефону. Кратко опишите ваш вопрос, и мы вместе согласуем удобную дату и время встречи.",
+    "process.step2.title": "Консультация",
+    "process.step2.desc": "Консультация проводится очно или онлайн на платной основе. В ходе встречи оценивается ваша правовая ситуация.",
+    "process.step3.title": "Доверенность и подготовка дела",
+    "process.step3.desc": "При принятии решения о представительстве у нотариуса оформляется доверенность, собираются необходимые документы и завершается подготовка дела.",
+    "process.step4.title": "Представительство и сопровождение дела",
+    "process.step4.desc": "Обеспечивается представительство и ведение дела в суде, прокуратуре и других административных органах; доверитель информируется о ходе дела.",
+    "process.noteLabel": "Обратите внимание:",
+    "process.noteText": "Первичная консультация является платной. Решение о выдаче доверенности после консультации полностью остаётся за доверителем и не порождает никаких обязательств.",
+
+    // Tools preview
+    "tools.label": "Бесплатные калькуляторы",
+    "tools.heading": "Юридические калькуляторы",
+    "tools.calculate": "Рассчитать",
+    "tools.viewAll": "Все калькуляторы",
+
+    // Blog preview
+    "blog.label": "Правовая информация",
+    "blog.heading": "Юридические статьи",
+    "blog.readMore": "Читать далее",
+    "blog.viewAll": "Все статьи",
+
+    // Google reviews
+    "reviews.label": "Отзывы в Google",
+    "reviews.heading": "Что говорят наши доверители",
+    "reviews.count": "38 отзывов в Google",
+    "reviews.cta": "Все отзывы в Google",
+
+    // Contact
+    "contact.label": "Контакты",
+    "contact.heading": "Свяжитесь с нами",
+    "contact.subheading": "Для записи на приём вы можете позвонить или написать в WhatsApp.",
+    "contact.formTitle": "Оставьте сообщение",
+    "contact.address": "Адрес",
+    "contact.directions": "Проложить маршрут",
+    "contact.besiktasPage": "Адвокатские услуги в Бешикташе",
+    "contact.hours": "Часы работы",
+    "contact.hoursLine1": "Понедельник - пятница: 09:00 - 18:00",
+    "contact.hoursLine2": "Суббота - воскресенье: выходной",
+    "contact.phone": "Телефон",
+    "contact.email": "Эл. почта",
+
+    // Contact form
+    "form.name": "Имя и фамилия",
+    "form.namePlaceholder": "Ваше имя и фамилия",
+    "form.phone": "Телефон",
+    "form.phonePlaceholder": "05XX XXX XX XX",
+    "form.topic": "Тема",
+    "form.message": "Ваше сообщение",
+    "form.messagePlaceholder": "Кратко опишите ситуацию",
+    "form.sendWhatsapp": "Отправить через WhatsApp",
+    "form.sendEmail": "Отправить по эл. почте",
+    "form.note": "После нажатия кнопки «Отправить» откроется WhatsApp или почтовое приложение с подготовленным сообщением.",
+
+    // Footer
+    "footer.tagline": "Ведение дел и юридические консультации по уголовному, трудовому праву и праву недвижимости в Стамбуле.",
+    "footer.bar": "Стамбульская коллегия адвокатов - Рег. №: 72621",
+    "footer.links": "Ссылки",
+    "footer.contact": "Контакты",
+    "footer.rights": "Все права защищены.",
+    "footer.privacy": "Политика конфиденциальности и уведомление о защите персональных данных (KVKK)",
+    "footer.fraud": "Предупреждение о мошенничестве",
+    "hero.fraud": "Не доверяйте лицам, которые звонят с других номеров от имени бюро и требуют оплату.",
+    "contact.fraudNote": "Не доверяйте лицам, которые звонят с других номеров от имени бюро и требуют оплату. Официальный номер: +90 535 487 40 99",
+    "footer.disclaimer": "Информация на этом сайте не является юридической консультацией.",
+
+    // Floating buttons
+    "floating.whatsapp": "WhatsApp",
+    "floating.call": "Позвонить",
+
+    // Practice area detail page
+    "praDetail.breadcrumbHome": "Главная",
+    "praDetail.faqLabel": "Часто задаваемые вопросы",
+    "praDetail.faqHeading": "Часто задаваемые вопросы",
+    "praDetail.relatedContent": "Связанные материалы",
+    "praDetail.disclaimer": "Эта страница носит общий информационный характер и не является юридической консультацией. Для оценки вашей конкретной ситуации рекомендуется обратиться к адвокату.",
+    "praDetail.ctaLabel": "Правовая помощь",
+    "praDetail.ctaNote": "Консультация проводится на платной основе.",
+    "praDetail.whatsapp": "Написать в WhatsApp",
+    "praDetail.relatedAreas": "Смежные направления",
+    "praDetail.allAreas": "Все направления практики",
+    "praDetail.faqTitle": "{title}: часто задаваемые вопросы",
+    "praDetail.ctaQuestion": "Хотите получить консультацию по вопросу «{title}»?",
+    "floating.hint": "Вы можете задать вопрос в WhatsApp",
+    "contact.langNote": "Консультации проводятся на турецком или английском языке.",
+  },
+  ar: {
+    // Navbar
+    "nav.about": "نبذة عني",
+    "nav.practiceAreas": "مجالات العمل",
+    "nav.process": "آلية العمل",
+    "nav.articles": "مقالات",
+    "nav.tools": "أدوات الحساب",
+    "nav.districts": "المناطق",
+    "nav.contact": "تواصل معنا",
+    "nav.whatsapp": "راسلنا عبر واتساب",
+    "nav.call": "اتصل الآن",
+    "nav.menuOpen": "فتح القائمة",
+    "nav.menuClose": "إغلاق القائمة",
+
+    // Hero
+    "hero.eyebrow": "نقابة المحامين في إسطنبول - رقم القيد: 72621",
+    "hero.tagline": "متابعة الدعاوى والاستشارات القانونية في القانون الجنائي وقانون العمل وقانون العقارات في إسطنبول.",
+    "hero.whatsapp": "راسلنا عبر واتساب",
+    "hero.call": "اتصل الآن",
+    "hero.scroll": "مرّر إلى الأسفل",
+
+    // About
+    "about.label": "نبذة عني",
+    "about.role": "محامٍ - نقابة المحامين في إسطنبول",
+    "about.bio1":
+      "تخرّج المحامي فرقان أريكان في كلية الحقوق بجامعة MEF عام 2019، وبدأ ممارسة مهنة المحاماة في إسطنبول، ويقدّم منذ ذلك الحين خدمات الاستشارات القانونية ومتابعة الدعاوى.",
+    "about.bio2":
+      "يقدّم المكتب الدعم القانوني للموكّلين بصورة رئيسية في مجالات القانون الجنائي وقانون العمل والنزاعات العقارية. ومن أبرز هذه الخدمات: الدفاع خلال مرحلتَي التحقيق والمحاكمة، والتمثيل في النزاعات بين العامل وصاحب العمل، ومتابعة الدعاوى المتعلقة بالإيجار.",
+    "about.bio3":
+      "يقع المكتب في منطقة بشيكتاش، ويخدم موكّلين من مختلف مناطق إسطنبول. ويعمل بنظام المواعيد المسبقة، بما يتيح إيلاء كل ملف اهتمامًا مباشرًا ووقتًا كافيًا.",
+    "about.education": "التعليم",
+    "about.educationValue": "كلية الحقوق بجامعة MEF (2019)",
+    "about.bar": "النقابة",
+    "about.barValue": "نقابة المحامين في إسطنبول - رقم القيد: 72621",
+
+    // Practice Areas (homepage)
+    "practiceAreas.label": "مجالات العمل",
+    "practiceAreas.heading": "المجالات التي نقدّم فيها الدعم القانوني",
+    "practiceAreas.subheading": "تتطلب كل مسألة قانونية نهجًا مختلفًا. نقدّم الدعم وفقًا لاحتياجات ملفك.",
+    "practiceAreas.readMore": "مزيد من المعلومات",
+    "practiceAreas.showAll": "عرض جميع مجالات العمل",
+    "practiceAreas.note": "يمكنكم أيضًا طلب الاستشارة في مسائل غير مذكورة أعلاه.",
+
+    // Process
+    "process.label": "كيف نعمل",
+    "process.heading": "لنُدِر الإجراءات معًا",
+    "process.subheading": "نوضّح كل خطوة مسبقًا من أجل إجراءات شفافة ويمكن توقّعها.",
+    "process.step1.title": "التواصل الأولي",
+    "process.step1.desc": "تواصلوا معنا عبر واتساب أو الهاتف. اعرضوا موضوعكم باختصار، ثم نحدّد معًا التاريخ والوقت المناسبين للموعد.",
+    "process.step2.title": "موعد الاستشارة",
+    "process.step2.desc": "تُعقد جلسة الاستشارة حضوريًا أو عبر الإنترنت مقابل أتعاب. ويُجرى خلالها تقييم وضعكم القانوني.",
+    "process.step3.title": "الوكالة وإعداد الملف",
+    "process.step3.desc": "في حال اتخاذ قرار التمثيل، تُنظَّم الوكالة لدى الكاتب العدل، وتُجمع المستندات ذات الصلة، ويُستكمل إعداد الملف.",
+    "process.step4.title": "التمثيل ومتابعة الإجراءات",
+    "process.step4.desc": "يُؤمَّن التمثيل وإدارة الإجراءات أمام المحاكم والنيابة العامة والجهات الإدارية الأخرى، مع إطلاع الموكّل على المستجدات.",
+    "process.noteLabel": "ملاحظة:",
+    "process.noteText": "الاستشارة الأولى مدفوعة الأجر. ويعود قرار منح الوكالة بعد الاستشارة إلى الموكّل وحده، ولا يترتب عليه أي التزام.",
+
+    // Tools preview
+    "tools.label": "أدوات مجانية",
+    "tools.heading": "أدوات الحساب القانونية",
+    "tools.calculate": "احسب الآن",
+    "tools.viewAll": "جميع الأدوات",
+
+    // Blog preview
+    "blog.label": "معلومات قانونية",
+    "blog.heading": "مقالات قانونية",
+    "blog.readMore": "اقرأ المزيد",
+    "blog.viewAll": "جميع المقالات",
+
+    // Google reviews
+    "reviews.label": "تقييمات Google",
+    "reviews.heading": "ماذا يقول موكّلونا؟",
+    "reviews.count": "38 تقييمًا على Google",
+    "reviews.cta": "عرض جميع التقييمات على Google",
+
+    // Contact
+    "contact.label": "تواصل معنا",
+    "contact.heading": "تواصلوا معنا",
+    "contact.subheading": "يمكنكم الاتصال لحجز موعد أو المراسلة عبر واتساب.",
+    "contact.formTitle": "اتركوا رسالة",
+    "contact.address": "العنوان",
+    "contact.directions": "الحصول على الاتجاهات",
+    "contact.besiktasPage": "خدمات المحاماة في بشيكتاش",
+    "contact.hours": "ساعات العمل",
+    "contact.hoursLine1": "الاثنين - الجمعة: 09:00 - 18:00",
+    "contact.hoursLine2": "السبت - الأحد: مغلق",
+    "contact.phone": "الهاتف",
+    "contact.email": "البريد الإلكتروني",
+
+    // Contact form
+    "form.name": "الاسم الكامل",
+    "form.namePlaceholder": "اسمكم الكامل",
+    "form.phone": "الهاتف",
+    "form.phonePlaceholder": "05XX XXX XX XX",
+    "form.topic": "الموضوع",
+    "form.message": "رسالتكم",
+    "form.messagePlaceholder": "لخّصوا وضعكم باختصار",
+    "form.sendWhatsapp": "إرسال عبر واتساب",
+    "form.sendEmail": "إرسال عبر البريد الإلكتروني",
+    "form.note": "عند الضغط على «إرسال»، يُفتح تطبيق واتساب أو البريد الإلكتروني ورسالتكم جاهزة.",
+
+    // Footer
+    "footer.tagline": "متابعة الدعاوى والاستشارات القانونية في القانون الجنائي وقانون العمل وقانون العقارات في إسطنبول.",
+    "footer.bar": "نقابة المحامين في إسطنبول - رقم القيد: 72621",
+    "footer.links": "روابط",
+    "footer.contact": "تواصل معنا",
+    "footer.rights": "جميع الحقوق محفوظة.",
+    "footer.privacy": "سياسة الخصوصية وإشعار حماية البيانات الشخصية (KVKK)",
+    "footer.fraud": "تحذير من الاحتيال",
+    "hero.fraud": "لا تثقوا بمن يتصل من أرقام أخرى باسم المكتب ويطلب دفع مبالغ.",
+    "contact.fraudNote": "لا تثقوا بالأشخاص الذين يتصلون من أرقام أخرى باسم المكتب ويطلبون دفع مبالغ. الرقم الرسمي: +90 535 487 40 99",
+    "footer.disclaimer": "المعلومات الواردة في هذا الموقع لا تُعدّ استشارة قانونية.",
+
+    // Floating buttons
+    "floating.whatsapp": "واتساب",
+    "floating.call": "اتصال",
+
+    // Practice area detail page
+    "praDetail.breadcrumbHome": "الصفحة الرئيسية",
+    "praDetail.faqLabel": "الأسئلة الشائعة",
+    "praDetail.faqHeading": "أسئلة شائعة",
+    "praDetail.relatedContent": "محتوى ذو صلة",
+    "praDetail.disclaimer": "هذه الصفحة لأغراض إعلامية عامة ولا تُعدّ استشارة قانونية. ويُنصح بمراجعة محامٍ لتقييم وضعكم الخاص.",
+    "praDetail.ctaLabel": "الدعم القانوني",
+    "praDetail.ctaNote": "تُقدَّم الاستشارة مقابل أتعاب.",
+    "praDetail.whatsapp": "راسلنا عبر واتساب",
+    "praDetail.relatedAreas": "مجالات ذات صلة",
+    "praDetail.allAreas": "جميع مجالات العمل",
+    "praDetail.faqTitle": "أسئلة شائعة حول {title}",
+    "praDetail.ctaQuestion": "هل ترغبون في الحصول على استشارة بشأن {title}؟",
+    "floating.hint": "يمكنكم إرسال سؤالكم عبر واتساب",
+    "contact.langNote": "تُجرى الاستشارات باللغة التركية أو الإنجليزية.",
   },
 } as const;

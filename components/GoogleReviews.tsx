@@ -59,7 +59,7 @@ export default function GoogleReviews() {
               >
                 <GoogleIcon />
                 <p className="mt-4 text-sm leading-relaxed" style={{ color: "#2D4A3E" }}>
-                  &ldquo;{lang === "en" ? review.en : review.tr}&rdquo;
+                  &ldquo;{lang === "tr" ? review.tr : review.en}&rdquo;
                 </p>
                 <p className="mt-4 text-xs font-semibold" style={{ color: "#14342B" }}>
                   — {review.name}

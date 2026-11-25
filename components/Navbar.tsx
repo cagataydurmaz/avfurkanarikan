@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import TrackedLink from "./TrackedLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
+import { LANGS, type Lang } from "@/lib/i18n/dictionary";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -170,8 +171,8 @@ function LangToggle({
   setLang,
   className = "",
 }: {
-  lang: "tr" | "en";
-  setLang: (lang: "tr" | "en") => void;
+  lang: Lang;
+  setLang: (lang: Lang) => void;
   className?: string;
 }) {
   return (
@@ -181,7 +182,7 @@ function LangToggle({
       role="group"
       aria-label="Dil / Language"
     >
-      {(["tr", "en"] as const).map((code) => (
+      {LANGS.map((code) => (
         <button
           key={code}
           type="button"

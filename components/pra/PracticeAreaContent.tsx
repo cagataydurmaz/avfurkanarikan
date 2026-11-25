@@ -8,7 +8,7 @@ import MevzuatKaynak from "@/components/MevzuatKaynak";
 import FloatingButtons from "@/components/FloatingButtons";
 import TrackedLink from "@/components/TrackedLink";
 import type { PracticeArea } from "@/lib/practiceAreas";
-import { practiceAreasEn } from "@/lib/i18n/practiceAreasEn";
+import { areaTranslation } from "@/lib/i18n/practiceAreasI18n";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 
 export default function PracticeAreaContent({
@@ -19,11 +19,11 @@ export default function PracticeAreaContent({
   relatedAreas: PracticeArea[];
 }) {
   const { lang, t } = useLanguage();
-  const en = practiceAreasEn[area.slug];
-  const view = lang === "en" && en ? en : area;
+  const tr8n = areaTranslation(lang, area.slug);
+  const view = tr8n ?? area;
 
   const relatedAreaTitle = (a: PracticeArea) =>
-    lang === "en" ? practiceAreasEn[a.slug]?.title ?? a.title : a.title;
+    areaTranslation(lang, a.slug)?.title ?? a.title;
 
   return (
     <>
@@ -138,7 +138,7 @@ export default function PracticeAreaContent({
                   className="text-2xl font-bold mb-8"
                   style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
                 >
-                  {lang === "en" ? `Frequently Asked About ${view.title}` : `${view.title} ${t("praDetail.faqHeading")}`}
+                  {t("praDetail.faqTitle").replace("{title}", view.title)}
                 </h2>
                 <div className="space-y-5">
                   {view.faq.map((item, i) => (
@@ -198,9 +198,7 @@ export default function PracticeAreaContent({
                     {t("praDetail.ctaLabel")}
                   </p>
                   <p className="text-base font-semibold mb-2" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
-                    {lang === "en"
-                      ? `Would you like advice on ${view.title.toLowerCase()}?`
-                      : `${view.title} konusunda danışmanlık almak ister misiniz?`}
+                    {t("praDetail.ctaQuestion").replace("{title}", lang === "tr" ? view.title : view.title.toLowerCase())}
                   </p>
                   <p className="text-xs mb-5 leading-relaxed" style={{ color: "rgba(244,237,228,0.6)" }}>
                     {t("praDetail.ctaNote")}

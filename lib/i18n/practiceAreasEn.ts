@@ -424,7 +424,7 @@ export const practiceAreasEn: Record<string, PracticeAreaTranslation> = {
         heading: "Debt Recovery and Enforcement Proceedings",
         paragraphs: [
           "There are two routes for collecting a debt: litigation or enforcement proceedings. In enforcement proceedings, the creditor may apply to the enforcement office to have a payment order sent to the debtor. If the debtor does not object to the payment order within 7 days, the proceedings become final.",
-          "If the debtor objects, the creditor must either file a case to annul the objection before the enforcement court, or pursue a debt claim before the civil court of first instance. The general statute of limitations for debt claims is 10 years, though periodic claims such as commercial sales and rent are subject to a special 5-year limitation period.",
+          "If the debtor objects, the creditor may, depending on the documents held, ask the enforcement court to lift the objection, or file a case to annul the objection or a debt claim before the general courts (civil or commercial court of first instance). The general statute of limitations for debt claims is 10 years, though periodic claims such as commercial sales and rent are subject to a special 5-year limitation period.",
         ],
       },
       {

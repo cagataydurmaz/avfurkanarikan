@@ -3,17 +3,17 @@
 import Link from "next/link";
 import { practiceAreas } from "@/lib/practiceAreas";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { homepageBulletsEn } from "@/lib/i18n/practiceAreasEn";
+import { areaBullets } from "@/lib/i18n/practiceAreasI18n";
 
 export default function PracticeAreasTicker() {
   const { lang } = useLanguage();
   const localized =
-    lang === "en"
-      ? practiceAreas.map((area) => ({
+    lang === "tr"
+      ? practiceAreas
+      : practiceAreas.map((area) => ({
           ...area,
-          title: homepageBulletsEn[area.slug]?.title ?? area.title,
-        }))
-      : practiceAreas;
+          title: areaBullets(lang, area.slug)?.title ?? area.title,
+        }));
   const items = [...localized, ...localized];
 
   return (

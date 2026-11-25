@@ -69,6 +69,11 @@ export default function Contact() {
               ]}
             />
 
+            {t("contact.langNote") && (
+              <p className="text-xs leading-relaxed font-semibold" style={{ color: "#C5A880" }}>
+                {t("contact.langNote")}
+              </p>
+            )}
             <p className="text-xs leading-relaxed" style={{ color: "rgba(244,237,228,0.6)" }}>
               {t("contact.fraudNote")}{" "}
               <Link href="/dolandiricilik-uyarisi" className="underline">

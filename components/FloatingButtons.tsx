@@ -10,7 +10,7 @@ const HINT_VISIBLE_MS = 5000;
 
 /** İlk ziyarette WhatsApp butonunun üstünde kısa süre görünen bilgi baloncuğu. */
 function WhatsAppHint() {
-  const { lang } = useLanguage();
+  const { t } = useLanguage();
   // idle: DOM'da yok · in: görünür · out: soluyor · done: kaldırıldı
   const [phase, setPhase] = useState<"idle" | "in" | "out" | "done">("idle");
 
@@ -54,7 +54,7 @@ function WhatsAppHint() {
       }`}
       style={{ backgroundColor: "#fff", color: "#14342B", borderColor: "#D9CBB8" }}
     >
-      {lang === "en" ? "You can send your question on WhatsApp" : "Sorunuzu WhatsApp\u2019tan yazabilirsiniz"}
+      {t("floating.hint")}
       <span
         aria-hidden="true"
         className="absolute -bottom-[7px] right-8 w-3 h-3 rotate-45 border-r border-b"

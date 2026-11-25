@@ -5,7 +5,7 @@ import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 import "./globals.css";
 
 const playfair = Playfair_Display({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   weight: ["400", "600", "700"],
   style: ["normal"],
   variable: "--font-playfair",
@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 const jakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic-ext"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-jakarta",
   display: "swap",

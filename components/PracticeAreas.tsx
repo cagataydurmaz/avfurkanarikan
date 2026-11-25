@@ -17,7 +17,7 @@ import {
   GlobeIcon,
 } from "./PracticeIcons";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
-import { homepageBulletsEn } from "@/lib/i18n/practiceAreasEn";
+import { areaBullets } from "@/lib/i18n/practiceAreasI18n";
 
 const areas = [
   {
@@ -160,13 +160,13 @@ export default function PracticeAreas() {
   const [showAll, setShowAll] = useState(false);
   const { lang, t } = useLanguage();
   const localizedAreas =
-    lang === "en"
-      ? areas.map((area) => ({
+    lang === "tr"
+      ? areas
+      : areas.map((area) => ({
           ...area,
-          title: homepageBulletsEn[area.slug]?.title ?? area.title,
-          bullets: homepageBulletsEn[area.slug]?.bullets ?? area.bullets,
-        }))
-      : areas;
+          title: areaBullets(lang, area.slug)?.title ?? area.title,
+          bullets: areaBullets(lang, area.slug)?.bullets ?? area.bullets,
+        }));
   const visibleAreas = showAll ? localizedAreas : localizedAreas.slice(0, INITIAL_COUNT);
 
   return (

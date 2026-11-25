@@ -449,3 +449,13 @@ body {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Arapça: cihazın Arap harfli sistem yazı tipleri (yön, dil seçimiyle html dir="rtl" olur) */
+html[lang="ar"]:root {
+  --font-arabic: "Noto Sans Arabic", "Geeza Pro", "Segoe UI", Tahoma, "Arabic Typesetting", sans-serif;
+  --font-playfair: var(--font-arabic);
+  --font-jakarta: var(--font-arabic);
+}
+html[lang="ar"] body {
+  font-family: var(--font-arabic);
+}
