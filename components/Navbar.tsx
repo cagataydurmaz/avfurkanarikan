@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import TrackedLink from "./TrackedLink";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
@@ -166,6 +166,14 @@ export default function Navbar() {
   );
 }
 
+const LANG_OPTIONS: Record<Lang, { flag: string; label: string }> = {
+  tr: { flag: "🇹🇷", label: "Türkçe" },
+  en: { flag: "🇬🇧", label: "English" },
+  ru: { flag: "🇷🇺", label: "Русский" },
+  ar: { flag: "🇸🇦", label: "العربية" },
+};
+
+/** Bayraklı açılır dil seçici. */
 function LangToggle({
   lang,
   setLang,
@@ -175,28 +183,90 @@ function LangToggle({
   setLang: (lang: Lang) => void;
   className?: string;
 }) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onDown = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDown);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDown);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  const current = LANG_OPTIONS[lang];
+
   return (
-    <div
-      className={`flex items-center rounded border overflow-hidden ${className}`}
-      style={{ borderColor: "rgba(197,168,128,0.5)" }}
-      role="group"
-      aria-label="Dil / Language"
-    >
-      {LANGS.map((code) => (
-        <button
-          key={code}
-          type="button"
-          onClick={() => setLang(code)}
-          className="text-xs font-semibold tracking-widest px-2 py-1 transition-colors duration-200"
-          style={{
-            color: lang === code ? "#14342B" : "#C5A880",
-            backgroundColor: lang === code ? "#C5A880" : "transparent",
-          }}
-          aria-pressed={lang === code}
+    <div ref={ref} className={`relative ${className}`}>
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        className="flex items-center gap-1.5 rounded border px-2.5 py-1 text-xs font-semibold tracking-wider transition-colors duration-200 hover:bg-white/5"
+        style={{ borderColor: "rgba(197,168,128,0.5)", color: "#C5A880" }}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-label={`Dil / Language: ${current.label}`}
+      >
+        <span className="text-base leading-none" aria-hidden="true">{current.flag}</span>
+        {lang.toUpperCase()}
+        <svg
+          width="10"
+          height="10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+          className={`transition-transform duration-200 ${open ? "rotate-180" : ""}`}
         >
-          {code.toUpperCase()}
-        </button>
-      ))}
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </button>
+      {open && (
+        <ul
+          role="listbox"
+          aria-label="Dil / Language"
+          className="absolute end-0 mt-2 min-w-[10rem] rounded-lg border py-1 shadow-xl z-50"
+          style={{ backgroundColor: "#0d2420", borderColor: "rgba(197,168,128,0.35)" }}
+        >
+          {LANGS.map((code) => {
+            const o = LANG_OPTIONS[code];
+            const selected = code === lang;
+            return (
+              <li key={code} role="option" aria-selected={selected}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setLang(code);
+                    setOpen(false);
+                  }}
+                  className="w-full flex items-center gap-2.5 px-3 py-2 text-sm text-start transition-colors duration-150 hover:bg-white/5"
+                  style={{ color: selected ? "#C5A880" : "#F4EDE4" }}
+                  dir={code === "ar" ? "rtl" : "ltr"}
+                >
+                  <span className="text-base leading-none" aria-hidden="true">{o.flag}</span>
+                  <span className="flex-1">{o.label}</span>
+                  {selected && (
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M20 6L9 17l-5-5" />
+                    </svg>
+                  )}
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      )}
     </div>
   );
 }
