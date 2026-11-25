@@ -13,7 +13,7 @@ export const catalcaMiras: PseoService = {
   name: "Çatalca Miras Avukatı",
   heroTitle: "Çatalca Miras Avukatı",
   heroSubtitle:
-    "Çatalca'da tarla, arsa ve köy evi gibi kırsal mirasların intikali, paylaşımı ve miras uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Büyükçekmece Adliyesi'nde görülür.",
+    "Çatalca'da tarla, arsa ve köy evi gibi kırsal mirasların intikali, paylaşımı ve miras uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Çatalca Adliyesi'nde görülür.",
   metaTitle: "Çatalca Miras Avukatı | Veraset ve Tenkis",
   metaDescription:
     "Çatalca'da veraset ilamı, tarla ve arsa mirasının paylaşımı, saklı pay, tenkis ve muris muvazaası konularında miras hukuku danışmanlığı verilmektedir.",
@@ -36,7 +36,7 @@ export const catalcaMiras: PseoService = {
   ],
   localParagraphs: [
     "Çatalca'da Ferhatpaşa ve Kaleiçi gibi ilçe merkezindeki mahalleler ile Ovayenice, Muratbey, Karacaköy ve Binkılıç gibi kırsal yerleşimlerde tarla ve arsa niteliğindeki parseller kuşaklar boyunca hisseli biçimde aktarılabilmektedir. Tarım arazisi niteliğindeki parsellerin bölünmesinde 5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu'ndaki sınırlamalar da paylaşım planında dikkate alınır; bu nedenle aynen taksim her zaman mümkün olmayabilir.",
-    "Aile içinde yıllarca sözle yapılmış paylaşımlar ya da bir çocuğa fiilen bırakılmış yerler, miras bırakanın ölümünden sonra uyuşmazlığa dönüşebilir. İlçe İstanbul Büyükçekmece Adliyesi'nin yargı çevresindedir; tapu işlemleri Çatalca Tapu Müdürlüğü'nde, vergi bildirimleri ise Büyükçekmece Vergi Dairesi Müdürlüğü'nün Çatalca dış veznesinde yürütülür.",
+    "Aile içinde yıllarca sözle yapılmış paylaşımlar ya da bir çocuğa fiilen bırakılmış yerler, miras bırakanın ölümünden sonra uyuşmazlığa dönüşebilir. İlçe İstanbul Çatalca Adliyesi'nin yargı çevresindedir; tapu işlemleri Çatalca Tapu Müdürlüğü'nde, vergi bildirimleri ise Büyükçekmece Vergi Dairesi Müdürlüğü'nün Çatalca dış veznesinde yürütülür.",
   ],
   faqs: [
     {
@@ -62,7 +62,7 @@ export const catalcaMiras: PseoService = {
     {
       question: "Çatalca'da miras davaları hangi mahkemede açılır?",
       answer:
-        "İlçe, İstanbul Büyükçekmece Adliyesi'nin yargı çevresindedir. Veraset ilamı ve ortaklığın giderilmesi sulh hukuk, tenkis ve tapu iptali davaları asliye hukuk mahkemesinde görülür.",
+        "İlçe, İstanbul Çatalca Adliyesi'nin yargı çevresindedir. Veraset ilamı ve ortaklığın giderilmesi sulh hukuk, tenkis ve tapu iptali davaları asliye hukuk mahkemesinde görülür.",
     },
   ],
   howToTitle: "Çatalca'da Çok Hisseli Tarla Mirası Nasıl Düzenlenir?",

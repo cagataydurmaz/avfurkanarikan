@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import IhbarTazminatiForm from "@/components/calculators/IhbarTazminatiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer from "@/components/calculators/ToolExplainer";
 
 export const metadata: Metadata = {
   title: pseoTitle("İhbar Tazminatı Hesaplama (Süre ve Tutar)"),
@@ -100,6 +101,73 @@ export default function IhbarTazminatiHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <IhbarTazminatiForm />
+
+          <ToolExplainer
+            title="İhbar tazminatı hesabının mantığı"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Araç, giriş ve çıkış tarihleri arasındaki gün sayısına göre İş Kanunu
+                      m.17&apos;deki ihbar süresini seçer:
+                    </p>
+                    <ul>
+                      <li>182 günden az çalışmada 2 hafta (14 gün)</li>
+                      <li>182–547 gün arasında 4 hafta (28 gün)</li>
+                      <li>548–1095 gün arasında 6 hafta (42 gün)</li>
+                      <li>1095 günden uzun çalışmada 8 hafta (56 gün)</li>
+                    </ul>
+                    <p>
+                      Ardından günlük brüt ücret (aylık brüt ücret ÷ 30) ihbar gün sayısıyla
+                      çarpılır ve brüt tutardan binde 7,59 damga vergisi düşülür. Örneğin
+                      30.000 TL brüt ücretle 2 yıl çalışan bir işçiye 6 haftalık süre uygulanır:
+                      1.000 TL × 42 gün = 42.000 TL brüt ihbar tazminatı.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>İşe giriş tarihi (SGK hizmet dökümü veya iş sözleşmesi)</li>
+                    <li>
+                      İş sözleşmesinin sona erdiği tarih: ihbar süresi, fesih bildiriminin karşı
+                      tarafa ulaştığı günden itibaren işlemeye başlar
+                    </li>
+                    <li>Son brüt aylık ücret ve düzenli ek ödemeler (bordro)</li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Kıdem tazminatından farklı olarak bir yıllık çalışma şartı aranmaz; kısa
+                      süreli çalışmalarda da ihbar süresi işler.
+                    </li>
+                    <li>
+                      Kanundaki süreler asgaridir. İş sözleşmenizde daha uzun bir süre
+                      kararlaştırılmışsa hesap o süreye göre yapılmalıdır; araç sözleşmesel
+                      süreleri dikkate almaz.
+                    </li>
+                    <li>
+                      İşveren ihbar süresine ait ücreti peşin ödeyerek sözleşmeyi sona erdirmişse
+                      ayrıca ihbar tazminatı istenemez. Belirli süreli iş sözleşmelerinde de ihbar
+                      tazminatı kural olarak gündeme gelmez.
+                    </li>
+                    <li>
+                      Gösterilen tutar gelir vergisi kesintisi öncesidir ve bilgilendirme
+                      amaçlıdır.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>

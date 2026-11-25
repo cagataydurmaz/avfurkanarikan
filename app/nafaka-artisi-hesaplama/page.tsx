@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import NafakaArtisiForm from "@/components/calculators/NafakaArtisiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer, { formatTL } from "@/components/calculators/ToolExplainer";
+import { calculateNafakaArtisi } from "@/lib/calculators/nafakaArtisi";
 import { CURRENT_UFE_PERIOD, CURRENT_UFE_RATE } from "@/lib/calculators/nafakaArtisi";
 
 export const metadata: Metadata = {
@@ -63,6 +65,10 @@ const jsonLd = {
   ],
 };
 
+const ORNEK_NAFAKA = 5000;
+const ORNEK = calculateNafakaArtisi(ORNEK_NAFAKA, CURRENT_UFE_RATE);
+const UFE_METIN = CURRENT_UFE_RATE.toLocaleString("tr-TR");
+
 export default function NafakaArtisiHesaplamaPage() {
   return (
     <>
@@ -92,6 +98,74 @@ export default function NafakaArtisiHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <NafakaArtisiForm />
+
+          <ToolExplainer
+            title="Nafaka artışı nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Formül: <strong>yeni nafaka = mevcut nafaka × (1 + artış oranı ÷ 100)</strong>.
+                      Oran alanı varsayılan olarak {CURRENT_UFE_PERIOD} dönemi Yİ-ÜFE on iki aylık
+                      ortalama değişim oranıyla doludur; kararınızda başka bir endeks veya
+                      dönem öngörülmüşse alanı ona göre değiştirebilirsiniz. Örneğin {formatTL(ORNEK_NAFAKA, 0)}{" "}
+                      nafaka ve %{UFE_METIN} oranla yeni tutar {formatTL(ORNEK.yeniNafaka)}, aylık
+                      artış {formatTL(ORNEK.artisTutari)} olur.
+                    </p>
+                    <p>
+                      Birden fazla yılın artışı birikmişse hesap yıl yıl yapılır: her yılın oranı,
+                      bir önceki yılın artırılmış tutarına uygulanır. Bunun için aracı her yıl
+                      için ayrı ayrı, bir önceki sonucu mevcut tutar olarak girerek
+                      kullanabilirsiniz.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>
+                      Nafaka kararı: artış hükmü, hangi endeksin esas alınacağı ve artışın hangi
+                      tarihten itibaren uygulanacağı
+                    </li>
+                    <li>Hâlihazırda ödenen aylık nafaka tutarı</li>
+                    <li>Kararda belirtilen döneme ait endeks oranı (TÜİK bülteni)</li>
+                    <li>
+                      Önceki ödemelerin dekontları: hangi tutarın ödendiğini ve aradaki farkı
+                      göstermek için gereklidir
+                    </li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Artışın başlangıç tarihi ve hangi aya ait oranın kullanılacağı kararınızdaki
+                      ifadeye göre belirlenir; araç bu tarihi sizin yerinize seçmez.
+                    </li>
+                    <li>
+                      Ödenmeyen artış farkları icra takibiyle talep edilebilir; bu süreçte yıl yıl
+                      yapılmış doğru bir hesap önem taşır.
+                    </li>
+                    <li>
+                      Yıllık artış yalnızca ileriye dönük aylık tutarı değiştirir; geçmiş
+                      aylardaki eksik ödemeler ayrıca toplanmalıdır.
+                    </li>
+                    <li>
+                      Tutar kararınızdaki endeksle hesaplanmalıdır; farklı bir endeks seçmek
+                      sonucu değiştirir.
+                    </li>
+                    <li>Sonuç bilgilendirme amaçlıdır.</li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>

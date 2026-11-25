@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import NafakaForm from "@/components/calculators/NafakaForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer, { formatTL } from "@/components/calculators/ToolExplainer";
+import { calculateNafakaAraligi } from "@/lib/calculators/nafaka";
 
 export const metadata: Metadata = {
   title: "Nafaka Hesaplama (Tahmini Aralık)",
@@ -63,6 +65,9 @@ const jsonLd = {
   ],
 };
 
+const ORNEK_GELIR = 40000;
+const ORNEK = calculateNafakaAraligi(ORNEK_GELIR);
+
 export default function NafakaHesaplamaPage() {
   return (
     <>
@@ -92,6 +97,69 @@ export default function NafakaHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <NafakaForm />
+
+          <ToolExplainer
+            title="Nafaka aralığı nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <p>
+                    Araç tek bir işlem yapar: ödeyecek tarafın aylık net gelirini %10 ve %25 ile
+                    çarparak bir alt ve bir üst sınır gösterir. Örneğin{" "}
+                    {formatTL(ORNEK_GELIR, 0)} net gelir için aralık{" "}
+                    {formatTL(ORNEK.altSinir, 0)} – {formatTL(ORNEK.ustSinir, 0)} olur. Bu oranlar
+                    bir kanun maddesinden, tarifeden veya içtihattan alınmamıştır; mahkemenin
+                    vereceği tutarı öngörmek için değil, ilk fikir edinmek için kullanılmalıdır.
+                    Gelir düzensizse (prim, ek ödeme vb.) yıllık gelirin aylık ortalamasını girmek
+                    daha gerçekçi bir başlangıç noktası sunar.
+                  </p>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <>
+                    <p>Araç için yalnızca ödeyecek tarafın aylık net geliri yeterlidir. Mahkeme
+                      sürecinde ise genellikle şu belgeler önem kazanır:</p>
+                    <ul>
+                      <li>Tarafların maaş bordroları, SGK kayıtları ve varsa kira gibi ek gelirleri</li>
+                      <li>Çocuğun okul, sağlık, kreş ve barınma giderlerini gösteren belgeler</li>
+                      <li>Tarafların kendi kira, kredi ve zorunlu giderleri</li>
+                      <li>Evlilik süresi ve varsa kusur durumuna ilişkin deliller</li>
+                    </ul>
+                  </>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Araç yalnızca girdiğiniz net gelir rakamını kullanır; mahkeme maaş dışındaki
+                      düzenli gelirleri ve mal varlığını da dikkate alabilir.
+                    </li>
+                    <li>
+                      Tedbir nafakası dava sürerken, iştirak ve yoksulluk nafakası ise boşanma
+                      kararıyla birlikte belirlenir; araç bu türleri ayırt etmez.
+                    </li>
+                    <li>
+                      Aralık çocuk sayısını ayırt etmez; iştirak nafakası uygulamada her çocuk için
+                      ayrı ayrı belirlenir.
+                    </li>
+                    <li>
+                      Hükmedilen nafaka, koşullar değiştiğinde artırılabilir veya azaltılabilir.
+                      Mevcut bir karardaki yıllık artışı görmek için{" "}
+                      <Link href="/nafaka-artisi-hesaplama" className="underline font-medium" style={{ color: "#14342B" }}>
+                        Nafaka Artışı Hesaplama
+                      </Link>{" "}
+                      aracını kullanabilirsiniz.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>

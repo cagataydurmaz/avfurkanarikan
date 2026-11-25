@@ -6,7 +6,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import KidemTazminatiForm from "@/components/calculators/KidemTazminatiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
-import { KIDEM_TAVANI, KIDEM_TAVANI_PERIOD } from "@/lib/calculators/kidemTazminati";
+import ToolExplainer, { formatTL } from "@/components/calculators/ToolExplainer";
+import { DAMGA_VERGISI_ORANI, KIDEM_TAVANI, KIDEM_TAVANI_PERIOD } from "@/lib/calculators/kidemTazminati";
 
 export const metadata: Metadata = {
   title: pseoTitle("Kıdem Tazminatı Hesaplama 2026 (Tavan Dahil)"),
@@ -76,6 +77,10 @@ const jsonLd = {
   ],
 };
 
+const ORNEK_BRUT = 40000;
+const ORNEK_KIDEM = Math.round((ORNEK_BRUT / 365) * 1095 * 100) / 100;
+const ORNEK_DAMGA = Math.round(ORNEK_KIDEM * DAMGA_VERGISI_ORANI * 100) / 100;
+
 export default function KidemTazminatiHesaplamaPage() {
   return (
     <>
@@ -111,6 +116,77 @@ export default function KidemTazminatiHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <KidemTazminatiForm />
+
+          <ToolExplainer
+            title="Kıdem tazminatı adım adım nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Araç önce giriş ve çıkış tarihleri arasındaki toplam gün sayısını bulur.
+                      Bu süre 365 günün altındaysa hesaplama yapılmaz. Süre yeterliyse girdiğiniz
+                      brüt ücret, {KIDEM_TAVANI_PERIOD} dönemi tavanı olan{" "}
+                      {formatTL(KIDEM_TAVANI)} ile karşılaştırılır ve ikisinden düşük olanı esas
+                      alınır.
+                    </p>
+                    <p>
+                      Formül: <strong>esas ücret ÷ 365 × toplam çalışma günü</strong>. Bu, her tam
+                      yıl için bir aylık ücret, yılı dolmayan kısım için de oransal ödeme anlamına
+                      gelir. Brüt tutardan binde 7,59 damga vergisi düşülerek net tutara ulaşılır.
+                      Örneğin {formatTL(ORNEK_BRUT, 0)} brüt ücretle 1095 gün çalışan bir işçi için
+                      brüt tazminat {formatTL(ORNEK_KIDEM)}, damga vergisi {formatTL(ORNEK_DAMGA)}
+                      olur.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>
+                      <strong>İşe giriş ve çıkış tarihi:</strong> e-Devlet&apos;teki SGK hizmet
+                      dökümü ve fesih bildirimi bu tarihleri teyit etmek için kullanılabilir.
+                    </li>
+                    <li>
+                      <strong>Son brüt aylık ücret:</strong> bordrodaki brüt tutar ile düzenli
+                      olarak ödenen ek ödemelerin toplamı.
+                    </li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Araç güncel dönemin tavanını kullanır. Sözleşmeniz daha önceki bir dönemde
+                      sona erdiyse, fesih tarihinde geçerli olan tavanı ayrıca kontrol edin.
+                    </li>
+                    <li>
+                      Araç yalnızca girdiğiniz iki tarih arasını sayar; aynı işverende aralıklı
+                      çalışmalarınız varsa bu sürelerin birleştirilip birleştirilemeyeceği ayrıca
+                      değerlendirilmelidir.
+                    </li>
+                    <li>
+                      Çıkış tarihi olarak, iş sözleşmesinin hukuken sona erdiği tarihi girin;
+                      bu tarih son fiilen çalışılan günden farklı olabilir.
+                    </li>
+                    <li>
+                      Geç ödenen kıdem tazminatına işleyecek faiz ve tahsil masrafları
+                      hesaplamaya dahil değildir.
+                    </li>
+                    <li>
+                      Sonuç bilgilendirme amaçlıdır; bordro, hizmet dökümü ve fesih belgeleriyle
+                      birlikte değerlendirilmelidir.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2

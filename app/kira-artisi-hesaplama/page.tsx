@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import KiraArtisiForm from "@/components/calculators/KiraArtisiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer, { formatTL } from "@/components/calculators/ToolExplainer";
+import { calculateKiraArtisi } from "@/lib/calculators/kiraArtisi";
 import { CURRENT_TUFE_PERIOD, CURRENT_TUFE_RATE } from "@/lib/calculators/kiraArtisi";
 
 export const metadata: Metadata = {
@@ -75,6 +77,10 @@ const jsonLd = {
   ],
 };
 
+const ORNEK_KIRA = 20000;
+const ORNEK = calculateKiraArtisi(ORNEK_KIRA, CURRENT_TUFE_RATE);
+const TUFE_METIN = CURRENT_TUFE_RATE.toLocaleString("tr-TR");
+
 export default function KiraArtisiHesaplamaPage() {
   return (
     <>
@@ -110,6 +116,78 @@ export default function KiraArtisiHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <KiraArtisiForm />
+
+          <ToolExplainer
+            title="Kira artışı nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Formül: <strong>yeni kira = mevcut kira × (1 + TÜFE oranı ÷ 100)</strong>.
+                      Kullanılan oran, TÜİK&apos;in açıkladığı on iki aylık ortalamalara göre
+                      TÜFE değişim oranıdır. Kira döneminiz hangi ay yenileniyorsa ondan bir
+                      önceki aya ait oran esas alınır; örneğin {CURRENT_TUFE_PERIOD} oranı bir
+                      sonraki ay yenilenen kiralar için kullanılır. Oran alanı düzenlenebilir;
+                      farklı bir ay için hesap yapıyorsanız o aya ait oranı girebilirsiniz.
+                    </p>
+                    <p>
+                      Örneğin {formatTL(ORNEK_KIRA, 0)} kira ve %{TUFE_METIN} oranla yeni kira
+                      en fazla {formatTL(ORNEK.yeniKira)} olur; artış tutarı{" "}
+                      {formatTL(ORNEK.artisTutari)}&apos;dir.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>Mevcut aylık kira bedeli</li>
+                    <li>
+                      Son artışın tarihi ve tutarı: önceki yıllarda yasal sınırın üzerinde artış
+                      yapıldıysa bugünkü kira bedelinin de gözden geçirilmesi gerekebilir
+                    </li>
+                    <li>
+                      Kira sözleşmesinin başlangıç tarihi; yenileme ayı buna göre belirlenir
+                    </li>
+                    <li>
+                      Yenileme ayından bir önceki aya ait TÜFE on iki aylık ortalama değişim oranı
+                      (TÜİK bülteni)
+                    </li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Artış, yenilenen her kira yılında bir kez uygulanır; yıl içinde ikinci bir
+                      artış yapılamaz.
+                    </li>
+                    <li>
+                      Sözleşmede artış kararlaştırılmamışsa kiraya veren tek taraflı artış
+                      yapamaz; uyuşmazlık halinde kira tespit davası gündeme gelir.
+                    </li>
+                    <li>
+                      Kiracı şirket, esnaf veya serbest meslek sahibiyse brüt kira üzerinden
+                      stopaj da hesaplanmalıdır; bunun için{" "}
+                      <Link href="/kira-stopaji-hesaplama" className="underline font-medium" style={{ color: "#14342B" }}>
+                        Kira Stopajı Hesaplama
+                      </Link>{" "}
+                      aracını kullanabilirsiniz.
+                    </li>
+                    <li>
+                      Aynı sınır konut ve çatılı işyeri kiraları için geçerlidir; araç ikisini
+                      ayırt etmez. Sonuç bilgilendirme amaçlıdır.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2

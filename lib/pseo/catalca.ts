@@ -7,7 +7,7 @@ export const catalca: PseoDistrict = {
   ablative: "Çatalca'dan",
   genitive: "Çatalca'nın",
   dative: "Çatalca'ya",
-  courthouse: "İstanbul Büyükçekmece Adliyesi",
+  courthouse: "İstanbul Çatalca Adliyesi",
   taxOffice: "Büyükçekmece Vergi Dairesi Müdürlüğü (Çatalca Dış Veznesi)",
   neighborhoods: [
     "Ferhatpaşa", "Kaleiçi", "Ovayenice", "Muratbey", "Karacaköy", "Binkılıç",

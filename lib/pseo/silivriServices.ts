@@ -16,7 +16,7 @@ const silivriBaseServices: PseoService[] = [
     name: "Silivri Avukat",
     heroTitle: "Silivri Avukat",
     heroSubtitle:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, 45 km'lik sahil şeridine ve Avrupa'nın en büyük ceza infaz kurumu kompleksine ev sahipliği yapan Silivri'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Büyükçekmece Adliyesi'nin yargı çevresindedir.",
+      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, 45 km'lik sahil şeridine ve Avrupa'nın en büyük ceza infaz kurumu kompleksine ev sahipliği yapan Silivri'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Silivri Adliyesi'nin yargı çevresindedir.",
     metaTitle: "Silivri Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Silivri'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
@@ -45,19 +45,19 @@ const silivriBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Antik dönemde Selymbria adıyla anılan, doğal limanı ve önemli ticaret yolları üzerindeki konumuyla tarih boyunca önemini koruyan Silivri, bugün tarım ve hayvancılık geleneğini 45 km'lik sahil şeridiyle bir arada sürdürmektedir.",
-      "İlçedeki hukuki uyuşmazlıklar İstanbul Büyükçekmece Adliyesi'nde, vergisel işlemler ise Silivri Vergi Dairesi Müdürlüğü nezdinde yürütülür.",
+      "İlçedeki hukuki uyuşmazlıklar İstanbul Silivri Adliyesi'nde, vergisel işlemler ise Silivri Vergi Dairesi Müdürlüğü nezdinde yürütülür.",
     ],
     faqs: [
-      { question: "Silivri'deki davalara hangi adliye bakıyor?", answer: "Silivri'deki davalara İstanbul Büyükçekmece Adliyesi bakar; Silivri bu adliyenin yargı çevresi içinde yer alır. İlçedeki hukuki uyuşmazlıklar Büyükçekmece Adliyesi'nde görülür. Vergisel işlemler ise Silivri Vergi Dairesi Müdürlüğü nezdinde yürütülür. Randevu WhatsApp veya telefonla alınır. Dava dosyaları bu adliyede görülür." },
+      { question: "Silivri'deki davalara hangi adliye bakıyor?", answer: "Silivri'deki davalara İstanbul Silivri Adliyesi bakar; Silivri bu adliyenin yargı çevresi içinde yer alır. İlçedeki hukuki uyuşmazlıklar Silivri Adliyesi'nde görülür. Vergisel işlemler ise Silivri Vergi Dairesi Müdürlüğü nezdinde yürütülür. Randevu WhatsApp veya telefonla alınır. Dava dosyaları bu adliyede görülür." },
       { question: "Randevu nasıl alınır?", answer: "Randevu, WhatsApp veya telefon aracılığıyla alınır. İlk iletişimde konunuz kısaca paylaşılır, ardından uygun bir danışmanlık görüşmesi günü belirlenir. Danışmanlık görüşmesinde hukuki durumunuz değerlendirilir; temsil kararı alınırsa vekalet düzenlenir, belgeler derlenir ve süreç takip edilir. Görüşme yüz yüze veya çevrim içi olabilir." },
       { question: "Hangi hukuk dallarında hizmet veriliyor?", answer: "Ceza, aile, gayrimenkul, iş, icra-iflas, idare, vergi ve borçlar hukuku alanlarında hizmet verilir. Bunlar arasında soruşturma, kovuşturma ve infaz sürecinde ceza hukuku desteği, boşanma ve velayet davaları, tarım arazisi ve konut ilişkileri, işe iade, alacak tahsili, idari davalar ve vergi uyuşmazlıkları yer alır." },
-      { question: "Büro Silivri'de mi bulunuyor?", answer: "Hayır, büro Silivri'de değil, Beşiktaş/Sinanpaşa'dadır. Silivri'de büro bulunmaz; ancak ilçedeki müvekkillere de aynı kapsamda danışmanlık ve temsil hizmeti verilir. Silivri dosyaları İstanbul Büyükçekmece Adliyesi'nde görüldüğünden mahkeme işlemleri orada yürütülür; randevu WhatsApp veya telefonla alınır. Görüşme çevrim içi de yapılabilir." },
+      { question: "Büro Silivri'de mi bulunuyor?", answer: "Hayır, büro Silivri'de değil, Beşiktaş/Sinanpaşa'dadır. Silivri'de büro bulunmaz; ancak ilçedeki müvekkillere de aynı kapsamda danışmanlık ve temsil hizmeti verilir. Silivri dosyaları İstanbul Silivri Adliyesi'nde görüldüğünden mahkeme işlemleri orada yürütülür; randevu WhatsApp veya telefonla alınır. Görüşme çevrim içi de yapılabilir." },
       { question: "Danışmanlık ücreti nasıl belirlenir?", answer: "Danışmanlık görüşmesi ücret karşılığı yapılır; tutar dosyanın niteliğine göre değişir ve randevu sırasında bilgi verilir. Görüşmede hukuki durumunuz değerlendirilir. Temsil kararı alınırsa vekalet düzenlenir ve belgeler derlenir. Ücret ve süreç konusundaki sorular görüşme öncesinde de iletilebilir." },
       { question: "Ceza infaz kurumundaki bir yakınım için destek alabilir miyim?", answer: "Evet, infaz sürecine ilişkin danışmanlık ve hukuki temsil sağlanır. Koşullu salıverilme ve infazın ertelenmesi taleplerinde danışmanlık verilir, ceza infaz kurumu disiplin cezalarına karşı itiraz hazırlanır. Soruşturma, kovuşturma ve infaz sürecinde ceza hukuku desteği bu kapsamdadır." },
       { question: "Görüşmeler yüz yüze mi yapılıyor?", answer: "Görüşmeler tercihe göre yüz yüze veya çevrim içi olarak planlanabilir. Büro Beşiktaş/Sinanpaşa'dadır ve Silivri'de büro bulunmadığından uzaktan görüşme de seçenek olarak sunulur. İlk iletişim WhatsApp veya telefonla kurulur, ardından danışmanlık randevusu verilir; danışmanlık görüşmesi ücret karşılığı yapılır." },
       { question: "Acil bir durumda ne yapılmalı?", answer: "Acil bir durumda vakit kaybetmeden telefon veya WhatsApp üzerinden iletişime geçilmelidir. Gözaltı halinde şüpheliye eşlik edilir ve soruşturma dosyası incelenir. Tutuklama kararına karşı itiraz süresi 7 gündür; tutuklama CMK m.100/101 kapsamında değerlendirilir ve itiraz dilekçesi hazırlanır." },
       { question: "Dosyanın seyri hakkında bilgi alınabilir mi?", answer: "Evet, dosyanın seyri hakkında bilgi alınabilir. Temsil ve süreç takibi aşamasında mahkeme ve idari merciler nezdindeki gelişmeler müvekkille paylaşılır. Vekalet düzenlendikten ve belgeler derlendikten sonra dosyanın ilerleyişi süreç boyunca iletilir; başvuru ve duruşma aşamaları hakkında bilgi talep edilebilir." },
-      { question: "Büyükçekmece Adliyesi'ne Silivri'den ulaşım nasıl?", answer: "Silivri'den Büyükçekmece Adliyesi'ne E-5 ve TEM karayolu bağlantıları üzerinden ulaşım sağlanabilir. Silivri, İstanbul Büyükçekmece Adliyesi'nin yargı çevresinde yer aldığından ilçedeki dava ve duruşmalar bu adliyede görülür. Duruşma ve dosya takibi için randevu WhatsApp veya telefonla planlanır." },
+      { question: "Silivri'deki davalar hangi adliyede, nerede görülür?", answer: "Silivri'deki davalar ilçenin kendi adliyesi olan İstanbul Silivri Adliyesi'nde görülür. Adliye Alibey Mahallesi, Turgut Özal Bulvarı No:32-34 adresindedir ve bünyesinde ağır ceza mahkemeleri de bulunur. Duruşmaya gitmeden önce dosyanın hangi mahkemede olduğu UYAP veya e-Devlet üzerinden kontrol edilmeli, güncel iletişim bilgileri adliyeden teyit edilmelidir." },
     ],
     howToTitle: "Silivri'de Hukuki Sürece Nasıl Başlanır?",
     howToSteps: genelSurec,
@@ -72,7 +72,7 @@ const silivriBaseServices: PseoService[] = [
     name: "Silivri Boşanma Avukatı",
     heroTitle: "Silivri Boşanma Avukatı",
     heroSubtitle:
-      "Aile mahkemelerinin İstanbul Büyükçekmece Adliyesi bünyesinde yer aldığı Silivri'de, velayet, nafaka ve mal paylaşımı talepleri anlaşmalı veya çekişmeli boşanma süreci kapsamında takip edilir.",
+      "Aile mahkemelerinin İstanbul Silivri Adliyesi bünyesinde yer aldığı Silivri'de, velayet, nafaka ve mal paylaşımı talepleri anlaşmalı veya çekişmeli boşanma süreci kapsamında takip edilir.",
     metaTitle: "Silivri Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Silivri'de anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
@@ -95,10 +95,10 @@ const silivriBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Silivri ekonomisinde tarım ve hayvancılığın günümüzde de belirli bir ağırlığı bulunması, boşanma davalarında tarla, sera veya hayvancılık işletmesi gibi varlıkların mal rejimi tasfiyesinde nasıl ele alınacağı sorusunu öne çıkarmaktadır.",
-      "Anlaşmalı boşanmada protokolün eksiksiz düzenlenmesi, çekişmeli süreçte ise ileri sürülen delillerin gücü davanın seyrini belirleyen temel unsurlardır; her iki türdeki davalara da İstanbul Büyükçekmece Adliyesi bünyesindeki aile mahkemelerinde bakılmaktadır.",
+      "Anlaşmalı boşanmada protokolün eksiksiz düzenlenmesi, çekişmeli süreçte ise ileri sürülen delillerin gücü davanın seyrini belirleyen temel unsurlardır; her iki türdeki davalara da İstanbul Silivri Adliyesi bünyesindeki aile mahkemelerinde bakılmaktadır.",
     ],
     faqs: [
-      { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "Boşanma davası için İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemesine başvurulur. Yetkili mahkeme TMK m.168 uyarınca belirlenir. Anlaşmalı boşanma, çekişmeli boşanma, velayet ve nafaka talepleri de aynı aile mahkemesinde görülür; dava hazırlığı ve duruşma temsili bu kapsamda yürütülür." },
+      { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "Boşanma davası için İstanbul Silivri Adliyesi'ndeki aile mahkemesine başvurulur. Yetkili mahkeme TMK m.168 uyarınca belirlenir. Anlaşmalı boşanma, çekişmeli boşanma, velayet ve nafaka talepleri de aynı aile mahkemesinde görülür; dava hazırlığı ve duruşma temsili bu kapsamda yürütülür." },
       { question: "Tarım arazisi mal paylaşımında nasıl değerlendirilir?", answer: "Evlilik süresince edinilmişse tarım arazisi katılma alacağı hesabına dahil edilir; miras yoluyla geçmişse kişisel mal sayılabilir. Tarım arazisi ve hayvancılık işletmesi mal rejimi tasfiyesinde değerlendirilir. Edinim tarihi ve şekli, hesaplamada belirleyici olduğundan tapu ve işletmeye ilişkin belgeler incelenir." },
       { question: "Velayet düzenlemesinde çocuğun görüşü alınır mı?", answer: "Çocuk belirli bir olgunluğa ulaşmışsa görüşü dikkate alınabilir. Velayet kararında ölçüt çocuğun yararıdır ve çocuğun görüşü bu değerlendirmenin bir parçası olabilir. Velayet tesisi ve sonradan velayet değişikliği talepleri aile mahkemesinde görülür; görüşün nasıl alınacağına hakim karar verir." },
       { question: "Nafaka miktarı neye göre belirlenir?", answer: "Nafaka miktarı belirlenirken tarafların gelir durumu ve ihtiyaçları birlikte değerlendirilir. Bu değerlendirmede tarafların ekonomik koşulları esas alınır. Koşullar sonradan değişirse nafakanın artırılması, azaltılması veya kaldırılması için dava açılabilir; bu davalarda güncel gelir ve ihtiyaç belgeleri mahkemeye sunulur." },
@@ -145,13 +145,13 @@ const silivriBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "2008 yılında hizmete giren, Avrupa'nın en büyük ceza infaz kurumu kompleksi olan Marmara Cezaevi'nin (eski adıyla Silivri Cezaevi) burada bulunması, ilçeyi soruşturma-kovuşturma aşamasından ayrı olarak infaz hukuku alanında da önemli bir merkez haline getirmektedir.",
-      "Hükümlü yakınları; koşullu salıverilme, denetimli serbestlik, disiplin cezalarına itiraz ve nakil talepleri gibi konularda infaz hakimliği nezdinde hukuki destek alabilir. Kovuşturma aşamasındaki davalar ise İstanbul Büyükçekmece Adliyesi'nde görülür.",
+      "Hükümlü yakınları; koşullu salıverilme, denetimli serbestlik, disiplin cezalarına itiraz ve nakil talepleri gibi konularda infaz hakimliği nezdinde hukuki destek alabilir. Kovuşturma aşamasındaki davalar ise İstanbul Silivri Adliyesi'nde görülür.",
     ],
     faqs: [
       { question: "Koşullu salıverilme talebi nasıl yapılır?", answer: "Koşullu salıverilme için infaz kurumu idaresi ve infaz hakimliği nezdinde yasal koşulların sağlanıp sağlanmadığı değerlendirilir ve süreç buna göre yürütülür. Bu konuda koşullu salıverilme ve infazın ertelenmesi taleplerinde danışmanlık verilir. Hükümlünün dosyası incelenerek başvuru hazırlanır." },
       { question: "Cezaevi disiplin cezasına itiraz edilebilir mi?", answer: "Evet, disiplin kurulu kararına karşı infaz hakimliğine itiraz edilebilir. Ceza infaz kurumu disiplin cezalarına karşı itiraz, kararın ve dayanağı olayın incelenmesiyle hazırlanır. İtiraz dilekçesi, hükümlünün dosyasındaki bilgilere göre infaz hakimliğine sunulur; sonuç hakim tarafından belirlenir." },
       { question: "Hükümlü nakil talebi hangi hallerde yapılabilir?", answer: "Hükümlü nakil talebi, sağlık, güvenlik veya aile birliği gibi gerekçelerle yapılabilir. Talebin dayanağı olan durumu gösteren belgeler başvuruya eklenir. İnfaz sürecine ilişkin danışmanlık ve hukuki temsil bu başvurular için de sağlanır; gerekçeye göre başvuru ilgili infaz makamına iletilir." },
-      { question: "Silivri'de bir ceza davası hangi adliyede görülür?", answer: "Silivri'deki kovuşturma aşamasındaki ceza davaları İstanbul Büyükçekmece Adliyesi'nde görülür. Silivri bu adliyenin yargı çevresi içinde yer aldığından duruşmalarda sanık veya mağdur vekilliği orada yapılır. Gözaltı ve soruşturma aşamasında da şüpheliye eşlik edilir ve dosya incelenir." },
+      { question: "Silivri'de bir ceza davası hangi adliyede görülür?", answer: "Silivri'deki kovuşturma aşamasındaki ceza davaları İstanbul Silivri Adliyesi'nde görülür. Silivri bu adliyenin yargı çevresi içinde yer aldığından duruşmalarda sanık veya mağdur vekilliği orada yapılır. Gözaltı ve soruşturma aşamasında da şüpheliye eşlik edilir ve dosya incelenir." },
       { question: "Denetimli serbestlik süresi ne kadardır?", answer: "Denetimli serbestlik süresi, hükmedilen cezanın türüne ve infaz kurumuna göre kanunda öngörülen sürelere göre uygulanır. Süre dosyadaki hüküm ve infaz durumuna göre belirlenir. Koşullu salıverilme ve infazın ertelenmesi taleplerinde danışmanlık verilir; infaz hakimliği nezdindeki süreç hükümlünün dosyasına göre yürütülür." },
       { question: "Müdafi bulunmadan ifade alınabilir mi?", answer: "Evet, müdafi bulunmadan da ifade alınabilir; ancak şüpheli veya sanığın ifade verirken müdafi bulundurması önerilir. Gözaltı sürecinde şüpheliye eşlik edilmesi ve soruşturma dosyasının detaylı incelenmesi, savunmanın dosya içeriğine göre hazırlanmasını sağlar. Böylece ifade dosyadaki delillerle birlikte değerlendirilir." },
     ],
@@ -173,7 +173,7 @@ const silivriBaseServices: PseoService[] = [
     name: "Silivri Gayrimenkul Avukatı",
     heroTitle: "Silivri Gayrimenkul Avukatı",
     heroSubtitle:
-      "Tarım arazisi, sahil bölgesi taşınmazları ve tapu uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Büyükçekmece Adliyesi'nde görülür.",
+      "Tarım arazisi, sahil bölgesi taşınmazları ve tapu uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Silivri Adliyesi'nde görülür.",
     metaTitle: "Silivri Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Silivri'de tarım arazisi, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
@@ -196,11 +196,11 @@ const silivriBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Tarım ve hayvancılık geleneğinin halen sürdüğü Silivri'de, miras yoluyla intikal eden tarım arazilerinde paydaşlar arası uyuşmazlıklar ile sahil bölgesindeki taşınmazlara ilişkin tapu sorunları sık karşılaşılan gayrimenkul hukuku konularındandır.",
-      "Bu uyuşmazlıklar, niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Büyükçekmece Adliyesi bünyesinde görülür.",
+      "Bu uyuşmazlıklar, niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Silivri Adliyesi bünyesinde görülür.",
     ],
     faqs: [
       { question: "Miras yoluyla kalan tarım arazisi paydaşlar arasında nasıl paylaşılır?", answer: "Miras yoluyla kalan tarım arazisinde anlaşma sağlanamazsa ortaklığın giderilmesi (izale-i şüyu) davası açılabilir. Paydaşlar arası paylaşım bu dava ile mahkeme tarafından yapılır. Tarım arazisi sınır ve miras intikali uyuşmazlıklarında temsil sağlanır; tapu kaydı ve paydaşların payları dava öncesinde incelenir." },
-      { question: "Silivri'de gayrimenkul davası hangi mahkemede görülür?", answer: "Gayrimenkul davası, niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Büyükçekmece Adliyesi bünyesinde görülür. Tapu iptali ve tescil, ortaklığın giderilmesi ve kira uyuşmazlıkları gibi dava türleri bu mahkemelerde açılır; görevli mahkeme talebin konusuna göre belirlenir." },
+      { question: "Silivri'de gayrimenkul davası hangi mahkemede görülür?", answer: "Gayrimenkul davası, niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Silivri Adliyesi bünyesinde görülür. Tapu iptali ve tescil, ortaklığın giderilmesi ve kira uyuşmazlıkları gibi dava türleri bu mahkemelerde açılır; görevli mahkeme talebin konusuna göre belirlenir." },
       { question: "Tapu iptal davası hangi hallerde açılır?", answer: "Hukuka aykırı bir tescil işlemi bulunduğunda hak sahibi tapu iptal ve tescil davası açabilir. Tapu kaydı ile fiili durum arasında fark varsa bu dava gündeme gelir. Dava açılmadan önce tapu kaydı ve tescile dayanak belgeler incelenir; talep, tescilin hukuka aykırılığına göre hazırlanır." },
       { question: "Sahil bölgesinde arsa alımında nelere dikkat edilmeli?", answer: "Sahil bölgesinde arsa alımında imar durumu, kıyı kenar çizgisi ve tapu kaydındaki şerhlerin incelenmesi önerilir. Bu unsurlar taşınmazın yapılaşma ve kullanım olanaklarını etkileyebilir. Sahil bölgesindeki taşınmaz alım-satımında hukuki danışmanlık bu inceleme için verilir; satış sözleşmesi de imzadan önce gözden geçirilir." },
       { question: "Tarım arazisinin niteliği tapuda nasıl görünür?", answer: "Tapu kaydında arazinin tarla, bağ veya bahçe gibi niteliği belirtilir; bu durum kullanım hakkını etkiler. Nitelik, taşınmazın nasıl kullanılabileceğini belirlediği için tapu kaydı alım-satımdan veya paylaşımdan önce incelenir. Vasıf değişikliği gerekiyorsa idari makamlara başvuru yapılır." },
@@ -223,7 +223,7 @@ const silivriBaseServices: PseoService[] = [
     name: "Silivri İcra Avukatı",
     heroTitle: "Silivri İcra Avukatı",
     heroSubtitle:
-      "Silivri'de alacak tahsiline yönelik icra takibi, ödeme emrine itiraz ve haciz süreçlerinde hukuki temsil sağlanır; bu süreçlere ilişkin icra daireleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
+      "Silivri'de alacak tahsiline yönelik icra takibi, ödeme emrine itiraz ve haciz süreçlerinde hukuki temsil sağlanır; bu süreçlere ilişkin icra daireleri İstanbul Silivri Adliyesi bünyesindedir.",
     metaTitle: "Silivri İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Silivri'de icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
@@ -246,7 +246,7 @@ const silivriBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Ürün ve hayvan satışından kaynaklanan alacakların tahsilinde icra takibine sıkça başvurulmaktadır; bunun başlıca nedeni, Silivri ekonomisinde tarım ve hayvancılığın hâlâ belirleyici bir yer tutmasıdır.",
-      "Yetkili icra dairesinin tespitinde kural olarak borçlunun ikametgahı esas alınır; Silivri'de yerleşik borçlulara yönelik takiplerde de bu ilke geçerlidir. Takipten doğan uyuşmazlıkların yargılaması ise İstanbul Büyükçekmece Adliyesi'ndeki icra mahkemeleri tarafından yürütülür.",
+      "Yetkili icra dairesinin tespitinde kural olarak borçlunun ikametgahı esas alınır; Silivri'de yerleşik borçlulara yönelik takiplerde de bu ilke geçerlidir. Takipten doğan uyuşmazlıkların yargılaması ise İstanbul Silivri Adliyesi'ndeki icra mahkemeleri tarafından yürütülür.",
     ],
     faqs: [
       { question: "İcra takibine hangi belgelerle başlanır?", answer: "İcra takibine sözleşme, senet, fatura veya mahkeme ilamı gibi belgelerle başlanabilir. Alacağa dayanak belge veya ilam üzerinden takip dosyası açılır ve borçluya ödeme emri gönderilir. Borçlunun ödeme emrine itiraz süresi tebliğden itibaren 7 gündür (İİK m.62); itiraz edilmezse takip kesinleşir." },
@@ -323,7 +323,7 @@ const silivriBaseServices: PseoService[] = [
     name: "Silivri İş Hukuku Avukatı",
     heroTitle: "Silivri İş Hukuku Avukatı",
     heroSubtitle:
-      "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesindedir.",
+      "Kıdem-ihbar tazminatı, işe iade ve işçilik alacaklarına ilişkin süreçlerde temsil sağlanır; iş mahkemeleri İstanbul Silivri Adliyesi bünyesindedir.",
     metaTitle: "Silivri İş Hukuku Avukatı | İşe İade",
     metaDescription:
       "Silivri'de kıdem-ihbar tazminatı, işe iade davası ve işçilik alacaklarına ilişkin uyuşmazlıklarda avukatlık hizmeti sağlanmaktadır.",
@@ -346,12 +346,12 @@ const silivriBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Tarım ve hayvancılığın önemli bir istihdam kaynağı olduğu Silivri'de, mevsimlik tarım işçilerinin ücret, sigorta kaydı ve çalışma koşullarına ilişkin uyuşmazlıkları sık gündeme gelen iş hukuku konularındandır.",
-      "Arabuluculukta anlaşma sağlanamazsa işe iade ve işçilik alacağı davaları İstanbul Büyükçekmece Adliyesi'ndeki iş mahkemelerinde görülür.",
+      "Arabuluculukta anlaşma sağlanamazsa işe iade ve işçilik alacağı davaları İstanbul Silivri Adliyesi'ndeki iş mahkemelerinde görülür.",
     ],
     faqs: [
       { question: "Mevsimlik tarım işçisinin sigorta hakkı var mı?", answer: "Çalışma süresine göre değişmekle birlikte, mevsimlik işçiler de sigortalı sayılabilir. Mevsimlik tarım işçilerinin ücret ve sigorta uyuşmazlıklarında destek sağlanır. Sigortalılık durumu, çalışma süresi ve ödemelere ilişkin belgeler incelenerek değerlendirilir; eksik bildirim varsa bu belgelere dayanılarak talepte bulunulur." },
       { question: "Tarım işçisi iş kazası geçirirse ne yapılmalı?", answer: "Tarım işçisi iş kazası geçirirse olay derhal SGK'ya bildirilmeli, tedavi ve tazminat süreci başlatılmalıdır. İş kazasından doğan tazminat talepleri takip edilir. Kaza anına ilişkin bilgiler, tedavi belgeleri ve çalışma ilişkisini gösteren kayıtlar tazminat dosyasının hazırlanmasında kullanılır." },
-      { question: "Silivri'de iş mahkemesi nerededir?", answer: "Silivri'deki iş davalarına bakan iş mahkemesi İstanbul Büyükçekmece Adliyesi bünyesindedir. İşe iade davası öncesinde zorunlu arabuluculuk süreci izlenir. Kıdem ve ihbar tazminatı, hafta tatili ve yıllık izin ücreti gibi işçilik alacaklarına ilişkin davalar da bu adliyede görülür." },
+      { question: "Silivri'de iş mahkemesi nerededir?", answer: "Silivri'deki iş davalarına bakan iş mahkemesi İstanbul Silivri Adliyesi bünyesindedir. İşe iade davası öncesinde zorunlu arabuluculuk süreci izlenir. Kıdem ve ihbar tazminatı, hafta tatili ve yıllık izin ücreti gibi işçilik alacaklarına ilişkin davalar da bu adliyede görülür." },
       { question: "İşe iade talebi hangi sürede sonuçlanır?", answer: "Arabuluculuk ve dava sürecinin toplam süresi dosyaya göre değişebilir. Süreç, fesihten itibaren 1 ay içinde arabulucuya başvurularak başlar; anlaşma olmazsa son tutanaktan itibaren 2 hafta içinde dava açılır. İşe iade için İş K. m.18 uyarınca en az 30 işçi ve 6 ay kıdem aranır." },
       { question: "Mevsim sonunda işten çıkarılan işçinin hakları nelerdir?", answer: "Mevsim sonunda işten çıkarılan işçi için sözleşme türüne ve çalışma süresine göre kıdem veya ihbar tazminatı hakkı doğabilir. Ücret, hafta tatili ve yıllık izin gibi diğer işçilik alacakları da talep edilebilir. İbraname imzalanmadan önce iş sözleşmesi ve çıkış belgeleri hukuki açıdan incelenir." },
     ],
@@ -373,7 +373,7 @@ const silivriBaseServices: PseoService[] = [
     name: "Silivri Kira ve Tahliye Avukatı",
     heroTitle: "Silivri Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Sulh hukuk mahkemelerinin İstanbul Büyükçekmece Adliyesi'nde bulunduğu Silivri'de, konut ve yazlık tahliyesinden kira bedeli tespitine kadar kira sözleşmesi kaynaklı uyuşmazlıklarda hukuki destek verilir.",
+      "Sulh hukuk mahkemelerinin İstanbul Silivri Adliyesi'nde bulunduğu Silivri'de, konut ve yazlık tahliyesinden kira bedeli tespitine kadar kira sözleşmesi kaynaklı uyuşmazlıklarda hukuki destek verilir.",
     metaTitle: "Silivri Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Silivri'de kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
@@ -396,7 +396,7 @@ const silivriBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Yaz aylarında 45 km'lik sahil şeridi boyunca talebin belirgin biçimde yükseldiği Silivri'de, yıllık konut kiralarından farklı bir sözleşme mantığı işleyen dönemsel yazlık kiralamalar öne çıkmaktadır.",
-      "Kira sözleşmesinin yazılı ve eksiksiz düzenlenmiş olması, olası bir uyuşmazlıkta ispat bakımından belirleyici olur; bu tür davalara bakmakla görevli sulh hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi bünyesinde faaliyet göstermektedir.",
+      "Kira sözleşmesinin yazılı ve eksiksiz düzenlenmiş olması, olası bir uyuşmazlıkta ispat bakımından belirleyici olur; bu tür davalara bakmakla görevli sulh hukuk mahkemeleri İstanbul Silivri Adliyesi bünyesinde faaliyet göstermektedir.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir tahliye taahhüdü veya ihtiyaç nedeniyle tahliye talep edilebilir. Kira borcunda ödeme için verilen süre TBK m.315 uyarınca 30 gündür; bu sürede ödeme yapılmazsa tahliye yolu açılır. Taahhüde dayalı tahliye icra yoluyla da istenebilir." },
@@ -473,7 +473,7 @@ const silivriBaseServices: PseoService[] = [
     name: "Silivri Borçlar Hukuku Avukatı",
     heroTitle: "Silivri Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "Tarımsal tedarik sözleşmelerinden doğan uyuşmazlıklar, alacak talepleri ve tazminat davaları Silivri'de takip edilir; bu davalara İstanbul Büyükçekmece Adliyesi bünyesindeki ticaret ve asliye hukuk mahkemelerinde bakılır.",
+      "Tarımsal tedarik sözleşmelerinden doğan uyuşmazlıklar, alacak talepleri ve tazminat davaları Silivri'de takip edilir; bu davalara İstanbul Silivri Adliyesi bünyesindeki ticaret ve asliye hukuk mahkemelerinde bakılır.",
     metaTitle: "Silivri Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Silivri'de sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
@@ -496,12 +496,12 @@ const silivriBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Silivri'de borçlar hukuku alanında en sık karşılaşılan uyuşmazlık türleri arasında, tarım ve hayvancılığın hâlâ önemli bir geçim kaynağı olmasına paralel biçimde, ürün tedarik sözleşmeleri ile hayvan alım-satımından kaynaklananlar yer almaktadır.",
-      "Ticari nitelikteki bazı alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvurulması zorunlu tutulmaktadır; bu davalara da İstanbul Büyükçekmece Adliyesi bünyesinde bakılmaktadır.",
+      "Ticari nitelikteki bazı alacak uyuşmazlıklarında dava açılmadan önce arabuluculuğa başvurulması zorunlu tutulmaktadır; bu davalara da İstanbul Silivri Adliyesi bünyesinde bakılmaktadır.",
     ],
     faqs: [
       { question: "Satın alınan hayvan hastalıklı çıkarsa ne yapılabilir?", answer: "Satın alınan hayvan hastalıklı çıkarsa ayıba dayalı olarak sözleşmeden dönme veya bedel indirimi talep edilebilir. Hayvan alım-satımından doğan ayıp ve tazminat talepleri bu kapsamda takip edilir. Ayıbın fark edilir edilmez karşı tarafa bildirilmesi ve alım-satım belgelerinin saklanması önemlidir." },
       { question: "Tarımsal tedarik sözleşmesinde teslim gecikirse ne olur?", answer: "Tarımsal tedarik sözleşmesinde teslim gecikirse sözleşmede öngörülen gecikme cezası talep edilebilir, gerekirse sözleşmeden dönülebilir. Tarımsal ürün alım-satım ve tedarik sözleşmelerinin ifası veya ihlaline dayalı davalar bu kapsamda açılır. Teslim tarihi ve cezai şart hükümleri bu değerlendirmede incelenir." },
-      { question: "Ticari alacak davası hangi mahkemede görülür?", answer: "Ticari alacak davası, niteliğine göre asliye ticaret mahkemesinde, İstanbul Büyükçekmece Adliyesi bünyesinde görülür. Alacak davası açılabileceği gibi icra takibi de yürütülebilir. Görevli mahkeme, uyuşmazlığın ticari nitelikte olup olmadığına göre belirlenir; alacağa dayanak sözleşme ve belgeler dava öncesinde incelenir." },
+      { question: "Ticari alacak davası hangi mahkemede görülür?", answer: "Ticari alacak davası, niteliğine göre asliye ticaret mahkemesinde, İstanbul Silivri Adliyesi bünyesinde görülür. Alacak davası açılabileceği gibi icra takibi de yürütülebilir. Görevli mahkeme, uyuşmazlığın ticari nitelikte olup olmadığına göre belirlenir; alacağa dayanak sözleşme ve belgeler dava öncesinde incelenir." },
       { question: "Dava öncesi arabuluculuk her zaman şart mı?", answer: "Hayır, arabuluculuk her zaman şart değildir; yalnızca ticari nitelikteki bazı alacak uyuşmazlıklarında dava şartı olarak aranır. Bu nedenle uyuşmazlığın niteliği dava açılmadan önce değerlendirilir. Gerekli olduğu halde arabulucuya başvurulmadan dava açılırsa dava usulden reddedilebilir. Bu inceleme dava hazırlığında ilk yapılan kontroldür." },
       { question: "Zamanaşımına uğramış alacak talep edilebilir mi?", answer: "Borçlu zamanaşımı def'ini ileri sürerse zamanaşımına uğramış alacak talep edilemez; ileri sürmezse talep edilebilir. Bu nedenle alacağın doğum tarihi ve zamanaşımı süresinin dolup dolmadığı dava veya takipten önce kontrol edilir. Sözleşme ve belgelerin incelenmesi bu kontrolün temelini oluşturur." },
     ],

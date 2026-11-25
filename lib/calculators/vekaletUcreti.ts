@@ -2,7 +2,7 @@
 // (resmigazete.gov.tr, birincil kaynaktan doğrulandı, 2026-07-17).
 export const MAKTU_ASGARI_UCRET = 45000;
 
-const DILIMLER = [
+export const DILIMLER = [
   { ustSinir: 600_000, oran: 0.16 },
   { ustSinir: 1_200_000, oran: 0.15 },
   { ustSinir: 2_400_000, oran: 0.14 },

@@ -252,7 +252,6 @@ function LangToggle({
                   }}
                   className="w-full flex items-center gap-2.5 px-3 py-2 text-sm text-start transition-colors duration-150 hover:bg-white/5"
                   style={{ color: selected ? "#C5A880" : "#F4EDE4" }}
-                  dir={code === "ar" ? "rtl" : "ltr"}
                 >
                   <span className="text-base leading-none" aria-hidden="true">{o.flag}</span>
                   <span className="flex-1">{o.label}</span>

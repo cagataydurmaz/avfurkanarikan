@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import InfazYatarForm from "@/components/calculators/InfazYatarForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer from "@/components/calculators/ToolExplainer";
 
 export const metadata: Metadata = {
   title: pseoTitle("İnfaz Yatar Hesaplama (Koşullu Salıverilme)"),
@@ -101,6 +102,73 @@ export default function InfazYatarHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <InfazYatarForm />
+
+          <ToolExplainer
+            title="İnfaz süresi nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Araç cezayı önce ay cinsine çevirir (yıl × 12 + ay) ve seçtiğiniz suç
+                      kategorisinin oranıyla çarpar: genel suçlarda 1/2, ikinci gruptaki suçlarda
+                      2/3, üçüncü gruptakilerde 3/4. Çıkan ay sayısı en yakın tam aya yuvarlanır
+                      ve infaza başlama tarihine eklenerek tahmini koşullu salıverilme tarihi
+                      bulunur.
+                    </p>
+                    <p>
+                      Denetimli serbestlik başlangıcı için bu tarihten geriye sayılır: suç
+                      30.03.2020&apos;den sonra işlendiyse 1 yıl, daha önce işlendiyse 3 yıl.
+                      Örneğin genel bir suçtan, 2020 sonrası suç tarihiyle verilen 6 yıllık
+                      cezada 72 ay × 1/2 = 36 ay hesaplanır; koşullu salıverilme infazın 3.
+                      yılının sonuna, denetimli serbestlik ise bundan 1 yıl öncesine denk gelir.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>Kesinleşmiş mahkûmiyet kararındaki hapis cezasının süresi</li>
+                    <li>Cezanın infazına başlanan tarih</li>
+                    <li>
+                      Suç tarihi ve suçun türü: kategori seçimi ve 30.03.2020 öncesi kutucuğu bu
+                      bilgilere göre işaretlenir
+                    </li>
+                    <li>
+                      Varsa cezaevince düzenlenen müddetname; resmi infaz hesabı bu belgede yer
+                      alır
+                    </li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Gözaltı ve tutuklulukta geçen süreler cezadan mahsup edilir; araç bu
+                      mahsubu ayrıca yapmaz.
+                    </li>
+                    <li>
+                      Birden fazla mahkûmiyet varsa her ceza kendi oranıyla hesaplanıp
+                      birleştirilir; araç tek bir ceza için çalışır.
+                    </li>
+                    <li>
+                      Suç çocukken işlendiyse daha düşük oranlar ve farklı kurallar uygulanır;
+                      araç bu durumu ayırt etmez.
+                    </li>
+                    <li>
+                      Hesap ay bazında ve yuvarlanarak yapılır; müddetnamedeki gün bazlı resmi
+                      hesap birkaç gün farklı çıkabilir.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>

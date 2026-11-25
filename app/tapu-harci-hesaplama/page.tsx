@@ -6,6 +6,12 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import TapuHarciForm from "@/components/calculators/TapuHarciForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer, { formatTL } from "@/components/calculators/ToolExplainer";
+import {
+  DONER_SERMAYE_BUYUKSEHIR,
+  DONER_SERMAYE_DIGER,
+  calculateTapuHarci,
+} from "@/lib/calculators/tapuHarci";
 
 export const metadata: Metadata = {
   title: pseoTitle("Tapu Harcı Hesaplama 2026 (Alıcı ve Satıcı)"),
@@ -63,6 +69,9 @@ const jsonLd = {
   ],
 };
 
+const ORNEK_BEDEL = 5000000;
+const ORNEK = calculateTapuHarci(ORNEK_BEDEL, true);
+
 export default function TapuHarciHesaplamaPage() {
   return (
     <>
@@ -91,6 +100,74 @@ export default function TapuHarciHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <TapuHarciForm />
+
+          <ToolExplainer
+            title="Tapu harcı nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Araç tapuda beyan edilecek satış bedelini binde 40 (%4) oranıyla çarparak
+                      toplam tapu harcını, %2 oranıyla çarparak da alıcı ve satıcının ayrı ayrı
+                      payını bulur. Bunlara ek olarak Tapu ve Kadastro Genel Müdürlüğü&apos;nün
+                      döner sermaye ücreti gösterilir; araç bu ücret için büyükşehirlerde yaklaşık{" "}
+                      {formatTL(DONER_SERMAYE_BUYUKSEHIR, 0)}, diğer illerde yaklaşık{" "}
+                      {formatTL(DONER_SERMAYE_DIGER, 0)} esas alır.
+                    </p>
+                    <p>
+                      Örneğin {formatTL(ORNEK_BEDEL, 0)} bedelle büyükşehirde satılan bir dairede
+                      toplam harç {formatTL(ORNEK.toplamHarc, 0)}, alıcı ve satıcı payı ayrı ayrı{" "}
+                      {formatTL(ORNEK.tarafPayi, 0)} olur. Hesap girdiğiniz bedel üzerinden
+                      yapılır; bu bedel emlak vergisi değerinin altındaysa sonuç ödenecek gerçek
+                      harcı yansıtmaz.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>Taraflarca kararlaştırılan gerçek satış bedeli</li>
+                    <li>
+                      Taşınmazın emlak vergisi değeri: belediyeden alınabilir; beyan edilen bedel
+                      bu değerden düşükse harç emlak vergisi değeri üzerinden hesaplanır
+                    </li>
+                    <li>Taşınmazın büyükşehir sınırları içinde olup olmadığı</li>
+                    <li>
+                      İşlem başvurusu için ayrıca tapu bilgileri (ada/parsel) ve tarafların kimlik
+                      bilgileri gerekir
+                    </li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Döner sermaye tutarları yaklaşık değerlerdir ve her yıl yeniden belirlenir;
+                      işlem öncesinde güncel tutarı kontrol edin.
+                    </li>
+                    <li>
+                      Araç yalnızca satış işlemini hesaplar. Bağış, miras yoluyla intikal, ipotek
+                      veya kat irtifakı gibi işlemler farklı harç kurallarına tabidir.
+                    </li>
+                    <li>
+                      Harç ve döner sermaye ücreti tapudaki imza işleminden önce ödenir; ödeme
+                      yapılmadan işlem tamamlanmaz.
+                    </li>
+                    <li>
+                      Kanuni paylaşım %2-%2 olsa da tarafların anlaşması halinde harcın tamamını
+                      bir taraf üstlenebilir. Sonuç bilgilendirme amaçlıdır.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <p className="text-xs leading-relaxed mt-8" style={{ color: "#8A9A93" }}>
             Bu araç bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz. Tapuda düşük bedel

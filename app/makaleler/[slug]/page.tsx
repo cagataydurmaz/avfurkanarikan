@@ -9,6 +9,7 @@ import FloatingButtons from "@/components/FloatingButtons";
 import { posts, getPostBySlug } from "@/lib/posts";
 import { practiceAreas } from "@/lib/practiceAreas";
 import { postMetaTitles } from "@/lib/postMetaTitles";
+import { postMetaDescriptions } from "@/lib/postMetaDescriptions";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -27,14 +28,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: metaTitle ? { absolute: metaTitle } : post.title,
-    description: post.excerpt,
+    description: postMetaDescriptions[post.slug] ?? post.excerpt,
     authors: [{ name: "Av. Furkan Arıkan" }],
     alternates: {
       canonical: `/makaleler/${post.slug}`,
     },
     openGraph: {
       title: post.title,
-      description: post.excerpt,
+      description: postMetaDescriptions[post.slug] ?? post.excerpt,
       type: "article",
       publishedTime: post.date,
       modifiedTime: postEnrichment[post.slug]?.updated ?? post.date,
@@ -62,7 +63,7 @@ export default async function MakalePage({ params }: Props) {
       "@context": "https://schema.org",
       "@type": "Article",
       headline: post.title,
-      description: post.excerpt,
+      description: postMetaDescriptions[post.slug] ?? post.excerpt,
       datePublished: post.date,
       dateModified: postEnrichment[post.slug]?.updated ?? post.date,
       image: "https://furkanarikan.av.tr/opengraph-image",

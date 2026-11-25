@@ -13,7 +13,7 @@ export const silivriMiras: PseoService = {
   name: "Silivri Miras Avukatı",
   heroTitle: "Silivri Miras Avukatı",
   heroSubtitle:
-    "Silivri'de tarla, yazlık ve köy arsası gibi çeşitli taşınmazlardan oluşan terekelerde veraset ilamı, saklı pay, tenkis ve paylaşım uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Büyükçekmece Adliyesi'nde görülür.",
+    "Silivri'de tarla, yazlık ve köy arsası gibi çeşitli taşınmazlardan oluşan terekelerde veraset ilamı, saklı pay, tenkis ve paylaşım uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Silivri Adliyesi'nde görülür.",
   metaTitle: "Silivri Miras Avukatı | Veraset ve Tenkis",
   metaDescription:
     "Silivri'de veraset ilamı, tenkis davası, mirasın reddi ve tarla ile yazlık paylarının paylaşımı konusunda miras hukuku danışmanlığı sunulmaktadır.",
@@ -36,10 +36,10 @@ export const silivriMiras: PseoService = {
   ],
   localParagraphs: [
     "Silivri, yaklaşık 45 kilometrelik Marmara kıyısının yanı sıra Çanta, Bekirli ve Değirmenköy gibi daha kırsal mahallelerdeki tarla ve arsalarla da öne çıkar. Selimpaşa ve Gümüşyaka'daki yazlık siteler, Piri Mehmet Paşa'daki ilçe merkezi konutları ve kırsal tapu payları aynı ailede bir araya gelebildiğinden, tereke genellikle farklı nitelikte taşınmazlardan oluşur ve her biri için ayrı bir paylaşım yöntemi gerekebilir.",
-    "Silivri'deki miras davaları İstanbul Büyükçekmece Adliyesi'nde görülür; çekişmesiz işler sulh hukuk, tenkis ve tapu iptali ise asliye hukuk mahkemesindedir. Eski tarihli tapu kayıtlarında mirasçıların intikalinin hiç yapılmadığı durumlar olabilir; bu halde zincirleme veraset incelemesi ve Silivri Vergi Dairesi Müdürlüğü nezdindeki yükümlülüklerin kontrolü gerekir.",
+    "Silivri'deki miras davaları İstanbul Silivri Adliyesi'nde görülür; çekişmesiz işler sulh hukuk, tenkis ve tapu iptali ise asliye hukuk mahkemesindedir. Eski tarihli tapu kayıtlarında mirasçıların intikalinin hiç yapılmadığı durumlar olabilir; bu halde zincirleme veraset incelemesi ve Silivri Vergi Dairesi Müdürlüğü nezdindeki yükümlülüklerin kontrolü gerekir.",
   ],
   faqs: [
-    { question: "Silivri'de miras davaları hangi adliyede görülür?", answer: "Silivri dosyaları İstanbul Büyükçekmece Adliyesi'nde, görevli sulh veya asliye hukuk mahkemesinde yürütülür." },
+    { question: "Silivri'de miras davaları hangi adliyede görülür?", answer: "Silivri dosyaları İstanbul Silivri Adliyesi'nde, görevli sulh veya asliye hukuk mahkemesinde yürütülür." },
     { question: "Yıllar önce ölen babamın tarlasında intikal yapılmamışsa ne olur?", answer: "Veraset ilamıyla tüm mirasçılar belirlenir ve tapuda intikal yapılır; gerekirse zincirleme birden fazla miras bırakan için ayrı ayrı işlem yapılır." },
     { question: "Yazlık dairede kardeşlerle ortak olduk, kullanım nasıl düzenlenir?", answer: "Taksim sözleşmesiyle kullanım ya da devir düzenlenebilir; anlaşma sağlanamazsa ortaklığın giderilmesi davası açılabilir." },
     { question: "Muris sağlığında tapuyu sattı gibi gösterdiyse ne yapılabilir?", answer: "Gerçek amaç mirasçılardan mal kaçırmaksa muris muvazaasına dayalı tapu iptali ve tescil davası değerlendirilir." },

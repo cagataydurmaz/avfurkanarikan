@@ -5,6 +5,13 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import IcraMasrafiForm from "@/components/calculators/IcraMasrafiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer, { formatTL, formatYuzde } from "@/components/calculators/ToolExplainer";
+import {
+  BASVURMA_HARCI,
+  TAHSIL_HARCI_ORANLARI,
+  VEKALETNAME_SURETI_HARCI,
+  calculateIcraMasrafi,
+} from "@/lib/calculators/icraMasrafi";
 
 export const metadata: Metadata = {
   title: "İcra Masrafı ve Harç Hesaplama 2026",
@@ -62,6 +69,9 @@ const jsonLd = {
   ],
 };
 
+const ORNEK_ALACAK = 200000;
+const ORNEK = calculateIcraMasrafi("ilamsiz", ORNEK_ALACAK, "hacizOncesi");
+
 export default function IcraMasrafiHesaplamaPage() {
   return (
     <>
@@ -90,6 +100,76 @@ export default function IcraMasrafiHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <IcraMasrafiForm />
+
+          <ToolExplainer
+            title="İcra masrafları nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Araç iki ayrı tutar üretir. <strong>Başlangıç masrafı</strong>, takip
+                      açılırken alacaklının yatırdığı tutardır: başvurma harcı (
+                      {formatTL(BASVURMA_HARCI)}) + vekaletname sureti harcı (
+                      {formatTL(VEKALETNAME_SURETI_HARCI)}) + ilamsız ve kambiyo takiplerinde
+                      alacağın binde 5&apos;i oranında peşin harç. İlamlı takip seçildiğinde araç
+                      peşin harç eklemez.
+                    </p>
+                    <p>
+                      <strong>Tahsil harcı</strong> ise borçlunun ödemeyi yaptığı aşamaya göre
+                      alacak tutarına uygulanır: haciz öncesi{" "}
+                      {formatYuzde(TAHSIL_HARCI_ORANLARI.hacizOncesi)}, haciz sonrası satıştan
+                      önce {formatYuzde(TAHSIL_HARCI_ORANLARI.hacizSonrasi)}, satış yoluyla
+                      tahsilde {formatYuzde(TAHSIL_HARCI_ORANLARI.satisIle)}. Örneğin{" "}
+                      {formatTL(ORNEK_ALACAK, 0)} tutarlı ilamsız bir takipte peşin harç{" "}
+                      {formatTL(ORNEK.pesinHarc)}, başlangıç toplamı{" "}
+                      {formatTL(ORNEK.baslangicToplami)} olur; borç haciz öncesinde ödenirse
+                      tahsil harcı {formatTL(ORNEK.tahsilHarci)} çıkar.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>
+                      Takip türü: mahkeme kararına dayanıyorsa ilamlı; fatura, sözleşme gibi
+                      belgelere dayanıyorsa ilamsız; çek, senet veya poliçeye dayanıyorsa kambiyo
+                    </li>
+                    <li>
+                      Takip talebinde istenen alacak tutarı: asıl alacak ile takip tarihine kadar
+                      işlemiş faizin toplamı
+                    </li>
+                    <li>Tahsilatın gerçekleştiği (veya beklendiği) aşama</li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Haciz, muhafaza, kıymet takdiri ve ilan gibi takip sırasında doğan giderler
+                      hesaplamaya dahil değildir.
+                    </li>
+                    <li>
+                      Takip boyunca işleyen faiz tahsil edilecek tutarı, dolayısıyla tahsil
+                      harcını da artırır; araç yalnızca girdiğiniz tutarı esas alır.
+                    </li>
+                    <li>
+                      Kısmi ödemelerde her tahsilat, yapıldığı aşamanın oranına tabi olabilir.
+                    </li>
+                    <li>
+                      Borçlu itiraz ederse takip durur; itirazın iptali veya kaldırılması
+                      süreçleri ayrıca masraf doğurur. Sonuç bilgilendirme amaçlıdır.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <p className="text-xs leading-relaxed mt-8" style={{ color: "#8A9A93" }}>
             Bu araç bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz. Vekalet ücreti bu

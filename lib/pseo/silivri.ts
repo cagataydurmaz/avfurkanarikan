@@ -7,7 +7,7 @@ export const silivri: PseoDistrict = {
   ablative: "Silivri'den",
   genitive: "Silivri'nin",
   dative: "Silivri'ye",
-  courthouse: "İstanbul Büyükçekmece Adliyesi",
+  courthouse: "İstanbul Silivri Adliyesi",
   taxOffice: "Silivri Vergi Dairesi Müdürlüğü",
   neighborhoods: [
     "Piri Mehmet Paşa", "Selimpaşa", "Çanta", "Gümüşyaka", "Değirmenköy", "Bekirli",

@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import AracDegerKaybiForm from "@/components/calculators/AracDegerKaybiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer from "@/components/calculators/ToolExplainer";
 
 export const metadata: Metadata = {
   title: pseoTitle("Araç Değer Kaybı Tazminatı: Dava Süresi Hesaplama"),
@@ -100,6 +101,80 @@ export default function AracDegerKaybiHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <AracDegerKaybiForm />
+
+          <ToolExplainer
+            title="Araç ne hesaplar, ne hesaplamaz?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Değer kaybının TL karşılığı için tutarlı ve güvenilir bir formül
+                      bulunmadığından araç tutar hesaplamaz. Bunun yerine iki şey yapar:
+                    </p>
+                    <ol>
+                      <li>
+                        <strong>Talep süresi:</strong> sorumlunun öğrenildiği tarihe 2 yıl, kaza
+                        tarihine 10 yıl ekler ve bunlardan erken olanı talep hakkının sona erdiği
+                        tarih olarak gösterir (KTK m.109, TBK m.72).
+                      </li>
+                      <li>
+                        <strong>Muhatap sigorta:</strong> seçtiğiniz sigorta türüne (zorunlu
+                        trafik sigortası veya kasko) göre talebin kime yöneltilebileceğini açıklar.
+                      </li>
+                    </ol>
+                    <p>
+                      Uygulamada tutar, kaza öncesi rayiç değer ile onarım sonrası rayiç değer
+                      arasındaki farka göre eksper veya bilirkişi tarafından belirlenir.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>
+                      Kaza tarihi ve kusurlu tarafın öğrenildiği tarih; ikinci tarihi boş
+                      bırakırsanız araç kaza tarihini esas alır
+                    </li>
+                    <li>Kaza tespit tutanağı (kusur oranlarını gösterir)</li>
+                    <li>Ekspertiz raporu ve onarım faturası (değişen ve boyanan parçalar)</li>
+                    <li>Araç ruhsatı ve kilometre bilgisi</li>
+                    <li>Karşı tarafın trafik sigortası poliçe bilgileri</li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Talep edilebilecek tutar kusur oranlarına göre belirlenir; kazada sizin de
+                      kusurunuz varsa o oranda indirim yapılır.
+                    </li>
+                    <li>
+                      Trafik sigortası poliçe limiti dahilinde öder; limiti aşan kısım için
+                      kusurlu sürücüye ve araç işletenine başvurulabilir.
+                    </li>
+                    <li>
+                      Değer kaybı, onarım bedelinden ayrı bir zarar kalemidir; aracın onarılmış
+                      olması değer kaybı talebini ortadan kaldırmaz.
+                    </li>
+                    <li>
+                      Sigorta şirketinin ödemesini kabul ederken imzalanan ibraname kalan
+                      talepleri etkileyebileceğinden, içeriği dikkatle okunmalıdır.
+                    </li>
+                    <li>
+                      Dava açmadan önce sigorta şirketine yazılı başvuru yapılması gerekir.
+                    </li>
+                    <li>Sonuç bilgilendirme amaçlıdır.</li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>

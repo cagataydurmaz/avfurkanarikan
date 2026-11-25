@@ -16,7 +16,7 @@ const catalcaBaseServices: PseoService[] = [
     name: "Çatalca Avukat",
     heroTitle: "Çatalca Avukat",
     heroSubtitle:
-      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, yüzölçümü bakımından İstanbul'un en büyük ilçesi olan, orman ve mandıracılık kültürüyle tanınan Çatalca'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Büyükçekmece Adliyesi'nin yargı çevresindedir.",
+      "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, yüzölçümü bakımından İstanbul'un en büyük ilçesi olan, orman ve mandıracılık kültürüyle tanınan Çatalca'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Çatalca Adliyesi'nin yargı çevresindedir.",
     metaTitle: "Çatalca Avukat | Hukuki Danışmanlık",
     metaDescription:
       "Çatalca'da ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
@@ -45,19 +45,19 @@ const catalcaBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "1.115 km² yüzölçümüyle İstanbul'un en büyük ilçesi olan ve şehrin yüzde 20'sini kaplayan Çatalca, geniş orman alanları, gölet çevresi ve manda/süt ürünleri üretimi geleneğiyle kırsal karakterini korumaktadır.",
-      "İlçedeki hukuki uyuşmazlıklar İstanbul Büyükçekmece Adliyesi'nde, vergisel işlemler ise Büyükçekmece Vergi Dairesi Müdürlüğü'nün Çatalca dış veznesi nezdinde yürütülür.",
+      "İlçedeki hukuki uyuşmazlıklar İstanbul Çatalca Adliyesi'nde, vergisel işlemler ise Büyükçekmece Vergi Dairesi Müdürlüğü'nün Çatalca dış veznesi nezdinde yürütülür.",
     ],
     faqs: [
-      { question: "Çatalca'daki davalara hangi adliye bakıyor?", answer: "Çatalca, İstanbul Büyükçekmece Adliyesi'nin yargı çevresinde yer almaktadır. Hukuki uyuşmazlıklar genel olarak bu adliyedeki ilgili mahkemelerde, idari ve vergi uyuşmazlıkları ise İstanbul idare ve vergi mahkemelerinde görülür. Büro Beşiktaş/Sinanpaşa'dadır, Çatalca ilçesinde değildir; ilçedeki müvekkillere de hizmet verilir." },
+      { question: "Çatalca'daki davalara hangi adliye bakıyor?", answer: "Çatalca, İstanbul Çatalca Adliyesi'nin yargı çevresinde yer almaktadır. Hukuki uyuşmazlıklar genel olarak bu adliyedeki ilgili mahkemelerde, idari ve vergi uyuşmazlıkları ise İstanbul idare ve vergi mahkemelerinde görülür. Büro Beşiktaş/Sinanpaşa'dadır, Çatalca ilçesinde değildir; ilçedeki müvekkillere de hizmet verilir." },
       { question: "Randevu nasıl alınır?", answer: "Randevu için WhatsApp veya telefonla iletişime geçilerek uygun bir görüşme günü belirlenir. İlk iletişimde konu kısaca paylaşılır, ardından danışmanlık görüşmesi planlanır. Görüşme tercihe göre yüz yüze veya çevrim içi yapılabilir; temsil kararı alınırsa vekalet düzenlenir ve belgeler derlenir." },
       { question: "Hangi hukuk dallarında hizmet veriliyor?", answer: "Ceza, aile, gayrimenkul, iş, icra-iflas, idare, vergi ve borçlar hukuku kapsamında temsil sağlanmaktadır. Örneğin boşanma ve velayet, tarım arazisi ve tapu uyuşmazlıkları, kira ve tahliye, işe iade ve kıdem tazminatı, icra itirazı, idari işlemlere karşı davalar ile vergi uyuşmazlıkları bu kapsamda değerlendirilir." },
-      { question: "Büro Çatalca'da mı bulunuyor?", answer: "Hayır, büro Beşiktaş/Sinanpaşa'dadır; Çatalca'daki müvekkillere de aynı kapsamda hizmet verilir. Görüşmeler randevu esasına göre yüz yüze veya çevrim içi yapılabilir. Çatalca'daki dosyalar İstanbul Büyükçekmece Adliyesi'nde takip edilir; ilk iletişim WhatsApp veya telefonla kurulabilir, görüşme için büroya gelmek zorunlu değildir." },
+      { question: "Büro Çatalca'da mı bulunuyor?", answer: "Hayır, büro Beşiktaş/Sinanpaşa'dadır; Çatalca'daki müvekkillere de aynı kapsamda hizmet verilir. Görüşmeler randevu esasına göre yüz yüze veya çevrim içi yapılabilir. Çatalca'daki dosyalar İstanbul Çatalca Adliyesi'nde takip edilir; ilk iletişim WhatsApp veya telefonla kurulabilir, görüşme için büroya gelmek zorunlu değildir." },
       { question: "Danışmanlık ücreti nasıl belirlenir?", answer: "Danışmanlık ücreti dosyanın niteliğine göre değişir ve randevu sırasında bilgi verilir. Danışmanlık görüşmesi ücret karşılığı yapılır. Temsil kararı alındığında vekalet ücreti davanın kapsamı, süreç ve yapılacak işlemlere göre belirlenir; kapsam vekalet düzenlenmeden önce müvekkille konuşularak netleştirilir." },
       { question: "Köy arazisi veya mandıra işletmesiyle ilgili destek alınabilir mi?", answer: "Evet, tarım veya orman arazisi ve tarımsal işletme uyuşmazlıklarında danışmanlık sağlanır. Köy arazisinde tapu ve kadastro kayıtları, miras yoluyla gelen payların paylaşımı ve mera veya orman sınırı sorunları incelenir. Mandıra işletmesine ilişkin alacak, sözleşme ve vergi konularında da hukuki destek verilir." },
       { question: "Görüşmeler yüz yüze mi yapılıyor?", answer: "Görüşmeler tercihe göre yüz yüze veya çevrim içi olarak planlanabilir. Yüz yüze görüşme Beşiktaş/Sinanpaşa'daki büroda randevu ile yapılır; çevrim içi görüşmede belgeler dijital ortamda paylaşılabilir. Randevu WhatsApp veya telefon üzerinden alınır ve temsil kararı alınırsa vekalet düzenlenir." },
       { question: "Acil bir gözaltı durumunda ne yapılmalı?", answer: "Acil gözaltı durumunda vakit kaybetmeden telefon veya WhatsApp üzerinden iletişime geçilmesi yeterlidir. Gözaltının başladığı andan itibaren müdafi ile görüşme hakkı bulunur. Aranırken kişinin adı, tutulduğu yer ve olayın kısa özeti paylaşılırsa süreç daha hızlı değerlendirilebilir; ifade öncesi müdafi talep edilebilir." },
       { question: "Dosyanın seyri hakkında bilgi alınabilir mi?", answer: "Evet, süreç boyunca gelişmeler müvekkille paylaşılır. Temsil ve süreç takibi aşamasında duruşma tarihleri, mahkeme kararları ve yapılması gereken işlemler hakkında bilgi verilir. Görüşmeler WhatsApp, telefon veya çevrim içi yapılabilir; böylece müvekkil dosyanın durumunu yakından izleyebilir." },
-      { question: "Büyükçekmece Adliyesi'ne Çatalca'dan ulaşım nasıl?", answer: "Çatalca'dan Büyükçekmece Adliyesi'ne E-5 karayolu bağlantısı üzerinden yaklaşık 45-70 dakikada ulaşılabilir. Süre günün saatine ve trafik yoğunluğuna göre değişir. Adliye ilçe dışında olduğundan duruşma günü için güzergah ve yolculuk süresi önceden planlanmalı, duruşma saatinden önce adliyede hazır bulunulmalıdır." },
+      { question: "Çatalca'daki davalar hangi adliyede, nerede görülür?", answer: "Çatalca'daki davalar, İstanbul Silivri Adliyesi'ne bağlı (mülhakat) olan Çatalca Adliyesi'nde görülür. Adliye Ferhat Paşa Mahallesi, Ulus Caddesi No:26 adresindedir. Bazı dava türleri merkez adliye olan Silivri'de görülebileceğinden, duruşmadan önce dosyanın hangi mahkemede olduğu UYAP veya e-Devlet üzerinden kontrol edilmelidir." },
     ],
     howToTitle: "Çatalca'da Hukuki Sürece Nasıl Başlanır?",
     howToSteps: genelSurec,
@@ -72,7 +72,7 @@ const catalcaBaseServices: PseoService[] = [
     name: "Çatalca Boşanma Avukatı",
     heroTitle: "Çatalca Boşanma Avukatı",
     heroSubtitle:
-      "Çatalca'daki boşanma, velayet, nafaka ve mal paylaşımı davalarına İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemelerinde bakılır; anlaşmalı ve çekişmeli süreçlerde temsil sağlanır.",
+      "Çatalca'daki boşanma, velayet, nafaka ve mal paylaşımı davalarına İstanbul Çatalca Adliyesi'ndeki aile mahkemelerinde bakılır; anlaşmalı ve çekişmeli süreçlerde temsil sağlanır.",
     metaTitle: "Çatalca Boşanma Avukatı | Velayet ve Nafaka",
     metaDescription:
       "Çatalca'da anlaşmalı ve çekişmeli boşanma, velayet ve nafaka davalarında avukatlık ve dava takibi hizmeti sunulmaktadır.",
@@ -94,11 +94,11 @@ const catalcaBaseServices: PseoService[] = [
       "Boşanmaya bağlı maddi/manevi tazminat talepleri",
     ],
     localParagraphs: [
-      "Anlaşmalı süreçte üzerinde uzlaşılan protokolün eksiksizliği, çekişmeli süreçte ise ileri sürülen iddiaların delillerle desteklenmesi davanın seyrini belirler. Boşanmayla birlikte velayet ve nafaka talepleri de İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemelerinde görülür.",
+      "Anlaşmalı süreçte üzerinde uzlaşılan protokolün eksiksizliği, çekişmeli süreçte ise ileri sürülen iddiaların delillerle desteklenmesi davanın seyrini belirler. Boşanmayla birlikte velayet ve nafaka talepleri de İstanbul Çatalca Adliyesi'ndeki aile mahkemelerinde görülür.",
       "Manda yetiştiriciliği ve süt ürünleri üretiminin çoğunlukla aile işletmeciliği biçiminde sürdürüldüğü Çatalca'da, bu tür işletmelerin boşanma sürecindeki mal rejimi tasfiyesinde nasıl değerlendirileceği ayrı bir inceleme konusu olabilir.",
     ],
     faqs: [
-      { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "Boşanma davası, İstanbul Büyükçekmece Adliyesi'ndeki aile mahkemesine açılır. Yetki bakımından eşlerden birinin yerleşim yeri veya davadan önce son altı aydır birlikte oturulan yer esas alınır (TMK m.168). Dava dilekçesi bu yetkili aile mahkemesine sunulur; adliye Çatalca ilçesi dışındadır." },
+      { question: "Boşanma davası için hangi adliyeye başvurulur?", answer: "Boşanma davası, İstanbul Çatalca Adliyesi'ndeki aile mahkemesine açılır. Yetki bakımından eşlerden birinin yerleşim yeri veya davadan önce son altı aydır birlikte oturulan yer esas alınır (TMK m.168). Dava dilekçesi bu yetkili aile mahkemesine sunulur; adliye Çatalca ilçesi dışındadır." },
       { question: "Aile işletmesi niteliğindeki mandıra mal paylaşımında nasıl değerlendirilir?", answer: "Aile işletmesi niteliğindeki mandıra evlilik süresince edinilmişse katılma alacağı hesabına dahil edilir; miras yoluyla geçmişse kişisel mal sayılabilir. Mal rejimi sözleşmeyle değiştirilmemişse edinilmiş mallara katılma rejimi uygulanır. İşletmenin edinilme tarihi ve kaynağı belgelerle gösterilir; hesaplama mahkemece yapılır." },
       { question: "Velayet düzenlemesinde çocuğun görüşü alınır mı?", answer: "Çocuk belirli bir olgunluğa ulaşmışsa görüşü dikkate alınabilir. Mahkeme velayet kararında çocuğun üstün yararını esas alır; yaşı, bakım düzeni ve ebeveynlerin imkanlarıyla birlikte değerlendirir. Çocuğun görüşü tek başına belirleyici değildir ve sosyal inceleme raporu gibi diğer delillerle birlikte incelenir." },
       { question: "Nafaka miktarı neye göre belirlenir?", answer: "Nafaka miktarı, tarafların gelir durumu ve ihtiyaçları birlikte değerlendirilerek belirlenir. Mahkeme tarafların ekonomik durumunu ve kusur durumunu gelir, gider ve yaşam standardına ilişkin delillerle inceler. Koşullar değişirse miktar yeniden değerlendirilebilir; dava süresince tedbir nafakası da talep edilebilir." },
@@ -122,7 +122,7 @@ const catalcaBaseServices: PseoService[] = [
     name: "Çatalca Ceza Avukatı",
     heroTitle: "Çatalca Ceza Avukatı",
     heroSubtitle:
-      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Büyükçekmece Adliyesi'nde yürütülür.",
+      "Gözaltı, ifade alma ve kovuşturma süreçlerinin her aşamasında müdafilik hizmeti sunulur; kovuşturma İstanbul Çatalca Adliyesi'nde yürütülür.",
     metaTitle: "Çatalca Ceza Avukatı | Müdafilik",
     metaDescription:
       "Çatalca'da soruşturma, kovuşturma, tutukluluğa itiraz ve kanun yolu aşamalarında ceza avukatlığı hizmeti verilmektedir.",
@@ -145,12 +145,12 @@ const catalcaBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Geniş orman alanlarına sahip Çatalca'da, orman kanunu kapsamındaki kaçak yapılaşma ve izinsiz kesim gibi iddialara dayalı ceza soruşturmaları zaman zaman gündeme gelebilmektedir.",
-      "Kovuşturma aşamasındaki davalar İstanbul Büyükçekmece Adliyesi'nde görülür. Gözaltı sürecinin başladığı andan itibaren müdafi ile görüşme hakkı doğar; bu hakkın zamanında kullanılması sonraki aşamaların seyri açısından belirleyicidir.",
+      "Kovuşturma aşamasındaki davalar İstanbul Çatalca Adliyesi'nde görülür. Gözaltı sürecinin başladığı andan itibaren müdafi ile görüşme hakkı doğar; bu hakkın zamanında kullanılması sonraki aşamaların seyri açısından belirleyicidir.",
     ],
     faqs: [
-      { question: "Çatalca'da bir ceza davası hangi adliyede görülür?", answer: "Çatalca'da işlenen suçlara ilişkin davalar İstanbul Büyükçekmece Adliyesi'nde görülür. Suçun niteliğine göre asliye ceza veya ağır ceza mahkemesi görevlidir. Soruşturma aşamasında Cumhuriyet savcılığı, tutuklama ve adli kontrol kararlarında ise sulh ceza hakimlikleri devrededir; dosya buna göre takip edilir." },
+      { question: "Çatalca'da bir ceza davası hangi adliyede görülür?", answer: "Çatalca'da işlenen suçlara ilişkin davalar İstanbul Çatalca Adliyesi'nde görülür. Suçun niteliğine göre asliye ceza veya ağır ceza mahkemesi görevlidir. Soruşturma aşamasında Cumhuriyet savcılığı, tutuklama ve adli kontrol kararlarında ise sulh ceza hakimlikleri devrededir; dosya buna göre takip edilir." },
       { question: "Müdafi bulunmadan ifade alınabilir mi?", answer: "Müdafi bulunmadan ifade alınabilir ancak müdafi bulundurmak önerilir. Şüpheli ifade vermeden önce müdafi talep edebilir ve bu hakkı gözaltının başladığı andan itibaren vardır. Müdafi hazır bulunması ifadenin hukuka uygun alınmasına yardımcı olur; zorunlu müdafilik hallerinde ise müdafi olmadan ifade alınmamalıdır." },
-      { question: "Orman alanına izinsiz yapı yapıldığı iddiasında süreç nasıl işler?", answer: "İlgili idarelerin tespiti üzerine soruşturma başlar, deliller toplanır ve gerekirse iddianame düzenlenir. Şüpheli ifade verirken müdafi talep edebilir. Orman kadastrosu ve arazinin niteliği gibi hususlar delil olarak incelenir; iddianame kabul edilirse dava yetkili ceza mahkemesinde, Büyükçekmece Adliyesi'nde görülür." },
+      { question: "Orman alanına izinsiz yapı yapıldığı iddiasında süreç nasıl işler?", answer: "İlgili idarelerin tespiti üzerine soruşturma başlar, deliller toplanır ve gerekirse iddianame düzenlenir. Şüpheli ifade verirken müdafi talep edebilir. Orman kadastrosu ve arazinin niteliği gibi hususlar delil olarak incelenir; iddianame kabul edilirse dava yetkili ceza mahkemesinde, Çatalca Adliyesi'nde görülür." },
       { question: "Kovuşturmaya yer olmadığı kararına itiraz edilebilir mi?", answer: "Evet, sulh ceza hakimliğine itiraz edilebilir. Kovuşturmaya yer olmadığı kararına itiraz süresi tebliğden itibaren 15 gündür. İtiraz dilekçesinde soruşturmanın eksik yürütüldüğü veya delillerin yanlış değerlendirildiği gerekçeleriyle karar eleştirilir; hakimlik kararı kabul ederse iddianame düzenlenmesi yolu açılabilir." },
       { question: "Temyiz kanun yoluna hangi kararlar için başvurulur?", answer: "Temyiz kanun yoluna kanunda sayılan ağır suçlara ilişkin kararlar için başvurulabilir. Yargılama süreci genellikle önce bölge adliye mahkemesine istinaf yoluyla ilerler; temyiz ise bu aşamadan sonra kanunda belirtilen sınırlı hallerde gündeme gelir. Süre ve şartlar kanunda düzenlenmiştir ve kararın tebliğinden itibaren işler." },
       { question: "Uzlaşma sağlanamazsa ne olur?", answer: "Uzlaşma sağlanamazsa yargılamaya kaldığı yerden devam edilir. Taraflar uzlaşmazsa soruşturma veya kovuşturma olağan yoldan sürer; uzlaşma teklifinin kabul edilmesi zorunlu değildir. Uzlaşma yalnızca kanunda sayılan suçlarda söz konusu olur; teklif reddedilirse savcılık iddianame düzenleyebilir veya mahkeme davayı görür." },
@@ -173,7 +173,7 @@ const catalcaBaseServices: PseoService[] = [
     name: "Çatalca Gayrimenkul Avukatı",
     heroTitle: "Çatalca Gayrimenkul Avukatı",
     heroSubtitle:
-      "Tarım ve orman arazisi, mera tahsisi ve tapu uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Büyükçekmece Adliyesi'nde görülür.",
+      "Tarım ve orman arazisi, mera tahsisi ve tapu uyuşmazlıklarında hukuki destek sağlanır; davalar İstanbul Çatalca Adliyesi'nde görülür.",
     metaTitle: "Çatalca Gayrimenkul Avukatı | Tapu ve Kira",
     metaDescription:
       "Çatalca'da tarım ve orman arazisi, tapu iptali ve kira uyuşmazlıklarında gayrimenkul avukatlığı hizmeti sunulmaktadır.",
@@ -196,12 +196,12 @@ const catalcaBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "İstanbul'un en geniş yüzölçümüne sahip ilçesi olan Çatalca'da, tarım, orman ve mera niteliğindeki arazilere ilişkin sınır tespiti ve miras intikali uyuşmazlıkları sık karşılaşılan gayrimenkul hukuku konularındandır.",
-      "Bu uyuşmazlıklar, niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Büyükçekmece Adliyesi bünyesinde görülür.",
+      "Bu uyuşmazlıklar, niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Çatalca Adliyesi bünyesinde görülür.",
     ],
     faqs: [
       { question: "Mera arazisi özel mülkiyete konu olabilir mi?", answer: "Kural olarak mera arazileri kamu malı niteliğindedir ve tahsis amacı dışında kullanılamaz. Bu nedenle özel mülkiyete konu olmaları sınırlıdır. Bir arazinin mera sayılıp sayılmadığı kadastro ve tahsis kayıtlarıyla belirlenir; tapuya kayıtlı görünen yerlerin niteliği tartışmalıysa idari ve yargısal yollar gündeme gelebilir." },
       { question: "Miras yoluyla kalan tarım arazisi paydaşlar arasında nasıl paylaşılır?", answer: "Miras yoluyla kalan tarım arazisi paydaşlar arasında anlaşmayla paylaşılabilir; anlaşma sağlanamazsa ortaklığın giderilmesi (izale-i şüyu) davası açılabilir. Mahkeme taşınmazın aynen bölünüp bölünemeyeceğini inceler; bölünemiyorsa satış yoluyla bedel paydaşlara payları oranında dağıtılır. Paydaşların her biri bu davayı açabilir." },
-      { question: "Çatalca'da gayrimenkul davası hangi mahkemede görülür?", answer: "Gayrimenkul davası niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Büyükçekmece Adliyesi bünyesinde görülür. Kira ve ortaklığın giderilmesi davalarında sulh hukuk, tapu iptal ve tescil davalarında asliye hukuk mahkemesi görevli olabilir. Taşınmazın bulunduğu yer mahkemesi yetki bakımından belirleyicidir." },
+      { question: "Çatalca'da gayrimenkul davası hangi mahkemede görülür?", answer: "Gayrimenkul davası niteliğine göre sulh hukuk veya asliye hukuk mahkemesinde, İstanbul Çatalca Adliyesi bünyesinde görülür. Kira ve ortaklığın giderilmesi davalarında sulh hukuk, tapu iptal ve tescil davalarında asliye hukuk mahkemesi görevli olabilir. Taşınmazın bulunduğu yer mahkemesi yetki bakımından belirleyicidir." },
       { question: "Tapu iptal davası hangi hallerde açılır?", answer: "Hukuka aykırı bir tescil işlemi bulunduğunda hak sahibi tapu iptal ve tescil davasını açabilir. Sahtecilik, yolsuz tescil, ehliyetsizlik veya muvazaa gibi iddialar dayanak olabilir. Dava taşınmazın bulunduğu yer mahkemesinde açılır; tapu kaydı ve resmi senet gibi belgeler delil olarak incelenir." },
       { question: "Orman sınırındaki bir arazinin niteliği nasıl belirlenir?", answer: "Orman sınırındaki bir arazinin niteliği, kadastro ve orman kadastrosu kayıtları birlikte incelenerek tespit edilir. Tapu kaydı, kadastro tutanağı ve orman sınırlama haritası karşılaştırılır; gerekirse mahkemece bilirkişi ve keşif yoluyla yerinde inceleme yapılır. Sonuç, arazinin özel mülkiyete konu olup olmadığını belirler." },
     ],
@@ -223,7 +223,7 @@ const catalcaBaseServices: PseoService[] = [
     name: "Çatalca İcra Avukatı",
     heroTitle: "Çatalca İcra Avukatı",
     heroSubtitle:
-      "İcra daireleri İstanbul Büyükçekmece Adliyesi bünyesindedir; alacak tahsili amacıyla başlatılan icra takibi, ödeme emrine itiraz ve haciz aşamalarında temsil sağlanır.",
+      "İcra daireleri İstanbul Çatalca Adliyesi bünyesindedir; alacak tahsili amacıyla başlatılan icra takibi, ödeme emrine itiraz ve haciz aşamalarında temsil sağlanır.",
     metaTitle: "Çatalca İcra Avukatı | İcra Takibi ve Haciz",
     metaDescription:
       "Çatalca'da icra takibi, ödeme emrine itiraz, haciz ve alacak tahsili süreçlerinde avukatlık hizmeti sağlanmaktadır.",
@@ -245,7 +245,7 @@ const catalcaBaseServices: PseoService[] = [
       "Mali sıkıntı yaşayan borçlular için konkordato danışmanlığı",
     ],
     localParagraphs: [
-      "İcra takibine ilişkin uyuşmazlıklar İstanbul Büyükçekmece Adliyesi'ndeki icra mahkemelerinde görülmekte olup, borçlunun Çatalca'da yerleşik bulunduğu dosyalarda yetkili icra dairesi kural olarak borçlunun ikametgahına göre belirlenmektedir.",
+      "İcra takibine ilişkin uyuşmazlıklar İstanbul Çatalca Adliyesi'ndeki icra mahkemelerinde görülmekte olup, borçlunun Çatalca'da yerleşik bulunduğu dosyalarda yetkili icra dairesi kural olarak borçlunun ikametgahına göre belirlenmektedir.",
       "Çatalca'da manda ve inek sütünden peynir, yoğurt ve tereyağı üretimi önemli bir geçim kaynağı olup, üretici ile toptancı arasında ortaya çıkan ödeme uyuşmazlıkları da bu icra takiplerinin sık karşılaşılan sebeplerindendir.",
     ],
     faqs: [
@@ -346,7 +346,7 @@ const catalcaBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Çatalca'da manda sütü üretimi ve tarım işletmeleri çoğunlukla aile işletmeciliği biçiminde sürdüğünden çalışma düzeni yazılı sözleşmeden çok sözlü anlaşmalara dayanabilir. Sabah ve akşam sağımı, hayvan bakımı ve yem hazırlığı gibi işler düzensiz saatler doğurur; bu durum fazla mesai, hafta tatili ve sigorta bildirimi konularında ispat sorunu yaratabilir.",
-      "Ferhatpaşa, Kaleiçi, Ovayenice, Muratbey, Karacaköy ve Binkılıç gibi mahallelerde çalışanlar için İstanbul merkezine E-5 üzerinden yaklaşık 45-70 dakikalık mesafe söz konusudur; bu yüzden belge ve tanık listesinin arabulucu görüşmesi öncesinde hazırlanması zaman kaybını azaltır. Uzlaşılamayan dosyalar Büyükçekmece Adliyesi bünyesindeki iş mahkemelerine taşınır.",
+      "Ferhatpaşa, Kaleiçi, Ovayenice, Muratbey, Karacaköy ve Binkılıç gibi mahallelerde çalışanlar için İstanbul merkezine E-5 üzerinden yaklaşık 45-70 dakikalık mesafe söz konusudur; bu yüzden belge ve tanık listesinin arabulucu görüşmesi öncesinde hazırlanması zaman kaybını azaltır. Uzlaşılamayan dosyalar Çatalca Adliyesi bünyesindeki iş mahkemelerine taşınır.",
     ],
     faqs: [
       { question: "Çatalca'da mandıra çalışanı kıdem tazminatı alabilir mi?", answer: "En az bir yıl çalışmış işçi, iş sözleşmesi kanunda sayılan sebeplerden biriyle sona erdiğinde kıdem tazminatına hak kazanabilir; örneğin işveren haklı sebep olmadan feshetmişse ya da işçi haklı nedenle ayrılmışsa. İşletmenin kapsamı ve çalışma süreleri ise dosya üzerinden ayrıca değerlendirilir." },
@@ -359,7 +359,7 @@ const catalcaBaseServices: PseoService[] = [
     howToSteps: [
       { name: "Fesih Yazısı ve Belgeler", text: "Fesih bildirimi, bordro, SGK dökümü ve sözleşme toplanır; kıdem ile çalışan sayısı ölçütleri kontrol edilir." },
       { name: "Arabulucu Başvurusu", text: "Fesih bildirimini izleyen bir ay içinde arabulucuya başvurulur ve görüşmeler yürütülür." },
-      { name: "İş Mahkemesinde Dava", text: "Son tutanaktan itibaren iki hafta içinde Büyükçekmece Adliyesi'ndeki iş mahkemesinde dava açılır." },
+      { name: "İş Mahkemesinde Dava", text: "Son tutanaktan itibaren iki hafta içinde Çatalca Adliyesi'ndeki iş mahkemesinde dava açılır." },
       { name: "Karar ve İşe Başlama", text: "Fesih geçersiz bulunursa işçi on iş günü içinde işe başlamak için başvurur; başlatılmazsa İş K. m.21 tazminatı doğar." },
     ],
     crosslinkLabel: "İş Hukuku Avukatı",
@@ -373,7 +373,7 @@ const catalcaBaseServices: PseoService[] = [
     name: "Çatalca Kira ve Tahliye Avukatı",
     heroTitle: "Çatalca Kira ve Tahliye Avukatı",
     heroSubtitle:
-      "Konut ve tarımsal işletme tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Büyükçekmece Adliyesi'ndedir.",
+      "Konut ve tarımsal işletme tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında destek sağlanır; sulh hukuk mahkemeleri İstanbul Çatalca Adliyesi'ndedir.",
     metaTitle: "Çatalca Kira ve Tahliye Avukatı | Tahliye",
     metaDescription:
       "Çatalca'da kiracı tahliyesi, kira bedeli tespiti ve kira sözleşmesi uyuşmazlıklarında avukatlık hizmeti sağlanmaktadır.",
@@ -396,12 +396,12 @@ const catalcaBaseServices: PseoService[] = [
     ],
     localParagraphs: [
       "Tarım ve hayvancılık faaliyetinin yaygın olduğu Çatalca'da, ekim veya otlatma amacıyla arazi kiralanması konut kiralarından farklı özel şartlar içerebilmektedir.",
-      "Bu davalara İstanbul Büyükçekmece Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; kira sözleşmesinin yazılı ve eksiksiz olması, uyuşmazlık halinde ispat açısından önem taşır.",
+      "Bu davalara İstanbul Çatalca Adliyesi bünyesindeki sulh hukuk mahkemelerinde bakılır; kira sözleşmesinin yazılı ve eksiksiz olması, uyuşmazlık halinde ispat açısından önem taşır.",
     ],
     faqs: [
       { question: "Kiracı hangi hallerde tahliye edilebilir?", answer: "Kira borcunun ödenmemesi, geçerli bir taahhüt veya ihtiyaç nedeniyle tahliye talep edilebilir. Kira borcunda yazılı ihtar verilir ve ödeme için verilen süre (TBK m.315, 30 gün) geçerse tahliye istenebilir. Her nedenin şartları ve ispat biçimi farklıdır; tahliye mahkeme veya icra yoluyla istenir." },
       { question: "Tarım arazisi kirasında hasat dönemi tahliyeyi etkiler mi?", answer: "Sözleşmede aksi kararlaştırılmadıkça, hasat hakkı sözleşme süresi içinde korunur. Kiracı süresi içinde ürünü hasat edebilir; kiraya veren tahliye için kanuni bir sebep ileri sürmelidir. Hasat dönemi, sözleşme süresi ve tahliye zamanı yazılı olarak belirlenmişse uyuşmazlıkta bu hükümler esas alınır ve ispat kolaylaşır." },
-      { question: "Çatalca'da tahliye davası ne kadar sürer?", answer: "Tahliye davasının süresi dosyanın niteliğine göre değişmekle birlikte birkaç aydan bir buçuk yıla kadar sürebilir. Taahhütname veya kira borcuna dayanan icra yoluyla tahliye daha kısa sürebilir. Dava Büyükçekmece Adliyesi'ndeki sulh hukuk mahkemesinde görülür; delillerin tamamlanması ve tebligat süreci uzatabilir." },
+      { question: "Çatalca'da tahliye davası ne kadar sürer?", answer: "Tahliye davasının süresi dosyanın niteliğine göre değişmekle birlikte birkaç aydan bir buçuk yıla kadar sürebilir. Taahhütname veya kira borcuna dayanan icra yoluyla tahliye daha kısa sürebilir. Dava Çatalca Adliyesi'ndeki sulh hukuk mahkemesinde görülür; delillerin tamamlanması ve tebligat süreci uzatabilir." },
       { question: "Rayiç bedel tespiti ne zaman istenir?", answer: "Mevcut kira bedeli piyasa koşullarının gerisinde kaldığında rayiç bedel tespiti talep edilebilir. Mahkeme bilirkişi incelemesiyle emsal kiralara ve taşınmazın konumuna bakarak güncel bedeli belirler. Dava belirli süre ve şartlara bağlıdır; açmadan önce kira sözleşmesindeki hükümler ve yenilenen dönem koşulları incelenmelidir." },
       { question: "Taahhütnameyle tahliye mahkemeye gitmeyi gerektirir mi?", answer: "Hayır, geçerli bir taahhütname ile doğrudan icra dairesi kanalıyla tahliye istenebilir. Taahhüt kira başladıktan sonra, tahliye tarihi belirtilerek yazılı verilmiş olmalıdır. Kiracıya tahliye emri gönderilir; itiraz edilirse takip durur ve taahhüdün geçerliliği ilgili mahkemede incelenir." },
     ],
@@ -423,44 +423,44 @@ const catalcaBaseServices: PseoService[] = [
     name: "Çatalca Vergi Avukatı",
     heroTitle: "Çatalca Vergi Avukatı",
     heroSubtitle:
-      "Tarım ve hayvancılık işletmelerine yönelik vergi tarhiyatı, ceza kesme işlemleri ve uzlaşma süreçlerinde temsil sağlanır; yetkili mahkeme İstanbul vergi mahkemeleridir.",
+      "Manda ve süt ürünleri üreticilerinden organik tarım işletmelerine kadar Çatalca'daki mükelleflerin tarhiyat, ceza ve ödeme emri uyuşmazlıklarında takip yapılır; ilçenin vergi işlemleri Büyükçekmece Vergi Dairesi Müdürlüğü'ne (Çatalca dış veznesi) bağlıdır.",
     metaTitle: "Çatalca Vergi Avukatı | Uzlaşma ve Dava",
     metaDescription:
       "Çatalca'da vergi tarhiyatına itiraz, vergi cezaları ve vergi mahkemesi süreçlerinde avukatlık hizmeti sağlanmaktadır.",
     aboutParagraph:
-      "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır; 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. Vergi tarhiyatı ve cezalarına ilişkin uyuşmazlıklarda Çatalca'daki müvekkillerine danışmanlık verir.",
+      "MEF Üniversitesi Hukuk Fakültesi'nden 2019'da mezun olan Av. Furkan Arıkan, İstanbul Barosu'nun 72621 sicil numaralı üyesidir. İstanbul'un yüzölçümü en geniş ilçesi olan Çatalca'da Ferhatpaşa ve Kaleiçi gibi merkez mahallelerdeki esnafın yanı sıra Binkılıç ve Karacaköy gibi kırsal mahallelerdeki üreticilerin vergi dosyalarını da Beşiktaş'taki bürodan yürütür.",
     highlightCards: [
-      { title: "Tarhiyat İtirazı", description: "Re'sen veya ikmalen tarh edilen vergiye karşı dava." },
-      { title: "Ceza Uyuşmazlıkları", description: "Usulsüzlük ve vergi ziyaı cezalarına itiraz." },
-      { title: "Uzlaşma", description: "Vergi idaresiyle uzlaşma sürecinde temsil." },
-      { title: "Mandıra İşletmeleri", description: "Süt ürünleri üreticilerine yönelik vergi uyuşmazlıkları." },
+      { title: "Tarhiyata Karşı Dava", description: "İkmalen ya da re'sen yapılan tarhiyatın İstanbul vergi mahkemelerine taşınması." },
+      { title: "Ceza Savunması", description: "Vergi ziyaı ve usulsüzlük cezalarında kusur ve matrah yönünden itiraz." },
+      { title: "Üretici Kayıtları", description: "Mandıra ve süt üreticilerinin satış belgeleri ile beyanları arasındaki farkların açıklanması." },
+      { title: "Uzlaşma Temsili", description: "Çatalca dış veznesine bağlı dosyalarda vergi idaresiyle uzlaşma aşaması." },
     ],
     processSteps: genelSurec,
     servicesList: [
-      "Vergi ve ceza ihbarnamesine karşı dava açılması",
-      "Uzlaşma başvurusunda vergi idaresi nezdinde temsil",
-      "Vergi mahkemesinde iptal davası süreçleri",
-      "Ödeme emrine karşı dava açılması",
-      "Mandıra ve tarım işletmelerinde vergi incelemesi sürecinde danışmanlık",
-      "Organik tarım işletmelerine yönelik vergi teşvik uyuşmazlıklarında destek",
+      "Mandıra ve süt ürünleri işletmelerinin satış ve stok kayıtlarına yönelik inceleme sürecinde danışmanlık",
+      "Organik tarım üreticilerinin teşvik ve istisna uygulamasından doğan vergi uyuşmazlıkları",
+      "İhbarnamenin tebliğinden itibaren 30 gün içinde vergi mahkemesinde iptal davası açılması",
+      "Büyükçekmece Vergi Dairesi Müdürlüğü nezdinde uzlaşma başvurusunun hazırlanması",
+      "6183 sayılı Kanun'a göre düzenlenen ödeme emirlerine karşı dava süreçleri",
+      "Vergi ziyaı ve usulsüzlük cezalarına karşı kusur ve matrah itirazları",
     ],
     localParagraphs: [
-      "Manda ve süt ürünleri üretiminin yanı sıra organik tarımın da geliştiği Çatalca'da, üretici kayıt sistemi ve gelir beyanına ilişkin vergi incelemeleri sık karşılaşılan konular arasındadır.",
-      "Bu işlemlere karşı açılan davalar İstanbul vergi mahkemelerinde görülmektedir; ihbarnameye karşı dava açma süresi tebliğden itibaren 30 gündür.",
+      "1.115 km²'lik yüzölçümüyle İstanbul'un en geniş ilçesi olan Çatalca'da orman, yayla ve gölet çevresindeki kırsal alanlarda hayvancılık ve tarımsal üretim önemini korur. Manda ve süt ürünleri işletmeleri ile organik tarım yapan üreticilerde satışların hangi belgeyle kayda geçirildiği, vergi uyuşmazlıklarında tartışmanın odağına yerleşebilir.",
+      "Çatalca'daki mükellefler işlemlerini Büyükçekmece Vergi Dairesi Müdürlüğü'nün Çatalca dış veznesi üzerinden yürütür; tarhiyata karşı açılan davalar ise İstanbul vergi mahkemelerinde görülür ve dava süresi tebliğden itibaren 30 gündür.",
     ],
     faqs: [
-      { question: "Mandıra işletmesinin vergi yükümlülüğü nasıl belirlenir?", answer: "Mandıra işletmesinin vergi yükümlülüğü, üretim hacmi, satış türü ve kanunda öngörülen istisnalara göre değerlendirilir. Yükümlülüğün türü ve kapsamı işletmenin faaliyetine bağlıdır; tarhiyat yapılırsa ihbarnameye karşı tebliğden itibaren 30 gün içinde vergi mahkemesinde dava açılabilir. Kayıt ve belgelerin düzenli tutulması önemlidir." },
-      { question: "İhbarnameye itiraz süresi ne kadardır?", answer: "İhbarnameye itiraz süresi tebliğden itibaren 30 gündür; bu süre içinde vergi mahkemesinde dava açılabilir. Dava İstanbul vergi mahkemelerinde açılır. Süre tebliğ tarihinden başlar ve kaçırılırsa dava hakkı kaybedilebilir; bu nedenle ihbarnamenin tebliğ edildiği tarih belgeden kontrol edilmelidir." },
-      { question: "Vergi davası hangi mahkemede görülür?", answer: "Vergi davası İstanbul vergi mahkemelerinde görülür. Vergi uyuşmazlıklarında dava süresi kural olarak ihbarnamenin tebliğinden itibaren 30 gündür. Vergi dairesi işlemlerine karşı idari başvuru ve uzlaşma yolları da bulunur; dava ise yetkili vergi mahkemesinde, yani İstanbul'da açılır." },
-      { question: "Uzlaşma başvurusu dava hakkını ortadan kaldırır mı?", answer: "Hayır, uzlaşma sağlanamazsa kalan dava açma süresi korunur. Uzlaşma talebi tarhiyat sonrası yapılan idari bir başvurudur ve dava hakkını ortadan kaldırmaz. Uzlaşma tutanağı düzenlendikten sonra kalan sürede dava açılabilir; bu nedenle süre takibinin dikkatle yapılması gerekir." },
-      { question: "Ödeme emrine itiraz süresi nedir?", answer: "Vergi ödeme emrine karşı tebliğden itibaren 15 gün içinde vergi mahkemesine başvurulmalıdır. Süre tebliğ tarihinden başlar ve kaçırılırsa dava hakkı sona erebilir. Dilekçede ödeme emrinin dayanağı olan alacağın geçerliliği veya usul hataları ileri sürülebilir; ödeme emri belgesi dosyaya eklenir." },
+      { question: "Çatalca'daki mandıra işletmesine yapılan tarhiyata nasıl itiraz edilir?", answer: "Tarhiyata, ihbarnamenin tebliğinden itibaren 30 gün içinde İstanbul vergi mahkemelerinde dava açılarak itiraz edilir. Dava yerine önce uzlaşma da istenebilir. Mandıra işletmelerinde süt alım makbuzları, satış faturaları ve stok kayıtları, inceleme raporundaki matrah farkını tartışmak için temel delillerdir." },
+      { question: "Çatalca'da vergi işlemleri hangi daireye bağlı?", answer: "Çatalca'daki mükellefler, Büyükçekmece Vergi Dairesi Müdürlüğü'ne bağlı Çatalca dış veznesi üzerinden işlem yapar. Beyanname, ödeme ve tebligata ilişkin yazışmalar bu daire adına yürütülür. Tarhiyata veya cezaya karşı dava ise vergi dairesinde değil, İstanbul vergi mahkemelerinde açılır." },
+      { question: "Organik tarım üreticisi olarak teşvik uyuşmazlığında hangi yol izlenir?", answer: "Önce uyuşmazlığa konu işlemin türü belirlenir; tarhiyat veya ceza söz konusuysa ihbarnameye karşı 30 gün içinde vergi mahkemesinde dava açılabilir. Teşvik ya da istisnanın reddi ayrı bir idari işlem niteliği taşıyorsa başvuru yolu ve süresi, o işlemin içeriğine ve dayandığı mevzuata göre ayrıca değerlendirilir." },
+      { question: "Ödeme emri Çatalca'daki adresime tebliğ edildi; süre ne kadar?", answer: "Ödeme emrine karşı dava süresi tebliğden itibaren 15 gündür (6183 sayılı Kanun m.58). Bu kısa sürede borcun hiç olmadığı, bir kısmının ödendiği veya zamanaşımı gerçekleştiği iddiası vergi mahkemesine taşınabilir. Kırsal mahallelerde adres değişikliği bildirilmemişse tebligat eski adrese gidebileceğinden, vergi dairesindeki adres kaydı güncel tutulmalıdır." },
+      { question: "Çatalca'da yalnızca usulsüzlük cezasına dava açılabilir mi?", answer: "Evet, vergi aslına dokunmadan yalnızca kesilen cezaya karşı da dava açılabilir; süre yine ihbarnamenin tebliğinden itibaren 30 gündür. Küçük üreticilere kesilen usulsüzlük cezaları belge düzenine ilişkin olabildiğinden, eksik görülen belgenin gerçekte düzenlenip düzenlenmediği dosyada ayrıca gösterilmelidir." },
     ],
-    howToTitle: "Çatalca'da Vergi İtirazı Süreci Nasıl İşler?",
+    howToTitle: "Çatalca'da Vergi İtirazı Adım Adım Nasıl Yürür?",
     howToSteps: [
-      { name: "İnceleme", text: "Tarhiyat veya cezanın dayanağı ayrıntılı incelenir." },
-      { name: "Yol Seçimi", text: "Uzlaşma mı yoksa doğrudan dava mı açılacağı kararlaştırılır." },
-      { name: "Başvuru", text: "Süresi içinde vergi mahkemesine başvurulur veya uzlaşma istenir." },
-      { name: "Sonuçlanma", text: "Mahkeme kararı veya uzlaşma tutanağıyla süreç biter." },
+      { name: "Belgenin Okunması", text: "İhbarname veya ödeme emrindeki tutar, dönem ve tebliğ günü kontrol edilir." },
+      { name: "Üretim Kayıtlarının Toplanması", text: "Süt alım-satım, fatura ve stok belgeleri dosyaya eklenir." },
+      { name: "Uzlaşma veya Mahkeme", text: "Çatalca dış veznesine bağlı dosyada uzlaşma istenir ya da vergi mahkemesine gidilir." },
+      { name: "Sonucun Uygulanması", text: "Karar veya tutanakla kesinleşen tutar ödenir ya da terkin edilir." },
     ],
     crosslinkLabel: "Vergi Avukatı",
     relatedPostSlugs: [],
@@ -473,7 +473,7 @@ const catalcaBaseServices: PseoService[] = [
     name: "Çatalca Borçlar Hukuku Avukatı",
     heroTitle: "Çatalca Borçlar Hukuku Avukatı",
     heroSubtitle:
-      "İstanbul Büyükçekmece Adliyesi bünyesindeki ticaret ve asliye hukuk mahkemelerinde görülen süt ürünleri tedarik sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanmaktadır.",
+      "İstanbul Çatalca Adliyesi bünyesindeki ticaret ve asliye hukuk mahkemelerinde görülen süt ürünleri tedarik sözleşmesi uyuşmazlıkları, alacak talepleri ve tazminat davalarında temsil sağlanmaktadır.",
     metaTitle: "Çatalca Borçlar Hukuku Avukatı | Alacak Davası",
     metaDescription:
       "Çatalca'da sözleşme uyuşmazlıkları, alacak ve tazminat davalarında avukatlık ve danışmanlık hizmeti sağlanmaktadır.",
@@ -495,13 +495,13 @@ const catalcaBaseServices: PseoService[] = [
       "Sebepsiz zenginleşmeye dayalı iade talepleri",
     ],
     localParagraphs: [
-      "Bu uyuşmazlıklara ilişkin davalar İstanbul Büyükçekmece Adliyesi bünyesinde görülür; bazı ticari alacak taleplerinde dava açılmadan önce arabuluculuğa başvurulması zorunlu olabilir.",
+      "Bu uyuşmazlıklara ilişkin davalar İstanbul Çatalca Adliyesi bünyesinde görülür; bazı ticari alacak taleplerinde dava açılmadan önce arabuluculuğa başvurulması zorunlu olabilir.",
       "Geçimin önemli bir bölümünü oluşturan manda yetiştiriciliği ve süt ürünleri üretimi nedeniyle Çatalca'da, üretici-toptancı tedarik sözleşmeleri ile hayvan alım-satımından kaynaklanan uyuşmazlıklar borçlar hukukunda sık karşılaşılan konulardandır.",
     ],
     faqs: [
       { question: "Satın alınan manda hastalıklı çıkarsa ne yapılabilir?", answer: "Satın alınan manda hastalıklı çıkarsa ayıba dayalı olarak sözleşmeden dönme veya bedel indirimi talep edilebilir. Alıcı ayıbı öğrendikten sonra süresinde satıcıya bildirmelidir. Hastalığın satış anında mevcut olduğu veteriner raporu, teslim belgeleri ve yazışmalarla ispatlanır; uyuşmazlık çözülmezse dava açılabilir." },
       { question: "Süt tedarik sözleşmesinde teslim gecikirse ne olur?", answer: "Süt tedarik sözleşmesinde teslim gecikirse sözleşmede öngörülen gecikme cezası talep edilebilir, gerekirse sözleşmeden dönülebilir. Önce teslim için ihtar çekilmesi temerrüdün oluşması bakımından önemlidir. Hangi hakkın seçileceği sözleşme hükümlerine göre belirlenir; zarar ayrıca ispatlanırsa tazminat da istenebilir." },
-      { question: "Ticari alacak davası hangi mahkemede görülür?", answer: "Ticari alacak davası niteliğine göre asliye ticaret mahkemesinde, İstanbul Büyükçekmece Adliyesi bünyesinde görülür. Konusu belirli bir miktar paranın ödenmesi olan ticari davalarda dava açmadan önce arabulucuya başvurmak dava şartıdır. Ticari olmayan alacaklarda asliye hukuk mahkemesi görevli olabilir." },
+      { question: "Ticari alacak davası hangi mahkemede görülür?", answer: "Ticari alacak davası niteliğine göre asliye ticaret mahkemesinde, İstanbul Çatalca Adliyesi bünyesinde görülür. Konusu belirli bir miktar paranın ödenmesi olan ticari davalarda dava açmadan önce arabulucuya başvurmak dava şartıdır. Ticari olmayan alacaklarda asliye hukuk mahkemesi görevli olabilir." },
       { question: "Dava öncesi arabuluculuk her zaman şart mı?", answer: "Hayır, yalnızca ticari nitelikteki bazı alacak uyuşmazlıklarında dava şartı olarak aranır. Zorunlu hallerde arabulucuya başvurulmadan dava açılırsa dava usulden reddedilebilir. Ticari nitelik taşımayan uyuşmazlıklarda zorunluluk bulunmaz, ancak taraflar isterlerse gönüllü olarak arabuluculuğa başvurabilir; bu durumda uyuşmazlık mahkeme dışında çözülebilir." },
       { question: "Zamanaşımına uğramış alacak talep edilebilir mi?", answer: "Borçlu zamanaşımı def'ini ileri sürerse alacak talep edilemez; ileri sürmezse talep edilebilir. Mahkeme zamanaşımını kendiliğinden dikkate almaz. Bu nedenle borçlunun savunmasında bu itirazı yapıp yapmadığı önemlidir; sürenin ne zaman başladığı ve kesilip kesilmediği ayrıca incelenir." },
     ],

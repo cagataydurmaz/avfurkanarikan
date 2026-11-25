@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import YillikIzinForm from "@/components/calculators/YillikIzinForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer, { formatTL } from "@/components/calculators/ToolExplainer";
+import { calculateIzinUcreti } from "@/lib/calculators/yillikIzin";
 
 export const metadata: Metadata = {
   title: pseoTitle("Yıllık İzin Ücreti Hesaplama (Kullanılmayan İzin)"),
@@ -63,6 +65,8 @@ const jsonLd = {
   ],
 };
 
+const ORNEK = calculateIzinUcreti(36000, 12);
+
 export default function YillikIzinHesaplamaPage() {
   return (
     <>
@@ -92,6 +96,72 @@ export default function YillikIzinHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <YillikIzinForm />
+
+          <ToolExplainer
+            title="Yıllık izin hakkı ve izin ücreti nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Araç iki ayrı hesap yapar. İlki, işe giriş tarihi ile hesaplama tarihi
+                      arasındaki kıdeme göre yıllık izin hakkınızı gösterir: 1 yıldan az kıdemde
+                      hak doğmaz; 1–5 yıl arası kıdemde 14 gün, 5–15 yıl arasında 20 gün, daha
+                      uzun kıdemde 26 gün. Yaşınızı girerseniz, 18 yaş ve altı ile 50 yaş ve
+                      üstü için süre en az 20 güne yükseltilir.
+                    </p>
+                    <p>
+                      İkincisi kullanılmayan izin ücretidir: aylık brüt ücret 30&apos;a bölünerek
+                      günlük ücret bulunur ve bakiye izin gün sayısıyla çarpılır. Örneğin
+                      36.000 TL brüt ücret ve 12 gün bakiye izin için günlük{" "}
+                      {formatTL(ORNEK.gunlukUcret)} × 12 = {formatTL(ORNEK.izinUcreti)} brüt izin
+                      ücreti çıkar.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>İşe giriş tarihi ve hesaplama tarihi (genellikle sözleşmenin sona erdiği gün)</li>
+                    <li>Yaşınız (isteğe bağlı; asgari süreyi etkileyebilir)</li>
+                    <li>
+                      Kullanılmayan izin günü: her yıl hak edilen günlerden fiilen kullanılanlar
+                      düşülerek bulunur. İzin formları ve işyerinin izin kayıtları bu konuda
+                      başvurulacak belgelerdir.
+                    </li>
+                    <li>Son brüt aylık ücret</li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Araç bakiye günü kendisi hesaplamaz. Hak edilen süre her yıl o yıl ulaşılan
+                      kıdeme göre değiştiğinden, geçmiş yılların hak ve kullanımlarını ayrı ayrı
+                      toplamanız gerekir.
+                    </li>
+                    <li>
+                      Yıllık izin süresine ulusal bayram, hafta tatili ve genel tatil günleri
+                      sayılmaz (İş Kanunu m.56).
+                    </li>
+                    <li>
+                      Kanundaki süreler asgaridir; iş sözleşmesi veya toplu iş sözleşmesiyle daha
+                      uzun izin kararlaştırılabilir.
+                    </li>
+                    <li>
+                      Gösterilen tutar brüttür ve bilgilendirme amaçlıdır; nete ulaşmak için
+                      bordro kesintileri ayrıca hesaplanmalıdır.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>

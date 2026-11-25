@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import DavaHarciForm from "@/components/calculators/DavaHarciForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import Link from "next/link";
+import ToolExplainer, { formatTL } from "@/components/calculators/ToolExplainer";
+import { BASVURMA_HARCI, NISPI_HARC_ORANI, calculateDavaHarci } from "@/lib/calculators/davaHarci";
 
 export const metadata: Metadata = {
   title: pseoTitle("Dava Harcı Hesaplama 2026 (Peşin ve Başvurma Harcı)"),
@@ -63,6 +66,10 @@ const jsonLd = {
   ],
 };
 
+const ORNEK_DEGER = 100000;
+const ORNEK = calculateDavaHarci("asliyeHukuk", ORNEK_DEGER);
+const NISPI_BINDE = (NISPI_HARC_ORANI * 1000).toLocaleString("tr-TR", { maximumFractionDigits: 2 });
+
 export default function DavaHarciHesaplamaPage() {
   return (
     <>
@@ -91,6 +98,77 @@ export default function DavaHarciHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <DavaHarciForm />
+
+          <ToolExplainer
+            title="Dava harcı nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Dava açılışında iki kalem birlikte ödenir. Birincisi mahkeme türüne göre sabit
+                      olan başvurma harcıdır: Sulh Hukuk Mahkemesi&apos;nde{" "}
+                      {formatTL(BASVURMA_HARCI.sulhHukuk)}, Asliye Hukuk/Ticaret/Aile/İdare
+                      mahkemelerinde {formatTL(BASVURMA_HARCI.asliyeHukuk)}, Bölge Adliye
+                      Mahkemesi ve Yargıtay&apos;da {formatTL(BASVURMA_HARCI.bolgeYargitay)}.
+                    </p>
+                    <p>
+                      İkincisi, konusu para olan davalarda alınan nispi harçtır. Nispi harcın
+                      tamamı dava değerinin binde {NISPI_BINDE}&apos;idir; ancak açılışta bunun
+                      yalnızca dörtte biri (peşin harç) yatırılır, kalan dörtte üç davanın
+                      sonunda tahsil edilir. Örneğin {formatTL(ORNEK_DEGER, 0)} değerli bir
+                      alacak davasında Asliye Hukuk Mahkemesi&apos;nde peşin harç{" "}
+                      {formatTL(ORNEK.pesinHarc)}, başvurma harcıyla birlikte açılış toplamı{" "}
+                      {formatTL(ORNEK.acilisToplami)} olur.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>Davanın görüleceği mahkeme türü</li>
+                    <li>
+                      Dava değeri: talep edilen para miktarı ya da dava konusu şeyin değeri.
+                      Konusu para olmayan davalarda (ör. boşanma) bu alan boş bırakılır.
+                    </li>
+                    <li>
+                      Dava tarihine kadar işlemiş faizi de talep ediyorsanız bu tutar dava
+                      değerine eklenir; dava tarihinden sonra işleyecek faiz ise eklenmez.
+                    </li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Harç dışında tebligat, bilirkişi, keşif ve tanık giderleri için ayrıca gider
+                      avansı yatırılır; bunlar sonuca dahil değildir.
+                    </li>
+                    <li>
+                      Konusu para olmayan davalarda ayrıca maktu harç kalemleri doğabilir; araç bu
+                      durumda yalnızca başvurma harcını gösterir.
+                    </li>
+                    <li>
+                      Dava değeri sonradan artırılırsa artan kısım için ek harç ödenir; bunun için{" "}
+                      <Link href="/islah-harci-hesaplama" className="underline font-medium" style={{ color: "#14342B" }}>
+                        Islah Harcı Hesaplama
+                      </Link>{" "}
+                      aracını kullanabilirsiniz.
+                    </li>
+                    <li>
+                      Sonuç bilgilendirme amaçlıdır; kesin tutar dava açılışında mahkeme
+                      veznesince hesaplanır.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <p className="text-xs leading-relaxed mt-8" style={{ color: "#8A9A93" }}>
             Bu araç bilgilendirme amaçlıdır, hukuki tavsiye niteliği taşımaz. Harç tutarları her

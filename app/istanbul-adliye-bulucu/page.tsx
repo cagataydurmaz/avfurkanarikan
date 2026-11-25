@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import AdliyeBulucuForm from "@/components/calculators/AdliyeBulucuForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer from "@/components/calculators/ToolExplainer";
+import { ADLIYE_DISTRICTS, COURTHOUSES } from "@/lib/calculators/adliyeBulucu";
 
 export const metadata: Metadata = {
   title: pseoTitle("İstanbul Adliye Bulucu: İlçeye Göre Bağlı Adliye"),
@@ -90,6 +92,9 @@ const jsonLd = {
   ],
 };
 
+const ILCE_SAYISI = ADLIYE_DISTRICTS.length;
+const ADLIYE_SAYISI = Object.keys(COURTHOUSES).length;
+
 export default function AdliyeBulucuPage() {
   return (
     <>
@@ -125,6 +130,73 @@ export default function AdliyeBulucuPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <AdliyeBulucuForm />
+
+          <ToolExplainer
+            title="Adliye bulucu nasıl çalışır?"
+            sections={[
+              {
+                heading: "Araç nasıl çalışır?",
+                body: (
+                  <p>
+                    Araç, {ILCE_SAYISI} İstanbul ilçesini {ADLIYE_SAYISI} adliyeden birine
+                    eşleştiren bir liste kullanır. İlçenizi seçtiğinizde, o ilçenin genel olarak
+                    bağlı olduğu adliyenin adı, adresi ve santral telefonu gösterilir; &quot;Haritada
+                    Göster&quot; bağlantısı adresi harita uygulamasında açar. Adres ve telefon
+                    bilgileri Adalet Bakanlığı&apos;nın adalet.gov.tr altındaki resmi iletişim
+                    sayfalarından derlenmiştir. Araç herhangi bir kişisel bilgi istemez;
+                    yalnızca ilçe seçimi yeterlidir.
+                  </p>
+                ),
+              },
+              {
+                heading: "Hangi ilçeyi seçmelisiniz?",
+                body: (
+                  <>
+                    <p>
+                      Gideceğiniz adliye her zaman kendi oturduğunuz ilçeye göre belirlenmez;
+                      işin türüne göre esas alınacak yer değişir. Sık karşılaşılan durumlar:
+                    </p>
+                    <ul>
+                      <li>Genel kural olarak davalının yerleşim yeri</li>
+                      <li>Tapu ve taşınmaz davalarında taşınmazın bulunduğu yer</li>
+                      <li>İş davalarında davalının yerleşim yeri veya işin yapıldığı yer</li>
+                      <li>Ceza işlerinde suçun işlendiği yer</li>
+                      <li>
+                        Boşanma davalarında eşlerden birinin yerleşim yeri veya eşlerin belirli bir
+                        süredir birlikte oturdukları yer
+                      </li>
+                      <li>Tüketici uyuşmazlıklarında tüketicinin yerleşim yeri de seçilebilir</li>
+                    </ul>
+                  </>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Tebligatınızda veya UYAP&apos;ta yazan mahkeme adı, hangi adliyeye
+                      gitmeniz gerektiğini kesin olarak gösterir; araç sonucu bununla çelişiyorsa
+                      tebligattaki bilgi esas alınmalıdır.
+                    </li>
+                    <li>
+                      Ağır ceza mahkemeleri ve bazı ihtisas mahkemeleri her adliyede
+                      bulunmayabilir; bu davalar ilçenin bağlı olduğu adliyeden farklı bir
+                      adliyede görülebilir.
+                    </li>
+                    <li>
+                      Araç yalnızca İstanbul ilçelerini kapsar; listede olmayan bir yer için
+                      adalet.gov.tr üzerinden ilgili adliyeyi kontrol edebilirsiniz.
+                    </li>
+                    <li>
+                      Adliyeye gitmeden önce duruşma saatini ve salon bilgisini UYAP veya ilgili
+                      mahkeme kalemi üzerinden kontrol etmeniz yararlı olur.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <p className="text-xs leading-relaxed mt-8" style={{ color: "#8A9A93" }}>
             Bu araç bilgilendirme amaçlıdır; adli yargı çevreleri zaman zaman değişebilir,

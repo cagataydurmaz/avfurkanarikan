@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import FazlaMesaiForm from "@/components/calculators/FazlaMesaiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer, { formatTL } from "@/components/calculators/ToolExplainer";
+import { calculateFazlaMesai } from "@/lib/calculators/fazlaMesai";
 
 export const metadata: Metadata = {
   title: "Fazla Mesai Ücreti Hesaplama (%50 Zamlı)",
@@ -62,6 +64,8 @@ const jsonLd = {
   ],
 };
 
+const ORNEK = calculateFazlaMesai(45000, 10);
+
 export default function FazlaMesaiHesaplamaPage() {
   return (
     <>
@@ -90,6 +94,76 @@ export default function FazlaMesaiHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <FazlaMesaiForm />
+
+          <ToolExplainer
+            title="Fazla mesai ücreti nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>Hesap üç adımdan oluşur:</p>
+                    <ol>
+                      <li>Aylık brüt ücret 225&apos;e bölünerek saatlik ücret bulunur.</li>
+                      <li>
+                        Saatlik ücret %50 zamla 1,5 katına çıkarılır; bu, bir saatlik fazla
+                        mesainin ücretidir.
+                      </li>
+                      <li>Bu tutar, girdiğiniz fazla çalışma saatiyle çarpılır.</li>
+                    </ol>
+                    <p>
+                      225 böleni (günlük 7,5 saat × 30 gün) kanun metninde geçmez; bordro ve
+                      yargı uygulamasında yerleşik olarak kullanılır. Örneğin 45.000 TL brüt
+                      ücrette saatlik ücret {formatTL(ORNEK.saatlikUcret)}, fazla mesai saat
+                      ücreti {formatTL(ORNEK.fazlaMesaiSaatUcreti)} olur; 10 saatlik fazla
+                      çalışma için brüt {formatTL(ORNEK.toplamUcret)} çıkar.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>Bordrodaki aylık brüt ücret</li>
+                    <li>
+                      Haftalık 45 saati aşan çalışma saatlerinin toplamı. Bunu hafta hafta
+                      çıkarıp toplamanız gerekir; puantaj ve vardiya çizelgeleri bu hesap için
+                      yararlı kaynaklardır.
+                    </li>
+                    <li>
+                      Ücretin değiştiği dönemler varsa her dönemi kendi ücretiyle ayrı ayrı
+                      hesaplayıp toplamak daha doğru sonuç verir.
+                    </li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Sözleşmede haftalık çalışma süresi 45 saatin altında belirlenmişse, bu
+                      süreyi aşan ancak 45 saate kadar olan çalışmalar farklı bir zam oranına
+                      tabidir ve bu araçta ayrıca hesaplanmaz.
+                    </li>
+                    <li>
+                      Denkleştirme uygulanan işyerlerinde fazla çalışma, tek bir haftanın
+                      toplamına göre değil, denkleştirme dönemi ortalamasına göre belirlenir.
+                    </li>
+                    <li>
+                      Hafta tatili, ulusal bayram ve genel tatil günlerindeki çalışmaların ücreti
+                      ayrı kurallara tabidir; bu araç yalnızca fazla saatleri hesaplar.
+                    </li>
+                    <li>
+                      Sonuç brüttür ve bilgilendirme amaçlıdır; talep edilebilecek alacak somut
+                      kayıtlar ve ispat durumuna göre değişir.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>

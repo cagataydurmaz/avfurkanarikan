@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 import TrafikKazasiForm from "@/components/calculators/TrafikKazasiForm";
 import ToolBreadcrumb from "@/components/calculators/ToolBreadcrumb";
+import ToolExplainer from "@/components/calculators/ToolExplainer";
 
 export const metadata: Metadata = {
   title: pseoTitle("Trafik Kazası Tazminatı: Zamanaşımı Süresi Hesaplama"),
@@ -101,6 +102,79 @@ export default function TrafikKazasiHesaplamaPage() {
       <main className="py-16 md:py-20 min-h-screen" style={{ backgroundColor: "#F4EDE4" }}>
         <div className="max-w-3xl mx-auto px-5 md:px-8">
           <TrafikKazasiForm />
+
+          <ToolExplainer
+            title="Dava açma süresi nasıl hesaplanır?"
+            sections={[
+              {
+                heading: "Nasıl hesaplanır?",
+                body: (
+                  <>
+                    <p>
+                      Araç tazminat tutarını değil, dava açma hakkının sona ereceği tarihi
+                      hesaplar ve kazanın niteliğine göre iki yol izler:
+                    </p>
+                    <ul>
+                      <li>
+                        <strong>Yalnızca maddi hasar veya hafif yaralanma:</strong> sorumlunun
+                        öğrenildiği tarihe 2 yıl, kaza tarihine 10 yıl eklenir; hangisi daha
+                        erkense sonuç o tarihtir.
+                      </li>
+                      <li>
+                        <strong>Taksirle yaralama veya ölüm:</strong> daha uzun olan ceza
+                        zamanaşımı uygulanır; kaza tarihine yaralamada 8, ölümde 15 yıl eklenir.
+                      </li>
+                    </ul>
+                    <p>
+                      Örneğin 10.03.2025&apos;te gerçekleşen ve sorumlunun aynı gün öğrenildiği,
+                      yalnızca maddi hasarlı bir kazada süre 10.03.2027&apos;de dolar.
+                    </p>
+                  </>
+                ),
+              },
+              {
+                heading: "Hangi bilgiler gerekir?",
+                body: (
+                  <ul>
+                    <li>Kaza tarihi (kaza tespit tutanağı veya polis/jandarma kayıtları)</li>
+                    <li>
+                      Sorumlunun öğrenildiği tarih: genellikle tutanak tarihidir; sürücünün olay
+                      yerinden ayrıldığı durumlarda daha geç olabilir. Bu alan boş bırakılırsa
+                      araç kaza tarihini esas alır
+                    </li>
+                    <li>
+                      Kazanın sonucu: yaralanma veya ölüm varsa hastane raporları ve ceza
+                      soruşturması belgeleri
+                    </li>
+                  </ul>
+                ),
+              },
+              {
+                heading: "Dikkat edilmesi gerekenler",
+                body: (
+                  <ul>
+                    <li>
+                      Uzun ceza zamanaşımının uygulanması için ceza davasında mahkûmiyet kararı
+                      verilmiş olması şart değildir; fiilin suç oluşturması yeterlidir.
+                    </li>
+                    <li>
+                      Genel sürenin başlaması için zararın tüm unsurlarıyla öğrenilmesi gerekir;
+                      tedavisi süren yaralanmalarda bu tarih kaza tarihinden sonra olabilir.
+                    </li>
+                    <li>
+                      Dava açılması, icra takibi başlatılması veya borcun karşı tarafça kabul
+                      edilmesi gibi durumlar zamanaşımını kesebilir; bu durumda süre yeniden
+                      başlar. Araç bu olayları dikkate almaz.
+                    </li>
+                    <li>
+                      Sürenin son günlerine bırakmamak gerekir; sigortaya başvuru ve delil
+                      toplama zaman alabilir. Sonuç bilgilendirme amaçlıdır.
+                    </li>
+                  </ul>
+                ),
+              },
+            ]}
+          />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
