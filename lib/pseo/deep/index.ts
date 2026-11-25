@@ -36,6 +36,11 @@ const PAGE_UPDATED: Record<string, string> = {
   "maltepe:borclar-hukuku": "2026-11-25", "maltepe:icra": "2026-11-25", "maltepe:idare": "2026-11-25",
   "umraniye:icra": "2026-11-25", "umraniye:vergi": "2026-11-25",
   "uskudar:icra": "2026-11-25", "uskudar:vergi": "2026-11-25",
+  // Derin içerik eklenen sayfalar
+  "kadikoy:is-hukuku": "2026-11-25", "kadikoy:vergi": "2026-11-25",
+  "bakirkoy:is-hukuku": "2026-11-25", "bakirkoy:icra": "2026-11-25", "bakirkoy:idare": "2026-11-25",
+  // Durum değerlendirme ve süreç çizelgesi pilotu
+  "kadikoy:kira-tahliye": "2026-11-25",
 };
 
 export function pageModified(districtSlug: string, serviceSlug: string, publishedDate: string): string {

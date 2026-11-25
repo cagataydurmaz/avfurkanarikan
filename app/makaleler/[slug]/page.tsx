@@ -10,6 +10,24 @@ import { posts, getPostBySlug } from "@/lib/posts";
 import { practiceAreas } from "@/lib/practiceAreas";
 import { postMetaTitles } from "@/lib/postMetaTitles";
 import { postMetaDescriptions } from "@/lib/postMetaDescriptions";
+import { TARGET_DISTRICTS } from "@/lib/pseo/deep";
+import { ADLIYE_DISTRICTS } from "@/lib/calculators/adliyeBulucu";
+
+// Makale konusu → pSEO hizmet adresi eki
+const CATEGORY_SERVICE: Record<string, string> = {
+  "Aile Hukuku": "bosanma-avukati",
+  "Borçlar Hukuku": "borclar-hukuku-avukati",
+  "Ceza Hukuku": "ceza-avukati",
+  "Gayrimenkul Hukuku": "gayrimenkul-avukati",
+  "Miras Hukuku": "miras-avukati",
+  "Vergi Hukuku": "vergi-avukati",
+  "İdare Hukuku": "idare-avukati",
+  "İş Hukuku": "is-hukuku-avukati",
+};
+function serviceSuffix(slug: string, category: string): string | undefined {
+  if (/kira|tahliye/.test(slug)) return "kira-tahliye-avukati";
+  return CATEGORY_SERVICE[category];
+}
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -329,7 +347,7 @@ export default async function MakalePage({ params }: Props) {
           </div>
 
           {/* Related practice area + articles */}
-          {(relatedPracticeArea || relatedPosts.length > 0) && (
+          {(relatedPracticeArea || relatedPosts.length > 0 || serviceSuffix(post.slug, post.category)) && (
             <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
               {relatedPracticeArea && (
                 <p className="text-sm mb-4" style={{ color: "#3D5A50" }}>
@@ -343,6 +361,30 @@ export default async function MakalePage({ params }: Props) {
                   </Link>{" "}
                   çalışma alanı kapsamındadır.
                 </p>
+              )}
+              {serviceSuffix(post.slug, post.category) && (
+                <div className="mb-6">
+                  <p className="text-xs font-semibold uppercase tracking-wide mb-3" style={{ color: "#C5A880" }}>
+                    Bu Konuda İlçe Sayfaları
+                  </p>
+                  <ul className="flex flex-wrap gap-2">
+                    {TARGET_DISTRICTS.map((slug) => {
+                      const d = ADLIYE_DISTRICTS.find((x) => x.slug === slug);
+                      if (!d) return null;
+                      return (
+                        <li key={slug}>
+                          <Link
+                            href={`/${slug}-${serviceSuffix(post.slug, post.category)}`}
+                            className="inline-block text-xs px-3 py-1.5 rounded-full border"
+                            style={{ color: "#14342B", borderColor: "#D9CBB8" }}
+                          >
+                            {d.name}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
               )}
               {relatedPosts.length > 0 && (
                 <>

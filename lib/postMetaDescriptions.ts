@@ -4,7 +4,7 @@ export const postMetaDescriptions: Record<string, string> = {
   "ceza-hukukunda-etkin-pismanlik":
     "Etkin pişmanlık nedir? Zararı gideren veya suçun aydınlatılmasına katkı sağlayan şüpheli ya da sanığa TCK'da tanınan ceza indirimi ve şartları.",
   "sozlesmeden-donme-ve-tazminat":
-    "TBK'ya göre sözleşmeden dönme hakkı hangi koşullarda ve nasıl kullanılır? Dönmenin sonuçları, tazminat hakları ve dikkat edilecek süreler.",
+    "Sözleşmeden dönme hakkı ne zaman doğar? Borçlunun temerrüdü ve ayıplı ifada dönme, verilenlerin iadesi ve olumsuz zararın tazmini TBK\'ya göre.",
   "icra-takibi-ve-borca-itiraz":
     "İlamlı ve ilamsız icra takibi farkı, ödeme emrine itiraz süresi, itirazın iptali ve itirazın kaldırılması yolları hakkında bilgi.",
   "ortakligin-giderilmesi-davasi":

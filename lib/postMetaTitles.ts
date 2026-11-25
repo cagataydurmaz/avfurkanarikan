@@ -25,6 +25,6 @@ export const postMetaTitles: Record<string, string> = {
   "tutukluluga-itiraz": "Tutukluluğa İtiraz Nasıl Yapılır?",
   "vergi-ihbarnamesine-itiraz-ve-uzlasma": "Vergi İhbarnamesine İtiraz ve Uzlaşma Yolları",
   "bosanma-sureci-bilinmesi-gerekenler": "Boşanma Süreci: Aşamalar, Belgeler ve Süre",
-  "sozlesmeden-donme-ve-tazminat": "Sözleşmeden Dönme Hakkı Ne Zaman Kullanılır?",
+  "sozlesmeden-donme-ve-tazminat": "Sözleşmeden Dönme: Temerrüt, Ayıp ve Sonuçları (TBK)",
   "miras-sakli-pay-tenkis": "Saklı Pay ve Tenkis Davası (Miras Hukuku)",
 };

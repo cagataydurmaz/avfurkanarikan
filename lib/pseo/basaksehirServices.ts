@@ -17,9 +17,8 @@ const basaksehirBaseServices: PseoService[] = [
     heroTitle: "Başakşehir Avukat",
     heroSubtitle:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, Avrupa'nın en büyük hastane komplekslerinden birine ve Bahçeşehir/Kayaşehir gibi planlı uydu kentlere ev sahipliği yapan Başakşehir'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku alanlarında danışmanlık ve dava takibi hizmeti sunmaktadır; ilçe İstanbul Küçükçekmece Adliyesi'nin yargı çevresindedir.",
-    metaTitle: "Başakşehir Avukat | Hukuki Danışmanlık",
-    metaDescription:
-      "Başakşehir'de ceza, aile, gayrimenkul, iş, icra, idare, vergi ve borçlar hukuku konularında avukatlık ve danışmanlık hizmeti verilmektedir.",
+    metaTitle: "Başakşehir Avukat | Boşanma, Konut, Kira ve Miras",
+    metaDescription: "Başakşehir'de boşanma, tapu ve konut, kira-tahliye, miras ve ceza dosyalarında avukatlık. Davalar Küçükçekmece Adliyesi'nde görülür; büro Beşiktaş'tadır.",
     aboutParagraph:
       "Furkan Arıkan, İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı bir avukattır ve 2019'da MEF Üniversitesi Hukuk Fakültesi'nden mezun olmuştur. 2008'de kurulan, planlı uydu kentleri ve dev şehir hastanesi kompleksiyle tanınan Başakşehir'de ceza, aile, gayrimenkul, iş, icra-iflas, idare, vergi ve borçlar hukuku dosyalarında müvekkillerine danışmanlık ve temsil hizmeti sunar; randevu talepleri WhatsApp veya telefonla iletilebilir.",
     highlightCards: [

@@ -10,6 +10,9 @@ import { getDeep, pageModified } from "@/lib/pseo/deep";
 import { formatTrDate } from "@/lib/postEnrichment";
 import FloatingButtons from "@/components/FloatingButtons";
 import TrackedLink from "@/components/TrackedLink";
+import SituationGuide from "@/components/pseo/SituationGuide";
+import ProcessTimeline from "@/components/pseo/ProcessTimeline";
+import { GUIDES, GUIDE_PAGES, fill } from "@/lib/pseo/guides";
 
 export default function PseoPage({
   district,
@@ -21,6 +24,13 @@ export default function PseoPage({
   allServices: PseoService[];
 }) {
   const otherServices = allServices.filter((s) => s.slug !== service.slug);
+  const guide = GUIDE_PAGES.has(`${district.slug}:${service.slug}`) ? GUIDES[service.slug] : undefined;
+  const districtInfo = {
+    slug: district.slug,
+    name: district.name,
+    locative: district.locative,
+    courthouse: district.courthouse,
+  };
   const relatedPosts = service.relatedPostSlugs
     .map((slug) => getPostBySlug(slug))
     .filter((post): post is NonNullable<typeof post> => Boolean(post));
@@ -166,6 +176,18 @@ export default function PseoPage({
           </div>
         </section>
 
+        {/* 2b. DURUM DEĞERLENDİRME (pilot sayfalar) */}
+        {guide && (
+          <SituationGuide
+            title={guide.title}
+            intro={guide.intro}
+            start={guide.start}
+            steps={guide.steps}
+            district={districtInfo}
+            serviceSlug={service.slug}
+          />
+        )}
+
         {/* 3. HIGHLIGHTS */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#14342B" }}>
           <div className="max-w-5xl mx-auto px-5 md:px-8">
@@ -234,12 +256,18 @@ export default function PseoPage({
         <section className="py-10" style={{ backgroundColor: "#C5A880" }}>
           <div className="max-w-3xl mx-auto px-5 md:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm font-semibold text-center sm:text-left" style={{ color: "#14342B" }}>
-              {district.name} bölgesinde hukuki danışmanlık için iletişime geçebilirsiniz.
+              {guide
+                ? `${district.locative} ${guide.topic} konusunda bir sorununuz mu var? Kısaca yazın, durumunuzu birlikte değerlendirelim.`
+                : `${district.name} bölgesinde hukuki danışmanlık için iletişime geçebilirsiniz.`}
             </p>
             <TrackedLink
               channel="whatsapp"
               label={`${district.slug}-${service.slug}-midcta`}
-              href="https://wa.me/905354874099?text=Merhaba%2C%20hukuki%20danışmanlık%20almak%20istiyorum."
+              href={
+                guide
+                  ? `https://wa.me/905354874099?text=${encodeURIComponent(`Merhaba, ${district.locative} ${guide.topic} konusunda danışmak istiyorum.`)}`
+                  : "https://wa.me/905354874099?text=Merhaba%2C%20hukuki%20danışmanlık%20almak%20istiyorum."
+              }
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-2.5 rounded-xl text-sm font-semibold whitespace-nowrap"
@@ -281,6 +309,14 @@ export default function PseoPage({
               ))}
             </div>
           </section>
+        )}
+
+        {/* 7c. SÜREÇ ÇİZELGESİ (pilot sayfalar) */}
+        {guide && (
+          <ProcessTimeline
+            title={guide.timeline.title}
+            steps={guide.timeline.steps.map((st) => ({ title: st.title, text: fill(st.text, districtInfo) }))}
+          />
         )}
 
         {/* 8a. AYNI ADLİYEDEKİ İLÇELER */}

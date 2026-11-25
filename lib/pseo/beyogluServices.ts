@@ -124,9 +124,8 @@ const beyogluBaseServices: PseoService[] = [
     heroTitle: "Beyoğlu Ceza Avukatı",
     heroSubtitle:
       "Gözaltı, ifade, tutukluluk ve kovuşturma aşamalarının tamamında müdafilik hizmeti sunulur. Kovuşturma İstanbul (Çağlayan) Adliyesi'nde yürütülür.",
-    metaTitle: "Beyoğlu Ceza Avukatı | Müdafilik",
-    metaDescription:
-      "Gözaltı, soruşturma ve kovuşturma aşamalarında Beyoğlu'nda müdafilik ile tutukluluğa itiraz ve kanun yolu süreçlerinde destek sağlanır.",
+    metaTitle: "Beyoğlu Ceza Avukatı | Gözaltı, Tutuklama ve Müdafilik",
+    metaDescription: "Beyoğlu'nda gözaltı ve ifade aşamasında müdafilik, tutuklamaya itiraz ve kovuşturmada savunma. Dosyalar Çağlayan'daki İstanbul Adliyesi'nde görülür.",
     aboutParagraph:
       "İstanbul Barosu'na 72621 sicil numarasıyla kayıtlı avukat Furkan Arıkan, ceza yargılamasının soruşturmadan kanun yollarına kadar tüm aşamalarında müdafilik yapmaktadır. Mezuniyeti 2019 yılında MEF Üniversitesi Hukuk Fakültesi'ndendir.",
     highlightCards: [

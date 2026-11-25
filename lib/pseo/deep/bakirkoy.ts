@@ -162,4 +162,138 @@ export const bakirkoyDeep: DeepContent = {
       ],
     },
   ],
+
+  "is-hukuku": [
+    {
+      heading: "Bakırköy'deki site yönetimleri için işveren sorumluluğu ve hizmet alımı",
+      paragraphs: [
+        "Ataköy'deki çok bloklu siteler ile Yeşilköy ve Yeşilyurt'taki büyük apartmanlarda güvenlik, temizlik ve bahçe bakımı ya doğrudan yönetimin istihdam ettiği personelle ya da bir firmadan hizmet alınarak yürütülür. Doğrudan istihdamda kat malikleri adına hareket eden yönetim işveren konumundadır; iş sözleşmesi, SGK bildirimi, ücret bordrosu ve izin kayıtlarının düzenli tutulması bu nedenle yöneticinin sorumluluğundadır.",
+        "Hizmetin bir firmadan alındığı durumda da yönetimin sorumluluğu tamamen ortadan kalkmaz. Asıl işveren ile alt işveren ilişkisi kurulduğunda asıl işveren, alt işverenin o işyerinde çalıştırdığı işçilere karşı yükümlülüklerinden alt işverenle birlikte sorumlu olur. Bu nedenle hizmet sözleşmesine, firmanın ücret ve prim ödemelerini düzenli olarak belgeleme yükümlülüğü ile yönetimin ödemek zorunda kaldığı tutarları firmaya rücu edebileceğine ilişkin hükümler konulması yararlıdır. Hizmet alınan firma değiştiğinde aynı personelin yeni firma bünyesinde çalışmaya devam etmesi, önceki dönemlerin kıdem hesabına katılıp katılmayacağı sorusunu da doğurabilir.",
+        "Yönetici değişikliklerinde personel dosyalarının ve SGK işyeri kayıtlarının yeni yönetime eksiksiz devredilmesi, geçmiş dönemden kalan işçilik alacaklarının hangi döneme ait olduğunun gösterilebilmesi için gereklidir. Site personelinin vardiya çizelgeleri ile hafta tatili ve izin kayıtlarının düzenli saklanması, olası bir davada yönetimin savunmasını kolaylaştırır.",
+      ],
+    },
+    {
+      heading: "Bakırköy'de işveren tarafında haklı nedenle fesih ve belge düzeni",
+      paragraphs: [
+        "İş sözleşmesinin bildirim süresi beklenmeden derhal sona erdirilmesi, ancak kanunda sayılan haklı nedenlerden birinin varlığı hâlinde mümkündür. Ahlak ve iyiniyet kurallarına aykırı davranışlar veya devamsızlık gibi sebeplere dayanan fesihlerde işveren, olayı öğrendiği tarihten itibaren kanunda öngörülen kısa hak düşürücü süre içinde harekete geçmelidir; bu süre geçirildikten sonra yapılan derhal fesih, haklı nedene dayanmamış sayılabilir.",
+        "Haklı nedenin ispatı işverene düşer. Olayın tarihini, tanıklarını ve somut içeriğini gösteren tutanaklar, çalışana yapılan yazılı uyarılar ve alınan savunma, Osmaniye'deki İstanbul Bakırköy Adliyesi'nde görülecek bir iş davasında işverenin başlıca delilleridir. Haklı neden ispatlanamazsa fesih, kıdem ve ihbar tazminatı yükümlülüğü doğurabilecek bir fesih olarak değerlendirilebilir.",
+        "Bir yöneticiyle iş ilişkisi sona ererken şirket bilgilerinin ve cihazların iadesi, erişim yetkilerinin kapatılması ve gizlilik yükümlülüklerinin hatırlatılması da yazılı olarak yapılmalıdır. Sözleşmede rekabet yasağı bulunuyorsa, fesih türünün yasağın ayakta kalıp kalmayacağını etkileyebileceği de hesaba katılmalıdır.",
+      ],
+    },
+    {
+      heading: "Bakırköy'de işten çıkarılan çalışan için işe iade kararının sonuçları ve kıdem hakkı",
+      paragraphs: [
+        "İş Kanunu m.18'deki şartlar, yani işyerinde otuz veya daha fazla işçi çalışması ve en az altı aylık kıdem varsa, fesihten itibaren 1 ay içinde arabulucuya başvurulur; anlaşma olmazsa son tutanaktan itibaren 2 hafta içinde dava açılır. Mahkeme feshi geçersiz bulursa süreç kararla bitmez: çalışanın, kesinleşen kararın tebliğinden sonra kanundaki süre içinde işe başlatılmak için işverene başvurması gerekir. Başvuru yapılmazsa fesih, geçerli bir fesih gibi sonuç doğurur.",
+        "Çalışan süresinde başvurduğu hâlde işveren onu işe başlatmazsa, işe başlatmama tazminatı ile çalıştırılmadığı dönem için ücret ve diğer haklar gündeme gelir; bu tutarlar mahkeme kararında belirlenir. İşe başlatılmayan çalışan, şartları varsa kıdem ve ihbar tazminatını da talep edebilir.",
+        "Kıdem tazminatı için 1475 sayılı Kanun m.14 uyarınca aynı işverene bağlı en az bir yıllık çalışma aranır. İşverenin haklı neden olmaksızın feshi yanında, ücretin ödenmemesi gibi haklı bir nedenle çalışanın sözleşmeyi kendisinin feshetmesi ve yaşlılık aylığı almak amacıyla ayrılma da bu hakkı doğurabilir; buna karşılık sıradan bir istifa kural olarak kıdem tazminatı sonucunu doğurmaz.",
+      ],
+    },
+  ],
+
+  icra: [
+    {
+      heading: "Bakırköy'deki site yönetimlerinin aidat ve ortak gider alacağında icra takibi",
+      paragraphs: [
+        "Ataköy'deki sitelerde ve Kartaltepe, Cevizlik gibi semtlerdeki köklü apartmanlarda ödenmeyen aidat ve ortak giderler, yönetimin bütçesini doğrudan etkiler. Yönetim, kat malikleri kurulu kararı ve işletme projesine dayanarak borçlu hakkında ilamsız takip başlatabilir. Takip talebine borcun hangi aylara ait olduğunu gösteren döküm, ilgili kurul kararları ve borçluya yapılan bildirimler eklenmelidir; dairede kiracı oturuyorsa takibin kime yöneltileceği de baştan belirlenmelidir.",
+        "Borçlu ödeme emrine İİK m.62 uyarınca 7 gün içinde itiraz ederse takip durur. Yönetim bu durumda itirazın tebliğinden itibaren 1 yıl içinde genel mahkemede itirazın iptali davası açabilir (İİK m.67); dayanak belge imzası ikrar edilmiş veya resmi makamca onaylanmış bir belge niteliğindeyse, 6 ay içinde icra mahkemesinden itirazın kaldırılması da istenebilir (İİK m.68). Dava açılmadan önce uyuşmazlığın türüne göre arabuluculuk şartının bulunup bulunmadığı kontrol edilir.",
+        "Aidat borcunun gecikmesi hâlinde Kat Mülkiyeti Kanunu'nda öngörülen gecikme tazminatı da talep edilebileceğinden, bu kalem takip talebinde ana alacaktan ayrı gösterilir. Yönetimin her ay borç bakiyelerini gösteren bir döküm tutması ve ödeme hatırlatmalarını yazılı yapması, takibe konu alacağın hesabını kolaylaştırır.",
+      ],
+    },
+    {
+      heading: "Bakırköy'de kira, senet ve mahkeme kararına dayanan alacaklarda takip sırası",
+      paragraphs: [
+        "Alacaklının elindeki belge, izlenecek yolu belirler. Bir mahkeme kararı varsa ilamlı takip başlatılır ve borçlunun itiraz imkânları ilamsız takibe göre daha dardır; borçlu bu aşamada kural olarak borcun ödendiği, ertelendiği veya zamanaşımına uğradığı gibi sınırlı sebeplere dayanabilir. Yeşilköy veya Ataköy'de kiraya verilen bir dairenin ödenmeyen kiraları için yapılan takipte ödeme emriyle birlikte tahliye ihtarı da yapılabilir. Çek ve bono gibi kambiyo senetlerinde ise kanunun öngördüğü özel takip yolu izlenir ve borçlunun itirazı icra mahkemesine yapılır.",
+        "Takip kesinleştikten sonra borçlunun tapu, araç, banka ve SGK kayıtları UYAP üzerinden sorgulanarak mal varlığı araştırılır. Maaşına haciz konulan borçlunun işvereni kanunda belirlenen oranda kesinti yaparak icra dairesine gönderir; banka hesaplarına ilişkin haciz bildirimleri ise bankalara elektronik olarak iletilir. Haczedilen taşınmaz veya araç için satış talebi kanuni süresinde yapılmazsa haciz düşebileceğinden dosya takvimi düzenli izlenmelidir. Borçlunun alacaklıdan mal kaçırmak amacıyla yaptığı devirler için, koşulları varsa tasarrufun iptali davası da değerlendirilebilir.",
+      ],
+    },
+    {
+      heading: "Bakırköy'de maaşına veya hesabına haciz gelen borçlunun başvurabileceği yollar",
+      paragraphs: [
+        "Ödeme emri yanlış adrese gönderildiği ya da tebligat usule aykırı yapıldığı için borçlu takipten geç haberdar olmuşsa, öğrenme tarihini esas alarak icra mahkemesine usulsüz tebligat şikâyetinde bulunabilir; tebligat usulsüz bulunursa itiraz süresi öğrenme tarihine göre hesaplanır. Şikâyet dilekçesinde takipten hangi tarihte ve nasıl haberdar olunduğu açıkça belirtilmelidir. Kiracı ve malik değişikliklerinin sık yaşandığı apartmanlarda adres kayıtlarının güncel tutulması bu nedenle önemlidir.",
+        "Haciz sırasında kanunun haczedilemez saydığı mallara ya da maaş ve ücretin kanuni sınırı aşan kısmına el konulmuşsa, borçlu icra mahkemesine şikâyet yoluyla başvurabilir. Nafaka gibi bazı alacaklarda bu sınırların farklı uygulandığı unutulmamalıdır; banka hesabına gelen ödemenin niteliği, örneğin emekli aylığı olması, haczin kapsamını etkileyebilir. Haczedilen eşyanın üçüncü bir kişiye ait olduğu iddiası ise istihkak yoluyla ileri sürülür.",
+        "Borcu kabul eden ancak tek seferde ödeyemeyen borçlu, icra dairesinde ödeme taahhüdünde bulunabilir veya alacaklıyla yazılı bir ödeme planı yapabilir. Taahhüde uyulmamasının ayrıca yaptırım doğurabileceği göz önünde tutularak taksitler gerçekçi belirlenmelidir.",
+      ],
+    },
+  ],
+
+  "borclar-hukuku": [
+    {
+      heading: "Bakırköy'de uzun süreli sözleşmelerde koşullar değiştiğinde uyarlama ve fesih",
+      paragraphs: [
+        "Site yönetimlerinin asansör ve kazan bakım sözleşmeleri ya da işletmelerin tedarik ve danışmanlık sözleşmeleri gibi uzun süreli ilişkilerde, sözleşmenin kurulduğu andaki dengeler zamanla değişebilir. Kurulma anında öngörülemeyen ve borçludan kaynaklanmayan olağanüstü bir değişiklik edimin ifasını borçlu açısından aşırı derecede güçleştirmişse, hâkimden sözleşmenin yeni koşullara uyarlanması istenebilir; uyarlama mümkün değilse dönme veya fesih gündeme gelir. Uyarlama talebi için borçlunun edimini henüz ifa etmemiş olması ya da aşırı ifa güçlüğünden doğan haklarını saklı tutarak ifa etmiş olması gerekir.",
+        "Sürekli borç ilişkilerinde taraflar, sözleşmenin devamını beklenemez kılan haklı bir sebep varsa sözleşmeyi süresinden önce feshedebilir. Haklı sebebin ispatı için ihlallerin tarihli tutanaklarla kaydedilmesi ve karşı tarafa yazılı ihtar gönderilerek düzeltme fırsatı verilmesi önemlidir. Ayıplı veya eksik ifaya ilk görüldüğünde itiraz edilmeden sürdürülen bir ilişkide, sonradan haklı sebebe dayanmak zorlaşabilir.",
+        "Sözleşmeye konulan bedel güncelleme, fiyat farkı veya yeniden görüşme hükümleri, olağanüstü değişiklikler karşısında taraflara mahkemeye gitmeden bir çözüm yolu sunar. Bu tür hükümlerin bulunmadığı sözleşmelerde de değişen koşulların karşı tarafa hangi tarihte ve nasıl bildirildiğini gösteren yazışmalar saklanmalıdır.",
+      ],
+    },
+    {
+      heading: "Bakırköy'de borç para ve ticari alacakta ispat ile faiz başlangıcı",
+      paragraphs: [
+        "Tanıdığa verilen borç para, işletmeler arasında yapılan ödemeler veya avans olarak gönderilen tutarlar, uyuşmazlık çıktığında çoğu zaman yazılı bir belgeye dayanmadığı için ispat sorunu doğurur. Belirli bir değerin üzerindeki hukuki işlemlerin senetle ispatı gerektiğinden, banka dekontunun açıklama kısmına ödemenin niteliğinin yazılması ve yazışmaların saklanması önem taşır; bu kayıtlar delil başlangıcı olarak değerlendirilebilir. Senetle ispat zorunluluğunun bulunduğu durumlarda tanık beyanı kural olarak tek başına yeterli görülmez.",
+        "Ticari alacaklarda ticari defterler, faturalar ve cari hesap ekstreleri temel delillerdir; ticari nitelikteki alacak davalarında dava açmadan önce arabulucuya başvurmak dava şartıdır. Faiz talebi için borçlunun temerrüde düşürüldüğü tarih belirleyicidir: belirli bir vadesi olan borçlarda vadenin geçmesiyle temerrüt kendiliğinden oluşurken, vadesi belirlenmemiş borçlarda ihtarname ile temerrüt sağlanır.",
+        "Alacağın türüne göre zamanaşımı süresi de değişir: TBK m.146'daki 10 yıllık genel sürenin yanında, kira ve faiz gibi dönemsel edimlerde TBK m.147'deki 5 yıllık süre uygulanır. Fatura vadeleri ve son ödeme tarihleri bu nedenle düzenli kaydedilmelidir.",
+      ],
+    },
+    {
+      heading: "Bakırköy'ün köklü apartmanlarında yapı kaynaklı zararlar ve tazminat",
+      paragraphs: [
+        "Kartaltepe, Zuhuratbaba veya Osmaniye'deki eski binalarda cephe kaplamasının dökülmesi, çatıdan düşen parçalar ya da tesisat arızasından kaynaklanan su baskını, hem komşu bağımsız bölümlere hem de yoldan geçenlere zarar verebilir. Yapı maliki, yapının yapımındaki bozukluktan veya bakımındaki eksiklikten doğan zararı kusuru olmasa da gidermekle yükümlüdür; ortak alanlardan kaynaklanan zararlarda sorumluluk kat malikleri ve yönetim yönünden ayrıca değerlendirilir.",
+        "Tazminat talebinde hasarın oluştuğu andaki durumun belgelenmesi belirleyicidir: fotoğraf ve videolar, yönetime yapılan bildirimler, onarım teklifleri ve faturalar saklanmalıdır. Hasarın kaynağı tartışmalıysa onarımdan önce mahkeme aracılığıyla delil tespiti yaptırılması, durumun bilirkişi raporuyla kayda geçmesini sağlar. Sigorta şirketi zararı karşılamışsa, sorumluya rücu hakkı da dosyanın taraflarını etkiler. Zarar, kiracının kullandığı bir bağımsız bölümdeki kusurlu kullanımdan doğmuşsa talep kiracıya da yöneltilebilir. Bina sigortası ve zorunlu deprem sigortası poliçelerinin kapsamı da hasar sonrası ilk bakılacak belgeler arasındadır.",
+        "Bedensel zarar doğmuşsa tedavi giderleri ve çalışma gücü kaybının yanında manevi tazminat da istenebilir. Davalar, uyuşmazlığın niteliğine göre Osmaniye'deki İstanbul Bakırköy Adliyesi'nde asliye hukuk veya sulh hukuk mahkemesinde görülür.",
+      ],
+    },
+  ],
+
+  idare: [
+    {
+      heading: "Bakırköy'ün köklü apartmanlarında yeniden yapım için imar durumu ve yapı ruhsatı",
+      paragraphs: [
+        "Kartaltepe, Cevizlik veya Zuhuratbaba'da eski bir apartmanı yeniden yaptırmayı düşünen malikler için ilk idari belge imar durumudur. Parselin yapılaşma koşullarını ve plan notlarını gösteren bu belge, müteahhitle yapılacak görüşmelerin ve yeni projede kaç bağımsız bölüm çıkabileceğinin dayanağıdır. Elde eski tarihli bir imar durumu varsa, sonradan yapılan plan değişiklikleri yönünden güncellenmesi gerekir. Bu belgenin belediyeden yazılı olarak alınması, sözlü bilgilere dayanılarak verilen kararların yol açabileceği riskleri azaltır.",
+        "Proje belediyeye sunulduktan sonra yapı ruhsatı başvurusunun reddi idari dava konusu yapılabilir. Dava İstanbul idare mahkemelerinde, işlemin yazılı bildiriminden itibaren 60 gün içinde (İYUK m.7) açılır. Verilen ruhsata komşu parsel maliklerinin dava açması da mümkündür; bu ihtimal inşaat takvimi planlanırken hesaba katılmalıdır.",
+        "Ruhsat sürecinde belediyeden gelen her yazının, özellikle eksik belge bildirimlerinin ve ret gerekçelerinin tarihli olarak saklanması gerekir. Sahil şeridine yakın parseller için plan notlarında ayrıca hükümler bulunabileceğinden, bu notlar proje hazırlığının başında okunmalıdır.",
+      ],
+    },
+    {
+      heading: "Bakırköy'de riskli yapı tespitinden yıkıma kadar idari takvim",
+      paragraphs: [
+        "6306 sayılı Kanun kapsamında riskli yapı tespiti yapıldığında sonuç maliklere bildirilir ve tapu kaydına belirtme olarak işlenir. Tespite karşı Kanun'un öngördüğü itiraz yolu bulunur; itiraz üzerine verilen karar da idari yargıda dava konusu edilebilir. Bu aşamalarda genel 60 günlük dava süresinden farklı süreler öngörülebildiğinden, her yazıda gösterilen başvuru yolu ayrıca kontrol edilmelidir. İtirazın içeriğini belirlemek için tespit raporunun ve eklerinin idareden istenmesi gerekir.",
+        "Tespit kesinleştikten sonra maliklere yapının yıktırılması için süre verilir; bu süre içinde yıkım yapılmazsa idare yıkımı kendisi gerçekleştirebilir ve bu aşamada elektrik, su ve doğalgaz gibi hizmetlerin durdurulması gündeme gelebilir. Malik ve kiracılar için öngörülen kira yardımı gibi destekler de idareye yapılacak başvuruya bağlıdır; bu başvurunun reddi de ayrı bir idari işlem olarak dava konusu yapılabilir. Tahliye ve yıkıma ilişkin bildirimlerin tebliğ tarihleri ayrı ayrı kaydedilmelidir.",
+        "Ataköy'deki toplu yapılarda tespitin tek bir blok için mi yoksa daha geniş bir alan için mi yapıldığı, sonraki kararların hangi malikleri ilgilendireceğini etkileyebilir. Malikler arasındaki sözleşme ve paylaşım uyuşmazlıkları ise idari yargının değil, adli yargının görev alanındadır.",
+      ],
+    },
+    {
+      heading: "Bakırköy'de idari başvuru, cevapsız kalan dilekçe ve idari para cezası",
+      paragraphs: [
+        "İdari bir işleme karşı doğrudan dava açmak yerine, dava açma süresi içinde işlemi yapan idareden veya üst makamdan işlemin kaldırılması ya da değiştirilmesi istenebilir. Bu başvuru işlemeye başlamış olan dava süresini durdurur; başvurunun reddi veya cevapsız kalması üzerine süre kaldığı yerden işlemeye devam eder. Bir talebe idare kanunda öngörülen süre içinde cevap vermezse istek reddedilmiş sayılır ve bu zımni ret işlemine karşı da dava açılabilir. Başvuru tarihi ve dilekçenin kayıt numarası bu nedenle saklanmalıdır.",
+        "İdari para cezalarında ilk bakılacak nokta cezanın dayandığı kanundur; bazı cezalar sulh ceza hakimliğinde, bazıları idare mahkemesinde incelenir ve başvuru süreleri buna göre farklılaşır. Yeşilköy veya Ataköy'deki bir işletmeye verilen kararın üzerinde gösterilen başvuru yolu ve tebliğ tarihi not edilmeden ödeme veya dava kararı verilmemelidir.",
+        "Ceza ile birlikte işyerinin faaliyetten men edilmesi veya mühürlenmesi gibi ek yaptırımlar da uygulanmışsa, bunlara karşı başvuru yolu ayrıca değerlendirilir. İşletmenin kapalı kaldığı süre ve bu sürede uğranılan kayıplar, işlemin iptali hâlinde açılabilecek bir tam yargı davası için belgelenmelidir.",
+      ],
+    },
+  ],
+
+  vergi: [
+    {
+      heading: "Bakırköy'de kira geliri elde eden malikler için beyan ve olası tarhiyat",
+      paragraphs: [
+        "Ataköy'deki site dairelerini ya da Yeşilköy ve Yeşilyurt'taki konutlarını kiraya veren malikler için kira geliri, vergisel açıdan en sık gözden kaçan kalemlerden biridir. Kira gelirinin, kanundaki istisna ve sınırlar gözetilerek Bakırköy Vergi Dairesi Müdürlüğü'ne beyan edilmesi gerekir; işyeri olarak kiraya verilen bağımsız bölümlerde kiracı tarafından yapılmış bir vergi kesintisi varsa beyan sırasında hesaba katılır. Yıl içinde kiracı değişmişse her dönem için ayrı sözleşme ve tahsilat kaydı tutulmalıdır.",
+        "Vergi idaresi banka kayıtları ve tapu bilgileri gibi verilerle beyan edilmeyen kira gelirini tespit ettiğinde, vergi ve vergi ziyaı cezası içeren bir ihbarname düzenleyebilir. İdarenin tespitinden önce kendiliğinden yapılan beyan, ceza bakımından farklı sonuç doğurabilir; bu nedenle geçmiş dönemlerde eksik beyan fark edildiğinde durum vakit kaybetmeden değerlendirilmelidir.",
+        "Mirasla birden fazla kişiye geçen kiradaki dairelerde gelir, mirasçılar tarafından payları oranında beyan edilir; ortak hesaba yatırılan kiraların dağılımını gösteren kayıtlar bu yüzden saklanmalıdır. Mirasçılardan biri kiranın tamamını tahsil ediyorsa, diğerlerine düşen payın beyanı ve aralarındaki hesaplaşma ayrıca belgelenmelidir.",
+      ],
+    },
+    {
+      heading: "Bakırköy'de emlak vergisi, dönüşüm istisnaları ve belediye kaynaklı uyuşmazlıklar",
+      paragraphs: [
+        "Emlak vergisi, taşınmazın bulunduğu yerdeki belediye tarafından tarh ve tahsil edilir; Bakırköy'deki konut ve işyerleri için muhatap Bakırköy Belediyesi'dir. Taşınmazın niteliğine, vergi değerine veya malik bilgisine ilişkin hatalı bir tahakkuk fark edildiğinde önce belediyeye düzeltme başvurusu yapılabilir; başvurunun ve verilen cevabın yazılı olması, sonraki aşamada delil olarak kullanılmasını kolaylaştırır. İkmalen veya re'sen yapılan bir tarhiyat tebliğ edilmişse, buna karşı tebliğden itibaren 30 gün içinde (İYUK m.7) vergi mahkemesinde dava açılabilir.",
+        "Kentsel dönüşüm kapsamında yeniden yapılan binalarda 6306 sayılı Kanun bazı vergi, harç ve ücretler için istisnalar öngörür. İstisnanın somut işleme uygulanıp uygulanmadığı tapu devri, ruhsat ve abonelik işlemlerinden önce kontrol edilmeli; istisnadan yararlanılmadan ödenen tutarlar için düzeltme ve iade yolları ayrıca değerlendirilmelidir.",
+        "Emlak vergisi borcunun bulunup bulunmadığı taşınmazın satışı sırasında sorgulanabildiğinden, geçmiş döneme ait borçlar ve gecikme zammı satıştan önce Bakırköy Belediyesi'nden alınacak bir yazıyla kontrol edilmelidir. Bu kontrol, tapu işleminin son anda ertelenmesini önler.",
+      ],
+    },
+    {
+      heading: "Bakırköy'deki şirketlerde vergi borcunun yöneticiye yansıması",
+      paragraphs: [
+        "Limited veya anonim şirket olarak faaliyet gösteren işletmelerde vergi borcu kural olarak şirkete aittir; kanuni temsilci sıfatı anonim şirkette yönetim kurulu üyelerinde, limited şirkette müdürlerde bulunur. Ancak 6183 sayılı Kanun'a göre amme alacağı şirket varlığından tamamen veya kısmen tahsil edilemiyor ya da edilemeyeceği anlaşılıyorsa, kanuni temsilciler bu borçtan kendi malvarlıklarıyla sorumlu tutulabilir. Limited şirket ortakları için de sermaye payları oranında ayrı bir sorumluluk düzenlenmiştir.",
+        "Bu durumda yöneticiye kişisel olarak ödeme emri gönderilebilir ve ödeme emrine karşı 15 gün içinde vergi mahkemesinde dava açılabilir (6183 s.K. m.58). Davada yöneticinin ilgili dönemde gerçekten kanuni temsilci olup olmadığı, şirket hakkında takip yollarının tüketilip tüketilmediği ve borcun dayandığı tarhiyatın şirkete usulüne uygun tebliğ edilip edilmediği incelenir. Ticaret sicili kayıtları, görevden ayrılma tarihleri ve imza yetkisine ilişkin kararlar bu nedenle saklanmalıdır.",
+        "Yöneticinin görevden ayrılması, görevde bulunduğu dönemlere ait borçlar bakımından sorumluluğunu kendiliğinden sona erdirmez. Görev devri sırasında şirketin vergi borcu durumunu gösteren bir döküm alınması ve devir tarihinin ticaret siciline zamanında işlenmesi, sonradan doğabilecek uyuşmazlıklarda yöneticinin konumunu netleştirir.",
+      ],
+    },
+  ],
 };
