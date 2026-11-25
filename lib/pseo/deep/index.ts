@@ -19,7 +19,28 @@ const DEEP_UPDATED_BY_DISTRICT: Record<string, string> = { sariyer: "2026-11-24"
 export const CONTENT_UPDATED = "2026-11-05";
 
 /** Sayfanın görünür içeriğinin en son değiştiği tarih (şema, site haritası ve sayfadaki künye için). */
+/** Görünür içeriği ilçe/servis bazında sonradan yeniden yazılan sayfalar ("ilçe:servis" veya "ilçe:*"). */
+const PAGE_UPDATED: Record<string, string> = {
+  "silivri:*": "2026-11-25",
+  "catalca:*": "2026-11-25",
+  "bahcelievler:borclar-hukuku": "2026-11-25", "bahcelievler:ceza": "2026-11-25",
+  "bakirkoy:borclar-hukuku": "2026-11-25", "bakirkoy:vergi": "2026-11-25",
+  "basaksehir:borclar-hukuku": "2026-11-25", "basaksehir:vergi": "2026-11-25",
+  "beykoz:icra": "2026-11-25", "beykoz:kira-tahliye": "2026-11-25",
+  "beylikduzu:ceza": "2026-11-25", "beylikduzu:icra": "2026-11-25", "beylikduzu:kira-tahliye": "2026-11-25", "beylikduzu:vergi": "2026-11-25",
+  "buyukcekmece:vergi": "2026-11-25",
+  "esenler:avukat": "2026-11-25", "esenyurt:avukat": "2026-11-25",
+  "eyupsultan:avukat": "2026-11-25", "eyupsultan:kira-tahliye": "2026-11-25",
+  "fatih:kira-tahliye": "2026-11-25",
+  "kadikoy:borclar-hukuku": "2026-11-25", "kadikoy:icra": "2026-11-25", "kadikoy:idare": "2026-11-25",
+  "maltepe:borclar-hukuku": "2026-11-25", "maltepe:icra": "2026-11-25", "maltepe:idare": "2026-11-25",
+  "umraniye:icra": "2026-11-25", "umraniye:vergi": "2026-11-25",
+  "uskudar:icra": "2026-11-25", "uskudar:vergi": "2026-11-25",
+};
+
 export function pageModified(districtSlug: string, serviceSlug: string, publishedDate: string): string {
+  const explicit = PAGE_UPDATED[`${districtSlug}:${serviceSlug}`] ?? PAGE_UPDATED[`${districtSlug}:*`];
+  if (explicit) return explicit;
   if (getDeep(districtSlug, serviceSlug).length > 0) return DEEP_UPDATED_BY_DISTRICT[districtSlug] ?? DEEP_UPDATED;
   return publishedDate > CONTENT_UPDATED ? publishedDate : CONTENT_UPDATED;
 }
