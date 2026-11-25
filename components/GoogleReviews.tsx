@@ -17,7 +17,7 @@ export default function GoogleReviews() {
           </span>
         </div>
 
-        <div className="mb-7 md:mb-10">
+        <div className="mb-7 md:mb-10" data-reveal>
           <h2
             className="text-3xl md:text-4xl font-bold max-w-sm"
             style={{

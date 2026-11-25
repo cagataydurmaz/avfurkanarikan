@@ -17,7 +17,7 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
           </span>
         </div>
 
-        <div className="mb-7 md:mb-10">
+        <div className="mb-7 md:mb-10" data-reveal>
           <h2
             className="text-3xl md:text-4xl font-bold max-w-sm"
             style={{
@@ -31,12 +31,13 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-3 md:gap-5">
-          {posts.map((post) => (
+          {posts.map((post, i) => (
             <Link
               key={post.slug}
+              data-reveal
               href={`/makaleler/${post.slug}`}
               className="group flex flex-col rounded-xl p-4 md:p-5 border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-              style={{ borderColor: "#EBE0D4", backgroundColor: "#fff" }}
+              style={{ borderColor: "#EBE0D4", backgroundColor: "#fff", ["--d" as string]: `${i * 80}ms` }}
             >
               <div className="flex items-center justify-between gap-3 mb-2.5 md:mb-3">
                 <span

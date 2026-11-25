@@ -12,7 +12,7 @@ export default function Contact() {
     <section id="iletisim" className="py-10 md:py-16" style={{ backgroundColor: "#14342B" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 md:mb-10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 md:mb-10" data-reveal>
           <div>
             <span
               className="inline-block text-xs tracking-widest uppercase font-semibold px-3 py-1 rounded-full mb-4"
@@ -38,6 +38,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-5 gap-6 lg:gap-10 items-start">
           {/* Contact form - primary */}
           <div
+            data-reveal
             className="lg:col-span-3 p-5 md:p-7 rounded-2xl border"
             style={{ borderColor: "rgba(197,168,128,0.25)", backgroundColor: "rgba(255,255,255,0.03)" }}
           >
@@ -51,7 +52,7 @@ export default function Contact() {
           </div>
 
           {/* Map + info - secondary */}
-          <div className="lg:col-span-2 flex flex-col gap-4">
+          <div className="lg:col-span-2 flex flex-col gap-4" data-reveal style={{ ["--d" as string]: "120ms" }}>
             <div
               className="rounded-lg overflow-hidden border h-[170px] md:h-[200px]"
               style={{ borderColor: "rgba(197,168,128,0.25)" }}

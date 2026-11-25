@@ -18,7 +18,7 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           {/* Photo column */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center md:items-start" data-reveal>
             {/* Mobil: kütüphane fotoğrafı (Hero'daki yuvarlak cüppeli portreyi tekrar etmemek için) */}
             <div className="md:hidden relative -mx-5 w-[calc(100%+2.5rem)] -mt-4 -mb-6">
               <div
@@ -77,7 +77,7 @@ export default function About() {
           </div>
 
           {/* Bio column */}
-          <div>
+          <div data-reveal style={{ ["--d" as string]: "120ms" }}>
             <h2
               className="text-3xl md:text-4xl font-bold mb-2"
               style={{

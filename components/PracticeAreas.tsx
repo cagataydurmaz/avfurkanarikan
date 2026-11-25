@@ -184,7 +184,7 @@ export default function PracticeAreas() {
           </span>
         </div>
 
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 md:mb-10">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-6 md:mb-10" data-reveal>
           <h2
             className="text-3xl md:text-4xl font-bold max-w-md"
             style={{
@@ -201,8 +201,13 @@ export default function PracticeAreas() {
 
         {/* Mobil: açılır satırlar (tüm alanlar; maddeler sayfada kalır, dokununca açılır) */}
         <div className="md:hidden border-t" style={{ borderColor: "rgba(197,168,128,0.2)" }}>
-          {localizedAreas.map((area) => (
-            <details key={area.slug} className="practice-row group border-b" style={{ borderColor: "rgba(197,168,128,0.2)" }}>
+          {localizedAreas.map((area, i) => (
+            <details
+              key={area.slug}
+              data-reveal
+              className="practice-row group border-b"
+              style={{ borderColor: "rgba(197,168,128,0.2)", ["--d" as string]: `${Math.min(i, 6) * 50}ms` }}
+            >
               <summary className="flex items-center gap-3 py-3.5 cursor-pointer list-none">
                 <span
                   className="w-8 h-8 flex items-center justify-center rounded flex-shrink-0 practice-row-icon"
@@ -256,12 +261,13 @@ export default function PracticeAreas() {
 
         {/* Masaüstü: sade kartlar */}
         <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {visibleAreas.map((area) => (
+          {visibleAreas.map((area, i) => (
             <Link
               key={area.slug}
+              data-reveal
               href={`/calisma-alanlari/${area.slug}`}
               className="practice-card p-5 rounded-lg border flex flex-col group"
-              style={{ backgroundColor: "#1B3A2F" }}
+              style={{ backgroundColor: "#1B3A2F", ["--d" as string]: `${(i % 6) * 70}ms` }}
             >
               <div className="flex items-center gap-3 mb-3">
                 <div

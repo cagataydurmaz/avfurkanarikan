@@ -17,7 +17,7 @@ export default function ToolsPreview() {
           </span>
         </div>
 
-        <div className="mb-7 md:mb-10">
+        <div className="mb-7 md:mb-10" data-reveal>
           <h2
             className="text-3xl md:text-4xl font-bold max-w-sm"
             style={{
@@ -31,12 +31,13 @@ export default function ToolsPreview() {
 
         {/* Cards */}
         <div className="grid md:grid-cols-3 gap-3 md:gap-5">
-          {tools.slice(0, 3).map((tool) => (
+          {tools.slice(0, 3).map((tool, i) => (
             <Link
               key={tool.slug}
+              data-reveal
               href={`/${tool.slug}`}
               className="group flex flex-col rounded-xl p-4 md:p-5 border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-              style={{ borderColor: "#EBE0D4", backgroundColor: "#F4EDE4" }}
+              style={{ borderColor: "#EBE0D4", backgroundColor: "#F4EDE4", ["--d" as string]: `${i * 80}ms` }}
             >
               <span
                 className="text-[11px] font-semibold tracking-wide uppercase px-3 py-1 rounded-full whitespace-nowrap self-start mb-2.5 md:mb-3"

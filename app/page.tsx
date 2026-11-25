@@ -11,6 +11,7 @@ import Contact from "@/components/Contact";
 import ServiceRegionsSection from "@/components/ServiceRegionsSection";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
+import RevealOnScroll from "@/components/RevealOnScroll";
 import { posts } from "@/lib/posts";
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
       </main>
       <Footer />
       <FloatingButtons />
+      <RevealOnScroll />
     </>
   );
 }

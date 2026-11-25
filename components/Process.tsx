@@ -14,7 +14,7 @@ export default function Process() {
     <section id="surec" className="py-10 md:py-16" style={{ backgroundColor: "#F4EDE4" }}>
       <div className="max-w-6xl mx-auto px-5 md:px-8">
         {/* Header - centered, breaks from the split layout used elsewhere */}
-        <div className="flex flex-col items-start md:items-center text-left md:text-center mb-7 md:mb-12">
+        <div className="flex flex-col items-start md:items-center text-left md:text-center mb-7 md:mb-12" data-reveal>
           <span
             className="text-xs tracking-widest uppercase font-semibold px-3 py-1 rounded-full border mb-4"
             style={{ color: "#C5A880", borderColor: "rgba(197,168,128,0.4)" }}
@@ -37,20 +37,41 @@ export default function Process() {
 
         {/* Steps: mobilde sola hizalı ince zaman çizelgesi, masaüstünde 4 sütun */}
         <ol className="relative grid md:grid-cols-4 gap-5 md:gap-6">
-          {/* Mobil dikey çizgi */}
-          <span
-            className="md:hidden absolute left-[17px] top-3 bottom-3 w-px"
-            style={{ backgroundColor: "#C5A880", opacity: 0.35 }}
-            aria-hidden="true"
-          />
           {/* Masaüstü yatay çizgi */}
           <span
             className="hidden md:block absolute top-6 left-[calc(12.5%+1.5rem)] right-[calc(12.5%+1.5rem)] h-px"
-            style={{ backgroundColor: "#C5A880", opacity: 0.3 }}
+            style={{ backgroundColor: "rgba(197,168,128,0.2)" }}
+            aria-hidden="true"
+          />
+          <span
+            data-reveal-line="x"
+            className="hidden md:block absolute top-6 left-[calc(12.5%+1.5rem)] right-[calc(12.5%+1.5rem)] h-px origin-left"
+            style={{ backgroundColor: "#C5A880", opacity: 0.7 }}
             aria-hidden="true"
           />
           {steps.map((step, index) => (
-            <li key={step.number} className="relative flex gap-4 md:flex-col md:items-center md:text-center md:gap-0">
+            <li
+              key={step.number}
+              data-reveal
+              className="relative flex gap-4 md:flex-col md:items-center md:text-center md:gap-0"
+              style={{ ["--d" as string]: `${index * 180}ms` }}
+            >
+              {/* Mobil: bir sonraki adıma uzanan çizgi parçası (soluk zemin + dolan altın) */}
+              {index < steps.length - 1 && (
+                <>
+                  <span
+                    className="md:hidden absolute left-[17px] top-9 -bottom-5 w-px"
+                    style={{ backgroundColor: "rgba(197,168,128,0.2)" }}
+                    aria-hidden="true"
+                  />
+                  <span
+                    data-reveal-line="y"
+                    className="md:hidden absolute left-[17px] top-9 -bottom-5 w-px origin-top"
+                    style={{ backgroundColor: "#C5A880" }}
+                    aria-hidden="true"
+                  />
+                </>
+              )}
               <span
                 className="relative z-10 flex items-center justify-center w-9 h-9 md:w-12 md:h-12 rounded-full border-2 md:mb-4 flex-shrink-0"
                 style={{
@@ -85,6 +106,7 @@ export default function Process() {
 
         {/* Note */}
         <div
+          data-reveal
           className="mt-7 md:mt-10 p-4 rounded-lg border flex gap-3"
           style={{ borderColor: "#C5A880", backgroundColor: "rgba(197,168,128,0.08)" }}
         >

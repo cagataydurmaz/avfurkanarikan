@@ -11,7 +11,7 @@ export default function ServiceRegionsSection() {
             Hizmet Bölgeleri
           </span>
         </div>
-        <p className="text-sm max-w-2xl leading-relaxed mb-8" style={{ color: "#3D5A50" }}>
+        <p data-reveal className="text-sm max-w-2xl leading-relaxed mb-8" style={{ color: "#3D5A50" }}>
           Büro Beşiktaş Sinanpaşa&apos;dadır; İstanbul genelindeki müvekkillere hizmet verilir.
         </p>
         <ServiceRegions />
