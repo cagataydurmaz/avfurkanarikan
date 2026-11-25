@@ -1,14 +1,23 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Plus_Jakarta_Sans } from "next/font/google";
+import { Cinzel, Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { LanguageProvider } from "@/lib/i18n/LanguageContext";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "600", "700"],
+// Başlıklar: klasik Garamond (Türkçe ve Rusça harfler dahil)
+const heading = Cormorant_Garamond({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  weight: ["500", "600", "700"],
   style: ["normal"],
-  variable: "--font-playfair",
+  variable: "--font-heading",
+  display: "swap",
+});
+
+// Logo: Roma yazıtı tarzı büyük harfler (yalnızca Latin; logo adı Latin harfli)
+const logo = Cinzel({
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "600"],
+  variable: "--font-logo",
   display: "swap",
 });
 
@@ -144,7 +153,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr" className={`${playfair.variable} ${jakarta.variable}`}>
+    <html lang="tr" className={`${heading.variable} ${logo.variable} ${jakarta.variable}`}>
       <head>
         <script
           type="application/ld+json"

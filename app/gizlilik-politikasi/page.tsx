@@ -32,7 +32,7 @@ export default function GizlilikPolitikasiPage() {
 
           <h1
             className="text-2xl md:text-3xl lg:text-4xl font-bold leading-snug"
-            style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
           >
             Gizlilik Politikası ve KVKK Aydınlatma Metni
           </h1>

@@ -84,7 +84,7 @@ export default function IlcelerPage() {
           </div>
           <h1
             className="text-3xl md:text-5xl font-bold mb-4"
-            style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
           >
             İstanbul İlçelerine Göre Avukatlık Hizmetleri
           </h1>

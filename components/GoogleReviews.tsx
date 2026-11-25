@@ -22,7 +22,7 @@ export default function GoogleReviews() {
             className="text-3xl md:text-4xl font-bold max-w-sm"
             style={{
               color: "#14342B",
-              fontFamily: "var(--font-playfair), Georgia, serif",
+              fontFamily: "var(--font-heading), Georgia, serif",
             }}
           >
             {t("reviews.heading")}

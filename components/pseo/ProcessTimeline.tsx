@@ -46,7 +46,7 @@ export default function ProcessTimeline({ title, steps }: { title: string; steps
         <h2
           id="timeline-title"
           className="text-2xl md:text-3xl font-bold mb-10 text-center"
-          style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
         >
           {title}
         </h2>
@@ -76,7 +76,7 @@ export default function ProcessTimeline({ title, steps }: { title: string; steps
                     borderColor: "#C5A880",
                     backgroundColor: visible ? "#C5A880" : "#14342B",
                     color: visible ? "#14342B" : "#C5A880",
-                    fontFamily: "var(--font-playfair), Georgia, serif",
+                    fontFamily: "var(--font-heading), Georgia, serif",
                   }}
                   aria-hidden="true"
                 >

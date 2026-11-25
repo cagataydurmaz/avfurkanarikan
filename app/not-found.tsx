@@ -35,7 +35,7 @@ export default function NotFound() {
 
           <h1
             className="text-3xl md:text-4xl font-bold mb-5"
-            style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
           >
             Sayfa Bulunamadı
           </h1>

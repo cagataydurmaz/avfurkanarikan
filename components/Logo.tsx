@@ -25,7 +25,7 @@ export default function Logo({ size = "nav" }: { size?: "nav" | "footer" }) {
       <span
         className={`${nameClass} font-semibold`}
         style={{
-          fontFamily: "var(--font-playfair), Georgia, serif",
+          fontFamily: "var(--font-logo), var(--font-heading), Georgia, serif",
           color: "#F4EDE4",
           letterSpacing: "0.06em",
         }}

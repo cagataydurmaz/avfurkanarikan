@@ -28,7 +28,7 @@ export default function DolandiricilikUyarisiPage() {
           </nav>
           <h1
             className="text-2xl md:text-3xl lg:text-4xl font-bold leading-snug"
-            style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
           >
             Dolandırıcılık Uyarısı
           </h1>

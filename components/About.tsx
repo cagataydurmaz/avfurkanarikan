@@ -82,7 +82,7 @@ export default function About() {
               className="text-3xl md:text-4xl font-bold mb-2"
               style={{
                 color: "#14342B",
-                fontFamily: "var(--font-playfair), Georgia, serif",
+                fontFamily: "var(--font-heading), Georgia, serif",
               }}
             >
               Furkan Arıkan

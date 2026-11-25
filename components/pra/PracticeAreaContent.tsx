@@ -68,7 +68,7 @@ export default function PracticeAreaContent({
           </div>
           <h1
             className="text-3xl md:text-5xl font-bold mb-5"
-            style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
           >
             {view.title}
           </h1>
@@ -92,7 +92,7 @@ export default function PracticeAreaContent({
                   <article key={i}>
                     <h2
                       className="text-xl md:text-2xl font-bold mb-4"
-                      style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                      style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
                     >
                       {section.heading}
                     </h2>
@@ -136,7 +136,7 @@ export default function PracticeAreaContent({
                 </div>
                 <h2
                   className="text-2xl font-bold mb-8"
-                  style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
                 >
                   {t("praDetail.faqTitle").replace("{title}", view.title)}
                 </h2>
@@ -149,7 +149,7 @@ export default function PracticeAreaContent({
                     >
                       <h3
                         className="text-base font-semibold mb-2"
-                        style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                        style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
                       >
                         {item.question}
                       </h3>
@@ -197,7 +197,7 @@ export default function PracticeAreaContent({
                   <p className="text-xs tracking-widest uppercase font-semibold mb-3" style={{ color: "#C5A880" }}>
                     {t("praDetail.ctaLabel")}
                   </p>
-                  <p className="text-base font-semibold mb-2" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  <p className="text-base font-semibold mb-2" style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}>
                     {t("praDetail.ctaQuestion").replace("{title}", lang === "tr" ? view.title : view.title.toLowerCase())}
                   </p>
                   <p className="text-xs mb-5 leading-relaxed" style={{ color: "rgba(244,237,228,0.6)" }}>

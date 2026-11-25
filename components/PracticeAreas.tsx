@@ -189,7 +189,7 @@ export default function PracticeAreas() {
             className="text-3xl md:text-4xl font-bold max-w-md"
             style={{
               color: "#F4EDE4",
-              fontFamily: "var(--font-playfair), Georgia, serif",
+              fontFamily: "var(--font-heading), Georgia, serif",
             }}
           >
             {t("practiceAreas.heading")}
@@ -217,7 +217,7 @@ export default function PracticeAreas() {
                 </span>
                 <span
                   className="flex-1 text-base font-semibold"
-                  style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
                 >
                   {area.title}
                 </span>
@@ -278,7 +278,7 @@ export default function PracticeAreas() {
                 </div>
                 <h3
                   className="text-lg font-semibold"
-                  style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
                 >
                   {area.title}
                 </h3>

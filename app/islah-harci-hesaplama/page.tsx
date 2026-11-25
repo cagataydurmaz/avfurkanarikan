@@ -74,7 +74,7 @@ export default function IslahHarciHesaplamaPage() {
               Ücretsiz Araç · Yargılama Giderleri
             </span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-4" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4" style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}>
             Islah Harcı Hesaplama
           </h1>
           <p className="text-sm max-w-xl leading-relaxed" style={{ color: "rgba(244,237,228,0.65)" }}>
@@ -160,7 +160,7 @@ export default function IslahHarciHesaplamaPage() {
           />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
-            <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
               Bir istisna: ölüm ve cismani zarar tazminatı davaları
             </h2>
             <p className="text-sm leading-relaxed" style={{ color: "#3D5A50" }}>

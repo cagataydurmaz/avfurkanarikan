@@ -179,7 +179,7 @@ export default async function MakalePage({ params }: Props) {
             className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 leading-snug"
             style={{
               color: "#F4EDE4",
-              fontFamily: "var(--font-playfair), Georgia, serif",
+              fontFamily: "var(--font-heading), Georgia, serif",
             }}
           >
             {post.title}
@@ -313,7 +313,7 @@ export default async function MakalePage({ params }: Props) {
               style={{
                 backgroundColor: "#14342B",
                 color: "#C5A880",
-                fontFamily: "var(--font-playfair), Georgia, serif",
+                fontFamily: "var(--font-heading), Georgia, serif",
               }}
             >
               FA
@@ -323,7 +323,7 @@ export default async function MakalePage({ params }: Props) {
                 className="font-semibold mb-0.5"
                 style={{
                   color: "#14342B",
-                  fontFamily: "var(--font-playfair), Georgia, serif",
+                  fontFamily: "var(--font-heading), Georgia, serif",
                 }}
               >
                 Av. Furkan Arıkan

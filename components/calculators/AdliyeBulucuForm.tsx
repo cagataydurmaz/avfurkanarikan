@@ -48,7 +48,7 @@ export default function AdliyeBulucuForm() {
           </p>
           <h3
             className="text-xl font-bold mb-3"
-            style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
           >
             {courthouse.name}
           </h3>

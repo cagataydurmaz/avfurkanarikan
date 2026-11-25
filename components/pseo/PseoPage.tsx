@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "@/components/Logo";
 import Image from "next/image";
 import type { PseoDistrict, PseoService } from "@/lib/pseo/types";
 import { getPostBySlug } from "@/lib/posts";
@@ -40,11 +41,8 @@ export default function PseoPage({
       {/* Minimal top bar - deliberately not the main site nav */}
       <header className="py-5" style={{ backgroundColor: "#14342B" }}>
         <div className="max-w-5xl mx-auto px-5 md:px-8 flex items-center justify-between">
-          <Link href="/" className="inline-block">
-            <p className="text-lg font-bold" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
-              Av. Furkan Arıkan
-            </p>
-            <p className="text-[10px] tracking-widest uppercase" style={{ color: "#C5A880" }}>Hukuk Bürosu</p>
+          <Link href="/" className="inline-block" aria-label="Av. Furkan Arıkan Hukuk Bürosu – Ana sayfa">
+            <Logo size="nav" />
           </Link>
           <TrackedLink
             channel="phone"
@@ -109,7 +107,7 @@ export default function PseoPage({
             </p>
             <h1
               className="text-3xl md:text-5xl font-bold mb-5 leading-tight"
-              style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
             >
               {service.heroTitle}
             </h1>
@@ -162,7 +160,7 @@ export default function PseoPage({
               />
             </div>
             <div>
-              <h2 className="text-2xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              <h2 className="text-2xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
                 Av. Furkan Arıkan Hakkında
               </h2>
               <p data-speakable className="text-base leading-relaxed" style={{ color: "#2D4A3E" }}>
@@ -191,13 +189,13 @@ export default function PseoPage({
         {/* 3. HIGHLIGHTS */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#14342B" }}>
           <div className="max-w-5xl mx-auto px-5 md:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center" style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}>
               Hukuki Hizmetlerimiz
             </h2>
             <div className="grid sm:grid-cols-2 gap-5">
               {service.highlightCards.map((card) => (
                 <div key={card.title} className="p-5 rounded-lg border" style={{ backgroundColor: "#1B3A2F", borderColor: "rgba(197,168,128,0.2)" }}>
-                  <h3 className="text-base font-semibold mb-2" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  <h3 className="text-base font-semibold mb-2" style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}>
                     {card.title}
                   </h3>
                   <p className="text-sm leading-relaxed" style={{ color: "rgba(244,237,228,0.65)" }}>
@@ -212,7 +210,7 @@ export default function PseoPage({
         {/* 4. PROCESS */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
           <div className="max-w-5xl mx-auto px-5 md:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
               Süreci Birlikte Yönetelim
             </h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
@@ -220,7 +218,7 @@ export default function PseoPage({
                 <div key={step.name} className="text-center">
                   <div
                     className="w-12 h-12 mx-auto flex items-center justify-center rounded-full border-2 mb-3 font-bold"
-                    style={{ borderColor: "#C5A880", color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                    style={{ borderColor: "#C5A880", color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
                   >
                     {i + 1}
                   </div>
@@ -238,7 +236,7 @@ export default function PseoPage({
         {/* 5. SERVICES LIST */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#14342B" }}>
           <div className="max-w-3xl mx-auto px-5 md:px-8">
-            <h2 className="text-2xl font-bold mb-6" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-2xl font-bold mb-6" style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}>
               Hizmet Verdiğimiz Alanlar
             </h2>
             <ul className="space-y-3">
@@ -281,7 +279,7 @@ export default function PseoPage({
         {/* 7. LOCAL */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
           <div className="max-w-3xl mx-auto px-5 md:px-8">
-            <h2 className="text-2xl font-bold mb-5" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-2xl font-bold mb-5" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
               {district.name} Hakkında
             </h2>
             <div className="space-y-4">
@@ -297,7 +295,7 @@ export default function PseoPage({
             <div className="max-w-3xl mx-auto px-5 md:px-8 space-y-10">
               {getDeep(district.slug, service.slug).map((sec) => (
                 <div key={sec.heading} id={sec.id} className="scroll-mt-24">
-                  <h2 className="text-2xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  <h2 className="text-2xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
                     {sec.heading}
                   </h2>
                   <div className="space-y-4">
@@ -367,13 +365,13 @@ export default function PseoPage({
         {/* 9. FAQ */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#F4EDE4" }}>
           <div className="max-w-3xl mx-auto px-5 md:px-8">
-            <h2 className="text-2xl font-bold mb-8" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-2xl font-bold mb-8" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
               Sık Sorulan Sorular
             </h2>
             <div className="space-y-5">
               {service.faqs.map((faq) => (
                 <div key={faq.question} className="p-5 rounded-xl border" style={{ backgroundColor: "#fff", borderColor: "#E5D9CC" }}>
-                  <h3 className="text-base font-semibold mb-2" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+                  <h3 className="text-base font-semibold mb-2" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
                     {faq.question}
                   </h3>
                   <p className="text-sm leading-relaxed" style={{ color: "#3D5A50" }}>{faq.answer}</p>
@@ -387,7 +385,7 @@ export default function PseoPage({
         {relatedPosts.length > 0 && (
           <section className="py-14 md:py-20" style={{ backgroundColor: "#EBE0D4" }}>
             <div className="max-w-3xl mx-auto px-5 md:px-8">
-              <h2 className="text-2xl font-bold mb-6" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+              <h2 className="text-2xl font-bold mb-6" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
                 İlgili Makaleler
               </h2>
               <ul className="space-y-3">
@@ -410,7 +408,7 @@ export default function PseoPage({
         {/* 10. CONTACT */}
         <section className="py-14 md:py-20" style={{ backgroundColor: "#14342B" }}>
           <div className="max-w-5xl mx-auto px-5 md:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center" style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}>
               İletişime Geçin
             </h2>
             <div className="grid lg:grid-cols-5 gap-10 items-start">
@@ -498,7 +496,7 @@ function LocalInfo({ district }: { district: PseoDistrict }) {
   return (
     <section className="py-12" style={{ backgroundColor: "#fff" }}>
       <div className="max-w-3xl mx-auto px-5 md:px-8">
-        <h2 className="text-xl font-bold mb-5" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+        <h2 className="text-xl font-bold mb-5" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
           {district.name} İçin Başvuru Yerleri ve Kurum Bilgileri
         </h2>
         <dl className="divide-y" style={{ borderColor: "#EBE0D4" }}>

@@ -25,7 +25,7 @@ export default function Process() {
             className="text-3xl md:text-4xl font-bold max-w-lg"
             style={{
               color: "#14342B",
-              fontFamily: "var(--font-playfair), Georgia, serif",
+              fontFamily: "var(--font-heading), Georgia, serif",
             }}
           >
             {t("process.heading")}
@@ -82,7 +82,7 @@ export default function Process() {
                 <span
                   className="text-sm md:text-lg font-bold"
                   style={{
-                    fontFamily: "var(--font-playfair), Georgia, serif",
+                    fontFamily: "var(--font-heading), Georgia, serif",
                     color: index === 0 ? "#C5A880" : "#14342B",
                   }}
                 >
@@ -92,7 +92,7 @@ export default function Process() {
               <div className="pt-1.5 md:pt-0">
                 <h3
                   className="text-base font-bold mb-1"
-                  style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
                 >
                   {step.title}
                 </h3>

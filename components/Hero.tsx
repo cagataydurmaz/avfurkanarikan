@@ -135,7 +135,7 @@ export default function Hero() {
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-2"
           style={{
             color: "#F4EDE4",
-            fontFamily: "var(--font-playfair), Georgia, serif",
+            fontFamily: "var(--font-heading), Georgia, serif",
             letterSpacing: "-0.01em",
           }}
         >

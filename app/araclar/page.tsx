@@ -53,7 +53,7 @@ export default function AraclarPage() {
           </div>
           <h1
             className="text-3xl md:text-5xl font-bold mb-4"
-            style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
           >
             Hukuki Hesaplama Araçları
           </h1>
@@ -87,7 +87,7 @@ export default function AraclarPage() {
                   className="text-lg font-bold mb-3 leading-snug group-hover:text-opacity-80 transition-colors"
                   style={{
                     color: "#14342B",
-                    fontFamily: "var(--font-playfair), Georgia, serif",
+                    fontFamily: "var(--font-heading), Georgia, serif",
                   }}
                 >
                   {tool.title}

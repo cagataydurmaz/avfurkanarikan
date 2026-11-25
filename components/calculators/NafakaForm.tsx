@@ -54,7 +54,7 @@ export default function NafakaForm() {
           <p className="text-xs font-semibold tracking-wide uppercase mb-1" style={{ color: "#7A9089" }}>
             Tahmini aralık (net gelirin %{TAHMINI_ORAN_ALT * 100}-%{TAHMINI_ORAN_UST * 100}&apos;i)
           </p>
-          <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
             {currency.format(result.altSinir)} – {currency.format(result.ustSinir)} / ay
           </h3>
           <p className="text-xs leading-relaxed mb-5" style={{ color: "#8A4A2E" }}>

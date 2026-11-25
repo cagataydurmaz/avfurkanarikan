@@ -24,7 +24,7 @@ export default function Contact() {
               className="text-3xl md:text-4xl font-bold max-w-sm"
               style={{
                 color: "#F4EDE4",
-                fontFamily: "var(--font-playfair), Georgia, serif",
+                fontFamily: "var(--font-heading), Georgia, serif",
               }}
             >
               {t("contact.heading")}
@@ -44,7 +44,7 @@ export default function Contact() {
           >
             <p
               className="text-base font-semibold mb-4"
-              style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
             >
               {t("contact.formTitle")}
             </p>

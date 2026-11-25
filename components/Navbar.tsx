@@ -125,7 +125,7 @@ export default function Navbar() {
               style={{
                 color: "#F4EDE4",
                 borderColor: "rgba(197,168,128,0.2)",
-                fontFamily: "var(--font-playfair), Georgia, serif",
+                fontFamily: "var(--font-heading), Georgia, serif",
               }}
             >
               {link.label}

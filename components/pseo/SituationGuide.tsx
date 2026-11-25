@@ -58,7 +58,7 @@ export default function SituationGuide({ title, intro, start, steps, district, s
         <h2
           id="guide-title"
           className="text-2xl md:text-3xl font-bold mb-3 text-center"
-          style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+          style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
         >
           {title}
         </h2>
@@ -109,7 +109,7 @@ export default function SituationGuide({ title, intro, start, steps, district, s
               <div>
                 <h3
                   className="text-xl font-bold mb-4"
-                  style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+                  style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
                 >
                   {result.title}
                 </h3>

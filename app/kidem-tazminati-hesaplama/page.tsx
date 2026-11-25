@@ -100,7 +100,7 @@ export default function KidemTazminatiHesaplamaPage() {
           </div>
           <h1
             className="text-3xl md:text-5xl font-bold mb-4"
-            style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}
+            style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}
           >
             Kıdem Tazminatı Hesaplama
           </h1>
@@ -191,7 +191,7 @@ export default function KidemTazminatiHesaplamaPage() {
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
             <h2
               className="text-lg font-bold mb-3"
-              style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+              style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
             >
               Bu araç, fesih sebebini değerlendirmez
             </h2>

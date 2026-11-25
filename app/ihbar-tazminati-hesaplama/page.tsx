@@ -87,7 +87,7 @@ export default function IhbarTazminatiHesaplamaPage() {
               Ücretsiz Araç · İş Hukuku
             </span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-4" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4" style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}>
             İhbar Tazminatı Hesaplama
           </h1>
           <p className="text-sm max-w-xl leading-relaxed" style={{ color: "rgba(244,237,228,0.65)" }}>
@@ -170,7 +170,7 @@ export default function IhbarTazminatiHesaplamaPage() {
           />
 
           <div className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
-            <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+            <h2 className="text-lg font-bold mb-3" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
               İhbar yükümlülüğü karşılıklıdır
             </h2>
             <p className="text-sm leading-relaxed mb-3" style={{ color: "#3D5A50" }}>

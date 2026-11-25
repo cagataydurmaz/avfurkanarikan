@@ -36,7 +36,7 @@ export default function ToolExplainer({
     <section className="mt-10 pt-8" style={{ borderTop: "1px solid #EBE0D4" }}>
       <h2
         className="text-lg font-bold mb-5"
-        style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}
+        style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}
       >
         {title}
       </h2>

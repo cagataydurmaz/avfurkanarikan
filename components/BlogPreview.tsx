@@ -22,7 +22,7 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
             className="text-3xl md:text-4xl font-bold max-w-sm"
             style={{
               color: "#14342B",
-              fontFamily: "var(--font-playfair), Georgia, serif",
+              fontFamily: "var(--font-heading), Georgia, serif",
             }}
           >
             {t("blog.heading")}
@@ -55,7 +55,7 @@ export default function BlogPreview({ posts }: { posts: Post[] }) {
                 className="text-base md:text-lg font-bold mb-2 leading-snug group-hover:text-opacity-80 transition-colors"
                 style={{
                   color: "#14342B",
-                  fontFamily: "var(--font-playfair), Georgia, serif",
+                  fontFamily: "var(--font-heading), Georgia, serif",
                 }}
               >
                 {post.title}

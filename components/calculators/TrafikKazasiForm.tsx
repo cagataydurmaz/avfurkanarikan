@@ -85,7 +85,7 @@ export default function TrafikKazasiForm() {
           <p className="text-xs font-semibold tracking-wide uppercase mb-1" style={{ color: "#7A9089" }}>
             Tazminat davası açma hakkının sona erdiği tarih
           </p>
-          <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
             {dateFormat.format(result.uygulanacakTarih)}
           </h3>
           {result.cezaZamanasimiUygulandi ? (

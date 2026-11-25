@@ -10,7 +10,7 @@
   --color-ink: #14342B;
   --color-text-muted: #3D5A50;
 
-  --font-serif: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-serif: var(--font-heading), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-jakarta), system-ui, -apple-system, sans-serif;
 }
 
@@ -42,7 +42,7 @@ body {
 
 /* Blog prose */
 .prose-law h2 {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #14342B;
@@ -53,7 +53,7 @@ body {
 }
 
 .prose-law h3 {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-size: 1.2rem;
   font-weight: 600;
   color: #1B3A2F;
@@ -124,6 +124,19 @@ body {
   font-size: 0.9rem;
 }
 
+/* Telefonda geniş tablolar sayfayı yana taşırmasın; tablo kendi içinde kaysın */
+@media (max-width: 640px) {
+  .prose-law table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .prose-law th,
+  .prose-law td {
+    padding: 0.6rem 0.75rem;
+  }
+}
+
 .prose-law th {
   background: #14342B;
   color: #F4EDE4;
@@ -180,7 +193,7 @@ body {
   font-weight: 600;
   color: #14342B;
   margin-bottom: 0.5rem;
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
 }
 
 .faq-answer {
@@ -238,7 +251,7 @@ body {
 }
 
 .stat-number {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-size: 1.6rem;
   font-weight: 700;
   color: #C5A880;
@@ -297,7 +310,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-heading), Georgia, serif;
 }
 
 .step-text {
@@ -439,7 +452,7 @@ body {
 /* Arapça: cihazın Arap harfli sistem yazı tipleri (yön, dil seçimiyle html dir="rtl" olur) */
 html[lang="ar"]:root {
   --font-arabic: "Noto Sans Arabic", "Geeza Pro", "Segoe UI", Tahoma, "Arabic Typesetting", sans-serif;
-  --font-playfair: var(--font-arabic);
+  --font-heading: var(--font-arabic);
   --font-jakarta: var(--font-arabic);
 }
 html[lang="ar"] body {
@@ -579,4 +592,21 @@ html[lang="ar"] body {
   .practice-row[open] > div {
     animation: none;
   }
+}
+
+/* Cormorant Garamond'un küçük harf yüksekliği düşük; başlıkları önceki görsel boyuta yaklaştırır.
+   (Arapça sürümde başlıklar sistem yazı tipiyle gösterildiği için kapalı.) */
+:root {
+  --heading-adjust: 0.47;
+}
+html[lang="ar"]:root {
+  --heading-adjust: none;
+}
+[style*="--font-heading"]:not([style*="--font-logo"]),
+.prose-law h2,
+.prose-law h3,
+.faq-question,
+.stat-number,
+.step-num {
+  font-size-adjust: var(--heading-adjust);
 }

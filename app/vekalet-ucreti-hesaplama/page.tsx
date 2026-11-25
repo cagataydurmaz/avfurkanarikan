@@ -81,7 +81,7 @@ export default function VekaletUcretiHesaplamaPage() {
               Ücretsiz Araç · Genel
             </span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold mb-4" style={{ color: "#F4EDE4", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4" style={{ color: "#F4EDE4", fontFamily: "var(--font-heading), Georgia, serif" }}>
             Vekalet Ücreti Hesaplama
           </h1>
           <p className="text-sm max-w-xl leading-relaxed" style={{ color: "rgba(244,237,228,0.65)" }}>

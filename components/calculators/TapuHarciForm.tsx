@@ -76,7 +76,7 @@ export default function TapuHarciForm() {
           <p className="text-xs font-semibold tracking-wide uppercase mb-1" style={{ color: "#7A9089" }}>
             Toplam tapu harcı (%4)
           </p>
-          <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-playfair), Georgia, serif" }}>
+          <h3 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: "#14342B", fontFamily: "var(--font-heading), Georgia, serif" }}>
             {currency.format(result.toplamHarc)}
           </h3>
           <div className="text-sm space-y-1 mb-5" style={{ color: "#3D5A50" }}>
