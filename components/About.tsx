@@ -19,23 +19,48 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           {/* Photo column */}
           <div className="flex flex-col items-center md:items-start">
-            {/* Photo */}
+            {/* Mobil: kütüphane fotoğrafı (Hero'daki yuvarlak cüppeli portreyi tekrar etmemek için) */}
+            <div className="md:hidden relative -mx-5 w-[calc(100%+2.5rem)] -mt-4 -mb-6">
+              <div
+                className="relative w-full aspect-[4/3]"
+                style={{
+                  maskImage: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.55) 8%, #000 18%, #000 55%, rgba(0,0,0,0.55) 76%, rgba(0,0,0,0.15) 90%, transparent 100%)",
+                  WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.55) 8%, #000 18%, #000 55%, rgba(0,0,0,0.55) 76%, rgba(0,0,0,0.15) 90%, transparent 100%)",
+                }}
+              >
+                <Image
+                  src="/furkan-kutuphane-yatay.jpg"
+                  alt="Av. Furkan Arıkan büro kütüphanesinde çalışırken"
+                  fill
+                  sizes="(max-width: 767px) 100vw, 0px"
+                  className="object-cover"
+                  style={{ filter: "saturate(0.85) contrast(1.03)" }}
+                />
+                {/* Krem zemine sıcak geçiş */}
+                <div
+                  className="absolute inset-0"
+                  style={{ background: "linear-gradient(to bottom, rgba(244,237,228,0) 40%, rgba(244,237,228,0.35) 75%, rgba(244,237,228,0.7) 100%)" }}
+                />
+              </div>
+            </div>
+
+            {/* Masaüstü: yuvarlak cüppeli portre */}
             <div
-              className="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden mb-6 flex-shrink-0"
+              className="hidden md:block relative md:w-72 md:h-72 rounded-full overflow-hidden mb-6 flex-shrink-0"
               style={{ border: "4px solid #C5A880" }}
             >
               <Image
                 src="/furkan-arikan-cuppe.jpg"
                 alt="Av. Furkan Arıkan"
                 fill
-                sizes="(min-width: 768px) 288px, 224px"
+                sizes="(min-width: 768px) 288px, 0px"
                 className="object-cover object-center"
               />
             </div>
 
             {/* Author byline - E-E-A-T */}
             <div
-              className="w-full md:max-w-xs p-4 rounded border"
+              className="relative w-full md:max-w-xs p-4 rounded border"
               style={{ borderColor: "#C5A880", backgroundColor: "#FFFAF5" }}
             >
               <p className="text-sm font-semibold" style={{ color: "#14342B" }}>
